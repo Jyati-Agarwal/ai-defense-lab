@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-65bd9bb3800e",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "65bd9bb3800e0dc8f704aa8a29f7102e3999f7bd8116db10600baff9a4764882",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] Synthetic dispute shows mismatched delivery and account claims, signaling possible payment fraud; actionable details removed.",
+  "kind": "dispute_narrative",
+  "language": "en",
+  "operational": false,
+  "response": {
+    "id": "resp_0af9b929aa09919b016a8f5b42705c87d08c1f1ba6fba91bb9",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 100,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 215
+    }
+  },
+  "response_text_sha256": "252ed96d18b7818b9b9af81697b5476e072e75ba4d7c44df2ecab2e7b212cedb",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "65bd9bb3800e0dc8f704aa8a29f7102e3999f7bd8116db10600baff9a4764882",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "dispute_narrative",
+      "language": "en",
+      "variant": "baseline"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "eb0ccaf0e6a5569aa4a80fe9eb7b998431e540d3d75105db0f769518a44412cb",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, instruction, prominent LAUNCH EVENT button, and side-by-side ALLOW/BLOCK result make the core interaction understandable across viewports. However, “change one” is unsupported by any baseline or changed-state marker; results appear already populated, so it is unclear whether they precede or follow launch; and “Risk reduced” conflicts with the displayed 100/100 fused risk without explanation. On mobile, the global header does not expose Composer or a clear current-location indicator.",
+    "fix": "Show an explicit baseline/current value and highlight the single changed control, label results with a post-launch state or timestamp, reconcile the “Risk reduced” statement with 100/100, and keep Composer/current-section context visible in the mobile navigation.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d1ea246e86244ce102e078527672ca4b34690b909b6d4fb8d9d1c7a95074320e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165162,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "7a159bdf3af0025bf9118a6ce28ff97e778506ec13e6c885483138a80e602694",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154245,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "dbe733d69da8007180911756e894f6e6b29ccf2fb8ecc4b3f3447200acc10631",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157819,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "78177fa2bfa2096f5b7e3766bde9d75ac392a6214e47fbeeb6b0f9bbac685a18",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "83b0cd93dd3b07e85f0aef392e116684346d23d14fa4bafa091d1e6e48a011a0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "eb0ccaf0e6a5569aa4a80fe9eb7b998431e540d3d75105db0f769518a44412cb"
+  }
+}

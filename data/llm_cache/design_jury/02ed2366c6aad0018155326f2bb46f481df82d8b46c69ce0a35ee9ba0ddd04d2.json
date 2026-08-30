@@ -1,0 +1,70 @@
+{
+  "cache_key": "02ed2366c6aad0018155326f2bb46f481df82d8b46c69ce0a35ee9ba0ddd04d2",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, single numbered gap, 69.6% recall caveat, next control, and prominent “Test an uncertain case” CTA establish a coherent claim-to-action path across viewports. However, “vault number,” “composer,” and “step-up” are unexplained, the distinction between an evidence gap and an observed miss requires careful reading, and the mobile header does not visibly identify the current Unknowns section.",
+    "fix": "Replace internal terms with plain language, explicitly state why 69.6% is an evidence gap rather than a measured miss, and keep a visible current-section label in the tablet/mobile header.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f1dbcfa007c1f1ee7ec044186761b5c02b9b85957e278ea0b04ba6aa6dc1221c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 115756,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "d9e067f3e1b12e2aa886bb7dbab3de5c5c4fda8109648d6cb508108ffcf4337c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 94773,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "1c0a5a1e01e885c03a6098041a39cc92de89df969bfd45bd7ac8bea2fb058e8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 94409,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "7ec8289a4303ec0046b042895c4e33e88f600b36ff9b640942a2689e49da30a6",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb867f0eced88966292d5ff83933edcfbe68bf5cba1b75b21bdae0a29bb83b03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "02ed2366c6aad0018155326f2bb46f481df82d8b46c69ce0a35ee9ba0ddd04d2"
+  }
+}

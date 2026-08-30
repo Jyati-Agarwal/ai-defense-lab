@@ -1,0 +1,51 @@
+{
+  "cache_key": "c1a3d779018db258ae45507bc2478ee5fe79ebecb16eedfa27485e6b2c980448",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear, demo-worthy visual thesis: a signed transaction chain flows into a widening cyan/red intent-versus-outcome divergence, while four green VERIFIED checks are sharply contrasted with a red SEMANTIC INVARIANT failure. The oversized editorial headline reinforces that same paradox, making the concept more memorable than a routine dashboard. The dark grid, monospace labels, and status pills are somewhat familiar cyber-dashboard styling, and the chain becomes tiny and partly clipped on mobile, limiting a higher score.",
+    "fix": "Make the intent-to-outcome split the dominant responsive hero visualization, with readable mobile nodes and a more explicit visual bridge from the green verified checks to the red semantic failure; reduce reliance on familiar cyber-dashboard ornament.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 572745,
+        "sha256": "1ed69237735825246a0a552e4e24ad4fdc9607a258a30a648c924ba20923cc1a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 422524,
+        "sha256": "d9524be96c9b2e6acf3c0e61c304a522c4dfe3c706f6ff882aa6798213b2b172",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 331083,
+        "sha256": "a509c0554074d53b06dd6db76783211577ddd4f7f16815a57f7bd5df6c2bea1e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "9793ce72e1244ef4facc8972fceeb914827f91d485d70725f691eeefdc3e2ce9",
+    "schema_version": 2,
+    "sha256": "c1a3d779018db258ae45507bc2478ee5fe79ebecb16eedfa27485e6b2c980448"
+  },
+  "response": {
+    "id": "resp_0770978331fd7650016a907a7c00d487d0a8fc5a869e0982f0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6482,
+      "input_tokens_details": {
+        "cache_write_tokens": 6479,
+        "cached_tokens": 0
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 6803
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "dfe4b7df8b42757b1fb5a9c523eb0fe5bc50e2cae1643ae390bd50183755f7e3",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Across desktop, tablet, and mobile, the screen has a cohesive high-polish visual system: strong oversized headline hierarchy, restrained cyan/coral/yellow semantic color, consistent mono micro-labels, subtle grid texture, crisp borders, and a clearly emphasized ROI artifact. The desktop split ledger/result composition reflows cleanly into a stacked card on tablet and mobile. It is demo-ready, though mobile table density is near the limit: the two currency values in “Cost per successful fraud” sit very close together, row labels wrap unevenly, and the oversized four-line title delays the primary data.",
+    "fix": "Give the mobile ledger more numeric-column separation—slightly reduce value size, widen the card, or stack before/after values within the tightest row. Tighten the mobile hero scale/spacing and normalize wrapped row-label widths to improve rhythm without weakening the hierarchy.",
+    "score": 8,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 313779,
+        "sha256": "86deaa7afa89e77784aa0288cae8d37cb6733ed3b9857d91d388493c6498d17e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 272191,
+        "sha256": "cd3990ee1fb660eca58e9fb5e65462abbe0debc2a63b4ad4c8a536900692f0cf",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 194951,
+        "sha256": "3eebab56f9d69b2f9d8d5c12d135a1ee70ed5aece158b94b6b110c829b77f451",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d404ea3f1c957ea4932560f862459320501669cce726b760ac07ab91a9dae206",
+    "schema_version": 2,
+    "sha256": "dfe4b7df8b42757b1fb5a9c523eb0fe5bc50e2cae1643ae390bd50183755f7e3"
+  },
+  "response": {
+    "id": "resp_01c5ec6043ca7a6c016a907aa8e7f887d0980f0ecd4a3a4075",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5166,
+      "input_tokens_details": {
+        "cache_write_tokens": 5163,
+        "cached_tokens": 0
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 5599
+    }
+  }
+}

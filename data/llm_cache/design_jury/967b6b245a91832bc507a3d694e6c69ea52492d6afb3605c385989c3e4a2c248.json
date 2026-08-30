@@ -1,0 +1,70 @@
+{
+  "cache_key": "967b6b245a91832bc507a3d694e6c69ea52492d6afb3605c385989c3e4a2c248",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The red-mutator versus blue-defense framing, mutation phylogeny, and guarded-vaccination sequence form a coherent, distinctive security-lab narrative across all three viewports. However, the dominant visual language remains familiar dark-dashboard cards, badges, a line chart, and dense monospace labels. The most potentially memorable artifact—the phylogeny—is tiny on desktop and becomes a plain mutation list on tablet/mobile, weakening the screen’s signature idea. The global header is also visually generic and heavily clipped at narrower widths.",
+    "fix": "Make the mutation-versus-defense battle map the unmistakable centerpiece: enlarge it, preserve a legible interactive topology on every viewport, and visually connect its mutations to replay rounds and vaccination gates. Reduce surrounding card chrome and redesign the narrow header so the arena identity remains visible instead of appearing as a clipped navigation strip.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e66a435a89cf90eb7c901b712c462bb88ae09767412944614eee75689a6179e5",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 688473,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "a3e63421c8b3bc22eaf378072ca131478667676a405ff04619585b676a85f8a4",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8635478c854c336c8297513d474095b8a2eb4a2c6978e337c2d9f2c65becd717",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "967b6b245a91832bc507a3d694e6c69ea52492d6afb3605c385989c3e4a2c248"
+  }
+}

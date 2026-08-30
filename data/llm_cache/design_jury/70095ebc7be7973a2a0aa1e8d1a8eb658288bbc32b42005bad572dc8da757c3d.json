@@ -1,0 +1,70 @@
+{
+  "cache_key": "70095ebc7be7973a2a0aa1e8d1a8eb658288bbc32b42005bad572dc8da757c3d",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard coverage and visible focus pass for all tested header and thesis controls; touch targets report no violations; reduced-motion produces zero animations or changed elements; and no uncontained viewport overflow was measured. However, axe reports a serious incomplete ARIA finding at every viewport: aria-label is applied to a div without a valid role. Contrast also remains unverified for 3 thesis nodes on desktop, 4 on tablet, and 12 header links on mobile. Mobile thesis scrollWidth is 435px against a 390px viewport, although the measured excess is clipped decoration. Missing resolved contrast and semantic proof prevents an 8.",
+    "fix": "Give the comparison container valid semantics, such as role=\"group\" with aria-labelledby, or remove the unsupported aria-label. Replace overlapping/gradient backgrounds during testing or manually measure every flagged foreground/background pair and meet WCAG AA. Constrain the mobile decorative inset so the section scrollWidth stays at 390px, then rerun axe, keyboard, touch-target, overflow, and reduced-motion checks with no serious incomplete results.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6e2af8a500ec072b75e72f8cc1b63ce380065a1a173645314cbffcb4481f04be",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 151314,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "f50141d5154bc163e8738b929e239b9dfc656c49f385063dd3b613189c451bcd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 151038,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "227da19c5954fe4ca242066f3942e62db0fdaa6b359428b23e595a5084e8f0d3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 128544,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "d7d546d53b78f03ebef6e2670e7dd52be268868a19290dae549e826c960b9084",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "100ae0f0bfadd575e63b79a2990638ffa2ca4d9aa8f8184450fd9b661902f4c7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "70095ebc7be7973a2a0aa1e8d1a8eb658288bbc32b42005bad572dc8da757c3d"
+  }
+}

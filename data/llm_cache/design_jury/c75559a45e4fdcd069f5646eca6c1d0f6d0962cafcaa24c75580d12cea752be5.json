@@ -1,0 +1,51 @@
+{
+  "cache_key": "c75559a45e4fdcd069f5646eca6c1d0f6d0962cafcaa24c75580d12cea752be5",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 48-vector summary, instruction to filter/select, selected-vector details, and “Continue to scored replay” CTA establish a basic flow. However, the central claim that the agentic tier is the new terrain is not demonstrated at first glance because CLASSIC is selected by default. Stage names such as “intent_manip” are cryptic, much of the atlas requires horizontal exploration, and the tablet’s fixed navigation visibly overlaps the atlas controls. The relationship between selecting a vector and proceeding to scoring is therefore less immediate than demo-ready clarity requires.",
+    "fix": "Default to AGENTIC or show a prominent classic-versus-agentic comparison that directly substantiates the claim. Replace or pair abbreviated stage IDs with plain-language names, state “Select a vector to inspect, then continue to scoring” beside the controls, and eliminate the tablet navigation overlap.",
+    "score": 6,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 568872,
+        "sha256": "415f41834f90d11292e4eae493c03ce763db0b2d41efce54444cb05961e572aa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fb3cc3312a991102c2bd8cf81b465e4b7313a4f3aefd31ac4d0bd1b378b3a5f5",
+    "schema_version": 3,
+    "sha256": "c75559a45e4fdcd069f5646eca6c1d0f6d0962cafcaa24c75580d12cea752be5"
+  },
+  "response": {
+    "id": "resp_00fa60db4950d193016a9084d722b887d091bab0a00b314303",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6570,
+      "input_tokens_details": {
+        "cache_write_tokens": 6567,
+        "cached_tokens": 0
+      },
+      "output_tokens": 593,
+      "output_tokens_details": {
+        "reasoning_tokens": 392
+      },
+      "total_tokens": 7163
+    }
+  }
+}

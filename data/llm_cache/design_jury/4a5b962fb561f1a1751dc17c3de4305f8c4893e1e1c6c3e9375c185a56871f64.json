@@ -1,0 +1,70 @@
+{
+  "cache_key": "4a5b962fb561f1a1751dc17c3de4305f8c4893e1e1c6c3e9375c185a56871f64",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the intent-integrity narrative by distinguishing measured recall (69.6%) from evidence-quality uncertainty and pairing the residual gap with a concrete step-up/post-review control. However, only one unknown is substantively shown despite the “known unknowns” framing, and the screenshots provide no explicit Mastercard use-case, payment-risk outcome, or demonstrated uncertain-case result connecting this closing section to the hackathon brief.",
+    "fix": "Add a compact Mastercard-specific uncertain transaction example showing the observed signal, abstain/step-up decision, verified review outcome, and resulting risk or loss impact; also reconcile the “known unknowns” framing with the single displayed gap.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "9334b7c3451a2dc450101344ada470f9162694fe41b7c757f756864a6418be79",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 115760,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "72255cce0fb2e42a83ccf66dee0daeb90be31cffc9b4e24175c482c27c27c741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 94733,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "7160de4c008ea3438e86a1adff094d565746c0a7040f3759ce8cb05b7101187a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 94409,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "7ec8289a4303ec0046b042895c4e33e88f600b36ff9b640942a2689e49da30a6",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7f997ce8a5ff2b23efe6b38638b62d93c72b075560443c7e41a15fb5928fbadc",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4a5b962fb561f1a1751dc17c3de4305f8c4893e1e1c6c3e9375c185a56871f64"
+  }
+}

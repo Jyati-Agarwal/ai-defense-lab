@@ -1,0 +1,51 @@
+{
+  "cache_key": "7287ff91e4c913b07408a775579af4cfeaa3a93da7c8781d18675b9da7db4ae4",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Map the adversary before scoring it” thesis and cyan-linked kill-chain path give the desktop view a recognizable visual concept beyond a routine dashboard. However, the dominant lower area returns to familiar dark cards, tabs, badges, and a JSON inspector. On tablet and mobile, the signature path becomes a plain numbered stage grid, so the most distinctive idea does not survive responsively.",
+    "fix": "Make the kill-chain map the unmistakable hero at every viewport: preserve a compact connected-path visualization on tablet/mobile, animate or visually trace the selected vector through stages, and tie the cards and detail pane to that route with stronger spatial highlighting instead of generic columns and raw JSON.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 568873,
+        "sha256": "fc5d1de0f30df9b5e63cae4a23ae9e104a06c086894bbf9e56475aa05ec19b96",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b4fbf74797b9399654cb66f0bc7868028afec07562198ee87561ea9b4c29f63c",
+    "schema_version": 3,
+    "sha256": "7287ff91e4c913b07408a775579af4cfeaa3a93da7c8781d18675b9da7db4ae4"
+  },
+  "response": {
+    "id": "resp_0b2246168b9f8888016a9083837d5887d08f841539b1899e81",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6573,
+      "input_tokens_details": {
+        "cache_write_tokens": 6570,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 6889
+    }
+  }
+}

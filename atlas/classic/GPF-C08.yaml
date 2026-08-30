@@ -1,0 +1,13 @@
+id: GPF-C08
+name: First-party friendly-fraud chargeback
+tier: classic
+description: A cardholder receives goods and later falsely disputes a purchase as unauthorized.
+kill_chain_stage: cash_out
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [payment_manip, delayed_exec, cash_out]
+observable_signals: [delivery-device consistency, repeat dispute pattern, post-delivery chargeback]
+defense_hooks: [dispute evidence linkage, first-party risk model]
+severity: medium
+feasibility_today: true

@@ -1,0 +1,70 @@
+{
+  "cache_key": "be7a0e91e9137a2012f7104e592624947fe78574b5b13482ffaf28d5667b1ffa",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The red-mutator/blue-defense framing, emphatic editorial headline, neon duotone, and fraud-phylogeny concept give the screen a recognizable identity. However, the dominant experience remains familiar dark-dashboard cards, a basic line chart, status pills, and pipeline tiles; on tablet/mobile the distinctive phylogeny becomes a plain mutation list, weakening the signature visual idea.",
+    "fix": "Make the arena itself the hero: turn mutation-versus-defense into one large, legible, responsive battle/phylogeny visualization with visible attack paths, survivors, and blocked promotions. Preserve that signature interaction across viewports instead of collapsing it into generic lists and cards.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6922a1d2f39f96155256ddbf68b4ea7bd804f3c6942c12805f101916b3848713",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f4c6e5e0d5699d16610a99621fda67e1e38845545a4872fa74eca3e51202b60b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "be7a0e91e9137a2012f7104e592624947fe78574b5b13482ffaf28d5667b1ffa"
+  }
+}

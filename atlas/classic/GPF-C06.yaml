@@ -1,0 +1,13 @@
+id: GPF-C06
+name: BIN and expiry enumeration
+tier: classic
+description: Automated authorization attempts enumerate plausible card details against a permissive merchant.
+kill_chain_stage: reconnaissance
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [reconnaissance]
+observable_signals: [sequential PAN pattern, expiry sweep pattern, high decline ratio]
+defense_hooks: [merchant velocity limit, enumeration detector]
+severity: medium
+feasibility_today: true

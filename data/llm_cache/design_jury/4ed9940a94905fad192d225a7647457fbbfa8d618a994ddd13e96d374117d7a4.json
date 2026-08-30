@@ -1,0 +1,51 @@
+{
+  "cache_key": "4ed9940a94905fad192d225a7647457fbbfa8d618a994ddd13e96d374117d7a4",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Reduced-motion proof is strong across desktop, tablet, and mobile: the media query matches and the hero remains at opacity 1 with no transform. Normal-motion start and end states are measurable, but the sampled midpoint is effectively identical to the end state at every viewport, so smooth interpolation and easing are not demonstrated. Tablet/mobile timing is near 60 fps with no long frames, while desktop averages 22.36 ms per frame and reaches 50 ms.",
+    "fix": "Capture several evenly spaced in-animation frames showing meaningful progression between the start and end states. Adjust duration/easing or measurement synchronization so the midpoint is genuinely intermediate, and optimize the desktop animation to stay near a 16.7 ms frame budget without 50 ms spikes.",
+    "score": 6,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 421498,
+        "sha256": "8e84b2909b7c5016b5279cf6707b6f6f663db17536366333353eb5820b8bb6f6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 355398,
+        "sha256": "05a17b16127b6ae694f8bbd9caed569414dd6f6fdb87c50f188e74d9422f5b77",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287418,
+        "sha256": "d50af03a5bf03fa3d315d4b0f01a29bd4aaffc6391660e827341aecacfe93069",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2838933ca588adca648ad11602305400f1470c834517708bf928eb850a7e362d",
+    "schema_version": 2,
+    "sha256": "4ed9940a94905fad192d225a7647457fbbfa8d618a994ddd13e96d374117d7a4"
+  },
+  "response": {
+    "id": "resp_08e920254537e789016a907a8905dc87d0911e541255c5d652",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7134,
+      "input_tokens_details": {
+        "cache_write_tokens": 7131,
+        "cached_tokens": 0
+      },
+      "output_tokens": 439,
+      "output_tokens_details": {
+        "reasoning_tokens": 261
+      },
+      "total_tokens": 7573
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "150d19b95af524dd44ad50d9184909f7b104845774a42bbeb4c029cef2bee3ee",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen strongly connects evaluation to fraud operations through constrained-FPR recall, calibration, alert load, latency, confusion counts, fraud value caught, and good value blocked. Its provenance ablation also links defense components to measured PR-AUC. However, the intent-integrity case is not fully proven: removing Semantic shows only a 0.010 PR-AUC decrease, while fresh-row recall remains 100% for every configuration, so the key semantic/intent layer appears operationally unnecessary. The screen also lacks explicit Mastercard/payment-network grounding and does not identify the transaction corpus, value basis, or attack classes behind the results.",
+    "fix": "Add an intent-manipulation benchmark broken down by attack class and payment scenario, showing full-defense versus no-semantic/no-provenance effects at the same false-positive cap. Include transaction count, test-set provenance, decision threshold, monetary basis, and a Mastercard-relevant outcome such as prevented fraud value versus legitimate payment value declined.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c70f4706a218a9dc9bf39ac615622571490148ebb5899224a2c0202da686050d",
+    "schema_version": 3,
+    "sha256": "150d19b95af524dd44ad50d9184909f7b104845774a42bbeb4c029cef2bee3ee"
+  },
+  "response": {
+    "id": "resp_0a20e42aa8ca6fd6016a9083c4d31887d08bfe415febd6f87a",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6327,
+      "input_tokens_details": {
+        "cache_write_tokens": 6324,
+        "cached_tokens": 0
+      },
+      "output_tokens": 690,
+      "output_tokens_details": {
+        "reasoning_tokens": 467
+      },
+      "total_tokens": 7017
+    }
+  }
+}

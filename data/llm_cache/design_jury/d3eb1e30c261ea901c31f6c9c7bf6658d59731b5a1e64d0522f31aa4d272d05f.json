@@ -1,0 +1,70 @@
+{
+  "cache_key": "d3eb1e30c261ea901c31f6c9c7bf6658d59731b5a1e64d0522f31aa4d272d05f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and 0% replay verdict communicate the core warning clearly, and the survivor list reinforces it across viewports. However, the intended next action—“View fresh-row regression evidence”—is visually subordinate and its destination/result is not shown. Dense specialist language, very small labels, an illegible desktop phylogeny, and a mobile header that omits the current Arena location weaken self-guided comprehension.",
+    "fix": "Make fresh-row testing the dominant CTA beside the verdict, state what it will reveal, and show a compact fresh-row result or explicit pending state on-screen. Simplify the explanatory copy, enlarge key labels, and preserve a visible Arena/current-section indicator on tablet and mobile.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "89a2582c796992b7c8aebd76a55ea144dc7de836a7c45119639460bb02be2b77",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205761,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "3e224039d752dd5dbf3adece37fea839753e9607e97c6bee15db3b9c717a3228",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 198936,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "e91298f1c3657c620037c7981857dbf1a757c6c54fe76dcacddca08e181159da",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "080437747680899383a8c0d8a72d70a7bbfdce4a027f0b8448eb387a34708a87",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d3eb1e30c261ea901c31f6c9c7bf6658d59731b5a1e64d0522f31aa4d272d05f"
+  }
+}

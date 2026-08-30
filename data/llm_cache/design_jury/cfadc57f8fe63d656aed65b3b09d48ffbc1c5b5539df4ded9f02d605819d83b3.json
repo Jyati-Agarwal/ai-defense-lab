@@ -1,0 +1,51 @@
+{
+  "cache_key": "cfadc57f8fe63d656aed65b3b09d48ffbc1c5b5539df4ded9f02d605819d83b3",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen frames the right defense concept—replaying a payment and comparing legacy controls with five intent-integrity evidence layers—but the visible result contradicts its core promise. The headline says “Two very different answers,” while the selected trace shows Legacy ALLOW and Intent Integrity ALLOW. It also reports no intent playback and no structured cart, yet claims comparison of the paid cart with the delegated mission and labels this the “same signed payment.” All eight visible events are low-risk ALLOWs, so no intent violation or defensive intervention is demonstrated. The screenshots also provide no explicit Mastercard-specific linkage. Successful API responses and clean browser execution prove delivery, not relevance of the demonstrated outcome.",
+    "fix": "Default to a complete flagship trace with signed intent and structured cart evidence where legacy policy ALLOWs but intent integrity BLOCKs or CHALLENGEs a clear mission/cart mismatch. Expose the causal seam, evidence-layer votes, and resulting intervention on this screen, and add a concrete Mastercard/network integration point relevant to the brief. Keep the current both-ALLOW case only as a legitimate control example.",
+    "score": 5,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 474596,
+        "sha256": "c912a074c3815852041e91e0dd7fb6cc32c5350e4c6cfc545245b6d0517e1959",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 411445,
+        "sha256": "5b339e8267bd3e58916115d5a2be590a5b1c7ddca9f954a1dad9ea2e7cce3dac",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 352764,
+        "sha256": "2c3fc91954ca73981d9f36d638b81fc8d445cc1b36a72bcd24630dab3dfa39cb",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "eb0abdd82e0a50c73b88ba5e6c76e1b11ba812a16ce2d0ed02bb476fe5fca76e",
+    "schema_version": 3,
+    "sha256": "cfadc57f8fe63d656aed65b3b09d48ffbc1c5b5539df4ded9f02d605819d83b3"
+  },
+  "response": {
+    "id": "resp_07da61bbef234543016a90838bc15c87d085bce00ce2c666e5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6313,
+      "input_tokens_details": {
+        "cache_write_tokens": 6310,
+        "cached_tokens": 0
+      },
+      "output_tokens": 515,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 6828
+    }
+  }
+}

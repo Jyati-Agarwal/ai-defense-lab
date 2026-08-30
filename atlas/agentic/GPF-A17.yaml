@@ -1,0 +1,13 @@
+id: GPF-A17
+name: Shopping-agent registry impersonation
+tier: agentic
+description: An attacker-controlled client presents an identifier resembling a trusted registered purchasing agent.
+kill_chain_stage: reconnaissance
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous payment initiation
+primitives: [reconnaissance, tool_manip, payment_manip]
+observable_signals: [agent key registry miss, lookalike identifier, attestation absent]
+defense_hooks: [agent-key registry, workload attestation]
+severity: critical
+feasibility_today: true

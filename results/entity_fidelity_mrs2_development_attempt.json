@@ -1,0 +1,63 @@
+{
+  "artifact": "entity_fidelity_mrs2_development_attempt",
+  "completejourney": {
+    "amount_unit": "USD cents",
+    "dataset": "completejourney",
+    "development_baskets": 62078,
+    "development_household_ids_sha256": "2c4a11a1e1f14cab0739529982e9c5b1de856e8df5c3de4e786ac220bc1c873f",
+    "development_households": 988,
+    "development_parquet_hash_source": "immutable Complete Journey manifest",
+    "development_parquet_opened_before_preregistration": false,
+    "development_parquet_path": "data/reference/completejourney/completejourney_development.parquet",
+    "development_parquet_sha256": "7738b7d8666e58176aafd4c667e3c72d99155fc91b5f294ffe38f2aa00de1676",
+    "manifest_path": "data/reference/completejourney/completejourney_reference.manifest.json",
+    "manifest_sha256": "a42365103c1793a9101772fa77aee4fbdabae77a28a99d923b239756b44d5e91",
+    "mrs1_r2_preregistration_path": "results/entity_fidelity_mrs1_r2_preregistration.json",
+    "mrs1_r2_preregistration_sha256": "acda94871118682d34d73cb306b53682fc9cdbcb7c7ca625d09cc543fb2525eb",
+    "observation_end_exclusive": "2018-01-01T00:00:00",
+    "observation_start": "2017-01-01T00:00:00",
+    "qualification_households": 1481,
+    "qualification_parquet_opened": false,
+    "source_rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+    "timestamp_semantics": "source timezone-aware POSIXct converted to America/New_York local wall-clock, then timezone removed",
+    "version": "1.1.1"
+  },
+  "dependency_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+  "dependency_versions": {
+    "cryptography": "46.0.7",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.5",
+    "pyarrow": "21.0.0",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  },
+  "development_loader_imported_or_called": false,
+  "implementation_sha256": {
+    "sim/entity_fidelity_mrs2.py": "d8da2bc1898936b8ac86a9ff40f49985d7571410e07244bed05756deea20f5dc",
+    "sim/population_mrs2.py": "e45ab67a0b7c172bf72f46ac7835c1fc50b036cdd7a8a9bdb8e1d43cd03ef597",
+    "tests/test_entity_fidelity_mrs2.py": "8bc28996b37f68049a26868ae94835ae79ae276e9dd8274d07acee65206d8bad",
+    "tests/test_population_mrs2.py": "02a5a685e04f758de3626f776a2087f2a10d8cb1c012595860f7015dbf1f1f11"
+  },
+  "mrs1_stop_protocol_sha256": "3670720a2fd0e61b2769173c19e0d4cadd631586e0d1b958dfee9d132ea382ff",
+  "mrs2_preregistration_sha256": "906467fa115914e5102ecd5924c2c5cebc299864bd79ba34f4ce00db6e544b94",
+  "qualification_accessed": false,
+  "retry_permitted": false,
+  "runtime_dependency_sha256": {
+    "scripts/download_completejourney_reference.py": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+    "scripts/download_retail_ii_reference.py": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "scripts/download_retail_reference.py": "d17e98ecfb88b2905055b8469606b1d6cebacb9f11aef822a3b32f41ca17a9f1",
+    "sim/completejourney_reference.py": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+    "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+    "sim/entity_fidelity_mrs1.py": "647a8272422f0b03225252ab584cc3602d37f9415de860465135c984ac2093e2",
+    "sim/entity_fidelity_v4.py": "91334afd5d5f0f53b0bbe527920ee6a18b7e2a27b8f2c1610483f878cb01d871",
+    "sim/mandate_twin.py": "1192c6b7122af4c62102cd30a4de9a2076b08afe4660d66ce4cb98da4022ddf5",
+    "sim/population.py": "a68b006f4f76f0304b80cfa2ea1de57e8ee095c077265da6a6e14daee459d107",
+    "sim/population_mrs1.py": "411dcb3f40ef39b72897a2e2a2e32cf83b71bdc61a92a06c057965dafdd5fe8b",
+    "sim/population_v4.py": "19025a531144418ccda6ac744f6126e839c5a4dd4ccde4d4deddbb1ef3fc40d0"
+  },
+  "schema_version": "mrs2",
+  "status": "CONSUMED_ONE_SHOT",
+  "uci_sources_accessed": false
+}

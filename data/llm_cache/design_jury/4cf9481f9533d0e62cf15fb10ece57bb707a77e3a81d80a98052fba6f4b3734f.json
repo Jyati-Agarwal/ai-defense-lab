@@ -1,0 +1,70 @@
+{
+  "cache_key": "4cf9481f9533d0e62cf15fb10ece57bb707a77e3a81d80a98052fba6f4b3734f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, subtitle, 85%/100% comparison, explicit 0% gap definition, and deployment decision consistently communicate that this is a post-remediation regression—not an independent holdout or production-readiness proof. However, the screen does not provide a clear next action for obtaining the required independent holdout; “Hide scope evidence” only toggles the decorative/evidence panel. Dense jargon, very small metadata, and the oversized low-information vault graphic weaken scanability, especially on mobile.",
+    "fix": "Add a primary action beside the deployment decision, such as “Run independent holdout,” with a short statement of what dataset and success threshold it will use. Reduce or collapse the vault graphic, enlarge critical metadata, and turn the evidence into a simpler sequence: result, limitation, required next test.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ed5ce16a1c7d0078aac6284d73b7eac97e094a489180d268e29aeee94a1c70fa",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 367163,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "2a0494d7125a9028cedc7b0ae0b26e708acb84beef29275d14cac14fda8dbafa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 246057,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "fa0bcdf9e2b61b52b557171482d1e7f35f934f7a6836a2d13c501b0878546f70",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 193550,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "d48209d70ed0fea40e330a07ab1bd7e531ee6797c628dbcee223c6872455e2c2",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "224957912a05c4e0ea5496e4d1a07718b63bac6b28269dd4047a6e1139f318ef",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4cf9481f9533d0e62cf15fb10ece57bb707a77e3a81d80a98052fba6f4b3734f"
+  }
+}

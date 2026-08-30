@@ -1,0 +1,51 @@
+{
+  "cache_key": "24c7e9fe5a8d1e7accd92d489ed3b30d786f84cc7cff5ed1c100298b534e5466",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances the intent-integrity story: a borderline purchase intent is compared with five legitimate precedents, changing the decision from BLOCK to ALLOW and explicitly suppressing a false positive. However, the visible proof stops at labels and similarity percentages. It does not show how legitimacy was verified, what features produced 97–99% similarity, an auditable link to the original decision, or Mastercard-specific identity, authorization, payment, or network signals. Successful API responses prove delivery, not those claims.",
+    "fix": "Add an evidence drawer for each precedent showing verification source, decisive similarity features, timestamp/provenance, and the exact policy or risk-score delta that changed BLOCK to ALLOW; connect these to concrete Mastercard transaction or authorization signals and an auditable case ID.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 427809,
+        "sha256": "3969a8d2522a55678dd4dc3909be2722fffcb839c2445cbd0fd69e239386fc4d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 357587,
+        "sha256": "acb0e9af4b9c3a7740cab7759b469882c723e9f0b914abc22fc681f7bec1544b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 288019,
+        "sha256": "19ebe45cfee28516b7f29b600d3f99c0aaa875faa909c9c245507f9395a186e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b6969d1f55df78b3cc114e3efc6d2780e7f626df9dc3bcf464d92dd3cd339bab",
+    "schema_version": 3,
+    "sha256": "24c7e9fe5a8d1e7accd92d489ed3b30d786f84cc7cff5ed1c100298b534e5466"
+  },
+  "response": {
+    "id": "resp_0f13fb7de08f6750016a9083a50f7887d09faad15c218ae72f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6233,
+      "input_tokens_details": {
+        "cache_write_tokens": 6230,
+        "cached_tokens": 0
+      },
+      "output_tokens": 507,
+      "output_tokens_details": {
+        "reasoning_tokens": 321
+      },
+      "total_tokens": 6740
+    }
+  }
+}

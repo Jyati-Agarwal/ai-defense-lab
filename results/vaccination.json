@@ -1,0 +1,71 @@
+{
+  "seed": 20260827,
+  "events_file_sha256": "70df47a2326de5e1b2c2dde65259c5d346dabe6e40986d5e6a07affd48d9f98c",
+  "events_manifest_sha256": "9d027cdbf8d63082347229a8ca54b5ef7edf42d6bd88307d85ad4d3d3641fca6",
+  "behavior_profile_sha256": null,
+  "evaluation_preregistration_sha256": "c96d62b877f953b7733cb93d83c81c94f73e847854a42a9176aaf4f3b1913c96",
+  "key_registry_sha256": "825c338734e3c1eb5acc20d9b74a5a94ef56bfc331a7e224881ca3f2ad1552d6",
+  "candidate": "fanout-reduction+slow-negotiation+topic-blending",
+  "candidate_status": "rejected",
+  "stages": [
+    {
+      "name": "Candidate mini-dataset + shallow rule",
+      "status": "passed"
+    },
+    {
+      "name": "Reserved survivor holdout",
+      "status": "passed"
+    },
+    {
+      "name": "Old-path regression",
+      "status": "passed"
+    },
+    {
+      "name": "Benign E regression",
+      "status": "rejected"
+    },
+    {
+      "name": "Calibration check",
+      "status": "rejected"
+    },
+    {
+      "name": "Human promotion boundary",
+      "status": "rejected"
+    }
+  ],
+  "before_score": 0.27717176,
+  "after_score": 0.65,
+  "benign_regression_delta": 0.202,
+  "model_version": "intent-integrity-v1",
+  "candidate_artifact": null,
+  "promoted_artifact": null,
+  "live_model_unchanged": true,
+  "live_model_sha256": "7b167cbe572bba2668ec52d1f387cbf949b112ef750cfeb7a5ca960a79fd934f",
+  "arena_log_sha256": "3e56c15b82583c318a5b64dee171f2379a47a8f9ec6c54ee9894a97e72879134",
+  "arena_survivors_sha256": "100d52b7f3c03d1ecd9bb7ac474f1c58f3fc441ee1a8991a92fe375ee64ea265",
+  "arena_release_sha256": "b92112706d309cc7c7daa296db0c2f357a04e2724c0d8980788ea45611b96008",
+  "stopwatch_ms": 17.334163,
+  "mini_dataset": {
+    "vaccine_training_survivors": 2,
+    "reserved_survivor_holdout": 1,
+    "historical_legitimate_A_B": 30,
+    "reserved_benign_E": 1000
+  },
+  "policy_patch": {
+    "minimum_score": 0.65,
+    "rule_threshold": 0.5,
+    "scope": "rule-matched scores below 0.60; HOLD/BLOCK stops payment"
+  },
+  "before_score_source": "exact frozen post-arena live-model score on never-trained final-round survivors",
+  "shallow_tree_rule": "|--- payee_novelty <= 0.50\n|   |--- class: 1\n|--- payee_novelty >  0.50\n|   |--- velocity_1h <= 0.50\n|   |   |--- class: 0\n|   |--- velocity_1h >  0.50\n|   |   |--- class: 0\n",
+  "checks": {
+    "survivor_stop_rate_before": 0.0,
+    "survivor_stop_rate_after": 1.0,
+    "old_stop_rate_before": 1.0,
+    "old_stop_rate_after": 1.0,
+    "benign_e_stop_rate_before": 0.0,
+    "benign_e_stop_rate_after": 0.202,
+    "brier_before": 0.00293143,
+    "brier_after": 0.34344765
+  }
+}

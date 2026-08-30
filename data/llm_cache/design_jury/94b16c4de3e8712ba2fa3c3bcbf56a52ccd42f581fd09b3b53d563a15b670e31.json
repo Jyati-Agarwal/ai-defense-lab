@@ -1,0 +1,70 @@
+{
+  "cache_key": "94b16c4de3e8712ba2fa3c3bcbf56a52ccd42f581fd09b3b53d563a15b670e31",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Composer passed scoped automated checks at all three viewports: 10/10 controls were keyboard-reachable with visible focus, no touch-target or viewport-overflow violations were found, and reduced-motion sampling detected no moving elements. However, hackathon-ready proof is incomplete: contrast was not conclusively measured, with serious color-contrast checks unresolved in the document/header, and there is no evidence that launch/result updates are announced to screen readers. The document also has one serious unresolved prohibited-ARIA finding.",
+    "fix": "Provide definitive contrast measurements and remediate failures; give the comparison container valid semantics instead of aria-label on a roleless div; announce launch status and changed results through an appropriate live region; then verify the full flow with a screen reader and keyboard at every viewport.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "44ef405934c2c7b92847ad18def9f46f16c560019f9efc86129181513f0372ca",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 165130,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "531f821a175de8eb2e22e7e223747a31f567a4a572d0b580fd6b10de6231c7d5",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154149,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "535d1441d90ce8f3095156666d60e721d5bebcc4884b63169e33ff862af41f2f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157904,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "8669299ac60859bd1feb17543b9d88bbe5a926ee454c989a96f1f5af0b23b94f",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1f943f36b7374ac2d65f1ca2a1d5a691de47bfe05a202a9c95ce3d2087e2e201",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "94b16c4de3e8712ba2fa3c3bcbf56a52ccd42f581fd09b3b53d563a15b670e31"
+  }
+}

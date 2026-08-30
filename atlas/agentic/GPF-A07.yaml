@@ -1,0 +1,13 @@
+id: GPF-A07
+name: Prompt-playback intent suppression
+tier: agentic
+description: The agent records a benign playback summary while executing a materially different internal plan.
+kill_chain_stage: intent_manip
+channel: agentic_checkout
+rail: card
+genai_capability: natural-language plan summarization
+primitives: [intent_manip, tool_manip, payment_manip]
+observable_signals: [playback-to-cart mismatch, playback-to-tool mismatch, constraint omission]
+defense_hooks: [playback consistency model, canonical constraint checks]
+severity: critical
+feasibility_today: true

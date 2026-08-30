@@ -1,0 +1,70 @@
+{
+  "cache_key": "914240a8176816e27020288b114b0fca8c3f859b2a0e8d5c4fe9c0af955e94d7",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “one payment, two answers” premise, replay-to-forensic-trace transition, and cyan/red policy split create a clear demo narrative across viewports. However, most of the screen remains a familiar dark data table with status pills and bordered cards; the distinctive causal comparison is visually secondary and becomes a long stacked report on mobile. The global header reinforces the lab aesthetic but is also conventional numbered navigation.",
+    "fix": "Make the divergent decision the signature visual: animate or diagram one signed payment splitting into Legacy ALLOW and Intent Integrity BLOCK, with the causal evidence lighting the blocked branch. Reduce the surrounding transaction table to supporting context so the comparison owns the first memorable frame on every viewport.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3ebd58f9d95a5504d9a29fdffd3c2895eb90a5b19d9bcda170a340f75695bbfb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dc8d16c41a8728df4b090363452c7ab8a70c83032b844ccdabb4825506f5a9b4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "914240a8176816e27020288b114b0fca8c3f859b2a0e8d5c4fe9c0af955e94d7"
+  }
+}

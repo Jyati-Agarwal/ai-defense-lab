@@ -1,0 +1,51 @@
+{
+  "cache_key": "0f90711a67bc5f90fb116915ef39bf65559120794cf0c1663cfee1043834523b",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Across desktop, tablet, and mobile, the screen presents a cohesive, polished dark-grid visual system with disciplined cyan/green/red/yellow accents, strong headline hierarchy, crisp borders, and consistent mono metadata. Desktop composition balances the replay table with the trace analysis; tablet stacking remains orderly; mobile successfully converts the table into readable vertical records without visible clipping. It falls short of exceptional because mobile metadata and explanatory copy become very small and dense, the two-column decision card is cramped, and the stacked replay creates a long, visually repetitive page.",
+    "fix": "Increase mobile body/meta type and line spacing, stack the Legacy and Intent Integrity comparison vertically at the narrowest breakpoint, and tighten repetitive event-card spacing or add stronger grouping cues to reduce the long-scroll monotony.",
+    "score": 8,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 425774,
+        "sha256": "a4efa768627f6439207f04ef91e6b346a1c0aa0b1b3ab7137a766f01fe2a2edd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 375890,
+        "sha256": "4601f26df0d8559c0466fef20a7ea2c7af79b333fa32c9bf285fec30dafbc02a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 338746,
+        "sha256": "58f10b7931d30cb380d482c12fd4cec885361528deaff9e810eda434eaf21e67",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dfc83c704bffd7ac28e0f73de6d5b7883b7a71c913dc8fd25752ba1aacdca8ec",
+    "schema_version": 2,
+    "sha256": "0f90711a67bc5f90fb116915ef39bf65559120794cf0c1663cfee1043834523b"
+  },
+  "response": {
+    "id": "resp_0d1839ca1615ab9a016a907a6c29dc87d0af9ef1ffde413659",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6081,
+      "input_tokens_details": {
+        "cache_write_tokens": 6078,
+        "cached_tokens": 0
+      },
+      "output_tokens": 613,
+      "output_tokens_details": {
+        "reasoning_tokens": 428
+      },
+      "total_tokens": 6694
+    }
+  }
+}

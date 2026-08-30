@@ -1,0 +1,51 @@
+{
+  "cache_key": "48195c7512717c6c3af0d19e47fdb27b064a394c9a9d109e9f135377b6ed2f4a",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Responsive overflow, touch-target, and reduced-motion checks pass at 1440, 768, and 390 px: document width equals viewport width, no touch-target violations were measured, and reduced motion leaves the hero at opacity 1 with no transform. The skip-link target is present and sizable. However, every viewport has unresolved serious aria-prohibited-attr findings (6 nodes), critical duplicate-id-aria findings (2 nodes), and hundreds of unresolved serious color-contrast checks (553 desktop, 508 tablet, 484 mobile). The recorded keyboard path covers section navigation but does not prove keyboard operation, visible focus, or labeling of the composer selects, sliders, switch, and launch button.",
+    "fix": "Resolve and rerun the incomplete audits: remove prohibited ARIA attributes, make every referenced/label ID unique, and verify all text/control contrast against WCAG thresholds. Add composer-scoped keyboard tests that Tab through every control, show a visible focus indicator, change selects/sliders/switch with standard keys, activate Launch with Enter/Space, and confirm accessible names, roles, values, and error/status announcements.",
+    "score": 5,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "426481828c687557bcbb9819215b8470897b7f3034e457b07486a00a6691eec0",
+    "schema_version": 2,
+    "sha256": "48195c7512717c6c3af0d19e47fdb27b064a394c9a9d109e9f135377b6ed2f4a"
+  },
+  "response": {
+    "id": "resp_05e9a1aedd307c2a016a907ab96b8487d0ab66cdf0376013ff",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7801,
+      "input_tokens_details": {
+        "cache_write_tokens": 7798,
+        "cached_tokens": 0
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 8247
+    }
+  }
+}

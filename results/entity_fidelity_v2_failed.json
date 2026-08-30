@@ -1,0 +1,450 @@
+{
+  "behavior_profile": {
+    "activity_count_probabilities": [
+      0.33729508196721314,
+      0.18975409836065574,
+      0.12008196721311476,
+      0.09057377049180328,
+      0.0569672131147541,
+      0.038524590163934426,
+      0.033196721311475406,
+      0.02622950819672131,
+      0.014344262295081968,
+      0.013114754098360656,
+      0.013524590163934426,
+      0.010245901639344262,
+      0.007377049180327869,
+      0.005327868852459016,
+      0.009016393442622951,
+      0.0020491803278688526,
+      0.0028688524590163933,
+      0.003278688524590164,
+      0.001639344262295082,
+      0.0020491803278688526,
+      0.003278688524590164,
+      0.000819672131147541,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.002459016393442623,
+      0.000819672131147541,
+      0.0012295081967213116,
+      0.0020491803278688526,
+      0.0004098360655737705,
+      0.0012295081967213116,
+      0.0012295081967213116,
+      0.000819672131147541,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.000819672131147541,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705,
+      0.0004098360655737705
+    ],
+    "activity_count_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      37,
+      39,
+      41,
+      44,
+      45,
+      46,
+      51,
+      55,
+      62,
+      63,
+      73,
+      86,
+      91,
+      201,
+      209
+    ],
+    "activity_mean_transactions": 4.352868852459016,
+    "activity_variance_transactions": 69.42975806397408,
+    "amount_log_sigma": 0.3971070703453969,
+    "amount_log_sigma_quantiles": [
+      0.023898052960130586,
+      0.07230643261778673,
+      0.12384926114046613,
+      0.16918766460291448,
+      0.20257453378619128,
+      0.23713030964955534,
+      0.2721954808048917,
+      0.3000862633953662,
+      0.33841865030047014,
+      0.37674059907125634,
+      0.4178094828686459,
+      0.4662495083873927,
+      0.530329457469082,
+      0.595035421008103,
+      0.6690622329444899,
+      0.7794625435151714,
+      0.9229729125259717,
+      1.0767237577664195,
+      1.2946952316497202,
+      1.6805866480354235
+    ],
+    "calendar_weights": [
+      0.07409848413520384,
+      0.05376141606251766,
+      0.060352132567554846,
+      0.0691083702099614,
+      0.06392995009886075,
+      0.08426701817154693,
+      0.07899444496751719,
+      0.07475755578570756,
+      0.07315695320591281,
+      0.10130872799171453,
+      0.107240372846248,
+      0.1590245739572545
+    ],
+    "contains_raw_rows": false,
+    "customer_amount_log_sigma": 0.6779803531553397,
+    "hour_dirichlet_concentration": 18.220618156107076,
+    "hour_weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      9.415309292910272e-05,
+      0.001318143301007438,
+      0.027492703135297995,
+      0.0728744939271255,
+      0.11571415120986725,
+      0.12221071462197533,
+      0.1689106487148103,
+      0.14734959043404575,
+      0.12286978627247905,
+      0.11279540532906505,
+      0.05959890782412202,
+      0.030223142830241974,
+      0.009791921664626682,
+      0.007532247434328218,
+      0.0012239902080783353,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "schema_version": 1,
+    "session_repeat_probability": 0.1065222919343454,
+    "sha256": "c64c3560f91f1cff44e2fa904d022d6a2d6cfa70a95816bba732e82f1c9723e1",
+    "source": {
+      "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+      "customers": 2440,
+      "dataset": "UCI Online Retail 352",
+      "partition": "calibration",
+      "transactions": 10621,
+      "transactions_sha256": "3614fdd252819b132b5900ac085372e89a148f7f51784bc3d14149d09b22abc1"
+    },
+    "transactions_per_customer_day": 0.011664351984258635
+  },
+  "calibration": {
+    "amount_transform": "within-domain ECDF of log1p transaction amount, fitted on calibration customers only",
+    "real_median_interpurchase_seconds": 1897320.0,
+    "real_observation_window_seconds": 32242500.0,
+    "synthetic_elapsed_time_scale": 0.9974359777887241,
+    "synthetic_median_interpurchase_seconds_before_scale": 1382364.0,
+    "synthetic_observation_window_seconds_before_scale": 32325383.0,
+    "time_transform": "one global multiplier on synthetic elapsed durations, fitted from calibration observation-window duration"
+  },
+  "diagnostics": {
+    "dominant_feature": "amount_cv",
+    "dominant_feature_gain_share": 0.27797861890968123,
+    "evaluation_feature_quantiles": {
+      "real": {
+        "amount_cv": {
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.1761767155485517,
+          "0.75": 0.47765585884647416,
+          "0.9": 0.6637959825797571
+        },
+        "log1p_frequency_per_30d": {
+          "0.1": 0.0773228169424412,
+          "0.25": 0.0773228169424412,
+          "0.5": 0.14909355160641527,
+          "0.75": 0.27881524372122785,
+          "0.9": 0.49660071281592455
+        },
+        "log1p_max_burst_24h": {
+          "0.1": 0.6931471805599453,
+          "0.25": 0.6931471805599453,
+          "0.5": 0.6931471805599453,
+          "0.75": 0.6931471805599453,
+          "0.9": 1.0986122886681096
+        },
+        "log1p_median_interpurchase_days": {
+          "0.1": 2.499202496910107,
+          "0.25": 3.210544483338036,
+          "0.5": 3.87064380497866,
+          "0.75": 4.55037103362837,
+          "0.9": 5.132422023177372
+        },
+        "log1p_recency_days": {
+          "0.1": 2.0846432663063954,
+          "0.25": 3.0642139277329754,
+          "0.5": 3.9700036119532727,
+          "0.75": 5.043255967271145,
+          "0.9": 5.5896751223519585
+        },
+        "mean_hour_cos": {
+          "0.1": -0.9659258262890683,
+          "0.25": -0.9330127018922194,
+          "0.5": -0.8584091470980941,
+          "0.75": -0.7071067811865479,
+          "0.9": -0.6035533905932741
+        },
+        "mean_hour_sin": {
+          "0.1": -0.7071067811865471,
+          "0.25": -0.40854426798305565,
+          "0.5": -0.10531178296190004,
+          "0.75": 0.12426507957479,
+          "0.9": 0.49999999999999994
+        },
+        "median_log_amount_percentile": {
+          "0.1": 0.17334996704641747,
+          "0.25": 0.2971236230110159,
+          "0.5": 0.5044722719141324,
+          "0.75": 0.704830053667263,
+          "0.9": 0.849265605875153
+        }
+      },
+      "synthetic": {
+        "amount_cv": {
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.19927263428089448,
+          "0.75": 0.4271752196143081,
+          "0.9": 0.6992351251291101
+        },
+        "log1p_frequency_per_30d": {
+          "0.1": 0.0773228169424412,
+          "0.25": 0.0773228169424412,
+          "0.5": 0.14909355160641527,
+          "0.75": 0.33786693698676257,
+          "0.9": 0.5443670268555503
+        },
+        "log1p_max_burst_24h": {
+          "0.1": 0.6931471805599453,
+          "0.25": 0.6931471805599453,
+          "0.5": 0.6931471805599453,
+          "0.75": 0.6931471805599453,
+          "0.9": 1.0986122886681096
+        },
+        "log1p_median_interpurchase_days": {
+          "0.1": 2.3855485337665137,
+          "0.25": 3.0205845412499523,
+          "0.5": 3.878458346864927,
+          "0.75": 4.642206245679126,
+          "0.9": 5.086901674588247
+        },
+        "log1p_recency_days": {
+          "0.1": 1.7510041177881377,
+          "0.25": 2.772264531515087,
+          "0.5": 3.835952561421016,
+          "0.75": 4.848728274433504,
+          "0.9": 5.469031676167154
+        },
+        "mean_hour_cos": {
+          "0.1": -0.9829629131445341,
+          "0.25": -0.9330127018922194,
+          "0.5": -0.8660254037844387,
+          "0.75": -0.732962913144534,
+          "0.9": -0.6035533905932742
+        },
+        "mean_hour_sin": {
+          "0.1": -0.6320080220231916,
+          "0.25": -0.3456741486926069,
+          "0.5": -0.09395582979512944,
+          "0.75": 0.11736949296392835,
+          "0.9": 0.49999999999999994
+        },
+        "median_log_amount_percentile": {
+          "0.1": 0.15068934646374216,
+          "0.25": 0.2758504923903312,
+          "0.5": 0.4798119964189794,
+          "0.75": 0.7035810205908684,
+          "0.9": 0.847291853178156
+        }
+      }
+    },
+    "feature_importance_gain": {
+      "amount_cv": 3311.5889015197754,
+      "log1p_frequency_per_30d": 624.2261588573456,
+      "log1p_max_burst_24h": 836.7424865961075,
+      "log1p_median_interpurchase_days": 1602.6482046246529,
+      "log1p_recency_days": 2197.8602222800255,
+      "mean_hour_cos": 600.0673744678497,
+      "mean_hour_sin": 837.234650850296,
+      "median_log_amount_percentile": 1902.7385357916355
+    },
+    "frequency_and_burst_gain_share": 0.12263540506103289,
+    "hour_of_day_gain_share": 0.12064880147734121,
+    "interpretation": "Post-hoc model gain identifies which predeclared behavior features separate the populations; it is diagnostic evidence, not causal proof, and was not used to change the gate."
+  },
+  "features": [
+    "median_log_amount_percentile",
+    "amount_cv",
+    "mean_hour_sin",
+    "mean_hour_cos",
+    "log1p_median_interpurchase_days",
+    "log1p_frequency_per_30d",
+    "log1p_recency_days",
+    "log1p_max_burst_24h"
+  ],
+  "limitations": [
+    "UCI Online Retail is one UK non-store retailer from 2010-2011, not a payment-network population.",
+    "Filtered invoices are retail purchases, while canonical synthetic events represent payment events.",
+    "Amounts are compared by calibration-only within-domain log ECDF because GBP and INR levels are not semantically comparable.",
+    "UCI InvoiceDate has no published timezone; hour-of-day is used as recorded.",
+    "No fraud label exists in this gate and no claim about fraud realism is made."
+  ],
+  "metrics": {
+    "bootstrap_auc_ci_95": [
+      0.6462004344542592,
+      0.6919735477178421
+    ],
+    "bootstrap_auc_mean": 0.670386016215666,
+    "bootstrap_auc_std": 0.01191938172683269,
+    "diagnostic_threshold_met": false,
+    "gate_passed": null,
+    "roc_auc": 0.670790057616102,
+    "threshold_max_auc_upper_95": 0.65
+  },
+  "protocol": {
+    "bootstrap_repeats": 1000,
+    "classifier": "seeded deterministic LightGBM nonlinear discriminator trained only on calibration customers",
+    "diagnostic_rows_used_for_profile_or_classifier_fit": false,
+    "evaluation": "one held-out prediction per real/synthetic customer; stratified customer bootstrap percentile CI",
+    "evaluation_partition": "diagnostic",
+    "gate_rule": "pass only when the 95% bootstrap AUC upper bound is <= 0.65",
+    "predeclared_before_evaluation": true,
+    "sealed_final_requires_confirmation": "APPROVED_SINGLE_FINAL_SCORE",
+    "sealed_final_rows_used_for_profile_classifier_fit_or_diagnosis": false,
+    "sealed_final_scored": false,
+    "split": "SHA-256 customer assignment; 55.0% calibration, 22.5% diagnostic, 22.5% sealed final",
+    "threshold_selected_before_run": true,
+    "unit": "customer"
+  },
+  "reference": {
+    "dataset_id": 352,
+    "excluded_cancellation_line_items": 9288,
+    "excluded_missing_customer_line_items": 134697,
+    "excluded_nonpositive_price_line_items": 40,
+    "excluded_nonpositive_quantity_line_items": 0,
+    "input_line_items": 541909,
+    "license": "CC BY 4.0",
+    "manifest_path": "data/reference/online_retail.manifest.json",
+    "manifest_sha256": "0fca9904171c1382bfdd8dc1369929a310817a63472474dc61dee4a4ae800cb9",
+    "path": "data/reference/online_retail.xlsx",
+    "rows": 541909,
+    "source_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+    "usable_customers": 4338,
+    "usable_invoices": 18532,
+    "usable_line_items": 397884,
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "schema_version": 2,
+  "scope": "Entity/behavioral fidelity of legitimate purchase timing and value only; not payment fraud, authorization, merchant, graph, text, or intent fidelity.",
+  "seed": 20260827,
+  "software": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5"
+  },
+  "splits": {
+    "real": {
+      "all_partitions_disjoint": true,
+      "calibration": {
+        "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+        "customers": 2440,
+        "transactions": 10621,
+        "transactions_accessed": true
+      },
+      "diagnostic": {
+        "customer_ids_sha256": "b4f75eadaf75581dc46b725126364e30fc7df8cc7da616bd04b087e70036cb66",
+        "customers": 964,
+        "transactions": 4014,
+        "transactions_accessed": true
+      },
+      "sealed_final": {
+        "customer_ids_sha256": "a0ec7b1f719bcbe8304eaf1748d040ada0a67daea4cad66648a40ce703e9cc2f",
+        "customers": 934,
+        "transactions_accessed": false
+      }
+    },
+    "synthetic": {
+      "all_partitions_disjoint": true,
+      "calibration": {
+        "customer_ids_sha256": "fd4d30ec7a9cc8cc9f990c34b115b155293ec324c567a2cfff8c2d4dc332cceb",
+        "customers": 2495,
+        "transactions": 11170,
+        "transactions_accessed": true
+      },
+      "configured_customers": 4500,
+      "diagnostic": {
+        "customer_ids_sha256": "3a86af31183c658860911848580d796c727e8554fa4513ee68eeb2def3dde18f",
+        "customers": 978,
+        "transactions": 4156,
+        "transactions_accessed": true
+      },
+      "observed_customers": 4500,
+      "sealed_final": {
+        "customer_ids_sha256": "083865c30f78e4eea200a18be45340b56701e9c795ae34ce8bf0c217ca0fe04f",
+        "customers": 1027,
+        "transactions_accessed": false
+      }
+    }
+  },
+  "synthetic": {
+    "behavior_profile_sha256": "c64c3560f91f1cff44e2fa904d022d6a2d6cfa70a95816bba732e82f1c9723e1",
+    "events": 19588,
+    "generator": "sim.population.PopulationSimulator.iter_legitimate",
+    "transactions_sha256": "6df0158e42f9d4a6cac67e1f530467aff3ad9896eac48e99cdbabffa547492f1"
+  }
+}

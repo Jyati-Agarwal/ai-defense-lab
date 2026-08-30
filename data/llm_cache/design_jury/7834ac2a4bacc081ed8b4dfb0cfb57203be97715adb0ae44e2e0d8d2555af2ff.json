@@ -1,0 +1,51 @@
+{
+  "cache_key": "7834ac2a4bacc081ed8b4dfb0cfb57203be97715adb0ae44e2e0d8d2555af2ff",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The screen has a cohesive, polished dark-grid visual system, strong cyan/red/yellow semantic accents, clear headline-to-card hierarchy, and a well-resolved responsive card on desktop, tablet, and mobile. Typography and spacing remain readable at all three sizes. However, the tablet header navigation is visibly clipped beneath the fixed red-mode control, while the mobile viewport drops the entire brand/navigation header, creating an inconsistent frame across viewports. Tablet/mobile headline edges also show distracting red/cyan fringing, and the desktop composition leaves the explanatory artifact block visually detached in a large empty area.",
+    "fix": "Make the global header deliberately responsive: collapse navigation into a compact menu on tablet and retain a small branded header on mobile instead of clipping or removing it. Eliminate unintended chromatic fringing on large type, and tighten the desktop hero by aligning the results-artifact explanation more clearly with the intro copy or card grid.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 264664,
+        "sha256": "880831cf74b646453504d96da5006a2c0e36028ba730f4d9848ed906f963a541",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 219066,
+        "sha256": "de00979af68e3af50c863a833041bfe36dc1b2368f68580e566a6fd17e1826f7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180686,
+        "sha256": "34ce6d19ad0e789dfdccd32deaf4ae7dc712e7a30cd2b9f9afe13c7c6228df49",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0e3776399cf52861bcdca2c43cc335e8c70ef43023274f37cd58a7cecb62b8d6",
+    "schema_version": 3,
+    "sha256": "7834ac2a4bacc081ed8b4dfb0cfb57203be97715adb0ae44e2e0d8d2555af2ff"
+  },
+  "response": {
+    "id": "resp_09c9f6fada0bad8c016a9083daa78887d097cbd02b732598f8",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4659,
+      "input_tokens_details": {
+        "cache_write_tokens": 4656,
+        "cached_tokens": 0
+      },
+      "output_tokens": 615,
+      "output_tokens_details": {
+        "reasoning_tokens": 400
+      },
+      "total_tokens": 5274
+    }
+  }
+}

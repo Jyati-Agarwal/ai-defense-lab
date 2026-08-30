@@ -1,0 +1,13 @@
+id: GPF-A23
+name: UPI collect disguised as agent checkout
+tier: agentic
+description: A tool presents an inbound collect request as the final step of a normal autonomous purchase.
+kill_chain_stage: payment_manip
+channel: upi_collect
+rail: upi
+genai_capability: cross-rail payment tool selection
+primitives: [context_manip, intent_manip, tool_manip, merchant_manip, payment_manip]
+observable_signals: [payment direction mismatch, checkout-to-collect rail switch, new requester VPA]
+defense_hooks: [rail-direction constraint, explicit collect confirmation]
+severity: critical
+feasibility_today: true

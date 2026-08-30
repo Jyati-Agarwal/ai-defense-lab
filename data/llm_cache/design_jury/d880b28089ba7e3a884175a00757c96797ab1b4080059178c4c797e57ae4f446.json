@@ -1,0 +1,70 @@
+{
+  "cache_key": "d880b28089ba7e3a884175a00757c96797ab1b4080059178c4c797e57ae4f446",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Measured entry motion is consistent across all viewports: a restrained 22px fade/translate settles smoothly in roughly 375–413ms. Overall frame timing is near 16.66ms with 0 long-frame ratio; mobile and tablet motion worst frames stay at 16.8ms and 16.7ms. Reduced-motion correctly matches and produces zero changed elements. However, desktop entry sampling records a 33.4ms worst frame, and the evidence covers only one generic section-entry animation—no measured chart, comparison, button, or header interaction motion.",
+    "fix": "Eliminate the desktop 33.4ms frame and provide measured frame trajectories for meaningful interactive states, especially Compare Configurations and chart/metric transitions, with corresponding reduced-motion proof.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "86444f151a22e833b94a228426f9f60691c1d5c3bf407cd248b341a1714c7602",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 583446,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "b4f8f08e83c49331bb105831bbf9578aecf5bd60fb0dd124e7ab2368356d7543",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 540625,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "10c6c6490ce204e81f3508c26a7cafcddee2edf8751f697e625076abb3752b6e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 399290,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "9baca304c6b22df0628661fa2c19684fd067607d3d03e4a12511ba8ed79b8462",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "82d1c907c5a2b3d011b5cd9b6dff511aa0857f3b71fefc4ff4c295c3a1bd9cb5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d880b28089ba7e3a884175a00757c96797ab1b4080059178c4c797e57ae4f446"
+  }
+}

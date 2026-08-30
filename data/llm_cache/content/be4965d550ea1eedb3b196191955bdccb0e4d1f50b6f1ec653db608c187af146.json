@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-be4965d550ea",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "be4965d550ea1eedb3b196191955bdccb0e4d1f50b6f1ec653db608c187af146",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] कृत्रिम संवादातील धोका: बनावट तातडी व ओळख पडताळणी टाळण्याचा दबाव; कृतीयोग्य तपशील हटवले.",
+  "kind": "scam_transcript",
+  "language": "mr",
+  "operational": false,
+  "response": {
+    "id": "resp_007f67f9e4ee0a37016a8f5b6759e087d09dd299b0215227f4",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 298
+    }
+  },
+  "response_text_sha256": "f66cbfd5ca55044f6a310b5f8cbf01dc924a059a99c15afbfdffd4f3c05569cb",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "be4965d550ea1eedb3b196191955bdccb0e4d1f50b6f1ec653db608c187af146",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "scam_transcript",
+      "language": "mr",
+      "variant": "baseline"
+    }
+  }
+}

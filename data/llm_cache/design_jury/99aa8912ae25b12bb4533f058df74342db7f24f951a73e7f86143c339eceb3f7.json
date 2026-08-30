@@ -1,0 +1,51 @@
+{
+  "cache_key": "99aa8912ae25b12bb4533f058df74342db7f24f951a73e7f86143c339eceb3f7",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen materially advances the intent-integrity defense story by showing post-remediation fresh-row recall, known-scope comparison, frozen weights, chronological cutoff, label-shuffle baseline, and an explicit deployment decision. However, its own evidence says independent_holdout=false and concludes that an independent post-remediation holdout is still required. It also provides no visible Mastercard-, payment-, transaction-, or card-network-specific scenario or impact, so the hackathon-brief connection is not demonstrated on this screen.",
+    "fix": "Add results from a truly independent, undisclosed post-remediation holdout and tie them to a concrete Mastercard payment-flow threat, showing what protected intent is preserved, which manipulation is blocked, relevant false-positive/latency metrics, and the resulting deployment decision.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348142,
+        "sha256": "8e74a5455efe31feb187d14a3525c8d7f1fdcbeedeaf8d2f0eb38854befa8045",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3ad740d938f6947207edfa1d36a87083475af481a07b49b6bac5b38e1febe669",
+    "schema_version": 3,
+    "sha256": "99aa8912ae25b12bb4533f058df74342db7f24f951a73e7f86143c339eceb3f7"
+  },
+  "response": {
+    "id": "resp_013b71841a4587c1016a9083b9a62087d0bef28c3246917487",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6887,
+      "input_tokens_details": {
+        "cache_write_tokens": 6884,
+        "cached_tokens": 0
+      },
+      "output_tokens": 420,
+      "output_tokens_details": {
+        "reasoning_tokens": 238
+      },
+      "total_tokens": 7307
+    }
+  }
+}

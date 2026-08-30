@@ -1,0 +1,70 @@
+{
+  "cache_key": "2190b83e51ab6416ba878d8287d141d5feb26f227f93f897304f4de7fc86983c",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The red-mutator versus blue-defense framing, oversized thesis, neon split panels, attack replay trace, and fraud phylogeny create a coherent adversarial-lab identity. However, the most distinctive artifact—the phylogeny—is tiny on desktop and becomes ordinary stacked mutation rows on tablet/mobile; the vaccination sequence and global header read as familiar dashboard/card UI. The screenshots therefore do not prove a singular demo moment across viewports.",
+    "fix": "Make the evolving red/blue mutation phylogeny the arena’s dominant, legible centerpiece across every viewport, with an unmistakable replay-to-survivor transition; compress secondary cards and replace the clipped mobile header rail with a deliberate compact navigation treatment.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a74de5374d40c21f1cc6d324aa1b04763bfb50c6d96a7e1077b1787eb775e468",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 688471,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "1db9af3220fc6f044966a1fc3a8e073d3f2fe63aac95b7ceef9b5f61820a64da",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8635478c854c336c8297513d474095b8a2eb4a2c6978e337c2d9f2c65becd717",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2190b83e51ab6416ba878d8287d141d5feb26f227f93f897304f4de7fc86983c"
+  }
+}

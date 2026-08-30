@@ -1,0 +1,13 @@
+id: GPF-A27
+name: Autonomous refund payee diversion
+tier: agentic
+description: A service agent accepts a refund destination supplied by untrusted context instead of original tender.
+kill_chain_stage: cash_out
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous after-sales resolution
+primitives: [context_manip, tool_manip, merchant_manip, payment_manip, cash_out]
+observable_signals: [refund destination mismatch, untrusted context source, refund tool without user approval]
+defense_hooks: [original-tender enforcement, refund approval binding]
+severity: high
+feasibility_today: true

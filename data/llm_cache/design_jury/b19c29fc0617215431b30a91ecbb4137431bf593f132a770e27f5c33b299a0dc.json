@@ -1,0 +1,70 @@
+{
+  "cache_key": "b19c29fc0617215431b30a91ecbb4137431bf593f132a770e27f5c33b299a0dc",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 69.6% recall limitation, evidence-gap label, next control, and prominent CTA form a clear narrative across all three viewports. However, “Results artifact” does not visibly identify or expose the cited artifact, and “Test an uncertain case” gives no indication of what opens or what input is required. On tablet/mobile, the global header also hides the current “Unknowns” location behind the horizontal navigation, weakening orientation.",
+    "fix": "Make the artifact label a clearly named, inspectable link and add one line beneath the CTA explaining its destination and expected task. Keep “12 Unknowns” visibly selected in the responsive header.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2b5ed38bfa47ca93534916b9131782f1f5398bad45059f922a788b2c5bf1df34",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 115761,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "c585634ff9771743647623e024e8917255058feb6c6ff2ae20e73f2dc6d8f5d6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 94743,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "d044bb63ed20f93b1a3eede6c12c8f3253866d2004948453073dd84b0d3f6c14",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 94401,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "bf044eca0de69825e8984c87d588a3f6e300865eac050b404c0b577a9d3ad8d5",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb867f0eced88966292d5ff83933edcfbe68bf5cba1b75b21bdae0a29bb83b03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "b19c29fc0617215431b30a91ecbb4137431bf593f132a770e27f5c33b299a0dc"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "5eaac5c8062d4f43935521409bc4b7cccbe28c5721156b4b4dd3c3d32c7d9d53",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the defense story with before/after attacker economics, measured ROI, break-even framing, and an explicit authorization-time intent intervention. It responsibly labels the Mastercard mapping as proposed and distinguishes simulation results from live network outcomes. However, the economic improvement is not causally connected to the proposed intent signal, and there is no Mastercard integration, authorization-flow demonstration, or measured issuer/payment-network outcome. The post-defense ROI also remains 25.60×, so deterrence is explicitly unproven.",
+    "fix": "Add a demonstrated authorization-time flow showing the intent signal changing an issuer decision, then trace that intervention to the ledger inputs and ROI calculation. Provide measured outcomes against a baseline and clearly identify which evidence comes from the demo versus a Mastercard/network integration.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "cd961f8f10dc07ee831013f5d3a8755e25eea064b566bd56fe6404bf9515066d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 227948,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "9ee959e011ea4d7cc9015fc74e61f006b77dca77d1b11335801f95d1d5baa3cd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 187441,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "df3993155f45904ad413f4195170c7dd5fee9790ec719586eb56f6fae83d9fe5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 182945,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "52e62f22456d90d53529c32a129d16f9041f4a94cf8cdc5fa7735f5c64a94934",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1ea65c3755377f750bafee16c1ab01ac7d964d4707425571a5158a1f5c994c97",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "5eaac5c8062d4f43935521409bc4b7cccbe28c5721156b4b4dd3c3d32c7d9d53"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "3ae6b65724af77e4841191a25f184f9bbb5177b44357657332fb4e9a9d95878b",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly supports the intent-integrity story: users compose a bounded synthetic payment attack, send it through a live /compose POST, compare Legacy Rules with Intent Integrity on the same event, and inspect five evidence layers plus decision reasons. UPI, amount, beneficiary graph, payees, price, and budget utilization make it relevant to Mastercard’s payment-risk domain. However, the demonstrated state shows ALLOW versus ALLOW, fused risk 0/100, and mostly zero-valued evidence despite instruction shifting, evasion, delegation, and a false human-presence claim. There is no visible proof that changing an attack control produces a meaningful policy divergence, so the core defense advantage is asserted rather than demonstrated.",
+    "fix": "Make the default demo path visibly prove the defense delta: provide a one-click attack preset that yields Legacy ALLOW versus Intent Integrity HOLD/BLOCK, with recalculated layer scores and reasons explicitly tied to the manipulated controls. Show the corresponding payment consequence and a trace/request identifier from the live inference so judges can verify the same Mastercard-relevant transaction drove both decisions.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 420450,
+        "sha256": "eff805f4de1e3b50f06e95ce7432f75f47dc4dcabe382402414879b79a1f76ba",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393089,
+        "sha256": "c9c19e4264824f51ef1170cfe3f41a32a3de1748c07e4ee898f05dbd3ff5b338",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308212,
+        "sha256": "fd17cf5cab95cd3d911c86977d198c8786dd85d60ab4187c57f1eeb9ab278c00",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "cbecf8416135d10830be7894697a32d93e526566c0def13fcd86a2297871eb59",
+    "schema_version": 3,
+    "sha256": "3ae6b65724af77e4841191a25f184f9bbb5177b44357657332fb4e9a9d95878b"
+  },
+  "response": {
+    "id": "resp_0fe0750341ff3058016a9083d7298487d0a89b8bc04a84a6be",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6194,
+      "input_tokens_details": {
+        "cache_write_tokens": 6191,
+        "cached_tokens": 0
+      },
+      "output_tokens": 581,
+      "output_tokens_details": {
+        "reasoning_tokens": 335
+      },
+      "total_tokens": 6775
+    }
+  }
+}

@@ -1,0 +1,756 @@
+{
+  "artifact": "entity_fidelity_mrs1_frozen_protocol",
+  "dependency_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+  "dependency_versions": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  },
+  "development_diagnostic_status": "STOP_FAIL",
+  "development_fit_diagnostic": {
+    "crossfit_scope": "discriminator/calibration_only",
+    "gate_passed": false,
+    "metrics": {
+      "bootstrap_max_seed_d_ci_95": [
+        0.9539664484413093,
+        0.9666345831876081
+      ],
+      "bootstrap_max_seed_d_mean": 0.9603379745530114,
+      "orientation_free_max_seed_d": 0.9583943357784709,
+      "threshold_max_d_upper_95": 0.65
+    },
+    "not_release_evidence": true,
+    "optimistic": true,
+    "out_of_sample": false,
+    "profile_scope": "all_development",
+    "seeds": {
+      "20260827": {
+        "fold_weighted_d": 0.9579580138762208,
+        "folds": [
+          {
+            "auc": 0.9624233270091547,
+            "d": 0.9624233270091547,
+            "evaluation_customer_ids_sha256": "1080f8edb9095bc6091bcfe7bde9901b6b32c8e556d421adc37e9537ac51dd7a",
+            "evaluation_real_customers": 233,
+            "evaluation_synthetic_customers": 233,
+            "fold": 0,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "03a1050c59d12c8ec758edfadde92b6e78a4cae555eac5109f5997a07ba7fed5",
+            "training_real_customers": 755
+          },
+          {
+            "auc": 0.947846479059321,
+            "d": 0.947846479059321,
+            "evaluation_customer_ids_sha256": "53b2fd9106e416b98886b78868706918110755cd0535ea2de68cdb60ec42872b",
+            "evaluation_real_customers": 174,
+            "evaluation_synthetic_customers": 174,
+            "fold": 1,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "5aa01dcbc516e10c411552476ea5243225ae1584428133be5452b358a26ea77a",
+            "training_real_customers": 814
+          },
+          {
+            "auc": 0.9609352024311343,
+            "d": 0.9609352024311343,
+            "evaluation_customer_ids_sha256": "22c657b5f8d80d2d214b279637dbeb82f19244561f5f337fba19487c403d3cac",
+            "evaluation_real_customers": 202,
+            "evaluation_synthetic_customers": 202,
+            "fold": 2,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "eaff6556d1ba426ab6630895ec52c798be49f34bd08efd5a02be096a2b2cbcf3",
+            "training_real_customers": 786
+          },
+          {
+            "auc": 0.959011501736111,
+            "d": 0.959011501736111,
+            "evaluation_customer_ids_sha256": "41fbafd487052723ad83c4b287463dad8b8cb1bf151f8d412fc6473d5fcfc66e",
+            "evaluation_real_customers": 192,
+            "evaluation_synthetic_customers": 192,
+            "fold": 3,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "a3d51c21906109535bcdb4fb5b65f863710244cccbc73deb641f2700bc73713f",
+            "training_real_customers": 796
+          },
+          {
+            "auc": 0.9575052189081757,
+            "d": 0.9575052189081757,
+            "evaluation_customer_ids_sha256": "286e0197f81d2b4e4e588f941dca9550899817eefb86a1a25f4d7ef6b09e8f46",
+            "evaluation_real_customers": 187,
+            "evaluation_synthetic_customers": 187,
+            "fold": 4,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "273373446813625bd993203987738315189da10fc7f349a8e2db29600516c580",
+            "training_real_customers": 801
+          }
+        ]
+      },
+      "20260828": {
+        "fold_weighted_d": 0.9583943357784709,
+        "folds": [
+          {
+            "auc": 0.961448354852145,
+            "d": 0.961448354852145,
+            "evaluation_customer_ids_sha256": "2fa5e45f33b2cfc34e84be1e2297c709d386c39c9b32a0e652788468bbcabddc",
+            "evaluation_real_customers": 196,
+            "evaluation_synthetic_customers": 196,
+            "fold": 0,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "a00f76008b354f28f6418712fabb7720fcefb23e1a0f4aeb54ff8a9760888ec7",
+            "training_real_customers": 792
+          },
+          {
+            "auc": 0.9593379159399473,
+            "d": 0.9593379159399473,
+            "evaluation_customer_ids_sha256": "fc4be7e9875f62b9cc40851c526d6a787b209d20949fe04a3b948faf972bab5a",
+            "evaluation_real_customers": 171,
+            "evaluation_synthetic_customers": 171,
+            "fold": 1,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "6e792e5fb1f30cbc8d814f54f4f949ba675114c0526627232e06f707a7fd6c9d",
+            "training_real_customers": 817
+          },
+          {
+            "auc": 0.9599567333693888,
+            "d": 0.9599567333693888,
+            "evaluation_customer_ids_sha256": "c1173b2da7de292bd87f2425a01527ae7ac878246216988a4aa76520b2d7a784",
+            "evaluation_real_customers": 215,
+            "evaluation_synthetic_customers": 215,
+            "fold": 2,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "9910aa4ecb1febae355e974802dcc6c6456ccc1b4c43fc7655a7535eabb47f77",
+            "training_real_customers": 773
+          },
+          {
+            "auc": 0.9557476051645148,
+            "d": 0.9557476051645148,
+            "evaluation_customer_ids_sha256": "cbd8e918f6170ef52d5413f514951aeb1f39c13dfaad582f3ac83fea3f202dc0",
+            "evaluation_real_customers": 196,
+            "evaluation_synthetic_customers": 196,
+            "fold": 3,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "5339276aa121fb260a3c58ec3f9b5fc07c35d547ee54fd5a63a01a8d09bf0849",
+            "training_real_customers": 792
+          },
+          {
+            "auc": 0.9556462585034013,
+            "d": 0.9556462585034013,
+            "evaluation_customer_ids_sha256": "d99a20c980d9ad5ed2b9523680e11c842de209882a77621db8e95cec945c802f",
+            "evaluation_real_customers": 210,
+            "evaluation_synthetic_customers": 210,
+            "fold": 4,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "1e0f65c17de16f047f0ec158550c91047c0d32c7ec0dd693ad33dbc8af79df41",
+            "training_real_customers": 778
+          }
+        ]
+      },
+      "20260829": {
+        "fold_weighted_d": 0.9567557786087508,
+        "folds": [
+          {
+            "auc": 0.9581591058514135,
+            "d": 0.9581591058514135,
+            "evaluation_customer_ids_sha256": "bfea6fdd4392a1af28524e3ce9965f360ecb77a8e8beb4b97ec0a8f7338ded67",
+            "evaluation_real_customers": 195,
+            "evaluation_synthetic_customers": 195,
+            "fold": 0,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "e9ad6d7cd38e8c61a59100d5ce3eb0e0d1cd055063d4fa7e8855c6ad4833cefc",
+            "training_real_customers": 793
+          },
+          {
+            "auc": 0.9528153507392262,
+            "d": 0.9528153507392262,
+            "evaluation_customer_ids_sha256": "52d0b23ae203cfafc171e4e38fd28ab77f908add65018c385a693780d8aadb30",
+            "evaluation_real_customers": 187,
+            "evaluation_synthetic_customers": 187,
+            "fold": 1,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "bc284c197f21f10feb6f1f1352b0f712f6caab7f5cfc05c7ad4f63bf62145ccd",
+            "training_real_customers": 801
+          },
+          {
+            "auc": 0.9551473922902494,
+            "d": 0.9551473922902494,
+            "evaluation_customer_ids_sha256": "5ff13ce8a00af4a82317fc7352f89d8736f5e5cd2942dbefdc46fc8d8feb1906",
+            "evaluation_real_customers": 210,
+            "evaluation_synthetic_customers": 210,
+            "fold": 2,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "25a79ee6b80d4c26791991fe8071096cb0e008f4e1d3aca30666b4c51f90f1c9",
+            "training_real_customers": 778
+          },
+          {
+            "auc": 0.9595157589663084,
+            "d": 0.9595157589663084,
+            "evaluation_customer_ids_sha256": "0d63da1394c2c6b09ba5bdb5991473a4d72460baddbceefa6d983210217b6f1d",
+            "evaluation_real_customers": 182,
+            "evaluation_synthetic_customers": 182,
+            "fold": 3,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "973f65b5f58db7c6f41eb5bc4afc9b4df2079762ad3737bf0088de664bee274d",
+            "training_real_customers": 806
+          },
+          {
+            "auc": 0.9581513669316097,
+            "d": 0.9581513669316097,
+            "evaluation_customer_ids_sha256": "94a43f29351863034b7b8828ead646b6733e02cadfd470c0b973d7543fa0ced9",
+            "evaluation_real_customers": 214,
+            "evaluation_synthetic_customers": 214,
+            "fold": 4,
+            "profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+            "training_customer_ids_sha256": "a7c419a10a4f02a5240cc02d40173aa13436499bc2f8816e1a3a1a93c5941779",
+            "training_real_customers": 774
+          }
+        ]
+      }
+    }
+  },
+  "development_profile": {
+    "amount_marks": {
+      "ar1": 0.3191758275004272,
+      "degrees_of_freedom": 5,
+      "distribution": "student_t",
+      "frailty_covariate_fit": "two-stage posterior E[log U | timing] score approximation",
+      "innovation_scale": 0.9764371590405684,
+      "intercept": 2.6719405775407528,
+      "joint_shared_latent_mle": false,
+      "log1p_gap_days": 0.15221798660734012,
+      "log_frailty": -0.15523501815598834
+    },
+    "calendar_hazard": {
+      "fit": "Jeffreys exposure-adjusted marginal rates; unexposed bins neutral; not joint Poisson MLE",
+      "hour_counts": [
+        377,
+        198,
+        160,
+        111,
+        63,
+        74,
+        312,
+        857,
+        1276,
+        1945,
+        2747,
+        3633,
+        4258,
+        4255,
+        4505,
+        4822,
+        5368,
+        6044,
+        5785,
+        5023,
+        4202,
+        3138,
+        1905,
+        995
+      ],
+      "hour_exposure_hours": [
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0
+      ],
+      "hour_weights": [
+        0.1459759929106582,
+        0.07675823733182954,
+        0.06206396519777653,
+        0.04311608797228712,
+        0.024554902118746478,
+        0.02880850721018287,
+        0.12084105373398857,
+        0.3315878514460646,
+        0.49361153629259646,
+        0.7523080641263192,
+        1.0624345444292276,
+        1.4050430999758319,
+        1.646725207443809,
+        1.6455651333279628,
+        1.7422379763151536,
+        1.8648191412229114,
+        2.0759526303069364,
+        2.3373559977443006,
+        2.237202932409571,
+        1.942544106984613,
+        1.6250704906146782,
+        1.213630870861194,
+        0.7368404092483686,
+        0.384951260774994
+      ],
+      "normalization": "arithmetic mean one per factor",
+      "pseudocount": 0.5,
+      "week_counts": [
+        1155,
+        1158,
+        1199,
+        1103,
+        1180,
+        1129,
+        1138,
+        1121,
+        1152,
+        1180,
+        1165,
+        1112,
+        1163,
+        1219,
+        1192,
+        1160,
+        1160,
+        1263,
+        1242,
+        1307,
+        1216,
+        1262,
+        1234,
+        1202,
+        1196,
+        1273,
+        1300,
+        1267,
+        1198,
+        1228,
+        1239,
+        1220,
+        1173,
+        1229,
+        1173,
+        1153,
+        1120,
+        1160,
+        1142,
+        1178,
+        1202,
+        1186,
+        1192,
+        1251,
+        1212,
+        1166,
+        1220,
+        1145,
+        1179,
+        1173,
+        1288,
+        1178,
+        0
+      ],
+      "week_exposure_hours": [
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        168.0,
+        192.0,
+        0.0
+      ],
+      "week_weights": [
+        0.9701980105095637,
+        0.9727169149072518,
+        1.0071419416756568,
+        0.9265370009496352,
+        0.9911888804902984,
+        0.9483675057295994,
+        0.955924218922664,
+        0.9416504273357642,
+        0.9676791061118755,
+        0.9911888804902984,
+        0.9785943585018575,
+        0.9340937141426997,
+        0.9769150889033987,
+        1.0239346376602447,
+        1.0012644980810512,
+        0.9743961845057105,
+        0.9743961845057105,
+        1.060878568826338,
+        1.0432462380425207,
+        1.0978224999924313,
+        1.0214157332625566,
+        1.0600389340271086,
+        1.0365291596486856,
+        1.009660846073345,
+        1.0046230372779688,
+        1.069274916818632,
+        1.0919450563978257,
+        1.0642371080232556,
+        1.0063023068764274,
+        1.0314913508533092,
+        1.0407273336448326,
+        1.0247742724594742,
+        0.9853114368956927,
+        1.0323309856525387,
+        0.9853114368956927,
+        0.9685187409111049,
+        0.9408107925365348,
+        0.9743961845057105,
+        0.9592827581195815,
+        0.9895096108918396,
+        1.009660846073345,
+        0.9962266892856748,
+        1.0012644980810512,
+        1.0508029512355854,
+        1.018057194065639,
+        0.979433993301087,
+        1.0247742724594742,
+        0.9618016625172697,
+        0.990349245691069,
+        0.9853114368956927,
+        1.0818694388070729,
+        0.8658209095303596,
+        1.0
+      ],
+      "weekday_counts": [
+        8715,
+        8195,
+        8146,
+        8158,
+        8543,
+        9976,
+        10320
+      ],
+      "weekday_exposure_hours": [
+        1248.0,
+        1248.0,
+        1248.0,
+        1248.0,
+        1248.0,
+        1248.0,
+        1272.0
+      ],
+      "weekday_weights": [
+        0.9862067713959973,
+        0.9273659107309845,
+        0.9218212911683199,
+        0.9231791571836663,
+        0.9667440251760315,
+        1.1288958585086533,
+        1.1457869858363474
+      ]
+    },
+    "model_family": "marked_periodic_stationary_gamma_renewal",
+    "privacy": {
+      "aggregate_only": true,
+      "contains_ids": false,
+      "contains_posterior_weights": false,
+      "contains_predictions": false,
+      "contains_rows": false,
+      "contains_trajectories": false
+    },
+    "schema_version": "mrs1",
+    "source": {
+      "customer_ids_sha256": "33122773673f69c46cee66df2817be91f72d82b9f688c0db68e7f69e62b64450",
+      "customers": 988,
+      "dataset": "completejourney-1.1.1",
+      "observation_end": "2018-01-01T00:00:00",
+      "observation_start": "2017-01-01T00:00:00",
+      "partition": "development",
+      "transactions": 62078,
+      "transactions_sha256": "5953d66fe1276779917b761e0f9f5a670bc0863565e230570805ab2d156e1291"
+    },
+    "timestamp_multiplicity": {
+      "categories": [
+        "1",
+        "2",
+        "3",
+        "4+"
+      ],
+      "counts": [
+        62028,
+        25,
+        0,
+        0
+      ],
+      "probabilities": [
+        0.9995971185921713,
+        0.0004028814078287915,
+        0.0,
+        0.0
+      ],
+      "rendered_values": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "timing": {
+      "conditioned_on_at_least_one": true,
+      "frailty_shape": 1.1633648630569364,
+      "mean_operational_gap_days": 6.081748996760442,
+      "renewal_shape": 0.6324166660049653,
+      "right_censored": true,
+      "stationary_first_arrival": true
+    }
+  },
+  "development_profile_sha256": "f18da73ca35b46cd6ac651a4978ac88cbc548ea24d2d8e75d283c17dbb16f9f6",
+  "development_reference": {
+    "amount_unit": "USD cents",
+    "baskets": 62078,
+    "dataset": "completejourney",
+    "household_ids_sha256": "2c4a11a1e1f14cab0739529982e9c5b1de856e8df5c3de4e786ac220bc1c873f",
+    "households": 988,
+    "manifest_sha256": "a42365103c1793a9101772fa77aee4fbdabae77a28a99d923b239756b44d5e91",
+    "mrs_preregistration_sha256": "acda94871118682d34d73cb306b53682fc9cdbcb7c7ca625d09cc543fb2525eb",
+    "observation_end": "2018-01-01T00:00:00",
+    "observation_start": "2017-01-01T00:00:00",
+    "partition": "development",
+    "partition_sha256": "7738b7d8666e58176aafd4c667e3c72d99155fc91b5f294ffe38f2aa00de1676",
+    "source_rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+    "timestamp_semantics": "source timezone-aware POSIXct converted to America/New_York local wall-clock, then timezone removed",
+    "version": "1.1.1"
+  },
+  "evaluator": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260857,
+    "classifier": {
+      "deterministic": true,
+      "force_col_wise": true,
+      "implementation": "lightgbm.LGBMClassifier",
+      "learning_rate": 0.04,
+      "max_depth": 5,
+      "min_child_samples": 40,
+      "n_estimators": 150,
+      "n_jobs": 1,
+      "num_leaves": 15,
+      "objective": "binary",
+      "reg_lambda": 1.0
+    },
+    "development_fit_diagnostic": {
+      "crossfit_scope": "discriminator/calibration_only",
+      "not_release_evidence": true,
+      "optimistic": true,
+      "out_of_sample": false,
+      "profile_scope": "all_development"
+    },
+    "features": [
+      "median_log_amount_percentile",
+      "amount_cv",
+      "mean_hour_sin",
+      "mean_hour_cos",
+      "log1p_median_interpurchase_days",
+      "log1p_frequency_per_30d",
+      "log1p_recency_days",
+      "log1p_max_burst_24h"
+    ],
+    "folds": 5,
+    "orientation_free_threshold": 0.65,
+    "qualification_is_first_independent_release_gate": true,
+    "seeds": [
+      20260827,
+      20260828,
+      20260829
+    ]
+  },
+  "expected_completejourney_manifest_sha256": "a42365103c1793a9101772fa77aee4fbdabae77a28a99d923b239756b44d5e91",
+  "generator_check": {
+    "customers": 988,
+    "deterministic": true,
+    "exact_source_sequence_matches": 0,
+    "seed": 20260827,
+    "synthetic_transactions_sha256": "94976b696c18c79d299b196fc2a2141cfc748fc0a1a09211afdb7a283cd4d851",
+    "transactions": 60137
+  },
+  "implementation_sha256": {
+    "scripts/download_completejourney_reference.py": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+    "scripts/download_retail_ii_reference.py": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "scripts/download_retail_reference.py": "d17e98ecfb88b2905055b8469606b1d6cebacb9f11aef822a3b32f41ca17a9f1",
+    "sim/completejourney_reference.py": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+    "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+    "sim/entity_fidelity_mrs1.py": "647a8272422f0b03225252ab584cc3602d37f9415de860465135c984ac2093e2",
+    "sim/entity_fidelity_v4.py": "91334afd5d5f0f53b0bbe527920ee6a18b7e2a27b8f2c1610483f878cb01d871",
+    "sim/population_mrs1.py": "411dcb3f40ef39b72897a2e2a2e32cf83b71bdc61a92a06c057965dafdd5fe8b",
+    "tests/test_entity_fidelity_mrs1.py": "49d2a683160eb606ad5c97d73524254ccc4231e92aca784e2f26e2fee34030dc",
+    "tests/test_population_mrs1.py": "11bb321c233ebe726f0715c76fed429c6fe10e64117b8c5a12bec77658d40d96"
+  },
+  "mrs_preregistration_sha256": "acda94871118682d34d73cb306b53682fc9cdbcb7c7ca625d09cc543fb2525eb",
+  "optimizer": {
+    "amount_bounds": [
+      [
+        -20.0,
+        30.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -0.95,
+        0.95
+      ],
+      [
+        -6.0,
+        6.0
+      ]
+    ],
+    "amount_starts": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0,
+        0.0,
+        0.3,
+        0.0
+      ],
+      [
+        10.0,
+        0.0,
+        0.0,
+        -0.3,
+        1.0
+      ]
+    ],
+    "boundary_tolerance": 1e-05,
+    "failure": "terminal STOP on nonconvergence or any active bound",
+    "gauss_laguerre_nodes": 48,
+    "maximum_iterations": 600,
+    "method": "L-BFGS-B",
+    "timing_bounds": [
+      [
+        -1.3862943611198906,
+        2.302585092994046
+      ],
+      [
+        -2.995732273553991,
+        5.8998973535824915
+      ],
+      [
+        -1.3862943611198906,
+        2.995732273553991
+      ]
+    ],
+    "timing_starts": [
+      [
+        0.0,
+        2.6390573296152584,
+        0.0
+      ],
+      [
+        0.6931471805599453,
+        3.4011973816621555,
+        0.6931471805599453
+      ],
+      [
+        -0.5108256237659907,
+        1.9459101490553132,
+        -0.6931471805599453
+      ]
+    ]
+  },
+  "protocol_sha256": "d943aae33dbc6c16694204653165418f7771862ac373fd14ed79d1ad2415dc63",
+  "qualification_accessed": false,
+  "reference_source_chain": {
+    "downloader_sha256": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+    "preprocessor_sha256": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+    "quarantine_receipt_sha256": "51ed9a46e17bd45ceb57ef595550ee2d5a49cd0d620cb3f5b21243da8d39ae6d",
+    "rds_manifest_sha256": "12931374805dee5e7caa0c97d13e09f7714d5f0dd0a5d6aad89df19d0f160371",
+    "rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+    "source_preregistration_sha256": "265ae1e475668ad6d90d4807fe76fc0c41d8d5c545eaa3940fdd840f85da94be"
+  },
+  "schema_version": "mrs1",
+  "uci352_accessed": false,
+  "uci352_transfer_source": {
+    "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+    "customers": 2440,
+    "dataset_id": 352,
+    "license": "CC BY 4.0",
+    "manifest_sha256": "0fca9904171c1382bfdd8dc1369929a310817a63472474dc61dee4a4ae800cb9",
+    "observation_end": "2011-12-10T00:00:00",
+    "observation_start": "2010-12-01T00:00:00",
+    "partition": "calibration",
+    "source_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+    "transactions": 10621,
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "uci502_accessed": false,
+  "uci502_final_source": {
+    "archive_sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+    "dataset_id": 502,
+    "downloader_sha256": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "fixed_window": "[2009-12-01, 2010-12-01)",
+    "license": "CC BY 4.0",
+    "manifest_sha256": "8092c0b746d0c03d319570bc483e1f3085f057fc9e42f0de8c2b258524573f38",
+    "observation_end": "2010-12-01",
+    "observation_start": "2009-12-01",
+    "sheet": "Year 2009-2010",
+    "source_url": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+    "workbook_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "9ffd67408b4c7dea84bb22d9141e250b98b32f7d66a9afa295a46f5c2c7d7159",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-lab art direction, restrained red/cyan palette, crisp headline, and consistent panels across viewports. It falls short of demo-ready polish: desktop has excessive dead space and an unreadably tiny phylogeny graphic; tablet compresses the vaccination steps awkwardly; mobile body text, labels, and chart annotations are extremely small and dense. The mobile header visibly truncates “LIVE WIRE,” while several header contrast checks remain inconclusive.",
+    "fix": "Increase small-text and chart-label sizes, enlarge/recompose the desktop phylogeny, stack or wrap the tablet vaccination flow cleanly, reduce excess desktop whitespace, and replace the clipped mobile nav with an explicit compact menu or fully legible active-section treatment.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1786bc770e00cd76873760ca412388e8b08329cf3834c2ade8a63c9b83a05be5",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dd1dbd9995641589ce4f1a72e6a0d4ea062496c287bd787a054b78562a48690c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9ffd67408b4c7dea84bb22d9141e250b98b32f7d66a9afa295a46f5c2c7d7159"
+  }
+}

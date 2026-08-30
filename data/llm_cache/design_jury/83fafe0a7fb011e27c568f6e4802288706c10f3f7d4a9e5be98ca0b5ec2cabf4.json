@@ -1,0 +1,70 @@
+{
+  "cache_key": "83fafe0a7fb011e27c568f6e4802288706c10f3f7d4a9e5be98ca0b5ec2cabf4",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial thesis, cyan/green forensic palette, and explicit BLOCK→ALLOW reversal create a recognizable defense-lab identity across all three viewports. However, the central proof is still a conventional bordered card plus five repetitive list rows; similarity percentages and badges dominate without a singular visual metaphor or dramatic precedent-to-decision moment. The global header reinforces the system aesthetic but does not make this screen uniquely memorable.",
+    "fix": "Turn the precedent match into a signature visual: show the borderline query linked to its five legitimate neighbors, converging on an animated BLOCK→ALLOW decision flip. Keep the exact scores as supporting evidence, but reduce the repeated table treatment.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8030c65e9aed7b21c97d4b685b3bba6bee2a664c780dc6c03353035ff12feeac",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 181630,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "1816f5087c45cd751bee0dbc1f1ce5526d57fcc6341d95ae35a905fb79411109",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154156,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "dbb1ba829c5c1a29de5a5cb04dcbbc44fb8cb68c32df9b5642de051ea42dfd47",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154060,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "b9fa542e76190f5482630cb562b26c5036921ecb064e049b4610c053e4a6dd8a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "5f4b18b53ae463c43325361329075c935ccf7203dd270e2808ca3656215ebcea",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "15c03c844a3b25c84ebc3fa6a3a4ab0fe8f18acd37a2003b67545d437014e317",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ae3d14f2fdcecab61a720a8468304553f8c550e2ae2c81b080b82aa5e1f59ec1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "52b2bc4af4bd71c36b24760cc58a8970cc9aedb496dae805635bd0db7c6c8f19",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "83fafe0a7fb011e27c568f6e4802288706c10f3f7d4a9e5be98ca0b5ec2cabf4"
+  }
+}

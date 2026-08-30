@@ -1,0 +1,70 @@
+{
+  "cache_key": "6a1d03599f4a1ee5aa8bd462ce8c7c2ab5de4cbd1f758ec9c9e81c3984d075dc",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The composer strongly advances the intent-integrity story: it lets judges alter a synthetic agentic-checkout event, contrasts Legacy Rules ALLOW with Intent Integrity BLOCK on the same event, exposes five fused risk layers, and explains the decision. Playwright confirms a real POST /compose returned 200 without fixture headers or browser failures. However, the screen does not visibly connect the demonstration to Mastercard, payment-network controls, merchant/issuer impact, or a brief-specific success metric, so hackathon relevance is not fully proven.",
+    "fix": "Add a compact Mastercard-specific scenario and outcome: identify the payment actor/rail and transaction context, show where Intent Integrity intervenes in the authorization flow, and quantify an outcome such as prevented loss, false-positive reduction, or decision latency versus legacy rules.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0a14bc338f858e5b7365387b1ad0dbb6aec274ef249449ae3fd4d381794d827f",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 165162,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "7a159bdf3af0025bf9118a6ce28ff97e778506ec13e6c885483138a80e602694",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154245,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "dbe733d69da8007180911756e894f6e6b29ccf2fb8ecc4b3f3447200acc10631",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157819,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "78177fa2bfa2096f5b7e3766bde9d75ac392a6214e47fbeeb6b0f9bbac685a18",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5f2641ee9db3a47e80a1d94fd99f3bb10a62d5cf8208145a58bb9b3e5dfac598",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6a1d03599f4a1ee5aa8bd462ce8c7c2ab5de4cbd1f758ec9c9e81c3984d075dc"
+  }
+}

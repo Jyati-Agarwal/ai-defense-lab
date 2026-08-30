@@ -1,0 +1,70 @@
+{
+  "cache_key": "61468baa7cbe8084da12ccd51fe3ceba157ce9b681ad34d6c4bb666e7fe13c80",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, instruction, prominent “LAUNCH EVENT” CTA, and side-by-side ALLOW/BLOCK result make the intended interaction understandable across all three viewports. However, the result narrative is internally confusing: “WHY BLUE DECIDED” introduces an undefined actor, one reason says “Risk reduced” while fused risk remains 100/100, and terms such as provenance, structural, risk floor, and zscore are unexplained. The mobile header also hides Composer’s current location behind “MORE,” weakening orientation.",
+    "fix": "Rename “WHY BLUE DECIDED” to “WHY INTENT INTEGRITY BLOCKED,” clarify how each evidence layer contributes to 100/100, rewrite the “Risk reduced” line to explain why the final decision remains BLOCK, add brief plain-language labels/tooltips for specialist terms, and expose the current Composer section in the compact header.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "af9f4834e02d6a1cfab4228488235fc0cdbd0e7082b71575550b8530dd42344c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165433,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "004559bcafe5bf9c211af902aca07cc2f63621e9da6adb0723a089652a9c8445",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154280,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "ef576fd6ec43ca5bf0dc7cf450654a50ba19288d441d681442cb00a25626ce54",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157745,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "ee842ade6533a6702cb7bd9527afdfbf9d4932a594d7071a6e2dfb2ff7acc0b1",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b16211dd837877831cd7cda3215f42c25797b9b87757003b9094a32a69d1e73",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "61468baa7cbe8084da12ccd51fe3ceba157ce9b681ad34d6c4bb666e7fe13c80"
+  }
+}

@@ -1,0 +1,13 @@
+id: GPF-A28
+name: Agent-trace truncation and repudiation
+tier: agentic
+description: A compromised framework drops causal tool records so a valid payment cannot be tied to its true plan.
+kill_chain_stage: cash_out
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous trace and memory management
+primitives: [tool_manip, payment_manip, cash_out]
+observable_signals: [non-contiguous tool sequence, payment without causal call, trace hash-chain gap]
+defense_hooks: [append-only trace signing, causal completeness check]
+severity: critical
+feasibility_today: true

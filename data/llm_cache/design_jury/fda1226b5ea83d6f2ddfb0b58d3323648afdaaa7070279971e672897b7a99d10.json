@@ -1,0 +1,51 @@
+{
+  "cache_key": "fda1226b5ea83d6f2ddfb0b58d3323648afdaaa7070279971e672897b7a99d10",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen supports the defense story by exposing post-remediation recall, known-versus-fresh-row comparison, frozen weights, chronological cutoff, label-shuffle baseline, and the important limitation that independent_holdout=false. However, it does not visibly connect these results to preserved user/payment intent, transaction authorization, fraud or agentic-commerce scenarios, Mastercard stakeholders, or business impact. The 100% recall figures also lack sample counts and outcome examples, so the artifact does not prove brief-level value.",
+    "fix": "Frame the regression as a Mastercard-relevant intent-integrity gate: show evaluated transaction or agentic-commerce intents, sample sizes, blocked intent mutations and false-positive outcomes, plus a clear deployment decision and quantified payment-risk impact. Add a genuinely independent post-remediation holdout or prominently state that it is still required before production readiness.",
+    "score": 5,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 387465,
+        "sha256": "c5f5f3bdcf56f0e0d2c0d1c84ffed9b059b0181ede9a6338ef9e0786db3a7bed",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312741,
+        "sha256": "130b843521116f97340118e80e156fead7f2d63894ef39907f948d48a20737ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 233481,
+        "sha256": "7d97cb03ba2bb941ee01b7053b5b0f32a532e69380aa5b24a9d243db7a144eb7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0cd48b06ae125a6f708df90e1a685bc82dbb2623dadc3f44500dd6ff0a22eb0d",
+    "schema_version": 2,
+    "sha256": "fda1226b5ea83d6f2ddfb0b58d3323648afdaaa7070279971e672897b7a99d10"
+  },
+  "response": {
+    "id": "resp_0aa06a0c453ccc5a016a907a9c410487d0abdb531c76cee548",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6496,
+      "input_tokens_details": {
+        "cache_write_tokens": 6493,
+        "cached_tokens": 0
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 255
+      },
+      "total_tokens": 6947
+    }
+  }
+}

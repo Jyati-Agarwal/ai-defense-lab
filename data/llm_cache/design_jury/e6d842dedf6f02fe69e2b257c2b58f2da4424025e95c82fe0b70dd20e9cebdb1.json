@@ -1,0 +1,70 @@
+{
+  "cache_key": "e6d842dedf6f02fe69e2b257c2b58f2da4424025e95c82fe0b70dd20e9cebdb1",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The cyan-to-crimson mandate chain and widening intent-versus-outcome divergence create a distinctive visual metaphor for cryptographically valid but semantically wrong execution. Oversized editorial typography and the forensic semantic-mismatch panel reinforce the idea consistently across all three viewports; the header itself is comparatively generic and clipped on smaller widths.",
+    "fix": "Make the divergence graphic a stronger centerpiece on tablet/mobile and replace the clipped horizontal header rail with an intentional compact navigation treatment.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ac6203972b29816c9df67fb1577324a6ed6f737de25118371da41b5f050dd1d2",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 523574,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "4f4324205b92dabb99ec43f027452021a429c985ed0f481f91795f63e4d2ccde",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401239,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "177a445ccda9bed30f953d4d7f05377b789cb527d43495d3981de4a8b727bb97",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 312965,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "cab6e2e9a7b4ed794d8ada8c856ef20f09421aee0776f958dbff1035a5ac2605",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d20d9e5e2a2a6a4552994b0ba72b05f25c007f26bbcb43f394a45b826f1011d7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e6d842dedf6f02fe69e2b257c2b58f2da4424025e95c82fe0b70dd20e9cebdb1"
+  }
+}

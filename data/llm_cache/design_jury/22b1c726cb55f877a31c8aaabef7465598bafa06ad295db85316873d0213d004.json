@@ -1,0 +1,70 @@
+{
+  "cache_key": "22b1c726cb55f877a31c8aaabef7465598bafa06ad295db85316873d0213d004",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard coverage and visible focus pass at all viewports; no touch-target or mandate-section overflow failures were measured; reduced-motion sampling found no changed elements. However, color contrast remains seriously unresolved: axe marked 28 desktop and 37 tablet/mobile mandate nodes incomplete, plus 14–26 header nodes. Mobile/tablet navigation also clips many links, leaving focusable destinations visually offscreen without measured recovery evidence.",
+    "fix": "Measure contrast against the rendered gradient and raise every failing text/control pair to WCAG AA. Replace the clipped header rail with an accessible scroll/menu pattern that keeps focused links visible, then rerun contrast, keyboard, overflow, touch-target, and reduced-motion tests.",
+    "score": 6,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1fa5d52b40a7a9a090142dc4cb3d6e06726bbe0df30ea213464c5acd475baba6",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 523574,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "4f4324205b92dabb99ec43f027452021a429c985ed0f481f91795f63e4d2ccde",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401239,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "177a445ccda9bed30f953d4d7f05377b789cb527d43495d3981de4a8b727bb97",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 312965,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "cab6e2e9a7b4ed794d8ada8c856ef20f09421aee0776f958dbff1035a5ac2605",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "444d00880927b730a8a984317d4373362ec59b2eccc585099c4662d8d5e9b7eb",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "22b1c726cb55f877a31c8aaabef7465598bafa06ad295db85316873d0213d004"
+  }
+}

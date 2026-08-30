@@ -1,0 +1,130 @@
+{
+  "seed": 20260827,
+  "label": "Fixed A+B replay security gate — in-distribution; not generalization",
+  "rounds": [
+    {
+      "round": 1,
+      "asr": 0.04166667,
+      "adaptive_asr": 0.16666667,
+      "mutation": "topic-blending+slow-negotiation",
+      "disposition": "added to guarded A+B training fold",
+      "candidate_count": 24,
+      "selected_training_count": 6,
+      "best_fitness": 507795.744066
+    },
+    {
+      "round": 2,
+      "asr": 0.02083333,
+      "adaptive_asr": 0.45833333,
+      "mutation": "known-payee-reuse",
+      "disposition": "added to guarded A+B training fold",
+      "candidate_count": 24,
+      "selected_training_count": 6,
+      "best_fitness": 489139.105785
+    },
+    {
+      "round": 3,
+      "asr": 0.04166667,
+      "adaptive_asr": 0.20833333,
+      "mutation": "fanout-reduction",
+      "disposition": "added to guarded A+B training fold",
+      "candidate_count": 24,
+      "selected_training_count": 6,
+      "best_fitness": 183525.159
+    },
+    {
+      "round": 4,
+      "asr": 0.0,
+      "adaptive_asr": 0.25,
+      "mutation": "graph-signal-reduction+topic-blending",
+      "disposition": "added to guarded A+B training fold",
+      "candidate_count": 24,
+      "selected_training_count": 6,
+      "best_fitness": 476647.462474
+    },
+    {
+      "round": 5,
+      "asr": 0.0,
+      "adaptive_asr": 0.125,
+      "mutation": "fanout-reduction+slow-negotiation+topic-blending",
+      "disposition": "reserved for guarded vaccination holdout",
+      "candidate_count": 24,
+      "selected_training_count": 0,
+      "best_fitness": 92948.129822
+    }
+  ],
+  "survivors": [
+    "artifact-softening",
+    "artifact-softening+topic-blending+known-payee-reuse",
+    "fanout-reduction+known-payee-reuse+graph-signal-reduction",
+    "fanout-reduction+slow-negotiation+paced-velocity",
+    "graph-signal-reduction",
+    "graph-signal-reduction+paced-velocity+known-payee-reuse",
+    "graph-signal-reduction+slow-negotiation",
+    "graph-signal-reduction+topic-blending",
+    "known-payee-reuse",
+    "known-payee-reuse+paced-velocity",
+    "known-payee-reuse+paced-velocity+graph-signal-reduction",
+    "paced-velocity",
+    "paced-velocity+artifact-softening",
+    "paced-velocity+graph-signal-reduction+slow-negotiation",
+    "paced-velocity+graph-signal-reduction+topic-blending",
+    "paced-velocity+topic-blending",
+    "slow-negotiation",
+    "slow-negotiation+artifact-softening",
+    "slow-negotiation+fanout-reduction",
+    "topic-blending",
+    "topic-blending+fanout-reduction",
+    "topic-blending+graph-signal-reduction+artifact-softening",
+    "topic-blending+paced-velocity",
+    "topic-blending+paced-velocity+fanout-reduction",
+    "topic-blending+slow-negotiation"
+  ],
+  "training_partitions": [
+    "A",
+    "B"
+  ],
+  "input_partitions_materialized": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "partitions_used_for_training_or_feature_extraction": [
+    "A",
+    "B"
+  ],
+  "success_definition": "fused score below 0.60 (ALLOW or STEP_UP); HOLD/BLOCK stops payment",
+  "base_model_hash": "854558664446363e5c0671826502b621657e674f8b4cdb2f2f94e96d941c901c",
+  "final_training_events": 35043,
+  "final_model_hash": "7b167cbe572bba2668ec52d1f387cbf949b112ef750cfeb7a5ca960a79fd934f",
+  "reserved_final_round_survivors": 3,
+  "replay_challenge": {
+    "count": 48,
+    "dataset_sha256": "f3e27f8ce6329117806404d6236a10284585568e7dafbc2afa72024227dec0c1",
+    "source_partitions": [
+      "A",
+      "B"
+    ],
+    "training_included": false,
+    "generation": "seeded mutations of fraudulent events from the guarded global training fold",
+    "generation_round": 0
+  },
+  "hardening_gate": {
+    "metric": "fixed_replay_attack_success_rate",
+    "baseline": 0.04166667,
+    "final": 0.0,
+    "operator": "final == 0 or final < baseline",
+    "passed": true,
+    "outcome": "strict_improvement"
+  },
+  "dataset_sha256": "29311d2b4ffd5550b646198f14653b15e3dbea8a27db4c5e2d7fc5baa0d1bb1b",
+  "split_plan_sha256": "af26629dee5b160ac1965561eecde0265c84bf52055ef0be1d8e51c4b1699e44",
+  "source_tree_sha256": "421f0b658d087a2188418049c7cc42362658fa9839b4ae2b3f510fb9f1c61c7d",
+  "events_file_sha256": "70df47a2326de5e1b2c2dde65259c5d346dabe6e40986d5e6a07affd48d9f98c",
+  "events_manifest_sha256": "9d027cdbf8d63082347229a8ca54b5ef7edf42d6bd88307d85ad4d3d3641fca6",
+  "behavior_profile_sha256": null,
+  "evaluation_preregistration_sha256": "c96d62b877f953b7733cb93d83c81c94f73e847854a42a9176aaf4f3b1913c96",
+  "key_registry_sha256": "825c338734e3c1eb5acc20d9b74a5a94ef56bfc331a7e224881ca3f2ad1552d6"
+}

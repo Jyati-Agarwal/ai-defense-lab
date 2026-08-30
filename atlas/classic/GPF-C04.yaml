@@ -1,0 +1,13 @@
+id: GPF-C04
+name: Synthetic identity credit bust-out
+tier: classic
+description: A fabricated identity builds normal repayment history and exhausts credit after trust matures.
+kill_chain_stage: delayed_exec
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [reconnaissance, delayed_exec, cash_out]
+observable_signals: [rapid utilization regime change, linked synthetic identifiers, long grooming interval]
+defense_hooks: [identity graph, account-age velocity]
+severity: critical
+feasibility_today: true

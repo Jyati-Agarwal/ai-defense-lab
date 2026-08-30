@@ -1,0 +1,13 @@
+id: GPF-C11
+name: Deceptive UPI collect request
+tier: classic
+description: A collect request is presented as a credit or refund so the victim authorizes a debit.
+kill_chain_stage: context_manip
+channel: upi_collect
+rail: upi
+genai_capability: none
+primitives: [context_manip, intent_manip, payment_manip]
+observable_signals: [collect-versus-credit language mismatch, new requester VPA, urgency pretext]
+defense_hooks: [directional payment warning, requester reputation]
+severity: high
+feasibility_today: true

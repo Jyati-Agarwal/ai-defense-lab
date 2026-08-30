@@ -1,0 +1,70 @@
+{
+  "cache_key": "2dc1384aaf51dbcf2b78be0a358d736e9e5d0fd403d240571f96ca23684a9930",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 69.6% recall caveat, evidence-gap label, next-control text, and prominent CTA establish the core message across all viewports. However, “GPF-A21,” “vault number,” “composer,” and “step-up” are unexplained, so the user cannot fully understand the proposed action without prior product context. The tablet/mobile headers also clip the Unknowns destination, weakening orientation.",
+    "fix": "Replace or define the internal terms, state what clicking “Test an uncertain case” will open and produce, and make the current Unknowns location visible in the responsive header.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "7fb906cde6febcbccf1bb89646cfd1afceca9d91a34d24647598764bebca03cb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 255300,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "3c0d6beeaa5dab07dabb4f7e02a38bfe40ed083e6f913ee42b748b53a5c1b486",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 213777,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "282489082d7acab51e53af349b3e00e9d92ec70fbff66d5773ea72b3bc9df40b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181263,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "f4346f7dde804ba18eb8a31c042a989438a06c29505d09c988f05217026e72cd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e900c0ab7f5c4292f78a67ed986f9a88f23ef6bb415f8663ffb04a28512aee09",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2dc1384aaf51dbcf2b78be0a358d736e9e5d0fd403d240571f96ca23684a9930"
+  }
+}

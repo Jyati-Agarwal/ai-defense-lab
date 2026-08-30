@@ -1,0 +1,51 @@
+{
+  "cache_key": "6ed77a267592635abd25c89d27413086554e16966ea58d554580c8123da1874b",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear signature idea: a red-mutator versus blue-defense arena, led by the forceful “Red adapts. Blue must reduce—or leave zero survivors.” thesis. The red/cyan opposing zones, attack-reduction curve, branching fraud phylogeny, survivor roster, and guarded-vaccination sequence form a coherent adversarial narrative rather than a generic KPI dashboard. That identity remains recognizable across desktop, tablet, and mobile.",
+    "fix": "Make the phylogeny the unmistakable demo centerpiece: enlarge its nodes and labels, emphasize mutation-to-survivor paths, and reduce surrounding card density—especially on mobile—so the most distinctive visual is immediately legible rather than miniature.",
+    "score": 8,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 627612,
+        "sha256": "4fddb85cc4ac6c10f3b5f76dd14baa989856357c9b0f4f174a690d9c487dd276",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 563275,
+        "sha256": "69b2088744af269030cd3f4156893befdbe1b9a672a7c68905d2dfef61845e76",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 416664,
+        "sha256": "f2eb9f99e912a62f8ac1bcf94aa5615b97f8b415d46e4384abcff88d2923ba02",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5de0d00c96d268bda5b341bcea97871eea690a4c26c8149c593c4f19e4e2ba11",
+    "schema_version": 2,
+    "sha256": "6ed77a267592635abd25c89d27413086554e16966ea58d554580c8123da1874b"
+  },
+  "response": {
+    "id": "resp_0e715e8a8c64b519016a907a94789487d0b2206933ed5677fd",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6232,
+      "input_tokens_details": {
+        "cache_write_tokens": 6229,
+        "cached_tokens": 0
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 6595
+    }
+  }
+}

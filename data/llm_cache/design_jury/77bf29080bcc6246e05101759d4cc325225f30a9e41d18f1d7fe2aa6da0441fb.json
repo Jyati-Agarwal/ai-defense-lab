@@ -1,0 +1,70 @@
+{
+  "cache_key": "77bf29080bcc6246e05101759d4cc325225f30a9e41d18f1d7fe2aa6da0441fb",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The cyan-to-red mandate chain and widening intent-versus-outcome divergence create a recognizable visual metaphor, reinforced by the verified-signature/semantic-failure contrast. However, tablet and mobile replace the distinctive node path with conventional stacked cards, while the surrounding dark panels, status pills, and dense monospace labels read like familiar security-dashboard styling rather than a signature demo moment.",
+    "fix": "Preserve and amplify the chain-to-divergence animation across every viewport: let each signed step visibly mutate from cyan intent into red outcome, ending in a dramatic semantic break. Reduce conventional panel chrome so this transformation becomes the unmistakable centerpiece.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0f2bf52b979f8dcf2a58747c805d2743c1f51376769b42515fc0062a7a33ee09",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152276,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "d0f0539cb097f5fff53ddd719a334c824e2c4143bbb628d2e13708c8842d49d7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138140,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c5b9aaaaa25b210b23dd60731f5006b578c49ef2c4bf4537ead68fa36e91765a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b636cadd1b411e757f42d7a50621aeac260e429d15c5450afb287f588c1ddb96",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "77bf29080bcc6246e05101759d4cc325225f30a9e41d18f1d7fe2aa6da0441fb"
+  }
+}

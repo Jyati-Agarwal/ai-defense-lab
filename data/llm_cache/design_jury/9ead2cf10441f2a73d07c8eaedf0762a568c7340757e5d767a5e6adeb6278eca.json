@@ -1,0 +1,70 @@
+{
+  "cache_key": "9ead2cf10441f2a73d07c8eaedf0762a568c7340757e5d767a5e6adeb6278eca",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the intent-integrity story through an agentic payment kill chain, 48 attack vectors, observable signals, safe metadata, and a handoff to scored replay. The selected prompt-injection example is directly relevant to autonomous checkout risk. However, the screenshots provide no explicit Mastercard-specific framing, network/payment-rail consequence, or demonstrated mapping from atlas vectors to concrete defenses and scoring outcomes; successful API responses alone do not prove that narrative connection.",
+    "fix": "Add a visible Mastercard-relevant payment scenario and show, for the selected vector, the compromised intent, affected payment stage/rail, defense control, and resulting score or blocked outcome before linking onward.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d97bf9c1061534a6b68b64af084f68a3a03fac43b476ef3fed5c667ef7a8ecf1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 206335,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "e15d7d615b9eac05d40d0000ac95b2e68a1e38177317d273dc21d56d715bcf54",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 151753,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "0abe16214346c5cfcee79914b5d8e55ea68c673bda4a3936c210e44e04156daf",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124104,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "68c2c5b66fe560e5d38c10134e3c96552f03810b1d72ca721bd728635d6f03f4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c780c482ab63b118145452e09d46ad806ef31bdef140ec773324fad688ae06b8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9ead2cf10441f2a73d07c8eaedf0762a568c7340757e5d767a5e6adeb6278eca"
+  }
+}

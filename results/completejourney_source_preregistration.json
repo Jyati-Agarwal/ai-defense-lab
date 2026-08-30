@@ -1,0 +1,22 @@
+{
+  "artifact_type": "completejourney_source_selection_preregistration",
+  "parser_invoked": false,
+  "real_data_opened": false,
+  "schema_version": 1,
+  "sha256_state": {
+    "reason": "unknown until the first explicitly authorized byte fetch",
+    "value": null
+  },
+  "source": {
+    "dataset": "completejourney",
+    "dataset_page": "https://cran.r-project.org/package=completejourney",
+    "git_blob_sha1": "f40e337238311130c1684cdf94d4128e4c6965f6",
+    "git_commit": "5b5d06192b9856edd04e4d405787af2f2e4a1fef",
+    "git_tag": "v1.1.1",
+    "license": "CC0",
+    "rds_size_bytes": 12775661,
+    "source_url": "https://raw.githubusercontent.com/bradleyboehmke/completejourney/5b5d06192b9856edd04e4d405787af2f2e4a1fef/data/transactions.rds",
+    "version": "1.1.1"
+  },
+  "status": "SOURCE_SELECTED_SHA256_UNOBSERVED"
+}

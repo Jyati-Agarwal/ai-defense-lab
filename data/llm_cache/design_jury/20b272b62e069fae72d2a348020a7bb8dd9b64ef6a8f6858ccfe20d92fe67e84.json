@@ -1,0 +1,70 @@
+{
+  "cache_key": "20b272b62e069fae72d2a348020a7bb8dd9b64ef6a8f6858ccfe20d92fe67e84",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting sentence, numbered cards, and primary CTA communicate the theme and next action across viewports. However, the displayed intent specifies only shoes under INR 2437; it does not identify the intended product or merchant. The payment amount matching that ceiling, plus “7 zero-width chars · invisible CSS,” does not visibly prove how the intent was stolen or why merchant-0006 is unintended. Terms such as “release-custodied,” “scored event artifact,” and the DID also require explanation.",
+    "fix": "Show the original intended product and merchant, the injected/retrieved instruction, and the resulting changed payment target in a direct before→tampering→after comparison. Replace or define specialist jargon, and rename the primary CTA to state exactly what users will inspect, such as “Trace the intent mismatch.”",
+    "score": 6,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "089e69600be226ebcb8f545c6c4e1cc4876864d22d9ba35a75656d757ed2018d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 136688,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e825fe8d1f706091f9893e447e219cdf0ea79faee1299c0d881fa8d8288d1c2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 134839,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "e101a8d0b7abcc8f5f043eefb6ef6ca38ea1ced5d66cfc58af437932fb6f454e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 112043,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "628b0ca0123a8668504eef661101bfaf69ad7022e64683cf767805890d8e2e14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "558c3ccc81c53a461b57c66e3956e5e583f381a79c7edc3ea53745f7b88568c6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "20b272b62e069fae72d2a348020a7bb8dd9b64ef6a8f6858ccfe20d92fe67e84"
+  }
+}

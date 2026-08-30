@@ -1,0 +1,51 @@
+{
+  "cache_key": "4f6cdaed1bd0bb2dd88fde0756e6f1faa721cde952adf3f1f968f7d089981164",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Desktop, tablet, and mobile scans report no confirmed WCAG violations, no viewport overflow, and no touch-target violations. However, color contrast remains seriously incomplete for 20 screen nodes at every viewport because the gradient background prevented measurement. No keyboard-navigation or reduced-motion test evidence was provided, so demo readiness is not established.",
+    "fix": "Measure contrast against the rendered gradient and correct every failing text/state to WCAG AA. Add Playwright evidence for complete keyboard operation, logical focus order, visible focus, no traps, and activation of the uncertain-case control; also verify prefers-reduced-motion disables or reduces all nonessential animation.",
+    "score": 6,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 264664,
+        "sha256": "880831cf74b646453504d96da5006a2c0e36028ba730f4d9848ed906f963a541",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 219066,
+        "sha256": "de00979af68e3af50c863a833041bfe36dc1b2368f68580e566a6fd17e1826f7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180686,
+        "sha256": "34ce6d19ad0e789dfdccd32deaf4ae7dc712e7a30cd2b9f9afe13c7c6228df49",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "9cb61f6e7fbd271174cadbb694d948e91eb73aa80053d1fd196a1d68bd4d4bb7",
+    "schema_version": 3,
+    "sha256": "4f6cdaed1bd0bb2dd88fde0756e6f1faa721cde952adf3f1f968f7d089981164"
+  },
+  "response": {
+    "id": "resp_0a4b9cf04c771179016a9083e1a02487d0818547361f48563f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 12786,
+      "input_tokens_details": {
+        "cache_write_tokens": 12783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 13064
+    }
+  }
+}

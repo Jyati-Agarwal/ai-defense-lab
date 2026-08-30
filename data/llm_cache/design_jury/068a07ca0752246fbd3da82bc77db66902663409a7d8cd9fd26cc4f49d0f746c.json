@@ -1,0 +1,51 @@
+{
+  "cache_key": "068a07ca0752246fbd3da82bc77db66902663409a7d8cd9fd26cc4f49d0f746c",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated scans report no confirmed WCAG violations, no touch-target violations, and no viewport overflow (1440/768/390 px). The evidence toggle is a native button with aria-expanded and aria-controls. However, color contrast remains seriously incomplete for 20 vault nodes at every viewport because gradient/obscured backgrounds prevented measurement, including headings, body copy, labels, badges, and the toggle. No keyboard traversal, activation, focus-order/focus-visibility, or reduced-motion test evidence was supplied, so these required areas cannot be treated as passing.",
+    "fix": "Measure rendered contrast against the actual composited backgrounds and correct every failure to WCAG AA, especially muted zinc text and 10–12 px labels. Add Playwright proof for full keyboard-only operation, logical focus order, visible focus, and toggle activation/state. Test prefers-reduced-motion: reduce and verify that decorative/transition motion is disabled or minimized. Re-run these checks at all three viewports while preserving the verified touch targets and zero overflow.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348142,
+        "sha256": "8e74a5455efe31feb187d14a3525c8d7f1fdcbeedeaf8d2f0eb38854befa8045",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c35b52fccc6dcf65310c3d4c5c7c0e14f069f44be15dab0401d5913214d6115a",
+    "schema_version": 3,
+    "sha256": "068a07ca0752246fbd3da82bc77db66902663409a7d8cd9fd26cc4f49d0f746c"
+  },
+  "response": {
+    "id": "resp_0f6cf855e4f61111016a9083bb363087d0ac236cce818de113",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 15204,
+      "input_tokens_details": {
+        "cache_write_tokens": 15201,
+        "cached_tokens": 0
+      },
+      "output_tokens": 416,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 15620
+    }
+  }
+}

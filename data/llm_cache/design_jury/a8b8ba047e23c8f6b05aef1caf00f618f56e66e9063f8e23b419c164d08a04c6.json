@@ -1,0 +1,70 @@
+{
+  "cache_key": "a8b8ba047e23c8f6b05aef1caf00f618f56e66e9063f8e23b419c164d08a04c6",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 48-vector framing, “What’s happening” instruction, stage filter, highlighted vector, observable signals, and “Continue to scored replay” CTA create a coherent map→inspect→score flow across all three viewports. Responsive layouts remain readable. Minor ambiguity remains on desktop: “All stages” is selected while a context-manip vector is shown, and the dense multi-column list weakens the selected stage/vector relationship.",
+    "fix": "Make the active stage and vector unmistakable on desktop—synchronize the dropdown with the displayed stage, strengthen selection styling, and keep the primary replay CTA closer to the selected vector.",
+    "score": 8,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c6d5b326d26fde1187b5c41f869ac9672eb599bdcc46aaafb46cf339ea44f81f",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135798,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "1f360af8a5d3c4ed149267722fc68f14c3c0be1cc5607d9943dde558bf76bd79",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124652,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "67c03b0290042c8793e3f2cf83044e10769d0f0cfd0e016810edd27bbd7ce855",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bf3860d114603147c3e59879ab978566bd67ea1b59fa8516137f19a8517c6ef1",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a8b8ba047e23c8f6b05aef1caf00f618f56e66e9063f8e23b419c164d08a04c6"
+  }
+}

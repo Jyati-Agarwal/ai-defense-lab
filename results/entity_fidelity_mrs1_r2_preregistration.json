@@ -1,0 +1,281 @@
+{
+  "access_scope": {
+    "admin_readable_raw_partitions_require_external_worm_custody": true,
+    "arbitrary_same_user_python_reads_cryptographically_prevented": false,
+    "canonical_mrs_lifecycle_is_single_use": true
+  },
+  "artifact": "entity_fidelity_mrs1_r2_preregistration",
+  "basket_aggregation_completed_in_memory": true,
+  "basket_aggregation_persisted_or_retained": false,
+  "completejourney": {
+    "development_households": 988,
+    "development_only_adaptation": true,
+    "observation_window": "[2017-01-01T00:00:00,2018-01-01T00:00:00) local wall",
+    "partition_manifest_sha256": null,
+    "partition_manifest_state": "not_created_after_stopped_r1_preprocessing",
+    "qualification_households": 1481,
+    "qualification_single_access": true,
+    "source_chain": {
+      "downloader_sha256": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+      "preprocessor_sha256": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+      "quarantine_receipt_sha256": "51ed9a46e17bd45ceb57ef595550ee2d5a49cd0d620cb3f5b21243da8d39ae6d",
+      "rds_manifest_sha256": "12931374805dee5e7caa0c97d13e09f7714d5f0dd0a5d6aad89df19d0f160371",
+      "rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+      "source_preregistration_sha256": "265ae1e475668ad6d90d4807fe76fc0c41d8d5c545eaa3940fdd840f85da94be"
+    },
+    "source_timestamp_timezone": "America/New_York",
+    "stored_timestamp_semantics": "source timezone-aware POSIXct converted to America/New_York local wall-clock, then timezone removed"
+  },
+  "completejourney_partitions_materialized_or_loaded": false,
+  "evaluator": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260857,
+    "classifier": {
+      "deterministic": true,
+      "force_col_wise": true,
+      "implementation": "lightgbm.LGBMClassifier",
+      "learning_rate": 0.04,
+      "max_depth": 5,
+      "min_child_samples": 40,
+      "n_estimators": 150,
+      "n_jobs": 1,
+      "num_leaves": 15,
+      "objective": "binary",
+      "reg_lambda": 1.0
+    },
+    "development_fit_diagnostic": {
+      "crossfit_scope": "discriminator/calibration_only",
+      "not_release_evidence": true,
+      "optimistic": true,
+      "out_of_sample": false,
+      "profile_scope": "all_development"
+    },
+    "features": [
+      "median_log_amount_percentile",
+      "amount_cv",
+      "mean_hour_sin",
+      "mean_hour_cos",
+      "log1p_median_interpurchase_days",
+      "log1p_frequency_per_30d",
+      "log1p_recency_days",
+      "log1p_max_burst_24h"
+    ],
+    "folds": 5,
+    "orientation_free_threshold": 0.65,
+    "qualification_is_first_independent_release_gate": true,
+    "seeds": [
+      20260827,
+      20260828,
+      20260829
+    ]
+  },
+  "gate_order": [
+    "development_freeze",
+    "one-receipt qualification",
+    "frozen UCI352 transfer",
+    "receipt-before-UCI502 one-shot final"
+  ],
+  "implementation_sha256": {
+    "scripts/download_completejourney_reference.py": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+    "scripts/download_retail_ii_reference.py": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "scripts/download_retail_reference.py": "d17e98ecfb88b2905055b8469606b1d6cebacb9f11aef822a3b32f41ca17a9f1",
+    "sim/completejourney_reference.py": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+    "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+    "sim/entity_fidelity_mrs1.py": "647a8272422f0b03225252ab584cc3602d37f9415de860465135c984ac2093e2",
+    "sim/entity_fidelity_v4.py": "91334afd5d5f0f53b0bbe527920ee6a18b7e2a27b8f2c1610483f878cb01d871",
+    "sim/population_mrs1.py": "411dcb3f40ef39b72897a2e2a2e32cf83b71bdc61a92a06c057965dafdd5fe8b",
+    "tests/test_entity_fidelity_mrs1.py": "49d2a683160eb606ad5c97d73524254ccc4231e92aca784e2f26e2fee34030dc",
+    "tests/test_population_mrs1.py": "11bb321c233ebe726f0715c76fed429c6fe10e64117b8c5a12bec77658d40d96"
+  },
+  "lineage": {
+    "change_scope": "restore the official America/New_York local-wall timestamp before removing timezone metadata; no window, model, seed, feature, threshold, or split change",
+    "official_source_evidence": {
+      "calendar_mapping": "2017-01-01 + (day - 285)",
+      "day_filter": "day >= 285 and day < 650",
+      "git_commit": "5b5d06192b9856edd04e4d405787af2f2e4a1fef",
+      "path": "data-raw/prep-data.R",
+      "timezone": "America/New_York"
+    },
+    "r0_to_r1": {
+      "change_scope": "parse the pinned uv semantic version from its canonical CLI output only",
+      "partition_artifacts_created": false,
+      "preflight_failure_path": "results/entity_fidelity_mrs1_preflight_failure.json",
+      "preflight_failure_sha256": "10f4cba07c6d37f6012c04a81d0468409a38dc26334774bdfb34cb8223b2aca9",
+      "preflight_failure_status": "STOP_SUPERSEDED_BY_IMPLEMENTATION_R1",
+      "qualification_partition_materialized_or_used": false,
+      "rds_bytes_read_for_sha256_verification": true,
+      "revision": "r1",
+      "source_transaction_rows_parsed_or_materialized": false,
+      "superseded_preregistration_path": "results/entity_fidelity_mrs1_preregistration.json",
+      "superseded_preregistration_sha256": "648c0d1d8020c06c6d184cf451c9caff90acd401e6db3b62393b91439ce3cb7a"
+    },
+    "r1_preprocess_failure_path": "results/entity_fidelity_mrs1_r1_preprocess_failure.json",
+    "r1_preprocess_failure_sha256": "9aa113dbaea1b72f8b1cd0cae8a6a167290fabcc1e008f4f2b6289e01c941099",
+    "r1_preprocess_failure_status": "STOP_SUPERSEDED_BY_IMPLEMENTATION_R2",
+    "r1_preprocessor_sha256": "46c69ab0de5fa5ded4bc2941745c7c676c2feade2739634a9e45eced8cdb3b57",
+    "r1_preregistration_path": "results/entity_fidelity_mrs1_r1_preregistration.json",
+    "r1_preregistration_sha256": "24c080955926b7c4ea42ef8d590f3b4e8250bc755ddbb25b6a90385a95357b2e",
+    "revision": "r2",
+    "source_access_before_r2_preregistration": {
+      "basket_aggregation_completed_in_memory": true,
+      "deterministic_household_split_computed": false,
+      "model_fit_or_metric_computed": false,
+      "partition_files_created": false,
+      "qualification_partition_selected_or_scored": false,
+      "raw_source_rows_transiently_parsed": true
+    }
+  },
+  "model": {
+    "amount_distribution": "Student-t5 AR(1) log amount",
+    "calendar_fit": "Jeffreys exposure-adjusted marginal factors: (count+0.5)/exposure_hours for exposed bins; unexposed bins use the exposed-bin mean; arithmetic mean one; not joint Poisson MLE",
+    "calendar_hazard_shape": [
+      24,
+      7,
+      53
+    ],
+    "calendar_pseudocount": 0.5,
+    "forbidden_postprocessing": [
+      "independent count sampling",
+      "independent end sampling",
+      "clipping",
+      "repair",
+      "shuffle",
+      "post-scaling"
+    ],
+    "frailty": "one mean-one Gamma draw per customer",
+    "multiplicity_categories": [
+      "1",
+      "2",
+      "3",
+      "4+ rendered as 4"
+    ],
+    "renewal": "stationary Gamma gaps in operational time",
+    "timing_to_amount_coupling": "two-stage posterior-score approximation E[log U | timing]; not joint shared-latent MLE"
+  },
+  "new_model_family": true,
+  "not_v10_tuning": true,
+  "optimizer": {
+    "amount_bounds": [
+      [
+        -20.0,
+        30.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -0.95,
+        0.95
+      ],
+      [
+        -6.0,
+        6.0
+      ]
+    ],
+    "amount_starts": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0,
+        0.0,
+        0.3,
+        0.0
+      ],
+      [
+        10.0,
+        0.0,
+        0.0,
+        -0.3,
+        1.0
+      ]
+    ],
+    "boundary_tolerance": 1e-05,
+    "failure": "terminal STOP on nonconvergence or any active bound",
+    "gauss_laguerre_nodes": 48,
+    "maximum_iterations": 600,
+    "method": "L-BFGS-B",
+    "timing_bounds": [
+      [
+        -1.3862943611198906,
+        2.302585092994046
+      ],
+      [
+        -2.995732273553991,
+        5.8998973535824915
+      ],
+      [
+        -1.3862943611198906,
+        2.995732273553991
+      ]
+    ],
+    "timing_starts": [
+      [
+        0.0,
+        2.6390573296152584,
+        0.0
+      ],
+      [
+        0.6931471805599453,
+        3.4011973816621555,
+        0.6931471805599453
+      ],
+      [
+        -0.5108256237659907,
+        1.9459101490553132,
+        -0.6931471805599453
+      ]
+    ]
+  },
+  "schema_version": "mrs1",
+  "source_bytes_downloaded": true,
+  "source_rds_bytes_read_for_sha256_verification": true,
+  "source_transaction_rows_persisted_or_retained": false,
+  "source_transaction_rows_transiently_parsed": true,
+  "study_revision": "mrs1.2",
+  "terminal_stop_conditions": [
+    "provenance",
+    "access chronology",
+    "optimizer",
+    "class or parameter drift",
+    "novelty",
+    "determinism",
+    "gate failure"
+  ],
+  "uci352_transfer_source": {
+    "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+    "customers": 2440,
+    "dataset_id": 352,
+    "license": "CC BY 4.0",
+    "manifest_sha256": "0fca9904171c1382bfdd8dc1369929a310817a63472474dc61dee4a4ae800cb9",
+    "observation_end": "2011-12-10T00:00:00",
+    "observation_start": "2010-12-01T00:00:00",
+    "partition": "calibration",
+    "source_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+    "transactions": 10621,
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "uci502_final_source": {
+    "archive_sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+    "dataset_id": 502,
+    "downloader_sha256": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "fixed_window": "[2009-12-01, 2010-12-01)",
+    "license": "CC BY 4.0",
+    "manifest_sha256": "8092c0b746d0c03d319570bc483e1f3085f057fc9e42f0de8c2b258524573f38",
+    "observation_end": "2010-12-01",
+    "observation_start": "2009-12-01",
+    "sheet": "Year 2009-2010",
+    "source_url": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+    "workbook_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+  }
+}

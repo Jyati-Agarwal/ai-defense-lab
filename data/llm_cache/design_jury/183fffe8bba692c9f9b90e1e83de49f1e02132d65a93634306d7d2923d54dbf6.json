@@ -1,0 +1,51 @@
+{
+  "cache_key": "183fffe8bba692c9f9b90e1e83de49f1e02132d65a93634306d7d2923d54dbf6",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The dark grid, cyan/coral palette, bordered panels, glowing controls, and strong result states create a cohesive, polished cyber-lab aesthetic. Desktop’s two-column card and mobile’s single-column flow have clear hierarchy. However, responsive composition is visibly compromised: on desktop the navigation bar cuts across and nearly obscures the oversized hero title, while on tablet the fixed navigation overlays the controls mid-card and its menu is clipped at the right edge. Numerous micro-labels and annotations are also extremely small, especially on mobile, weakening readability and refinement. These conspicuous overlap and typography issues prevent demo-ready polish across all three viewports.",
+    "fix": "Correct the header’s sticky positioning and page offsets so it never overlaps the hero or form; use a collapsed tablet navigation rather than a clipped desktop rail. Keep the hero treatment consistent across breakpoints, increase the smallest label/body sizes and line height, and slightly relax mobile panel spacing around headings and result cells.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 420368,
+        "sha256": "12950c37678bcfb421d6580dd025998186a0b45418d476e8b84b208271136b57",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393099,
+        "sha256": "9e6c6fc8f2f29e27aa8188fc29bbc5672a97c775d714b409bb417a5b87bf9f2e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308220,
+        "sha256": "8540d02349e79701b635cf929b07fccdf3f20743ddebb6bf9f83de80cda0019f",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0d09bdf50ec9beaee7f4377cefb4148bc22c175fbc7b940715c1cd6fd08118aa",
+    "schema_version": 3,
+    "sha256": "183fffe8bba692c9f9b90e1e83de49f1e02132d65a93634306d7d2923d54dbf6"
+  },
+  "response": {
+    "id": "resp_0b89ff4d319ca61a016a908503d75487d0a9dfb9d0a0907732",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6198,
+      "input_tokens_details": {
+        "cache_write_tokens": 6195,
+        "cached_tokens": 0
+      },
+      "output_tokens": 714,
+      "output_tokens_details": {
+        "reasoning_tokens": 492
+      },
+      "total_tokens": 6912
+    }
+  }
+}

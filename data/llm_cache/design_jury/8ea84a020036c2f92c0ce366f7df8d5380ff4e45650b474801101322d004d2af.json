@@ -1,0 +1,70 @@
+{
+  "cache_key": "8ea84a020036c2f92c0ce366f7df8d5380ff4e45650b474801101322d004d2af",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly connects measured attack economics to the intent-integrity defense story: defense reduces success from 84% to 5% and ROI from 545.35× to 25.60×, while honestly stating deterrence is unproven. It also maps the next control to Mastercard authorization-time decisioning and explicitly labels it proposed, not deployed. However, the decisive 25.60× result is not independently substantiated on-screen: successful-fraud value, total attack cost, sample window, assumptions, and source linkage are absent, so the Mastercard relevance remains a credible proposal rather than demonstrated impact.",
+    "fix": "Add an inspectable ROI evidence panel showing the underlying fraud value, total attack cost, attempt count, time window, assumptions, calculation, and links to the measured ledger records. Then connect the proposed Mastercard authorization signal to a concrete before/after decision-flow demonstration with measurable expected outcomes, still clearly separated from production claims.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2fff403c8d087610be0f334a22c200434f4cd346b6453ebae426ebc2e2f20537",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 227948,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "9ee959e011ea4d7cc9015fc74e61f006b77dca77d1b11335801f95d1d5baa3cd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 187441,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "df3993155f45904ad413f4195170c7dd5fee9790ec719586eb56f6fae83d9fe5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 182945,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "52e62f22456d90d53529c32a129d16f9041f4a94cf8cdc5fa7735f5c64a94934",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1ea65c3755377f750bafee16c1ab01ac7d964d4707425571a5158a1f5c994c97",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8ea84a020036c2f92c0ce366f7df8d5380ff4e45650b474801101322d004d2af"
+  }
+}

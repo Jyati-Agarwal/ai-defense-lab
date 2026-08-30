@@ -1,0 +1,51 @@
+{
+  "cache_key": "332272d0a367ef0e12cdbf90c34c1dcd19932131154d0513deedcf8db4fdb9f5",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly demonstrates intent-integrity failure: a trusted shopping intent (“Find running shoes under INR 2437”) is contrasted with a machine-only seam and a changed recorded outcome (“Digital wallet voucher” to a merchant DID). It connects the attack to payment safety through the explicit control point, “verify semantic alignment before payment authorization,” and explains why signatures alone can remain valid while the authorized object changes. The visible, truncated synthetic retrieval layer makes the injection mechanism safe and understandable across all three viewports. Real-server responses are successful with no browser failures or fixture rail. However, the screen does not visibly prove a Mastercard-specific rail, API, identity primitive, or authorization decision.",
+    "fix": "Add a visible Mastercard-specific authorization mapping and live decision artifact—for example, show the intent hash and merchant/product semantics checked at authorization, the resulting allow/block decision, and the relevant Mastercard API or network control used—while retaining the safe truncated payload.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 347474,
+        "sha256": "4cbfb072bf31c5828822ae371f295e1f83327ee04593f20a64bce61bcb08a149",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312117,
+        "sha256": "7e29c6d90b79a34002272db14277082fdccfb8fa3bfbcf8f4729e298704152be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264865,
+        "sha256": "10238cacde8d09b1fe1f82c33d5c23b8d3348a3eb6ee3b46faa3f9d8467d3ef1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb722df41619dc9dd532be7efa33b0eb1d4145b4d4afe0de39299fda79692bca",
+    "schema_version": 3,
+    "sha256": "332272d0a367ef0e12cdbf90c34c1dcd19932131154d0513deedcf8db4fdb9f5"
+  },
+  "response": {
+    "id": "resp_017353f182fea1b4016a90839ea1d087d08ffef1c3bfb971ac",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6145,
+      "input_tokens_details": {
+        "cache_write_tokens": 6142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 477,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 6622
+    }
+  }
+}

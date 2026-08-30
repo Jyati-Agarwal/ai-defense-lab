@@ -1,0 +1,70 @@
+{
+  "cache_key": "216b3e00d54e920ebb1cfc1368865addbacb901398e2496e637784e9a616456d",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “one payment, two answers” thesis is clear and the selected transaction flowing into a Legacy ALLOW versus Intent Integrity BLOCK verdict creates a recognizable forensic-demo moment. Cyan/red signaling and the flagship trace reinforce it across viewports. However, most of the screen remains a conventional dark event table with status pills; on mobile, the distinctive comparison is buried beneath eight repetitive records, weakening the reveal.",
+    "fix": "Turn the policy disagreement into the dominant visual artifact: keep the selected payment and split ALLOW/BLOCK verdict visible beside the event stream, then animate or diagram the causal seam between signed intent and paid cart. On mobile, surface this reveal before or within a collapsed transaction list.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "289aaa03526f71bb13a861cc58d020ba25934572cd3897530f79d0c9f718bf25",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 200551,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "18eb77824ec8f2442056133b5c685dc0c4df75a6159656cf99b30d35d871ccfc",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 177094,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "74f12ea6334295f269a9b4e73a667579f11b6ed5fc3319309eda5a33e9a269d6",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 174744,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b98d0bc7ec028e32f3b9985514d06c81a5c89a1c23ef98b77edc73a6213b19db",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "868041b5856ce9a1e08a41a2a4fd57aa31828169a67e42eda8fa08351d9b6492",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "216b3e00d54e920ebb1cfc1368865addbacb901398e2496e637784e9a616456d"
+  }
+}

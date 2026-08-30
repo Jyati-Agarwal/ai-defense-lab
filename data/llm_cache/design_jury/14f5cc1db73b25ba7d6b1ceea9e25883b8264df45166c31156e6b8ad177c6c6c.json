@@ -1,0 +1,51 @@
+{
+  "cache_key": "14f5cc1db73b25ba7d6b1ceea9e25883b8264df45166c31156e6b8ad177c6c6c",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly frames 48 payment kill-chain vectors, separates AGENTIC/CLASSIC threats, exposes only safe metadata and observable signals, and links a selected vector to a scored replay. Payment examples such as UPI manipulation, authorized push-payment impersonation, merchant manipulation, and card-not-present fraud support the Mastercard context. However, the visible default is CLASSIC and centers credential-stuffed card fraud, so the promised intent-integrity and agentic-defense story is not demonstrated directly. No visible Mastercard-specific capability, integration, or network-level defense outcome is evidenced.",
+    "fix": "Default the demo to an agentic payment vector and visibly trace intended user goal → adversarial intent/tool mutation → observable signals → integrity decision and defense action. Tie that flow to a concrete Mastercard-relevant rail or capability, then retain the scored-replay CTA as proof of evaluation.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 568873,
+        "sha256": "fc5d1de0f30df9b5e63cae4a23ae9e104a06c086894bbf9e56475aa05ec19b96",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1f68d6a6ff4c1338f42886baff94f4e8053e23705be7c1adfe549a8c57e44567",
+    "schema_version": 3,
+    "sha256": "14f5cc1db73b25ba7d6b1ceea9e25883b8264df45166c31156e6b8ad177c6c6c"
+  },
+  "response": {
+    "id": "resp_0dd3997c33eaedd4016a9083829f3887d080cba10e15a0641f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6571,
+      "input_tokens_details": {
+        "cache_write_tokens": 6568,
+        "cached_tokens": 0
+      },
+      "output_tokens": 514,
+      "output_tokens_details": {
+        "reasoning_tokens": 312
+      },
+      "total_tokens": 7085
+    }
+  }
+}

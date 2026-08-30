@@ -1,0 +1,51 @@
+{
+  "cache_key": "0712b7246906be8d162d56240b5c35b5ef0774b045c38993d19ad0f639c04616",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Automated scans report no confirmed WCAG violations, no touch-target violations, and no viewport overflow at 1440, 768, or 390 px. However, color contrast remains seriously incomplete for 47 composer nodes at every viewport because gradient backgrounds prevented measurement. Mobile also reports one input clipped by the overflow-hidden story panel (left edge -15.5 px). No measured keyboard navigation, focus-order/visibility, result announcement, or reduced-motion evidence was provided, so demo readiness is unproven.",
+    "fix": "Use deterministic opaque backgrounds and verify all text/control contrast numerically to WCAG AA. Remove the mobile input clipping. Add Playwright evidence for complete keyboard operation and visible focus across selects, ranges, toggle, and Launch; verify dynamic results are announced appropriately. Test prefers-reduced-motion and disable or reduce nonessential transitions/animation.",
+    "score": 5,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 420368,
+        "sha256": "12950c37678bcfb421d6580dd025998186a0b45418d476e8b84b208271136b57",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393099,
+        "sha256": "9e6c6fc8f2f29e27aa8188fc29bbc5672a97c775d714b409bb417a5b87bf9f2e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308220,
+        "sha256": "8540d02349e79701b635cf929b07fccdf3f20743ddebb6bf9f83de80cda0019f",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2587a49d45c3f85ca2d2b47fa94cb67274c89fc2aab87361d211af915b48df52",
+    "schema_version": 3,
+    "sha256": "0712b7246906be8d162d56240b5c35b5ef0774b045c38993d19ad0f639c04616"
+  },
+  "response": {
+    "id": "resp_0447dd2a7a6a3b18016a90850e028c87d0a1570b3e2d673662",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 14059,
+      "input_tokens_details": {
+        "cache_write_tokens": 14056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 214
+      },
+      "total_tokens": 14474
+    }
+  }
+}

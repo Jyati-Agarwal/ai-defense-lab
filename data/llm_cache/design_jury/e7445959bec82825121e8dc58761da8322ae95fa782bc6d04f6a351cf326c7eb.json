@@ -1,0 +1,70 @@
+{
+  "cache_key": "e7445959bec82825121e8dc58761da8322ae95fa782bc6d04f6a351cf326c7eb",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and subtitle clearly state the thesis, and the metric cards, constrained-FPR recall, confusion matrix, and ablation table support it with labeled values across viewports. However, the only next action—“Compare configurations”—appears after a long scroll and does not explain what users will see or decide. Dense, very small chart/table labels weaken mobile comprehension, while the mobile header hides the current Metrics destination behind horizontal navigation.",
+    "fix": "Surface a clearly described “Compare configurations” action near the summary, state the decision it enables, enlarge mobile labels, and keep the active Metrics location visibly identified in the header.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1d2fea2447ab7db1eeb5c0de0e100edc5aa9fc49a61879b11f884969931f1fe2",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 216892,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "27f063468499becd799faec8ac14c565f4c104b2bfc9dd89920132c827902963",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193239,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "8246ab03d1a346c20311ea083355a6fc8999ce4e6e4d7250eaafe10350366fa0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180942,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "06ac87769b88531c6a39c28afa81ac9eddab05135a3bb967e75be894618123d9",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "5f4b18b53ae463c43325361329075c935ccf7203dd270e2808ca3656215ebcea",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "15c03c844a3b25c84ebc3fa6a3a4ab0fe8f18acd37a2003b67545d437014e317",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ae3d14f2fdcecab61a720a8468304553f8c550e2ae2c81b080b82aa5e1f59ec1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bd89c743bedf4b7da4054b0810cc96ed728cbe85ccca29dcbf7ee1e751652f8a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e7445959bec82825121e8dc58761da8322ae95fa782bc6d04f6a351cf326c7eb"
+  }
+}

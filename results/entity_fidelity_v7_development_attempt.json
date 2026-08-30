@@ -1,0 +1,9 @@
+{
+  "artifact": "entity_fidelity_v7_development_attempt",
+  "calibration_access_reserved": true,
+  "maximum_calibration_loader_calls": 1,
+  "protocol_sha256": "400f6a374b7cba56af9f08cc369cb352672748391d851d03bd30042fc9dd8231",
+  "schema_version": 7,
+  "status": "consumed",
+  "uci502_transactions_accessed": false
+}

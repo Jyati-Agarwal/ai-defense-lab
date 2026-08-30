@@ -1,0 +1,70 @@
+{
+  "cache_key": "faa9fd4282a35245179b1d12a377f2a4b3f00361fd3e1929d600a507b32daef0",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong, cohesive defense-console art direction: disciplined near-black palette, restrained cyan/green/yellow semantics, distinctive radar graphic, and clear responsive restructuring. However, desktop metric values visibly overrun/crop within their columns, the desktop two-panel composition leaves excessive inert space, and mobile compresses dense evidence into very small low-contrast type. The global header also feels clipped rather than elegantly responsive on tablet/mobile, while the desktop header competes with oversized background lettering.",
+    "fix": "Prevent metric overflow with responsive number sizing, rebalance the desktop illustration-to-data ratio, raise mobile evidence text size/contrast and spacing, and replace the clipped horizontal header treatment with a clearer compact navigation pattern.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c8cf58a9b643c9cc4b3408f9993e8912d02e06ff434c415a8878537c784c0f91",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 378668,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "9cb7ff023f98a2544a8b29a9e58c1591d44d0ab4dd192957b9c6e30cfd9ae73a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 249276,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "6ce215f0f8319220b586445668eedd59aa8889565f241394032cae033523ef6a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 197017,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "21178a702e53436a173ca007eda7c4880816c6210506ea9500f69813fa8dc4b9",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "93a64b38b651ff51614f9ab40e3b923977067835772e3ec317e5e9e2eb248f60",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "faa9fd4282a35245179b1d12a377f2a4b3f00361fd3e1929d600a507b32daef0"
+  }
+}

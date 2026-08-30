@@ -1,0 +1,40 @@
+{
+  "artifact": "entity_fidelity_v6_freeze_failure",
+  "attempted_at_utc": "2026-08-27T01:49:56Z",
+  "failure": {
+    "error_type": "RuntimeError",
+    "message": "discrete invoice knots lost observed support",
+    "stage": "freeze_profile_fit_before_protocol_write"
+  },
+  "implementation_sha256": {
+    "data/market_prices.csv": "9aa1b29342f61a345535a5e748ff41eb417e9ef61511b80d43569fd51cfb752b",
+    "requirements.lock": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "sim/entity_fidelity_v6.py": "c6dd095a6e5290855a15d82de2d46addbf7c2e580f119dbc34b54ea4d9efdcf6",
+    "sim/mandate_twin.py": "1192c6b7122af4c62102cd30a4de9a2076b08afe4660d66ce4cb98da4022ddf5",
+    "sim/population_v6.py": "aa5c90f9132b3c4c3a98aa288a4b0378bd89f6889e5c9e5edb08df37ae08397e",
+    "tests/test_entity_fidelity_v6.py": "f7a514ba427ef7e49664b053dfe7532c36c7b133fc8f6223aeb128ded57e8c6f",
+    "tests/test_population_v6.py": "92c0fc06c4a2a66f40edfabae827f4399b67e3be107ace782f9144575ab4d3b8"
+  },
+  "preconditions": {
+    "cross_version_tests_passed": 84,
+    "frozen_protocol_written": false,
+    "reference_workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+    "sealed_uci502_transactions_accessed": false,
+    "uci352_calibration_access_attempted": true
+  },
+  "release_eligible": false,
+  "schema_version": 6,
+  "status": "STOP_FAIL",
+  "stop_rule": {
+    "new_v7_same_generator_family_permitted": false,
+    "sealed_uci502_access_permitted": false,
+    "threshold_changed": false
+  },
+  "unexpected_preexisting_attempt_ledger": {
+    "artifact_sha256": "ac319a34dcdfdd9efab64b6687066cbf73ec890e7387d14c62953f5142b43ff4",
+    "path": "results/entity_fidelity_v6_development_attempt.json",
+    "placeholder_protocol_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "present_before_freeze_attempt": true,
+    "provenance_status": "under_audit"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-dab269c22233",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "dab269c222334dbdfc3a5094222fe8630e537705b34b0bc5035c5aa3c1dbd170",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] Payment scam signals impersonation and urgent transfer pressure; actionable details removed.",
+  "kind": "scam_transcript",
+  "language": "en",
+  "operational": false,
+  "response": {
+    "id": "resp_0685c15cdca60164016a8f5b3d595487d0bb9be92bace7885c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 73,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 188
+    }
+  },
+  "response_text_sha256": "716577f6f37e1cbfe6ce91e104f03796cc79c9adddf3454325679528e2a6b273",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "dab269c222334dbdfc3a5094222fe8630e537705b34b0bc5035c5aa3c1dbd170",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "scam_transcript",
+      "language": "en",
+      "variant": "baseline"
+    }
+  }
+}

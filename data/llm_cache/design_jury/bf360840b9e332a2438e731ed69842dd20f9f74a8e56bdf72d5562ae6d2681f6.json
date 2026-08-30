@@ -1,0 +1,70 @@
+{
+  "cache_key": "bf360840b9e332a2438e731ed69842dd20f9f74a8e56bdf72d5562ae6d2681f6",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The confrontational “Accuracy is the wrong question” thesis, evaluation-ledger framing, cyan/red defense-console palette, and evidence-oriented labels give the screen a recognizable identity across all viewports. However, most of the body remains familiar dark-dashboard material: KPI tiles, standard charts, a matrix, and a table. No visible interaction or singular visual device turns the metrics into a memorable demo moment.",
+    "fix": "Create one signature visual that demonstrates the thesis—for example, an animated operating-point control linking the PR curve, false-positive caps, confusion matrix, cost, and latency so the consequences update together. Make that causal comparison the hero instead of a collection of conventional panels.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "5a1ace714e2106c26ddfd4f7cc1d32dcfa2d4f649c6a8c4226a250e4c08af0d7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 199234,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "da4436a0a47a7d6f59916cab4ef9184a8b02176c3ac0925207877a63a850a480",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 176744,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "d4b439532500c3921407741f16b01257d8ea4c1e0de8d5b0761b43ef86041f3b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 163046,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "9894a96383f2da3a2d14a699d41e2c15556908253b8ef818286b5190ab0593ce",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ae50670a738a2ce0b31af0aed56b63ebb98a5a2062be8a5a36b1a8d4fd30b8f0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "bf360840b9e332a2438e731ed69842dd20f9f74a8e56bdf72d5562ae6d2681f6"
+  }
+}

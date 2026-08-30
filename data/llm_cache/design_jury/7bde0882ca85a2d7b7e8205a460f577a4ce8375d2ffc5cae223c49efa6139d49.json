@@ -1,0 +1,70 @@
+{
+  "cache_key": "7bde0882ca85a2d7b7e8205a460f577a4ce8375d2ffc5cae223c49efa6139d49",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent-integrity: a borderline INR purchase changes from BLOCK to ALLOW using five verified legitimate neighbors, with 97–99% similarity and an explicit false-positive-suppression outcome. However, it does not prove why these records are verified, how similarity supports the decision, or how this mechanism maps to Mastercard’s payment-network, fraud, trust, or measurable business objectives.",
+    "fix": "Add compact proof of precedent provenance and decision logic, then tie the result to payment impact—for example model/rule contribution, verification source and timestamp, false-positive reduction, approval-rate lift, and avoided legitimate-payment decline.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "acf48d4bc1dca583f34b20d21bdb84c481647f13155ded746a562a2b3d873edb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 181630,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "1816f5087c45cd751bee0dbc1f1ce5526d57fcc6341d95ae35a905fb79411109",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154156,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "dbb1ba829c5c1a29de5a5cb04dcbbc44fb8cb68c32df9b5642de051ea42dfd47",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154060,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "b9fa542e76190f5482630cb562b26c5036921ecb064e049b4610c053e4a6dd8a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a6c0bad1658a5945228fc5fa66905d581788d34bb0674ccf9bc5e9dfcbaa047c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "7bde0882ca85a2d7b7e8205a460f577a4ce8375d2ffc5cae223c49efa6139d49"
+  }
+}

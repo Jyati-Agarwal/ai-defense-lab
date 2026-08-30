@@ -1,0 +1,70 @@
+{
+  "cache_key": "8c05d3be65f20a0e8d27f44515cbcffc8541a7cd99abf4017c927705eb0407a2",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial thesis, BLOCK→ALLOW reversal, numbered precedent stack, and restrained cyan/green forensic styling create a coherent demo narrative across viewports. However, the dominant bordered card, status pills, monospace labels, and dark security-dashboard palette remain familiar; the precedent mechanism is presented mainly as a list rather than a uniquely recognizable visual idea.",
+    "fix": "Turn precedent memory into a signature visual—show the borderline query being pulled through a visible similarity field or evidence constellation into the BLOCK→ALLOW reversal, with neighbors materially influencing the decision instead of appearing as a conventional ranked table.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "4c7a605af2dfd61a92761f5892d89af0dcd951551cfc037b92d518d0648f76a7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 181736,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "15f6e9227fe945ac534369486e5cff5d648ecaca04d9423afcea883ed07f4131",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 155255,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "3b6be3f61743d5efee7baf83514487bdd98f908753692de4bf44d1811fc4ce96",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154987,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "998e9a8df02280c7efb4343297bcb8378a68e1b0db5398b806cdbb9625939c3e",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5408018265b4a60ec100dbda6ccd77ec4ee52261a9a1a34babe02f0ae669380f",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8c05d3be65f20a0e8d27f44515cbcffc8541a7cd99abf4017c927705eb0407a2"
+  }
+}

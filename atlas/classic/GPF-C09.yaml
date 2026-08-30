@@ -1,0 +1,13 @@
+id: GPF-C09
+name: Triangulation commerce laundering
+tier: classic
+description: A fake storefront accepts a victim order while stolen payment funds the real supplier shipment.
+kill_chain_stage: merchant_manip
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [reconnaissance, merchant_manip, payment_manip, cash_out]
+observable_signals: [shipping identity mismatch, repeated supplier merchant, order amount mirroring]
+defense_hooks: [merchant linkage graph, shipping consistency check]
+severity: high
+feasibility_today: true

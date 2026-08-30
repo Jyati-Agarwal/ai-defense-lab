@@ -1,0 +1,70 @@
+{
+  "cache_key": "140be3ecc1033eaef7011b8a599573eb654db3cadc8714f4d82dfb16686846dc",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances intent-integrity by distinguishing post-remediation fresh rows from an independent holdout, exposing prior-family disclosure, frozen weights, chronological cutoff, shuffle baseline, comparative recall, and an explicit “not production ready” decision. However, the perfect 100% results lack visible sample counts, uncertainty, dataset provenance, and proof that the results artifact or scope-evidence control reveals auditable records; API 200s and clean browser execution do not establish those claims.",
+    "fix": "Make the evidence auditable in-demo: show cohort sizes, confidence intervals, row-level provenance and timestamps, remediation/training/evaluation lineage, and an independently collected post-remediation holdout result. Demonstrate the scope-evidence control opening those records and tie the deployment decision to explicit pass/fail thresholds.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "56800c1e6143ad0cbe956f0b3719006499f74ecdd190c1c9bb4645993ed28b18",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212226,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "bcb4dbf753a1e785fec3499f7ce944fc9396cdee1109533726eb6fc4ddcbf95f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162900,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "843bd0e5adb73e7d4d41b13f553415b7d0d6ef8e4348012631159dd2568cdf14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "882528f858180c74c5ee8e6be3ab31497922f833f8f833cff0e059490306bff7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "140be3ecc1033eaef7011b8a599573eb654db3cadc8714f4d82dfb16686846dc"
+  }
+}

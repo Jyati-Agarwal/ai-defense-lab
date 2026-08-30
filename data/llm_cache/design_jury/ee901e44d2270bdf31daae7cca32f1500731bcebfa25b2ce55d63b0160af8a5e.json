@@ -1,0 +1,70 @@
+{
+  "cache_key": "ee901e44d2270bdf31daae7cca32f1500731bcebfa25b2ce55d63b0160af8a5e",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The arena clearly advances intent-integrity through adversarial mutation, fresh-row risk, guarded promotion, holdout/regression gates, and an explicit warning that zero replay ASR does not prove generalization. However, the screenshots provide no visible Mastercard or payments use case, transaction-level intent signal, business outcome, threat scenario, dataset provenance, or proof that the displayed ASR, 25 survivors, and gate results derive from real evaluation rather than presentation data.",
+    "fix": "Anchor the arena to one concrete Mastercard payment-intent attack and show traceable evidence: transaction/input, intended action, mutation, defense decision, holdout dataset and sample size, measured false-positive/false-negative impact, and promotion outcome. Add visible artifact provenance or a drill-down tying every headline metric and survivor count to captured evaluation runs.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "288f13f0915a1c0c73421f9dcbc90e24f6211e2c179ec3fb0e586bdbc9c97325",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205761,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "3e224039d752dd5dbf3adece37fea839753e9607e97c6bee15db3b9c717a3228",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 198936,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "e91298f1c3657c620037c7981857dbf1a757c6c54fe76dcacddca08e181159da",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1e7db0a3eefe765a595296a67de159b512f39940db0937ab4edf377073f4148c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ee901e44d2270bdf31daae7cca32f1500731bcebfa25b2ce55d63b0160af8a5e"
+  }
+}

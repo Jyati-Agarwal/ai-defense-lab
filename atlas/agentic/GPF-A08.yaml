@@ -1,0 +1,13 @@
+id: GPF-A08
+name: Natural-language constraint reinterpretation
+tier: agentic
+description: Ambiguous wording is reinterpreted to bypass an explicit category, payee, or amount restriction.
+kill_chain_stage: intent_manip
+channel: agentic_checkout
+rail: card
+genai_capability: flexible natural-language reasoning
+primitives: [context_manip, intent_manip, merchant_manip]
+observable_signals: [structured-to-playback inconsistency, disallowed MCC, low intent specificity]
+defense_hooks: [structured constraint enforcement, ambiguity step-up]
+severity: high
+feasibility_today: true

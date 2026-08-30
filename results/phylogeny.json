@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Known A training paths",
+      "status": "seed"
+    },
+    {
+      "id": "evt_arena_r1_0000",
+      "label": "topic-blending+slow-negotiation",
+      "parent": "root",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r1_0004",
+      "label": "topic-blending+graph-signal-reduction+artifact-softening",
+      "parent": "root",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r1_0008",
+      "label": "fanout-reduction+slow-negotiation+paced-velocity",
+      "parent": "root",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r1_0019",
+      "label": "topic-blending",
+      "parent": "root",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0002",
+      "label": "known-payee-reuse",
+      "parent": "evt_arena_r1_0000",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0004",
+      "label": "topic-blending+paced-velocity+fanout-reduction",
+      "parent": "evt_arena_r1_0000",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0006",
+      "label": "artifact-softening+topic-blending+known-payee-reuse",
+      "parent": "evt_arena_r1_0000",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0008",
+      "label": "topic-blending+fanout-reduction",
+      "parent": "evt_arena_r1_0019",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0010",
+      "label": "graph-signal-reduction+paced-velocity+known-payee-reuse",
+      "parent": "evt_arena_r1_0008",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0011",
+      "label": "paced-velocity+topic-blending",
+      "parent": "evt_arena_r1_0008",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0013",
+      "label": "slow-negotiation+artifact-softening",
+      "parent": "evt_arena_r1_0000",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0014",
+      "label": "artifact-softening",
+      "parent": "evt_arena_r1_0019",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0015",
+      "label": "artifact-softening",
+      "parent": "evt_arena_r1_0019",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0016",
+      "label": "fanout-reduction+known-payee-reuse+graph-signal-reduction",
+      "parent": "evt_arena_r1_0000",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r2_0020",
+      "label": "slow-negotiation+fanout-reduction",
+      "parent": "evt_arena_r1_0019",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r3_0002",
+      "label": "graph-signal-reduction+slow-negotiation",
+      "parent": "evt_arena_r2_0010",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r3_0004",
+      "label": "paced-velocity+graph-signal-reduction+slow-negotiation",
+      "parent": "evt_arena_r2_0010",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r3_0005",
+      "label": "paced-velocity+graph-signal-reduction+topic-blending",
+      "parent": "evt_arena_r2_0010",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r3_0006",
+      "label": "topic-blending+paced-velocity",
+      "parent": "evt_arena_r2_0010",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r3_0013",
+      "label": "known-payee-reuse",
+      "parent": "evt_arena_r2_0008",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0000",
+      "label": "graph-signal-reduction",
+      "parent": "evt_arena_r3_0004",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0001",
+      "label": "paced-velocity+artifact-softening",
+      "parent": "evt_arena_r3_0005",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0002",
+      "label": "known-payee-reuse+paced-velocity+graph-signal-reduction",
+      "parent": "evt_arena_r3_0006",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0003",
+      "label": "known-payee-reuse+paced-velocity",
+      "parent": "root",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0005",
+      "label": "graph-signal-reduction+topic-blending",
+      "parent": "root",
+      "emergent": true,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r4_0012",
+      "label": "slow-negotiation",
+      "parent": "root",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r5_0000",
+      "label": "artifact-softening",
+      "parent": "evt_arena_r4_0001",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r5_0002",
+      "label": "known-payee-reuse",
+      "parent": "evt_arena_r4_0001",
+      "emergent": false,
+      "status": "survived"
+    },
+    {
+      "id": "evt_arena_r5_0004",
+      "label": "paced-velocity",
+      "parent": "evt_arena_r4_0000",
+      "emergent": false,
+      "status": "survived"
+    }
+  ]
+}

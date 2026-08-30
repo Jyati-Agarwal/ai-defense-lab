@@ -1,0 +1,51 @@
+{
+  "cache_key": "e0ea4c8d892ddb5adc60cbd88b04add0f38ef6ff442c9d66af9c559f790e61dd",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated testing reports no confirmed violations, no horizontal document overflow, no touch-target violations, a reachable 158×46 px skip-link target, keyboard traversal through the navigation, and reduced-motion behavior with no transform or opacity animation. However, results remain materially inconclusive at every viewport: 6 serious aria-prohibited-attr nodes, 2 critical duplicate-id-aria nodes, and 484–553 serious color-contrast nodes. These unresolved checks prevent WCAG readiness from being established.",
+    "fix": "Resolve the prohibited ARIA attributes and duplicate IDs, then measure every flagged foreground/background color pair and correct failures to WCAG AA contrast. Re-run axe until these checks produce conclusive passes at all three viewports; also retain regression tests for keyboard order, visible focus, skip-link activation, touch targets, overflow, and prefers-reduced-motion.",
+    "score": 6,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 238082,
+        "sha256": "1d264dbe7eda9934cfb02ac7208f1262d46d6ffcb6960a31ea2635628798b3af",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 229957,
+        "sha256": "f04d7684109658f9409df3b0d1650bec6979fd7da3fae8711cb580bf98ae3636",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 185955,
+        "sha256": "841a432a5b7ea0ea8dff4f5915e22357192735fc5723a33d798ce82ffee0c7a6",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3f275cd873a27ee31dc631ab082efb6cb3c1db1242b3b4b7337eb7d7354ef46e",
+    "schema_version": 2,
+    "sha256": "e0ea4c8d892ddb5adc60cbd88b04add0f38ef6ff442c9d66af9c559f790e61dd"
+  },
+  "response": {
+    "id": "resp_0dbea9c0e86f1a83016a907a613dd487d0bdd46da2eaf6e81d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6913,
+      "input_tokens_details": {
+        "cache_write_tokens": 6910,
+        "cached_tokens": 0
+      },
+      "output_tokens": 443,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 7356
+    }
+  }
+}

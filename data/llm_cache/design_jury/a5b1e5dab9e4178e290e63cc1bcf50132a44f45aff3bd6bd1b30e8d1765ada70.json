@@ -1,0 +1,70 @@
+{
+  "cache_key": "a5b1e5dab9e4178e290e63cc1bcf50132a44f45aff3bd6bd1b30e8d1765ada70",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Across desktop, tablet, and mobile, frame timing is essentially locked to 60 fps: averages 16.66 ms, worst 16.8 ms, and 0 long-frame ratio. The 22 px fade/slide entry follows a smooth, monotonic trajectory and settles cleanly. The keyboard-triggered vault interaction has measured start, mid, and end states. Reduced motion matches the media query, produces zero sampled scroll-entry changes, and applies the interaction’s final state immediately.",
+    "fix": "For stronger proof above 8, remove the remaining registered/active animation under reduced motion and capture denser interaction frames—the measured standard midpoint is already nearly identical to the endpoint, leaving the flip’s full temporal quality under-demonstrated.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c09e66849a67f1813352ab442ce7eff5694e598384f607c07f3005617bc1175a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 295034,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "e0813ba1984798d69ab8755d07f662db071bd4e758ec1108c15559e30f59bfbf",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212238,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "f246261ec83038cfc9f866b6f5dc0973028de699e50b872bc8b5de46eda3d3fc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162873,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "397ebe0c9a0304c32b3a83fb9a178fea06a7200da4d5cf42f35074ac095cb2d4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "01744eb778ee0827b2ada7b92e5378d4fd81d2b0defb2eb34e305eea6bfb327d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a5b1e5dab9e4178e290e63cc1bcf50132a44f45aff3bd6bd1b30e8d1765ada70"
+  }
+}

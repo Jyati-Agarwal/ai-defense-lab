@@ -1,0 +1,51 @@
+{
+  "cache_key": "17625d086c2edeea98c0eaca6be081af6a8859640326c62d95ded7bea6ac2faa",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances the intent-integrity thesis: a running-shoes mandate is transformed into a wallet-voucher payment while user, merchant, payment signatures and cart hash remain verified. The authorized-intent, recorded-cart and recorded-payment chain, MCC/payee constraints, semantic-invariant comparison, and explicit distinction between ECDSA integrity and semantic integrity make the payment-defense story clear across desktop, tablet and mobile. However, the screen openly relies on synthetic signer keys and a fixture-only registry match, so it does not prove Mastercard-network or real-world authorization relevance.",
+    "fix": "Add an explicit Mastercard-brief connection and a demonstrated decision outcome—such as blocking or stepping up authorization when category, MCC or payee violates the mandate—backed by non-fixture transaction or sandbox-network evidence.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 575621,
+        "sha256": "d25ca023f665effd0c11a8f14330fa88b6f357ec73d3818e8d47012d93258741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 415373,
+        "sha256": "007c394855cee56b96fcc7e49ef1afed92452b6da97e30e7e9f882056d4468f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345338,
+        "sha256": "fac508874e53ea6667c5fbead9b9eb7990c72e9f029bbc1190e107f35fcbf733",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "11a40907263b7e4799410c840dd7d44bd94b6f69b53247428afb1264251852b7",
+    "schema_version": 3,
+    "sha256": "17625d086c2edeea98c0eaca6be081af6a8859640326c62d95ded7bea6ac2faa"
+  },
+  "response": {
+    "id": "resp_0413723dd70018cc016a908395753087d0afd337e773b76e11",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6684,
+      "input_tokens_details": {
+        "cache_write_tokens": 6681,
+        "cached_tokens": 0
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 262
+      },
+      "total_tokens": 7135
+    }
+  }
+}

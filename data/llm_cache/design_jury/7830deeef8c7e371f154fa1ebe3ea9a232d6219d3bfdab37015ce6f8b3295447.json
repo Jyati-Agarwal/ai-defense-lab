@@ -1,0 +1,70 @@
+{
+  "cache_key": "7830deeef8c7e371f154fa1ebe3ea9a232d6219d3bfdab37015ce6f8b3295447",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-forensic art direction, disciplined cyan/green/yellow accents, clear decision hierarchy, and a well-structured evidence card across all viewports. However, desktop has excessive empty space between the hero and artifact, the mobile layout becomes a very long stack with weak row density, and the translucent global header allows oversized underlying text to visibly collide with navigation. Several tiny, low-contrast mono labels also reduce polish and legibility.",
+    "fix": "Use an opaque or more strongly blurred header backdrop, tighten desktop hero-to-artifact spacing, increase the size/contrast of micro-labels, and compress mobile precedent rows into a denser two-column metadata layout.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "74a99c0888e94f6c876aec57ea5ed090ba76266d77ab9e4c11023f567e0b7f0a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 181635,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "c2cd0e68da60573373422df1dc9c2eb5f64cd2c8ebf56d2e1dd75b85be77210d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154165,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "deb6874821a5de16cb9bb2763d074c17e755d583e5dc11210d1caf4eb0034394",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154099,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "485ee2d8f05beeb98c6e80159805f2668c0dc29b9634f99e2b7ac53237c9900e",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b0f62eb7638d8e0686ad3d9d73b04d68672b25b8fcbb3db0d1a33aa7a08ec497",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "7830deeef8c7e371f154fa1ebe3ea9a232d6219d3bfdab37015ce6f8b3295447"
+  }
+}

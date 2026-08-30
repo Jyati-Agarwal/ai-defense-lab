@@ -1,0 +1,19 @@
+{
+  "artifact": "entity_fidelity_v61_preregistration",
+  "correction": "30 interior inverted-CDF count knots remain unchanged; knot 0 and knot 31 are observed-support min/max anchors",
+  "evaluation_seeds_sha256": "8cc36734acca2f218112be9bb000c4494be21d446210c8dfbfdcc7474190aeea",
+  "implementation_tree_sha256": "6ac966eefe99985f69dbda3994675d80e4cf842a093d40c4e1f681db0621cebe",
+  "interior_quantiles_unchanged": true,
+  "parent_v6_attempt_sha256": "ac319a34dcdfdd9efab64b6687066cbf73ec890e7387d14c62953f5142b43ff4",
+  "parent_v6_entity_source_sha256": "c6dd095a6e5290855a15d82de2d46addbf7c2e580f119dbc34b54ea4d9efdcf6",
+  "parent_v6_entity_test_sha256": "f7a514ba427ef7e49664b053dfe7532c36c7b133fc8f6223aeb128ded57e8c6f",
+  "parent_v6_failure_sha256": "e0ae36824751d50394a2406e155f8fd51ae456a61e63a8bcc32d53e26e0e5fc5",
+  "parent_v6_population_source_sha256": "aa5c90f9132b3c4c3a98aa288a4b0378bd89f6889e5c9e5edb08df37ae08397e",
+  "parent_v6_population_test_sha256": "92c0fc06c4a2a66f40edfabae827f4399b67e3be107ace782f9144575ab4d3b8",
+  "preregistration_sha256": "9c74c4ddf718c20976a763ad95577bc14f4a972d424c919cf1cf3528ca8e3ef3",
+  "schema_version": 6,
+  "status": "frozen",
+  "study_revision": "6.1",
+  "threshold_max_d_upper_95": 0.65,
+  "uci502_transactions_accessed": false
+}

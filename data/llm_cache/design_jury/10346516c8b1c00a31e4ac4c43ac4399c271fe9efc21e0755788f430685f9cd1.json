@@ -1,0 +1,51 @@
+{
+  "cache_key": "10346516c8b1c00a31e4ac4c43ac4399c271fe9efc21e0755788f430685f9cd1",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and supporting copy clearly state the claim that operating metrics matter more than accuracy, and the KPI labels provide a useful first scan. However, the screen does not communicate a clear next action: “RESULTS ARTIFACT” reads as a status badge rather than an actionable control. Key evidence is also hard to interpret without explanation: the precision–recall chart’s x-axis repeats “100%” and lacks clear axis naming, the false-positive-cap bars do not show persistent values, and the ablation’s identical 100% recall rows obscure what changed. On mobile, the ablation table is horizontally clipped, hiding headers and the delta column.",
+    "fix": "Add an explicit CTA such as “Inspect failures” or “Compare configurations.” Label both chart axes, show persistent recall values on the FPR bars, and add a one-sentence takeaway tying provenance to the PR-AUC drop. Reformat the mobile ablation as stacked rows so every header, value, and delta remains visible.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 458293,
+        "sha256": "0a9287ed9447221d61529c7ab3bb3d59259a217efcdf3f5849e54789ab083b7c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 435579,
+        "sha256": "886ec06d647737b4ffa1443b9e2963793b7f723f18fcf14f1fafe4baada8e48c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 294991,
+        "sha256": "c5a7734e33f44aace50ad5e7cf8e64cf1e1cec6e558600da33658d190ac8760d",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a3ab5a7513818a3e5cc719ac2f91a4f5ab5a990095460ec5bf6113d8220890dc",
+    "schema_version": 2,
+    "sha256": "10346516c8b1c00a31e4ac4c43ac4399c271fe9efc21e0755788f430685f9cd1"
+  },
+  "response": {
+    "id": "resp_0755716fdd85acb0016a907aa48dcc87d0abd5919ca78a53d4",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6280,
+      "input_tokens_details": {
+        "cache_write_tokens": 6277,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 6653
+    }
+  }
+}

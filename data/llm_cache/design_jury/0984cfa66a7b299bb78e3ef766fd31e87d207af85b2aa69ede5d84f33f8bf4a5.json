@@ -1,0 +1,70 @@
+{
+  "cache_key": "0984cfa66a7b299bb78e3ef766fd31e87d207af85b2aa69ede5d84f33f8bf4a5",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Entry motion is smooth and consistent across all viewports: ~16.1–16.5 ms average sampled frames, ≤16.8 ms worst, and zero long frames. The panel follows a clean 22 px fade/translate easing trajectory, while tablet/mobile also animate the semantic-drift wedge progressively. Reduced-motion mode matches and produces zero changed elements across 53–73 sampled elements.",
+    "fix": "Provide measured frame trajectories for the full wedge animation on desktop and interaction-triggered motion; current evidence mainly proves scroll-entry motion, and some trajectories are truncated.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "b1cf32d9d04f9fe57bdc1d0cae6b260279e0ba5f52582c1281b8d4e581614a24",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152255,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138131,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "10a500b6ffcf645f789a5792165c2b65deb56b1bc1019a644a990df03ed5bd1d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0984cfa66a7b299bb78e3ef766fd31e87d207af85b2aa69ede5d84f33f8bf4a5"
+  }
+}

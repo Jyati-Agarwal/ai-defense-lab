@@ -1,0 +1,51 @@
+{
+  "cache_key": "7da8c2fcc0d3c22ef58860d5f4da9651947258c7ac29d8185f0437ee6d664833",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “One residual evidence gap.” headline and singular numbered risk card create a clear, confident editorial moment across desktop, tablet, and mobile. However, the dark grid, cyan/red accents, monospaced labels, outlined pills, and bordered dashboard card are familiar cyber-security UI conventions; there is no distinctive visualization or interaction shown that makes the unknowns concept uniquely recognizable or demo-defining.",
+    "fix": "Turn the residual gap into a signature visual artifact—for example, a prominent evidence-boundary map or animated gap diagram connecting the 69.6% recall, missing evidence, and next control—then make that motif drive the card and CTA. Reduce generic terminal-style decoration so the unique unknowns visualization becomes the screen’s memorable centerpiece.",
+    "score": 6,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 264664,
+        "sha256": "880831cf74b646453504d96da5006a2c0e36028ba730f4d9848ed906f963a541",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 219066,
+        "sha256": "de00979af68e3af50c863a833041bfe36dc1b2368f68580e566a6fd17e1826f7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180686,
+        "sha256": "34ce6d19ad0e789dfdccd32deaf4ae7dc712e7a30cd2b9f9afe13c7c6228df49",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d026eef20635c0fea17ccf6113e026b10f88cac2757c6c54b7a284f93b7cdbe9",
+    "schema_version": 3,
+    "sha256": "7da8c2fcc0d3c22ef58860d5f4da9651947258c7ac29d8185f0437ee6d664833"
+  },
+  "response": {
+    "id": "resp_051bb0696dfb470d016a9083e005e887d0a0195213cd66d02c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4657,
+      "input_tokens_details": {
+        "cache_write_tokens": 4654,
+        "cached_tokens": 0
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 4996
+    }
+  }
+}

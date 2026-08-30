@@ -1,0 +1,13 @@
+category,mcc,currency,median_minor,p10_minor,p90_minor,sku_prefix,item_name,source
+running_shoes,5661,INR,450000,220000,820000,SHOE,Trail Runner,synthetic_calibration_v1
+groceries,5411,INR,185000,45000,620000,GROC,Household Basket,synthetic_calibration_v1
+electronics,5732,INR,4200000,850000,11800000,ELEC,Personal Electronics,synthetic_calibration_v1
+books,5942,INR,78000,25000,210000,BOOK,Printed Book,synthetic_calibration_v1
+apparel,5651,INR,165000,55000,520000,APPR,Casual Apparel,synthetic_calibration_v1
+home_goods,5712,INR,650000,120000,2400000,HOME,Home Furnishing,synthetic_calibration_v1
+pharmacy,5912,INR,92000,18000,340000,PHRM,Pharmacy Basket,synthetic_calibration_v1
+travel,4722,INR,7200000,1800000,24000000,TRVL,Travel Booking,synthetic_calibration_v1
+restaurants,5812,INR,135000,35000,480000,MEAL,Restaurant Order,synthetic_calibration_v1
+software,5734,INR,240000,49000,1200000,SOFT,Software License,synthetic_calibration_v1
+jewellery,5944,INR,18500000,3500000,65000000,JEWL,Jewellery Item,synthetic_calibration_v1
+hardware,5251,INR,275000,60000,1250000,HARD,Hardware Supplies,synthetic_calibration_v1

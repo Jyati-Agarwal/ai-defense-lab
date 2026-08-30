@@ -1,0 +1,70 @@
+{
+  "cache_key": "bf1dc75239d984c4ef7918a8736397ac025883a763ea384213cecc52786a7a3f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, BLOCK→ALLOW transition, five legitimate neighbors, similarity values, and “False positive suppressed” make the intended claim legible across viewports. However, the screen does not show the original anomaly score, decision threshold, or calculation connecting neighbor similarity to the 99% precedent-support figure, so the causal decision change is asserted rather than demonstrated. “Continue to Arena” is visible but does not explain what the Arena will do, and the mobile header hides the current Memory section behind “More,” weakening orientation.",
+    "fix": "Add a compact before/after evidence row showing anomaly score, threshold, precedent adjustment, and resulting score/action. Briefly label the CTA outcome, such as “Continue to Arena — test the revised decision,” and keep “06 Memory” visibly selected in compact navigation.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "edaeca1f6105be07da3553097dd3eae92ca18d7559bd033ac7f4daf4b1e46543",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 181736,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "15f6e9227fe945ac534369486e5cff5d648ecaca04d9423afcea883ed07f4131",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 155255,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "3b6be3f61743d5efee7baf83514487bdd98f908753692de4bf44d1811fc4ce96",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154987,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "998e9a8df02280c7efb4343297bcb8378a68e1b0db5398b806cdbb9625939c3e",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b86d07ed0394b50a304fce1688563544108c6116d2c8f9f1a506bca841400e8c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "bf1dc75239d984c4ef7918a8736397ac025883a763ea384213cecc52786a7a3f"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "1247039b9bf610615437a876bcec4c7bebce3879a8009ca6b5e9a90d1ddd1e5c",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline states the claim, the subtitle explains the mechanism, and the query panel makes the outcome explicit: raw drift would BLOCK, contextualized precedent changes it to ALLOW, with “False positive suppressed.” Five verified legitimate precedents and visible 97–99% similarities support that result across desktop, tablet, and mobile. However, “precedent support,” “raw drift,” and the similarity calculation remain unexplained, and there is no explicit user-facing continuation control.",
+    "fix": "Add a one-line definition of how precedent support/similarity is calculated and label the outcome as the recommended next action, such as “Recommended action: Allow,” with an appropriate continuation or review control.",
+    "score": 8,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 421498,
+        "sha256": "8e84b2909b7c5016b5279cf6707b6f6f663db17536366333353eb5820b8bb6f6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 355398,
+        "sha256": "05a17b16127b6ae694f8bbd9caed569414dd6f6fdb87c50f188e74d9422f5b77",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287418,
+        "sha256": "d50af03a5bf03fa3d315d4b0f01a29bd4aaffc6391660e827341aecacfe93069",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a07894b544f117531ee49287afd11801e5bd2e0a6d75b031d48b9e907430d5ae",
+    "schema_version": 2,
+    "sha256": "1247039b9bf610615437a876bcec4c7bebce3879a8009ca6b5e9a90d1ddd1e5c"
+  },
+  "response": {
+    "id": "resp_08cf92a7a1a0ad1d016a907a8a4ee487d08e8f6024d8661104",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6225,
+      "input_tokens_details": {
+        "cache_write_tokens": 6222,
+        "cached_tokens": 0
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 6656
+    }
+  }
+}

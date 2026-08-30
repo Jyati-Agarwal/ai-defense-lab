@@ -1,0 +1,51 @@
+{
+  "cache_key": "9a95d692690bc233ad2b35b82986d613dd1db97d0a39d88a9e6c7df42f20b8aa",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline plainly states the limitation, the comparison shows fresh-row and known recall side by side, and the deployment decision explicitly says an independent post-remediation holdout is still required. However, the desktop navigation obscures part of the headline and the tablet navigation crosses the explanatory text. The required next step is buried in the final decision panel and has no corresponding action control; the prominent control instead says “Hide scope evidence.”",
+    "fix": "Prevent the sticky navigation from overlapping hero content at desktop and tablet widths, then surface “Run independent post-remediation holdout” as the primary next-step CTA near the results summary while retaining the detailed deployment decision below.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348142,
+        "sha256": "8e74a5455efe31feb187d14a3525c8d7f1fdcbeedeaf8d2f0eb38854befa8045",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c7788d36a14a6dd68f81d54a00719ff5a0e7833e0041d5ae44121975c4810f4c",
+    "schema_version": 3,
+    "sha256": "9a95d692690bc233ad2b35b82986d613dd1db97d0a39d88a9e6c7df42f20b8aa"
+  },
+  "response": {
+    "id": "resp_0afeca3f4dfceeb8016a9083b8c7d887d0b090c14eccee93e3",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6886,
+      "input_tokens_details": {
+        "cache_write_tokens": 6883,
+        "cached_tokens": 0
+      },
+      "output_tokens": 543,
+      "output_tokens_details": {
+        "reasoning_tokens": 382
+      },
+      "total_tokens": 7429
+    }
+  }
+}

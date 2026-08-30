@@ -1,0 +1,51 @@
+{
+  "cache_key": "681d9480c292d2f954005c499b96417ad8b27f3c218aeaa4869515963eb14196",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The dark grid, cyan/red accents, strong headline, consistent card radii, and restrained monospaced labels create a coherent, polished defense-console aesthetic. Desktop has a clear dashboard hierarchy and mobile stacks the sections cleanly. However, the fixed navigation visibly overlays hero copy on desktop and cuts across the precision–recall card on tablet, where its links also run off-screen. Chart ticks and many uppercase labels are extremely small and low-contrast; the precision–recall x-axis is especially cluttered. Mobile preserves the structure but compresses chart labels and the ablation content to near-illegibility, while the visible chart tooltip adds clutter. These responsive collisions and readability issues keep it below demo-ready quality.",
+    "fix": "Make the navigation occupy reserved layout space or collapse it before tablet width so it never covers content. Increase minimum label/tick sizes and contrast, reduce x-axis tick density, suppress incidental tooltips in captured/default states, and redesign the mobile ablation rows and charts around fewer, larger data labels rather than scaling the desktop density down.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d356a194d90f973e80b001db2ec104c306bc070fbe85ecbaf8d0db25bc06463b",
+    "schema_version": 3,
+    "sha256": "681d9480c292d2f954005c499b96417ad8b27f3c218aeaa4869515963eb14196"
+  },
+  "response": {
+    "id": "resp_0550e0ae0b5e3240016a9083be7c2887d0b798649f23bc16a3",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6331,
+      "input_tokens_details": {
+        "cache_write_tokens": 6328,
+        "cached_tokens": 0
+      },
+      "output_tokens": 517,
+      "output_tokens_details": {
+        "reasoning_tokens": 273
+      },
+      "total_tokens": 6848
+    }
+  }
+}

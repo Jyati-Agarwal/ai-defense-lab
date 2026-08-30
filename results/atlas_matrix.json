@@ -1,0 +1,1355 @@
+{
+  "schema_version": 1,
+  "total": 48,
+  "tier_counts": {
+    "agentic": 28,
+    "classic": 20
+  },
+  "kill_chain": [
+    {
+      "stage": "reconnaissance",
+      "attack_ids": [
+        "GPF-A06",
+        "GPF-A17",
+        "GPF-C01",
+        "GPF-C06",
+        "GPF-C20"
+      ]
+    },
+    {
+      "stage": "context_manip",
+      "attack_ids": [
+        "GPF-A01",
+        "GPF-A02",
+        "GPF-A03",
+        "GPF-A24",
+        "GPF-A25",
+        "GPF-C11",
+        "GPF-C12",
+        "GPF-C14"
+      ]
+    },
+    {
+      "stage": "intent_manip",
+      "attack_ids": [
+        "GPF-A07",
+        "GPF-A08",
+        "GPF-A26",
+        "GPF-C16"
+      ]
+    },
+    {
+      "stage": "tool_manip",
+      "attack_ids": [
+        "GPF-A04",
+        "GPF-A14",
+        "GPF-A15",
+        "GPF-A16",
+        "GPF-C13"
+      ]
+    },
+    {
+      "stage": "merchant_manip",
+      "attack_ids": [
+        "GPF-A09",
+        "GPF-A10",
+        "GPF-A11",
+        "GPF-A13",
+        "GPF-A22",
+        "GPF-C03",
+        "GPF-C09",
+        "GPF-C10",
+        "GPF-C15",
+        "GPF-C17"
+      ]
+    },
+    {
+      "stage": "payment_manip",
+      "attack_ids": [
+        "GPF-A12",
+        "GPF-A18",
+        "GPF-A23",
+        "GPF-C02",
+        "GPF-C07",
+        "GPF-C19"
+      ]
+    },
+    {
+      "stage": "delayed_exec",
+      "attack_ids": [
+        "GPF-A05",
+        "GPF-A19",
+        "GPF-A20",
+        "GPF-C04",
+        "GPF-C18"
+      ]
+    },
+    {
+      "stage": "cash_out",
+      "attack_ids": [
+        "GPF-A21",
+        "GPF-A27",
+        "GPF-A28",
+        "GPF-C05",
+        "GPF-C08"
+      ]
+    }
+  ],
+  "attacks": [
+    {
+      "id": "GPF-A01",
+      "name": "Indirect prompt injection to payment",
+      "tier": "agentic",
+      "description": "Instructions embedded in retrieved product content redirect an autonomous checkout away from user intent.",
+      "kill_chain_stage": "context_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "instruction following over retrieved content",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "intent_manip",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "instruction-shaped page text",
+        "tool-call topic shift",
+        "intent-to-cart semantic drift"
+      ],
+      "defense_hooks": [
+        "retrieval provenance score",
+        "intent-cart semantic check"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A02",
+      "name": "Zero-width instruction smuggling",
+      "tier": "agentic",
+      "description": "Unicode control and zero-width characters conceal instructions that remain visible to an agent parser.",
+      "kill_chain_stage": "context_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "multilingual token interpretation",
+      "primitives": [
+        "context_manip",
+        "intent_manip"
+      ],
+      "observable_signals": [
+        "zero-width character count",
+        "normalized-text divergence",
+        "instruction fingerprint"
+      ],
+      "defense_hooks": [
+        "Unicode normalization",
+        "provenance classifier"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A03",
+      "name": "Invisible-CSS agent instruction",
+      "tier": "agentic",
+      "description": "Hidden DOM text targets machine readers while leaving the visible shopping page unchanged for people.",
+      "kill_chain_stage": "context_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "HTML and DOM content consumption",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "tool_manip"
+      ],
+      "observable_signals": [
+        "invisible CSS marker",
+        "DOM-rendered text delta",
+        "instruction-shaped hidden text"
+      ],
+      "defense_hooks": [
+        "render-aware sanitizer",
+        "hidden-content provenance score"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A04",
+      "name": "Cross-domain tool-topic pivot",
+      "tier": "agentic",
+      "description": "A shopping workflow pivots from the requested category into an unrelated financial tool sequence.",
+      "kill_chain_stage": "tool_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous multi-tool planning",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "consecutive topic cosine jump",
+        "novel retrieved domain",
+        "payment after unrelated tool"
+      ],
+      "defense_hooks": [
+        "tool-topic continuity model",
+        "tool allowlist"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A05",
+      "name": "Persistent agent-memory poisoning",
+      "tier": "agentic",
+      "description": "Untrusted content is stored as durable preference memory and corrupts a later purchasing session.",
+      "kill_chain_stage": "delayed_exec",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "long-term preference memory",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "intent_manip",
+        "delayed_exec"
+      ],
+      "observable_signals": [
+        "untrusted memory provenance",
+        "cross-session instruction reuse",
+        "delayed semantic drift"
+      ],
+      "defense_hooks": [
+        "memory provenance labels",
+        "write-time trust policy"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A06",
+      "name": "Retrieval-ranking result poisoning",
+      "tier": "agentic",
+      "description": "Manipulated search results dominate agent context and steer selection toward an attacker merchant.",
+      "kill_chain_stage": "reconnaissance",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "retrieval-augmented product discovery",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "merchant_manip"
+      ],
+      "observable_signals": [
+        "domain reputation novelty",
+        "ranking concentration",
+        "merchant-affinity discontinuity"
+      ],
+      "defense_hooks": [
+        "source diversity rule",
+        "domain reputation"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A07",
+      "name": "Prompt-playback intent suppression",
+      "tier": "agentic",
+      "description": "The agent records a benign playback summary while executing a materially different internal plan.",
+      "kill_chain_stage": "intent_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "natural-language plan summarization",
+      "primitives": [
+        "intent_manip",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "playback-to-cart mismatch",
+        "playback-to-tool mismatch",
+        "constraint omission"
+      ],
+      "defense_hooks": [
+        "playback consistency model",
+        "canonical constraint checks"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A08",
+      "name": "Natural-language constraint reinterpretation",
+      "tier": "agentic",
+      "description": "Ambiguous wording is reinterpreted to bypass an explicit category, payee, or amount restriction.",
+      "kill_chain_stage": "intent_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "flexible natural-language reasoning",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "merchant_manip"
+      ],
+      "observable_signals": [
+        "structured-to-playback inconsistency",
+        "disallowed MCC",
+        "low intent specificity"
+      ],
+      "defense_hooks": [
+        "structured constraint enforcement",
+        "ambiguity step-up"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A09",
+      "name": "Budget-ceiling price capture",
+      "tier": "agentic",
+      "description": "A merchant learns the private budget and raises a legitimate-looking price to just below the ceiling.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "personalized price negotiation",
+      "primitives": [
+        "reconnaissance",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "near-one budget utilization",
+        "price above market median",
+        "quote changed after disclosure"
+      ],
+      "defense_hooks": [
+        "market-price comparison",
+        "budget disclosure policy"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A10",
+      "name": "Agentic cart quantity inflation",
+      "tier": "agentic",
+      "description": "A tool result changes item quantity while preserving product identity and nominal unit price.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "structured cart manipulation",
+      "primitives": [
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "quantity exceeds intent",
+        "cart total jump",
+        "tool-result field mutation"
+      ],
+      "defense_hooks": [
+        "cart diff policy",
+        "quantity constraint"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A11",
+      "name": "Post-approval cart item substitution",
+      "tier": "agentic",
+      "description": "A merchant or tool swaps an approved item for an unrelated SKU before payment finalization.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous checkout continuation",
+      "primitives": [
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "approved-SKU mismatch",
+        "category drift",
+        "cart revision after approval"
+      ],
+      "defense_hooks": [
+        "signed cart snapshot",
+        "category constraint"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A12",
+      "name": "Signed-cart hash decoupling",
+      "tier": "agentic",
+      "description": "Payment references a different cart digest than the merchant-signed item set shown to the user.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "payment-tool parameter generation",
+      "primitives": [
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "cart hash mismatch",
+        "amount-to-cart mismatch",
+        "valid signatures with broken linkage"
+      ],
+      "defense_hooks": [
+        "hard cart-hash check",
+        "signed amount binding"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A13",
+      "name": "Merchant DID substitution",
+      "tier": "agentic",
+      "description": "A plausible but unregistered merchant identifier replaces the intended payee during tool execution.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "dynamic merchant selection",
+      "primitives": [
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "unregistered signer DID",
+        "payee allowlist miss",
+        "merchant key novelty"
+      ],
+      "defense_hooks": [
+        "DID registry verification",
+        "payee allowlist"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A14",
+      "name": "Payment-tool schema confusion",
+      "tier": "agentic",
+      "description": "Ambiguous tool fields cause the model to bind beneficiary or amount values to the wrong semantics.",
+      "kill_chain_stage": "tool_manip",
+      "channel": "agentic_checkout",
+      "rail": "wire",
+      "genai_capability": "function calling from natural language",
+      "primitives": [
+        "intent_manip",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "schema validation coercion",
+        "field-source mismatch",
+        "unusual retry sequence"
+      ],
+      "defense_hooks": [
+        "strict typed schema",
+        "source-bound parameters"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A15",
+      "name": "Forged tool-result confirmation",
+      "tier": "agentic",
+      "description": "An untrusted tool response claims merchant verification or user approval that never occurred.",
+      "kill_chain_stage": "tool_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "tool-result interpretation",
+      "primitives": [
+        "context_manip",
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "unsigned tool result",
+        "approval event absent",
+        "result origin mismatch"
+      ],
+      "defense_hooks": [
+        "tool response attestation",
+        "approval ledger"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A16",
+      "name": "Delegated sub-agent authority hijack",
+      "tier": "agentic",
+      "description": "A nested sub-agent exceeds the delegation depth or scope granted by the original shopping agent.",
+      "kill_chain_stage": "tool_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "multi-agent task delegation",
+      "primitives": [
+        "reconnaissance",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "delegation depth spike",
+        "unregistered sub-agent",
+        "scope token mismatch"
+      ],
+      "defense_hooks": [
+        "delegation-chain validation",
+        "agent registry"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A17",
+      "name": "Shopping-agent registry impersonation",
+      "tier": "agentic",
+      "description": "An attacker-controlled client presents an identifier resembling a trusted registered purchasing agent.",
+      "kill_chain_stage": "reconnaissance",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous payment initiation",
+      "primitives": [
+        "reconnaissance",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "agent key registry miss",
+        "lookalike identifier",
+        "attestation absent"
+      ],
+      "defense_hooks": [
+        "agent-key registry",
+        "workload attestation"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A18",
+      "name": "Human-presence flag laundering",
+      "tier": "agentic",
+      "description": "An autonomous flow falsely claims a person is present to bypass unattended-agent risk controls.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "payment parameter selection",
+      "primitives": [
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "presence flag without interaction",
+        "unattended timing pattern",
+        "approval evidence absent"
+      ],
+      "defense_hooks": [
+        "presence-evidence binding",
+        "behavioral consistency check"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A19",
+      "name": "Valid-mandate replay within TTL",
+      "tier": "agentic",
+      "description": "A captured mandate is reused several times while its signature and time window remain valid.",
+      "kill_chain_stage": "delayed_exec",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous retry and scheduling",
+      "primitives": [
+        "payment_manip",
+        "delayed_exec",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "mandate nonce reuse",
+        "repeated cart digest",
+        "intent fanout count"
+      ],
+      "defense_hooks": [
+        "single-use nonce",
+        "per-intent velocity"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A20",
+      "name": "Mandate TTL dormancy execution",
+      "tier": "agentic",
+      "description": "A compromised agent waits until user attention has faded and executes near or beyond expiry.",
+      "kill_chain_stage": "delayed_exec",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "long-running autonomous scheduling",
+      "primitives": [
+        "intent_manip",
+        "delayed_exec"
+      ],
+      "observable_signals": [
+        "TTL utilization over limit",
+        "long intent-payment gap",
+        "execution outside user session"
+      ],
+      "defense_hooks": [
+        "hard TTL enforcement",
+        "delayed-execution step-up"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A21",
+      "name": "Single-intent multi-merchant fanout",
+      "tier": "agentic",
+      "description": "One signed shopping intent is expanded into payments across several unrelated merchant identities.",
+      "kill_chain_stage": "cash_out",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "parallel vendor orchestration",
+      "primitives": [
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "payee count per intent",
+        "unrelated MCC fanout",
+        "parallel payment cadence"
+      ],
+      "defense_hooks": [
+        "intent fanout cap",
+        "payee coherence check"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A22",
+      "name": "Agent-routed self-dealing merchant",
+      "tier": "agentic",
+      "description": "A recommendation agent secretly routes purchases to a merchant under common beneficial control.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "personalized product recommendation",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "agent-merchant ownership edge",
+        "recommendation concentration",
+        "price-quality outlier"
+      ],
+      "defense_hooks": [
+        "conflict-of-interest graph",
+        "recommendation diversity"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A23",
+      "name": "UPI collect disguised as agent checkout",
+      "tier": "agentic",
+      "description": "A tool presents an inbound collect request as the final step of a normal autonomous purchase.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "upi_collect",
+      "rail": "upi",
+      "genai_capability": "cross-rail payment tool selection",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "payment direction mismatch",
+        "checkout-to-collect rail switch",
+        "new requester VPA"
+      ],
+      "defense_hooks": [
+        "rail-direction constraint",
+        "explicit collect confirmation"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A24",
+      "name": "Multimodal product-image instruction injection",
+      "tier": "agentic",
+      "description": "Text embedded in a catalog image influences a vision-capable shopping agent without visible page text.",
+      "kill_chain_stage": "context_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "vision-language product understanding",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "intent_manip",
+        "tool_manip"
+      ],
+      "observable_signals": [
+        "OCR instruction language",
+        "image-text disagreement",
+        "tool shift after image parse"
+      ],
+      "defense_hooks": [
+        "OCR provenance filter",
+        "multimodal consistency check"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A25",
+      "name": "Translation-layer instruction injection",
+      "tier": "agentic",
+      "description": "Adversarial Hindi or Marathi text changes meaning when translated into the agent planning language.",
+      "kill_chain_stage": "context_manip",
+      "channel": "agentic_checkout",
+      "rail": "upi",
+      "genai_capability": "multilingual translation and reasoning",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "tool_manip"
+      ],
+      "observable_signals": [
+        "source-translation intent mismatch",
+        "script switch near instruction",
+        "multilingual fingerprint"
+      ],
+      "defense_hooks": [
+        "dual translation check",
+        "source-language provenance"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A26",
+      "name": "Summarizer constraint omission",
+      "tier": "agentic",
+      "description": "Context compression drops a restrictive clause before a downstream agent chooses and pays.",
+      "kill_chain_stage": "intent_manip",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "context summarization for long tasks",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "tool_manip"
+      ],
+      "observable_signals": [
+        "summary missing hard constraint",
+        "source-summary entailment failure",
+        "late category drift"
+      ],
+      "defense_hooks": [
+        "constraint-preserving summary",
+        "canonical intent object"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A27",
+      "name": "Autonomous refund payee diversion",
+      "tier": "agentic",
+      "description": "A service agent accepts a refund destination supplied by untrusted context instead of original tender.",
+      "kill_chain_stage": "cash_out",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous after-sales resolution",
+      "primitives": [
+        "context_manip",
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "refund destination mismatch",
+        "untrusted context source",
+        "refund tool without user approval"
+      ],
+      "defense_hooks": [
+        "original-tender enforcement",
+        "refund approval binding"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-A28",
+      "name": "Agent-trace truncation and repudiation",
+      "tier": "agentic",
+      "description": "A compromised framework drops causal tool records so a valid payment cannot be tied to its true plan.",
+      "kill_chain_stage": "cash_out",
+      "channel": "agentic_checkout",
+      "rail": "card",
+      "genai_capability": "autonomous trace and memory management",
+      "primitives": [
+        "tool_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "non-contiguous tool sequence",
+        "payment without causal call",
+        "trace hash-chain gap"
+      ],
+      "defense_hooks": [
+        "append-only trace signing",
+        "causal completeness check"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C01",
+      "name": "Credential-stuffed card-not-present purchase",
+      "tier": "classic",
+      "description": "Reused account credentials fund an e-commerce purchase from an unfamiliar device and location.",
+      "kill_chain_stage": "reconnaissance",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "new-device login burst",
+        "credential failure then success",
+        "payee and geo novelty"
+      ],
+      "defense_hooks": [
+        "account velocity model",
+        "device reputation"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C02",
+      "name": "Low-value card testing burst",
+      "tier": "classic",
+      "description": "Stolen card numbers are tested through many small authorizations before a larger purchase.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "sub-floor amount burst",
+        "many cards per device",
+        "authorization decline velocity"
+      ],
+      "defense_hooks": [
+        "velocity limits",
+        "shared-device graph"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C03",
+      "name": "Account takeover beneficiary addition",
+      "tier": "classic",
+      "description": "A compromised account adds a new beneficiary and transfers funds before the owner reacts.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "wire",
+      "rail": "wire",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "tool_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "new beneficiary immediately paid",
+        "authentication context change",
+        "unusual transfer amount"
+      ],
+      "defense_hooks": [
+        "beneficiary cooling period",
+        "behavioral authentication"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C04",
+      "name": "Synthetic identity credit bust-out",
+      "tier": "classic",
+      "description": "A fabricated identity builds normal repayment history and exhausts credit after trust matures.",
+      "kill_chain_stage": "delayed_exec",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "delayed_exec",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "rapid utilization regime change",
+        "linked synthetic identifiers",
+        "long grooming interval"
+      ],
+      "defense_hooks": [
+        "identity graph",
+        "account-age velocity"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C05",
+      "name": "Mule account beneficiary fan-in",
+      "tier": "classic",
+      "description": "Many unrelated senders route funds into a recently opened beneficiary before rapid withdrawal.",
+      "kill_chain_stage": "cash_out",
+      "channel": "upi_p2p",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "beneficiary in-degree spike",
+        "short dwell time",
+        "sender community diversity"
+      ],
+      "defense_hooks": [
+        "beneficiary graph score",
+        "funds-flow hold"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C06",
+      "name": "BIN and expiry enumeration",
+      "tier": "classic",
+      "description": "Automated authorization attempts enumerate plausible card details against a permissive merchant.",
+      "kill_chain_stage": "reconnaissance",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance"
+      ],
+      "observable_signals": [
+        "sequential PAN pattern",
+        "expiry sweep pattern",
+        "high decline ratio"
+      ],
+      "defense_hooks": [
+        "merchant velocity limit",
+        "enumeration detector"
+      ],
+      "severity": "medium",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C07",
+      "name": "Refund destination diversion",
+      "tier": "classic",
+      "description": "A valid purchase is refunded to a different funding instrument controlled by the offender.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "tool_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "refund instrument mismatch",
+        "rapid purchase-refund cycle",
+        "operator account novelty"
+      ],
+      "defense_hooks": [
+        "original-tender enforcement",
+        "refund anomaly rule"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C08",
+      "name": "First-party friendly-fraud chargeback",
+      "tier": "classic",
+      "description": "A cardholder receives goods and later falsely disputes a purchase as unauthorized.",
+      "kill_chain_stage": "cash_out",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "payment_manip",
+        "delayed_exec",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "delivery-device consistency",
+        "repeat dispute pattern",
+        "post-delivery chargeback"
+      ],
+      "defense_hooks": [
+        "dispute evidence linkage",
+        "first-party risk model"
+      ],
+      "severity": "medium",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C09",
+      "name": "Triangulation commerce laundering",
+      "tier": "classic",
+      "description": "A fake storefront accepts a victim order while stolen payment funds the real supplier shipment.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "shipping identity mismatch",
+        "repeated supplier merchant",
+        "order amount mirroring"
+      ],
+      "defense_hooks": [
+        "merchant linkage graph",
+        "shipping consistency check"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C10",
+      "name": "Merchant category code laundering",
+      "tier": "classic",
+      "description": "A merchant submits transactions under a lower-risk category that does not match sold goods.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "catalog-to-MCC mismatch",
+        "peer ticket anomaly",
+        "descriptor churn"
+      ],
+      "defense_hooks": [
+        "merchant content review",
+        "MCC consistency model"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C11",
+      "name": "Deceptive UPI collect request",
+      "tier": "classic",
+      "description": "A collect request is presented as a credit or refund so the victim authorizes a debit.",
+      "kill_chain_stage": "context_manip",
+      "channel": "upi_collect",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "collect-versus-credit language mismatch",
+        "new requester VPA",
+        "urgency pretext"
+      ],
+      "defense_hooks": [
+        "directional payment warning",
+        "requester reputation"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C12",
+      "name": "Static UPI QR substitution",
+      "tier": "classic",
+      "description": "A legitimate merchant QR is replaced so the payer sends funds to an attacker-controlled VPA.",
+      "kill_chain_stage": "context_manip",
+      "channel": "upi_p2p",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "context_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "terminal-location payee mismatch",
+        "newly observed VPA",
+        "merchant-name mismatch"
+      ],
+      "defense_hooks": [
+        "signed merchant QR",
+        "payee confirmation"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C13",
+      "name": "SIM-swap UPI account takeover",
+      "tier": "classic",
+      "description": "A newly issued SIM is used to rebind payment credentials and drain the victim account.",
+      "kill_chain_stage": "tool_manip",
+      "channel": "upi_p2p",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "tool_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "recent SIM change",
+        "device re-registration",
+        "beneficiary velocity"
+      ],
+      "defense_hooks": [
+        "telco change signal",
+        "rebind cooling period"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C14",
+      "name": "Remote-access payment coercion",
+      "tier": "classic",
+      "description": "A social engineer controls the victim device and coaches a nominally authenticated transfer.",
+      "kill_chain_stage": "context_manip",
+      "channel": "upi_p2p",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "remote-control app active",
+        "call-session overlap",
+        "atypical navigation cadence"
+      ],
+      "defense_hooks": [
+        "remote-access detection",
+        "contextual step-up"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C15",
+      "name": "Business invoice beneficiary change",
+      "tier": "classic",
+      "description": "Compromised correspondence substitutes bank details on a genuine supplier invoice.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "wire",
+      "rail": "wire",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "context_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "known supplier new account",
+        "invoice template drift",
+        "first-payment amount spike"
+      ],
+      "defense_hooks": [
+        "supplier account allowlist",
+        "out-of-band verification"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C16",
+      "name": "Authorized push-payment impersonation",
+      "tier": "classic",
+      "description": "A victim is persuaded to transfer funds while believing the recipient is a trusted institution.",
+      "kill_chain_stage": "intent_manip",
+      "channel": "wire",
+      "rail": "wire",
+      "genai_capability": "none",
+      "primitives": [
+        "context_manip",
+        "intent_manip",
+        "merchant_manip",
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "new high-value payee",
+        "impersonation narrative",
+        "unusual session hesitation"
+      ],
+      "defense_hooks": [
+        "confirmation-of-payee",
+        "scam-specific intervention"
+      ],
+      "severity": "critical",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C17",
+      "name": "Shell-merchant transaction laundering",
+      "tier": "classic",
+      "description": "Prohibited or fraudulent sales are submitted through an apparently legitimate merchant account.",
+      "kill_chain_stage": "merchant_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "merchant_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "merchant web-content mismatch",
+        "peer settlement anomaly",
+        "unexplained ticket mix"
+      ],
+      "defense_hooks": [
+        "merchant monitoring",
+        "settlement reserve"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C18",
+      "name": "Dormant-account velocity burst",
+      "tier": "classic",
+      "description": "A previously quiet account abruptly issues several transfers after an access compromise.",
+      "kill_chain_stage": "delayed_exec",
+      "channel": "wire",
+      "rail": "wire",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "payment_manip",
+        "delayed_exec"
+      ],
+      "observable_signals": [
+        "long dormancy then burst",
+        "session fingerprint change",
+        "compressed transfer interval"
+      ],
+      "defense_hooks": [
+        "entity temporal model",
+        "dormant-account hold"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C19",
+      "name": "Impossible-travel card purchase",
+      "tier": "classic",
+      "description": "Card activity appears in geographically incompatible locations within an infeasible interval.",
+      "kill_chain_stage": "payment_manip",
+      "channel": "card_ecom",
+      "rail": "card",
+      "genai_capability": "none",
+      "primitives": [
+        "payment_manip"
+      ],
+      "observable_signals": [
+        "geo-velocity violation",
+        "unfamiliar merchant country",
+        "device-location disagreement"
+      ],
+      "defense_hooks": [
+        "geo-velocity rule",
+        "device binding"
+      ],
+      "severity": "medium",
+      "feasibility_today": true
+    },
+    {
+      "id": "GPF-C20",
+      "name": "Device-farm multi-account abuse",
+      "tier": "classic",
+      "description": "An automated device cluster operates many nominally unrelated accounts for coordinated fraud.",
+      "kill_chain_stage": "reconnaissance",
+      "channel": "upi_p2p",
+      "rail": "upi",
+      "genai_capability": "none",
+      "primitives": [
+        "reconnaissance",
+        "tool_manip",
+        "payment_manip",
+        "cash_out"
+      ],
+      "observable_signals": [
+        "shared device cluster",
+        "synchronized account cadence",
+        "beneficiary overlap"
+      ],
+      "defense_hooks": [
+        "device graph",
+        "coordinated velocity detector"
+      ],
+      "severity": "high",
+      "feasibility_today": true
+    }
+  ]
+}

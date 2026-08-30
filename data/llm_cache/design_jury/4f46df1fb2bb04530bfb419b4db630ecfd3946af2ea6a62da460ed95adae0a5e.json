@@ -1,0 +1,51 @@
+{
+  "cache_key": "4f46df1fb2bb04530bfb419b4db630ecfd3946af2ea6a62da460ed95adae0a5e",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured results are demo-ready across all three viewports: FCP 52–76 ms, LCP 548–704 ms, TTFB 1.3–5.8 ms, and load/DOMContentLoaded 141–237 ms. CLS is excellent on mobile (0) and desktop (0.0011), though tablet reaches 0.0478. Frame sampling reports no long frames across 82 samples per viewport; worst frame was 33.4 ms on desktop and 16.8 ms on tablet/mobile. There were no console, page, or request failures, and document width matched viewport width. The main performance liability is payload size: 1,314,022 transferred bytes, including 1,148,898 JS bytes, across 17 requests.",
+    "fix": "Reduce the roughly 1.15 MB JavaScript payload through route-level code splitting, tree-shaking, and deferred loading of non-Atlas screens; then identify and reserve space for the tablet element causing CLS 0.0478. Re-measure interaction frames after filtering and selecting vectors to verify runtime responsiveness beyond the supplied frame sample.",
+    "score": 8,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 568872,
+        "sha256": "415f41834f90d11292e4eae493c03ce763db0b2d41efce54444cb05961e572aa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7e2b9bed8e86ab698eca6d01b9766cb1bf7aa704074c087e5927333b96c7603d",
+    "schema_version": 3,
+    "sha256": "4f46df1fb2bb04530bfb419b4db630ecfd3946af2ea6a62da460ed95adae0a5e"
+  },
+  "response": {
+    "id": "resp_07eeba5ba0b01c77016a9084d9bc2887d0a9c392ae11168f95",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7080,
+      "input_tokens_details": {
+        "cache_write_tokens": 7077,
+        "cached_tokens": 0
+      },
+      "output_tokens": 441,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 7521
+    }
+  }
+}

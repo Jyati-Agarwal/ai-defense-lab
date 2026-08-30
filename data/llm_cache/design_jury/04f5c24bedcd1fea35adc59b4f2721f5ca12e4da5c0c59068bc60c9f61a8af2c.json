@@ -1,0 +1,70 @@
+{
+  "cache_key": "04f5c24bedcd1fea35adc59b4f2721f5ca12e4da5c0c59068bc60c9f61a8af2c",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial claim, restrained cyber-lab palette, ledger framing, and prominent 25.60× ROI dial create a coherent identity across all three viewports. However, the main visual idea remains a conventional comparison table plus circular KPI card; the tiny gauge and dense stacked mobile layout do not produce a singular, demo-defining economics visualization.",
+    "fix": "Replace the generic table-and-dial centerpiece with one unmistakable before/after profitability-compression graphic—visually collapsing 545.35× to 25.60× against a clearly marked break-even threshold—and make that transformation the dominant responsive hero.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0025ccd72a946f5bc4877fc52def7d64879f5fa327194c6c4493f00e221f17ac",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 221853,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "c82264ac6d6a4581ce9809d8e71150f0521f4e15a8030fd107c5d4c43a117592",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181766,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "7f69a5062a458a078916575c9d500dbf79fd1325c0d75df82a1b6c12bcaf13b3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177611,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "0113c5bdff37450249a8f85e9e9f404dbbb12867c2730d69dd5450bcfdeda4f0",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "777224a6f49965d135ad7591411f07594951baf94814bd02459ff3b981621ca4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "04f5c24bedcd1fea35adc59b4f2721f5ca12e4da5c0c59068bc60c9f61a8af2c"
+  }
+}

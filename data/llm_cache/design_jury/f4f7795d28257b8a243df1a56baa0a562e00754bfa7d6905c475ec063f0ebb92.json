@@ -1,0 +1,70 @@
+{
+  "cache_key": "f4f7795d28257b8a243df1a56baa0a562e00754bfa7d6905c475ec063f0ebb92",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The concentric vault/radar field, central lock, oversized editorial warning, and cyan/yellow forensic accents create a recognizable evidence-vault concept across desktop, tablet, and mobile. The lower half becomes more conventional metric-card UI, but the primary visual idea remains distinctive and demo-worthy.",
+    "fix": "Carry the vault-field motif into the metrics and deployment decision area so the memorable concept does not give way to generic dashboard cards.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6f14d43d94a8b9beb7f7d577f3896c2cd44328155fc61166b0420c6fb1489d3e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212226,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "bcb4dbf753a1e785fec3499f7ce944fc9396cdee1109533726eb6fc4ddcbf95f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162900,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "843bd0e5adb73e7d4d41b13f553415b7d0d6ef8e4348012631159dd2568cdf14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0c09d8c0dd7cd71b3a3a5b10ab8020f4e4068c59b833c96d53f94cd54dd1fd03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f4f7795d28257b8a243df1a56baa0a562e00754bfa7d6905c475ec063f0ebb92"
+  }
+}

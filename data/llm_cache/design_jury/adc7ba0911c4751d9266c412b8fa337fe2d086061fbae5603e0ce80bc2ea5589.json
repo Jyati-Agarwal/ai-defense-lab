@@ -1,0 +1,51 @@
+{
+  "cache_key": "adc7ba0911c4751d9266c412b8fa337fe2d086061fbae5603e0ce80bc2ea5589",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen strongly advances the story by mapping 48 agentic and classic threats across a payment kill chain, then grounding a selected vector in payment context, observable intent-drift signals, severity, and safe metadata. However, the visible artifact stops at taxonomy and observation: it does not show how a vector changes an integrity score, triggers a defense decision, prevents payment harm, or connects to a Mastercard-specific capability or measurable outcome. The 200 responses prove availability, not those missing links.",
+    "fix": "Add a concise vector-to-defense panel showing the compromised user intent, detected signal, score impact, policy action, prevented payment outcome, and relevant Mastercard integration or rail. Include validation/provenance for the 48-vector taxonomy so the atlas reads as evidence-backed defense infrastructure rather than a threat catalog.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 574141,
+        "sha256": "9fa55717488fc0bb322fa215069fbcb087706e4e19b43e8f9b2033b2c33b5328",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 462086,
+        "sha256": "fbb01bbbd777369656fec2726a1688359877ddba406fc3a6d5615f3a1d8f667c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 290485,
+        "sha256": "14c3fdd1ba1f30310de57c4ca65df729d76e455d5965ca45c1feebf292cb3720",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4b83f32019c08d2817edcca19b81c2dd9c90248aeafe6a6e0e7d503ab742143d",
+    "schema_version": 2,
+    "sha256": "adc7ba0911c4751d9266c412b8fa337fe2d086061fbae5603e0ce80bc2ea5589"
+  },
+  "response": {
+    "id": "resp_00e683123a9fb914016a907a69d1a887d09912fbb49b6248f0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6553,
+      "input_tokens_details": {
+        "cache_write_tokens": 6550,
+        "cached_tokens": 0
+      },
+      "output_tokens": 420,
+      "output_tokens_details": {
+        "reasoning_tokens": 231
+      },
+      "total_tokens": 6973
+    }
+  }
+}

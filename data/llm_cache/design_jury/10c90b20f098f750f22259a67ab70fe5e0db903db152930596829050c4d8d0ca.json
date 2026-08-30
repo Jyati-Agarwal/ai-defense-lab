@@ -1,0 +1,70 @@
+{
+  "cache_key": "10c90b20f098f750f22259a67ab70fe5e0db903db152930596829050c4d8d0ca",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and flagship trace clearly communicate the core claim: the same signed payment is allowed by legacy checks but blocked by intent integrity, with three concise reasons. However, the requested action—“Select any cached transaction”—has no obvious row affordance, selected-state explanation, or clearly labeled control; the lone play icon is ambiguous. On mobile, tiny metadata and the very long stacked table weaken scanability, while “Inspect the causal seam” appears more like technical copy than an unmistakable next action.",
+    "fix": "Make the interaction explicit: label the control “Replay selected transaction,” give rows clear hover/focus/selected states, and connect the selected row visually to the trace. On mobile, use compact transaction cards or progressive disclosure, enlarge supporting text, and style “Inspect causal evidence” as a prominent button.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "43b1929ef7c7bcf39f80091c093b73502eee49a457aa02cfc25923fa8acc281d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168681,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "daa2ecedf1846733711f4d935c02352283be4e3560c9bea2b8fe04beddf4c5ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167650,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "c45ebe68952126d724ec10d42118357c244f860678727c3939033daef1d9cdd2",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "27fb0a973211452f5270aec4488b72d4b3eca296a37ddcf11544507de1abced8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "10c90b20f098f750f22259a67ab70fe5e0db903db152930596829050c4d8d0ca"
+  }
+}

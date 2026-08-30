@@ -1,0 +1,70 @@
+{
+  "cache_key": "0843b655a77c3ecab15a3bfc39f85ca54876ed59e1aea5286e44d57f296f9f20",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline clearly distinguishes cryptographic validity from semantic validity, and the intent → cart → payment sequence exposes the mismatch across all viewports. However, “RESULTS ARTIFACT” looks interactive without explaining its role, “INSPECT SEMANTIC MISMATCH” does not show what action or state change follows, and the mobile/tablet header clips navigation labels and obscures the current section. Dense microcopy and very small diagram labels further weaken self-guided comprehension.",
+    "fix": "Make the mismatch the explicit next step: label the control “Compare authorized intent with recorded payment,” show a clear expanded/collapsed state, and identify “Results artifact” as a status rather than a button. Increase diagram/microcopy legibility and keep “04 Mandate” visibly selected in the responsive header.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "4d920c00da6280b976bcf6452add4d731fff1ac2eac0434bba7dd9426d9850f7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 219274,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "6851d17081ae659b682907d9cc8c46373e44fca9f4a47bb939088510517312b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152555,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c50256d7fe1ea61340368979dc8e78324465e6b05c95bde78ddc41ece1f571f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138137,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "7bb389bc97f9a34e1b6bd577561a1fe7ee0ada94927354f5b5c320f536252c62",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a80fecaffcbfc75e09aa5eb672492ebc31dd2f163aa4271efb03c2a53fa97fc0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0843b655a77c3ecab15a3bfc39f85ca54876ed59e1aea5286e44d57f296f9f20"
+  }
+}

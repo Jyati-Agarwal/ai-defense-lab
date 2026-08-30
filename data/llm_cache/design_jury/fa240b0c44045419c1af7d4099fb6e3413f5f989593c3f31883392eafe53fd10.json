@@ -1,0 +1,70 @@
+{
+  "cache_key": "fa240b0c44045419c1af7d4099fb6e3413f5f989593c3f31883392eafe53fd10",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, explanatory copy, selected flagship example, and side-by-side LEGACY ALLOW / INTENT INTEGRITY BLOCK verdict communicate the core claim clearly. However, the requested next action says “Select any cached transaction” while rows expose only a tiny, low-emphasis “INSPECT” label and an ambiguous play icon. On mobile, the resulting comparison is far below the selected row, weakening cause-and-effect, and much supporting text is extremely small. The mobile header also hides most destinations behind an unexplained “SWIPE →” cue.",
+    "fix": "Turn each row into an obvious selectable control with a prominent “Compare policies” action and persistent selected state; on mobile, place or reveal the comparison immediately after the tapped row. Increase small-label/body text sizes and replace “SWIPE →” with a clearly labeled navigation control.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2049840fc13a1573b0cabee00504fcc222a3035e7516b35844abe559d68b57d3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 200551,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "18eb77824ec8f2442056133b5c685dc0c4df75a6159656cf99b30d35d871ccfc",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 177417,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "86e2d3d6763afc81353425c7f4f88ce1b32c8b9e8db82c57b56f69cb5710c00b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 174719,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "8d817ff981674cf86313bf8d18f8e01d95b43b2d9312dd55acab5b0954aa26cb",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d7d422b9fab86c68ed7bf9a919cda7d420a499698693b37fe7bb011b31051a4d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "fa240b0c44045419c1af7d4099fb6e3413f5f989593c3f31883392eafe53fd10"
+  }
+}

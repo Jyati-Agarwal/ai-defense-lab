@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-3a385cbdda76",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "3a385cbdda766f3d2edabb66808fa06e7ee6d2e54e675a9964d3bc31f1ec39a0",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] कृत्रिम वादकथेत अनधिकृत पेमेंट व विसंगत दावे हे फसवणुकीचे संकेत; कृतीयोग्य तपशील वगळले आहेत.",
+  "kind": "dispute_narrative",
+  "language": "mr",
+  "operational": false,
+  "response": {
+    "id": "resp_0c3db2debfd2af04016a8f5b784c4887d095541b564f070933",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 150,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 265
+    }
+  },
+  "response_text_sha256": "787ac3ca8bd40bfb60174a4bb641f11bf45e45b523391a7fabf79196d1c573d0",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "3a385cbdda766f3d2edabb66808fa06e7ee6d2e54e675a9964d3bc31f1ec39a0",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "dispute_narrative",
+      "language": "mr",
+      "variant": "baseline"
+    }
+  }
+}

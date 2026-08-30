@@ -1,0 +1,70 @@
+{
+  "cache_key": "3ef37bd92982737ed88c77563facafea87137da29b81191f4591111ff33220f5",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “One residual evidence gap.” headline, restrained cyan/red/amber accents, and forensic monospace labeling create a coherent defense-lab identity across all viewports. However, the core composition remains a familiar dark dashboard of bordered cards, status pills, and three-column facts; the “unknown” is described rather than expressed through a distinctive visual device. The header reinforces the brand but is conventional navigation.",
+    "fix": "Make the evidence gap the signature visual: introduce a prominent incomplete evidence trace, broken confidence meter, or missing-data seam that connects the observed signal to its next control, then animate or progressively resolve it when “Test an uncertain case” is activated.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "22a615dd1d6922796f4362315afe6971818f16f578b72e7b2ed78b02eea85a02",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 148070,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "3deadc3d44e52c8e4741a691626614f71efc9f4a9a49f3b66ad3134d5ee01e32",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 129367,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "223acae8cea45d839b0860fa7acc37758f3f2946731d1ff71abb1a3b1a42ff7c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 125418,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "2cf1761f41e21f576f2977d721880319760ecf46ec65660bb1726adfdc4e684a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c911132946a9b85c6a920846c207f792f8a8f0dcada68aaa5046ed69d4272709",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "3ef37bd92982737ed88c77563facafea87137da29b81191f4591111ff33220f5"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "4858a8cd1f7c165feb6a44220b35adfaedd598323b2c5382add789b711e4e709",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline immediately states the claim, the supporting copy explains the rendered-pixels versus retrieval-context seam, and “Reveal hidden injection” gives a recognizable next action. The causal-proof comparison between trusted intent and recorded outcome makes the consequence understandable without narration. However, the tablet navigation visibly overlays the introductory content, and the mobile red-layer evidence is cramped, visually contaminated by underlying ghost text, and difficult to scan. The switch also lacks an explicit on/off state label, weakening action certainty.",
+    "fix": "Prevent the sticky navigation from covering content at tablet widths; on mobile, remove or strongly suppress the underlying preview behind the red evidence panel and stack its comparison fields with more spacing. Add an explicit switch state such as “Agent vision: On/Off” and make the immediate instruction consistently say “Toggle Agent vision to reveal the hidden retrieval layer.”",
+    "score": 7,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 347474,
+        "sha256": "4cbfb072bf31c5828822ae371f295e1f83327ee04593f20a64bce61bcb08a149",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312117,
+        "sha256": "7e29c6d90b79a34002272db14277082fdccfb8fa3bfbcf8f4729e298704152be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264865,
+        "sha256": "10238cacde8d09b1fe1f82c33d5c23b8d3348a3eb6ee3b46faa3f9d8467d3ef1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2784a6e3e7159f3098d4de55e39cb631805f67bdfd6071636332f2c6a35cd93b",
+    "schema_version": 3,
+    "sha256": "4858a8cd1f7c165feb6a44220b35adfaedd598323b2c5382add789b711e4e709"
+  },
+  "response": {
+    "id": "resp_04b16ab9b2d806ad016a90839b9b9887d0a8c2b143809bdb0e",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6144,
+      "input_tokens_details": {
+        "cache_write_tokens": 6141,
+        "cached_tokens": 0
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 194
+      },
+      "total_tokens": 6536
+    }
+  }
+}

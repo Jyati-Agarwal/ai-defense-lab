@@ -1,0 +1,70 @@
+{
+  "cache_key": "f0fdd035a611a2e2756670fa5e165a511287c850bf624666d95cc67eefb48b04",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline clearly states the thesis, and “Follow the payment” is visually dominant across all viewports. The numbered cards establish intent, agent, page manipulation, and payment, but they never show the altered action or purchased item; the jump from “7 zero-width chars · invisible CSS” to “The intent was stolen” therefore requires inference. Tablet and mobile headers also visibly clip later navigation items.",
+    "fix": "Show the intended purchase beside the actual purchased outcome, with the injected text or causal change made explicit, then connect that mismatch directly to the payment card.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "bf7c098a9887618d8297ac442e0567dcb79403de24708dd46a9215665b47b54e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 227388,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e55cd47805f3bd2f0966296db6b07c597ec6dd69cba12bf100d1fa7ed48b9e1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223319,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "b2ba478664384fb0ed52086ef706585fbb9d543c221e8bfad98d7b3d181a8ba8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "82536484a97663befda816e630c479fc97be22018ee895e394af8306a7fb380a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f0fdd035a611a2e2756670fa5e165a511287c850bf624666d95cc67eefb48b04"
+  }
+}

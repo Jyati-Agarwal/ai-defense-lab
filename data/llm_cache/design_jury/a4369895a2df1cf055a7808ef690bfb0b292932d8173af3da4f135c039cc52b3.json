@@ -1,0 +1,70 @@
+{
+  "cache_key": "a4369895a2df1cf055a7808ef690bfb0b292932d8173af3da4f135c039cc52b3",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong, cohesive cyber-defense art direction: disciplined red/cyan/yellow accents, clear headline dominance, consistent borders, and responsive restructuring across all three viewports. It falls short of demo-ready polish because supporting text and mono labels become extremely small on mobile, the mobile chart is visually compressed, the tablet vaccination cards feel cramped and uneven, and the global header visibly truncates navigation with an awkward “SWIPE →” affordance; the mobile header also loses the product wordmark. Desktop composition is cleaner but leaves excessive dead space below the content.",
+    "fix": "Increase mobile supporting/type-label sizes and chart height, simplify dense copy, reflow tablet vaccination steps into fewer columns, and redesign the tablet/mobile header with an intentional compact navigation pattern that preserves branding and clearly indicates the active Arena section.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3260b72c9282070e31020c9197071f27c8f38766dec55ac17818fa4b7376f6f0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 247733,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "ca0fb99d2b664a7125119ffe976215279db548e13b5ddad7bac62dc5ffb4d351",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 195725,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "b11d2a6ad3f7d14c99858199581b9074d13515500f1ced42a2ca1a70b3d41de9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 189522,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "a65eebe2d95bb57b76fcd25e9e64fbef8d81ffa27355dc59c213a8a4ff1f8a2f",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e230dc80b76146367b549be56c020cde751b5054e15b82a5ca766bad085520d8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a4369895a2df1cf055a7808ef690bfb0b292932d8173af3da4f135c039cc52b3"
+  }
+}

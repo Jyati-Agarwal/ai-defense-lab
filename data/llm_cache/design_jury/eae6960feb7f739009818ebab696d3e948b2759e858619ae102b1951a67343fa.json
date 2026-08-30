@@ -1,0 +1,51 @@
+{
+  "cache_key": "eae6960feb7f739009818ebab696d3e948b2759e858619ae102b1951a67343fa",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Reduced motion is correctly honored at all three viewports: the media query matches and the hero remains at opacity 1 with no transform. Tablet and mobile timing is acceptable overall (16.87–17.28 ms average, 0 long frames), but desktop averages 22.36 ms with a 50 ms worst frame. More importantly, every measured midpoint is effectively identical to the endpoint—opacity about 0.45 and the same matrix3d/−30 px transform—so the evidence does not demonstrate smooth interpolation between the initial and final states.",
+    "fix": "Make the transition visibly interpolate through distinct intermediate opacity and transform values, then recapture start/mid/end while the animation is active. Optimize desktop rendering toward a ≤16.7 ms average and reduce the 50 ms spike, while preserving the proven reduced-motion override.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 627612,
+        "sha256": "4fddb85cc4ac6c10f3b5f76dd14baa989856357c9b0f4f174a690d9c487dd276",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 563275,
+        "sha256": "69b2088744af269030cd3f4156893befdbe1b9a672a7c68905d2dfef61845e76",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 416664,
+        "sha256": "f2eb9f99e912a62f8ac1bcf94aa5615b97f8b415d46e4384abcff88d2923ba02",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "405c671509b00f738e7e6a346f8859f2fc1130a9c642ba78b949af7a80c55e8e",
+    "schema_version": 2,
+    "sha256": "eae6960feb7f739009818ebab696d3e948b2759e858619ae102b1951a67343fa"
+  },
+  "response": {
+    "id": "resp_0dcd431c94714568016a907a92cd6c87d0b9fc787fd3a72a5b",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7138,
+      "input_tokens_details": {
+        "cache_write_tokens": 7135,
+        "cached_tokens": 0
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 7589
+    }
+  }
+}

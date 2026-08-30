@@ -1,0 +1,70 @@
+{
+  "cache_key": "8b1d2fa68c1682fc4b091a645d76ef9c5dce42158863e52bad58015a735d0818",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Across desktop, tablet, and mobile, the panel uses a controlled 22px translate-and-fade entrance that settles smoothly without overshoot. Timing is consistently near 16.3–16.7ms, worst frame is 16.8ms, and long-frame ratio is 0. Reduced-motion mode matches and produces zero changed elements at all three viewports.",
+    "fix": "To score higher, provide measured frame evidence for interactive/header motion and add restrained sequencing within the economics panel; current proof covers only one simple entrance animation.",
+    "score": 8,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ea083ab5ba7d8cccca9806617d64e42f02984c95178d65a7be0edd360d5d66a1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 221790,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "8f705dcb8628945c0589834c9655aca41e7ea027c20860b04f0a3004ec61a8df",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181793,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "c52ad777ad06369667d812988b6fe150d8edeb29b65c8baa592149fc0cacf186",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177623,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "4c1fff87b4789c2073bc6f91892d0fd0e76a48d6a7ae161be9a99df8c4562b37",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f284c2e40c1188e6a109b5a610a680996915fd9fb51859fdb2331063d74ee682",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8b1d2fa68c1682fc4b091a645d76ef9c5dce42158863e52bad58015a735d0818"
+  }
+}

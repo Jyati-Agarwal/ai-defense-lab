@@ -1,0 +1,70 @@
+{
+  "cache_key": "4ef37224447b0c78d762aed2b7c7d75d7d207c8b67cb59e5b1c4d421c039026a",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and supporting copy clearly argue for operational metrics over accuracy, and the cards consistently expose PR-AUC, calibration, false-positive-constrained recall, latency, confusion counts, and ablation results. However, the intended conclusion is difficult to verify quickly: the precision-recall curve is visually anomalous and unlabeled beyond generic axes, chart labels and explanatory text become extremely small on mobile, and the ablation table shows 100% fresh-row D recall for every configuration while emphasizing a PR-AUC loss, requiring careful reading to understand the distinction. The only next action, “Compare configurations,” appears after the entire long section and does not say what comparison will open. On mobile, the global header hides both the product name and the current Metrics destination, leaving only a cryptic “SWIPE →” cue.",
+    "fix": "Add a plain-language verdict beside the primary metrics that states which configuration wins and why, annotate the PR curve and operating points with readable values, and make the CTA explicit and available near the verdict (for example, “Compare full defense vs ablations”). Increase mobile chart and body-label legibility, and keep the current “Metrics” location visibly identified in the compact header.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8d09a08ea95180cb7f1d92b8ae010d06c6dc06f8de95627b9522181bad2611c7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 216833,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "0c75316cf81aac9749175f76ea8cefafa140a1bf90a08d09a4b35314ca5ab979",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193238,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "14f9b53d6d8f2ff6c97ba9fac186ff03143e00f2085a6c3f81e0251576f6b4e3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181055,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "f0233f6500b18d66b2c021a8474b2c1037facb6b13927747f2b57d9328160422",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bd89c743bedf4b7da4054b0810cc96ed728cbe85ccca29dcbf7ee1e751652f8a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4ef37224447b0c78d762aed2b7c7d75d7d207c8b67cb59e5b1c4d421c039026a"
+  }
+}

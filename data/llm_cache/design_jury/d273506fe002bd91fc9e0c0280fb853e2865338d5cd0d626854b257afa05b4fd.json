@@ -1,0 +1,70 @@
+{
+  "cache_key": "d273506fe002bd91fc9e0c0280fb853e2865338d5cd0d626854b257afa05b4fd",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop is polished and cohesive: strong editorial headline, disciplined dark palette, clear cyan/red/green semantics, and a convincing split transaction/trace composition. Tablet remains orderly but becomes excessively tall. Mobile degrades substantially: typography and metadata are extremely small, rows become repetitive vertical slabs, the card requires a very long scroll, and the header shows a cramped clipped navigation strip with no visible wordmark. Tablet header labels are visibly truncated beneath the SWIPE treatment. These responsive compromises keep it below demo-ready 8.",
+    "fix": "Redesign the narrow layout instead of merely stacking it: use compact transaction summaries with expandable details, increase mobile body/metadata legibility, tighten vertical rhythm, and keep the evidence comparison prominent earlier. Replace the clipped header rail with a clean mobile navigation pattern and preserve a recognizable brand label; remove visibly truncated tablet labels.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6f4d4c432de9f25056c7dd912d3cff6b87a5039ca18bad460e37bc56d60710e2",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168682,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "f6ee53c20a32f7d21febfc115173eff8a54759e703a21f0ec90f022ff8bc3d01",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167663,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "7cbd82aadc48f62361caec0ebbe8cdd2bf9716a261fa77797e24bd0247d103fd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c5c21d3da11381dac81c53116cd829b6aa7a339932e5a5282af059439d83ab3",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d273506fe002bd91fc9e0c0280fb853e2865338d5cd0d626854b257afa05b4fd"
+  }
+}

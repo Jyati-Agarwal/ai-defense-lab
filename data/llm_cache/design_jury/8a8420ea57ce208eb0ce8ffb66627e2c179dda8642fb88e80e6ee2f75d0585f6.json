@@ -1,0 +1,70 @@
+{
+  "cache_key": "8a8420ea57ce208eb0ce8ffb66627e2c179dda8642fb88e80e6ee2f75d0585f6",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The split headline “The signature is valid. The intent was stolen.” is sharp and memorable, reinforced by the cyan/red evidence-chain metaphor and “AUTHENTIC ≠ INTENDED” payoff. However, the dark cards, mono labels, neon accents, and pill badges remain familiar cybersecurity-dashboard styling; on mobile the connecting paths disappear, reducing the signature visual idea to a generic vertical card stack.",
+    "fix": "Make the intent-to-payment trace the unmistakable centerpiece at every breakpoint: preserve a visible continuous cyan-to-red path through the mobile cards and visually dramatize the exact point where recorded intent mutates into payment.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1c5de859fbf668c0de474d64d96d452d9bd99929def5ad6be331cc8613c4f6ea",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 151314,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "f50141d5154bc163e8738b929e239b9dfc656c49f385063dd3b613189c451bcd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 151038,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "227da19c5954fe4ca242066f3942e62db0fdaa6b359428b23e595a5084e8f0d3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 128544,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "d7d546d53b78f03ebef6e2670e7dd52be268868a19290dae549e826c960b9084",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6e9727b8f4ba62e9df573a3c1beceee3a986e0c4de0f31ab752c139ec7fb5657",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8a8420ea57ce208eb0ce8ffb66627e2c179dda8642fb88e80e6ee2f75d0585f6"
+  }
+}

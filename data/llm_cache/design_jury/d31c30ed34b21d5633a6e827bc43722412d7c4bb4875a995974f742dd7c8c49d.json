@@ -1,0 +1,70 @@
+{
+  "cache_key": "d31c30ed34b21d5633a6e827bc43722412d7c4bb4875a995974f742dd7c8c49d",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and verdict clearly state that 0% replay ASR does not establish generalization, while the survivor list supports the warning. However, dense unexplained terms such as “fresh-row,” “Partition D,” and “guarded vaccination,” very small labels, and a clipped header on tablet/mobile weaken comprehension. “Review fresh-row regression” is the only apparent next action, but it lacks a clear destination or expected outcome.",
+    "fix": "Add a prominent CTA labeled “Run fresh-row validation,” briefly define fresh-row testing beside it, and state what result would clear the 25 survivors. Increase supporting-text size and make the active Arena navigation item visible at every viewport.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c7b9a9d6cebbcfddfef3dc0cd944fbf00f80db0465ac0a95e06d9b7e61119f0c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 688471,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "1db9af3220fc6f044966a1fc3a8e073d3f2fe63aac95b7ceef9b5f61820a64da",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bda2ef077b759ac13f7064ad9330a8850711690c13c7afb30bc02a2e9d7f51ae",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d31c30ed34b21d5633a6e827bc43722412d7c4bb4875a995974f742dd7c8c49d"
+  }
+}

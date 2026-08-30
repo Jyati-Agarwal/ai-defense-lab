@@ -1,0 +1,51 @@
+{
+  "cache_key": "257a66310e47655636b9a774d90af0c4cfd899302905eebc10d01e082bea8277",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The attacker-ledger framing, red/cyan before-versus-after encoding, oversized thesis, and 25.60× ROI medallion create a coherent cyber-economics identity. However, the core visual is still a conventional comparison table plus circular KPI badge; it does not make the dramatic 545.35×→25.60× change visually unforgettable. The tablet navigation also overlays the hero, weakening the demo moment.",
+    "fix": "Replace the generic KPI medallion with a signature attacker-economics visualization—such as an animated break-even curve or profit funnel that visibly collapses from 545.35× to 25.60× as defense costs and success rates change. Preserve the ledger as supporting detail and prevent the tablet header from covering the hero.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 336636,
+        "sha256": "5d07646c982a3e3a3eb65e5acfb99d38fcac6279aa4812c3c8c03e58a5208934",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 301179,
+        "sha256": "07ebda307b5ebd9dfb9f9fbe204813a8f5e931a1a441c6c3c6e21ab7187469be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 216328,
+        "sha256": "139de961ed60472d4ea19a9b1dc07bd1340151d4c6b8ff9bfa01c0345328ee44",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dc3eda10d4136b6be8f493eb9703132cf2b9ce876409a26ef6b1465711ed8515",
+    "schema_version": 3,
+    "sha256": "257a66310e47655636b9a774d90af0c4cfd899302905eebc10d01e082bea8277"
+  },
+  "response": {
+    "id": "resp_08366706107bfa88016a90850360b087d082adeae79b6a31cc",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5364,
+      "input_tokens_details": {
+        "cache_write_tokens": 5361,
+        "cached_tokens": 0
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 5779
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "artifact": "entity_fidelity_mrs1_preprocessing_preflight_failure",
+  "converter_subprocess_started": false,
+  "failure": {
+    "exception": "RuntimeError",
+    "message": "Complete Journey converter requires uv 0.11.8, found 'uv 0.11.8 (x86_64-unknown-linux-gnu)'",
+    "stage": "uv_version_preflight"
+  },
+  "mrs1_preregistration_sha256": "648c0d1d8020c06c6d184cf451c9caff90acd401e6db3b62393b91439ce3cb7a",
+  "partition_artifacts_created": false,
+  "preprocessor_sha256": "c5c1a45807be5e7a0e4ead43124027141290e59656539d4890ff1c82d9f29be0",
+  "qualification_partition_materialized_or_used": false,
+  "rds_bytes_read_for_sha256_verification": true,
+  "schema_version": 1,
+  "source_transaction_rows_parsed_or_materialized": false,
+  "status": "STOP_SUPERSEDED_BY_IMPLEMENTATION_R1",
+  "superseding_change_scope": "parse the pinned uv semantic version from its canonical CLI output only",
+  "uv_expected_version": "0.11.8",
+  "uv_reported_version": "uv 0.11.8 (x86_64-unknown-linux-gnu)"
+}

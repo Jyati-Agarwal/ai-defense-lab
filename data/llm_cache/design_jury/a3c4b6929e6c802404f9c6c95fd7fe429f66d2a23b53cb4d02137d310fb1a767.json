@@ -1,0 +1,70 @@
+{
+  "cache_key": "a3c4b6929e6c802404f9c6c95fd7fe429f66d2a23b53cb4d02137d310fb1a767",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Map the adversary” thesis, cyan kill-chain waveform, hot-pink agentic state, and forensic mono typography create a recognizable cyber-defense identity on desktop. However, tablet/mobile replace the signature waveform with a plain numbered grid, while the lower cards, filters, badges, and JSON panel read as familiar dark-dashboard patterns. The strongest visual idea therefore does not survive across viewports.",
+    "fix": "Make the adversary path the screen’s persistent signature: redesign it as a compact scrollable or vertical connected kill-chain on tablet/mobile, and visually link the selected vector, evidence signals, and JSON artifact to its node with one distinctive animated trace.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "23d2206bce8ef47a0549d38f9e02cda67aa172dfdfe5ade8c91d6724d1389caf",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135661,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "23059da5fb4c6d5ac9b22d09aa2eb27527020fb8fe0a9aa993e35c146c316a8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124623,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "7c83bc2033feeb61801390c3c88b3fc0dc99dbaebfb210e21d7771f920b9fc42",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "eb5782f5721e9a54502d19221fc39959e2e52a3c43b92e86c4232928c5a67cfa",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a3c4b6929e6c802404f9c6c95fd7fe429f66d2a23b53cb4d02137d310fb1a767"
+  }
+}

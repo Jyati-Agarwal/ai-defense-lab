@@ -1,0 +1,70 @@
+{
+  "cache_key": "f89e4d144613c6fbe29b229d337385824a8516e5347de930230ca4dd5d532a40",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the intent-integrity story by contrasting four verified cryptographic checks with a concrete semantic mismatch: running shoes become a digital-wallet voucher while amount and merchant remain valid. The intent/cart/payment chain, MCC 5661, allowed payee, and ECDSA-versus-intent explanation make the payment-defense relevance understandable across viewports. However, the screen explicitly relies on public-seed synthetic signer keys, labels the registry flag as a claim rather than proof, and provides no visible evidence that the mismatch triggers a block, challenge, or other payment control. The Mastercard connection is limited to payment-domain fields rather than a demonstrated Mastercard capability or integration.",
+    "fix": "Show a live decision artifact for this transaction: semantic-policy result, reason code, risk signal, and enforced outcome such as BLOCKED or STEP-UP REQUIRED. Tie that outcome to a named Mastercard-relevant capability or integration and display server-returned evidence rather than only a synthetic fixture narrative.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8cefb3366f2bf87cfed67ce4b4d798cef1d150b4a1712f3b57f93bc3aefd8b9a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 219273,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "9b8b1c238686a90f37fd6c704bad6dc5d789b5ed9f93e5c2aead75ce03d2fd9e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152555,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c50256d7fe1ea61340368979dc8e78324465e6b05c95bde78ddc41ece1f571f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138137,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "7bb389bc97f9a34e1b6bd577561a1fe7ee0ada94927354f5b5c320f536252c62",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "b308db755e29cf07adb236906526636bff477f1b33493749ec6155da0006432b",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "97df39fd7d5016eadcd7d019a093d60523deac2d001ddf6ce49b092d97c34754",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "282ecb558fa4cdd191a9cf9d03c288a0e41dd614e10610a2005e901d11d34552",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4b1c7d4f805a928c9d4b7d702c1fc3be4d0b53daae49f9bc810ed745cdae4a97",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f89e4d144613c6fbe29b229d337385824a8516e5347de930230ca4dd5d532a40"
+  }
+}

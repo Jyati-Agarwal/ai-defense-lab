@@ -1,0 +1,51 @@
+{
+  "cache_key": "b2ec23fd61a9996304bf0ec1bbda43427f28cf5611a25cd4e696392a8d591f0a",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Reduced-motion behavior is correctly proven at all three viewports: the media query matches and the hero remains at opacity 1 with no transform. Runtime timing is solid on tablet/mobile (16.87–17.28 ms average, 0 long frames), but desktop averages 22.36 ms with a 50 ms worst frame. More importantly, the measured mid-frame is effectively identical to the end state on desktop/tablet and exactly identical on mobile, so the evidence does not demonstrate smooth interpolation from opacity 1/transform none to opacity 0.45 with the 3D transform. This is functional but not sufficiently proven or polished for an 8.",
+    "fix": "Retune or repair the transition so sampled start, midpoint, and endpoint show clear progressive interpolation on every viewport. Target a desktop average near 16.7 ms and eliminate the 50 ms spike, then recapture multiple timestamped frames while preserving the verified reduced-motion override.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f08931429b6dc15300ec6a357978b0d59db099e84d55a3327ddc6ec02c0a9e94",
+    "schema_version": 2,
+    "sha256": "b2ec23fd61a9996304bf0ec1bbda43427f28cf5611a25cd4e696392a8d591f0a"
+  },
+  "response": {
+    "id": "resp_030256ee5e0c523c016a907ab2979087d0958e731d7abdc8c9",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7060,
+      "input_tokens_details": {
+        "cache_write_tokens": 7057,
+        "cached_tokens": 0
+      },
+      "output_tokens": 391,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 7451
+    }
+  }
+}

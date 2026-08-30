@@ -1,0 +1,51 @@
+{
+  "cache_key": "82e2284c96145954f6ebe9caff888b9dcca238f9e069d434563f42b813b558c8",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The concentric vault/lock field, oversized editorial warning headline, and restrained cyan/amber security palette create a recognizable visual identity across desktop, tablet, and mobile. However, the signature vault graphic is extremely faint and appears largely decorative, while the results area falls back to familiar KPI cards, badges, and bordered panels. On desktop and tablet, the horizontal navigation also cuts across headline/explanatory content, weakening the intended hero moment.",
+    "fix": "Make the vault field the unmistakable evidence-delivery mechanism: visibly unlock or reveal evaluation layers tied to the displayed metrics, with stronger hierarchy and contrast. Replace more of the generic KPI-card treatment with that same vault metaphor, and prevent the navigation rail from overlapping hero content at desktop and tablet widths.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348142,
+        "sha256": "8e74a5455efe31feb187d14a3525c8d7f1fdcbeedeaf8d2f0eb38854befa8045",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8a9262b0d83ea6d44f42f685338e227883523dd6ed25ae76104fef3366d75c8a",
+    "schema_version": 3,
+    "sha256": "82e2284c96145954f6ebe9caff888b9dcca238f9e069d434563f42b813b558c8"
+  },
+  "response": {
+    "id": "resp_07b45b8de69f1314016a9083b9dea087d0ac074883959d4ad0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6889,
+      "input_tokens_details": {
+        "cache_write_tokens": 6886,
+        "cached_tokens": 0
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 7237
+    }
+  }
+}

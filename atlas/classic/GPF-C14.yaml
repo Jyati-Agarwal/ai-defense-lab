@@ -1,0 +1,13 @@
+id: GPF-C14
+name: Remote-access payment coercion
+tier: classic
+description: A social engineer controls the victim device and coaches a nominally authenticated transfer.
+kill_chain_stage: context_manip
+channel: upi_p2p
+rail: upi
+genai_capability: none
+primitives: [context_manip, intent_manip, payment_manip]
+observable_signals: [remote-control app active, call-session overlap, atypical navigation cadence]
+defense_hooks: [remote-access detection, contextual step-up]
+severity: critical
+feasibility_today: true

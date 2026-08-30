@@ -1,0 +1,51 @@
+{
+  "cache_key": "9857088b9c8b42ee296a0f03147258aeefc55fedde12d175c15b212030b98581",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The before/after ledger, repeated 25.60× result, ROI formula, and “Review the adaptive arena” CTA make the metric and next action easy to locate on desktop and mobile. However, the core conclusion is internally confusing: the copy says the defense “wins the campaign,” while the result is explicitly “Above break-even” with attacker ROI still at 25.60×, so the attacker remains highly profitable. “Measured” also lacks a visible time window, attempt denominator, or fraud-value input needed to interpret the result. On tablet, the navigation bar overlays the headline and supporting sentence, obscuring the claim.",
+    "fix": "Rewrite the conclusion to match the evidence—for example, “Detection cuts attacker ROI from 545.35× to 25.60×, but does not yet make attacks unprofitable”—and state the next objective as driving ROI below 0×. Add the measurement window, total attempts, and assumed fraud value beside the formula. Fix the tablet header so it never covers the headline or explanatory copy.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 336636,
+        "sha256": "5d07646c982a3e3a3eb65e5acfb99d38fcac6279aa4812c3c8c03e58a5208934",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 301181,
+        "sha256": "28c4ce1541b5178e5adec7c34d08cf9dc01444d0bb736691253a6e4e38493b6a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 216328,
+        "sha256": "139de961ed60472d4ea19a9b1dc07bd1340151d4c6b8ff9bfa01c0345328ee44",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4e5656e6e5010fe7ad84b2525a67e97c018c91599b2566d81736d21aa2acb2f9",
+    "schema_version": 3,
+    "sha256": "9857088b9c8b42ee296a0f03147258aeefc55fedde12d175c15b212030b98581"
+  },
+  "response": {
+    "id": "resp_0322906654a88126016a9083cb7ab087d08a0ea9d74153b589",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5361,
+      "input_tokens_details": {
+        "cache_write_tokens": 5358,
+        "cached_tokens": 0
+      },
+      "output_tokens": 646,
+      "output_tokens_details": {
+        "reasoning_tokens": 404
+      },
+      "total_tokens": 6007
+    }
+  }
+}

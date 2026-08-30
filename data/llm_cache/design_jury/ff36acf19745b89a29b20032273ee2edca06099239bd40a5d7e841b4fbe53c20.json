@@ -1,0 +1,70 @@
+{
+  "cache_key": "ff36acf19745b89a29b20032273ee2edca06099239bd40a5d7e841b4fbe53c20",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 69.6% recall, evidence caveat, next control, and prominent “Test an uncertain case” CTA create a coherent claim-to-action path across all three viewports. Clarity is weakened by unexplained terms such as “vault number” and “composer,” and the CTA does not state what testing will produce.",
+    "fix": "Rename the CTA to “Test an uncertain case in Composer” and add one short outcome line explaining what the test returns and how it addresses the residual risk.",
+    "score": 8,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0de263d33519f7a46400d0f3e4e98fe17b6ba0bb86e8eafeca2013f5274bb86d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 115760,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "72255cce0fb2e42a83ccf66dee0daeb90be31cffc9b4e24175c482c27c27c741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 94733,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "7160de4c008ea3438e86a1adff094d565746c0a7040f3759ce8cb05b7101187a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 94409,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "7ec8289a4303ec0046b042895c4e33e88f600b36ff9b640942a2689e49da30a6",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb867f0eced88966292d5ff83933edcfbe68bf5cba1b75b21bdae0a29bb83b03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ff36acf19745b89a29b20032273ee2edca06099239bd40a5d7e841b4fbe53c20"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ff7311da4189fdf7302e5301ae654a7815a8949b485cc16d298b19a5e7420ae1",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The core instruction and next action are explicit: “Change one synthetic event,” the controls are labeled, and the high-contrast “LAUNCH EVENT” CTA leads into a side-by-side policy result. However, responsive navigation obscures the hero on desktop and the Amount control on tablet. Result interpretation is also muddy: “WHY BLUE DECIDED” is not connected explicitly to Intent Integrity, while suspicious reasons and a 13% economic signal appear alongside fused risk 0/100 and ALLOW without explaining that reconciliation.",
+    "fix": "Prevent the navigation from overlapping content at every viewport, rename the rationale heading to “Why Intent Integrity decided,” and add one concise sentence explaining how the evidence-layer percentages produce the fused-risk score and final decision.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 420450,
+        "sha256": "eff805f4de1e3b50f06e95ce7432f75f47dc4dcabe382402414879b79a1f76ba",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393089,
+        "sha256": "c9c19e4264824f51ef1170cfe3f41a32a3de1748c07e4ee898f05dbd3ff5b338",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308212,
+        "sha256": "fd17cf5cab95cd3d911c86977d198c8786dd85d60ab4187c57f1eeb9ab278c00",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3cda3766d06bd3c3c8db5de5666c23a01c9ed3eaf4564e8b7fbfa2cdb81be553",
+    "schema_version": 3,
+    "sha256": "ff7311da4189fdf7302e5301ae654a7815a8949b485cc16d298b19a5e7420ae1"
+  },
+  "response": {
+    "id": "resp_0c285d7aa426696c016a9083d692f887d085ac26fe217af48e",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6193,
+      "input_tokens_details": {
+        "cache_write_tokens": 6190,
+        "cached_tokens": 0
+      },
+      "output_tokens": 442,
+      "output_tokens_details": {
+        "reasoning_tokens": 264
+      },
+      "total_tokens": 6635
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-defense-lab.local/contracts/event.schema.json",
+  "title": "AI Defense Lab payment event",
+  "type": "object",
+  "required": ["event_id", "ts", "channel", "rail", "mandate_chain", "agent_trace", "txn", "label", "scores", "decision"],
+  "properties": {
+    "event_id": {"type": "string", "pattern": "^evt_[A-Za-z0-9_-]+$"},
+    "ts": {"$ref": "#/$defs/utcTimestamp"},
+    "channel": {"enum": ["agentic_checkout", "card_ecom", "upi_p2p", "upi_collect", "wire"]},
+    "rail": {"enum": ["card", "upi", "wire"]},
+    "mandate_chain": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["intent", "cart", "payment"],
+          "properties": {
+            "intent": {"$ref": "#/$defs/intent"},
+            "cart": {"$ref": "#/$defs/cart"},
+            "payment": {"$ref": "#/$defs/payment"}
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "agent_trace": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/agentTrace"}
+      ]
+    },
+    "txn": {
+      "type": "object",
+      "required": ["amount_minor", "currency", "mcc", "customer_id", "device_id", "geo", "hour_local", "beneficiary_id", "is_new_beneficiary"],
+      "properties": {
+        "amount_minor": {"$ref": "#/$defs/minorUnits"},
+        "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+        "mcc": {"type": "string", "pattern": "^[0-9]{4}$"},
+        "customer_id": {"type": "string", "minLength": 1},
+        "device_id": {"type": "string", "minLength": 1},
+        "geo": {
+          "type": "object",
+          "required": ["lat", "lon"],
+          "properties": {
+            "lat": {"type": "number", "minimum": -90, "maximum": 90},
+            "lon": {"type": "number", "minimum": -180, "maximum": 180}
+          },
+          "additionalProperties": true
+        },
+        "hour_local": {"type": "integer", "minimum": 0, "maximum": 23},
+        "beneficiary_id": {"type": "string", "minLength": 1},
+        "is_new_beneficiary": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "label": {
+      "type": "object",
+      "required": ["is_fraud", "atlas_id", "attack_primitives", "attack_family", "arena_round", "split"],
+      "properties": {
+        "is_fraud": {"type": "boolean"},
+        "atlas_id": {"type": ["string", "null"]},
+        "attack_primitives": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "attack_family": {"type": ["string", "null"]},
+        "arena_round": {"type": ["integer", "null"], "minimum": 0},
+        "split": {"enum": ["A", "B", "C", "D", "E"]}
+      },
+      "additionalProperties": false
+    },
+    "scores": {
+      "type": "object",
+      "required": ["semantic", "provenance", "temporal", "economic", "structural", "fused"],
+      "properties": {
+        "semantic": {"$ref": "#/$defs/nullableScore"},
+        "provenance": {"$ref": "#/$defs/nullableScore"},
+        "temporal": {"$ref": "#/$defs/nullableScore"},
+        "economic": {"$ref": "#/$defs/nullableScore"},
+        "structural": {"$ref": "#/$defs/nullableScore"},
+        "fused": {"$ref": "#/$defs/nullableScore"}
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "type": "object",
+      "required": ["action", "legacy_rules_action", "reason_codes", "latency_ms"],
+      "properties": {
+        "action": {"enum": ["ALLOW", "STEP_UP", "HOLD", "BLOCK", null]},
+        "legacy_rules_action": {"enum": ["ALLOW", "STEP_UP", "HOLD", "BLOCK", null]},
+        "reason_codes": {"type": "array", "items": {"type": "string"}},
+        "latency_ms": {"type": ["number", "null"], "minimum": 0}
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "channel": {"const": "agentic_checkout"}
+        },
+        "required": ["channel"]
+      },
+      "then": {
+        "properties": {
+          "mandate_chain": {"type": "object"}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "utcTimestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]Z$"
+    },
+    "minorUnits": {"type": "integer", "minimum": 0},
+    "hexSignature": {"type": "string", "pattern": "^[0-9a-fA-F]+$", "minLength": 8},
+    "p256PublicKey": {"type": "string", "pattern": "^04[0-9a-fA-F]{128}$"},
+    "nullableScore": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "number", "minimum": 0, "maximum": 1}
+      ]
+    },
+    "intent": {
+      "type": "object",
+      "required": ["category", "budget_minor", "ttl_seconds", "prompt_playback", "constraint_obj", "signed_at", "user_id", "user_signature", "signer_public_key", "signature_valid"],
+      "properties": {
+        "category": {"type": "string", "minLength": 1},
+        "budget_minor": {"$ref": "#/$defs/minorUnits"},
+        "ttl_seconds": {"type": "integer", "minimum": 1},
+        "prompt_playback": {"type": "string"},
+        "constraint_obj": {
+          "type": "object",
+          "required": ["category", "max_amount_minor", "mcc", "payee_allowlist", "prompt_playback", "signed_at", "ttl_seconds"],
+          "properties": {
+            "mcc": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[0-9]{4}$"}},
+            "max_amount_minor": {"$ref": "#/$defs/minorUnits"},
+            "payee_allowlist": {"type": "array", "items": {"type": "string"}}
+          },
+          "additionalProperties": true
+        },
+        "signed_at": {"$ref": "#/$defs/utcTimestamp"},
+        "user_id": {"type": "string", "minLength": 1},
+        "user_signature": {"$ref": "#/$defs/hexSignature"},
+        "signer_public_key": {"$ref": "#/$defs/p256PublicKey"},
+        "signature_valid": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "cartItem": {
+      "type": "object",
+      "required": ["sku", "name", "price_minor", "qty"],
+      "properties": {
+        "sku": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "price_minor": {"$ref": "#/$defs/minorUnits"},
+        "qty": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": true
+    },
+    "cart": {
+      "type": "object",
+      "required": ["items", "total_minor", "payee_did", "merchant_id", "merchant_signature", "signer_public_key", "signature_valid"],
+      "properties": {
+        "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/cartItem"}},
+        "total_minor": {"$ref": "#/$defs/minorUnits"},
+        "payee_did": {"type": "string", "minLength": 1},
+        "merchant_id": {"type": "string", "minLength": 1},
+        "merchant_signature": {"$ref": "#/$defs/hexSignature"},
+        "signer_public_key": {"$ref": "#/$defs/p256PublicKey"},
+        "signature_valid": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "payment": {
+      "type": "object",
+      "required": ["cart_hash", "hash_matches_cart", "amount_minor", "presence_flag", "agent_id", "agent_registered", "delegation_depth", "agent_signature", "signer_public_key", "signature_valid"],
+      "properties": {
+        "cart_hash": {"type": "string", "pattern": "^sha256:[0-9a-fA-F]{64}$"},
+        "hash_matches_cart": {"type": "boolean"},
+        "amount_minor": {"$ref": "#/$defs/minorUnits"},
+        "presence_flag": {"enum": ["PRESENT", "NOT_PRESENT"]},
+        "agent_id": {"type": "string", "minLength": 1},
+        "agent_registered": {"type": "boolean"},
+        "delegation_depth": {"type": "integer", "minimum": 0},
+        "agent_signature": {"$ref": "#/$defs/hexSignature"},
+        "signer_public_key": {"$ref": "#/$defs/p256PublicKey"},
+        "signature_valid": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "toolCall": {
+      "type": "object",
+      "required": ["t", "tool", "topic"],
+      "properties": {
+        "t": {"type": "number"},
+        "tool": {"type": "string", "minLength": 1},
+        "topic": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "pageRead": {
+      "type": "object",
+      "required": ["url", "hidden_text_present", "hidden_text_sample", "zero_width_chars", "invisible_css"],
+      "properties": {
+        "url": {"type": "string", "minLength": 1},
+        "hidden_text_present": {"type": "boolean"},
+        "hidden_text_sample": {"type": "string"},
+        "zero_width_chars": {"type": "integer", "minimum": 0},
+        "invisible_css": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "agentTrace": {
+      "type": "object",
+      "required": ["tool_calls", "pages_read", "negotiation_seconds"],
+      "properties": {
+        "tool_calls": {"type": "array", "items": {"$ref": "#/$defs/toolCall"}},
+        "pages_read": {"type": "array", "items": {"$ref": "#/$defs/pageRead"}},
+        "negotiation_seconds": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

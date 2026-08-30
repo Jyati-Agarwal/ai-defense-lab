@@ -1,0 +1,51 @@
+{
+  "cache_key": "0dd458faf9b9b7b32286deb096adf6748af5693418f8686beb1ab796062507d8",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly connects agentic payments to intent integrity through a signed mandate, paid-cart outcome, legacy-versus-intent decision, and evidence-layer explanations. The responsive real-server capture and successful /stream response support a credible replay artifact. However, the flagship transaction is below the signed INR 345327 limit and receives ALLOW, so it does not substantiate the claim that the delegated mission “broke” or visibly demonstrate the defense stopping intent abuse. All eight listed events are allowed with near-zero risk, and no Mastercard-specific authorization, rail, token, or integration is shown.",
+    "fix": "Make the flagship replay an unmistakable intent violation that legacy policy allows but intent integrity blocks or constrains, with the violated mandate clause and evidence-to-decision chain visible. Keep the current case as a false-positive-reduction comparison, demonstrate transaction selection changing the result, and expose the relevant Mastercard authorization or agentic-commerce integration.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 425774,
+        "sha256": "a4efa768627f6439207f04ef91e6b346a1c0aa0b1b3ab7137a766f01fe2a2edd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 375890,
+        "sha256": "4601f26df0d8559c0466fef20a7ea2c7af79b333fa32c9bf285fec30dafbc02a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 338746,
+        "sha256": "58f10b7931d30cb380d482c12fd4cec885361528deaff9e810eda434eaf21e67",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "9e971d96c6f54c0fa8dac9d74e792ca6462cb5a0c8865551787791a6c7f3b50b",
+    "schema_version": 2,
+    "sha256": "0dd458faf9b9b7b32286deb096adf6748af5693418f8686beb1ab796062507d8"
+  },
+  "response": {
+    "id": "resp_09ddc6d436e0ab81016a907a720fa887d0a78079e11c569cb5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6077,
+      "input_tokens_details": {
+        "cache_write_tokens": 6074,
+        "cached_tokens": 0
+      },
+      "output_tokens": 981,
+      "output_tokens_details": {
+        "reasoning_tokens": 765
+      },
+      "total_tokens": 7058
+    }
+  }
+}

@@ -1,0 +1,13 @@
+id: GPF-C03
+name: Account takeover beneficiary addition
+tier: classic
+description: A compromised account adds a new beneficiary and transfers funds before the owner reacts.
+kill_chain_stage: merchant_manip
+channel: wire
+rail: wire
+genai_capability: none
+primitives: [reconnaissance, tool_manip, merchant_manip, payment_manip]
+observable_signals: [new beneficiary immediately paid, authentication context change, unusual transfer amount]
+defense_hooks: [beneficiary cooling period, behavioral authentication]
+severity: critical
+feasibility_today: true

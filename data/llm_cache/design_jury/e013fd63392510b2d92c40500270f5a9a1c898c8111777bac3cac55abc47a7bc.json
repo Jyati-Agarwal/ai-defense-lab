@@ -1,0 +1,51 @@
+{
+  "cache_key": "e013fd63392510b2d92c40500270f5a9a1c898c8111777bac3cac55abc47a7bc",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard navigation reaches the arena through the horizontal scroller; the skip-link target measures 158×46 px; no touch-target violations or viewport overflow were measured at 1440, 768, or 390 px; and reduced-motion produced no transform or opacity animation. However, accessibility proof is unresolved across every viewport: color contrast is incomplete for 553 desktop, 508 tablet, and 484 mobile nodes; 6 nodes have serious prohibited-ARIA findings; and 2 nodes have critical duplicate ARIA/label IDs. Zero reported violations does not override these incomplete checks.",
+    "fix": "Measure and correct every flagged foreground/background contrast pair to WCAG AA, remove prohibited ARIA attributes, and make all IDs referenced by ARIA or labels unique. Re-run automated checks until these results are verified passes, then add arena-specific screen-reader semantics and visible-focus evidence for the chart, phylogeny controls, survivor disclosure, and vaccination sequence.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 627612,
+        "sha256": "4fddb85cc4ac6c10f3b5f76dd14baa989856357c9b0f4f174a690d9c487dd276",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 563275,
+        "sha256": "69b2088744af269030cd3f4156893befdbe1b9a672a7c68905d2dfef61845e76",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 416664,
+        "sha256": "f2eb9f99e912a62f8ac1bcf94aa5615b97f8b415d46e4384abcff88d2923ba02",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dba25de0f0923254fdf63732dadb9798a08fc3927d91a70649480e79809989ce",
+    "schema_version": 2,
+    "sha256": "e013fd63392510b2d92c40500270f5a9a1c898c8111777bac3cac55abc47a7bc"
+  },
+  "response": {
+    "id": "resp_0be9dba543aea8dc016a907a96a5b487d0b8d81d8b0c935d17",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7879,
+      "input_tokens_details": {
+        "cache_write_tokens": 7876,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 8276
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "03484e9853ff93aa78b230cb284ff2dca10073d8490f8a28c0d330baf5e42298",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Frame timing is stable: tablet/mobile average about 16.67ms with 0 long-frame ratio; desktop averages 19.31ms, peaks at 33.4ms, and also records no long frames. Reduced-motion mode correctly matches and shows 0 active animations and 0 changed elements at every viewport. However, standard mode likewise shows 0 active animations and 0 changed elements across all measured frames, so there is no demonstrated motion to judge for choreography, easing, continuity, or interaction feedback.",
+    "fix": "Provide measured standard-mode frames for triggered load, scroll, and control interactions, demonstrating purposeful transitions and their timing/easing across all viewports. Keep the proven reduced-motion state static, and verify any added motion retains the current zero-long-frame performance.",
+    "score": 5,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 236808,
+        "sha256": "d8228d34f6694cac75e35ce94626f7cb2d0c0c7a30b86f97308c890cce0ac996",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223673,
+        "sha256": "43585c87bda7def4dd95c057e97132319bec974372d2c4cee70c71a2f34dadf8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c613302ef1c952a33ad55b5d97cb3b6daf2b47dc1d60df24bceefc5dc8e88d30",
+    "schema_version": 3,
+    "sha256": "03484e9853ff93aa78b230cb284ff2dca10073d8490f8a28c0d330baf5e42298"
+  },
+  "response": {
+    "id": "resp_017945d9773cb624016a908379ae3487d0b65b75351ac3982c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6096,
+      "input_tokens_details": {
+        "cache_write_tokens": 6093,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 6493
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "e7faf2b1fc9764b04d2e406a7850e281a29c2d33de735663197c66b68a0ddf9e",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, BLOCK→ALLOW comparison, 99% support, verified-neighbor list, suppression result, and “Continue to Arena” CTA form a readable narrative across viewports. However, the screen never defines “raw drift,” “contextualized,” or how neighbor similarity justifies changing the action; “results artifact” is also opaque. On mobile, the global header hides the current Memory step and relies on a subtle SWIPE cue, weakening orientation.",
+    "fix": "Add one explicit decision rule beside the comparison, such as “99% legitimate-neighbor support exceeds the allow threshold,” including the threshold or baseline score. Rename jargon-heavy labels, and keep “06 Memory” visibly selected in the mobile header.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "5f6ffbf9f7e4d8cd7cf293cadb7e09deb0315213f8a6d90241533c9a0d59d07e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 181630,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "1816f5087c45cd751bee0dbc1f1ce5526d57fcc6341d95ae35a905fb79411109",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154156,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "dbb1ba829c5c1a29de5a5cb04dcbbc44fb8cb68c32df9b5642de051ea42dfd47",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154060,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "b9fa542e76190f5482630cb562b26c5036921ecb064e049b4610c053e4a6dd8a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8d8e71be3eb6d02452e974a943ca7603f6ada3b86138f17b56e89c70f5a010cc",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e7faf2b1fc9764b04d2e406a7850e281a29c2d33de735663197c66b68a0ddf9e"
+  }
+}

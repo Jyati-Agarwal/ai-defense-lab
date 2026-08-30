@@ -1,0 +1,13 @@
+id: GPF-A10
+name: Agentic cart quantity inflation
+tier: agentic
+description: A tool result changes item quantity while preserving product identity and nominal unit price.
+kill_chain_stage: merchant_manip
+channel: agentic_checkout
+rail: card
+genai_capability: structured cart manipulation
+primitives: [tool_manip, merchant_manip, payment_manip]
+observable_signals: [quantity exceeds intent, cart total jump, tool-result field mutation]
+defense_hooks: [cart diff policy, quantity constraint]
+severity: high
+feasibility_today: true

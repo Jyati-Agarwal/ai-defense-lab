@@ -1,0 +1,70 @@
+{
+  "cache_key": "ea785bb7499a57f09561a5bd97698b69e692e71a630943a6c83e6b312c7da24e",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent integrity: it contrasts four verified cryptographic checks with a concrete semantic failure across authorized intent, cart, merchant, MCC, and payment. The explicit distinction between object integrity and authorization meaning is compelling and consistent across viewports. However, the screen admits the evidence uses public-seed synthetic signer keys and fixture-only matching; nothing shown proves Mastercard-network integration, real authorization controls, or a live enforcement outcome. Therefore it is relevant but not yet hackathon-demo ready at 8+.",
+    "fix": "Add a live, Mastercard-specific proof path: show the originating authorization constraint, the attempted transaction payload, the semantic policy decision, and an observable block/challenge result tied to an actual Mastercard API or sandbox response. Label synthetic versus network-derived fields and expose request/response evidence.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "03319a4b626487fae4dc4b785edbcc6594540bb84125f4dbe38c791f487dae6b",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 219274,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "6851d17081ae659b682907d9cc8c46373e44fca9f4a47bb939088510517312b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152336,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c0b53227dbd81598455245d2168c1ac79a821c3b364c5a5268b56f936af9586c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138168,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "1580f16a374610d035b768da11befffbfd189a07877d32c9b0ebe810ead9f8d8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "90dcfc89bf639e8cb7deae0e73f65ecd98264b57b5b07286996fd2a9798a7986",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ea785bb7499a57f09561a5bd97698b69e692e71a630943a6c83e6b312c7da24e"
+  }
+}

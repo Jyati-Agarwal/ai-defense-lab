@@ -1,0 +1,70 @@
+{
+  "cache_key": "64d07d0f434f79b3cb5f3811ac8ecec29329b810e72aa3b1b4e94664d7f416fb",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "The injection control and header pass the supplied keyboard checks with visible focus; no section touch-target or viewport-overflow violations were measured; reduced-motion sampling found no changed elements. However, contrast remains unverified with serious incomplete results: 40 nodes in the injection section and 14–26 header nodes, including headings, body copy, labels, badges, and navigation. At tablet/mobile widths, 21/27 header overflow candidates are clipped, with later navigation items visually off-screen despite keyboard reachability. No assistive-technology or switch-state announcement evidence was supplied.",
+    "fix": "Provide measured contrast ratios over the actual gradient backgrounds and remediate all failures to WCAG AA. Redesign or clearly expose the tablet/mobile header overflow so every destination is discoverable and operable visually. Verify the switch’s name, role, state changes, and revealed-content announcement with a screen reader, then rerun axe, keyboard, touch-target, overflow, and reduced-motion tests.",
+    "score": 6,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "69927079fa6ef1f5defaf3581b4737dac74f484345622e308b23d243c223febe",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 342560,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "27cb7d8e95b40982545e9dd08e75fde08e0385f3d13275d91cc843671d5d7274",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 308204,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "02ad30c508d8a1491829bd5aa91310519c1cc102b2eb5c70bb7a6d42af9fca81",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264831,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "86727d3d546cb5b8778298e4c64ebb30f72e9901b3345971d0f37f1e13b44999",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4dd9bd91ed43384b6c7b83afe91432ca3488b6b62e1519cfc34013d1ede0826c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "64d07d0f434f79b3cb5f3811ac8ecec29329b810e72aa3b1b4e94664d7f416fb"
+  }
+}

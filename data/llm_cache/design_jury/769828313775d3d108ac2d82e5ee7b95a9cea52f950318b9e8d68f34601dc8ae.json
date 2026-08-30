@@ -1,0 +1,70 @@
+{
+  "cache_key": "769828313775d3d108ac2d82e5ee7b95a9cea52f950318b9e8d68f34601dc8ae",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the defense story: users compose a synthetic agentic-checkout attack, compare Legacy Rules (ALLOW) with Intent Integrity (BLOCK) on the same event, and see fused semantic, provenance, temporal, economic, and structural evidence with decision reasons. Payment cues such as amount, payees, delegation, and “before payment” make it relevant to Mastercard. However, the evidence proves only one successful POST and one displayed outcome; it does not show that changing controls produces materially different, traceable decisions, nor does it connect the result to Mastercard-specific payment-network outcomes or measurable fraud reduction.",
+    "fix": "Demonstrate two contrasting control configurations with persisted request parameters and changed policy outputs, then tie the block to a concrete Mastercard payment scenario and quantified impact such as prevented loss, false-positive rate, or authorization latency.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "60fd259ffdf0429e85510d824098e3f8341984d10d8a8d2b4bcfde1fb4ec0503",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 165297,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "e4addc903617f56b97b2093b95b057c000299c230418de039dfc8ca9277e043f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154189,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "5ecb6de3f6806bbc18d04fc6c2e9ccd8c8fbe87b62c8e6f7326511d3a3af7235",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157663,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "ee31cc4f9e9ea8d89f4ab7aabaeb37de498e1fb105c9f7f50a708a9c04452948",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5f2641ee9db3a47e80a1d94fd99f3bb10a62d5cf8208145a58bb9b3e5dfac598",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "769828313775d3d108ac2d82e5ee7b95a9cea52f950318b9e8d68f34601dc8ae"
+  }
+}

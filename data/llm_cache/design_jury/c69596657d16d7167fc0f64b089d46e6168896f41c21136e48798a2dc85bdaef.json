@@ -1,0 +1,70 @@
+{
+  "cache_key": "c69596657d16d7167fc0f64b089d46e6168896f41c21136e48798a2dc85bdaef",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard coverage and visible focus indicators passed for every expected Atlas and header control; no touch-target violations were measured; reduced-motion matched with zero changed elements; and no uncontained viewport overflow or automated WCAG violations were reported. However, color contrast remains materially unverified: axe marked it serious and incomplete for 74 desktop, 56 tablet, and 35 mobile Atlas nodes, plus header nodes. The screenshots also show dense, very small muted text and horizontally clipped/scroll-dependent Atlas content, while no screen-reader or accessible-name/state interaction test was supplied.",
+    "fix": "Replace gradient-dependent surfaces behind text with deterministic colors and measure WCAG contrast for every incomplete node, including muted labels, navigation, cards, and metadata. Re-test the horizontal Atlas and header rails with keyboard and touch at mobile/tablet widths, ensuring focus automatically reveals items and providing clear scroll affordances. Add screen-reader tests for filter states, vector selection announcements, reading order, and the scrollable region.",
+    "score": 6,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8048a64c8194d586af1d677b12909e0e72e330da5d97c9cb100c144946f75798",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 573825,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "3bbe5b582039ecfd417bed744c0391e280e4e07768f09f6e40a31f5c839cd638",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 412170,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "20f54aa2faaaf5378e1af0b7209c05008974a2bbe06071dbe737434e08fd98ad",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 286748,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "6f48e21c6dbe26c95902c45406559d0b97446aedd47e7d762f0c5a393724fb80",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fbad16fbede7e2acb568ab067d9e4ca8d4ca3311fa771a12bbcd75f71b8e4178",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c69596657d16d7167fc0f64b089d46e6168896f41c21136e48798a2dc85bdaef"
+  }
+}

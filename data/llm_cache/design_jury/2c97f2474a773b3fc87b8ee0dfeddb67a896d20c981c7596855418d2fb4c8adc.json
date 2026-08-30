@@ -1,0 +1,51 @@
+{
+  "cache_key": "2c97f2474a773b3fc87b8ee0dfeddb67a896d20c981c7596855418d2fb4c8adc",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured across desktop, tablet, and mobile: LCP is 704/632/548 ms, FCP 60/52/76 ms, load 144/141/237 ms, and TTFB 5.8/1.3/2.2 ms. CLS is excellent on desktop/mobile (0.0011/0) but higher on tablet (0.0478). No console, page, or request failures occurred; all tested API responses returned 200. Frame tests recorded no long frames, though desktop averaged 20.73 ms with a 33.4 ms worst frame versus ~16.67 ms on tablet/mobile. Transfer cost is relatively heavy: 1.31 MB total, including 1.15 MB JavaScript, across 17 requests. Document width matched viewport at all sizes.",
+    "fix": "Reduce the 1.15 MB JavaScript payload through route-level code splitting and dependency trimming; profile desktop rendering to bring average frames below 16.7 ms, and reserve tablet layout dimensions to reduce its 0.0478 CLS.",
+    "score": 8,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "982a71c7b352055d2b92543ed1bccfbc51ab2a93f179d5d2b7ca7375f9a09b59",
+    "schema_version": 3,
+    "sha256": "2c97f2474a773b3fc87b8ee0dfeddb67a896d20c981c7596855418d2fb4c8adc"
+  },
+  "response": {
+    "id": "resp_08a2428e045e37c2016a9084fad55487d0abb80d4e5b36d7c9",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6836,
+      "input_tokens_details": {
+        "cache_write_tokens": 6833,
+        "cached_tokens": 0
+      },
+      "output_tokens": 398,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 7234
+    }
+  }
+}

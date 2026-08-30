@@ -1,0 +1,70 @@
+{
+  "cache_key": "43190210d489d7326669c8d735528c11c547908d956b658819879a82311f0e07",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, signed-intent versus paid-cart comparison, and side-by-side ALLOW/BLOCK result communicate the core claim without a presenter across all viewports. However, the requested action—“Select any cached transaction”—has weak affordance: rows do not visibly appear selectable, the triangle control is unlabeled, and “Inspect the causal seam” reads like an action but lacks a clear control treatment. On mobile, dense, very small metadata and the long stacked replay make the conclusion and next step harder to scan. Header navigation also hides later destinations behind an unexplained horizontal rail, despite the SWIPE cue.",
+    "fix": "Make the primary next action unmistakable: label the replay control, give selectable rows clear hover/focus/selected styling plus a concise instruction, and render “Inspect the causal seam” as an obvious button. Increase mobile text size and compress each event row so the selected comparison appears sooner.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0767ea7555ccd8c34cfd8a89c20815c7f53577e89dcc1dd0aced2ad7f97fc58c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168682,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "f6ee53c20a32f7d21febfc115173eff8a54759e703a21f0ec90f022ff8bc3d01",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167663,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "7cbd82aadc48f62361caec0ebbe8cdd2bf9716a261fa77797e24bd0247d103fd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "27fb0a973211452f5270aec4488b72d4b3eca296a37ddcf11544507de1abced8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "43190210d489d7326669c8d735528c11c547908d956b658819879a82311f0e07"
+  }
+}

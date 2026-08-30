@@ -1,0 +1,70 @@
+{
+  "cache_key": "d73a15ddb7bfe0d7f49cdd6ca0cba99860303d3b4aea88f4624c7bd52371bc37",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The contrarian “Accuracy is the wrong question” headline, evaluation-ledger framing, grid backdrop, and cyan/red terminal palette create a recognizable defense-lab identity across viewports. However, the main experience remains a conventional collection of KPI cards, standard charts, matrix, and comparison table; no singular visual interaction or data metaphor makes it unmistakably demo-worthy. Mobile further reduces the ablation table to dense stacked cards.",
+    "fix": "Create one signature visual that unifies operating constraints, recall, cost, and latency—such as an interactive defense operating-envelope map—and make it the dominant centerpiece across all viewports.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "85309b858b01f02eb2d206d013e9e2601601dc4cb0ad482a790bf0f2cb3e95b3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 583446,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "b4f8f08e83c49331bb105831bbf9578aecf5bd60fb0dd124e7ab2368356d7543",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 540625,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "10c6c6490ce204e81f3508c26a7cafcddee2edf8751f697e625076abb3752b6e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 399290,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "9baca304c6b22df0628661fa2c19684fd067607d3d03e4a12511ba8ed79b8462",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "17361b2512a48a0bf073d074cc3dda9e9d3e04cf6bf89c808283c63ff0a40075",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d73a15ddb7bfe0d7f49cdd6ca0cba99860303d3b4aea88f4624c7bd52371bc37"
+  }
+}

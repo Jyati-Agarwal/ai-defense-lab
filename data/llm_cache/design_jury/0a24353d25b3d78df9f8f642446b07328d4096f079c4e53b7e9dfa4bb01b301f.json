@@ -1,0 +1,70 @@
+{
+  "cache_key": "0a24353d25b3d78df9f8f642446b07328d4096f079c4e53b7e9dfa4bb01b301f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, short explanation, filter controls, selected-vector detail, observable signals, and “Continue to scored replay” CTA establish the purpose and next action. However, tablet and mobile open on a horizontally clipped atlas: earlier stages/cards are missing while no strong affordance explains the current horizontal position. Mobile adds a large empty region before the detail panel, and the JSON is visibly truncated. The global header also hides most destinations on tablet/mobile. These defects make the kill-chain and navigation harder to understand without guidance.",
+    "fix": "Make the stage/card region fit or clearly scroll from stage 01 with a visible scrollbar, position indicator, and persistent stage labels; remove the fixed-height empty gap; wrap or horizontally scroll the JSON; and provide an explicit mobile/tablet navigation control for hidden header destinations.",
+    "score": 6,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "95f707b8142e17c2ee8ddef043d9fa4f57e08bfaa4fd68f18a9ba31955768f2a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 573825,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "3bbe5b582039ecfd417bed744c0391e280e4e07768f09f6e40a31f5c839cd638",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 412170,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "20f54aa2faaaf5378e1af0b7209c05008974a2bbe06071dbe737434e08fd98ad",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 286748,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "6f48e21c6dbe26c95902c45406559d0b97446aedd47e7d762f0c5a393724fb80",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1ee06a43171a1775cb318c03cb785f28db5aeca5a31c4dca020b4ec003cd8c7e",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0a24353d25b3d78df9f8f642446b07328d4096f079c4e53b7e9dfa4bb01b301f"
+  }
+}

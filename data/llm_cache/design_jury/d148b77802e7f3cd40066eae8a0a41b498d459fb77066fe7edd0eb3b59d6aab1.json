@@ -1,0 +1,70 @@
+{
+  "cache_key": "d148b77802e7f3cd40066eae8a0a41b498d459fb77066fe7edd0eb3b59d6aab1",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-defense art direction, disciplined cyan/red/amber accents, crisp card construction, and clear responsive hierarchy. However, desktop has excessive empty space above the hero; tablet/mobile rely on very small, low-contrast monospaced labels; the tablet footer wraps awkwardly; and the real header feels cramped and clipped at narrower widths, including the truncated “LIVE WI” mobile label. Contrast proof is also incomplete for 3 tablet and 13 mobile header nodes, so an 8 is not justified.",
+    "fix": "Reduce desktop hero top spacing, raise microcopy size/contrast, prevent awkward footer wrapping, and replace the clipped horizontal header rail with a deliberate compact navigation pattern on tablet/mobile.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "317642a614b59f1ee3996795b6e9bc01c8f85795f06e4025ed95ba9248dd3e76",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 148070,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "3deadc3d44e52c8e4741a691626614f71efc9f4a9a49f3b66ad3134d5ee01e32",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 129367,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "223acae8cea45d839b0860fa7acc37758f3f2946731d1ff71abb1a3b1a42ff7c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 125418,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "2cf1761f41e21f576f2977d721880319760ecf46ec65660bb1726adfdc4e684a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e13dcd84b00dd496fae28baf82fec5a6305aa31e59fa95486f3748f296957c0b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d148b77802e7f3cd40066eae8a0a41b498d459fb77066fe7edd0eb3b59d6aab1"
+  }
+}

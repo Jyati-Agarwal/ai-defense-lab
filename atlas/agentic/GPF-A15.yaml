@@ -1,0 +1,13 @@
+id: GPF-A15
+name: Forged tool-result confirmation
+tier: agentic
+description: An untrusted tool response claims merchant verification or user approval that never occurred.
+kill_chain_stage: tool_manip
+channel: agentic_checkout
+rail: card
+genai_capability: tool-result interpretation
+primitives: [context_manip, tool_manip, merchant_manip, payment_manip]
+observable_signals: [unsigned tool result, approval event absent, result origin mismatch]
+defense_hooks: [tool response attestation, approval ledger]
+severity: critical
+feasibility_today: true

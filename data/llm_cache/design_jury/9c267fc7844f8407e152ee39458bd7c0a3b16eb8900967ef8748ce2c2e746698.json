@@ -1,0 +1,70 @@
+{
+  "cache_key": "9c267fc7844f8407e152ee39458bd7c0a3b16eb8900967ef8748ce2c2e746698",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-lab visual language, disciplined cyan/red semantics, crisp typography, and coherent responsive restacking. However, desktop composition is unbalanced: the oversized headline dominates while the artifact note floats remotely, and the main card contains excessive empty space beneath a relatively small diagram. Tablet/mobile are clearer but become very tall and text-dense; tiny mono labels and muted secondary copy reduce legibility. The header also feels cramped and abruptly clipped at narrower widths, with the mobile wordmark and primary red-mode action disappearing.",
+    "fix": "Rebalance desktop into a tighter grid, enlarge or vertically center the evidence visualization, reduce headline scale slightly, and align the artifact explanation with the intro. Increase small-text size/contrast, tighten the long mobile stack, and replace the clipped header rail with a clearer compact navigation pattern that preserves branding and the primary action.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "9f4d524b0c8dfe0bad92145b990e30b6dbb6658b6df7593c5d41a2d39005e735",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 219274,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "6851d17081ae659b682907d9cc8c46373e44fca9f4a47bb939088510517312b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152336,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c0b53227dbd81598455245d2168c1ac79a821c3b364c5a5268b56f936af9586c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138168,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "1580f16a374610d035b768da11befffbfd189a07877d32c9b0ebe810ead9f8d8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d0e7c13ad00fe2c7be29351fd3c7b740e02be79be44362ea6cc85e02bd6076f7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9c267fc7844f8407e152ee39458bd7c0a3b16eb8900967ef8748ce2c2e746698"
+  }
+}

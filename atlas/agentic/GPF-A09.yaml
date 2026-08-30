@@ -1,0 +1,13 @@
+id: GPF-A09
+name: Budget-ceiling price capture
+tier: agentic
+description: A merchant learns the private budget and raises a legitimate-looking price to just below the ceiling.
+kill_chain_stage: merchant_manip
+channel: agentic_checkout
+rail: card
+genai_capability: personalized price negotiation
+primitives: [reconnaissance, merchant_manip, payment_manip]
+observable_signals: [near-one budget utilization, price above market median, quote changed after disclosure]
+defense_hooks: [market-price comparison, budget disclosure policy]
+severity: high
+feasibility_today: true

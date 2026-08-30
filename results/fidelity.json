@@ -1,0 +1,45 @@
+{
+  "auc_mean": 0.5133847106874999,
+  "auc_std": 0.001403527776706524,
+  "elapsed_seconds": 37.383,
+  "events_generated": 200000,
+  "features": [
+    "log1p_amount_minor",
+    "elapsed_hour_mod_24_sin",
+    "elapsed_hour_mod_24_cos"
+  ],
+  "fold_auc": [
+    0.5156784596874999,
+    0.51304745125,
+    0.5132224128125,
+    0.5112962878125,
+    0.513678941875
+  ],
+  "gate_passed": true,
+  "gate_size_required": 200000,
+  "lightgbm_version": "4.7.0",
+  "measured_at": "2026-08-26T21:41:59Z",
+  "method": "Calibrate on one reference partition, then LightGBM real-vs-synthetic discrimination on a disjoint partition with stratified 5-fold ROC AUC",
+  "reference": {
+    "calibration_evaluation_disjoint": true,
+    "calibration_rows": 84315,
+    "evaluation_rows": 200000,
+    "input_rows": 284807,
+    "legitimate_usable_rows": 284315,
+    "manifest": {
+      "dataset_id": 1597,
+      "parquet_url": "https://data.openml.org/datasets/0000/1597/dataset_1597.pq",
+      "path": "data/reference/creditcard_marginals.manifest.json",
+      "sha256": "86eb8d10fc00ce0900ac73f207409a17d8cbb2522c8c8e43e48ce8ca94481dbf",
+      "source": "https://www.openml.org/api/v1/json/data/1597"
+    },
+    "path": "data/reference/creditcard_marginals.csv",
+    "sha256": "a481c635286387380d3eb6413cd4533fe477fdd9699dda13e2ce1c575347fe11",
+    "time_field_semantics": "ULB Time is elapsed seconds; modulo-24h is only an elapsed-time proxy, not local clock hour"
+  },
+  "schema_version": 1,
+  "scope": "Narrow two-marginal smoke gate only: amount and elapsed-time-modulo-24 proxy; not behavioral or entity-state fidelity",
+  "seed": 20260827,
+  "threshold_max_auc": 0.6,
+  "threshold_passed": true
+}

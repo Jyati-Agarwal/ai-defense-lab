@@ -1,0 +1,30 @@
+{
+  "model_hash": "7b167cbe572bba2668ec52d1f387cbf949b112ef750cfeb7a5ca960a79fd934f",
+  "dataset_sha256": "29311d2b4ffd5550b646198f14653b15e3dbea8a27db4c5e2d7fc5baa0d1bb1b",
+  "split_plan_sha256": "af26629dee5b160ac1965561eecde0265c84bf52055ef0be1d8e51c4b1699e44",
+  "source_tree_sha256": "421f0b658d087a2188418049c7cc42362658fa9839b4ae2b3f510fb9f1c61c7d",
+  "events_file_sha256": "70df47a2326de5e1b2c2dde65259c5d346dabe6e40986d5e6a07affd48d9f98c",
+  "events_manifest_sha256": "9d027cdbf8d63082347229a8ca54b5ef7edf42d6bd88307d85ad4d3d3641fca6",
+  "behavior_profile_sha256": null,
+  "evaluation_preregistration_sha256": "c96d62b877f953b7733cb93d83c81c94f73e847854a42a9176aaf4f3b1913c96",
+  "key_registry_sha256": "825c338734e3c1eb5acc20d9b74a5a94ef56bfc331a7e224881ca3f2ad1552d6",
+  "attempt_receipt": "evaluation_attempt_v3.json",
+  "attempt_receipt_sha256": "13f92eaed3dd8246ea4b381bfb0927f7b9af24dea8e24caa8455a0a97f221b52",
+  "partitions_scored_once": [
+    "C",
+    "D",
+    "E"
+  ],
+  "weights_unchanged": true,
+  "scored_at_seed": 20260827,
+  "scoring_counts": {
+    "A": 11661,
+    "B": 12,
+    "C": 46,
+    "D": 45,
+    "E": 1000
+  },
+  "latency_benchmark_scope": "A+B",
+  "protected_partition_inference_passes": 1,
+  "temporal_cutoff": "2026-01-07T22:31:40Z"
+}

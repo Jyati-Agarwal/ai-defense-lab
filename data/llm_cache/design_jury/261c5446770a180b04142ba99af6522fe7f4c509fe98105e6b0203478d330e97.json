@@ -1,0 +1,51 @@
+{
+  "cache_key": "261c5446770a180b04142ba99af6522fe7f4c509fe98105e6b0203478d330e97",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Desktop, tablet, and mobile show no measured horizontal overflow, no touch-target violations, and reduced-motion correctly matches with stable opacity/transform. Keyboard traversal reaches #injection, and the skip-link target measures about 158×46 px. However, accessibility scans remain incomplete at every viewport: 6 serious prohibited-ARIA nodes, 2 critical duplicate-ID/ARIA nodes, and 484–553 serious color-contrast nodes. There is no measured proof that the injection reveal switch itself works by keyboard, exposes its state correctly, or has a visible focus indicator. Zero reported violations cannot be treated as a pass while these checks are incomplete.",
+    "fix": "Resolve duplicate IDs and prohibited ARIA first, then measure and correct every contrast candidate to WCAG thresholds. Add targeted tests for the reveal switch covering Tab focus, visible focus, accessible name/state, and Space/Enter activation at all viewports; rerun axe until the serious and critical incomplete results are conclusively cleared.",
+    "score": 5,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 265633,
+        "sha256": "fcd4294a9f2642fd233b4d5bd8c740c380d89fd40709ac7b065ac3e956a094b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 230529,
+        "sha256": "b4dc4c9bcae4bb5fbb6d0e89a2340e0bbbea869fbc18719f37cf5bd22e7725f9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 204128,
+        "sha256": "41b8309d8318f60d01cf64e2e376ddb01c03a3285f49935e3f476fe423b5f09b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f16708166b63a0ad4540b652db2828de32dff1e8586b758d291ff81e298372e7",
+    "schema_version": 2,
+    "sha256": "261c5446770a180b04142ba99af6522fe7f4c509fe98105e6b0203478d330e97"
+  },
+  "response": {
+    "id": "resp_055a543b53c8b4bc016a907a8757ec87d0bf9cd3f5c54793d0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7291,
+      "input_tokens_details": {
+        "cache_write_tokens": 7288,
+        "cached_tokens": 0
+      },
+      "output_tokens": 486,
+      "output_tokens_details": {
+        "reasoning_tokens": 260
+      },
+      "total_tokens": 7777
+    }
+  }
+}

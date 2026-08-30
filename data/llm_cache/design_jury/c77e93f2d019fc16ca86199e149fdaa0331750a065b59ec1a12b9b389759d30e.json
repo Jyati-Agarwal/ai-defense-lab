@@ -1,0 +1,70 @@
+{
+  "cache_key": "c77e93f2d019fc16ca86199e149fdaa0331750a065b59ec1a12b9b389759d30e",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The section is visually cohesive and polished: strong headline hierarchy, disciplined cyan/red/yellow accents, consistent grid texture, and a well-structured risk card across all viewports. Mobile reflow is particularly clean. However, the actual tablet and mobile headers visibly clip the horizontal navigation mid-item with no clear overflow cue, while several header labels are extremely small and faint; the reported contrast checks are also incomplete. These issues prevent a hackathon-demo-ready 8.",
+    "fix": "Replace the clipped narrow-screen header rail with an intentional scroll treatment or compact menu, add a visible overflow cue/current-section anchor, and increase header label size and contrast. Slightly strengthen secondary-copy contrast throughout the card.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "7f6c15f006932f7f4995f2f9163971ebed05da3870ec8ad9442aaa2b6c132006",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 255300,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "3c0d6beeaa5dab07dabb4f7e02a38bfe40ed083e6f913ee42b748b53a5c1b486",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 213777,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "282489082d7acab51e53af349b3e00e9d92ec70fbff66d5773ea72b3bc9df40b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181263,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "f4346f7dde804ba18eb8a31c042a989438a06c29505d09c988f05217026e72cd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "31529017edc0dcef0d95033ab93d80dddfcc59e6cfad10452ceb3e6a4e67103e",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c77e93f2d019fc16ca86199e149fdaa0331750a065b59ec1a12b9b389759d30e"
+  }
+}

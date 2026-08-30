@@ -1,0 +1,51 @@
+{
+  "cache_key": "6e51d231277dae53c0fecf5adbb6493e4243fdb4147b2b0f166720030a4facf3",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, methodology warning, side-by-side 100% recall figures, and explicit 0% regression gap make the core result understandable on desktop and tablet. However, the action copy says “Open the scope evidence” while the visible control says “Hide scope evidence,” leaving the next action unclear. On mobile, the evidence card overflows and clips the known-recall value, comparison label, family identifier, and frozen-weight hash, so important proof cannot be read reliably. Terms such as “fresh-row,” “independent_holdout=false,” and “prior families disclosed” are not explained in plain language.",
+    "fix": "Make the instruction state-aware: when expanded, explain what to inspect next or provide a clear next CTA. Add a one-sentence plain-language interpretation of why this is not an independent holdout. Reflow the mobile metric cards vertically and wrap or truncate technical identifiers with an explicit expand/copy affordance so all evidence remains readable.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 387465,
+        "sha256": "c5f5f3bdcf56f0e0d2c0d1c84ffed9b059b0181ede9a6338ef9e0786db3a7bed",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312741,
+        "sha256": "130b843521116f97340118e80e156fead7f2d63894ef39907f948d48a20737ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 233481,
+        "sha256": "7d97cb03ba2bb941ee01b7053b5b0f32a532e69380aa5b24a9d243db7a144eb7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2d2b4d6fde72418f2e7d97e73c10f529e6f8494a797e528fcff2891061ce63f3",
+    "schema_version": 2,
+    "sha256": "6e51d231277dae53c0fecf5adbb6493e4243fdb4147b2b0f166720030a4facf3"
+  },
+  "response": {
+    "id": "resp_06e8c576b345fcc3016a907a9c5fac87d082549c1e1112f08d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6495,
+      "input_tokens_details": {
+        "cache_write_tokens": 6492,
+        "cached_tokens": 0
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 6946
+    }
+  }
+}

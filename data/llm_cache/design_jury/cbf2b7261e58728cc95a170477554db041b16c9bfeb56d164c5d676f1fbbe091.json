@@ -1,0 +1,51 @@
+{
+  "cache_key": "cbf2b7261e58728cc95a170477554db041b16c9bfeb56d164c5d676f1fbbe091",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances the defense story by translating detection into attacker economics: success falls from 84% to 5%, observed successes from 115 to 7, cost per successful fraud rises from ₹4,721.739 to ₹96,964.286, and attacker ROI falls from 545.35× to 25.60×. It also links the result back to the adaptive arena. However, the claimed campaign-winning framing is not yet supported: post-defense ROI remains 25.60× and is explicitly labeled above break-even, so the attacker is still highly profitable. The screen also provides no visible derivation, time/sample basis, fraud-value assumption, adaptation-cost model, or Mastercard-specific network impact such as prevented loss, authorization impact, false-positive cost, or issuer/acquirer value.",
+    "fix": "Make the economics demonstrate a defensible win: show inputs and calculation provenance, include adaptation/retooling costs and uncertainty, and present the threshold or trajectory that drives attacker ROI below 0×. Add Mastercard-relevant outcomes—prevented fraud value, affected transaction volume, authorization/false-positive tradeoffs, and issuer/acquirer savings—while clearly distinguishing measured values from modeled projections.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 336636,
+        "sha256": "5d07646c982a3e3a3eb65e5acfb99d38fcac6279aa4812c3c8c03e58a5208934",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 301181,
+        "sha256": "28c4ce1541b5178e5adec7c34d08cf9dc01444d0bb736691253a6e4e38493b6a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 216328,
+        "sha256": "139de961ed60472d4ea19a9b1dc07bd1340151d4c6b8ff9bfa01c0345328ee44",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6b9e36378fb488c0f62567f3ac47b99e289db98551be3922dd4db136f17c2c61",
+    "schema_version": 3,
+    "sha256": "cbf2b7261e58728cc95a170477554db041b16c9bfeb56d164c5d676f1fbbe091"
+  },
+  "response": {
+    "id": "resp_01d4f4e046106a61016a9083cdce8487d08dc5e9c933a20173",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5362,
+      "input_tokens_details": {
+        "cache_write_tokens": 5359,
+        "cached_tokens": 0
+      },
+      "output_tokens": 516,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 5878
+    }
+  }
+}

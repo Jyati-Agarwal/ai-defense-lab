@@ -1,0 +1,70 @@
+{
+  "cache_key": "802eb0a2b44301e68239a01dfa21b39bb8732cd37a4a2c7eb07179fe7bfc6962",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The section has a cohesive high-contrast cyber/editorial style, strong headline hierarchy, disciplined cyan/red semantics, and polished cards across all viewports. However, the desktop composition leaves excessive dead space above and beside the primary artifact, while mobile typography feels cramped. Most damagingly, the real tablet/mobile header visibly clips navigation mid-item; mobile also drops the brand label and red-mode control, making the global chrome look unfinished. Header contrast remains unverified across 14–26 nodes.",
+    "fix": "Redesign the tablet/mobile header as an intentional compact pattern—brand plus menu or clearly indicated horizontal scroller—without cut-off items. Tighten desktop vertical spacing, slightly reduce the mobile headline, and verify/increase muted header-text contrast.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "07179b6b0765bcb74e882053985cfee48ba0fc452d293718fc92817b2a12cf3e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 523573,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "882ac3b2b9e690c870a934b531125e5fa7af4844588acdd4b8b9c2109bb5a7ba",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401239,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "177a445ccda9bed30f953d4d7f05377b789cb527d43495d3981de4a8b727bb97",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 312965,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "cab6e2e9a7b4ed794d8ada8c856ef20f09421aee0776f958dbff1035a5ac2605",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3149ed3f40664b5ceed20a9f1f2ea637982185dd5f07f7b4b67b52d65e17f9c4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "802eb0a2b44301e68239a01dfa21b39bb8732cd37a4a2c7eb07179fe7bfc6962"
+  }
+}

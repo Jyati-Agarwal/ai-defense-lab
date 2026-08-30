@@ -1,0 +1,13 @@
+id: GPF-A25
+name: Translation-layer instruction injection
+tier: agentic
+description: Adversarial Hindi or Marathi text changes meaning when translated into the agent planning language.
+kill_chain_stage: context_manip
+channel: agentic_checkout
+rail: upi
+genai_capability: multilingual translation and reasoning
+primitives: [context_manip, intent_manip, tool_manip]
+observable_signals: [source-translation intent mismatch, script switch near instruction, multilingual fingerprint]
+defense_hooks: [dual translation check, source-language provenance]
+severity: high
+feasibility_today: true

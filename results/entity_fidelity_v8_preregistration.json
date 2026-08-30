@@ -1,0 +1,33 @@
+{
+  "artifact": "entity_fidelity_v8_preregistration",
+  "correction": "post-V7 calibration-diagnostic correction: only the multiday checkerboard shape changes to (32,3,3,3,3,3,3,3), with the count rank coordinate used to order exact V7 PMF multiplicities; all other V7 choices remain unchanged",
+  "evaluation_seeds_sha256": "8cc36734acca2f218112be9bb000c4494be21d446210c8dfbfdcc7474190aeea",
+  "full_bootstrap_seed": 20260857,
+  "futility_bootstrap_repeats": 10000,
+  "futility_bootstrap_seed": 20260897,
+  "futility_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "futility_quantile": 0.025,
+  "futility_seed": 20260828,
+  "implementation_tree_sha256": "5f9d6d64264d63ca5e6f3db44ed840fb601878d4328fd403ccd6d2c74f7e467b",
+  "interior_quantiles_unchanged": true,
+  "parent_v7_attempt_sha256": "246188a5dfafca81e0ef965d461cb62436554657c1830024f0e8f1297094dd80",
+  "parent_v7_entity_source_sha256": "02b42cced9b77e8b4fb620f2c8c3bf0da12214c507daae348edd89b0507fa401",
+  "parent_v7_entity_test_sha256": "8b6478de95126e1413e7075793a1bb671095ac4d442e7116944fda9aebe757c0",
+  "parent_v7_exploratory_sha256": "7a24152a539f2c65f744314c592540eb08d4c8756cd7c87ffe0477aff77198f7",
+  "parent_v7_population_source_sha256": "6a6334ca27e2d2748243fdd7cf3562e1ff0c8484fee056aaed237bacd7a34bfc",
+  "parent_v7_population_test_sha256": "d7cc6af6d927bb9d34da7ad7419e1879902eb96fd231b402a8f4523feadc14e0",
+  "parent_v7_preregistration_sha256": "fa5fc1aa8cd18543f426762bfd544247a02d44e1cf6509a64c926d0a2fe907a5",
+  "parent_v7_protocol_sha256": "c7823dcf17a1c85be5f5ba06e201cdd008f384801ab9ef773219a7f4510b18c2",
+  "preregistration_sha256": "2fd6cdd95fb55df43fd395de64163afc60f4383ce6339a09c89dfdb86293fd1d",
+  "schema_version": 8,
+  "status": "frozen",
+  "study_revision": "8.0",
+  "threshold_max_d_upper_95": 0.65,
+  "uci502_transactions_accessed": false
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_type": "completejourney_source_quarantine_receipt",
+  "dataset_bytes_retained": false,
+  "observed_git_blob_sha1": "f40e337238311130c1684cdf94d4128e4c6965f6",
+  "observed_rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+  "observed_size_bytes": 12775661,
+  "parser_invoked": false,
+  "schema_version": 1,
+  "source_preregistration_sha256": "265ae1e475668ad6d90d4807fe76fc0c41d8d5c545eaa3940fdd840f85da94be",
+  "source_url": "https://raw.githubusercontent.com/bradleyboehmke/completejourney/5b5d06192b9856edd04e4d405787af2f2e4a1fef/data/transactions.rds",
+  "status": "SHA256_OBSERVED_UNPARSED"
+}

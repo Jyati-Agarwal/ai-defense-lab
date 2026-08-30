@@ -1,0 +1,253 @@
+{
+  "artifact": "entity_fidelity_v5_calibration_exploratory",
+  "calibration_only": true,
+  "gate_passed": false,
+  "metrics": {
+    "bootstrap_max_seed_d_ci_95": [
+      0.8018236928719135,
+      0.8219676406781605
+    ],
+    "bootstrap_max_seed_d_mean": 0.8118159558876252,
+    "orientation_free_max_seed_d": 0.8087262680175165,
+    "threshold_max_d_upper_95": 0.65
+  },
+  "protocol_sha256": "07bc0c6afe8403c6b94c5f8f78f878ea0a1035bbb66cd776196674830d6437c6",
+  "reference": {
+    "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+    "customers": 2440,
+    "partition": "calibration",
+    "transactions": 10621,
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "schema_version": 5,
+  "seeds": {
+    "20260827": {
+      "fold_weighted_d": 0.8087262680175165,
+      "folds": [
+        {
+          "auc": 0.7955526073601301,
+          "d": 0.7955526073601301,
+          "evaluation_customer_ids_sha256": "f059809d8d99fff494aff34bde49ab16dabdbbff2b47d37fc6bd9d3b2ba82e57",
+          "evaluation_real_customers": 501,
+          "evaluation_synthetic_customers": 501,
+          "fold": 0,
+          "profile_sha256": "7adcac54c874ae3b5e7ecbb334a1af286bedc78224efb790a64f458536f2bb4b",
+          "training_customer_ids_sha256": "51ed03d0f354064b31521e4062722310a9547a943056ccdc4ee9a7c4e8731094",
+          "training_multiday_repeat_customers": 1275,
+          "training_real_customers": 1939,
+          "training_repeat_customers": 1303,
+          "training_same_day_repeat_probability": 0.021488871834228703
+        },
+        {
+          "auc": 0.7947773622613514,
+          "d": 0.7947773622613514,
+          "evaluation_customer_ids_sha256": "6298eca7b1b9964a7dc1e83c4b9fe19957eeed279394d2b27ab051b515a7a078",
+          "evaluation_real_customers": 514,
+          "evaluation_synthetic_customers": 514,
+          "fold": 1,
+          "profile_sha256": "398647dbf2a2ec0be0efbe36b836badee98100a6beb2fdd9a83a3dd063169e96",
+          "training_customer_ids_sha256": "d4dfae6fee6a18cecf80d208f48af2fc9cd0538fea7c8877df2debb652284b01",
+          "training_multiday_repeat_customers": 1254,
+          "training_real_customers": 1926,
+          "training_repeat_customers": 1279,
+          "training_same_day_repeat_probability": 0.019546520719311962
+        },
+        {
+          "auc": 0.8008859348620695,
+          "d": 0.8008859348620695,
+          "evaluation_customer_ids_sha256": "cef34ac920f99d0048149b3076a130d6e27c6b4dba32ae9c3815381f360e8c2a",
+          "evaluation_real_customers": 494,
+          "evaluation_synthetic_customers": 494,
+          "fold": 2,
+          "profile_sha256": "7aaea5f05d7fef6091cb8b0b50a5edcda5358e460419dfc9f852e86a37bf2a32",
+          "training_customer_ids_sha256": "95c56711e7ef93fa99144b25a5f25308ffbeca39008a4ba1ad09d6238f7c7441",
+          "training_multiday_repeat_customers": 1257,
+          "training_real_customers": 1946,
+          "training_repeat_customers": 1280,
+          "training_same_day_repeat_probability": 0.01796875
+        },
+        {
+          "auc": 0.8156726876362506,
+          "d": 0.8156726876362506,
+          "evaluation_customer_ids_sha256": "55e4d24c8c29c8fae8a2904bcf7459e15a7a36c338b540a257c7f29dbbcbd3bc",
+          "evaluation_real_customers": 494,
+          "evaluation_synthetic_customers": 494,
+          "fold": 3,
+          "profile_sha256": "80b932a74bcaf37232e58077ec554570864d4689e9242c22900b60532eb90609",
+          "training_customer_ids_sha256": "187b317976ec6513bd43b94d43256a4ba1c51ac321de87aada37c7293596346a",
+          "training_multiday_repeat_customers": 1254,
+          "training_real_customers": 1946,
+          "training_repeat_customers": 1280,
+          "training_same_day_repeat_probability": 0.0203125
+        },
+        {
+          "auc": 0.8412464850316019,
+          "d": 0.8412464850316019,
+          "evaluation_customer_ids_sha256": "b1efcdbee07bdb68dd2f4802505bac6f133b205fb08e8826e5777f620bb2e8be",
+          "evaluation_real_customers": 437,
+          "evaluation_synthetic_customers": 437,
+          "fold": 4,
+          "profile_sha256": "0fa4c2be3607234f8ea3af1209ec7da150082967006f9c65d431cf165df09d91",
+          "training_customer_ids_sha256": "8cfd4e1d5d6121f299a8fa1eb9dfcba5fd6c48986e42c55bb8eec0c9c5ff7ef3",
+          "training_multiday_repeat_customers": 1304,
+          "training_real_customers": 2003,
+          "training_repeat_customers": 1326,
+          "training_same_day_repeat_probability": 0.016591251885369532
+        }
+      ]
+    },
+    "20260828": {
+      "fold_weighted_d": 0.8086091548482327,
+      "folds": [
+        {
+          "auc": 0.8264257812499999,
+          "d": 0.8264257812499999,
+          "evaluation_customer_ids_sha256": "86e6b948024ad5eeeb3178eae45a74203afd2ea1c361b66f87cb5f291fe81f56",
+          "evaluation_real_customers": 480,
+          "evaluation_synthetic_customers": 480,
+          "fold": 0,
+          "profile_sha256": "1fb9dcdf595a6ecbda78512834a53754ae94f0e2da1a5b0ba08b56f90e4054d3",
+          "training_customer_ids_sha256": "b82e0dae916c678d3672ce0da2fc5a7f904051f91e63dd47fe93a8b54b9c08f6",
+          "training_multiday_repeat_customers": 1277,
+          "training_real_customers": 1960,
+          "training_repeat_customers": 1303,
+          "training_same_day_repeat_probability": 0.019953952417498082
+        },
+        {
+          "auc": 0.8050594994181186,
+          "d": 0.8050594994181186,
+          "evaluation_customer_ids_sha256": "ef5a94c84517917c79d15bc0b2e703b292ad1de6ab9ffadaec8c00eecc96b1c7",
+          "evaluation_real_customers": 494,
+          "evaluation_synthetic_customers": 494,
+          "fold": 1,
+          "profile_sha256": "931f8bf7545622e88f5ce15f1f614f1b7b5552070f46ef11ad0521e92e13ebc6",
+          "training_customer_ids_sha256": "0df15f00c4c15924cb03a260692df0c49274baa2640cce2bc90b72df30fb1c1f",
+          "training_multiday_repeat_customers": 1269,
+          "training_real_customers": 1946,
+          "training_repeat_customers": 1294,
+          "training_same_day_repeat_probability": 0.019319938176197836
+        },
+        {
+          "auc": 0.8129266115063218,
+          "d": 0.8129266115063218,
+          "evaluation_customer_ids_sha256": "be5adb212b1b50d8193037343550124018376c1e149c18cbf97d748dc13f6acc",
+          "evaluation_real_customers": 493,
+          "evaluation_synthetic_customers": 493,
+          "fold": 2,
+          "profile_sha256": "eefc5f06ce0f24fbf0f246fc042f1b6357601fbc6e5761e7de81b30222369b07",
+          "training_customer_ids_sha256": "22bc351d9c12b679345d5a235eff6346147447072d81684e21f1b513b193ee48",
+          "training_multiday_repeat_customers": 1260,
+          "training_real_customers": 1947,
+          "training_repeat_customers": 1284,
+          "training_same_day_repeat_probability": 0.018691588785046728
+        },
+        {
+          "auc": 0.7917950491062832,
+          "d": 0.7917950491062832,
+          "evaluation_customer_ids_sha256": "d49ca4fa5d6c6fc8e9593425d82a7f8aaeed0523ddc31fc2af00f952f2f91edc",
+          "evaluation_real_customers": 478,
+          "evaluation_synthetic_customers": 478,
+          "fold": 3,
+          "profile_sha256": "312c7092da28f114aa8d3be5cdf4190d08be0ec71fe0b6a67287ac1929655e69",
+          "training_customer_ids_sha256": "00c502cb6345548ae175f6426343e145e03d0ac0f96768b726d1abe16dca3ab3",
+          "training_multiday_repeat_customers": 1275,
+          "training_real_customers": 1962,
+          "training_repeat_customers": 1299,
+          "training_same_day_repeat_probability": 0.018475750577367205
+        },
+        {
+          "auc": 0.8068115498418529,
+          "d": 0.8068115498418529,
+          "evaluation_customer_ids_sha256": "d74911592d87c70a8c0f10e5b7484034cad4a528c76e222d135a8416668bb304",
+          "evaluation_real_customers": 495,
+          "evaluation_synthetic_customers": 495,
+          "fold": 4,
+          "profile_sha256": "f8509e74d1bdcc89eea563ab9093c9dd23085c7badae9cd2755a57e080e6a300",
+          "training_customer_ids_sha256": "214b2b3f9cf2d245a8caa447a783c01413cf7591ea85c05b6728f51d4eed9481",
+          "training_multiday_repeat_customers": 1263,
+          "training_real_customers": 1945,
+          "training_repeat_customers": 1288,
+          "training_same_day_repeat_probability": 0.019409937888198756
+        }
+      ]
+    },
+    "20260829": {
+      "fold_weighted_d": 0.8032568239826869,
+      "folds": [
+        {
+          "auc": 0.7856760369188216,
+          "d": 0.7856760369188216,
+          "evaluation_customer_ids_sha256": "24045dd06806e859674dc0d2874dac948c266ac9f278fd70fb07ce7349032687",
+          "evaluation_real_customers": 487,
+          "evaluation_synthetic_customers": 487,
+          "fold": 0,
+          "profile_sha256": "9b8806716ca778488ec616ba59dec03083d10ea7c822ff1f79cce5b0a7b9478d",
+          "training_customer_ids_sha256": "7188920762615ce7655dae82e9637aa490720b220a635048dba6d6d83f8264f0",
+          "training_multiday_repeat_customers": 1271,
+          "training_real_customers": 1953,
+          "training_repeat_customers": 1298,
+          "training_same_day_repeat_probability": 0.020801232665639446
+        },
+        {
+          "auc": 0.7970641134866865,
+          "d": 0.7970641134866865,
+          "evaluation_customer_ids_sha256": "87111522ea1054f410c6f3a2b555d14db852e25d22af59656531f9ec305473d9",
+          "evaluation_real_customers": 471,
+          "evaluation_synthetic_customers": 471,
+          "fold": 1,
+          "profile_sha256": "3908e9aea1be3c1dc7e6b2c89ffd0ef754ddefdfbb6eb9b76f8d9a6c2fc549f6",
+          "training_customer_ids_sha256": "9f440dd132446d8aea9e601cd7c6960b49c66fb0f34a1f2899438f6ac799f493",
+          "training_multiday_repeat_customers": 1291,
+          "training_real_customers": 1969,
+          "training_repeat_customers": 1318,
+          "training_same_day_repeat_probability": 0.0204855842185129
+        },
+        {
+          "auc": 0.8225040878885586,
+          "d": 0.8225040878885586,
+          "evaluation_customer_ids_sha256": "bae222cc21d1ef083f0eae7285d4deba9aee959a16df263788d0d555dfa8eb18",
+          "evaluation_real_customers": 489,
+          "evaluation_synthetic_customers": 489,
+          "fold": 2,
+          "profile_sha256": "587ee67684c461d35043fa741519abf45ac3680d9249c60d5b9cb8d33c2903a0",
+          "training_customer_ids_sha256": "aa1f75a5023918c5233df3bbe923296afb69c2e20440fb0d671d02b7586202fd",
+          "training_multiday_repeat_customers": 1266,
+          "training_real_customers": 1951,
+          "training_repeat_customers": 1288,
+          "training_same_day_repeat_probability": 0.017080745341614908
+        },
+        {
+          "auc": 0.8079930162416735,
+          "d": 0.8079930162416735,
+          "evaluation_customer_ids_sha256": "b0eddcfffcb3bd066079d67d574d468b4f6dac58003a8a62a0867b73617881f9",
+          "evaluation_real_customers": 498,
+          "evaluation_synthetic_customers": 498,
+          "fold": 3,
+          "profile_sha256": "f3db0bc2748cff24e3610f4670bdf6cb071a7274aa39ac9f454d9fc193a85982",
+          "training_customer_ids_sha256": "325300cd6b14c7e002c618a99e9a2df953d6ed14bc72178a70a3c53670533fb3",
+          "training_multiday_repeat_customers": 1249,
+          "training_real_customers": 1942,
+          "training_repeat_customers": 1273,
+          "training_same_day_repeat_probability": 0.018853102906520033
+        },
+        {
+          "auc": 0.8026670747882869,
+          "d": 0.8026670747882869,
+          "evaluation_customer_ids_sha256": "af85da368bd6750d033ebbeea99c1b3416b8bd1752758e524fcefb5ba10649db",
+          "evaluation_real_customers": 495,
+          "evaluation_synthetic_customers": 495,
+          "fold": 4,
+          "profile_sha256": "2b66e3b44de5bcc64d22f90a0515427e9c6b485c3a6e79193386015c6550160a",
+          "training_customer_ids_sha256": "cc0a3a7dceaeabe4fbaa14d5f6ae05162e2847c9ac8a21d559f8f8172260c6c6",
+          "training_multiday_repeat_customers": 1267,
+          "training_real_customers": 1945,
+          "training_repeat_customers": 1291,
+          "training_same_day_repeat_probability": 0.018590240123934933
+        }
+      ]
+    }
+  },
+  "uci352_diagnostic_transactions_materialized_or_used": false,
+  "uci352_prior_holdout_transactions_materialized_or_used": false,
+  "uci502_transactions_accessed": false
+}

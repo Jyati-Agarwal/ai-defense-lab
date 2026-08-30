@@ -1,0 +1,43 @@
+{
+  "model_hash": "7b167cbe572bba2668ec52d1f387cbf949b112ef750cfeb7a5ca960a79fd934f",
+  "dataset_sha256": "29311d2b4ffd5550b646198f14653b15e3dbea8a27db4c5e2d7fc5baa0d1bb1b",
+  "split_plan_sha256": "af26629dee5b160ac1965561eecde0265c84bf52055ef0be1d8e51c4b1699e44",
+  "source_tree_sha256": "421f0b658d087a2188418049c7cc42362658fa9839b4ae2b3f510fb9f1c61c7d",
+  "events_file_sha256": "70df47a2326de5e1b2c2dde65259c5d346dabe6e40986d5e6a07affd48d9f98c",
+  "events_manifest_sha256": "9d027cdbf8d63082347229a8ca54b5ef7edf42d6bd88307d85ad4d3d3641fca6",
+  "behavior_profile_sha256": null,
+  "evaluation_preregistration_sha256": "c96d62b877f953b7733cb93d83c81c94f73e847854a42a9176aaf4f3b1913c96",
+  "key_registry_sha256": "825c338734e3c1eb5acc20d9b74a5a94ef56bfc331a7e224881ca3f2ad1552d6",
+  "schema_version": 4,
+  "artifact": "evaluation_v4_release",
+  "status": "passed",
+  "evaluation_scope": {
+    "claim": "fresh_row_post_remediation_regression",
+    "claim_scope": "post_remediation_regression",
+    "fresh_rows_only": true,
+    "independent_holdout": false,
+    "pristine_heldout_family": false,
+    "prior_families_disclosed": true,
+    "disclosed_vector_ids": [
+      "GPF-A20",
+      "GPF-C04"
+    ],
+    "disclosed_family_ids": [
+      "synthetic_identity_bust_out",
+      "ttl_dormancy"
+    ]
+  },
+  "attempt_receipt": "evaluation_attempt_v3.json",
+  "attempt_receipt_sha256": "13f92eaed3dd8246ea4b381bfb0927f7b9af24dea8e24caa8455a0a97f221b52",
+  "artifact_sha256": {
+    "metrics.json": "492748d1a59c3056f1b9f918b450cdaeac3f72f1a02b257b5c767050acbf6754",
+    "generalization.json": "1cd8e68dffa08f56f811698c21d50083380a70cf41f17c25701e1860ae8082f7",
+    "precedents.json": "c32cc4702e17d7687ff1ea0532d588d13d25dfbb5f31e4be37186698c5f93a0c",
+    "shuffle_control.json": "1d95daf9ce66e14a7e40cfae1a814d701f4ea0c90ecdebd4fef50d79f50c8e11",
+    "scored_events.jsonl": "142f76efee6a05b29d5d0b35ace153579629534a93d90a52d7f83863f26b8d97",
+    "pr_curve.png": "dadc5b9b4204af1af9262b12a89e67ba335553aa92a4b7bb6d3d026a217f870e",
+    "attack_recall_heatmap.png": "c22c1599c11805b90c461847bc807c173123f543c12451ecbc330a67fe039d60",
+    "frozen_scoring.json": "1f0f522e0da0ef9e0ddd84316e53ce5c21a56c509e8e8629b66ac5755d649c1b",
+    "evaluation_attempt_v3.json": "13f92eaed3dd8246ea4b381bfb0927f7b9af24dea8e24caa8455a0a97f221b52"
+  }
+}

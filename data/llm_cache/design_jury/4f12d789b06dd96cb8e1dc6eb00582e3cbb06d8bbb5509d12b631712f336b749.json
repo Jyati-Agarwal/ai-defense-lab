@@ -1,0 +1,51 @@
+{
+  "cache_key": "4f12d789b06dd96cb8e1dc6eb00582e3cbb06d8bbb5509d12b631712f336b749",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting sentence, “What’s happening” guidance, selected-vector detail, observable signals, and “Continue to scored replay” CTA communicate the purpose and path without a presenter. However, the persistent navigation visibly overlaps the headline on desktop and the atlas controls on tablet, obscuring key context. On mobile, the stage columns extend horizontally beyond the viewport, while the large raw JSON panel adds visual noise and is visibly clipped. The selected CLASSIC filter also competes with the claim that the agentic tier is the new terrain.",
+    "fix": "Prevent the navigation from overlaying page content at every breakpoint; make the stage browser’s horizontal-scroll affordance unmistakable; align the default filter with the agentic claim or explain why CLASSIC is selected; and collapse the raw JSON behind an optional “View metadata” disclosure so the selection and replay CTA remain the clear primary flow.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 568873,
+        "sha256": "fc5d1de0f30df9b5e63cae4a23ae9e104a06c086894bbf9e56475aa05ec19b96",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fb3cc3312a991102c2bd8cf81b465e4b7313a4f3aefd31ac4d0bd1b378b3a5f5",
+    "schema_version": 3,
+    "sha256": "4f12d789b06dd96cb8e1dc6eb00582e3cbb06d8bbb5509d12b631712f336b749"
+  },
+  "response": {
+    "id": "resp_08c86a6cabcecaa2016a9083835be087d0a930a90cffe35d79",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6570,
+      "input_tokens_details": {
+        "cache_write_tokens": 6567,
+        "cached_tokens": 0
+      },
+      "output_tokens": 517,
+      "output_tokens_details": {
+        "reasoning_tokens": 311
+      },
+      "total_tokens": 7087
+    }
+  }
+}

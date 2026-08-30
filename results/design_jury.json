@@ -1,0 +1,1702 @@
+{
+  "gate_passed": false,
+  "independent_critic_calls": 84,
+  "minimum_score": 6,
+  "model": "gpt-5.6-sol",
+  "provider": "codex",
+  "screens": [
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Keyboard traversal and visible focus passed for every expected header and thesis control; no touch-target violations were measured; reduced-motion produced zero animations or changed elements; and no uncontained viewport overflow was found. However, serious color-contrast checks remain incomplete for 3 thesis nodes on desktop, 4 on tablet, and multiple header nodes on tablet/mobile. The mobile thesis also reports section scrollWidth 435px against a 390px client width, even though the excess is clipped decorative content. Missing verified contrast prevents an 8.",
+          "fix": "Use opaque, deterministic backgrounds and WCAG-compliant foreground colors for the flagged labels, verdict, explanatory text, and header links, then rerun contrast measurements at all viewports. Constrain the mobile decorative inset so section scrollWidth does not exceed 390px.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "The cyan/red-on-black palette, oversized thesis statement, monospace evidence labels, and consistent card treatment create a distinctive, coherent security-lab aesthetic. Desktop has a strong left-versus-right narrative composition, but excessive unused lower space and faint connector lines weaken finish. Tablet becomes vertically sparse and visually disconnected, with the payment card floating far from the retrieved-page card. Mobile is readable but loses the intended flow entirely: cards become a plain stack, the headline wraps awkwardly, and the header visibly truncates “LIVE WI…”, making navigation feel unfinished. Tiny, low-contrast metadata and explanatory text also reduce polish across viewports; header contrast evidence remains incomplete at tablet and mobile.",
+          "fix": "Tighten tablet/desktop vertical rhythm, strengthen and realign the evidence connectors, and redesign mobile as an intentional compact timeline rather than a card stack. Prevent partial header labels by switching earlier to a clear menu/overflow treatment, improve muted-text contrast and size, and refine headline wrapping at 390px.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline states the thesis immediately, the side-by-side comparison makes the shoes-versus-voucher mismatch explicit, and “Trace the intent mismatch” provides a clear primary action across all viewports. The numbered evidence chain and “Authentic ≠ intended” reinforce why a valid signature is insufficient. On mobile, the stacked layout remains understandable, though the evidence chain loses its connecting lines and the global navigation visibly truncates “Live Wire.”",
+          "fix": "Preserve a visible numbered connector or compact flow indicator on mobile, and avoid the clipped “Live Wire” label in the header so the evidence sequence and navigation remain unambiguous.",
+          "score": 8
+        },
+        "memorability": {
+          "evidence": "The split-color thesis—“The signature is valid. The intent was stolen.”—is sharp and memorable, and the cyan/red evidence paths create a distinctive forensic narrative on desktop. However, tablet has excessive dead space, while mobile collapses the connected evidence story into a generic card stack; the broader dark cyber-dashboard styling is familiar rather than uniquely ownable.",
+          "fix": "Preserve the evidence-path concept across breakpoints: use a compact vertical cyan-to-red trace on mobile/tablet that visibly connects intent, injection, payment, and the final “AUTHENTIC ≠ INTENDED” verdict.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Frame pacing is excellent across all viewports: ~16.66 ms average, 16.8 ms worst, and 0 long frames. Reduced-motion proof is strong, with zero changed elements or active animations. However, standard evidence shows only a delayed 16 px entrance translation on the deck and CTA group; it remains unfinished after ~585 ms on tablet/mobile, and no measured interaction or diagram-motion sequence is provided.",
+          "fix": "Shorten or remove the long entrance delay and capture the complete settled trajectory at every viewport. Add measured frames for CTA/diagram interactions and header transitions while retaining the verified zero-motion reduced mode.",
+          "score": 6
+        },
+        "performance": {
+          "evidence": "Measured rendering is smooth across all viewports: 0% long frames, ~16.67 ms average frames, worst 16.8 ms. FCP is 32–48 ms, LCP 340–504 ms, reported CLS is negligible, and there are no request, page, or console failures. However, the page transfers 1.33 MB, including 1.16 MB of JavaScript, for this screen, and no throttled-network, CPU-constrained, INP, or interaction-latency evidence is provided. The large interaction-related shifts in attribution also warrant targeted validation despite being excluded from reported CLS windows.",
+          "fix": "Reduce and split the 1.16 MB JavaScript payload, then provide cold-cache mobile testing under CPU/network throttling with INP and interaction-specific layout-shift measurements.",
+          "score": 7
+        },
+        "relevance": {
+          "evidence": "The screen clearly establishes the intent-integrity problem: a valid payment signature can authenticate a transaction that no longer matches the user’s recorded intent. The side-by-side intended-versus-recorded payment and four-step evidence chain make the attack legible across all viewports. However, the thesis provides no explicit Mastercard context, payment-network integration, or proof that the proposed defense intervenes before authorization; it currently demonstrates the problem more than the hackathon solution.",
+          "fix": "Add one concise Mastercard-specific defense statement and visible outcome evidence showing where intent is bound, checked before authorization, and blocked or challenged when the signed payment diverges.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "76497141c87c6ba68fdea5fa2b5e197ede96bf5298a3185d4daaed8ecca3fe97",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "49f6026a3fcffcb722c86da94ceb94b1b5c7ab64e41d85afbd502dd0226e6767",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "e58ff57085a13ac9ead2b94b120c9adacc64499a77f8f17e6c63617f1a45b4e3",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f686295a282becbe3f4025518c7789c2a3d4d73c0141301ac0ecea75d88136be",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "90e4545d6fea66f27c56024999b2a9263f2bd4cce3aad736edf105b867b8746f",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "59157725186099410fbc03c9cfbc95f4eccdeff48a1be0e94ce6b4c8c5497e2d",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "3c42a0508858e78102b435b216a81041d6e86a4b9dda713f0b82bb4c3e449ddb",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "5213f063693be573507e6861c794a567d48e22ba79b954749f2c222d4f1acc33",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "f269309745b5499ef2d1e8b80ea570e2de66d9ad4703fdabf020b5310ed52557",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "040576287f484a97bc61a1bf409467dc67068f97c9038760671eec858714a57e",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "c1ba3e091b27fa00a01d3faf6dfc22c21f3b53a3727170f7d5443831bccf9dd3",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "451d268b09afa098d582073705a889dc1dab29342ff232b66d4293f88779c1dc",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "e8d70c2d1816cd607c728f0a9907438b104f4860fd64a704e52c6f0f5d31a4e7",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "e2516eb1bfedf0239036b0cee30302684c50126d7df993c6774f2b7caceaa3a6",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 152655,
+          "capture": "section",
+          "screenshot": "desktop-thesis.png",
+          "sha256": "b273ab7403df15d676f81de5059bb3915e7c30254e02a1cd071c62463b3c20f4",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 151318,
+          "capture": "section",
+          "screenshot": "tablet-thesis.png",
+          "sha256": "06b9101141727a95cbb6b56a545ef05111555b53132af92665c27d82fa6e5461",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 128838,
+          "capture": "section",
+          "screenshot": "mobile-thesis.png",
+          "sha256": "f46491d9384c3de62eb026097bc98c43c4fb5c741375ccb47251d2241d6d75de",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "motion_quality: Shorten or remove the long entrance delay and capture the complete settled trajectory at every viewport. Add measured frames for CTA/diagram interactions and header transitions while retaining the verified zero-motion reduced mode.",
+        "accessibility: Use opaque, deterministic backgrounds and WCAG-compliant foreground colors for the flagged labels, verdict, explanatory text, and header links, then rerun contrast measurements at all viewports. Constrain the mobile decorative inset so section scrollWidth does not exceed 390px.",
+        "aesthetics: Tighten tablet/desktop vertical rhythm, strengthen and realign the evidence connectors, and redesign mobile as an intentional compact timeline rather than a card stack. Prevent partial header labels by switching earlier to a clear menu/overflow treatment, improve muted-text contrast and size, and refine headline wrapping at 390px."
+      ],
+      "screen": "thesis",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Atlas has zero detected WCAG violations, complete visible-focus keyboard traversal at all viewports, no touch-target violations, no uncontained viewport overflow, and reduced-motion sampling found no changed elements. However, desktop contrast remains unresolved for 10 Atlas elements, including all React Flow nodes and status badges; tablet/mobile header contrast is also incomplete. The evidence proves focus traversal but not keyboard activation or operability of controls, and clipped scroll regions contain off-screen interactive content.",
+          "fix": "Measure and pass numeric WCAG AA contrast for every unresolved node, badge, and header item; test Enter/Space activation and state changes for tabs, stage nodes, vector buttons, and the select; and verify keyboard scrolling plus clear affordances for clipped Atlas and header regions.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong cyber-editorial identity, restrained cyan/magenta palette, and clear headline hierarchy across viewports. However, desktop content is visibly clipped/truncated in the vector grid and detail title, with excessive dead space below short columns. Tablet/mobile become extremely dense with tiny mono labels and a long undifferentiated card. The desktop header is cramped, while tablet/mobile navigation visibly disappears into a clipped horizontal rail. Contrast proof is also incomplete for 3 tablet and 13 mobile header nodes.",
+          "fix": "Repair desktop grid/title clipping and let columns size to content; reduce the large empty panel area. Increase small-text sizes and spacing on tablet/mobile, strengthen section separation, and replace the clipped header rail with an explicit compact menu or clearer overflow treatment. Verify header contrast over the actual gradient.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, explanatory sentence, tier/stage filters, selected-vector state, observable signals, and “Continue to scored replay” CTA establish a coherent map→inspect→score flow across viewports. However, desktop cards are visibly clipped on the left, abbreviations such as “context manip” require interpretation, and the dense raw JSON competes with the primary action. Mobile/tablet navigation also hides destinations behind “More,” weakening orientation.",
+          "fix": "Prevent desktop grid clipping, spell out stage names, and replace the prominent raw JSON with a collapsed “View metadata” disclosure so the inspect→score path remains dominant.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The desktop’s cyan-linked kill-chain path, oversized editorial headline, and pink adversary-state accents create a clear visual signature. However, the core dark cyber-dashboard language is familiar, and at tablet/mobile the distinctive path becomes a conventional vertical stepper plus stacked cards, weakening the demo-defining idea.",
+          "fix": "Preserve the atlas metaphor across viewports with a compact, interactive mini-map or horizontally traversable kill-chain, and give selected vectors a more distinctive spatial reveal instead of relying on standard cards and JSON panels.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Scroll-entry motion is smooth across desktop, tablet, and mobile: averages stay near 16–16.5 ms, worst frames are 16.8 ms, and long-frame ratio is 0. The measured 22 px fade/translate settles cleanly. Reduced-motion testing matches the media query and reports zero changed elements or trajectories. However, the only detailed trajectories cover scroll entry; there are no measured animation frames for the exercised Agentic-to-Classic state change, stage/vector selection, or header motion, so demo-ready interaction motion is not proven.",
+          "fix": "Capture frame-by-frame trajectories and timing for tab switching, stage filtering, vector selection, responsive flow changes, and header interactions under both standard and reduced-motion settings; verify zero long frames and immediate or non-spatial reduced-motion alternatives.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured rendering is fast and stable across all three viewports: FCP 32–48 ms, LCP 340–504 ms, CLS 0.000019–0.000192, no long frames, and no console/page/request failures. However, the page transfers 1.33 MB, including 1.16 MB of JavaScript, for 17 requests. The evidence covers a 12-screen page rather than isolating Atlas costs, and provides no cold-cache or throttled-network/CPU measurements, so an 8 is not proven.",
+          "fix": "Code-split and lazy-load screen-specific JavaScript so Atlas does not pay for all 12 screens upfront; then provide Atlas-isolated bundle attribution plus cold-cache mobile testing under network and CPU throttling.",
+          "score": 7
+        },
+        "relevance": {
+          "evidence": "The screen clearly advances the intent-integrity story by mapping 48 agentic/classic payment threats across a kill chain, exposing observable signals, and leading into a scored replay. However, the visible proof remains a taxonomy/catalog: it does not demonstrate how the selected vector is detected, scored, or mitigated, and it makes no explicit Mastercard-network, merchant, issuer, or payment-rail connection beyond generic payment terminology.",
+          "fix": "Add a compact evidence panel for the selected vector showing attack-to-signal-to-control-to-score linkage, plus explicit Mastercard-relevant payment actors, rail context, and measurable prevention impact; carry those facts into the scored replay CTA.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "57ffb3b109c73ccbe1c06704afc677c939f2f8b77410ab6ad8e216aa99f93aba",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f6782654a4a0db530b37ac0143b3a4b348d3cf62cd0893b4b0123265e48b02dd",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "2eac46be3e398f0d0783c950137b84821b25bf5505ccae8cf8fe438e9c154175",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "33178b7fabd9d498bdbf80fa1a717136b0b524cc87bc98a5c9e8fca771195719",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "b6413815c7e18693b5e3f14034db7df828b4eb1971e573a84cb824aea313fb52",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "ab32d7c37e5e6b97d2b69cc1dd7ac1d79bfafe6cac758ef611a1ac72d145dab6",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "3a0ba7111a4f316c46a41a4d3462b28b58574f0dd31dc72ec596a2a76656daa3",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "282c5cca89b9d2f441206754166f635ad1706b400db487cf960329f31ebfb1a9",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "d33b0b321223059f7e13d2ce8b36e6378f5f7816410e1420613bff9634cb5fb2",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "75ea75a9447d84431cd1d670ab09344875cb1a678994385541dd2f73db128032",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "04b56f528602fbb0fa7e4d16209ee57a8c49db30ee6ab3a135ee90e1786d86e7",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "3a99c6e2f3413344b4817441eed6e30c4537d2a35151c42861969acd4bd7d3c7",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "8706f1d49a3732269c9860932b458a67a387d3c2292e40df82de5cd2cd7deb17",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "a43f339ad392ca131ca7cbdd3f42895ca4c301eff0785c616dbb88a51fc45804",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 205568,
+          "capture": "section",
+          "screenshot": "desktop-atlas.png",
+          "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 139946,
+          "capture": "section",
+          "screenshot": "tablet-atlas.png",
+          "sha256": "c363c368ead739a5abda54b8642834198e4f4a19dc506465ca34f1f4c452bed0",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 128613,
+          "capture": "section",
+          "screenshot": "mobile-atlas.png",
+          "sha256": "1cf69813cb409e3778809f445bdc44d97c6c05300ebc5de0531a0b8ee97a2749",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Measure and pass numeric WCAG AA contrast for every unresolved node, badge, and header item; test Enter/Space activation and state changes for tabs, stage nodes, vector buttons, and the select; and verify keyboard scrolling plus clear affordances for clipped Atlas and header regions.",
+        "aesthetics: Repair desktop grid/title clipping and let columns size to content; reduce the large empty panel area. Increase small-text sizes and spacing on tablet/mobile, strengthen section separation, and replace the clipped header rail with an explicit compact menu or clearer overflow treatment. Verify header contrast over the actual gradient.",
+        "clarity: Prevent desktop grid clipping, spell out stage names, and replace the prominent raw JSON with a collapsed “View metadata” disclosure so the inspect→score path remains dominant."
+      ],
+      "screen": "atlas",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "The live-wire section has zero axe violations/incomplete checks, complete visible-focus keyboard traversal (10/10), no touch-target failures, no viewport overflow at 390/768/1440px, and no observed motion under reduced-motion. However, the global header has unresolved serious color-contrast checks at tablet/mobile, clipped horizontally scrolling navigation, and no measured header touch-target evidence. Contrast therefore is not proven WCAG-compliant.",
+          "fix": "Resolve and rerun contrast measurements against deterministic header backgrounds, verify every header control meets WCAG target sizing, and provide a clearly discoverable, keyboard-operable mobile navigation instead of relying on clipped horizontal content.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong dark-console identity, disciplined cyan/red/green semantics, and a clear desktop hero-to-artifact hierarchy. However, tablet and especially mobile become extremely tall, dense scans with undersized mono labels and weak row differentiation; the mobile table collapses into repetitive card-like stacks without enough visual rhythm. The desktop header’s oversized clipped ghost lettering distracts, while tablet/mobile navigation feels crowded and visibly truncates “LIVE WIRE.”",
+          "fix": "Increase small-text sizes and contrast, tighten the mobile transaction rows, and add stronger grouping/dividers to improve scan rhythm. Replace the clipped header backdrop with a quieter active-state treatment, and make compact navigation show the current section clearly instead of truncating it.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, signed-intent versus paid-cart comparison, and LEGACY ALLOW / INTENT INTEGRITY BLOCK result communicate the core claim clearly across all viewports. However, the instructed next action—“Select any cached transaction”—has no obvious selection control or selected-state cue; tiny INSPECT labels and the unlabeled play icon compete as ambiguous actions. On mobile, the evidence panel follows eight tall records, delaying the explanatory payoff substantially.",
+          "fix": "Make each transaction visibly selectable with a clear row affordance and persistent selected state, label the replay control, and on mobile surface the selected comparison immediately after the first record or in a sticky detail panel.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The strongest visual idea is the flagship transaction connecting signed intent, paid cart, and the opposing Legacy ALLOW versus Intent Integrity BLOCK verdicts. Cyan/red accents and the oversized headline reinforce that contrast. However, most of the screen remains a conventional dark security dashboard: dense event table, outlined pills, monospace labels, and stacked evidence notes. On mobile, the signature comparison is buried beneath eight repetitive transaction cards, weakening the demo moment.",
+          "fix": "Turn the policy disagreement into the dominant visual artifact: foreground one animated causal trace from signed intent to paid cart, then culminate in a dramatic split ALLOW/BLOCK verdict. Collapse secondary transactions—especially on mobile—so the memorable reveal appears immediately.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Entry motion is consistently smooth across desktop, tablet, and mobile: ~16.0–16.3 ms average sampled frames, ~16.8 ms worst, and zero long frames. The 22 px fade/slide settles cleanly by ~384 ms. Reduced-motion matches at every viewport with zero changed elements or trajectories. However, pause/resume and transaction selection were exercised without measured animation frames for those state transitions, so their motion quality is unproven.",
+          "fix": "Capture frame-by-frame trajectories and timing for pause, resume, and transaction-selection transitions at all viewports, including reduced-motion variants; verify no jumps, dropped frames, or residual animation.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured performance is demo-ready across all viewports: FCP 32–48 ms, LCP 340–504 ms, TTFB 1.1–3.2 ms, load 82.6–113 ms, zero long frames, and measured CLS only 0.000019–0.000192. There are no console, page, or request failures and no document-level overflow. The main weakness is excessive delivery weight: about 1.33 MB transferred, including 1.16 MB of JavaScript, for 17 requests.",
+          "fix": "Code-split by screen and interaction, defer noncritical modules and API work, and remove unused client dependencies to materially reduce the 1.16 MB JavaScript payload while preserving the demonstrated timing and stability.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly demonstrates the core intent-integrity story: the same signed ₹2,437 payment passes legacy credential/amount checks but is blocked after the paid cart diverges from the delegated mission, with three causal signals shown. Real 200 responses and zero fixture rails support a credible live demo. However, the screen never explicitly connects this intervention to Mastercard’s network, products, stakeholders, or hackathon success criteria, so hackathon relevance remains implied rather than proven.",
+          "fix": "Add a concise Mastercard-specific outcome beside the policy comparison: identify where the control integrates in the payment flow and quantify issuer, merchant, or cardholder value using live evidence such as prevented loss, false-positive impact, and decision latency.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "3ea832fd171d299f904d004a45cafe5d0bb1242545f984819f0201e4540db66a",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "ba4394f7a31b13da34dc8a9e72fc5f3fcc93ca2b802dc7bf5f6f659e18bac71b",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "24948d052ee3b4f513c797e11a65fcbf96dc54121e67b81dc4dcbd2e3a864c27",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f5552294217dae3daf648460ee27f55e38c2c69bd62a6e950bb613a1a7163303",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "d3369f26e21af62f79aaf2f7074b2dd7ec108464e7f7e5430027efaf51dc9211",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "589ede5ae159a102accf0f17f019a5935541de0e318ad9afb8406d473c566089",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "6aad3c6251c760173c1b3b9311515d2faa41ea8efa4fda18350d7506ccf61b95",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "3295e74241d50dd9686222473e84007cb7b7266e7ab1ec0f10919a665bb1b51f",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "5af1a17dd3458a2f15fa6691a4070a57942d75290f3ac09a74fb9562a15aef37",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "190334a970651056adc536f2b12e19e34f118a5720224507f2bd03600cdce3f3",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "8f46f6767c6bf6ca090fbc8d698f6cc5c48010a38f997463988964930b2a7c0b",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "99eb63b2d57184fe82056cc0af9332183fafb6eb2cbd74c5cfd330abd35fec05",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "39a681df97885333e08511d1a1b51921d4e6ae440693b2a3783b47ec7e1f0ef5",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "505df4f1491623c2f914f243191fe7c2a7ebd7f5d541db47c401a08a79b1b456",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 200551,
+          "capture": "section",
+          "screenshot": "desktop-live-wire.png",
+          "sha256": "18eb77824ec8f2442056133b5c685dc0c4df75a6159656cf99b30d35d871ccfc",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 177094,
+          "capture": "section",
+          "screenshot": "tablet-live-wire.png",
+          "sha256": "74f12ea6334295f269a9b4e73a667579f11b6ed5fc3319309eda5a33e9a269d6",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 174744,
+          "capture": "section",
+          "screenshot": "mobile-live-wire.png",
+          "sha256": "b98d0bc7ec028e32f3b9985514d06c81a5c89a1c23ef98b77edc73a6213b19db",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Resolve and rerun contrast measurements against deterministic header backgrounds, verify every header control meets WCAG target sizing, and provide a clearly discoverable, keyboard-operable mobile navigation instead of relying on clipped horizontal content.",
+        "aesthetics: Increase small-text sizes and contrast, tighten the mobile transaction rows, and add stronger grouping/dividers to improve scan rhythm. Replace the clipped header backdrop with a quieter active-state treatment, and make compact navigation show the current section clearly instead of truncating it.",
+        "clarity: Make each transaction visibly selectable with a clear row affordance and persistent selected state, label the replay control, and on mobile surface the selected comparison immediately after the first record or in a sticky detail panel."
+      ],
+      "screen": "live-wire",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Keyboard coverage and visible focus indicators passed at all viewports; no touch-target or viewport overflow violations were measured; reduced-motion produced no element movement; and axe reported no confirmed mandate violations. However, serious color-contrast checks remain unresolved for the chart labels at every viewport and for multiple global-header elements on tablet/mobile. The tablet/mobile navigation also clips off-screen links inside its scroll container. These evidence gaps prevent an 8.",
+          "fix": "Measure and remediate contrast for the SVG chart labels and header text against their actual composited backgrounds, then rerun axe with zero serious contrast incompletes. Also provide an unmistakable, keyboard-accessible mobile/tablet navigation affordance that exposes clipped destinations and verify it with keyboard, touch, and overflow tests.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong, coherent cyber-editorial art direction: restrained cyan/red/green palette, crisp borders, consistent mono labels, and clear semantic contrast. Tablet and mobile stack cleanly, while the header remains visually disciplined. However, desktop composition is notably unbalanced with excessive dead space and an undersized central visualization; the headline wraps awkwardly across viewports, and diagram/metadata text becomes extremely small on mobile. The dense lower card also competes with the oversized headline rather than forming a fully resolved hierarchy.",
+          "fix": "Rebalance desktop by enlarging and raising the evidence panel, tighten the hero’s vertical whitespace, set deliberate viewport-specific headline measures, and increase mobile diagram/metadata legibility. Give the active Mandate header item a clearer visual state and verify the unresolved header contrast evidence.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, intent/cart/payment comparison, verified cryptographic checks, and red semantic-mismatch panel clearly communicate that valid signatures do not prove semantic alignment across all viewports. However, “RESULTS ARTIFACT” is ambiguous, the next action looks like an “INSPECT” control without supplied section-level interaction evidence, and the mobile header hides Mandate behind “MORE,” weakening orientation.",
+          "fix": "Make the next step explicit and verifiable: label it “Inspect why the signed payment violates the mandate,” show a clear expanded/collapsed state, and provide section-level keyboard, focus, and activation evidence. Rename “RESULTS ARTIFACT” to a plain-language status such as “Recorded test result.”",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The cyan-to-red mandate chain and widening intent-versus-outcome divergence create a clear, screen-specific visual metaphor, reinforced by the oversized editorial headline. However, the core chain becomes ordinary stacked status cards on tablet/mobile, while verified pills, bordered panels, and dense monospace labels revert to familiar cybersecurity-dashboard styling; the tiny divergence graphic loses demo impact.",
+          "fix": "Make the intent-to-outcome divergence the unmistakable hero across every viewport: preserve a compact connected flow on tablet/mobile, enlarge the split visualization, and visually link its red branch directly into the semantic-mismatch evidence panel.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Standard motion is consistently smooth across all three viewports: roughly 16.3–16.5 ms average frames, ≤16.8 ms worst frame, and zero long frames. The panel uses a controlled 22 px fade/slide entrance, while the drift wedge progressively reveals the semantic divergence. Reduced-motion mode matches and produces zero changed elements across 36 sampled frames at every viewport, despite registered animations remaining present.",
+          "fix": "To exceed 8, provide measured frame trajectories for the complete wedge animation and key interaction states, especially “Inspect semantic mismatch,” proving polished completion and response—not only scroll-entry motion.",
+          "score": 8
+        },
+        "performance": {
+          "evidence": "Measured results are demo-ready across all viewports: FCP 32–48 ms, LCP 340–504 ms, load 82.6–113 ms, standard CLS 0.000019–0.000192, zero long frames across 82 samples, and no console, page, or request failures. Document widths match viewports with no uncontained overflow. The main weakness is transfer cost: about 1.33 MB total, including 1.16 MB of JavaScript, for 17 requests.",
+          "fix": "Reduce the 1.16 MB JavaScript payload through route/section code-splitting, lazy-loading non-visible screens, and dependency pruning; then remeasure under throttled mobile CPU and network conditions.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly advances the intent-integrity story by contrasting four verified cryptographic checks with a concrete semantic mismatch: an authorized running-shoe purchase becomes a digital-wallet voucher while amount, merchant, and signatures remain valid. Payment amount, MCC 5661, merchant DID, cart hash, and the ECDSA-versus-intent-integrity explanation make the defense relevant to commerce. However, the screen explicitly relies on public-seed synthetic signer keys and says the registry flag is only a recorded claim. The supplied evidence proves successful APIs and rendering, but not real-world authorization, Mastercard integration, or an enacted prevention decision.",
+          "fix": "Add a live decision result showing the mismatched transaction being blocked or challenged, trace it to an authenticated user mandate and trusted merchant registry, and identify the Mastercard-specific payment/control integration demonstrated.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "1c1644f677dc998a4621adbdd2a0d3a7ee28dc89f80577b4e510dbd795ce4e81",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "9dde514f23cbb5402b64106f655d311631cc249e20a5fc426700d9fd86af0578",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "a6a5f0f696a8ab49d0d9bd7fb121cb829e667449b941ac4a61158d90f3d4ded8",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f57b936049cbb7ba2a591f7d663998e8f0324e1afb6c84cf76dfd3c7e1c52db8",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "c71b584c2417fa58ecb96b03746179c6aa02ea4296ea9257beae079f9974748f",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "e9ba16eb73df65361609b77a33abd5eb1adc0dd633830a77f6d3640ae1364e63",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "57fae87609b8fdc074a2727d5f5f2ddab13881f4ffeb3a223bb3a9dc1c5fce86",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "2f13c775db19f0b913c5912a504daa64cd8c0a245a4586412b6d132999b18ccb",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "0ad17a6260549fc2785f1ca5ee79edfe1ceab8d53832150f89cf62a83f77f0a9",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "882713063aa1860fbd509c2a3bcbd036e5b59d13ec5e59e46707720914c378ee",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "c9226aa47077d1ba9a8f35a4f48de3ad35ac2e97660c19e59304468191b7233a",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "43af6999c5c981bbfaa8503546296f5f6589a0af56bce5c03b2a4e5eb31e78c9",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "da83576d62a42ffe5ff951a495c7a47c02ee0284a6ace26aabdf76242fb731bf",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "3e4d108f104bbe26bd676ff8f0aecad4461356fc23d4bf4e5dd9d063895af0a1",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 219348,
+          "capture": "section",
+          "screenshot": "desktop-mandate.png",
+          "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 152255,
+          "capture": "section",
+          "screenshot": "tablet-mandate.png",
+          "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 138131,
+          "capture": "section",
+          "screenshot": "mobile-mandate.png",
+          "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Measure and remediate contrast for the SVG chart labels and header text against their actual composited backgrounds, then rerun axe with zero serious contrast incompletes. Also provide an unmistakable, keyboard-accessible mobile/tablet navigation affordance that exposes clipped destinations and verify it with keyboard, touch, and overflow tests.",
+        "aesthetics: Rebalance desktop by enlarging and raising the evidence panel, tighten the hero’s vertical whitespace, set deliberate viewport-specific headline measures, and increase mobile diagram/metadata legibility. Give the active Mandate header item a clearer visual state and verify the unresolved header contrast evidence.",
+        "clarity: Make the next step explicit and verifiable: label it “Inspect why the signed payment violates the mandate,” show a clear expanded/collapsed state, and provide section-level keyboard, focus, and activation evidence. Rename “RESULTS ARTIFACT” to a plain-language status such as “Recorded test result.”"
+      ],
+      "screen": "mandate",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "The injection switch and header passed measured keyboard traversal and visible-focus checks. No section touch-target violations or viewport overflow were found, and reduced-motion testing recorded no changed elements. However, WCAG contrast remains unproven: axe returned 14 serious incomplete contrast checks for the injection section at every viewport, plus unresolved header contrast checks on tablet and mobile. No assistive-technology verification of switch state changes was supplied.",
+          "fix": "Replace translucent or gradient-backed text surfaces with deterministic color pairs that meet WCAG AA, then rerun contrast measurement with zero incomplete nodes. Add screen-reader testing confirming the switch exposes and announces its name, state, and revealed content.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong cyber-forensic art direction, disciplined cyan/red palette, and clear hero-to-evidence hierarchy. Desktop is polished, but the hero leaves an awkward empty upper-right field and the explanatory artifact floats apart from the headline. Tablet becomes excessively tall, while mobile typography and nested panels feel cramped; the authorization/outcome card loses its useful side-by-side comparison. Across tablet/mobile, tiny tracked uppercase labels and muted body copy reduce legibility. The actual header is especially crowded: desktop navigation is extremely small, tablet relies on clipped navigation, and mobile visibly truncates “LIVE WIRE” to “LIVE WI”; contrast checks also remain incomplete for 3 tablet and 13 mobile header nodes.",
+          "fix": "Tighten the desktop hero composition, reduce tablet vertical padding, and simplify the mobile evidence card with fewer nested borders and more breathing room. Increase small-label and header text size/contrast, preserve complete mobile nav labels, and make the active section visually explicit across every viewport.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline states the risk plainly, the supporting copy explains the pixels-versus-retrieval mismatch, and “Toggle Agent vision” plus “Reveal hidden injection” gives a concrete next action. The causal-proof and authorized-versus-recorded panels make the consequence understandable across all viewports. Mobile remains readable but requires substantial scrolling, and the screenshots do not prove the toggle’s before/after state or section-level keyboard behavior.",
+          "fix": "Show an explicit OFF/ON state label and provide captured before-and-after evidence for the Agent Vision toggle, including section-level keyboard focus and activation proof.",
+          "score": 8
+        },
+        "memorability": {
+          "evidence": "The stark “harmless page / another layer” headline and the split neutral-versus-red retrieval reveal create a clear, screen-specific visual metaphor across desktop, tablet, and mobile. Scanlines, forensic labels, and causal-proof framing add identity. However, the dominant treatment remains a familiar dark cybersecurity dashboard of bordered cards, pills, monospace labels, and red alerts; the screenshots do not visibly demonstrate the toggle’s transformation, so the central reveal is not proven as a memorable demo moment.",
+          "fix": "Make the toggle produce an unmistakable before/after reveal—visibly peel, corrupt, or overlay the harmless interface to expose the machine-only layer—and capture both states. Reduce secondary card chrome so that transformation becomes the singular visual signature.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Scroll-entry motion is consistently smooth across desktop, tablet, and mobile: roughly 16.2–16.4 ms average sampled frames, 16.8 ms worst, and zero long frames. The 22 px fade/translate trajectory settles cleanly. Reduced-motion mode matches and produces zero changed elements or trajectories. However, the reveal control is proven only by before/after state and layer visibility; no measured animation frames establish the toggle/reveal transition’s timing or visual quality.",
+          "fix": "Capture frame-by-frame trajectories and timing for both reveal and conceal interactions at all viewports, including reduced motion. Verify the switch thumb, retrieval layer, and any layout changes settle without dropped frames or abrupt jumps.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured results are strong across all viewports: FCP 32–48 ms, LCP 340–504 ms, load 82.6–113 ms, CLS 0.000019–0.000192, zero long frames across 82 samples, and no request/browser failures. Document width remains contained. The main weakness is transfer cost: 1.33 MB total, including 1.16 MB JavaScript, for 17 requests.",
+          "fix": "Reduce the 1.16 MB JavaScript payload through per-screen code splitting and lazy loading; then provide cold-cache, throttled-network, and interaction-latency measurements to substantiate a higher score.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly demonstrates the core intent-integrity threat: trusted shopping intent diverges from a machine-only retrieval layer and produces an unauthorized digital-wallet outcome. It identifies zero-width characters, invisible CSS, provenance, and a semantic-alignment control point across all viewports. However, the supplied proof shows only the rendered reveal state and generic successful APIs; it does not prove the toggle’s state transition, provenance linkage, prevention/enforcement, or any Mastercard-specific network, product, or authorization integration.",
+          "fix": "Add a live before/after trace tying user intent, retrieved artifact, authorization request, and blocked outcome to verifiable provenance IDs. Demonstrate the toggle and enforcement path in measured evidence, and explicitly connect the control to a Mastercard-relevant payment authorization flow.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "fd1b858f2ae7ce15cd54dcaa253a88cff729beb621e714605f090187e0c00a96",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "27d91308d4f109ca949ef907a956a4e0c43bfff55617cf8d64700bd61ebcbdb9",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "fb11a506c9b281308658cb4a2838bc287f8bbc4db65fa35bbc1d39f732375151",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "96c95b2bc18e2ac2144621274a18ff03b1bd91202a3e2da1831885d68f057722",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "5937128ca7b4209ecfa8527655c48f7558249c0343b7afae9ed199107e2494d1",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "7ae00b2b65dede933d3c438288b8dcc0f591622b7b4e7345b9391cf0ab528830",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "362f242d582feb00439f97474c5acf0ad85e0912e0eb55e60f2f80e951b20390",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f50bf6b875ad4595fc78331e79672b710010f141a1c9ee6ac1ed6761e53e81cb",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "1e351511d6e60d42a84e78fbe59a4ff3692d08c0d79eff3021e0395e1fec8b44",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "2260134e6989ea8ad1f452d822b361d1e85b07d591bacd3197b7f395ee11cfe0",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "cd4a0e00888e2ee44af6c70224f9159df98f581cc08092d2fa598e084ea1c3b3",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "c1e97f433a42db2bbdcca6748ad92f00c5b942fa25d48ff97042b929f65b187a",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "ac49b5c6da47d684e32aeccfee66af10a7311488394cbeaa18ae0661cf3a3ab6",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "351d2c0864d09b0a710b5b9874cd9d11ef3116bdfc44c75ef2f62670cedd7756",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 209185,
+          "capture": "section",
+          "screenshot": "desktop-injection.png",
+          "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 168912,
+          "capture": "section",
+          "screenshot": "tablet-injection.png",
+          "sha256": "a8c99ee3e4cd0f6728006a8620bcf79b92940d564208aeed99e68df79d527cb0",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 169341,
+          "capture": "section",
+          "screenshot": "mobile-injection.png",
+          "sha256": "6d34868a07bb88eb7b969cecf2ef3af558cd0353dd0247f95062202025cb6d85",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Replace translucent or gradient-backed text surfaces with deterministic color pairs that meet WCAG AA, then rerun contrast measurement with zero incomplete nodes. Add screen-reader testing confirming the switch exposes and announces its name, state, and revealed content.",
+        "aesthetics: Tighten the desktop hero composition, reduce tablet vertical padding, and simplify the mobile evidence card with fewer nested borders and more breathing room. Increase small-label and header text size/contrast, preserve complete mobile nav labels, and make the active section visually explicit across every viewport.",
+        "memorability: Make the toggle produce an unmistakable before/after reveal—visibly peel, corrupt, or overlay the harmless interface to expose the machine-only layer—and capture both states. Reduce secondary card chrome so that transformation becomes the singular visual signature."
+      ],
+      "screen": "injection",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "The precedent section passes measured keyboard focus, touch-target, viewport-overflow, and reduced-motion checks at all three viewports. However, every viewport has a serious unresolved ARIA finding: aria-label is applied to .precedent-decision-flow, a div without a valid role. Color contrast remains incomplete rather than verified, including 13 header nodes on mobile and 3 on tablet. Header touch-target evidence is also absent, so an 8 is not supported.",
+          "fix": "Give the decision flow valid semantics (for example role=\"group\" with an accessible name, or remove the unsupported aria-label), then manually or programmatically verify contrast for all indeterminate text states and measure header touch targets across desktop, tablet, and mobile.",
+          "score": 6
+        },
+        "aesthetics": {
+          "evidence": "Strong, cohesive dark technical aesthetic across all viewports: decisive headline hierarchy, restrained cyan/green/yellow accents, consistent mono labels, crisp borders, and clear BLOCK→ALLOW storytelling. Desktop composition is especially polished. Tablet and mobile remain coherent, but become extremely tall; repeated precedent rows feel mechanically spacious, tiny uppercase metadata strains readability, and the mobile header visibly truncates “LIVE WI,” weakening finish.",
+          "fix": "Tighten vertical spacing in tablet/mobile precedent rows, slightly enlarge or increase contrast of micro-labels, and refine the compact header so visible navigation labels never end in awkward truncation.",
+          "score": 8
+        },
+        "clarity": {
+          "evidence": "The headline, BLOCK→ALLOW transition, five verified legitimate neighbors, similarity scores, suppression status, and “Continue to Arena” CTA communicate the basic story across all viewports. However, “precedent support 99%” is undefined, the relationship between neighbor similarity and the decision reversal is asserted rather than plainly explained, and phrases such as “recorded precedent result reduced the baseline action” are difficult to parse without presenter context. Mobile also makes the evidence labels and explanatory copy very small and low-emphasis.",
+          "fix": "Replace the abstract status copy with one plain sentence explaining the rule and calculation—for example, that five verified legitimate purchases closely match this query and therefore lower its anomaly risk enough to change BLOCK to ALLOW. Define what the 99% measures, and enlarge/highlight the explanatory text and evidence labels on mobile.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The oversized “Anomaly without context becomes noise” thesis and BLOCK→ALLOW reversal create a clear narrative hook across all viewports. However, the main artifact remains a conventional dark card plus ranked-list dashboard; repeated rows, cyan badges, monospace labels, and thin borders do not turn precedent memory into a uniquely recognizable visual metaphor. The mobile stack further reduces the idea to generic cards.",
+          "fix": "Make precedent memory visually tangible: center the experience on a distinctive nearest-neighbor map or evidence constellation that visibly pulls the borderline query from BLOCK to ALLOW, with the ranked list serving as supporting detail.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Standard mode proves a smooth whole-panel entrance: opacity 0→1 and translateY 22px→0, settling by ~395ms across desktop, tablet, and mobile. Timing is consistently near 60fps (16.17–16.52ms averages, 16.8ms worst, 0 long frames). Reduced-motion mode matches and produces zero changed elements across all viewports. However, only one generic entrance animation is measured; there is no frame evidence for the BLOCK→ALLOW transition, precedent-row sequencing, or CTA interaction, so demo-ready motion craft is not proven.",
+          "fix": "Add and measure purposeful state-change motion for BLOCK→ALLOW and the supporting precedent rows, including interaction frames and reduced-motion equivalents, while preserving the current zero-long-frame performance.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Across all three viewports: FCP 32–48 ms, LCP 340–504 ms, load 83–113 ms, near-zero measured CLS (0.000019–0.000192), zero long frames across 82 samples, no browser/request failures, and no document-level horizontal overflow. The main weakness is payload weight: 1.33 MB transferred, including 1.16 MB of JavaScript, for 17 requests.",
+          "fix": "Code-split by screen and defer non-precedent modules/API work to reduce the 1.16 MB JavaScript payload; then verify under cold-cache, throttled mobile CPU/network conditions.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly advances intent-integrity: a borderline purchase query moves from BLOCK to ALLOW using five verified legitimate precedents with 97–99% similarity, explicitly framing false-positive suppression without rewriting evidence. However, it does not prove Mastercard-specific relevance: there is no card-network signal, transaction authorization context, fraud-control linkage, or measurable business impact beyond a generic electronics query.",
+          "fix": "Add a compact Mastercard-grounded evidence layer showing which transaction and intent signals produced similarity, the authorization decision before and after precedent retrieval, and quantified fraud-loss versus false-decline impact.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "e3a797f77041c7944212db3420e31c68e5a7c52d611a38018fe5d2eb8f4fedbc",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "acc5837d743c476ad89361f0d58bdfceebfa520c067197dc9a93d967d9fffbda",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "8730c08e1aefc688bc9c2e2e8631c8cf2241218381f57a74307b79665d9c0783",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f6b50574c9abb807ceeb730e2590d364c012c71b80d0c1c6371a27050fbe146c",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "61c5d04c33b4d1533f595ddae6462382b966917a71ee8a6d4d6a6f722a3e2de5",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "ad762ed2b1de4baf2ea8b96563905dae799e2e886de554047c284d8724f8f777",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "770a36aa89ee59225df47fe67f2397114af2168d9793f82a8ad420d4c2ab35a4",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "475a3dd9c77657cd968758c63254f08893d0fe5f60cb4e0437b6130f7afefb52",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "dbe59337c7a908ebd6da3eacc8a8bfd888027b9656a51ab06564cf87d4da78ff",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f1ae287af526193184ee90eef6faa2894fe92bc5d001430179bb8a53d2923fe8",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "084fa2b84146678facf921b2b428e88caff443a7d81f9481701cb4e1e5611fcc",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "ad1e6c23695d875d0cda8f6a2440136e1f27c0cf860c33349e74adb3e5848427",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "9fa0a25cf9c5e39fed6e9c0100e6d0d10a7e5c80894573c70c84d476b926e345",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "351b5f1f37679ea40ef043abd26f52b845decae0ebe1f9a3134c153a400fb8a9",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 181736,
+          "capture": "section",
+          "screenshot": "desktop-precedent.png",
+          "sha256": "15f6e9227fe945ac534369486e5cff5d648ecaca04d9423afcea883ed07f4131",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 155255,
+          "capture": "section",
+          "screenshot": "tablet-precedent.png",
+          "sha256": "3b6be3f61743d5efee7baf83514487bdd98f908753692de4bf44d1811fc4ce96",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 154987,
+          "capture": "section",
+          "screenshot": "mobile-precedent.png",
+          "sha256": "998e9a8df02280c7efb4343297bcb8378a68e1b0db5398b806cdbb9625939c3e",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Give the decision flow valid semantics (for example role=\"group\" with an accessible name, or remove the unsupported aria-label), then manually or programmatically verify contrast for all indeterminate text states and measure header touch targets across desktop, tablet, and mobile.",
+        "clarity: Replace the abstract status copy with one plain sentence explaining the rule and calculation—for example, that five verified legitimate purchases closely match this query and therefore lower its anomaly risk enough to change BLOCK to ALLOW. Define what the 99% measures, and enlarge/highlight the explanatory text and evidence labels on mobile.",
+        "memorability: Make precedent memory visually tangible: center the experience on a distinctive nearest-neighbor map or evidence constellation that visibly pulls the borderline query from BLOCK to ALLOW, with the ranked list serving as supporting detail."
+      ],
+      "screen": "precedent",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Keyboard coverage and visible focus passed at all viewports; no touch-target or uncontained-overflow violations were measured, and reduced-motion sampling showed no changed elements. However, WCAG contrast remains unproven: the arena audit returned serious incomplete color-contrast checks for 10–28 chart labels/nodes, while mobile and tablet headers also had serious incomplete contrast checks. Missing verified contrast evidence prevents an 8.",
+          "fix": "Measure computed foreground/background contrast for every SVG chart label, React Flow node, and header item across all viewports; adjust colors to WCAG AA, then rerun axe plus manual contrast verification until no serious incomplete results remain.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong cyber-lab art direction, restrained red/cyan palette, crisp headline, and consistent panels across viewports. It falls short of demo-ready polish: desktop has excessive dead space and an unreadably tiny phylogeny graphic; tablet compresses the vaccination steps awkwardly; mobile body text, labels, and chart annotations are extremely small and dense. The mobile header visibly truncates “LIVE WIRE,” while several header contrast checks remain inconclusive.",
+          "fix": "Increase small-text and chart-label sizes, enlarge/recompose the desktop phylogeny, stack or wrap the tablet vaccination flow cleanly, reduce excess desktop whitespace, and replace the clipped mobile nav with an explicit compact menu or fully legible active-section treatment.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, supporting sentence, replay curve, 25 surviving mutations, and rejected promotion gates clearly communicate that 0% replay ASR is insufficient. “View fresh-row regression evidence” supplies a next action, but the screenshots never show the fresh-row results themselves; the dense desktop phylogeny is also unreadable at presentation scale, and the mobile header hides Arena behind “More.”",
+          "fix": "Show the fresh-row regression result inline with a clear pass/fail summary and make it the dominant next action; replace the tiny desktop phylogeny with a legible summarized view and expose the current Arena location in compact navigation.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The red-mutator versus blue-defense framing, mutation phylogeny, and guarded-vaccination sequence create a coherent cyber-lab identity across viewports. However, the central replay plot is visually routine, the desktop phylogeny is tiny inside a large empty field, and mobile reduces the concept to conventional stacked cards. The screenshots do not prove a singular demo moment strong enough for an 8.",
+          "fix": "Make the mutation lineage the dominant arena spectacle: enlarge it, animate rounds branching and being blocked by blue defenses, and connect the replay curve and vaccination gates to the same evolving visual narrative.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Standard scroll-entry motion is smooth across desktop, tablet, and mobile: average frame intervals are 15.66–15.98ms, worst 16.8ms, with no long frames. The measured entrance resolves cleanly from opacity 0 and translateY(22px), while the red panel eases from roughly translateX(-30px). Reduced-motion sampling shows zero changed elements at every viewport, which is strong. However, reduced mode still reports registered/active animations—especially 31 on desktop—and isolated 33.3–33.4ms frames. Evidence covers only one programmatic scroll-entry; no measured interaction or exit/state-transition motion proves broader polish.",
+          "fix": "In reduced motion, remove or cancel animations instead of leaving registered/active no-op instances, then eliminate the 33ms reduced-mode spikes. Add measured frame trajectories for interactive arena states and confirm each remains near 16.7ms with zero long frames.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured results are demo-ready across all viewports: LCP 340–504 ms, FCP 32–48 ms, TTFB 1.1–3.2 ms, zero long frames across 82 samples, and measured CLS of 0.000019–0.000192. There were no console, page, or request failures and no document-level overflow. The main weakness is payload weight: about 1.33 MB transferred, including 1.16 MB of JavaScript, with no throttled-network or constrained-device evidence to justify a higher score.",
+          "fix": "Reduce and code-split the 1.16 MB JavaScript bundle, then provide cold-cache tests under mobile CPU/network throttling with LCP, INP, CLS, and transfer-size results.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The arena directly advances intent integrity: it distinguishes training-fold replay from generalization, exposes 25 surviving mutations and fresh-row risk, and gates promotion through holdout, regression, calibration, and human checks. However, the screen provides no explicit Mastercard/payment-network scenario, transaction-level evidence, business impact, or independently demonstrated fresh-row results; the visible ASR curve is training-fold only.",
+          "fix": "Add a Mastercard-specific attack case with transaction evidence, independent holdout/fresh-row results, false-positive and fraud-loss impact, and a clearly demonstrated promotion decision tied to intent-integrity preservation.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "17a7ec36b652d613c4f1bc239c66779672902902858a1b37a718e2f6b82f67d2",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "c78c1dd79fea143d5e83ec21f0bbb14fbd8e4e47ea03d6237f9a2e52bdcffea2",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "9ffd67408b4c7dea84bb22d9141e250b98b32f7d66a9afa295a46f5c2c7d7159",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "1786bc770e00cd76873760ca412388e8b08329cf3834c2ade8a63c9b83a05be5",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "16b3c75ba7312ff81a39da7d8f082ef77644a10f00722698a421d9d1beffb285",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f5f9e5d9192a4952ca5002b276b0c74666a128bd6325e13cde85859fac60ac51",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "fa40918d425539b8e2f285b2162f617b728dc022a301facb02e179afa0f60cc9",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "9c8ee868b69279ec74835452abae8037019d83e188053fca51ba326ca80b3b69",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "2a38b92e9247343ed2ca9dd69064edfe8b27c4ba1d0c64785b30843a44a50167",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f44e161bafc0ac6ef81f0dd7a6f8b6e50fec9435a4bad9600680a70eb6eb08d5",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "80c07e3881e30c48a43835248cfb3aba6dfa8db1124ac7005d94965268c46a5f",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "dd2b0df8edd735428823f7617ed40da0810ddd0a51538cfbb83a08f3afde8276",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "6370cb3e56356712abec7cd91bed858fdafb469282f2887f47fa75b1b6ae8f1f",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "4a1ae75a7392d7156d686189d12b2952ee53d7fa8da7802681e7296a5e0a2d37",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 258513,
+          "capture": "section",
+          "screenshot": "desktop-arena.png",
+          "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 205673,
+          "capture": "section",
+          "screenshot": "tablet-arena.png",
+          "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 199146,
+          "capture": "section",
+          "screenshot": "mobile-arena.png",
+          "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Measure computed foreground/background contrast for every SVG chart label, React Flow node, and header item across all viewports; adjust colors to WCAG AA, then rerun axe plus manual contrast verification until no serious incomplete results remain.",
+        "aesthetics: Increase small-text and chart-label sizes, enlarge/recompose the desktop phylogeny, stack or wrap the tablet vaccination flow cleanly, reduce excess desktop whitespace, and replace the clipped mobile nav with an explicit compact menu or fully legible active-section treatment.",
+        "clarity: Show the fresh-row regression result inline with a clear pass/fail summary and make it the dominant next action; replace the tiny desktop phylogeny with a legible summarized view and expose the current Arena location in compact navigation."
+      ],
+      "screen": "arena",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Vault passes measured keyboard coverage and visible-focus checks for both controls at all viewports, has no touch-target violations or section overflow, and shows no element movement under reduced motion. However, serious color-contrast checks remain unresolved: 2–4 incomplete nodes per viewport in the vault, plus 3 tablet and 13 mobile header nodes. Incomplete contrast evidence cannot be treated as a pass.",
+          "fix": "Replace translucent/gradient-dependent text and control backgrounds with solid, testable color pairs meeting WCAG AA, especially the vault toggle, regression label, metric values, and header links; then rerun contrast measurement until there are zero incomplete or failing nodes at every viewport.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong cyber-lab art direction, disciplined palette, crisp borders, and clear headline/metric hierarchy. However, desktop composition wastes substantial space in the hero and decorative left panel; mobile becomes overly tall and dense, with tiny secondary text, wrapped pills/button labels, and a visibly truncated “LIVE WI…” header item. Tablet is the most balanced viewport. These responsive polish issues keep it below demo-ready 8.",
+          "fix": "Reduce desktop dead space and decorative-panel width; on mobile increase small-text legibility, prevent awkward pill/button wrapping, tighten the long results stack, and replace the clipped header rail with a deliberate compact navigation treatment.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, 85% fresh-row result, independent_holdout=false label, and deployment warning clearly communicate that this is stability evidence—not production readiness. However, the instructions reference a “scope control” that is not visible, “Hide regression results” is the dominant control despite no clear benefit, and the final “Review independent-holdout requirement” does not state what the user will see or do next. Dense, tiny metadata further weakens mobile comprehension.",
+          "fix": "Show the referenced scope selector beside the comparison, demote or remove “Hide regression results,” and replace the final link with a concrete action such as “Open independent holdout plan,” including the required next test and readiness criterion.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The concentric vault/radar field, central lock, reveal control, and oversized editorial warning create a recognizable security-artifact concept across all three viewports. The right-side results area is more conventional dashboard styling, but the vault metaphor remains visually dominant and demo-worthy.",
+          "fix": "Tie the metrics more directly to the vault metaphor—such as encoding the 85% weakness in the rings or lock state—so the memorable graphic communicates evidence instead of serving mainly as atmosphere.",
+          "score": 8
+        },
+        "motion_quality": {
+          "evidence": "Scroll-entry motion is smooth and consistent across viewports, with ~16.3–16.9 ms averages; mobile/tablet worst frames are 16.8 ms. Reduced-motion entry produces zero changed elements. However, desktop entry records a 33.4 ms worst frame, reduced mode still reports one active animation, and the interaction proof provides only start/mid/end states rather than a measured frame trajectory.",
+          "fix": "Eliminate the desktop long frame, ensure prefers-reduced-motion leaves no active animations, and capture a full timestamped interaction trajectory for the vault toggle in both standard and reduced modes.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured FCP is 32–48 ms, LCP 340–504 ms, CLS 0.000019–0.000192, and sampled frames hold ~16.67 ms with 0% long frames across all viewports. No request, page, or console failures occurred. However, the full page transfers ~1.33 MB, including 1.16 MB of JavaScript, and no throttled-network or constrained-device measurements are provided.",
+          "fix": "Code-split by screen and lazy-load non-vault sections to reduce the 1.16 MB JavaScript payload; then verify cold-cache performance under mobile CPU and network throttling.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen materially supports an intent-integrity defense story through disclosed prior families, frozen weights, chronological cutoff, separate fresh-row cohorts, confidence intervals, and an explicit warning that this is not an independent holdout or production-readiness proof. However, it does not visibly connect these results to Mastercard’s payment-security brief, transaction intent, authorization abuse, or a concrete card-network outcome. API success and responsive navigation prove implementation health, not brief relevance.",
+          "fix": "Add a concise Mastercard-specific interpretation: identify the payment-intent attack being tested, map each cohort to realistic transaction or authorization threats, and state the measurable network outcome protected. Pair the regression artifact with an independent post-remediation holdout before presenting deployment readiness.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "1e6c5e02afe9f9bfc62687c4ee0de9bdb919b09250b2cad2d7c982930aa7ed2a",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "784520e544648e83f69a03d548b6f3c63e326ba1f6b31267431446764cc512fd",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "60403b65c2fa2a5651b5ca085f9f2095cbca7561332ce0e5d8bcbe1fa171e74e",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "655bc31703578f5534160be33857f975d24fd013dbb146067ec2d7c23154844c",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "d9ef9b08baacea2d6ae1c215a0ca7a7598d5adda0fe6deebb4930c582381074c",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "27f6e32626bc6f9f49fe3dc735b96afa5fd3be4d5166b3e3be568908e63f028c",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "c640c8ccf9bf438a3010d7005c59b236ec2ef44e97f3398f2ebdf064a3d7ce51",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "e1aa48603a6f47481697888a8bcd6be8a6eb21aac1a339b3cdd0e21a5ac8f9d3",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "ada761cb52d1c24d47be61dfe18a492e8c201440cb1dfe7ac6bd82cf18c56351",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "5be43f03a371a3a4dd5a4011c1a7108f74c3f14068530ee44982b0043cee8bdb",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "dadd7dbbf76ef0aada330c7577a40fa14c9d5b08f324690c9612ea63a859988e",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "7c502198b521b38b484eb79a18ad33d4e09a68dbd35a766668ca0b1c109fee22",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "1a801a1d99783346c1c139fa906f7eed06d64dbe09fb602660832ea2230ec7a4",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f025dedcbf7b486e2e04b3e2e987a10b8de18214f17a23dae43c197b477558da",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 380950,
+          "capture": "section",
+          "screenshot": "desktop-vault.png",
+          "sha256": "12442eeca1a7df50a57bb62348c000eea0e30a1a0a13b7c636e57fa4edcfd75b",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 241487,
+          "capture": "section",
+          "screenshot": "tablet-vault.png",
+          "sha256": "19de66ac4936d07fd36af32aeabfbf136cb6d1aa4f1131ccbd7f4362641dbe7e",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 195867,
+          "capture": "section",
+          "screenshot": "mobile-vault.png",
+          "sha256": "3dcc56680621582759c7ab2090624d8305e5929359793688a4a1b8b307ede8d4",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Replace translucent/gradient-dependent text and control backgrounds with solid, testable color pairs meeting WCAG AA, especially the vault toggle, regression label, metric values, and header links; then rerun contrast measurement until there are zero incomplete or failing nodes at every viewport.",
+        "aesthetics: Reduce desktop dead space and decorative-panel width; on mobile increase small-text legibility, prevent awkward pill/button wrapping, tighten the long results stack, and replace the clipped header rail with a deliberate compact navigation treatment.",
+        "clarity: Show the referenced scope selector beside the comparison, demote or remove “Hide regression results,” and replace the final link with a concrete action such as “Open independent holdout plan,” including the required next test and readiness criterion."
+      ],
+      "screen": "vault",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Keyboard focus, visible indicators, touch targets, section overflow, and reduced-motion behavior pass at all three viewports. However, contrast remains unverified for nine SVG chart labels at every viewport and for tablet/mobile header content; chart accessible names are concatenated values rather than meaningful descriptions. This missing serious-impact proof prevents an 8.",
+          "fix": "Measure and correct contrast for every chart label and responsive header item, then give each chart a concise accessible name plus equivalent structured data or summary instead of raw concatenated SVG text.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong, cohesive dark technical aesthetic with crisp cards, disciplined cyan/red accents, and clear desktop hierarchy. However, mobile typography becomes extremely small, chart labels and explanatory copy are difficult to read, the ablation cards feel cramped, and the mobile header visibly truncates navigation. Desktop also has excessive introductory dead space and an oversized clipped background word in the header, reducing polish.",
+          "fix": "Increase mobile body/chart-label sizes and spacing, simplify the mobile ablation layout, and replace the clipped horizontal header navigation with a deliberate compact menu. Tighten desktop hero spacing and subdue or reposition the header’s oversized background lettering.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, supporting sentence, metric cards, constrained-recall values, and ablation takeaway communicate the core argument consistently across viewports. However, the precision–recall chart is difficult to interpret: the recall axis labeling is sparse, constrained operating points are not visibly marked, and the unusual curve is left unexplained. “Compare configurations” is the only clear next action, but it appears after a long scroll—especially on mobile—and the global header does not visibly identify Metrics as the current section.",
+          "fix": "Mark and label the operating points directly on the PR curve, clarify both axes and key acronyms, show the constrained-recall values on their bars, add a visible active state for Metrics in the header, and surface “Compare configurations” near the opening summary as well as at the bottom.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The contrarian “Accuracy is the wrong question” headline, evaluation-ledger framing, and cyan/red terminal aesthetic create a recognizable demo narrative across viewports. However, most of the screen resolves into familiar dark dashboard cards, standard charts, KPI tiles, and a conventional table; no singular visualization makes the operating-constraint thesis visually unforgettable.",
+          "fix": "Create one signature “operating envelope” visualization that unifies false-positive caps, recall, cost, and latency, then make it the dominant demo moment. Reduce the surrounding card grid and let configuration changes visibly reshape that artifact.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Across desktop, tablet, and mobile, the measured entry animation is a consistent 22px translate-and-fade that settles smoothly in about 380ms. Frame timing is excellent: ~16.66ms average, 16.8ms worst, and 0 long frames. Reduced-motion correctly produces zero changed elements at every viewport. However, proof covers only one broad section-entry animation; no chart, control, configuration-comparison, or header interaction trajectories were measured. Reduced mode also still reports one active/registered animation despite no visual change.",
+          "fix": "Add measured frame trajectories for chart reveals and interactive controls, including the comparison action and header states. Ensure reduced motion removes or immediately finishes the registered animation itself, then verify those paths retain zero long frames.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured performance is demo-ready across all viewports: FCP 32–48 ms, LCP 340–504 ms, TTFB 1.1–3.2 ms, CLS 0.000019–0.000192, and zero long frames across 82 samples per viewport. All 17 requests completed without console, page, or request failures. The main weakness is payload weight: about 1.33 MB transferred, including 1.16 MB of JavaScript, for a 12-screen page.",
+          "fix": "Reduce initial JavaScript through route/section-level code splitting and lazy-load non-visible screens; verify the same timing and CLS results under throttled mobile CPU and network conditions.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen strongly reframes evaluation around operational defense outcomes: PR-AUC, constrained-FPR recall, calibration, alert load, latency, ablations, fraud value caught, and good value blocked. Provenance ablation helps connect results to the intent-integrity architecture. However, it does not explicitly demonstrate Mastercard-specific payment scenarios, attacks prevented, transaction/value coverage, or how these metrics prove preservation of user intent end to end.",
+          "fix": "Add a Mastercard-relevant proof panel mapping each defense layer to a concrete payment-intent attack, measured prevention outcome, transaction/value impact, and traceable before-versus-after evidence from the live demo.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "2b13c8dc10b971323e60d8e0319fb687a52bde03b1048355438f769e0347ab1d",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "f70bb57b8a6f3c132b47a726066a79618b08947d77b80ee8692eb71fa325ce13",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "9d2a81cb5c9c0e6e8dbedb162cc0d9b80c99a5c16267794924cf0f2142b283a2",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "75ae4a23d02bc77cfbb503ed2e40527a57af058489b24a9bbb154771485091de",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "d3ce2ff75d78a4f8fec16a0e06c373738b4da05372416e37d4c4146de70e9d9b",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "8a6dde29bcc01cfe2ca82c13111fb391fc862c825296f4da36716e66e9623d2f",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "9c9dc69369dc357df3b8f27e816a8ddf8b79c8febbf045475934a6f5cd3774d5",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "8f0f1a3b4a944eaf9e2a9b653f8cba41ba43feb421b02ee9287086869c976542",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "577a939f489c6ae2c1220b4cb784134ab0fef12a812be95570a3911835b45986",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "25285502fa0c7c46e559151320cda273e8d81134907f6f6f83f4f2653ce9e434",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "c931f420edc065627ee2df996d8b0f9aab5b1b8e45644f832c9aa391f2751a44",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "399a123ffe509e8c811ae677087ddc58d6d9812bfdc883970f8531a286ba861b",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "17b5ea3ae784672be8254a9d46feabe1defa48d0ac53ca1b8d733ee1e4bcb766",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "6a8b6c6846a07d46587dcb97f28a6694e1a2e9218e1788ce261ba4496e20da02",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 216679,
+          "capture": "section",
+          "screenshot": "desktop-metrics.png",
+          "sha256": "67f782b83ebf4231e2abcfb2af6f2a18165b0175256c89b1bc65e100f62c8d68",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 193396,
+          "capture": "section",
+          "screenshot": "tablet-metrics.png",
+          "sha256": "0838974b5035e2af6d38eb85eb405368cae4b95f4e810aa5bbc1c4172c081213",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 181003,
+          "capture": "section",
+          "screenshot": "mobile-metrics.png",
+          "sha256": "925c0b3134b6df0e3f857a2ff47409028a5697078bad552c289876a43128d2ae",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Measure and correct contrast for every chart label and responsive header item, then give each chart a concise accessible name plus equivalent structured data or summary instead of raw concatenated SVG text.",
+        "aesthetics: Increase mobile body/chart-label sizes and spacing, simplify the mobile ablation layout, and replace the clipped horizontal header navigation with a deliberate compact menu. Tighten desktop hero spacing and subdue or reposition the header’s oversized background lettering.",
+        "clarity: Mark and label the operating points directly on the PR curve, clarify both axes and key acronyms, show the constrained-recall values on their bars, add a visible active state for Metrics in the header, and surface “Compare configurations” near the opening summary as well as at the bottom."
+      ],
+      "screen": "metrics",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "The economics section passes automated WCAG checks at all three viewports, has no touch-target or horizontal-overflow violations, exposes both expected controls with visible keyboard focus, and shows no element changes under reduced motion. However, an 8 is not justified because color contrast remains unverified in the actual tablet and mobile headers: axe reports serious incomplete contrast checks for 3 and 13 nodes respectively. The mobile/tablet navigation intentionally clips off-screen items, though contained scrolling prevents document overflow.",
+          "fix": "Measure the actual foreground/background contrast of every header label and link at tablet and mobile widths, including gradient/overlap states, and adjust colors or backgrounds until WCAG AA is conclusively verified. Also verify that the horizontally clipped navigation is discoverable and operable by touch and keyboard, with an announced current item and scroll position.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "The dark editorial system, restrained cyan/red/yellow palette, bordered panels, and ROI focal graphic are cohesive across viewports. However, the desktop hero is compositionally unbalanced by a very large empty right field and awkward headline wrapping. Mobile compresses the ledger into tiny, crowded type—especially long row labels and currency values—while secondary labels and explanatory copy are frequently too faint. The global header is polished but visually cramped: desktop navigation approaches clipping, and tablet/mobile hide destinations behind a subtle “More” treatment.",
+          "fix": "Rebalance the desktop hero into a deliberate two-column composition, tighten headline line breaks, and redesign the mobile ledger as stacked metric pairs instead of a squeezed table. Increase contrast and minimum size for secondary text, and make the header’s overflow/navigation state more visually explicit.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, before/after ledger, 25.60× ROI callout, break-even status, and proposed authorization intervention communicate the conclusion consistently across viewports. However, the screen does not expose the fraud-value and total-attack-cost inputs needed to verify 25.60×, the success-rate denominator is absent, and “Next control” does not clearly state what clicking will open or accomplish.",
+          "fix": "Show the complete ROI calculation with labeled source inputs and sample denominator beside the result, then rename the CTA to a concrete destination such as “Review authorization intervention.”",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The oversized editorial claim and 25.60× ROI dial create a clear focal point across all viewports, but the dominant visual language—dark cards, neon status pills, ledger rows, cyan/red metrics, and a simple gauge—remains familiar cybersecurity-dashboard styling. The proposed-control card adds information rather than a distinctive visual idea, and the global header reinforces the same generic command-console aesthetic.",
+          "fix": "Build the screen around one ownable economics metaphor—for example, a dramatic before/after profitability curve showing defense collapsing the attacker’s margin toward break-even—and make the 25.60× residual gap the visual climax. Reduce supporting cards and ledger chrome so that signature visualization, not the dashboard furniture, is what viewers remember.",
+          "score": 6
+        },
+        "motion_quality": {
+          "evidence": "Across desktop, tablet, and mobile, the measured entrance cleanly fades from 0 to 1 while translating 22px to rest, settling without overshoot. Frame pacing is consistently ~16.2–16.7ms with 0 long frames and worst frames ≤16.8ms. Reduced-motion matched and produced zero changed elements across 36 sampled frames at every viewport.",
+          "fix": "For a higher score, provide measured frame trajectories for interactive motion states—not only the single scroll-entry reveal—while retaining the verified reduced-motion suppression.",
+          "score": 8
+        },
+        "performance": {
+          "evidence": "Measured results are demo-ready across all viewports: FCP 32–48ms, LCP 340–504ms, load 82.6–113ms, TTFB 1.1–3.2ms, CLS 0.000019–0.000192, zero long frames, and no console, page, or request failures. Documents remain viewport-contained. The main weakness is a relatively heavy 1.33MB transfer, including 1.16MB JavaScript, shared across the 12-screen page.",
+          "fix": "Code-split and lazy-load screen-specific JavaScript so the economics route does not pay the full 12-screen bundle cost; then provide per-route transfer and interaction timing evidence.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly advances the defense story with before/after attacker economics, measured ROI, break-even framing, and an explicit authorization-time intent intervention. It responsibly labels the Mastercard mapping as proposed and distinguishes simulation results from live network outcomes. However, the economic improvement is not causally connected to the proposed intent signal, and there is no Mastercard integration, authorization-flow demonstration, or measured issuer/payment-network outcome. The post-defense ROI also remains 25.60×, so deterrence is explicitly unproven.",
+          "fix": "Add a demonstrated authorization-time flow showing the intent signal changing an issuer decision, then trace that intervention to the ledger inputs and ROI calculation. Provide measured outcomes against a baseline and clearly identify which evidence comes from the demo versus a Mastercard/network integration.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "96880a253d145c76c90817db5bbb9196514c34b18042685e59f50da8d813d9e7",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "db4d4298668e3027e604b2e910576e27e02076571da9a2842c66eba9c915b389",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "be72c267cc797f65a1526f68030b1c86f16fdbcb619e29ac9a3c1f045c1c15a9",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "60d35847162aa5907a053604edcad6082418f6b0abf486f36a84f57b88c09f8f",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "5d61249a0b3e7fd479ff8c9c7783ba38473e0a225a6bef92a1b9516d36163758",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "2557f7bc38aa082ecf615ffeecb78c846941ffdbd57b8aabe3c3ad74a9f33c85",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "2c5932d3a8777ee8706f05c63f8a2220e0558448adb11a4910ce631d82810faf",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "a688f04bfbe48b1e499e85943ceb845dbd6701fcafe20066b7fce258aacdd8e4",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "6acac287f2ccb8fae4bb86dfa7b59456f72ad758d7c13a8362e37e6f0032a08c",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "9d2cca45a3cd5e4ce0dd3e578c7d7e77ab47a433392822a4d638d9049c07760c",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "705e86a902e3d3a54083128e0f9aea027e832239838bc7efc35af2f52e6d2666",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "eebb48f08897f67c805357191c652da8b78a8ea14b630c1fc9546eaae8d57366",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "5eaac5c8062d4f43935521409bc4b7cccbe28c5721156b4b4dd3c3d32c7d9d53",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "cd961f8f10dc07ee831013f5d3a8755e25eea064b566bd56fe6404bf9515066d",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 227948,
+          "capture": "section",
+          "screenshot": "desktop-economics.png",
+          "sha256": "9ee959e011ea4d7cc9015fc74e61f006b77dca77d1b11335801f95d1d5baa3cd",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 187441,
+          "capture": "section",
+          "screenshot": "tablet-economics.png",
+          "sha256": "df3993155f45904ad413f4195170c7dd5fee9790ec719586eb56f6fae83d9fe5",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 182945,
+          "capture": "section",
+          "screenshot": "mobile-economics.png",
+          "sha256": "52e62f22456d90d53529c32a129d16f9041f4a94cf8cdc5fa7735f5c64a94934",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "memorability: Build the screen around one ownable economics metaphor—for example, a dramatic before/after profitability curve showing defense collapsing the attacker’s margin toward break-even—and make the 25.60× residual gap the visual climax. Reduce supporting cards and ledger chrome so that signature visualization, not the dashboard furniture, is what viewers remember.",
+        "accessibility: Measure the actual foreground/background contrast of every header label and link at tablet and mobile widths, including gradient/overlap states, and adjust colors or backgrounds until WCAG AA is conclusively verified. Also verify that the horizontally clipped navigation is discoverable and operable by touch and keyboard, with an announced current item and scroll position.",
+        "aesthetics: Rebalance the desktop hero into a deliberate two-column composition, tighten headline line breaks, and redesign the mobile ledger as stacked metric pairs instead of a squeezed table. Increase contrast and minimum size for secondary text, and make the header’s overflow/navigation state more visually explicit."
+      ],
+      "screen": "economics",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "Composer passes scoped automated WCAG checks at all viewports; all 10 controls are keyboard-reachable with visible focus, with no measured touch-target or overflow failures. Reduced-motion sampling found no changed elements. However, header contrast remains unresolved: 3 tablet and 13 mobile nodes have serious incomplete color-contrast results. Header touch-target and reduced-motion measurements are also absent.",
+          "fix": "Provide deterministic contrast measurements for every header label/link over its actual background and remediate failures to WCAG AA. Add measured header touch-target and reduced-motion coverage, including the horizontally clipped mobile/tablet navigation.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "A cohesive, demo-ready cyber-operations aesthetic holds across all three viewports: strong headline hierarchy, disciplined cyan/pink status color, consistent monospaced labels, crisp controls, and a clearly separated results narrative. Desktop composition is especially strong. Tablet and mobile reflow cleanly without section overflow, but become very tall and dense; several micro-labels and explanatory lines are visually undersized. The global header is polished on desktop, though its oversized clipped background word adds noise, while tablet/mobile navigation feels crowded and partially concealed behind “MORE.” Automated header contrast checks are also incomplete at tablet and mobile, so perfect legibility is not proven.",
+          "fix": "Increase small-label/body text size and contrast on mobile, tighten vertical spacing to reduce scrolling, clarify the “MORE” overflow affordance, and tone down or remove the clipped background masthead text in the desktop header.",
+          "score": 8
+        },
+        "clarity": {
+          "evidence": "The headline, one-sentence instruction, synthetic-only note, prominent “Launch Event” CTA, side-by-side ALLOW/BLOCK comparison, fused-risk score, and decision rationale make the claim and next action understandable without narration across all viewports. A real POST /compose returned 200 with no browser failures. Clarity is reduced by the instruction to “Change one” despite presenting many equally weighted controls, and by very small, dense explanatory text on mobile.",
+          "fix": "Create a guided single-variable flow: visually nominate one control to change, show its previous value, and state beside the CTA that launching will rerun both policies on that exact event. Increase mobile helper-text size and spacing.",
+          "score": 8
+        },
+        "memorability": {
+          "evidence": "The “Your turn, Red.” framing, cyan-versus-pink palette, and immediate ALLOW/BLOCK comparison create a recognizable demo moment across all three viewports. However, the core visual language remains a familiar dark security dashboard: sliders, bordered panels, status pills, progress bars, and monospace labels. No singular visual metaphor or transformation makes the composer unmistakably proprietary.",
+          "fix": "Make launch trigger one signature visual event—such as the synthetic attack visibly traversing five evidence layers before splitting into Legacy ALLOW versus Integrity BLOCK—so the decision process becomes the screen’s memorable centerpiece.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Across desktop, tablet, and mobile, the measured entrance transition is smooth: roughly 16.3–16.5 ms average frames, 16.8 ms worst, and no long frames. The panel follows a coherent 22 px translate-and-fade trajectory and settles without overshoot. Reduced-motion media matched at every viewport and produced zero changed elements or trajectories. However, the evidence measures only scroll-entry motion; it provides no animation frames for sliders, the presence toggle, launch feedback, loading, or the results-state transition.",
+          "fix": "Capture timed frame sequences for control changes and the complete launch-to-results lifecycle at all viewports, including rapid repeated input and reduced-motion variants; then refine any abrupt state swaps with brief, purposeful feedback.",
+          "score": 7
+        },
+        "performance": {
+          "evidence": "Measured results are demo-ready: LCP 340/504/396 ms, FCP 32/48/32 ms, CLS 0.000143/0.000019/0.000192, zero long frames across 82 samples per viewport, no browser/request failures, and no document-level horizontal overflow. The main limitation is a 1.33 MB transfer dominated by 1.16 MB of JavaScript across 17 requests; no throttled-network or CPU evidence was supplied.",
+          "fix": "Code-split or lazy-load non-composer screens and retest cold load under mobile network/CPU throttling, reporting compressed JS transfer and interaction latency.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen clearly advances the intent-integrity story: users alter a bounded synthetic agentic-checkout event, POST it to /compose, compare Legacy Rules with Intent Integrity on the same event, and receive a fused-risk decision with five evidence layers and human-readable reasons. Real 200 responses and zero browser failures support demo credibility. However, the visible experience does not establish a Mastercard-specific connection beyond generic payment cues such as amount, payees, and checkout; it shows no network, issuer/acquirer, authorization, fraud, identity, or Mastercard-value evidence.",
+          "fix": "Add a concise Mastercard-specific scenario and outcome: identify the payment-authorization context, map intent evidence to issuer/network decisioning, and quantify prevented fraud or reduced false declines while retaining the same live comparison.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "3156ff38a6b0885b967734216d8e18bc5d45a77e6f781223e8e2034d7d02580e",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "509239e37a99b71f5834b2f0170168e0c4f107f987d4bff43d0a53f53f548aa9",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "2eb70d1da58fea43c05e345d0f380fe4abf2177a9e9ecf9844f6960472044a1e",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "0e7b1c562e2aed90853fca0c975a2c6d597d539d24dcf162484274be1539bbe2",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "bce6a5c0c1b95c854b26625e80fe21b1622d153d5c800116251ddcd53719e029",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "580678c51c869b804bc412b88329f3cd028c4e8979c1891d9357113ee37033aa",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "fbf543243b4434b9e0a8931f047cfdb4547ca9451262aabed883dcf1388a7a82",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "6869d331abbbcd0181efbb1df2b5c19cdcfb762f8342c34f9fe532598e2736b7",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "ea1834d2247ee509885e7f3a9f79dcdea23a98006ac16c204a465815d688676d",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "94dfd3464f2469909bee6ea24b8533190e5204c39281a340503ad604f038a823",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "42366f6c17fcfc280b6a4e9fa2953b208db96b250fbfd30f6be0df9f104015c8",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "6e1bd02bef72caea4d57d15312c8833762ae0550b9967f21f3d554748bb607cb",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "337eed3fd9df512602d889f6f0b625e221386f03e3e7060ebd434c17ac1bb6c9",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "675ea8c009c3ab9c6933e03829441eb0f51121fc0c052c4c945d6cea3d1a0fe9",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 165433,
+          "capture": "section",
+          "screenshot": "desktop-composer.png",
+          "sha256": "004559bcafe5bf9c211af902aca07cc2f63621e9da6adb0723a089652a9c8445",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 154221,
+          "capture": "section",
+          "screenshot": "tablet-composer.png",
+          "sha256": "62aba03f0b5e0d3229004f6d01342190a2f16c5ccdee6c4fa53d53bb127f89c6",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 157825,
+          "capture": "section",
+          "screenshot": "mobile-composer.png",
+          "sha256": "3f45c32530de07faec12913c7e2c9c9f56d6578d35291cc416d93fbd928e1d67",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Provide deterministic contrast measurements for every header label/link over its actual background and remediate failures to WCAG AA. Add measured header touch-target and reduced-motion coverage, including the horizontally clipped mobile/tablet navigation.",
+        "memorability: Make launch trigger one signature visual event—such as the synthetic attack visibly traversing five evidence layers before splitting into Legacy ALLOW versus Integrity BLOCK—so the decision process becomes the screen’s memorable centerpiece.",
+        "motion_quality: Capture timed frame sequences for control changes and the complete launch-to-results lifecycle at all viewports, including rapid repeated input and reduced-motion variants; then refine any abrupt state swaps with brief, purposeful feedback."
+      ],
+      "screen": "composer",
+      "verdict": "fix"
+    },
+    {
+      "axes": {
+        "accessibility": {
+          "evidence": "The unknowns section has zero automated WCAG violations/incompletes, complete visible keyboard focus, no touch-target failures, no viewport overflow, and no observed motion under reduced-motion. The global header also passes keyboard traversal and contained overflow, but color contrast remains unverified: 3 tablet and 13 mobile header nodes have serious contrast-incomplete results. Required contrast proof is therefore absent.",
+          "fix": "Replace gradient/overlapping header backgrounds with testable solid computed colors or manually measure every flagged text/background pair, documenting WCAG AA ratios. Re-run axe at desktop, tablet, and mobile until header contrast has neither violations nor incomplete nodes.",
+          "score": 7
+        },
+        "aesthetics": {
+          "evidence": "Strong cyber-defense art direction, disciplined cyan/red/amber accents, crisp card construction, and clear responsive hierarchy. However, desktop has excessive empty space above the hero; tablet/mobile rely on very small, low-contrast monospaced labels; the tablet footer wraps awkwardly; and the real header feels cramped and clipped at narrower widths, including the truncated “LIVE WI” mobile label. Contrast proof is also incomplete for 3 tablet and 13 mobile header nodes, so an 8 is not justified.",
+          "fix": "Reduce desktop hero top spacing, raise microcopy size/contrast, prevent awkward footer wrapping, and replace the clipped horizontal header rail with a deliberate compact navigation pattern on tablet/mobile.",
+          "score": 7
+        },
+        "clarity": {
+          "evidence": "The headline, three-part summary, and repeated next-control language clearly communicate one residual evidence gap across viewports. However, the copy creates ambiguity: it reports 69.6% recall while saying no structured numerator or denominator exists, and alternates between “observed miss,” “evidence gap,” and “measured residual risk” without resolving their relationship. “Test an uncertain case” is prominent but does not explain what opens, what will be tested, or what outcome the user should expect. The mobile header also hides the current Unknowns destination behind “More,” weakening orientation.",
+          "fix": "State the logic explicitly: “Recall is 69.6%, but the artifact lacks the counts needed to audit that result.” Rename the CTA to describe its destination and outcome, such as “Open composer to test an uncertain case,” and expose a visible current-section indicator in the compact header.",
+          "score": 7
+        },
+        "memorability": {
+          "evidence": "The oversized “One residual evidence gap.” headline, numbered evidence-gap dossier, restrained cyan/crimson/amber accents, and technical typography create a coherent defense-lab identity across all three viewports. However, the core presentation remains a familiar dark dashboard of bordered cards, labels, and a CTA; there is no singular visual metaphor or demonstrated interaction that makes the unknown/evidence-gap concept unforgettable.",
+          "fix": "Introduce one signature evidence-gap visualization—such as a visibly incomplete proof chain connecting observed signal to next control—and let the uncertain segment drive the card’s layout or interaction across viewports.",
+          "score": 7
+        },
+        "motion_quality": {
+          "evidence": "Across desktop, tablet, and mobile, the 22px fade-and-rise entry resolves smoothly with approximately 16.5ms average frames, no long frames, and worst frames at or below 16.8ms. Reduced-motion matched at every viewport and produced zero changed elements or trajectories. Evidence covers only this single section-entry animation; no interaction-motion frames are supplied.",
+          "fix": "Add measured frames for CTA and header interactions. Under reduced motion, cancel the remaining registered/active animation entirely instead of merely making it visually static.",
+          "score": 8
+        },
+        "performance": {
+          "evidence": "Across all viewports: FCP 32–48 ms, LCP 340–504 ms, CLS 0.000019–0.000192, zero long frames, ~16.67 ms average frames, no browser/request failures, and no document-level overflow. Transfer is comparatively heavy at ~1.33 MB, dominated by 1.16 MB of JavaScript across 17 requests.",
+          "fix": "Reduce the JavaScript payload through route/section-level code splitting and lazy loading; then verify under throttled mobile CPU/network conditions and capture interaction latency evidence.",
+          "score": 8
+        },
+        "relevance": {
+          "evidence": "The screen strongly advances intent integrity by separating measured recall (69.6%) from an explicit evidence gap and tying uncertainty to authorization-time step-up, consent, and verified review. However, it presents only one residual case, expressly lacks a structured miss numerator/denominator, and gives no concrete Mastercard-network, merchant, issuer, fraud-loss, or approval-impact evidence. The CTA’s outcome is not demonstrated, so it cannot earn credit.",
+          "fix": "Add an artifact-backed miss count and denominator, show the uncertain case flowing through the proposed control, and quantify a Mastercard-relevant outcome such as prevented multi-merchant abuse, false-decline impact, or approval-rate tradeoff.",
+          "score": 7
+        }
+      },
+      "critic_calls": {
+        "accessibility": {
+          "cache_key": "7b46dbf3e4734286077e2a1cfe1e10477d222955acb21a946ef88a07231a3d1a",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "24338c63da04d5003020d741245f1915b067ebaac4891031f62f2369c971560a",
+          "provider": "codex"
+        },
+        "aesthetics": {
+          "cache_key": "d148b77802e7f3cd40066eae8a0a41b498d459fb77066fe7edd0eb3b59d6aab1",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "317642a614b59f1ee3996795b6e9bc01c8f85795f06e4025ed95ba9248dd3e76",
+          "provider": "codex"
+        },
+        "clarity": {
+          "cache_key": "e097857cc5a3bf7cfe82e86d2881ef87458cb377de619aecdc3e1c98a0cf1011",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "bae6ecc25f4101d035accd88b8030b72c02f1d163a85fd8b066b37f3c2a0c42d",
+          "provider": "codex"
+        },
+        "memorability": {
+          "cache_key": "c25638fa1af017cd4500b90c219c6290dfa75157d90979e040141636eeb8f2b4",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "98e99b05c0c64bb194e8a44750b718cd2d126e53874a36fde1e1ae39d52fc079",
+          "provider": "codex"
+        },
+        "motion_quality": {
+          "cache_key": "37999f64141a4fb029cf7cb0dbeb07ccea8b53aa66ae4675cc8956e721ad8756",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "092eb527176b8e7ea9b99028e0cd4c7400108c44fbe22db242955a0632345199",
+          "provider": "codex"
+        },
+        "performance": {
+          "cache_key": "fade3ffc7a8c821c1f97fb0ccb0798d0e341dd512121825a30774deca71e2ef4",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "c685295f58967e2590ed7fbb331496e361646047335f808a672f8446b0307695",
+          "provider": "codex"
+        },
+        "relevance": {
+          "cache_key": "36b9c317d348a6e913c83f1a573e0a422becbe23868dcedd454445e2efb6e6b2",
+          "cli_version": "codex-cli 0.147.0",
+          "model": "gpt-5.6-sol",
+          "output_sha256": "a7ffb3bb67501ff370f0b6670d13ecbadf02cab2b0ca7507e62ac2d6b572c0f4",
+          "provider": "codex"
+        }
+      },
+      "images": [
+        {
+          "bytes": 148070,
+          "capture": "section",
+          "screenshot": "desktop-unknowns.png",
+          "sha256": "3deadc3d44e52c8e4741a691626614f71efc9f4a9a49f3b66ad3134d5ee01e32",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 129367,
+          "capture": "section",
+          "screenshot": "tablet-unknowns.png",
+          "sha256": "223acae8cea45d839b0860fa7acc37758f3f2946731d1ff71abb1a3b1a42ff7c",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 125418,
+          "capture": "section",
+          "screenshot": "mobile-unknowns.png",
+          "sha256": "2cf1761f41e21f576f2977d721880319760ecf46ec65660bb1726adfdc4e684a",
+          "viewport": "mobile"
+        },
+        {
+          "bytes": 15920,
+          "capture": "header",
+          "screenshot": "desktop-header.png",
+          "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+          "viewport": "desktop"
+        },
+        {
+          "bytes": 7579,
+          "capture": "header",
+          "screenshot": "tablet-header.png",
+          "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+          "viewport": "tablet"
+        },
+        {
+          "bytes": 3784,
+          "capture": "header",
+          "screenshot": "mobile-header.png",
+          "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+          "viewport": "mobile"
+        }
+      ],
+      "priority_fixes": [
+        "accessibility: Replace gradient/overlapping header backgrounds with testable solid computed colors or manually measure every flagged text/background pair, documenting WCAG AA ratios. Re-run axe at desktop, tablet, and mobile until header contrast has neither violations nor incomplete nodes.",
+        "aesthetics: Reduce desktop hero top spacing, raise microcopy size/contrast, prevent awkward footer wrapping, and replace the clipped horizontal header rail with a deliberate compact navigation pattern on tablet/mobile.",
+        "clarity: State the logic explicitly: “Recall is 69.6%, but the artifact lacks the counts needed to audit that result.” Rename the CTA to describe its destination and outcome, such as “Open composer to test an uncertain case,” and expose a visible current-section indicator in the compact header."
+      ],
+      "screen": "unknowns",
+      "verdict": "fix"
+    }
+  ],
+  "source": "real-server Playwright screenshots plus measured browser evidence"
+}

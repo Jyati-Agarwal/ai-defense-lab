@@ -1,0 +1,70 @@
+{
+  "cache_key": "27417ea727f59336e6e9715bf4b45be3437b9e7a39371c6c66846ff22bf862a5",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The red scanlined “machine-visible retrieval layer” physically overlays a faint harmless voucher, making the hidden-context seam an immediate, distinctive demo moment across all three section captures. The causal-proof panel and cyan/red authorization contrast reinforce the story. Mobile weakens the impact through a very tall, cramped composition, while the global header reads as a generic clipped navigation rail.",
+    "fix": "Preserve the reveal concept, but compress the mobile artifact into a single viewport-height before/after stage and give Injection a visible active marker in the header.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6bd8e3560934dd1af93024a93243309c547436b6f430abfdf77e60b39e0c2b55",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 342560,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "27cb7d8e95b40982545e9dd08e75fde08e0385f3d13275d91cc843671d5d7274",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 308204,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "02ad30c508d8a1491829bd5aa91310519c1cc102b2eb5c70bb7a6d42af9fca81",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264831,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "86727d3d546cb5b8778298e4c64ebb30f72e9901b3345971d0f37f1e13b44999",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4dee31838e707d58e7bd2e714b732290152c3d1cebc6b92a701bfc57329d5a48",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "27417ea727f59336e6e9715bf4b45be3437b9e7a39371c6c66846ff22bf862a5"
+  }
+}

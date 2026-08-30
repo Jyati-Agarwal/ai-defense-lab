@@ -1,0 +1,51 @@
+{
+  "cache_key": "f7f98d18fda0d1ad0eaac92a83e2a7525a7d629345e120d76e67a71e026bd5e3",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Automated scans report no confirmed violations, touch-target violations are zero at desktop/tablet/mobile, and overflow is contained with no viewport-level or uncontained overflow. However, color contrast remains seriously incomplete for 77 atlas nodes on desktop, 43 on tablet, and 35 on mobile, including headings, instructions, filter buttons, labels, and graph nodes. No measured keyboard traversal/activation, focus-order, focus-visibility, horizontal-board keyboard scrolling, or reduced-motion evidence was provided.",
+    "fix": "Resolve and remeasure contrast against the actual gradient/overlapped backgrounds to WCAG AA. Add Playwright evidence for complete keyboard operation and logical focus order across filters, stage selector, horizontally scrolling board, vector cards, and details; verify visible focus is never clipped. Test at 200%/400% zoom and provide prefers-reduced-motion measurements that confirm nonessential transitions and graph motion are disabled.",
+    "score": 6,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 568872,
+        "sha256": "415f41834f90d11292e4eae493c03ce763db0b2d41efce54444cb05961e572aa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d3c829117cd67e3129618e215fb0263c67db7b4905809fae54ea12e4438ebacf",
+    "schema_version": 3,
+    "sha256": "f7f98d18fda0d1ad0eaac92a83e2a7525a7d629345e120d76e67a71e026bd5e3"
+  },
+  "response": {
+    "id": "resp_02b28e32ef3bff79016a9084da0eb087d0b8a0c7bf6d5ef525",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 16092,
+      "input_tokens_details": {
+        "cache_write_tokens": 16089,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 16433
+    }
+  }
+}

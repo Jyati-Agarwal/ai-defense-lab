@@ -1,0 +1,70 @@
+{
+  "cache_key": "0062298038532aa7784e412ce1ea7504739decdb5ae866d60f785469d95f0534",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop is visually strong: disciplined dark palette, crisp cyan/red semantics, bold headline, and a convincing table-to-trace hierarchy. Tablet remains coherent but becomes excessively tall. Mobile loses polish: type and metadata are extremely small, rows become repetitive vertical stacks, the headline wraps awkwardly, and the dense trace panel lacks breathing room. The global header also exposes clipped horizontal navigation with low-contrast labels, weakening orientation.",
+    "fix": "Redesign the mobile table as compact transaction cards with fewer visible metadata fields, raise body/label sizes and contrast, refine headline wrapping, and add clearer active/scroll states to the header navigation. Reduce tablet vertical density so the comparison result appears sooner.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d37f937f2c3b6043bd6c587b7eb554e054b023d1daff4339b73747670478049e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168681,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "daa2ecedf1846733711f4d935c02352283be4e3560c9bea2b8fe04beddf4c5ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167650,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "c45ebe68952126d724ec10d42118357c244f860678727c3939033daef1d9cdd2",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c5c21d3da11381dac81c53116cd829b6aa7a339932e5a5282af059439d83ab3",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0062298038532aa7784e412ce1ea7504739decdb5ae866d60f785469d95f0534"
+  }
+}

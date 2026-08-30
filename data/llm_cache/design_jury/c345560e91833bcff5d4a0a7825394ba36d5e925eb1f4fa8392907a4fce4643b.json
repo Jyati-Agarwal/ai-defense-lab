@@ -1,0 +1,70 @@
+{
+  "cache_key": "c345560e91833bcff5d4a0a7825394ba36d5e925eb1f4fa8392907a4fce4643b",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Fast measured rendering across viewports: FCP 48–64 ms, LCP 236–500 ms, TTFB 1.3–3.9 ms, zero long frames, and reported CLS ≤0.000192. No console, page, or request failures; no document-level horizontal overflow. However, each load transfers ~1.32 MB, including 1.15 MB of JavaScript, for a 12-screen app. No throttled mobile-network, cold-cache, or CPU-constrained measurements prove this remains fast on realistic devices. Attribution also records large late layout shifts during other screen transitions, despite the low session-window CLS.",
+    "fix": "Reduce and code-split the 1.15 MB JavaScript bundle so Live Wire loads only its required code. Then provide cold-cache tests under mobile CPU and network throttling, with interaction latency and transition-specific CLS measurements; eliminate the recorded late large shifts.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ad719baed03d498245159df5f1bdf2d963626651e1b17a8213f661a0e9150235",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168681,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "daa2ecedf1846733711f4d935c02352283be4e3560c9bea2b8fe04beddf4c5ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167650,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "c45ebe68952126d724ec10d42118357c244f860678727c3939033daef1d9cdd2",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2ad54fa2692a174b9fab4f7341be35f14ca8a648ccef2a9cae54131a0c35cf13",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c345560e91833bcff5d4a0a7825394ba36d5e925eb1f4fa8392907a4fce4643b"
+  }
+}

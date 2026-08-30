@@ -1,0 +1,13 @@
+id: GPF-A05
+name: Persistent agent-memory poisoning
+tier: agentic
+description: Untrusted content is stored as durable preference memory and corrupts a later purchasing session.
+kill_chain_stage: delayed_exec
+channel: agentic_checkout
+rail: card
+genai_capability: long-term preference memory
+primitives: [reconnaissance, context_manip, intent_manip, delayed_exec]
+observable_signals: [untrusted memory provenance, cross-session instruction reuse, delayed semantic drift]
+defense_hooks: [memory provenance labels, write-time trust policy]
+severity: critical
+feasibility_today: true

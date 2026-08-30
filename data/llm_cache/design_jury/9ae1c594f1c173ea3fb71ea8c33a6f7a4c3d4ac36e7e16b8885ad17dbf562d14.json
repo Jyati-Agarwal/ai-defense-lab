@@ -1,0 +1,70 @@
+{
+  "cache_key": "9ae1c594f1c173ea3fb71ea8c33a6f7a4c3d4ac36e7e16b8885ad17dbf562d14",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen usefully translates defense performance into attacker economics, clearly states that ROI remains above break-even, and avoids falsely claiming a live Mastercard result. However, the Mastercard authorization-time intent signal is only labeled “proposed, not deployed,” while the ₹ costs, fraud value, and 25.60× ROI lack visible provenance or assumptions. The connection from intent-integrity signals to the measured economic change is asserted rather than demonstrated.",
+    "fix": "Add an auditable scenario panel showing the source and formula inputs behind every economic value, then demonstrate how the signed intent signal changes authorization decisions, successful fraud, and ROI in the same measured run; keep the Mastercard integration claim explicitly simulated until deployed.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1f805fd046538b264f1b28b6ac3296d5662462019aad6e59b4c919757f34271b",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 527416,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "a7d635cde9fd5cf6dbb99f0826fb4b6fa4bceb0f979cf56e1aec04049c4af369",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 474327,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "0553aa6ef0c2705618ccf82a051a935ed573aee35c038b0720703dfe4ad60139",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 367802,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "c3f2db3b0ad4b0db20c1d19e6882d007eab6ce7e667230c8e7fa0f1769499abc",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2c41e215b695f88253e918ef356212f047865c8ae30bd3ae8b93ce472ab05df3",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9ae1c594f1c173ea3fb71ea8c33a6f7a4c3d4ac36e7e16b8885ad17dbf562d14"
+  }
+}

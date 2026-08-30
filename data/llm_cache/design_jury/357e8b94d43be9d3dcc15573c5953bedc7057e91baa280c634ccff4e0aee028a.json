@@ -1,0 +1,51 @@
+{
+  "cache_key": "357e8b94d43be9d3dcc15573c5953bedc7057e91baa280c634ccff4e0aee028a",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated scans report no confirmed WCAG violations, no viewport overflow, and no touch-target violations. However, mandate color contrast remains unresolved with serious incomplete results on 28 desktop nodes and 37 tablet/mobile nodes, including headings, explanatory text, status badges, flow nodes, and chart labels. No measured keyboard-navigation or reduced-motion evidence was provided, so demo readiness cannot be established.",
+    "fix": "Resolve and verify contrast against the actual gradient/overlapped backgrounds, including chart and flow text. Add measured keyboard-only testing for focus order, visible focus, operability, and traps—especially the React Flow nodes/controls and mismatch control. Test with prefers-reduced-motion: reduce and confirm that nonessential transitions or graph motion are disabled.",
+    "score": 6,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 575621,
+        "sha256": "d25ca023f665effd0c11a8f14330fa88b6f357ec73d3818e8d47012d93258741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 415373,
+        "sha256": "007c394855cee56b96fcc7e49ef1afed92452b6da97e30e7e9f882056d4468f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345338,
+        "sha256": "fac508874e53ea6667c5fbead9b9eb7990c72e9f029bbc1190e107f35fcbf733",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "55a10ad2f80e727b8cdc8da13d42b70142c383ebe827216afe406bbc8c8c72e9",
+    "schema_version": 3,
+    "sha256": "357e8b94d43be9d3dcc15573c5953bedc7057e91baa280c634ccff4e0aee028a"
+  },
+  "response": {
+    "id": "resp_05bc10248464ad78016a90839822f887d08ee7727d8e5f7fee",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 14689,
+      "input_tokens_details": {
+        "cache_write_tokens": 14686,
+        "cached_tokens": 0
+      },
+      "output_tokens": 441,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 15130
+    }
+  }
+}

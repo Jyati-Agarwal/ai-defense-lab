@@ -1,0 +1,70 @@
+{
+  "cache_key": "e14845a86dbd3171b8cd32e5f31786b9d788ab86504c06a3ce1a14852c88882b",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and replay-verdict panel clearly state the core claim, and the ASR chart supports the narrow training-fold result. However, the intended next action is unclear: “View fresh-row regression evidence” is visually secondary, while the screen also offers survivor expansion and global navigation. Critical terms such as ASR, fresh-row, independent_holdout=false, and guarded vaccination are unexplained. The desktop phylogeny is unreadably small; mobile text and chart labels are also very small, and Arena is hidden behind “More” in the mobile header.",
+    "fix": "Make one primary CTA—“Test survivors on fresh data”—prominent beside the verdict, briefly define ASR/training fold/fresh-row, show the key holdout result directly, and replace or enlarge the illegible phylogeny visualization. Keep Arena visibly identified as the current section on mobile.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d26c47973e5fe890e4fcab87b004929899f2bda51d99559b0086b8e3b75e275a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 258512,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "c3ff2c6990c2f0f9427ead606658c7232d65e732559b0e201505c4173f9373b0",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a06a7722455edb4823e5e1611b334350096ebc9a9ec834703b5fb17d775a1be9",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e14845a86dbd3171b8cd32e5f31786b9d788ab86504c06a3ce1a14852c88882b"
+  }
+}

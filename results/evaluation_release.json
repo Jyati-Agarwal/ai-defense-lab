@@ -1,0 +1,15 @@
+{
+  "model_hash": "e0add66d9ede329dca413d2ce78318f70717aada26188740498e812e15a79d28",
+  "dataset_sha256": "a352a8978407fa888de4af0d1e1c44942ca20397da54eb4a804448439a3a8afd",
+  "split_plan_sha256": "23626c4d431f0567bf5cdccd48511ef74ee0de10ed7cd4a1e6bc085634e7fe2b",
+  "source_tree_sha256": "b05d8b0d2c1e82235a101c021d27e288622c25d741906ff509e9e63619a29e11",
+  "events_file_sha256": "ca71ff6ade9a76f516c26cf8cfcae0d6eff9c664b0c7552271fdbd6442bf63cf",
+  "events_manifest_sha256": "834137990280b6d643b1a0b72e144afa26ac92f6fb2386cc1c805ed7a66ba713",
+  "behavior_profile_sha256": null,
+  "evaluation_preregistration_sha256": "08b774b653c8edc246443cf8ccefe4d299f07481bd3b23ce1b386befa82f2401",
+  "key_registry_sha256": "825c338734e3c1eb5acc20d9b74a5a94ef56bfc331a7e224881ca3f2ad1552d6",
+  "status": "failed",
+  "attempt_receipt": "evaluation_attempt_v2.json",
+  "attempt_receipt_sha256": "6e3b2e615f99ff44f99f715ac46725eff550a89cecada0ef5291c7bb5505f5d5",
+  "reason": "AssertionError: undetected per-vector rows require a feature fix: ['GPF-C04']"
+}

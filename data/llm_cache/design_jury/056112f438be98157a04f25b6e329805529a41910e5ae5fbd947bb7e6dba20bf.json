@@ -1,0 +1,70 @@
+{
+  "cache_key": "056112f438be98157a04f25b6e329805529a41910e5ae5fbd947bb7e6dba20bf",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-editorial identity, disciplined cyan/magenta accents, and a clear headline-to-atlas hierarchy across viewports. However, desktop vector cards are visibly clipped at the left edge, the dense lower workspace feels cramped beside excessive outer whitespace, and JSON content is cut off. Tablet/mobile are coherent but extremely tall, with tiny low-contrast metadata and a visually awkward header that truncates navigation and drops the brand name on mobile. Contrast proof is also incomplete for header links.",
+    "fix": "Repair desktop column clipping and constrain code overflow; rebalance the desktop workspace to use available width. Increase small-text contrast/size, tighten mobile vertical density, and give the responsive header a clearer active state plus an intentional compact navigation treatment.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3f223d7a72d059a09af61b426adcfc4ccfc40d0cccf52592f53bd56d5fe16874",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135798,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "1f360af8a5d3c4ed149267722fc68f14c3c0be1cc5607d9943dde558bf76bd79",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124652,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "67c03b0290042c8793e3f2cf83044e10769d0f0cfd0e016810edd27bbd7ce855",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1c78e5edf5b5dd5d8e745a0216302434945d4e006600dd3198fcd4aed923f11f",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "056112f438be98157a04f25b6e329805529a41910e5ae5fbd947bb7e6dba20bf"
+  }
+}

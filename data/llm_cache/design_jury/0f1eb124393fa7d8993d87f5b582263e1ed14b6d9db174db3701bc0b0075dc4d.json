@@ -1,0 +1,70 @@
+{
+  "cache_key": "0f1eb124393fa7d8993d87f5b582263e1ed14b6d9db174db3701bc0b0075dc4d",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Fast lab measurements across all viewports: FCP 48–64 ms, LCP 236–500 ms, load 115–128 ms, TTFB 1.3–3.9 ms, zero long frames, and reported CLS ≤0.000192. No browser or request failures occurred. However, transfer is 1.32 MB with 1.15 MB of JavaScript, and there is no measured compose interaction latency, INP, API duration, CPU throttling, or constrained-network result. The displayed 21–31 ms artifact is not sufficient performance proof.",
+    "fix": "Measure launch-to-result latency and INP under mobile CPU/network throttling, report /compose response duration, and reduce the 1.15 MB JavaScript payload through route/section code splitting. Re-test layout stability during section transitions.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e2a740e8d2f90b6add011104b87266efcb9d15faf2a127934200e86223404475",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 165162,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "7a159bdf3af0025bf9118a6ce28ff97e778506ec13e6c885483138a80e602694",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154245,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "dbe733d69da8007180911756e894f6e6b29ccf2fb8ecc4b3f3447200acc10631",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157819,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "78177fa2bfa2096f5b7e3766bde9d75ac392a6214e47fbeeb6b0f9bbac685a18",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b07f4a05259a9600022477b414104f067ed44009b6efe35b41fdbd0121bdf15a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0f1eb124393fa7d8993d87f5b582263e1ed14b6d9db174db3701bc0b0075dc4d"
+  }
+}

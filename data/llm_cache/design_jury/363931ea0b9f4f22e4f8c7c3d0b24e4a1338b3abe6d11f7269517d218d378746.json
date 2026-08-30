@@ -1,0 +1,51 @@
+{
+  "cache_key": "363931ea0b9f4f22e4f8c7c3d0b24e4a1338b3abe6d11f7269517d218d378746",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear, distinctive red-vs-blue arena concept: an unusually forceful editorial headline, opposing mutator/defense chambers, a central attack trajectory, and a fraud-phylogeny artifact. The restrained cyan/crimson tactical palette and mutation-survivor language make it more memorable than a generic dashboard. The idea weakens on tablet/mobile, where the desktop genealogy becomes a conventional stacked list and the tablet navigation overlays the visualization.",
+    "fix": "Preserve the signature phylogeny on narrow screens with a compact interactive branching diagram, and prevent the sticky navigation from crossing the arena. Give the attack rounds a stronger battle/replay visual treatment so the central experience is as ownable as the headline.",
+    "score": 8,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 671822,
+        "sha256": "5d5078096ab27cf8b1b99406159c4d2805cbde4507b741c7922a2bc58c4a3c54",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5acfc769bce39f4373c13453d8f0d9cfc2be4dda06994d215eee7ff4da52913e",
+    "schema_version": 3,
+    "sha256": "363931ea0b9f4f22e4f8c7c3d0b24e4a1338b3abe6d11f7269517d218d378746"
+  },
+  "response": {
+    "id": "resp_098f2008119fdefb016a9083af932487d098a2d13d33297291",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6205,
+      "input_tokens_details": {
+        "cache_write_tokens": 6202,
+        "cached_tokens": 0
+      },
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "reasoning_tokens": 239
+      },
+      "total_tokens": 6618
+    }
+  }
+}

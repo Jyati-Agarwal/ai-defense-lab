@@ -1,0 +1,51 @@
+{
+  "cache_key": "426278f778bea1a42cccc9a63b48d1adb1e0e1470166ae9be14fcd1c963a9d4a",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured loading is demo-ready across viewports: FCP 68–164 ms, LCP 516–1700 ms, TTFB 2.5–8.6 ms, and load 224–361.5 ms. Layout is stable on mobile (CLS 0) and desktop (0.00046), though tablet CLS reaches 0.0478. There is no horizontal overflow, and no console, page, or request failures. Animation/render timing is smooth on mobile and tablet with 0 long frames, but desktop averages 22.36 ms per frame with a 1.22% long-frame ratio and 50 ms worst frame. The primary cost is a heavy 1.30 MB transfer, including 1.14 MB of JavaScript, over 17 requests.",
+    "fix": "Reduce the 1.14 MB JavaScript payload through route/screen-level code splitting and dead-code removal; profile the injection toggle and surrounding effects to keep desktop frames under 16.7 ms. Reserve final tablet layout dimensions to bring CLS closer to zero.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 265633,
+        "sha256": "fcd4294a9f2642fd233b4d5bd8c740c380d89fd40709ac7b065ac3e956a094b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 230529,
+        "sha256": "b4dc4c9bcae4bb5fbb6d0e89a2340e0bbbea869fbc18719f37cf5bd22e7725f9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 204128,
+        "sha256": "41b8309d8318f60d01cf64e2e376ddb01c03a3285f49935e3f476fe423b5f09b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "28fa03edfe387789c2dbecd6b77718e98b166f21b3d6d0c6435fd94daef36f36",
+    "schema_version": 2,
+    "sha256": "426278f778bea1a42cccc9a63b48d1adb1e0e1470166ae9be14fcd1c963a9d4a"
+  },
+  "response": {
+    "id": "resp_07788852f4f4ab2f016a907a858dc887d09a55ed939866051b",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6131,
+      "input_tokens_details": {
+        "cache_write_tokens": 6128,
+        "cached_tokens": 0
+      },
+      "output_tokens": 442,
+      "output_tokens_details": {
+        "reasoning_tokens": 194
+      },
+      "total_tokens": 6573
+    }
+  }
+}

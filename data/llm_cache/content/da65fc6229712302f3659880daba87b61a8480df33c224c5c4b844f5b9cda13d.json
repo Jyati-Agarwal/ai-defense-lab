@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-da65fc622971",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "da65fc6229712302f3659880daba87b61a8480df33c224c5c4b844f5b9cda13d",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] जोखिम संकेत: नकली भुगतान पुष्टि व तात्कालिकता से धन माँगा गया; दुरुपयोग योग्य विवरण हटा दिए गए हैं।",
+  "kind": "scam_transcript",
+  "language": "hi",
+  "operational": false,
+  "response": {
+    "id": "resp_01392788f482a9a4016a8f5b4c282887d089b3ccdb4ad15ced",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 114,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 229
+    }
+  },
+  "response_text_sha256": "de3b3049db4cc9a6fd86bebd6b4fa1f8f3f561b4440746298bf151955aaaac6a",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "da65fc6229712302f3659880daba87b61a8480df33c224c5c4b844f5b9cda13d",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "scam_transcript",
+      "language": "hi",
+      "variant": "baseline"
+    }
+  }
+}

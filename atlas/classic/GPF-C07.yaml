@@ -1,0 +1,13 @@
+id: GPF-C07
+name: Refund destination diversion
+tier: classic
+description: A valid purchase is refunded to a different funding instrument controlled by the offender.
+kill_chain_stage: payment_manip
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [tool_manip, payment_manip, cash_out]
+observable_signals: [refund instrument mismatch, rapid purchase-refund cycle, operator account novelty]
+defense_hooks: [original-tender enforcement, refund anomaly rule]
+severity: high
+feasibility_today: true

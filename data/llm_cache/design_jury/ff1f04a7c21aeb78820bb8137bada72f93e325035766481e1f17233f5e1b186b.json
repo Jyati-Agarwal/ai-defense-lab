@@ -1,0 +1,70 @@
+{
+  "cache_key": "ff1f04a7c21aeb78820bb8137bada72f93e325035766481e1f17233f5e1b186b",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "The precedent section passes automated WCAG checks at all three viewports, has complete visible-focus keyboard traversal, no measured touch-target failures, no viewport overflow, and no element movement under reduced motion. However, contrast remains unverified for the actual header: axe reports serious color-contrast incomplete results (12 mobile links; 1 tablet link). Tablet/mobile navigation also clips many off-screen links into a horizontal rail, although keyboard traversal succeeds.",
+    "fix": "Provide measured contrast ratios for every header state and raise failing colors to WCAG AA. Add explicit header touch-target and horizontal-scroll discoverability tests, plus screen-reader and 200%/400% zoom-reflow evidence, before treating this as demo-ready.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1c56a5325911b6910f1c846dedd3a88c351c1177232b67436b461c44ce590791",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 181630,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "1816f5087c45cd751bee0dbc1f1ce5526d57fcc6341d95ae35a905fb79411109",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154156,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "dbb1ba829c5c1a29de5a5cb04dcbbc44fb8cb68c32df9b5642de051ea42dfd47",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154060,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "b9fa542e76190f5482630cb562b26c5036921ecb064e049b4610c053e4a6dd8a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "833810a631496013b30088278d30487fc007a3de3abeeea9714c55446eccc145",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ff1f04a7c21aeb78820bb8137bada72f93e325035766481e1f17233f5e1b186b"
+  }
+}

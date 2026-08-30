@@ -1,0 +1,13 @@
+id: GPF-A04
+name: Cross-domain tool-topic pivot
+tier: agentic
+description: A shopping workflow pivots from the requested category into an unrelated financial tool sequence.
+kill_chain_stage: tool_manip
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous multi-tool planning
+primitives: [context_manip, intent_manip, tool_manip, payment_manip]
+observable_signals: [consecutive topic cosine jump, novel retrieved domain, payment after unrelated tool]
+defense_hooks: [tool-topic continuity model, tool allowlist]
+severity: critical
+feasibility_today: true

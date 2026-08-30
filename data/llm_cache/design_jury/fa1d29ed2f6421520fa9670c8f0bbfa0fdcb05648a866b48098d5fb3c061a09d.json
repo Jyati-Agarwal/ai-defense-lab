@@ -1,0 +1,51 @@
+{
+  "cache_key": "fa1d29ed2f6421520fa9670c8f0bbfa0fdcb05648a866b48098d5fb3c061a09d",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Frame pacing is stable: tablet/mobile average about 16.67 ms with 16.8 ms worst frames and zero long-frame ratio; desktop has zero long frames but averages 19.31 ms with a 33.4 ms worst frame. However, the standard samples show 0 active animations and 0 changed elements at every viewport, so no interaction or transition quality is demonstrated. Reduced motion is visually static, but still reports 1 active animation on desktop and mobile, while 205–251 elements retain transitions.",
+    "fix": "Capture measured frames while triggering Atlas interactions such as tier/filter changes, stage navigation, and vector selection. Demonstrate intentional easing, continuity, and stable frame pacing, then make reduced-motion runs report zero active animations and disable nonessential transitions rather than applying them to nearly every sampled element.",
+    "score": 6,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 568873,
+        "sha256": "fc5d1de0f30df9b5e63cae4a23ae9e104a06c086894bbf9e56475aa05ec19b96",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0613965e76687b44645e95ddb70e837e1b64004fc2b0e06b0465791729b60e3d",
+    "schema_version": 3,
+    "sha256": "fa1d29ed2f6421520fa9670c8f0bbfa0fdcb05648a866b48098d5fb3c061a09d"
+  },
+  "response": {
+    "id": "resp_0a2fe07fdbd529cf016a908383500887d0979782ae974d9a7a",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7559,
+      "input_tokens_details": {
+        "cache_write_tokens": 7556,
+        "cached_tokens": 0
+      },
+      "output_tokens": 443,
+      "output_tokens_details": {
+        "reasoning_tokens": 249
+      },
+      "total_tokens": 8002
+    }
+  }
+}

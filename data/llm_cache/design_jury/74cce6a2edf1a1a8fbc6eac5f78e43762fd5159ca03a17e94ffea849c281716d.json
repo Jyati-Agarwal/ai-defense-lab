@@ -1,0 +1,70 @@
+{
+  "cache_key": "74cce6a2edf1a1a8fbc6eac5f78e43762fd5159ca03a17e94ffea849c281716d",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting sentence, constrained-recall panels, ablation takeaway, and “Compare configurations” CTA communicate a coherent argument. However, the precision–recall chart is hard to interpret because its x-axis direction/ticks are unclear, the CTA appears only after a long results stack, and mobile labels and explanatory copy are extremely small. The mobile header also does not visibly identify Metrics as the current section.",
+    "fix": "Clarify chart axes and tick direction, increase mobile text and label sizes, show the active Metrics location in the compact header, and place or repeat a clearly described comparison action near the opening summary.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3c3cfe23b17402b7619ab0f7f871dbf8b1e4f7d6ae54d7d5a918740409d7bf44",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 209893,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "516af07d2bb15b1f87157c00ad8723131390c3124df8778a003762478bc17728",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 186543,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "e576d08c081ed4f5eed3e755f220a2c1fb760a7a9687f2ad01bbefd7d67fc590",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 175283,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "6f1ee1bfec2b74e82f7dcdb55ddd9d10c99ba3cfdaaca2e5f972ef2be15b5184",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "37002dd8083ce4987eab3426ca507b22f9fbf1e3c6df023b081505ff1a49bc3b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "74cce6a2edf1a1a8fbc6eac5f78e43762fd5159ca03a17e94ffea849c281716d"
+  }
+}

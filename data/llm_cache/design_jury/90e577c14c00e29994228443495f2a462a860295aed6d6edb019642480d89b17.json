@@ -1,0 +1,51 @@
+{
+  "cache_key": "90e577c14c00e29994228443495f2a462a860295aed6d6edb019642480d89b17",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Frame pacing is stable: tablet/mobile average about 16.67 ms with 16.8 ms worst frames, desktop has no long frames despite a 19.31 ms average and 33.4 ms worst frame. However, standard-mode sampling found 0 active animations and 0 changed elements at every viewport, so no entrance, toggle, or state-transition motion was actually demonstrated. Reduced motion matched and produced no visual changes, but still reported 1 active animation and 76 transition-bearing elements.",
+    "fix": "Capture measured before/during/after frames for the Agent Vision toggle and any entrance/state transitions across viewports, with easing and duration evidence. Under prefers-reduced-motion, remove the remaining active animation and disable or neutralize nonessential transitions rather than only producing unchanged sampled frames.",
+    "score": 6,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 347474,
+        "sha256": "4cbfb072bf31c5828822ae371f295e1f83327ee04593f20a64bce61bcb08a149",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312117,
+        "sha256": "7e29c6d90b79a34002272db14277082fdccfb8fa3bfbcf8f4729e298704152be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264865,
+        "sha256": "10238cacde8d09b1fe1f82c33d5c23b8d3348a3eb6ee3b46faa3f9d8467d3ef1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f3bac0ca313ec00108b03e782f17f8add2fc2f004a390e0ba09fffde5bdbeff8",
+    "schema_version": 3,
+    "sha256": "90e577c14c00e29994228443495f2a462a860295aed6d6edb019642480d89b17"
+  },
+  "response": {
+    "id": "resp_096b0251bfd800ab016a90839b4d9487d0beeff85ff8daf06d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7137,
+      "input_tokens_details": {
+        "cache_write_tokens": 7134,
+        "cached_tokens": 0
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 7577
+    }
+  }
+}

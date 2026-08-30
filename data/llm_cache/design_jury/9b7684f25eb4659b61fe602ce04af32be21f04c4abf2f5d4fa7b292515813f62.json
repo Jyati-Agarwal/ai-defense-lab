@@ -1,0 +1,70 @@
+{
+  "cache_key": "9b7684f25eb4659b61fe602ce04af32be21f04c4abf2f5d4fa7b292515813f62",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The intent→cart→payment chain, paired with the widening cyan/red divergence graphic and the verified-cryptography-versus-failed-semantics contrast, creates a clear visual thesis rather than a generic dashboard. It remains recognizable across all three viewports, though tablet/mobile replace the more distinctive node-link chain with conventional stacked cards.",
+    "fix": "Preserve a compact connected-chain motif on tablet and mobile, and make the divergence visualization more prominent and explicitly tied to the mismatched cart outcome.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "abef3fc509180ca848a45224109507748e49717578a30d37f20708f78dcccd60",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152255,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138131,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b45f8c48af97fd29068c9e7fc6a19be2b507e6a2cff3270507d8ce3e16bf27a8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9b7684f25eb4659b61fe602ce04af32be21f04c4abf2f5d4fa7b292515813f62"
+  }
+}

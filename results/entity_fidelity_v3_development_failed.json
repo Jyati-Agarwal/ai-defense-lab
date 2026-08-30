@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "artifact": "entity_fidelity_v3_calibration_development_failure",
+  "immutable": true,
+  "status": "STOP_FAIL",
+  "release_eligible": false,
+  "calibration_only": true,
+  "diagnostic_transactions_accessed": false,
+  "sealed_final_transactions_accessed": false,
+  "threshold_max_d_upper_95": 0.65,
+  "threshold_changed": false,
+  "source": {
+    "dataset": "UCI Online Retail 352",
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+    "manifest_sha256": "0fca9904171c1382bfdd8dc1369929a310817a63472474dc61dee4a4ae800cb9",
+    "partition": "calibration",
+    "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+    "transactions_sha256": "3614fdd252819b132b5900ac085372e89a148f7f51784bc3d14149d09b22abc1",
+    "customers": 2440,
+    "transactions": 10621
+  },
+  "bindings": {
+    "implementation_sha256": {
+      "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+      "sim/population.py": "a68b006f4f76f0304b80cfa2ea1de57e8ee095c077265da6a6e14daee459d107"
+    },
+    "requirements_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "requirements_txt_sha256": "4707cda4b7e8dd67654d3589367dc1336b12ba9b343b4734bf3351009a48646c",
+    "all_calibration_behavior_profile_sha256": "81cf316ddda24799eb68a1b021a66f70d5c66c4d9517a0c84af5165f02fad2b2",
+    "fold0_training_behavior_profile_sha256": "088934a6bce0b9ac9ddcfc8c1ae0a23ba2298f91b989d8cd0c6525f761ec6b0",
+    "fold0_training_customer_ids_sha256": "8a505b97fbc351ff10cbd6843cd33b990c75406ced9f4b410185642755d17b47",
+    "fold0_evaluation_customer_ids_sha256": "a3841fec5aad3afe5438a09add8ff4f36b1ca6c1a6e729ebe81d99ba6fb8a25d",
+    "preserved_v2_failure_sha256": "61e11195096c37cf701bfa07274e0df0f71d549e0f85d7eb828d34c54a8f815e"
+  },
+  "gate": {
+    "statistic": "D=max(AUC,1-AUC)",
+    "required": "97.5th percentile of readiness D must be <= 0.65",
+    "official_readiness_run_performed": false,
+    "reason": "Calibration-development fold 0 remained above the unchanged threshold; work stopped before the official 3-seed/5-fold readiness gate."
+  },
+  "evidence": {
+    "old_fold0_d": 0.82184,
+    "hurdle_fold0_d": 0.789251383042209,
+    "repeat_stratum_d": 0.8283135304411899,
+    "raw_repeat_core_d": 0.800104,
+    "read_only_k2_diagnostic": {
+      "raw_repeat_core_d": 0.797291,
+      "rendered_fold0_d": 0.781381,
+      "implemented": false
+    }
+  },
+  "limitations": [
+    "This is calibration-development evidence, not an official readiness, protocol, sealed-score, or production-release artifact.",
+    "The fixed-K2 mixture was evaluated only as an authorized read-only diagnostic monkeypatch and was not implemented.",
+    "No diagnostic or sealed-final transaction rows were selected, materialized, or scored during v3 development.",
+    "V3 failed the unchanged 0.65 distinguishability threshold and must not be released."
+  ]
+}

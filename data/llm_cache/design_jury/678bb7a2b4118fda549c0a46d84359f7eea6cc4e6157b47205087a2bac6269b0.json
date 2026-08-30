@@ -1,0 +1,51 @@
+{
+  "cache_key": "678bb7a2b4118fda549c0a46d84359f7eea6cc4e6157b47205087a2bac6269b0",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The desktop view has a polished dark technical aesthetic: disciplined grid, bold headline, restrained cyan/emerald/red accents, and a clear verified-versus-semantic-failure hierarchy. Tablet and mobile preserve the overall visual language, spacing, and card treatment. However, the mandate-chain visualization does not adapt cleanly: its first node is clipped/obscured at the left on tablet and mobile, labels become extremely small, and the floating zoom controls dominate the mobile diagram. Several microcopy areas are also low-contrast and undersized. These responsive defects keep the screen from being genuinely demo-ready across all three viewports.",
+    "fix": "Create responsive diagram layouts rather than scaling the desktop canvas: fit or stack the three nodes within the available width, keep every node unobstructed, reduce or relocate zoom controls on mobile, and enforce readable minimum label sizes. Slightly increase contrast and size for explanatory microcopy while retaining the current restrained palette.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 572745,
+        "sha256": "1ed69237735825246a0a552e4e24ad4fdc9607a258a30a648c924ba20923cc1a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 422524,
+        "sha256": "d9524be96c9b2e6acf3c0e61c304a522c4dfe3c706f6ff882aa6798213b2b172",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 331083,
+        "sha256": "a509c0554074d53b06dd6db76783211577ddd4f7f16815a57f7bd5df6c2bea1e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8fbdfeedcc1e2cb941c2a75d16f0cc8f238cb237e0e4fc4aeaff067f4036e4cc",
+    "schema_version": 2,
+    "sha256": "678bb7a2b4118fda549c0a46d84359f7eea6cc4e6157b47205087a2bac6269b0"
+  },
+  "response": {
+    "id": "resp_0bb948d7b58f289e016a907a76426487d0a68c1a95ff9f3bd4",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6484,
+      "input_tokens_details": {
+        "cache_write_tokens": 6481,
+        "cached_tokens": 0
+      },
+      "output_tokens": 400,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 6884
+    }
+  }
+}

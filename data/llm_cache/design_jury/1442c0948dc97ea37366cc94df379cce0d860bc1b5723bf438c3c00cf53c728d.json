@@ -1,0 +1,70 @@
+{
+  "cache_key": "1442c0948dc97ea37366cc94df379cce0d860bc1b5723bf438c3c00cf53c728d",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 25.60× ROI, “above break-even” status, before/after ledger, and authorization-intervention CTA communicate the conclusion and next step consistently at all three sizes. However, the screen never shows the assumed successful-fraud value or enough arithmetic to independently derive 25.60×, so the central result still needs explanation. On mobile, Economics is also outside the visible header rail, weakening location awareness.",
+    "fix": "Expose the ROI calculation with its actual inputs directly beside the result, including successful-fraud value and total attack cost. Add a visible current-section treatment in the responsive header, and phrase the CTA as an explicit action such as “Review authorization intervention.”",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "b50eeb6651a9990f8888b4a1ddde8b85c370d0d860d645d4560a6be80beded3a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 221851,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "f177f38e6e654d609bbee3a33e1e5d6041bf0deab809571b6d9a7d49b3004add",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181765,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "44b28f6c2c6bd35b003cee552ffb3e68f01d841cb612b8ccb88c37ebc95225f8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177608,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "55dfa43fc82f9d6388870bd3bad6686c28fe27970c2e3a3c16b3c6eef06ef069",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8f3f0c5a052d9640eb7f4aa8257f2fbc22bbf965f267da73f4aad512a9a99027",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "1442c0948dc97ea37366cc94df379cce0d860bc1b5723bf438c3c00cf53c728d"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "404055e1d059546909fdfd02b6c0869199e0903cf78b1c52665ca9fda8eb9ea3",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, “What’s happening” explanation, attack-success chart, and verdict collectively communicate the training-fold result, while “Review fresh-row regression” supplies a next step. However, the page relies heavily on specialist terms such as “zero survivors,” “guarded promotion,” and “fresh-row regression.” On mobile, the chart labels and supporting copy are extremely small, and the prominent desktop/tablet “Enter Red Mode” action is absent, weakening action consistency across viewports.",
+    "fix": "Use one consistent primary CTA across all viewports, labeled in plain language such as “Run the next red-team round.” Add a short plain-English definition of “survivors,” increase mobile chart/copy sizing, and explicitly distinguish the 0% training result from the 25 mutations awaiting holdout testing.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 671822,
+        "sha256": "5d5078096ab27cf8b1b99406159c4d2805cbde4507b741c7922a2bc58c4a3c54",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dec0c8e1b046da38ef7eadcb4c5e29b3c415f8c54dd4aa59d762a8016d9c6ca7",
+    "schema_version": 3,
+    "sha256": "404055e1d059546909fdfd02b6c0869199e0903cf78b1c52665ca9fda8eb9ea3"
+  },
+  "response": {
+    "id": "resp_0aecb33f2876b6e3016a9083af451887d0b16f35e3510b434c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6202,
+      "input_tokens_details": {
+        "cache_write_tokens": 6199,
+        "cached_tokens": 0
+      },
+      "output_tokens": 500,
+      "output_tokens_details": {
+        "reasoning_tokens": 309
+      },
+      "total_tokens": 6702
+    }
+  }
+}

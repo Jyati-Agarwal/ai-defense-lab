@@ -1,0 +1,70 @@
+{
+  "cache_key": "04b56f528602fbb0fa7e4d16209ee57a8c49db30ee6ab3a135ee90e1786d86e7",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured rendering is fast and stable across all three viewports: FCP 32–48 ms, LCP 340–504 ms, CLS 0.000019–0.000192, no long frames, and no console/page/request failures. However, the page transfers 1.33 MB, including 1.16 MB of JavaScript, for 17 requests. The evidence covers a 12-screen page rather than isolating Atlas costs, and provides no cold-cache or throttled-network/CPU measurements, so an 8 is not proven.",
+    "fix": "Code-split and lazy-load screen-specific JavaScript so Atlas does not pay for all 12 screens upfront; then provide Atlas-isolated bundle attribution plus cold-cache mobile testing under network and CPU throttling.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3a99c6e2f3413344b4817441eed6e30c4537d2a35151c42861969acd4bd7d3c7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 139946,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "c363c368ead739a5abda54b8642834198e4f4a19dc506465ca34f1f4c452bed0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 128613,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "1cf69813cb409e3778809f445bdc44d97c6c05300ebc5de0531a0b8ee97a2749",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7cd1daeac0593109f70f83dd7dcb1fe15e9f03848c66904542a5ef480f50537c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "04b56f528602fbb0fa7e4d16209ee57a8c49db30ee6ab3a135ee90e1786d86e7"
+  }
+}

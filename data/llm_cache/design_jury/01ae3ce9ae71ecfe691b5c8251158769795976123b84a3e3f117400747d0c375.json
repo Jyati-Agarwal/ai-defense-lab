@@ -1,0 +1,70 @@
+{
+  "cache_key": "01ae3ce9ae71ecfe691b5c8251158769795976123b84a3e3f117400747d0c375",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-technical art direction, disciplined cyan/red palette, bold headline hierarchy, and a polished desktop atlas visualization. However, desktop vector cards are visibly clipped at the left edge, tablet/mobile replace the distinctive graph with a plain grid, and the long stacked panel becomes visually monotonous. Metadata, labels, and JSON are extremely small; the JSON is horizontally clipped on tablet/mobile. The global header is overcrowded, with partially hidden navigation and weak discoverability at smaller widths.",
+    "fix": "Prevent card and code clipping; give JSON a deliberate scroll/wrap treatment. Increase small-text size and contrast, tighten the mobile panel’s vertical rhythm, preserve more of the atlas’s visual identity below desktop, and redesign the compact header with a clear brand/active state plus an explicit navigation control.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "48e8d3d8aae3bdfbbe35e67bac863afa854a164ce503d7f66cc54c5bcada2c7d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135661,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "23059da5fb4c6d5ac9b22d09aa2eb27527020fb8fe0a9aa993e35c146c316a8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124623,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "7c83bc2033feeb61801390c3c88b3fc0dc99dbaebfb210e21d7771f920b9fc42",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c775877ddbe4ffeb6ff19655a804c0c724814d884104a2ef1a741092cddf5555",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "01ae3ce9ae71ecfe691b5c8251158769795976123b84a3e3f117400747d0c375"
+  }
+}

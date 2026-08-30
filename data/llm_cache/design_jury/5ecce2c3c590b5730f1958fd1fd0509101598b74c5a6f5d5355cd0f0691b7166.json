@@ -1,0 +1,70 @@
+{
+  "cache_key": "5ecce2c3c590b5730f1958fd1fd0509101598b74c5a6f5d5355cd0f0691b7166",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “Your turn, Red.” framing, cyan/magenta threat palette, synthetic attack controls, and immediate ALLOW-versus-BLOCK result create a coherent demo narrative across all three viewports. However, the dominant visual language remains familiar dashboard UI—sliders, bordered cards, badges, progress bars, and large status text—with no evidenced signature visualization or memorable transformation after launch. The global header reinforces the lab aesthetic but is also a conventional horizontal navigation rail.",
+    "fix": "Make LAUNCH EVENT trigger a distinctive visual centerpiece: animate the configured attack as a trace flowing through evidence layers, then visibly split into Legacy ALLOW and Intent Integrity BLOCK paths. Preserve the controls, but let this causal attack-to-decision sequence become the screen’s recognizable demo moment.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a73aa07fa929dc130d6511cc130397376c1c8a695bc14434dea5dfe20e744b1b",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 165162,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "7a159bdf3af0025bf9118a6ce28ff97e778506ec13e6c885483138a80e602694",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154245,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "dbe733d69da8007180911756e894f6e6b29ccf2fb8ecc4b3f3447200acc10631",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157819,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "78177fa2bfa2096f5b7e3766bde9d75ac392a6214e47fbeeb6b0f9bbac685a18",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "78493b2a7ac6651f1244be037438f6dff3c2508e776b93fa7915fbd8ed30b5df",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "5ecce2c3c590b5730f1958fd1fd0509101598b74c5a6f5d5355cd0f0691b7166"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "34ef453e8f39cee6d7fe85ee975c733f79b37580961c81228bcdc2ee35c7af74",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline clearly states the contradiction, and the numbered intent-to-payment cards make the example understandable across viewports. “Follow the payment” is visually dominant, but its destination/outcome is unexplained; “Open evaluation scope” is also vague. Terms such as “release-custodied synthetic signatures,” “scored event artifact,” and “intent evidence” require presenter context. On tablet/mobile, the global navigation is visibly clipped, hiding later sections and Red mode.",
+    "fix": "Replace the jargon-heavy supporting copy with a plain-language explanation of how a valid payment can violate the user’s intent. Rename the CTAs to state their destinations, such as “Trace this payment” and “See how intent is evaluated,” and provide an explicit mobile/tablet navigation affordance for hidden sections.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ccaac2730cab60acc8ecfa7ac84b473a7d89e3fc029045d9eb6994878cae9dcb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 227388,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e55cd47805f3bd2f0966296db6b07c597ec6dd69cba12bf100d1fa7ed48b9e1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223319,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "b2ba478664384fb0ed52086ef706585fbb9d543c221e8bfad98d7b3d181a8ba8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "82536484a97663befda816e630c479fc97be22018ee895e394af8306a7fb380a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "34ef453e8f39cee6d7fe85ee975c733f79b37580961c81228bcdc2ee35c7af74"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "d5215d19d66d746073fdd662ad48bd157f23198c9552006f571df54b5a009668",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and subtitle clearly state the thesis, metric cards include useful interpretations, and the ablation panel provides a concrete takeaway. However, the precision–recall chart is hard to decode: recall is labeled on the x-axis but the only visible “100%” tick appears at the left, and constrained operating points are not plotted despite the explanatory copy. On mobile, dense microcopy and chart labels are extremely small. The sole next action, “Compare configurations,” appears only after the full long scroll and does not explain what comparison will open. The mobile/tablet header also hides the current Metrics location behind horizontal navigation.",
+    "fix": "Plot and label the constrained operating points directly on the PR curve, correct or clarify axis direction and ticks, increase mobile annotation sizes, and place a descriptive “Compare configurations” action near the summary with clear destination/context. Keep the active Metrics item visible in the responsive header.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3875bf675f889fc1930f4cbf3d66e12db6518a53419d2c312e54c99fdcafe5b2",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 216751,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "4fefcf8a050c98eed2c2e464c8f916a821467ec023c0b57b6acd5580d8ce12a7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193203,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "c17515152a5cbe1b5480df2d408d6bb05fa9c16c90393bf14d68310a5dff6557",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181041,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "ca5425ca55207cf7d552e5cfb351b1e874b02be71d7edf9cea8103dd0b034eda",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bd89c743bedf4b7da4054b0810cc96ed728cbe85ccca29dcbf7ee1e751652f8a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d5215d19d66d746073fdd662ad48bd157f23198c9552006f571df54b5a009668"
+  }
+}

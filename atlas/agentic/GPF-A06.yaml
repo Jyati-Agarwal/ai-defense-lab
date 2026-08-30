@@ -1,0 +1,13 @@
+id: GPF-A06
+name: Retrieval-ranking result poisoning
+tier: agentic
+description: Manipulated search results dominate agent context and steer selection toward an attacker merchant.
+kill_chain_stage: reconnaissance
+channel: agentic_checkout
+rail: card
+genai_capability: retrieval-augmented product discovery
+primitives: [reconnaissance, context_manip, merchant_manip]
+observable_signals: [domain reputation novelty, ranking concentration, merchant-affinity discontinuity]
+defense_hooks: [source diversity rule, domain reputation]
+severity: high
+feasibility_today: true

@@ -1,0 +1,51 @@
+{
+  "cache_key": "fa7bd90013354066915e153cc313cb6ea61ebe0aadd74f92b7fc65e51826db45",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Positive measured evidence: zero confirmed axe violations, no touch-target violations, no horizontal document overflow at 1440/768/390 px, keyboard navigation reaches #mandate, a measurable skip-link target exists, and reduced-motion mode leaves the hero fully visible with no transform. However, accessibility is not demo-ready because every viewport has unresolved serious ARIA findings (6 nodes), a critical duplicate-ID/ARIA finding (2 nodes), and hundreds of unresolved color-contrast checks (553 desktop, 508 tablet, 484 mobile). The keyboard evidence covers the horizontal navigation path only and does not prove focus visibility, operation of the mandate diagram controls, or activation behavior.",
+    "fix": "Resolve and rerun all incomplete audit checks: remove prohibited ARIA attributes, make every ID referenced by ARIA or labels unique, and verify/fix contrast for all flagged text and controls. Add measured keyboard tests for visible focus, activation, and logical traversal of the mandate controls, including zoom and reset, across all viewports.",
+    "score": 6,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 572745,
+        "sha256": "1ed69237735825246a0a552e4e24ad4fdc9607a258a30a648c924ba20923cc1a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 422524,
+        "sha256": "d9524be96c9b2e6acf3c0e61c304a522c4dfe3c706f6ff882aa6798213b2b172",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 331083,
+        "sha256": "a509c0554074d53b06dd6db76783211577ddd4f7f16815a57f7bd5df6c2bea1e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c9e8a70b8a4b27cae7b582d3573f7a9924d2ef11cc8b3e2eed64bc736d8f832",
+    "schema_version": 2,
+    "sha256": "fa7bd90013354066915e153cc313cb6ea61ebe0aadd74f92b7fc65e51826db45"
+  },
+  "response": {
+    "id": "resp_0676937595412621016a907a7f0a3c87d0ade92bd6971d0cf5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 8129,
+      "input_tokens_details": {
+        "cache_write_tokens": 8126,
+        "cached_tokens": 0
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 8521
+    }
+  }
+}

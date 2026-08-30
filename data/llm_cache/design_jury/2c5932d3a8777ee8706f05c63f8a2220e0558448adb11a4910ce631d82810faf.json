@@ -1,0 +1,70 @@
+{
+  "cache_key": "2c5932d3a8777ee8706f05c63f8a2220e0558448adb11a4910ce631d82810faf",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial claim and 25.60× ROI dial create a clear focal point across all viewports, but the dominant visual language—dark cards, neon status pills, ledger rows, cyan/red metrics, and a simple gauge—remains familiar cybersecurity-dashboard styling. The proposed-control card adds information rather than a distinctive visual idea, and the global header reinforces the same generic command-console aesthetic.",
+    "fix": "Build the screen around one ownable economics metaphor—for example, a dramatic before/after profitability curve showing defense collapsing the attacker’s margin toward break-even—and make the 25.60× residual gap the visual climax. Reduce supporting cards and ledger chrome so that signature visualization, not the dashboard furniture, is what viewers remember.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a688f04bfbe48b1e499e85943ceb845dbd6701fcafe20066b7fce258aacdd8e4",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 227948,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "9ee959e011ea4d7cc9015fc74e61f006b77dca77d1b11335801f95d1d5baa3cd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 187441,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "df3993155f45904ad413f4195170c7dd5fee9790ec719586eb56f6fae83d9fe5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 182945,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "52e62f22456d90d53529c32a129d16f9041f4a94cf8cdc5fa7735f5c64a94934",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "65b39d4984568dd77101721dd56ddf773af142540d5e8171de4c771758e4c21a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2c5932d3a8777ee8706f05c63f8a2220e0558448adb11a4910ce631d82810faf"
+  }
+}

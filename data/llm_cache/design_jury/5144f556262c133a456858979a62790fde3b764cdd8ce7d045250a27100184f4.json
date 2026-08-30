@@ -1,0 +1,51 @@
+{
+  "cache_key": "5144f556262c133a456858979a62790fde3b764cdd8ce7d045250a27100184f4",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The core instruction and primary action are explicit: “Change one synthetic event…” leads directly to a prominent “LAUNCH EVENT,” and the result compares Legacy Rules with Intent Integrity side by side. However, the persistent navigation obscures the hero on desktop and overlays the controls on tablet. The results also lack a clear run-state or “generated from these settings” marker, so users cannot tell whether visible decisions are current or stale. “Why Blue decided” introduces unexplained terminology, while a fused risk of 0/100 sits beside nonzero evidence and warnings such as an unusual graph and high price, weakening immediate comprehension.",
+    "fix": "Prevent the navigation from covering content at every breakpoint; label results as initial, running, or generated with a timestamp/configuration summary; rename or define “Blue”; and explain how nonzero evidence signals reconcile with the 0/100 fused-risk result.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 420368,
+        "sha256": "12950c37678bcfb421d6580dd025998186a0b45418d476e8b84b208271136b57",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393099,
+        "sha256": "9e6c6fc8f2f29e27aa8188fc29bbc5672a97c775d714b409bb417a5b87bf9f2e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308220,
+        "sha256": "8540d02349e79701b635cf929b07fccdf3f20743ddebb6bf9f83de80cda0019f",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3cda3766d06bd3c3c8db5de5666c23a01c9ed3eaf4564e8b7fbfa2cdb81be553",
+    "schema_version": 3,
+    "sha256": "5144f556262c133a456858979a62790fde3b764cdd8ce7d045250a27100184f4"
+  },
+  "response": {
+    "id": "resp_0057d09a48b868e4016a9085081e3887d09d2358735feba885",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6193,
+      "input_tokens_details": {
+        "cache_write_tokens": 6190,
+        "cached_tokens": 0
+      },
+      "output_tokens": 497,
+      "output_tokens_details": {
+        "reasoning_tokens": 290
+      },
+      "total_tokens": 6690
+    }
+  }
+}

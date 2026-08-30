@@ -1,0 +1,51 @@
+{
+  "cache_key": "b9629f18994afb96de61a345f89e5bf0cd49e68cc24d75cbea3eb36572544214",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The screen plainly states the task—configure a synthetic event, launch one server-side score, then inspect decisions and evidence—and the high-contrast “LAUNCH SYNTHETIC EVENT” button makes the next action unmistakable at all three viewports. Control labels, current values, the safety disclaimer, and the awaiting state reinforce what will happen. Minor ambiguity remains in “both policy decisions” and “moved Blue,” which assume prior context.",
+    "fix": "Replace the contextual phrasing with explicit output names, such as “inspect Red and Blue policy decisions and the evidence behind Blue’s decision,” and briefly list the five result layers near the CTA.",
+    "score": 8,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d8b7d851f09021cfe6ec19e93e2fe7ad4f32f492463fe04256a63faa1f1afa07",
+    "schema_version": 2,
+    "sha256": "b9629f18994afb96de61a345f89e5bf0cd49e68cc24d75cbea3eb36572544214"
+  },
+  "response": {
+    "id": "resp_0da3c7dc30bf40cb016a907ab59bec87d0ad1f46152082f7d2",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6151,
+      "input_tokens_details": {
+        "cache_write_tokens": 6148,
+        "cached_tokens": 0
+      },
+      "output_tokens": 562,
+      "output_tokens_details": {
+        "reasoning_tokens": 402
+      },
+      "total_tokens": 6713
+    }
+  }
+}

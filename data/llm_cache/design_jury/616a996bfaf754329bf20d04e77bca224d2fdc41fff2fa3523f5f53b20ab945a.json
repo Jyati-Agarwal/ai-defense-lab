@@ -1,0 +1,70 @@
+{
+  "cache_key": "616a996bfaf754329bf20d04e77bca224d2fdc41fff2fa3523f5f53b20ab945a",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The provocative “Accuracy is the wrong question” thesis, cyan/red defense-lab palette, numbered ledger framing, and restrained monospace annotations give the screen a recognizable forensic-console identity across all viewports. However, most of the body resolves into familiar dark dashboard cards, standard charts, KPI tiles, and a conventional table; no single data visualization becomes a signature demo moment. Mobile further dilutes the idea into a long stack of generic panels.",
+    "fix": "Create one unmistakable hero visualization that dramatizes the cost of optimizing accuracy—such as an interactive operating-threshold sweep linking false positives, fraud caught, money, and latency—and make it the screen’s dominant visual motif across desktop and mobile.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "70c4acd67ac21e98b3c2093ec6c77a974506adc8ad3a35f07226a674f5ffb3f0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 199234,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "da4436a0a47a7d6f59916cab4ef9184a8b02176c3ac0925207877a63a850a480",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 176616,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "7285109bf6396631d90e13c613a52483ad1f68da440d464841bdaaae15e019e0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 163041,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "f1cd108767481667212daff9eddc8abb629e951e0096a25cb0864c86a3d2268d",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ae50670a738a2ce0b31af0aed56b63ebb98a5a2062be8a5a36b1a8d4fd30b8f0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "616a996bfaf754329bf20d04e77bca224d2fdc41fff2fa3523f5f53b20ab945a"
+  }
+}

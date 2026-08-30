@@ -1,0 +1,70 @@
+{
+  "cache_key": "65bfc05bbf9533de8b6f7aa9e58db9895133ca4898dbc67f23d19f8a1056d3b9",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard focus, visible indicators, touch targets, viewport containment, and reduced-motion behavior pass at all measured viewports. However, WCAG contrast remains incomplete with serious unresolved checks: 5 desktop mandate nodes and 2 tablet/mobile SVG labels lack proven contrast; mobile/tablet header links also have unresolved contrast. Missing contrast proof prevents an 8.",
+    "fix": "Measure and document computed contrast for every unresolved React Flow/SVG label and header link against its rendered background, then adjust colors to WCAG AA and rerun axe plus keyboard, touch-target, overflow, and reduced-motion tests.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "646df194184ad8c3e023141dbabc4ab7054a59f8f1bf37d9fdb3ab2e0e357933",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152276,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "d0f0539cb097f5fff53ddd719a334c824e2c4143bbb628d2e13708c8842d49d7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138140,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c5b9aaaaa25b210b23dd60731f5006b578c49ef2c4bf4537ead68fa36e91765a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3b2117431b7ca6e2177849f558d25b1183f07e4c12dfbb76fa9e79c5ae33e8db",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "65bfc05bbf9533de8b6f7aa9e58db9895133ca4898dbc67f23d19f8a1056d3b9"
+  }
+}

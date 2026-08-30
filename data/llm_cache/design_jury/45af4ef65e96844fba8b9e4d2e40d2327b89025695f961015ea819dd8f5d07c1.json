@@ -1,0 +1,70 @@
+{
+  "cache_key": "45af4ef65e96844fba8b9e4d2e40d2327b89025695f961015ea819dd8f5d07c1",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-defense art direction, disciplined cyan/red palette, crisp panel structure, and clear ALLOW/BLOCK and risk hierarchy. Desktop is polished and balanced. Tablet and especially mobile become excessively tall and dense; many labels, explanations, metrics, and header links are visually tiny. The mobile header loses the brand name and exposes a clipped navigation strip, while the composer’s repeated full-width controls create weak pacing and make the results feel buried.",
+    "fix": "Raise small-text sizes and contrast, simplify the mobile header into a deliberate compact navigation pattern, and reduce vertical sprawl by tightening control spacing or grouping advanced controls. Bring the decision summary higher and preserve more of the desktop’s strong side-by-side hierarchy on narrower screens.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "071c30c0411ffbfff3b634c5f92466f690f848f8147ff9536360e4fb90e17ec9",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 165145,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "799ccbabdadf9c63297ba1d50de567fac36ca6b0420471f47bdebe6aff85450e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154143,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "a6cb1c87963b823eadaa7096600702e74e484847bfbb8e82d2f677e446c93bd5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 158061,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "487fc0bba020b39869b8bedd8c5c30b043ecd60c6b947e83019774c11e89ba93",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "b308db755e29cf07adb236906526636bff477f1b33493749ec6155da0006432b",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "97df39fd7d5016eadcd7d019a093d60523deac2d001ddf6ce49b092d97c34754",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "282ecb558fa4cdd191a9cf9d03c288a0e41dd614e10610a2005e901d11d34552",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a19bfff239e4ca3d966674e19fa4b5375330695bce46a2108fcea165788c2e4a",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "45af4ef65e96844fba8b9e4d2e40d2327b89025695f961015ea819dd8f5d07c1"
+  }
+}

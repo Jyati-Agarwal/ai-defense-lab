@@ -1,0 +1,51 @@
+{
+  "cache_key": "69680c8acd6e118713dfeca7c06f2315f389c33877540615a16ad32944caf44c",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, borderline query, BLOCK→ALLOW comparison, “False positive suppressed” status, and ranked legitimate precedents make the core claim understandable without narration. However, the next action is not clear: the only desktop/tablet CTA is the unexplained global “ENTER RED MODE,” it is absent on mobile, and the tablet navigation obscures part of the results explanation.",
+    "fix": "Add a prominent, screen-specific CTA such as “Inspect decision evidence” or “Continue to Arena,” with a brief outcome-oriented label; expose it consistently on all viewports and prevent the tablet header from covering the explanatory text.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 427809,
+        "sha256": "3969a8d2522a55678dd4dc3909be2722fffcb839c2445cbd0fd69e239386fc4d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 357587,
+        "sha256": "acb0e9af4b9c3a7740cab7759b469882c723e9f0b914abc22fc681f7bec1544b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 288019,
+        "sha256": "19ebe45cfee28516b7f29b600d3f99c0aaa875faa909c9c245507f9395a186e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6d8092f77f0b7bee5a0a6caef5c028c0bd43ca158915df57fa25694395707c8c",
+    "schema_version": 3,
+    "sha256": "69680c8acd6e118713dfeca7c06f2315f389c33877540615a16ad32944caf44c"
+  },
+  "response": {
+    "id": "resp_0a9b41297ba48a75016a9083a42b5487d0a7822f8bc3a3319d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6232,
+      "input_tokens_details": {
+        "cache_write_tokens": 6229,
+        "cached_tokens": 0
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 223
+      },
+      "total_tokens": 6608
+    }
+  }
+}

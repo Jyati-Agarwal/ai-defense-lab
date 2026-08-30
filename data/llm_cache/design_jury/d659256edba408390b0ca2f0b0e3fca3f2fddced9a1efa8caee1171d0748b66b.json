@@ -1,0 +1,70 @@
+{
+  "cache_key": "d659256edba408390b0ca2f0b0e3fca3f2fddced9a1efa8caee1171d0748b66b",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, explainer, “What’s happening” note, and labeled Agent Vision toggle clearly communicate that machine-retrieved content differs from visible pixels. The causal-proof panel makes trusted intent versus recorded outcome understandable. However, the toggle’s current state is not explicitly named, the revealed red layer visually overwhelms the underlying harmless page, and mobile text becomes dense and very small. The clipped global navigation also hides the Injection destination at tablet/mobile widths.",
+    "fix": "Add an explicit “Agent vision: ON/OFF” state beside the toggle and a clear before/after cue showing the harmless shopper view versus retrieved layer. Simplify and enlarge the mobile evidence panel, and provide a visible responsive navigation affordance that exposes the current Injection section.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "3c8abc4387fa24416b41919f651e756a73210c3a5655581ef51c9b31ccd8b859",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 342560,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "27cb7d8e95b40982545e9dd08e75fde08e0385f3d13275d91cc843671d5d7274",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 308204,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "02ad30c508d8a1491829bd5aa91310519c1cc102b2eb5c70bb7a6d42af9fca81",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264831,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "86727d3d546cb5b8778298e4c64ebb30f72e9901b3345971d0f37f1e13b44999",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "98beaa3cfb5f4b3ed8d2ac7c00b8737ea597480136b1672eee4863d83e58f4c7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d659256edba408390b0ca2f0b0e3fca3f2fddced9a1efa8caee1171d0748b66b"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "7ce3839050457aeabad1275ff15d20139025a719b8e99964ec820f242fc8eeb5",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, borderline query, 99% precedent support, BLOCK→ALLOW comparison, and five ranked legitimate precedents clearly communicate that context suppressed a false positive across all viewports. However, no explicit next action is presented: “Results artifact” is a status badge, and neither the section nor mobile header tells the viewer what to inspect or do next. The screen also does not explain how similarity justifies the decision or what threshold caused the reversal.",
+    "fix": "Add one explicit CTA such as “Inspect decision evidence” or “Continue to Arena,” and expose a concise rationale tying the 99% support and precedent matches to the BLOCK→ALLOW reversal.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "318a1780647cf037ef24372e9e65684f59ae1f4d978fc980a9b585ff3227b925",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165634,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "f0bd9157ff09bc47c1f2acfed3eb1dce4f6391a31926d4bf6916fa74bf005e4e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 137120,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "eb195e5f9e15b84b0cfeb239fef6e63ab281fc6f0005397e5a91e2907b63a97a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 137647,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "a17df0d6e5c0282c6aae35b00a1564c1a0c3feb1881e89caf24cd31416324f69",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "066c6c94d1ab9a1be69fbefd03dd751c38caba9f1c64237ef7e98f245f424c9b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "7ce3839050457aeabad1275ff15d20139025a719b8e99964ec820f242fc8eeb5"
+  }
+}

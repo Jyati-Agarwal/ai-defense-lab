@@ -1,0 +1,51 @@
+{
+  "cache_key": "baa4babfc22f5190e56891fc62afb9d152edb7e3bd12101fbd5f1d5cf5ea2937",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly supports the intent-integrity story through an agentic-checkout synthetic attack with hidden-text injection, transaction amount, tool hops, delegation depth, TTL, payee fan-out, evasion, and a false human-presence claim. It also clearly frames a bounded POST /compose server-side inference, and Playwright confirms that POST returned 200 across all viewports. However, every screenshot remains in the “Awaiting synthetic event” state, so there is no visible proof of the promised five-layer scores, policy decisions, reason codes, evidence that moved Blue, or a concrete Mastercard/payment-network outcome. A successful endpoint alone does not prove the core defense demo.",
+    "fix": "Show a captured post-launch result that traces the manipulated intent across all five layers, identifies the decisive evidence, and displays explicit payment actions such as approve, step-up, hold, or decline with reason codes. Tie the result to Mastercard-relevant agentic-commerce risks—merchant/payee authorization, amount integrity, delegated authority, and human-presence misrepresentation—and include a before/after control comparison.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b6cbc7f6bfe933e8b2d21ff5f575b1cfd4f7dcb13a5104fab20f7339bf5af178",
+    "schema_version": 2,
+    "sha256": "baa4babfc22f5190e56891fc62afb9d152edb7e3bd12101fbd5f1d5cf5ea2937"
+  },
+  "response": {
+    "id": "resp_0e1ff355da5201fe016a907ab5ac4887d0b0745d4546bad46a",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6152,
+      "input_tokens_details": {
+        "cache_write_tokens": 6149,
+        "cached_tokens": 0
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 248
+      },
+      "total_tokens": 6647
+    }
+  }
+}

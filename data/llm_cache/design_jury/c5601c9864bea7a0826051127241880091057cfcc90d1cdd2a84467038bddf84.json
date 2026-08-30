@@ -1,0 +1,70 @@
+{
+  "cache_key": "c5601c9864bea7a0826051127241880091057cfcc90d1cdd2a84467038bddf84",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The section is visually cohesive and demo-ready: strong editorial headline, disciplined dark palette, crisp cyan/green status accents, consistent mono labels, and clear BLOCK→ALLOW hierarchy. Desktop uses the split evidence panel effectively; tablet reflows cleanly; mobile preserves the system without horizontal page overflow. Deductions: mobile becomes excessively tall and repetitive, secondary text is quite small/low-contrast, and the global header feels clipped rather than intentionally responsive—tablet/mobile hide the active Memory destination off-canvas, while the desktop rail crowds its final item against Red Mode.",
+    "fix": "Make the header’s active destination persistently visible at tablet/mobile widths, and tighten the mobile precedent rows into a denser two-column or inline metric treatment. Slightly raise secondary-text size/contrast and give the desktop header’s last navigation item clear separation from Red Mode.",
+    "score": 8,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1913d6d5a133a2fa8fef739b3dbb07806aebf68fc34fa2bba2b16884f41cea23",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 165634,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "f0bd9157ff09bc47c1f2acfed3eb1dce4f6391a31926d4bf6916fa74bf005e4e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 137120,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "eb195e5f9e15b84b0cfeb239fef6e63ab281fc6f0005397e5a91e2907b63a97a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 137647,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "a17df0d6e5c0282c6aae35b00a1564c1a0c3feb1881e89caf24cd31416324f69",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a6148718ff3c3492ff39bc6e05825f713ded98320a2240c76cd809a6ed9c930b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c5601c9864bea7a0826051127241880091057cfcc90d1cdd2a84467038bddf84"
+  }
+}

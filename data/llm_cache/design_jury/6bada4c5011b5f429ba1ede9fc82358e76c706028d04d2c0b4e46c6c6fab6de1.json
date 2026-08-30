@@ -1,0 +1,70 @@
+{
+  "cache_key": "6bada4c5011b5f429ba1ede9fc82358e76c706028d04d2c0b4e46c6c6fab6de1",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, instruction, prominent LAUNCH EVENT action, and side-by-side ALLOW/BLOCK result make the basic demo flow understandable without narration. However, the results do not identify the exact submitted configuration or visibly distinguish pre-launch from post-launch state, so the claimed same-event comparison is not self-proving. Dense microcopy and tiny uppercase labels reduce scanability, especially on mobile, while the mobile header hides the Composer location and Red-mode entry off-screen.",
+    "fix": "Add an explicit pre-launch empty state, then show a submitted-event summary beside the results with changed values and a run identifier/timestamp. Increase mobile label and explanatory-text sizes, and keep the current Composer/Red-mode context visibly pinned in the header.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "7933af9de30e63025a52756d2a9ebf924e8ad8df879e7b441d88deedd029c732",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165314,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "b9c129c53d4c88a5f5a9d066799b88a0f63d304d0e303e6633245c5e14f1d68d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154232,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "2cf6ff910895fbfebbb38dfe3d23342b6e7029f8223b1eaf7e8177836fb79d71",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157900,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "487d14f188dcf9879fa1f679db913ce91929e959d67903791e62508252fa31d3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "85e1e0619cfcab9dde4e824fc1430a18b9954a376e24b34f9058c87d833577cd",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6bada4c5011b5f429ba1ede9fc82358e76c706028d04d2c0b4e46c6c6fab6de1"
+  }
+}

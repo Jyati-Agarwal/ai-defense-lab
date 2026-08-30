@@ -1,0 +1,51 @@
+{
+  "cache_key": "df31c763029d80c01179b7c309ed6b788e6139d5fa565c9d973a33cbb9adc89d",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting sentence, and “WHAT’S HAPPENING” copy clearly establish the claim and explicitly instruct users to filter the atlas and select a vector. Agentic/Classic/All and kill-chain controls are labeled, while the selected vector’s title, severity, stage, and observable signals create a clear desktop reading path. However, tablet and especially mobile crop the stage columns and make the kill-chain diagram extremely small; much of the 48-vector atlas is off-screen with no visible cue that horizontal navigation is required. The vector cards also lack a strong affordance showing that they are selectable.",
+    "fix": "On tablet and mobile, replace the wide stage board with a responsive stacked list or clearly signposted horizontal scroller with stage navigation. Increase the kill-chain diagram’s legibility, add an explicit selected/hover/tap affordance to vector cards, and keep the selected vector detail adjacent to its source card.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 574141,
+        "sha256": "9fa55717488fc0bb322fa215069fbcb087706e4e19b43e8f9b2033b2c33b5328",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 462086,
+        "sha256": "fbb01bbbd777369656fec2726a1688359877ddba406fc3a6d5615f3a1d8f667c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 290485,
+        "sha256": "14c3fdd1ba1f30310de57c4ca65df729d76e455d5965ca45c1feebf292cb3720",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "296c5b02e5511fd35f5c12f0ab1feac627ffabf1547949098e417e7caedd038b",
+    "schema_version": 2,
+    "sha256": "df31c763029d80c01179b7c309ed6b788e6139d5fa565c9d973a33cbb9adc89d"
+  },
+  "response": {
+    "id": "resp_0858c386fe3073d5016a907a69d2d487d0b1f502354e11b529",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6552,
+      "input_tokens_details": {
+        "cache_write_tokens": 6549,
+        "cached_tokens": 0
+      },
+      "output_tokens": 447,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 6999
+    }
+  }
+}

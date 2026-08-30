@@ -1,0 +1,13 @@
+id: GPF-C16
+name: Authorized push-payment impersonation
+tier: classic
+description: A victim is persuaded to transfer funds while believing the recipient is a trusted institution.
+kill_chain_stage: intent_manip
+channel: wire
+rail: wire
+genai_capability: none
+primitives: [context_manip, intent_manip, merchant_manip, payment_manip]
+observable_signals: [new high-value payee, impersonation narrative, unusual session hesitation]
+defense_hooks: [confirmation-of-payee, scam-specific intervention]
+severity: critical
+feasibility_today: true

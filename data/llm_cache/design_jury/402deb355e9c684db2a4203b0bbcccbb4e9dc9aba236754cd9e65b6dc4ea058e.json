@@ -1,0 +1,51 @@
+{
+  "cache_key": "402deb355e9c684db2a4203b0bbcccbb4e9dc9aba236754cd9e65b6dc4ea058e",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline states the claim immediately, and the single numbered card ties the 69.6% recall limitation to an explicit evidence boundary, next control, and prominent “TEST AN UNCERTAIN CASE” action. The hierarchy and wording remain readable at desktop, tablet, and mobile sizes without presenter explanation.",
+    "fix": "Make the CTA even more self-describing by naming its destination or outcome, such as “Test an uncertain case in Composer,” and visually elevate 69.6% as the key supporting metric.",
+    "score": 8,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 264664,
+        "sha256": "880831cf74b646453504d96da5006a2c0e36028ba730f4d9848ed906f963a541",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 219066,
+        "sha256": "de00979af68e3af50c863a833041bfe36dc1b2368f68580e566a6fd17e1826f7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180686,
+        "sha256": "34ce6d19ad0e789dfdccd32deaf4ae7dc712e7a30cd2b9f9afe13c7c6228df49",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8f879874f1040fb00be463c4415a0944046c128d8fd8c5f8d54fb1619ccf8fb2",
+    "schema_version": 3,
+    "sha256": "402deb355e9c684db2a4203b0bbcccbb4e9dc9aba236754cd9e65b6dc4ea058e"
+  },
+  "response": {
+    "id": "resp_0d7d5e17e8ce0cce016a9083dc891087d08ac19a98d6405d76",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4654,
+      "input_tokens_details": {
+        "cache_write_tokens": 4651,
+        "cached_tokens": 0
+      },
+      "output_tokens": 541,
+      "output_tokens_details": {
+        "reasoning_tokens": 408
+      },
+      "total_tokens": 5195
+    }
+  }
+}

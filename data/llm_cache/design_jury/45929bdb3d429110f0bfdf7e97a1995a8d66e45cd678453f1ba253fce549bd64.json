@@ -1,0 +1,70 @@
+{
+  "cache_key": "45929bdb3d429110f0bfdf7e97a1995a8d66e45cd678453f1ba253fce549bd64",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The human-page versus machine-retrieval reveal is a clear, screen-specific visual idea, reinforced by the red scanline layer, causal proof, and intent/outcome contrast across all three viewports. However, much of the treatment still relies on familiar cyber-security conventions—dark panels, monospace labels, red warning borders—and the mobile reveal becomes dense and visually muddled, weakening the demo moment.",
+    "fix": "Make the reveal a more dramatic before/after transformation: preserve a clearly legible harmless page beneath, then expose the machine-only instruction as a spatially aligned peel-back or scanning layer. Simplify the mobile artifact so the intent-to-outcome mutation remains the single memorable focal point.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a4d7ddc403304f882b131a1e968f5baf7e5dfcdda5533ef3d547d620c3787606",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 239771,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "275e2556e20e872850a100b19bb59300572c81c00ea298419e603c99cb68cda3",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181266,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "20b706b26bf7e334649e1efc34100d6b42a28eed6898dad7e50b17660694dff3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 187544,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "eb396592ee17bfde996069764e68ac3469b68d02f15522faa62bec833a1d4362",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "99c57411b3c70298c625c6ca5063baaf528325a2732bb9f4c6e39d83453b90e5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "45929bdb3d429110f0bfdf7e97a1995a8d66e45cd678453f1ba253fce549bd64"
+  }
+}

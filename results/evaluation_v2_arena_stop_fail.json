@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "artifact": "evaluation_v2_arena_stop_fail",
+  "status": "STOP_FAIL",
+  "stage": "a_b_only_arena",
+  "command": [
+    "make",
+    "arena-rerun"
+  ],
+  "failure_reason": "fixed replay ASR did not improve: 0.0417 -> 0.0417",
+  "arena_seed": 20260827,
+  "replay_challenge_count": 48,
+  "fixed_replay_asr_by_round": [
+    0.04166667,
+    0.04166667,
+    0.04166667,
+    0.04166667,
+    0.04166667
+  ],
+  "fixed_replay_successes_by_round": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "adaptive_asr_by_round": [
+    0.04166667,
+    0.08333333,
+    0.04166667,
+    0.04166667,
+    0.08333333
+  ],
+  "diagnosis_scope": "A+B replay and aggregate labels only",
+  "diagnosis": {
+    "surviving_family": "playback_suppression",
+    "surviving_atlas_id": "GPF-A07",
+    "surviving_replay_cases": 2,
+    "shared_signal": "playback_constraint_consistency=0",
+    "a_b_signal_counts": {
+      "fraud_inconsistent": 17,
+      "benign_inconsistent": 0,
+      "fraud_consistent": 121,
+      "benign_consistent": 34924
+    },
+    "perfect_floor_gate_issue": "a deterministic A+B-derived guard can make round-one and final ASR both zero, which cannot satisfy strict final < baseline"
+  },
+  "custody": {
+    "evaluation_attempt_created": false,
+    "evaluation_partitions_scored": [],
+    "c_d_e_used_for_diagnosis": false,
+    "retry_under_v2_permitted": false
+  },
+  "bindings": {
+    "evaluation_v2_preregistration_sha256": "418fe884214fa67dc9bb62122b9312eebfc9467b1b0f919903da0da4b8f29d2d",
+    "dataset_sha256": "901ce27267278f7a850b0f320efb6f951463f6af5565a178944b4da15a65e6ce",
+    "split_plan_sha256": "23626c4d431f0567bf5cdccd48511ef74ee0de10ed7cd4a1e6bc085634e7fe2b",
+    "events_file_sha256": "c31c37881b5a5c5ac88292e0b85da5c48a4cf43e2d37dfa093991aa3d040ba18",
+    "events_manifest_sha256": "01423da9e6752da0a2667d994d1169ed246730bd7b912052be2c3bdeca0947d3",
+    "training_manifest_sha256": "e79466056d4a3addc161ac1ee4d86cfeb34d369beeb2287fed502cc0657a8da7",
+    "base_model_sha256": "18e5245456897af006423103e869c670a485d66edf4f12e5b85eac8c0ec7c548",
+    "source_tree_sha256": "96a218e39d29a3cf082de202794c6d4dbdb083665b948d3ca5e01ce5a32794a0",
+    "loop_arena_sha256": "db3170d254ebb3b5eac4e463c3c32a1923e83fe06e60cea7fde5bdae5c410ae8",
+    "feature_pipeline_sha256": "9ff7a7c3018db58d80d88cda2263d1c4e88ddc6ecb9383cfbdfac1f129e65230"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "d7040a2fbaedfe4bbe84a6cfeab7df8f35a9c54434ec7bec4c0046583ba403c9",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, three-part summary, and CTA establish a limitation and next action across viewports. But the core classification is internally confusing: “No structured miss recorded” conflicts with the displayed 69.6% recall and the rule that recall below 100% is an observed miss. “Vault number” and “results artifact” are unexplained, and the mobile header does not visibly identify the current Unknowns section.",
+    "fix": "Reconcile the miss/evidence-gap terminology, explicitly state what the 69.6% measures and why it is not a structured miss, replace unexplained labels with plain language, and make the CTA name its destination or expected result. Keep “12 Unknowns” visibly selected in the responsive header.",
+    "score": 6,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f0f16b286d6c8a314197072984953bb0db5bc782933b91b2651ac62a39e390f4",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 143119,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "4801a6193df45ee817d0742c7676fb29ae27cec8c6d8a5a3490760ecac006359",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 125257,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "fd9f084289c579577f5a0a7932d2bfb7836e660fa72264676f39b25dcfcaa16f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 122584,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "5dfc973a5aece44f14974982d0811eb6998a19af40ab4c20b3deb1096704e0bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "914583d14ad519b5d251c30367534f15a132f4a064870f34bdb718032cce4b7d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d7040a2fbaedfe4bbe84a6cfeab7df8f35a9c54434ec7bec4c0046583ba403c9"
+  }
+}

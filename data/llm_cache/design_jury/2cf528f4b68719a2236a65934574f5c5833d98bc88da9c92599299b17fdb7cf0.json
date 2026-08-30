@@ -1,0 +1,78 @@
+{
+  "cache_key": "2cf528f4b68719a2236a65934574f5c5833d98bc88da9c92599299b17fdb7cf0",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and subhead clearly state the core claim, and the “training-fold only” chart, surviving-mutations list, and replay verdict reinforce it. “Review fresh-row regression” provides a plausible next step. However, that action is visually buried inside the verdict panel and its arrow does not clearly communicate whether it expands content or navigates. On mobile, the chart labels and supporting copy become extremely small, while the clipped global navigation hides the current Arena location without an obvious scroll cue. “ASR” and several specialist labels also remain unexplained.",
+    "fix": "Promote “Review fresh-row regression” to a high-contrast primary button with an explicit destination or expand/collapse label, then place a one-line definition of ASR beside the headline. Increase mobile chart and annotation text, and make the header preserve or visibly indicate the active “07 Arena” item at narrow widths.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 688471,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "1db9af3220fc6f044966a1fc3a8e073d3f2fe63aac95b7ceef9b5f61820a64da",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bda2ef077b759ac13f7064ad9330a8850711690c13c7afb30bc02a2e9d7f51ae",
+    "schema_version": 4,
+    "sha256": "2cf528f4b68719a2236a65934574f5c5833d98bc88da9c92599299b17fdb7cf0"
+  },
+  "response": {
+    "id": "resp_03408efcc49b8d11016a9093d6ee1887d08474118c50d07cad",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 13690,
+      "input_tokens_details": {
+        "cache_write_tokens": 13687,
+        "cached_tokens": 0
+      },
+      "output_tokens": 574,
+      "output_tokens_details": {
+        "reasoning_tokens": 366
+      },
+      "total_tokens": 14264
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "artifact": "evaluation_v2_preregistration",
+  "status": "predeclared_before_post_remediation_regression",
+  "claim_scope": "post_remediation_regression",
+  "pristine_heldout_family": false,
+  "lineage": {
+    "prior_attempt_sha256": "cd7334f4cedc2b8f09233ef743f342c3135f3854afdc830c6eb8c24bb6c89c57",
+    "prior_evaluation_release_sha256": "357478118769667af8aa1e26f637da3637abe51b1599c3eabbbccc2c165ad7e8",
+    "prior_model_sha256": "004bb06898dba02708ba39da9cd2efa91e48c1ec5fad5b180e06345a3b6b1279",
+    "prior_dataset_sha256": "3488e51722e1abba6337650d8e01b6f638ca85be42c756b1dff72c601c0951ce",
+    "disclosed_vector": "GPF-A20",
+    "disclosed_family": "ttl_dormancy"
+  },
+  "remediation": {
+    "deterministic_ttl_floor": true,
+    "threshold_changed": false,
+    "evaluator_changed": false
+  },
+  "generator": {
+    "seed": 20260828,
+    "events": 50000,
+    "fraud_rate": 0.0055,
+    "benign_adversarial_rate": 0.02,
+    "family_definitions_reused": true
+  },
+  "evaluation": {
+    "seed": 20260827,
+    "detection_threshold": 0.3,
+    "training_partitions": [
+      "A",
+      "B"
+    ],
+    "partitions_scored_once": [
+      "C",
+      "D",
+      "E"
+    ],
+    "shuffle_retrains": 50,
+    "shuffle_permutations": 9999
+  },
+  "custody": {
+    "prior_family_disclosed": true,
+    "new_rows_not_new_families": true,
+    "training_input_physically_mixed": true,
+    "attempt_receipt": "evaluation_attempt_v2.json",
+    "retry_after_consumption": false
+  },
+  "bindings": {
+    "sim_population_sha256": "5756936d776d1b9ff4c753fe2cd71dd2c513bc2fb8ed39b99d281fb708728fea",
+    "sim_mandate_twin_sha256": "1192c6b7122af4c62102cd30a4de9a2076b08afe4660d66ce4cb98da4022ddf5",
+    "event_schema_sha256": "3d9ba3cbfec557a41b6d11df0a4de49edea247c1814d71aa466422425bd227c1",
+    "defense_source_tree_sha256": "96a218e39d29a3cf082de202794c6d4dbdb083665b948d3ca5e01ce5a32794a0",
+    "scripts_release_sha256": "61ec6ca06c00517d25719c9b13d7a2403b4895fd08265914e7177639258b4980",
+    "makefile_sha256": "2556e12b58b0e35945df8ac8f354efd5542e8bd0d223089f771c7176f24c5e0a",
+    "requirements_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_tree_sha256": "c1be0c0dd5a13305c3e338b6f644207b01dbfbf19bfa97cecfdf0da45e8db280",
+    "parent_failure_sha256": "cd7334f4cedc2b8f09233ef743f342c3135f3854afdc830c6eb8c24bb6c89c57"
+  }
+}

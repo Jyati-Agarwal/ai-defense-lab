@@ -1,0 +1,13 @@
+id: GPF-C18
+name: Dormant-account velocity burst
+tier: classic
+description: A previously quiet account abruptly issues several transfers after an access compromise.
+kill_chain_stage: delayed_exec
+channel: wire
+rail: wire
+genai_capability: none
+primitives: [reconnaissance, payment_manip, delayed_exec]
+observable_signals: [long dormancy then burst, session fingerprint change, compressed transfer interval]
+defense_hooks: [entity temporal model, dormant-account hold]
+severity: high
+feasibility_today: true

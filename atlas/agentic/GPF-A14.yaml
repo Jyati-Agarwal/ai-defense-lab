@@ -1,0 +1,13 @@
+id: GPF-A14
+name: Payment-tool schema confusion
+tier: agentic
+description: Ambiguous tool fields cause the model to bind beneficiary or amount values to the wrong semantics.
+kill_chain_stage: tool_manip
+channel: agentic_checkout
+rail: wire
+genai_capability: function calling from natural language
+primitives: [intent_manip, tool_manip, payment_manip]
+observable_signals: [schema validation coercion, field-source mismatch, unusual retry sequence]
+defense_hooks: [strict typed schema, source-bound parameters]
+severity: high
+feasibility_today: true

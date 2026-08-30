@@ -1,0 +1,70 @@
+{
+  "cache_key": "74723a364c6bd69f381de43a536472c71091f53a84942dba87c75e47a443ee91",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly demonstrates the core intent-integrity thesis: the same signed ₹2,437 payment passes credential-and-amount checks under legacy policy but is blocked when the paid cart diverges from the delegated mission. The flagship trace, risk contrast, and three causal signals make the defense story concrete across all viewports, and the real-server case endpoint returned 200 without fixture headers or browser failures. However, the supplied evidence does not prove transaction selection/replay behavior, the five evidence layers behind the decision, or a Mastercard-specific payment-network integration; those elements are asserted in copy rather than demonstrated.",
+    "fix": "Make one row selection visibly replay the case, expose the five scored evidence layers and decision provenance, and show where the block integrates into a Mastercard authorization or agentic-commerce payment flow.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "447da670e446a7a06bfc936b836072d583849ddf9d52e3b6918f8d21428961dd",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fd029747c2f689b7eb5a7aefb9ca2740ceabcccf0229387e44619ca9252b1a1b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "74723a364c6bd69f381de43a536472c71091f53a84942dba87c75e47a443ee91"
+  }
+}

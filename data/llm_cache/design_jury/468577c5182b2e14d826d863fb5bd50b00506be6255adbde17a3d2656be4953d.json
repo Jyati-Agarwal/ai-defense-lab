@@ -1,0 +1,70 @@
+{
+  "cache_key": "468577c5182b2e14d826d863fb5bd50b00506be6255adbde17a3d2656be4953d",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent integrity by contrasting verified signatures/hashes with a semantic mismatch across intent, cart, and payment. However, it explicitly relies on public-seed synthetic signer keys and says this does not prove real-world authorization; the screenshots provide no Mastercard integration, network evidence, issuer controls, or live transaction decision demonstrating relevance to the hackathon brief.",
+    "fix": "Add a demo-backed Mastercard payment flow showing the semantic policy blocking or escalating a mismatched transaction, with visible API/request evidence, authorization outcome, and the specific Mastercard capability used.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "48237f96470172bf304006d43aa50195939d6e930183f6bca915eaa7244d2daf",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 523574,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "4f4324205b92dabb99ec43f027452021a429c985ed0f481f91795f63e4d2ccde",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401239,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "177a445ccda9bed30f953d4d7f05377b789cb527d43495d3981de4a8b727bb97",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 312965,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "cab6e2e9a7b4ed794d8ada8c856ef20f09421aee0776f958dbff1035a5ac2605",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0fa81f8f456ce1eeb61a2e1dc81c1a0169a17c2e1a1d64ddaedeec3fd69a9b72",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "468577c5182b2e14d826d863fb5bd50b00506be6255adbde17a3d2656be4953d"
+  }
+}

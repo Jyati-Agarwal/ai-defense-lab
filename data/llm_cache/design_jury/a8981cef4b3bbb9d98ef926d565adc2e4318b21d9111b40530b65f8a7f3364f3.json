@@ -1,0 +1,70 @@
+{
+  "cache_key": "a8981cef4b3bbb9d98ef926d565adc2e4318b21d9111b40530b65f8a7f3364f3",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and explicit fixture-only caveat communicate the core claim, while the intent → cart → payment sequence and verified-check list expose the semantic mismatch. However, “hash check holds” is awkward, dense microcopy is difficult to scan, the desktop diagram is less self-explanatory than the tablet/mobile cards, and the clipped header labels weaken orientation. “Inspect semantic mismatch” also appears actionable without clearly showing what interaction or result follows.",
+    "fix": "Rewrite the claim in plain language, use the labeled three-step card sequence at every viewport, enlarge supporting text, visibly mark Mandate as the current section, and make the CTA’s outcome explicit, such as “Compare signed payment with authorized intent.”",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "01fb3c098dbd2df331f36f679b52e0315cfb7eda3e756e7ce8d832fc1ed9c744",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 219273,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "9b8b1c238686a90f37fd6c704bad6dc5d789b5ed9f93e5c2aead75ce03d2fd9e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152355,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "af01f1020ddc445b48508723aa250d48e2e52069fc4af6180ad121dc3243ab69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138086,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "8cdb670e00cc69dd156268d1993355321c926dccc5820183fa9e4de0f20ce611",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8129ae19a4d9b27e883c7db4bc9b43a1ac915d7013a8878d25f9fc9c1ba102a8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a8981cef4b3bbb9d98ef926d565adc2e4318b21d9111b40530b65f8a7f3364f3"
+  }
+}

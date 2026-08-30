@@ -1,0 +1,51 @@
+{
+  "cache_key": "01378baa1a794a9733b6a413cbd185af942a6abde670498dcec7c137e2fb66cb",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured loading is demo-ready across viewports: LCP is 1700 ms desktop, 1644 ms tablet, and 516 ms mobile; FCP is 116/164/68 ms; TTFB is 8.6/5.4/2.5 ms. CLS is excellent on desktop (0.00046) and mobile (0), though tablet reaches 0.0478. There is no horizontal overflow and no console, page, or request failure. The main limitations are a heavy 1,138,732-byte JS payload and 1,298,912-byte total transfer, plus desktop frame timing averaging 22.36 ms with a 50 ms worst frame and 1.22% long-frame ratio.",
+    "fix": "Reduce initial JavaScript through route-level code splitting and lazy-load the phylogeny/chart code. Profile desktop rendering to remove the 50 ms frame and stabilize tablet layout so CLS approaches zero.",
+    "score": 8,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 627612,
+        "sha256": "4fddb85cc4ac6c10f3b5f76dd14baa989856357c9b0f4f174a690d9c487dd276",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 563275,
+        "sha256": "69b2088744af269030cd3f4156893befdbe1b9a672a7c68905d2dfef61845e76",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 416664,
+        "sha256": "f2eb9f99e912a62f8ac1bcf94aa5615b97f8b415d46e4384abcff88d2923ba02",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "319a903abc0e0bdd95df53c28ffa64e87fc086f3954062d35380c54d1a5a1015",
+    "schema_version": 2,
+    "sha256": "01378baa1a794a9733b6a413cbd185af942a6abde670498dcec7c137e2fb66cb"
+  },
+  "response": {
+    "id": "resp_0224a141a5e3534f016a907a94e12087d0b58f2124ddc3202d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6719,
+      "input_tokens_details": {
+        "cache_write_tokens": 6716,
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 7124
+    }
+  }
+}

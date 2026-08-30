@@ -1,0 +1,13 @@
+id: GPF-C10
+name: Merchant category code laundering
+tier: classic
+description: A merchant submits transactions under a lower-risk category that does not match sold goods.
+kill_chain_stage: merchant_manip
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [merchant_manip, payment_manip]
+observable_signals: [catalog-to-MCC mismatch, peer ticket anomaly, descriptor churn]
+defense_hooks: [merchant content review, MCC consistency model]
+severity: high
+feasibility_today: true

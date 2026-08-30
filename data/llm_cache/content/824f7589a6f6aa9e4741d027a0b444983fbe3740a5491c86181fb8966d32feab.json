@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-824f7589a6f6",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "824f7589a6f6aa9e4741d027a0b444983fbe3740a5491c86181fb8966d32feab",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] सिंथेटिक विवाद में भुगतान के बाद झूठे दावे का जोखिम संकेत दिखा; दुरुपयोग योग्य विवरण हटाए गए हैं।",
+  "kind": "dispute_narrative",
+  "language": "hi",
+  "operational": false,
+  "response": {
+    "id": "resp_025f519567678510016a8f5b5a07c087d0bc1a92a40dc819d2",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 115,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 140,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 255
+    }
+  },
+  "response_text_sha256": "4563dc565b55a089924cbc07ae90a4f43773c511ba61b120a016e374d0b6a4a2",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "824f7589a6f6aa9e4741d027a0b444983fbe3740a5491c86181fb8966d32feab",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "dispute_narrative",
+      "language": "hi",
+      "variant": "baseline"
+    }
+  }
+}

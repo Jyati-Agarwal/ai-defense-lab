@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "artifact": "entity_fidelity_v4_calibration_development_failure",
+  "immutable": true,
+  "status": "STOP_FAIL",
+  "release_eligible": false,
+  "protocol_frozen": false,
+  "calibration_only": true,
+  "uci502_transactions_accessed": false,
+  "official_readiness_run_performed": false,
+  "diagnostic_transactions_accessed": false,
+  "sealed_final_transactions_accessed": false,
+  "threshold_max_d_upper_95": 0.65,
+  "threshold_changed": false,
+  "source": {
+    "dataset": "UCI Online Retail 352",
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+    "manifest_sha256": "0fca9904171c1382bfdd8dc1369929a310817a63472474dc61dee4a4ae800cb9",
+    "partition": "calibration",
+    "customer_ids_sha256": "53afc6c77f75002c1359ef445e1d1a7527dfd3532c0c4f23f5e557e2b3ccd0de",
+    "transactions_sha256": "3614fdd252819b132b5900ac085372e89a148f7f51784bc3d14149d09b22abc1"
+  },
+  "bindings": {
+    "implementation_sha256": {
+      "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+      "sim/entity_fidelity_v4.py": "91334afd5d5f0f53b0bbe527920ee6a18b7e2a27b8f2c1610483f878cb01d871",
+      "sim/population.py": "a68b006f4f76f0304b80cfa2ea1de57e8ee095c077265da6a6e14daee459d107",
+      "sim/population_v4.py": "19025a531144418ccda6ac744f6126e839c5a4dd4ccde4d4deddbb1ef3fc40d0"
+    },
+    "test_sha256": {
+      "tests/test_entity_fidelity_v4.py": "c5c24290ef09ecfa5996c716ecdcfb3a4d334c17a4cc3c38ab3ff78441654535",
+      "tests/test_population_v4.py": "1858bcc531dcc50f5c0b4e908a9f7a02801fe292c8a510f002a7390f70e34414"
+    },
+    "requirements_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "preserved_v3_failure_sha256": "9539f959db7724aac7ab529596a67a540820285ed85818c7425068117d0647b8"
+  },
+  "failure": {
+    "checkerboard_stratum": "same_day_repeat",
+    "actual_customers": 31,
+    "required_customers": 32,
+    "reason": "The calibration-only same-day-repeat checkerboard did not meet the predeclared minimum customer floor, so V4 stopped before protocol freeze."
+  },
+  "gate": {
+    "statistic": "D=max(AUC,1-AUC)",
+    "required": "97.5th percentile of max-seed D must be <= 0.65",
+    "reason": "The generator profile was not eligible to freeze; exploratory, temporal-readiness, diagnostic, and sealed scoring were not run."
+  },
+  "limitations": [
+    "This is calibration-development failure evidence, not a frozen protocol, readiness result, sealed score, or production-release artifact.",
+    "No UCI502 readiness rows, UCI352 diagnostic rows, or UCI352 sealed-final rows were selected, materialized, or scored.",
+    "The threshold remained 0.65; the failed 31-customer stratum was not waived, smoothed, padded, or given pseudocounts."
+  ]
+}

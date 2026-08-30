@@ -1,0 +1,70 @@
+{
+  "cache_key": "c5f734be5c8da01badc21549b35f0dacfbf8480ef34e49df66533607d757f8fb",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting copy, filtering instruction, selected-vector state, observable signals, and “Continue to scored replay” CTA make the purpose and main flow understandable. However, desktop shows “All stages” while presenting a specific context-manipulation detail, several leftmost cards are visibly clipped, and the 48-vector claim is not reconciled with visible counts. On mobile/tablet, the header’s “SWIPE” cue is cryptic and the current Atlas location is not clearly marked.",
+    "fix": "Keep the stage selector synchronized with the displayed list/detail, eliminate desktop clipping, show a clear visible total or count reconciliation for all 48 vectors, and add an unmistakable active Atlas state plus a clearer mobile navigation cue.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "82aa7001880a3d7432c66bb6ff168897cf995cbdb005eeb31a8b3dc19b0a52c6",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135661,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "23059da5fb4c6d5ac9b22d09aa2eb27527020fb8fe0a9aa993e35c146c316a8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124623,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "7c83bc2033feeb61801390c3c88b3fc0dc99dbaebfb210e21d7771f920b9fc42",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb5ec182d5d9981ffc80d5ffd41fb09651436811d6962eed03da0de442a07d8b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c5f734be5c8da01badc21549b35f0dacfbf8480ef34e49df66533607d757f8fb"
+  }
+}

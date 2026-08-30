@@ -1,0 +1,51 @@
+{
+  "cache_key": "58943bf8ca67a9b19b763e19ee45c772c76cc3e28ac92742d0c3d7cc6e95c3d1",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances the intent-integrity thesis: user, merchant, and payment signatures plus the cart hash are VERIFIED, while the semantic invariant contrasts an intent to buy running shoes with a digital-wallet voucher payment at MCC 5661 and marks the allowed-payee condition NOT_PRESENT. Payment amount, merchant DID, MCC, and payee constraints make it relevant to commerce defense. However, the screen explicitly says the signer keys are synthetic and fixture-only, and it shows no visible Mastercard integration, authorization decision, block/review action, or measured defense outcome. That prevents the mandate from being hackathon-demo-ready evidence rather than a strong explanatory artifact.",
+    "fix": "Add a visible enforcement result tied to the mismatch—such as authorization held, declined, or routed to review—along with the exact violated policy, transaction/source identifier, and Mastercard-relevant field mapping or integration evidence. Clearly distinguish simulated data from any live network proof and show the semantic scorer’s evidence and resulting action.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 572745,
+        "sha256": "1ed69237735825246a0a552e4e24ad4fdc9607a258a30a648c924ba20923cc1a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 422524,
+        "sha256": "d9524be96c9b2e6acf3c0e61c304a522c4dfe3c706f6ff882aa6798213b2b172",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 331083,
+        "sha256": "a509c0554074d53b06dd6db76783211577ddd4f7f16815a57f7bd5df6c2bea1e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8ccfba44d2fcab54a898ea2ad5522db3c1ae8fab82b053e41d0299cc04ede790",
+    "schema_version": 2,
+    "sha256": "58943bf8ca67a9b19b763e19ee45c772c76cc3e28ac92742d0c3d7cc6e95c3d1"
+  },
+  "response": {
+    "id": "resp_0c400ab19ce03653016a907a7b7c1c87d08afe7d56de066c47",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6480,
+      "input_tokens_details": {
+        "cache_write_tokens": 6477,
+        "cached_tokens": 0
+      },
+      "output_tokens": 671,
+      "output_tokens_details": {
+        "reasoning_tokens": 445
+      },
+      "total_tokens": 7151
+    }
+  }
+}

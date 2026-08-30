@@ -1,0 +1,13 @@
+id: GPF-C13
+name: SIM-swap UPI account takeover
+tier: classic
+description: A newly issued SIM is used to rebind payment credentials and drain the victim account.
+kill_chain_stage: tool_manip
+channel: upi_p2p
+rail: upi
+genai_capability: none
+primitives: [reconnaissance, tool_manip, payment_manip]
+observable_signals: [recent SIM change, device re-registration, beneficiary velocity]
+defense_hooks: [telco change signal, rebind cooling period]
+severity: critical
+feasibility_today: true

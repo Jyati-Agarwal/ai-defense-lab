@@ -1,0 +1,51 @@
+{
+  "cache_key": "160ffb7ec074408c0093490376393c104f87cd6d5987c477c71b8a8916b1a091",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Reduced-motion behavior is correctly proven at all three viewports: the media query matches and the hero remains at opacity 1 with no transform. Tablet and mobile timing is stable (16.87–17.28 ms average, 0% long frames), but desktop averages 22.36 ms with a 50 ms worst frame. More importantly, the measured midpoint is effectively identical to the end state on every viewport—opacity ≈0.45 with a 72° Y rotation and −30 px translation—so the evidence does not demonstrate smooth, progressive interpolation and suggests an abrupt or heavily front-loaded transition.",
+    "fix": "Retune the duration/easing so midpoint captures show a visibly intermediate opacity and transform, then provide denser frame samples across the full transition. Reduce desktop main-thread/rendering cost to approach a consistent 16.7 ms frame budget while preserving the verified reduced-motion override.",
+    "score": 6,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 425774,
+        "sha256": "a4efa768627f6439207f04ef91e6b346a1c0aa0b1b3ab7137a766f01fe2a2edd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 375890,
+        "sha256": "4601f26df0d8559c0466fef20a7ea2c7af79b333fa32c9bf285fec30dafbc02a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 338746,
+        "sha256": "58f10b7931d30cb380d482c12fd4cec885361528deaff9e810eda434eaf21e67",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7ef5417be5b2e41cf57c7b89103d022c44d801401f3d7408ff8f62cd2e500006",
+    "schema_version": 2,
+    "sha256": "160ffb7ec074408c0093490376393c104f87cd6d5987c477c71b8a8916b1a091"
+  },
+  "response": {
+    "id": "resp_0f8dde2b3f302b54016a907a7165bc87d0bac6d71d17099c6c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6985,
+      "input_tokens_details": {
+        "cache_write_tokens": 6982,
+        "cached_tokens": 0
+      },
+      "output_tokens": 550,
+      "output_tokens_details": {
+        "reasoning_tokens": 339
+      },
+      "total_tokens": 7535
+    }
+  }
+}

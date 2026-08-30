@@ -1,0 +1,13 @@
+id: GPF-A18
+name: Human-presence flag laundering
+tier: agentic
+description: An autonomous flow falsely claims a person is present to bypass unattended-agent risk controls.
+kill_chain_stage: payment_manip
+channel: agentic_checkout
+rail: card
+genai_capability: payment parameter selection
+primitives: [tool_manip, payment_manip]
+observable_signals: [presence flag without interaction, unattended timing pattern, approval evidence absent]
+defense_hooks: [presence-evidence binding, behavioral consistency check]
+severity: high
+feasibility_today: true

@@ -1,0 +1,51 @@
+{
+  "cache_key": "a4c8628137d7a1b3499b612aad6a431ffcbc8ed0a071727f4471bfa50b4d3cd4",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured rendering is demo-ready across all three viewports: FCP 52–72 ms, LCP 308–1288 ms, TTFB 1.5–7.5 ms, and load/DCL 129–154 ms. Layout stability is strong on desktop/mobile (CLS 0.0011/0) and acceptable on tablet (0.0478). Frame samples show no long frames; worst frame was 33.4 ms on desktop and 16.8 ms on tablet/mobile. There were no console, page, or request failures and no horizontal overflow. The main limitation is payload efficiency: 1,314,033–1,314,034 transferred bytes, including 1,148,910 JS bytes, plus 17 requests and calls to multiple non-vault endpoints.",
+    "fix": "Reduce the 1.15 MB JavaScript payload with route-level code splitting and lazy-load data/assets for screens other than vault. Avoid fetching unrelated endpoints during vault startup, and investigate the tablet-only CLS of 0.0478 by reserving stable dimensions for late-rendered content.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348142,
+        "sha256": "8e74a5455efe31feb187d14a3525c8d7f1fdcbeedeaf8d2f0eb38854befa8045",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4179cd8fb54ae3218da3bbcc34fea308290b0f0ad7631bbfcb0c9aa06fb5a369",
+    "schema_version": 3,
+    "sha256": "a4c8628137d7a1b3499b612aad6a431ffcbc8ed0a071727f4471bfa50b4d3cd4"
+  },
+  "response": {
+    "id": "resp_096b661afa714478016a9083ba511087d0b5082e00128f3d37",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7389,
+      "input_tokens_details": {
+        "cache_write_tokens": 7386,
+        "cached_tokens": 0
+      },
+      "output_tokens": 559,
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "total_tokens": 7948
+    }
+  }
+}

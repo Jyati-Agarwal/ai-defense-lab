@@ -1,0 +1,51 @@
+{
+  "cache_key": "bbb8f29c6a28a1e0403899b68f5dd9ad105b5ef489f200f354d78a4cd71134f3",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated WCAG checks report no confirmed violations, but remain inconclusive for 6 serious prohibited-ARIA nodes, 2 critical duplicate-ID/ARIA nodes, and 484–553 serious color-contrast nodes. Keyboard navigation reaches #economics, no touch-target violations were measured, document width equals viewport at all sizes, the skip-link target is 158×46 px, and reduced-motion testing shows no animated transform or opacity change.",
+    "fix": "Resolve the prohibited ARIA attributes and duplicate IDs, then verify every flagged foreground/background pair meets WCAG contrast thresholds. Rerun the audit until these critical and serious checks produce conclusive passes at all three viewports; retain the proven keyboard, touch-target, no-overflow, skip-link, and reduced-motion behavior.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 313779,
+        "sha256": "86deaa7afa89e77784aa0288cae8d37cb6733ed3b9857d91d388493c6498d17e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 272191,
+        "sha256": "cd3990ee1fb660eca58e9fb5e65462abbe0debc2a63b4ad4c8a536900692f0cf",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 194951,
+        "sha256": "3eebab56f9d69b2f9d8d5c12d135a1ee70ed5aece158b94b6b110c829b77f451",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "08354b7925216ebb915a63822110b8e1fe20c77416f4cc8550b29eda1a4a56d2",
+    "schema_version": 2,
+    "sha256": "bbb8f29c6a28a1e0403899b68f5dd9ad105b5ef489f200f354d78a4cd71134f3"
+  },
+  "response": {
+    "id": "resp_0045857f021f81d4016a907ab15b0887d088fdb05c8e85ba7f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6811,
+      "input_tokens_details": {
+        "cache_write_tokens": 6808,
+        "cached_tokens": 0
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 7199
+    }
+  }
+}

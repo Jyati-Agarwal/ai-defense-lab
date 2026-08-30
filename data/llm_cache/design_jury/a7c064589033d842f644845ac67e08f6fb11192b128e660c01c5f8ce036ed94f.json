@@ -1,0 +1,70 @@
+{
+  "cache_key": "a7c064589033d842f644845ac67e08f6fb11192b128e660c01c5f8ce036ed94f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and supporting sentence clearly argue for operating metrics over accuracy, and “Compare configurations” supplies a next action. However, the precision–recall chart is not self-explanatory: its x-axis repeats “100%” before ending at “65%,” undermining trust and readability. The cards also do not consistently state the threshold/configuration behind each result. On mobile, explanatory and chart text is extremely small, the ablation table becomes dense cards, and the CTA appears only after a long scroll. The global mobile/tablet header hides Metrics beyond the visible navigation rail, so location is unclear without swiping.",
+    "fix": "Correct and simplify the PR-axis labeling; show the active model, dataset, threshold, and false-positive constraint beside every derived metric; add a concise above-the-fold takeaway connecting the numbers to a decision; enlarge mobile labels; and surface a persistent or earlier “Compare configurations” CTA. Ensure the header visibly indicates “09 Metrics” at every viewport.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "53aecb809acc884eaf50c9b4b0c13dfba584d63e9ee3e435b039cbafb13acb53",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 199234,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "da4436a0a47a7d6f59916cab4ef9184a8b02176c3ac0925207877a63a850a480",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 176616,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "7285109bf6396631d90e13c613a52483ad1f68da440d464841bdaaae15e019e0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 163041,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "f1cd108767481667212daff9eddc8abb629e951e0096a25cb0864c86a3d2268d",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "37002dd8083ce4987eab3426ca507b22f9fbf1e3c6df023b081505ff1a49bc3b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a7c064589033d842f644845ac67e08f6fb11192b128e660c01c5f8ce036ed94f"
+  }
+}

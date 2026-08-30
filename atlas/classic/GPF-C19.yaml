@@ -1,0 +1,13 @@
+id: GPF-C19
+name: Impossible-travel card purchase
+tier: classic
+description: Card activity appears in geographically incompatible locations within an infeasible interval.
+kill_chain_stage: payment_manip
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [payment_manip]
+observable_signals: [geo-velocity violation, unfamiliar merchant country, device-location disagreement]
+defense_hooks: [geo-velocity rule, device binding]
+severity: medium
+feasibility_today: true

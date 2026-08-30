@@ -1,0 +1,51 @@
+{
+  "cache_key": "8861044b9f98ef154072446e7da94d1e943dccd37bfc8fb7d64a95796a669237",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Frame pacing is stable: tablet/mobile average about 16.67ms with 16.8ms worst frames, while desktop averages 20.73ms with a 33.4ms worst frame and no recorded long frames. However, standard-mode sampling found 0 active animations, 0 transition elements, and 0 changed elements at every viewport, so no motion choreography or interaction feedback is demonstrated. Reduced motion is visually static, but still reports 1 active animation and transition styling on every sampled element (188–300), preventing clean proof that motion is fully disabled.",
+    "fix": "Provide measured frames for deliberate arena interactions or state changes and verify their timing across all viewports. Under prefers-reduced-motion, explicitly disable nonessential animations and transitions so instrumentation reports 0 active animations and 0 transition elements while preserving immediate state feedback.",
+    "score": 5,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 671828,
+        "sha256": "9d4f5ffd936c43cc21671ef19f949a68a20c0d5ced7ad4c3fe0d93da6d85598c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "43acf758d4cd5fdf03e32b69ae3d7b436d63002cd267d86cdef4ce3d57a3bf5c",
+    "schema_version": 3,
+    "sha256": "8861044b9f98ef154072446e7da94d1e943dccd37bfc8fb7d64a95796a669237"
+  },
+  "response": {
+    "id": "resp_06e54e6405d51db8016a9084e5307487d0b66ee8bfd66970d8",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7189,
+      "input_tokens_details": {
+        "cache_write_tokens": 7186,
+        "cached_tokens": 0
+      },
+      "output_tokens": 551,
+      "output_tokens_details": {
+        "reasoning_tokens": 353
+      },
+      "total_tokens": 7740
+    }
+  }
+}

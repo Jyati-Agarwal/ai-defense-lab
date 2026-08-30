@@ -1,0 +1,70 @@
+{
+  "cache_key": "cd2a2d2f5a5577671bec6e8e00723779e56727db17fa4704dc8e86977efcc016",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen credibly closes the intent-integrity narrative by distinguishing a measured 69.6% recall miss from an evidence-quality limitation and pairing it with a concrete step-up/post-review control. However, the visible proof never connects GPF-A21, multi-merchant fanout, or the proposed control to Mastercard’s network, fraud, payment, or merchant-risk priorities; “Results artifact” and successful API responses establish provenance/operation, not brief relevance or control effectiveness.",
+    "fix": "Add a concise Mastercard-specific impact statement and observable proof for the proposed control—such as affected merchant/payment scope and a before/after step-up result—while defining GPF-A21 in plain language.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "890dea84742edfc4efe9036ea72df989672ed73a88324f5ce678393bf3ad3902",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 115761,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "c585634ff9771743647623e024e8917255058feb6c6ff2ae20e73f2dc6d8f5d6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 94743,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "d044bb63ed20f93b1a3eede6c12c8f3253866d2004948453073dd84b0d3f6c14",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 94401,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "bf044eca0de69825e8984c87d588a3f6e300865eac050b404c0b577a9d3ad8d5",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7f997ce8a5ff2b23efe6b38638b62d93c72b075560443c7e41a15fb5928fbadc",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "cd2a2d2f5a5577671bec6e8e00723779e56727db17fa4704dc8e86977efcc016"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "4fb8fc54d80e4c4bdf8b1163f068965133c6133f5e0d5f1af4a28797a19fc6fc",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The cyan-to-red intent/payment divergence is a clear, screen-specific visual metaphor, reinforced by the unusually blunt headline and semantic-mismatch reveal across all viewports. However, much of the execution still resembles a familiar dark cyber dashboard: monospace labels, outlined panels, status pills, and verification rows. The desktop chain is especially sparse, while tablet/mobile reduce the signature idea to stacked cards, weakening its demo-stage identity.",
+    "fix": "Make the intent-to-outcome split the unmistakable centerpiece at every viewport: enlarge and integrate the chain with the divergence graphic, animate the verified transaction path before the semantic fork, and replace generic status-panel treatment with a single dramatic forensic reveal.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "10d7e10a1428ee562f9e4faaeb8da06b4dff3398f5828c45126d6cf27035edec",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 219273,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "9b8b1c238686a90f37fd6c704bad6dc5d789b5ed9f93e5c2aead75ce03d2fd9e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152555,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c50256d7fe1ea61340368979dc8e78324465e6b05c95bde78ddc41ece1f571f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138137,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "7bb389bc97f9a34e1b6bd577561a1fe7ee0ada94927354f5b5c320f536252c62",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b636cadd1b411e757f42d7a50621aeac260e429d15c5450afb287f588c1ddb96",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4fb8fc54d80e4c4bdf8b1163f068965133c6133f5e0d5f1af4a28797a19fc6fc"
+  }
+}

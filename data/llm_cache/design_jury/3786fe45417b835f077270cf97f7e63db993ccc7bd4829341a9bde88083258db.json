@@ -1,0 +1,70 @@
+{
+  "cache_key": "3786fe45417b835f077270cf97f7e63db993ccc7bd4829341a9bde88083258db",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "All 10 section controls and 13–14 header links were keyboard-reachable with visible focus indicators. No section touch-target violations or section viewport overflow were measured, and reduced-motion sampling found no moving elements. However, WCAG contrast remains unverified: axe marked 78–83 live-wire nodes and 14–26 header nodes incomplete with serious impact. Tablet/mobile headers also clip many navigation items inside the rail, and no header touch-target or screen-reader evidence was provided.",
+    "fix": "Resolve and remeasure contrast against the actual gradient for every incomplete node, especially dim metadata and navigation text. Replace or clearly expose the clipped mobile/tablet navigation, then test its touch targets and screen-reader semantics before claiming demo readiness.",
+    "score": 6,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c9b71e53cc26626ec51175780f56fd086903ec36df964ed637dc3b7a7218addd",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7ed44c285c8896784db0f80d811f3394f1abc9db3702fcdaa42238671a6da1f9",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "3786fe45417b835f077270cf97f7e63db993ccc7bd4829341a9bde88083258db"
+  }
+}

@@ -1,0 +1,2 @@
+"""Stateful synthetic payment simulation."""
+

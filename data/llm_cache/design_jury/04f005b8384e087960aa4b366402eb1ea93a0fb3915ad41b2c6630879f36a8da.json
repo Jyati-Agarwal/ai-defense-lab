@@ -1,0 +1,70 @@
+{
+  "cache_key": "04f005b8384e087960aa4b366402eb1ea93a0fb3915ad41b2c6630879f36a8da",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The visible human-versus-machine context seam is a clear, demo-worthy visual idea: the neutral control panel gives way to a hostile red retrieval layer, with authorized intent and recorded outcome shown side by side. The oversized thesis headline, scanline texture, warning frame, and restrained cyan/red coding remain recognizable across all three viewports. The global header is comparatively generic, and the mobile composition becomes a long stack of bordered cards, but the central reveal concept stays distinctive.",
+    "fix": "Make the reveal itself the unmistakable signature moment: provide visible before/after proof of the harmless page transforming into the red machine-visible layer, and tighten the mobile red panel so the contrast lands within one viewport.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f5923e8300662251dd0172ce34f3591706548bf11d1ebbe234a508c7679eeb7b",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 209373,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "2e778a5141bfbf96881e0d68f5c852a933484686390a6708ead96f5b308a9de2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 165194,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "62680fe2b8d8c55b97907bc9b70d5eb2d8bdb8c6c3dc5f8b8c7795a1c816a926",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 168883,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "43513915a8b69d02ecf0bc337ca3eb0f1a7a27d3e425fb12c16af4a799184382",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "85509644d0d4478e2a3525dcac4c72659f1dd759ba8c7285e6124b36881179c6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "04f005b8384e087960aa4b366402eb1ea93a0fb3915ad41b2c6630879f36a8da"
+  }
+}

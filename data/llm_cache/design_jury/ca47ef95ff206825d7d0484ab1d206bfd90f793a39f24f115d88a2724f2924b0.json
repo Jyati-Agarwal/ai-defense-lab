@@ -1,0 +1,51 @@
+{
+  "cache_key": "ca47ef95ff206825d7d0484ab1d206bfd90f793a39f24f115d88a2724f2924b0",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The paradoxical hero—“The signature is valid. The intent was stolen.”—paired with cyan/red forensic paths from recorded intent and page evidence to a verified payment creates a distinctive, demo-worthy visual thesis rather than a generic dashboard. The concept remains recognizable across viewports, though mobile removes the connecting paths and reduces the evidence trail to a conventional stack of cards.",
+    "fix": "Preserve the signature-versus-intent split on mobile with compact vertical cyan/red rails or animated trace lines connecting the evidence cards to the final contradiction, so the screen’s signature visual idea survives every viewport.",
+    "score": 8,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 236808,
+        "sha256": "d8228d34f6694cac75e35ce94626f7cb2d0c0c7a30b86f97308c890cce0ac996",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223674,
+        "sha256": "3c3dd782051ab7627e54739d11947df069db397a0920832a193b2ae153596215",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bae3ba20e430c5f0a93ada5497a9ea719c9c621cad8aeb4afb0f0c54bf0bbc33",
+    "schema_version": 3,
+    "sha256": "ca47ef95ff206825d7d0484ab1d206bfd90f793a39f24f115d88a2724f2924b0"
+  },
+  "response": {
+    "id": "resp_0a3ce315af061127016a9084cd8a3887d0ad09aed97c5c8c9f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5102,
+      "input_tokens_details": {
+        "cache_write_tokens": 5099,
+        "cached_tokens": 0
+      },
+      "output_tokens": 359,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 5461
+    }
+  }
+}

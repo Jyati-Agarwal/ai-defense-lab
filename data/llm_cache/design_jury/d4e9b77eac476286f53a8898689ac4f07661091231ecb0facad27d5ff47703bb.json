@@ -1,0 +1,70 @@
+{
+  "cache_key": "d4e9b77eac476286f53a8898689ac4f07661091231ecb0facad27d5ff47703bb",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, paired 100% recalls, explicit 0% regression gap, and deployment decision clearly communicate that the result shows stability but not production readiness. However, the required next step—an independent post-remediation holdout—is only stated, with no CTA or destination. “Open the scope evidence” also conflicts with the visible “Hide scope evidence” state, and dense microcopy becomes difficult to scan on mobile.",
+    "fix": "Add one prominent CTA such as “Run independent holdout” or “View holdout requirements,” and make the scope-evidence instruction reflect its current expanded/collapsed state. Increase mobile supporting-text size and spacing.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c6f8fc4505a0ba3e97eccdf849407bb3f35ef59597b7047cc7964787a77e87d3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212226,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "bcb4dbf753a1e785fec3499f7ce944fc9396cdee1109533726eb6fc4ddcbf95f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162900,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "843bd0e5adb73e7d4d41b13f553415b7d0d6ef8e4348012631159dd2568cdf14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "29f2d617a4a7c91c98bf697fd9d26a290cce0fcd590e6c39c6ec506b90b4b049",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d4e9b77eac476286f53a8898689ac4f07661091231ecb0facad27d5ff47703bb"
+  }
+}

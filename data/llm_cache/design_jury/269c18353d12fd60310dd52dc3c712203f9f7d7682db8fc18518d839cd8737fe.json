@@ -1,0 +1,51 @@
+{
+  "cache_key": "269c18353d12fd60310dd52dc3c712203f9f7d7682db8fc18518d839cd8737fe",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Anomaly without context becomes noise” thesis, forensic dark-grid treatment, and prominent BLOCK→ALLOW verdict reversal create a coherent identity across desktop, tablet, and mobile. However, the main artifact resolves into a conventional query summary plus ranked nearest-neighbor list; badges, percentages, and bordered rows are polished but not a distinctive signature visualization worthy of an 8.",
+    "fix": "Turn the precedent mechanism into the visual centerpiece: show the borderline query connected to its verified neighbors through a similarity field or evidence chain that visibly drives the verdict from BLOCK to ALLOW. Preserve that causal graphic across breakpoints instead of relying primarily on stacked list rows.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 421498,
+        "sha256": "8e84b2909b7c5016b5279cf6707b6f6f663db17536366333353eb5820b8bb6f6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 355398,
+        "sha256": "05a17b16127b6ae694f8bbd9caed569414dd6f6fdb87c50f188e74d9422f5b77",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287418,
+        "sha256": "d50af03a5bf03fa3d315d4b0f01a29bd4aaffc6391660e827341aecacfe93069",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c9ea32921235586c71f800fc13086ce1c1ea408ae6d9f483641d9c634581d4d6",
+    "schema_version": 2,
+    "sha256": "269c18353d12fd60310dd52dc3c712203f9f7d7682db8fc18518d839cd8737fe"
+  },
+  "response": {
+    "id": "resp_0c6c8e0c3f2c4bd9016a907a8b6d1c87d08ee3155d1b7546b5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6228,
+      "input_tokens_details": {
+        "cache_write_tokens": 6225,
+        "cached_tokens": 0
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 6571
+    }
+  }
+}

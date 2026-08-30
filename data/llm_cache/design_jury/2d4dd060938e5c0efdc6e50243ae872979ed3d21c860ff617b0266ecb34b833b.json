@@ -1,0 +1,70 @@
+{
+  "cache_key": "2d4dd060938e5c0efdc6e50243ae872979ed3d21c860ff617b0266ecb34b833b",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured rendering is smooth and stable across all viewports: FCP 32–60 ms, LCP 212–256 ms, CLS 0.000019–0.000192, zero long frames across 82 samples, and no console, page, or request failures. However, the page transfers 1,334,431 bytes, including 1,163,013 bytes of JavaScript, for this 12-screen experience. No throttled-network, cold-cache, CPU-throttling, or interaction-latency evidence is provided, so hackathon-demo readiness under realistic mobile conditions is not proven.",
+    "fix": "Reduce and code-split the 1.16 MB JavaScript payload, then provide cold-cache mobile measurements under network and CPU throttling, including LCP, INP or interaction latency, long tasks, and per-route transfer size.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e70fa7b4dc7b4c4491469ba1f655b6b9cad7a39a2cc164208933ed454d50bc9f",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 200551,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "18eb77824ec8f2442056133b5c685dc0c4df75a6159656cf99b30d35d871ccfc",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 177094,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "74f12ea6334295f269a9b4e73a667579f11b6ed5fc3319309eda5a33e9a269d6",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 174744,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b98d0bc7ec028e32f3b9985514d06c81a5c89a1c23ef98b77edc73a6213b19db",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "073f7aa04c4c2a7dd44571a94a09684d6153d848934c325c48af94448375c16d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2d4dd060938e5c0efdc6e50243ae872979ed3d21c860ff617b0266ecb34b833b"
+  }
+}

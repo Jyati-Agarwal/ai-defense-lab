@@ -1,0 +1,51 @@
+{
+  "cache_key": "e94cded952d22554e8874202c7e2f1ec63b2113242250ca064c1650778e12a1d",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear signature idea: a harmless storefront is visibly overwritten by a red, scan-lined “machine-visible retrieval layer,” with authorized intent and recorded outcome contrasted inside the reveal. The Agent Vision framing, oversized thesis headline, cyan control-point marker, and red forensic overlay make the injection seam understandable and recognizable at a glance rather than reading as a generic dashboard. The concept remains visible across desktop, tablet, and mobile.",
+    "fix": "Refine the mobile reveal: reduce the ghosted storefront interference, prevent dense labels from competing, and give the authorized/outcome comparison more breathing room so the signature red-layer moment feels as deliberate as it does on desktop.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 347474,
+        "sha256": "4cbfb072bf31c5828822ae371f295e1f83327ee04593f20a64bce61bcb08a149",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312117,
+        "sha256": "7e29c6d90b79a34002272db14277082fdccfb8fa3bfbcf8f4729e298704152be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264865,
+        "sha256": "10238cacde8d09b1fe1f82c33d5c23b8d3348a3eb6ee3b46faa3f9d8467d3ef1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dab3a2eb7f46c2cb092acb7f40c4d7f3c251f78c481a03734262020df50e2194",
+    "schema_version": 3,
+    "sha256": "e94cded952d22554e8874202c7e2f1ec63b2113242250ca064c1650778e12a1d"
+  },
+  "response": {
+    "id": "resp_03c921ebea27d202016a90839ecafc87d0802070bba25a4002",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6147,
+      "input_tokens_details": {
+        "cache_write_tokens": 6144,
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 6496
+    }
+  }
+}

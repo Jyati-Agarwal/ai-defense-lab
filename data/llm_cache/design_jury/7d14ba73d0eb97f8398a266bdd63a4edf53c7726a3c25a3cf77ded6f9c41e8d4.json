@@ -1,0 +1,51 @@
+{
+  "cache_key": "7d14ba73d0eb97f8398a266bdd63a4edf53c7726a3c25a3cf77ded6f9c41e8d4",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The screen has a distinctive, cohesive defense-console aesthetic: near-black grid, restrained cyan/green/yellow accents, strong oversized headline, clear 100% metric emphasis, and polished radar/lock artwork. The mobile card stacks logically and the desktop split composition is visually compelling. However, the desktop navigation bar cuts directly through the hero headline, while the tablet bar obscures the “What’s happening” content and clips its own horizontal navigation. Tablet also leaves an overlong radar panel before the results, and mobile metadata, labels, hashes, and explanatory copy become extremely small and dense. The wrapped green status pill and tightly packed evidence rows further reduce polish on mobile. These visible cross-viewport hierarchy and legibility defects keep it below demo-ready 8.",
+    "fix": "Keep the navigation in a dedicated non-overlapping header region at desktop and tablet, with an intentional overflow/menu treatment instead of clipped links. Reduce tablet radar height, raise small-text sizes and line-height on mobile, allow hashes to wrap cleanly, and simplify or widen the mobile status/evidence layouts so labels and pills do not feel compressed.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348146,
+        "sha256": "1aaf74804d977d9485d4a8407742f88a7f0919bbb4f8e88951f0c8b68e18e655",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "549f0b2c9aed58a53addba71e837cae3d0f7778144fb77ec457850067f089322",
+    "schema_version": 3,
+    "sha256": "7d14ba73d0eb97f8398a266bdd63a4edf53c7726a3c25a3cf77ded6f9c41e8d4"
+  },
+  "response": {
+    "id": "resp_02121c3c783babe9016a9084edd2f487d09ef2e44fd48bc7a2",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6891,
+      "input_tokens_details": {
+        "cache_write_tokens": 6888,
+        "cached_tokens": 0
+      },
+      "output_tokens": 555,
+      "output_tokens_details": {
+        "reasoning_tokens": 301
+      },
+      "total_tokens": 7446
+    }
+  }
+}

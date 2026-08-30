@@ -1,0 +1,51 @@
+{
+  "cache_key": "b0b3a6109927c6cad6b22b347f0a30e377e12a9f3ae9f2d259e560d70896bdab",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen advances the defense story by explicitly separating measured misses from evidence-quality caveats, reporting 69.6% recall, and attaching the residual gap to a concrete step-up/post-review control. However, it presents only one opaque gap (GPF-A21), provides no visible provenance or denominator for the recall figure, and does not connect the limitation to a specific intent-integrity attack, payment workflow, or Mastercard-relevant outcome. Successful API responses do not supply that missing relevance proof.",
+    "fix": "Turn GPF-A21 into an auditable Mastercard use-case entry: name the attack and affected payment/identity decision, show the evaluation source and miss numerator/denominator, distinguish observed misses from unmeasured evidence limitations, and quantify how the proposed step-up control reduces customer, fraud, or authorization risk.",
+    "score": 6,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 210492,
+        "sha256": "4fa2e8917e41bc6151423e8400b7dc81eacd0adc79d95a8bb134f176e3f00272",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 182187,
+        "sha256": "28133e59fb30cb890de018c97d9054165a954b80d2ce56eb11887b9173f61bb8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 149247,
+        "sha256": "b5a16aa95eb6aac2d459703c5897aa489a406e54ec6f81d88095fbaa3fc9b30b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4f0da7a3d30340958ffd60ce82a98e358d55abdaef67d04aa2a169a363abf75b",
+    "schema_version": 2,
+    "sha256": "b0b3a6109927c6cad6b22b347f0a30e377e12a9f3ae9f2d259e560d70896bdab"
+  },
+  "response": {
+    "id": "resp_0264c47128078672016a907abdb0f887d0a90f5b88f4db35ee",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4404,
+      "input_tokens_details": {
+        "cache_write_tokens": 4401,
+        "cached_tokens": 0
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 4828
+    }
+  }
+}

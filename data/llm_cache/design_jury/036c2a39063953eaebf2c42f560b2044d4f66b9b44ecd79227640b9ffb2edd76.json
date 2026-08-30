@@ -1,0 +1,51 @@
+{
+  "cache_key": "036c2a39063953eaebf2c42f560b2044d4f66b9b44ecd79227640b9ffb2edd76",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The desktop has a recognizable attack-atlas concept: a cyan connected kill-chain path above stage-aligned vector cards and an evidence inspector, reinforced by the oversized “Map the adversary before scoring it” headline. However, the dark grid, monospaced labels, neon cyan accents, pills, and dense cards remain familiar cyber-dashboard styling. At tablet and mobile sizes, the signature connected path becomes a plain numbered stage grid, leaving a long card-and-JSON layout that is much less distinctive.",
+    "fix": "Preserve the atlas metaphor across viewports with a compact interactive route or mini-map instead of replacing it with a numbered grid, and give selected vectors a stronger spatial trace through the kill chain so the screen has one unmistakable demo moment beyond standard cyber UI styling.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 568872,
+        "sha256": "415f41834f90d11292e4eae493c03ce763db0b2d41efce54444cb05961e572aa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b4fbf74797b9399654cb66f0bc7868028afec07562198ee87561ea9b4c29f63c",
+    "schema_version": 3,
+    "sha256": "036c2a39063953eaebf2c42f560b2044d4f66b9b44ecd79227640b9ffb2edd76"
+  },
+  "response": {
+    "id": "resp_04c3b699f5997214016a9084d87ae087d08f5c720808edeb75",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6573,
+      "input_tokens_details": {
+        "cache_write_tokens": 6570,
+        "cached_tokens": 0
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 6891
+    }
+  }
+}

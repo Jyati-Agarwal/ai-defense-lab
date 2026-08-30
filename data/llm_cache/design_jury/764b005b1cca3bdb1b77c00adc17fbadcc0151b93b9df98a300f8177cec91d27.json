@@ -1,0 +1,70 @@
+{
+  "cache_key": "764b005b1cca3bdb1b77c00adc17fbadcc0151b93b9df98a300f8177cec91d27",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, instruction, control labels, prominent LAUNCH EVENT button, and side-by-side ALLOW/BLOCK result make the intended interaction understandable across viewports. However, “Change one synthetic event” conflicts with a form offering many simultaneous changes, no control identifies the changed value or baseline, and the results appear pre-populated without a clear before/after or launched-state cue. On mobile, the global header does not visibly identify Composer as the current section.",
+    "fix": "Show a clearly labeled baseline and highlight the single changed control; keep results in an explicit pre-launch/updated state with a timestamp or run marker. Also expose the current “Composer” location in the tablet/mobile header.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ad2752ab9467ebe4479fbb37c3daf52e18cf9338fca7f45f3653952dce0f34ad",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165130,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "531f821a175de8eb2e22e7e223747a31f567a4a572d0b580fd6b10de6231c7d5",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154149,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "535d1441d90ce8f3095156666d60e721d5bebcc4884b63169e33ff862af41f2f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157904,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "8669299ac60859bd1feb17543b9d88bbe5a926ee454c989a96f1f5af0b23b94f",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "85e1e0619cfcab9dde4e824fc1430a18b9954a376e24b34f9058c87d833577cd",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "764b005b1cca3bdb1b77c00adc17fbadcc0151b93b9df98a300f8177cec91d27"
+  }
+}

@@ -1,0 +1,13 @@
+id: GPF-C02
+name: Low-value card testing burst
+tier: classic
+description: Stolen card numbers are tested through many small authorizations before a larger purchase.
+kill_chain_stage: payment_manip
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [reconnaissance, payment_manip]
+observable_signals: [sub-floor amount burst, many cards per device, authorization decline velocity]
+defense_hooks: [velocity limits, shared-device graph]
+severity: high
+feasibility_today: true

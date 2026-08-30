@@ -1,0 +1,70 @@
+{
+  "cache_key": "3b80b735365df8e932bad2acbecf5af714c6b37a4e9dc80a2f2c4ab59362aaa2",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, side-by-side recall values, 0% gap, and deployment decision clearly distinguish stability from production readiness. However, the promised next action is only stated as “an independent post-remediation holdout is still required”; there is no control to create, run, or inspect that holdout. “Open the scope evidence” conflicts with the visible “Hide scope evidence” state, specialist terms are unexplained, mobile evidence text is very small, and the mobile header does not visibly identify Vault as the current section.",
+    "fix": "Add a prominent “Run independent holdout” or “View holdout requirements” CTA beside the deployment decision. Make the evidence-state instruction dynamic, define or simplify the key jargon, increase mobile evidence text size, and keep the current Vault location visible in the compact header.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "441fb6b39e6fc8f320440c1fbe636a5f2bf6ad737e9e23e5888ab8167cf78eff",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212238,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "f246261ec83038cfc9f866b6f5dc0973028de699e50b872bc8b5de46eda3d3fc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162901,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "1d36fbc72b20d794bbcf03519fce81db620fc65273bc460d88792a4e1773bef4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "29f2d617a4a7c91c98bf697fd9d26a290cce0fcd590e6c39c6ec506b90b4b049",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "3b80b735365df8e932bad2acbecf5af714c6b37a4e9dc80a2f2c4ab59362aaa2"
+  }
+}

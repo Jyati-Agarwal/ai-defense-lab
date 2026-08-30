@@ -1,0 +1,28 @@
+{
+  "artifact": "entity_fidelity_mrs1_r1_preprocessing_failure",
+  "basket_aggregation_completed_in_memory": true,
+  "converter_subprocess_started": true,
+  "deterministic_household_split_computed": false,
+  "development_or_qualification_partition_created": false,
+  "failure": {
+    "exception": "ValueError",
+    "message": "retained Complete Journey basket falls outside the frozen observation window",
+    "stage": "post_conversion_observation_window_validation_before_partition_split"
+  },
+  "model_fit_or_metric_computed": false,
+  "mrs1_r1_preregistration_sha256": "24c080955926b7c4ea42ef8d590f3b4e8250bc755ddbb25b6a90385a95357b2e",
+  "official_source_evidence": {
+    "calendar_mapping": "2017-01-01 + (day - 285)",
+    "day_filter": "day >= 285 and day < 650",
+    "git_commit": "5b5d06192b9856edd04e4d405787af2f2e4a1fef",
+    "path": "data-raw/prep-data.R",
+    "timezone": "America/New_York"
+  },
+  "partition_files_created": false,
+  "preprocessor_sha256": "46c69ab0de5fa5ded4bc2941745c7c676c2feade2739634a9e45eced8cdb3b57",
+  "qualification_partition_selected_or_scored": false,
+  "raw_source_rows_transiently_parsed": true,
+  "schema_version": 1,
+  "status": "STOP_SUPERSEDED_BY_IMPLEMENTATION_R2",
+  "superseding_change_scope": "restore the official America/New_York local-wall timestamp before removing timezone metadata; no window, model, seed, feature, threshold, or split change"
+}

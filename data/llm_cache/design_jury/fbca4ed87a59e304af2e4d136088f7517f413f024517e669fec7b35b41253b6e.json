@@ -1,0 +1,51 @@
+{
+  "cache_key": "fbca4ed87a59e304af2e4d136088f7517f413f024517e669fec7b35b41253b6e",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured performance is demo-ready across all three viewports: LCP is 1288 ms desktop, 1156 ms tablet, and 308 ms mobile; FCP is 52–72 ms; load completes in 129–154 ms; and TTFB is 1.5–7.5 ms. CLS is excellent on desktop (0.0011) and mobile (0), though tablet reaches 0.0478. No console, page, or request failures occurred, and document width matches every viewport. Animation timing reports no long frames, but desktop averages 19.3 ms with a 33.4 ms worst frame. The main limitation is transfer cost: approximately 1.31 MB total, including 1.15 MB of JavaScript, repeated at every viewport.",
+    "fix": "Reduce the 1.15 MB JavaScript payload through route-level code splitting and tree-shaking, then reserve dimensions for tablet content to lower its 0.0478 CLS. Profile the desktop animation/render path to bring average frame time below 16.7 ms and eliminate the 33.4 ms spike.",
+    "score": 8,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 671822,
+        "sha256": "5d5078096ab27cf8b1b99406159c4d2805cbde4507b741c7922a2bc58c4a3c54",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ed6aae3ebb20210e8495e63aafb8042820be8c0754ac625fc1119f7371a44c65",
+    "schema_version": 3,
+    "sha256": "fbca4ed87a59e304af2e4d136088f7517f413f024517e669fec7b35b41253b6e"
+  },
+  "response": {
+    "id": "resp_05e7e6ff822db35b016a9083b074dc87d0b886598615b107e7",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6705,
+      "input_tokens_details": {
+        "cache_write_tokens": 6702,
+        "cached_tokens": 0
+      },
+      "output_tokens": 465,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 7170
+    }
+  }
+}

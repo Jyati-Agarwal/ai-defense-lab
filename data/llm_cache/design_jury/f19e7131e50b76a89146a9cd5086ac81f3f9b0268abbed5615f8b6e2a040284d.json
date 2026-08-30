@@ -1,0 +1,70 @@
+{
+  "cache_key": "f19e7131e50b76a89146a9cd5086ac81f3f9b0268abbed5615f8b6e2a040284d",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Standard entry motion is consistently smooth at all three viewports: ~16.1–16.3 ms sampled frame averages, 16.7–16.8 ms worst frames, and zero long-frame ratio. The measured panel fade/22 px rise settles cleanly without overshoot. Reduced-motion mode matched and produced zero changed elements or trajectories across 85 sampled elements. However, the evidence measures only scroll-entry motion; there are no animation frames for control changes, toggle/slider feedback, launch activation, loading, or results-state transition.",
+    "fix": "Capture and verify frame trajectories for slider/toggle changes and the complete Launch Event-to-results sequence at every viewport, including loading and completion feedback under standard and reduced motion. Keep frame pacing within budget and make reduced motion replace spatial transitions with immediate or minimal non-spatial feedback.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e1080a8a4c66dd3c2582179a931a21c5038979611de007d52719f8a2f6f0bfd2",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 165495,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "37b90aa250c1b1df04f3e3701785d2dac60e5c9d362c98556bb9c0c9eb4ac66e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154250,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "3251144121a4a95d026d0289217134e98527876d14415a6666a4e2894741e57f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157843,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "d393645a53e8721e33fe9702821ec5e58921f829bcba188358bb2e804f3a0b57",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3d432b93784158efa5795a754d5aaeff3505e2ebfc9bb4827fc2374b3d739cb5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f19e7131e50b76a89146a9cd5086ac81f3f9b0268abbed5615f8b6e2a040284d"
+  }
+}

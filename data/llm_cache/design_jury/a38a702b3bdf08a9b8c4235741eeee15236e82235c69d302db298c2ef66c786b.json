@@ -1,0 +1,70 @@
+{
+  "cache_key": "a38a702b3bdf08a9b8c4235741eeee15236e82235c69d302db298c2ef66c786b",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard traversal and visible focus pass at all viewports; no touch-target violations or uncontained overflow were measured, and reduced-motion sampling found no element movement. However, WCAG contrast remains unproven: axe reports serious incomplete color-contrast checks for 16–29 metrics chart labels and 1–12 header links. Chart accessible names are also raw concatenated tick labels rather than meaningful summaries.",
+    "fix": "Measure and correct contrast for every chart label and header link to WCAG AA, then give each chart a concise accessible name plus a text/table equivalent describing its values; rerun axe and keyboard tests until no serious incomplete checks remain.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "fb53a06e3ee7c3fa4d09ba2c1a099193e7f6f3e5edacd2c46558a182fbe844ed",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 199234,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "da4436a0a47a7d6f59916cab4ef9184a8b02176c3ac0925207877a63a850a480",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 176616,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "7285109bf6396631d90e13c613a52483ad1f68da440d464841bdaaae15e019e0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 163041,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "f1cd108767481667212daff9eddc8abb629e951e0096a25cb0864c86a3d2268d",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ace08360d1fc65c13bc08c2e5f9b6b045d80d21cff6d114466f1093b28e719c8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a38a702b3bdf08a9b8c4235741eeee15236e82235c69d302db298c2ef66c786b"
+  }
+}

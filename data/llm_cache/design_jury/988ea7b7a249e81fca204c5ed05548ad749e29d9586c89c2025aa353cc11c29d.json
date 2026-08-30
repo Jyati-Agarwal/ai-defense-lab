@@ -1,0 +1,70 @@
+{
+  "cache_key": "988ea7b7a249e81fca204c5ed05548ad749e29d9586c89c2025aa353cc11c29d",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong dark editorial style, disciplined cyan/red semantics, crisp cards, and responsive restructuring create a coherent visual hierarchy. However, desktop is imbalanced: the oversized headline dominates a large empty field while the primary evidence panel is pushed low and rendered with very small labels. Tablet and mobile are more cohesive, but the dense monospace metadata becomes hard to read, the mobile diagram is too compressed, and the global header looks cramped and abruptly clipped at both smaller widths.",
+    "fix": "Reduce the desktop headline scale and excess vertical gap, enlarge critical panel labels/metadata, simplify the mobile diagram, and give the tablet/mobile header a clearer active-item treatment with deliberate edge fades or pagination instead of visibly clipped navigation.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e7b48a14d17b310980d829f34bd49c41e4c386a2fe69440a34c6a1adb802b87b",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 219274,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "6851d17081ae659b682907d9cc8c46373e44fca9f4a47bb939088510517312b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152336,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c0b53227dbd81598455245d2168c1ac79a821c3b364c5a5268b56f936af9586c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138168,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "1580f16a374610d035b768da11befffbfd189a07877d32c9b0ebe810ead9f8d8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d0e7c13ad00fe2c7be29351fd3c7b740e02be79be44362ea6cc85e02bd6076f7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "988ea7b7a249e81fca204c5ed05548ad749e29d9586c89c2025aa353cc11c29d"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "6f47ddbd09077d317118e4128cf998eefbea4d75a16a94c93cc193af0a0056ec",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The human-visible versus machine-visible reveal is a distinctive, demo-ready visual idea: the red scan-lined retrieval layer, concealed voucher beneath it, causal-proof comparison, and cyan/red forensic palette turn prompt injection into a concrete visual seam rather than a generic dashboard. The concept remains recognizable across all three viewports, though mobile becomes dense and less theatrical.",
+    "fix": "Strengthen the reveal moment with a clearer before/after transition and simplify the mobile evidence panel so the concealed-layer illusion remains the dominant, instantly legible visual.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "76ac5068fb3549e27502ab06b0ab0aacfe67bdaf1db0030de290b4c371f49359",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 239771,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "275e2556e20e872850a100b19bb59300572c81c00ea298419e603c99cb68cda3",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181146,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "ba88fb33c4345a3a9af7aefc9eecfbf53d5947d30d3d5ec3a21bec3e564fefa3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 183647,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6ab0fd189931c62c30d6c37efd06beebc58a4e5065e6e2e35a34c7c614fe08c0",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "99c57411b3c70298c625c6ca5063baaf528325a2732bb9f4c6e39d83453b90e5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6f47ddbd09077d317118e4128cf998eefbea4d75a16a94c93cc193af0a0056ec"
+  }
+}

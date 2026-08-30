@@ -1,0 +1,70 @@
+{
+  "cache_key": "0a123f92e3c3cd4df6485a4529ae14f397759268fcfe170e308db41d19e43f1f",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "The unknowns section has zero automated violations/incomplete checks at all viewports, complete visible keyboard focus, no touch-target failures, no viewport overflow, and no observed motion under reduced-motion. However, header contrast remains unresolved: 12 mobile links and 1 tablet link produced serious color-contrast incomplete results. Contained horizontal navigation clipping is present on tablet/mobile.",
+    "fix": "Provide measured contrast proof for every header link state against the actual gradient/overlapping background, raising colors where needed to WCAG AA. Also verify the horizontally clipped navigation is discoverable and operable by touch and keyboard.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "ed94de14062b75b1ba208520e62473bf72ef3c17a862e2c53c26af1319c72512",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 144775,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "37ac06310f7c04875dfcc037bfacaf63d448ae7a119586919fb2bd856b851438",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 126778,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "33655996eada8826fa4ce6ccc21d9032d5bf9876d7a3d02b94235b6297d16ce8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 123430,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "55340086ae1b71733ab3c21ed7bd6dd3f453037ba1139713032f87178bb34947",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "666536019ba02ed3dcaf1c14d21b77bb33ef60e2dc9489437414871843870991",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0a123f92e3c3cd4df6485a4529ae14f397759268fcfe170e308db41d19e43f1f"
+  }
+}

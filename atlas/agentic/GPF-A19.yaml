@@ -1,0 +1,13 @@
+id: GPF-A19
+name: Valid-mandate replay within TTL
+tier: agentic
+description: A captured mandate is reused several times while its signature and time window remain valid.
+kill_chain_stage: delayed_exec
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous retry and scheduling
+primitives: [payment_manip, delayed_exec, cash_out]
+observable_signals: [mandate nonce reuse, repeated cart digest, intent fanout count]
+defense_hooks: [single-use nonce, per-intent velocity]
+severity: critical
+feasibility_today: true

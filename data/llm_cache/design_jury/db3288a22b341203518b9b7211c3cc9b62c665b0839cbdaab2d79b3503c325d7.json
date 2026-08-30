@@ -1,0 +1,70 @@
+{
+  "cache_key": "db3288a22b341203518b9b7211c3cc9b62c665b0839cbdaab2d79b3503c325d7",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting sentence, stage map, selected-vector state, and “Continue to scored replay” CTA establish the claim and workflow without a presenter. However, unexplained labels such as “agentic,” “context manip,” and “safe metadata” make the model harder to understand, the raw JSON competes with the actionable evidence, and the mobile/tablet header does not clearly show Atlas as the current location.",
+    "fix": "Add a one-line definition of the tier/stage terminology, visually connect the selected stage to its vector and detail panel, collapse raw JSON behind “View metadata,” and give the active Atlas navigation item a persistent selected state.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "adc234fcfe10794b44a43ab4b2aadfb4912ec56cff8736e9d6a62fe937b458c6",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135661,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "23059da5fb4c6d5ac9b22d09aa2eb27527020fb8fe0a9aa993e35c146c316a8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124623,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "7c83bc2033feeb61801390c3c88b3fc0dc99dbaebfb210e21d7771f920b9fc42",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bb5ec182d5d9981ffc80d5ffd41fb09651436811d6962eed03da0de442a07d8b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "db3288a22b341203518b9b7211c3cc9b62c665b0839cbdaab2d79b3503c325d7"
+  }
+}

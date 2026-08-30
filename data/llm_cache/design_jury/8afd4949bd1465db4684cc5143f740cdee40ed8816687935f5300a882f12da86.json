@@ -1,0 +1,70 @@
+{
+  "cache_key": "8afd4949bd1465db4684cc5143f740cdee40ed8816687935f5300a882f12da86",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop is polished and distinctive, with a strong headline, restrained cyan/red palette, and clear reveal hierarchy. Tablet remains coherent. Mobile falls below demo-ready: the oversized headline dominates, the long stacked panel becomes visually exhausting, dense mono text and proof labels are too small, the authorized/outcome block wraps awkwardly, and the red overlay creates muddy low-contrast layering. The mobile header also drops the brand name and presents a clipped horizontal navigation rail; contrast proof is incomplete for 12 header links.",
+    "fix": "Refine mobile specifically: reduce headline size and vertical spacing, simplify or collapse secondary proof content, increase small-text size/contrast, stack the outcome comparison cleanly with consistent padding, lighten the red overlay so background content does not muddy foreground text, and preserve a compact brand identifier with a clearer navigation affordance.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "373917914b6ffc5c58a57e49576785238f3a3174852ee650676a09207afbd5c0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 239771,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "275e2556e20e872850a100b19bb59300572c81c00ea298419e603c99cb68cda3",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181146,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "ba88fb33c4345a3a9af7aefc9eecfbf53d5947d30d3d5ec3a21bec3e564fefa3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 183647,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6ab0fd189931c62c30d6c37efd06beebc58a4e5065e6e2e35a34c7c614fe08c0",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b72cf89001bf8e79cf882aa6c38ba7a5f32e6bac0f125517745ef992805b6771",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8afd4949bd1465db4684cc5143f740cdee40ed8816687935f5300a882f12da86"
+  }
+}

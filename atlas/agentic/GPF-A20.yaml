@@ -1,0 +1,13 @@
+id: GPF-A20
+name: Mandate TTL dormancy execution
+tier: agentic
+description: A compromised agent waits until user attention has faded and executes near or beyond expiry.
+kill_chain_stage: delayed_exec
+channel: agentic_checkout
+rail: card
+genai_capability: long-running autonomous scheduling
+primitives: [intent_manip, delayed_exec]
+observable_signals: [TTL utilization over limit, long intent-payment gap, execution outside user session]
+defense_hooks: [hard TTL enforcement, delayed-execution step-up]
+severity: high
+feasibility_today: true

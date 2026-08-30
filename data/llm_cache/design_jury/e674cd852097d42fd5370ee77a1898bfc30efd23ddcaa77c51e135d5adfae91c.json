@@ -1,0 +1,51 @@
+{
+  "cache_key": "e674cd852097d42fd5370ee77a1898bfc30efd23ddcaa77c51e135d5adfae91c",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "All three viewports show a cohesive, demo-ready visual system: restrained near-black grid, warm evidence panel, cyan/green status accents, pink anomaly values, crisp mono metadata, and bold editorial headlines. The human-versus-recorded split is immediately legible, with consistent borders, radii, spacing, and icon treatment. Tablet reflows the two halves cleanly, while mobile preserves hierarchy and comfortable gutters without clipping. Minor weaknesses keep it from exceptional: the desktop hero leaves a conspicuous empty upper-right region and makes the results annotation feel detached; the mobile headline wraps somewhat awkwardly, and the product URL/body copy is small and low-contrast.",
+    "fix": "Tighten the desktop hero composition by aligning the results annotation more directly with the headline/subhead block or using the empty right region more intentionally. Refine mobile headline sizing/line breaks, and slightly increase contrast and size for URLs, helper text, and the read-only notice.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 265633,
+        "sha256": "fcd4294a9f2642fd233b4d5bd8c740c380d89fd40709ac7b065ac3e956a094b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 230529,
+        "sha256": "b4dc4c9bcae4bb5fbb6d0e89a2340e0bbbea869fbc18719f37cf5bd22e7725f9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 204128,
+        "sha256": "41b8309d8318f60d01cf64e2e376ddb01c03a3285f49935e3f476fe423b5f09b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "260c6759a489112d2b678c02ff6e31fa2033a234141e1ba4c5f62a76256414b2",
+    "schema_version": 2,
+    "sha256": "e674cd852097d42fd5370ee77a1898bfc30efd23ddcaa77c51e135d5adfae91c"
+  },
+  "response": {
+    "id": "resp_00b831573284cbb6016a907a7f966087d0a2ad2eec84636c98",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5646,
+      "input_tokens_details": {
+        "cache_write_tokens": 5643,
+        "cached_tokens": 0
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 5994
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "4cf0b4ea94fbfcb9fed948e7aa5a627ae6a0c1eafcf85d7ebf31990a9df2b768",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen advances intent-integrity by naming a concrete multi-merchant fanout weakness, separating measured recall from evidence limitations, and attaching a step-up/post-review control. However, it exposes only one residual gap, gives no miss numerator or denominator, and does not connect the limitation to Mastercard-specific payment risk, network impact, or hackathon success criteria. The 69.6% recall claim is therefore insufficiently actionable for an 8-level demo.",
+    "fix": "Add artifact-backed miss counts and sample size, explain the Mastercard payment consequence of this fanout failure, and show how the proposed step-up control changes risk or recall on a verified uncertain case.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "98f133fe2fde01a94e945f03edb2e2a84e25f6df51a3883df17ffa25d20b088c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 255300,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "3c0d6beeaa5dab07dabb4f7e02a38bfe40ed083e6f913ee42b748b53a5c1b486",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 213777,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "282489082d7acab51e53af349b3e00e9d92ec70fbff66d5773ea72b3bc9df40b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181263,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "f4346f7dde804ba18eb8a31c042a989438a06c29505d09c988f05217026e72cd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "955babc8f77eafb0cae87153d067db0902a68bbd21510d9684fab8c2fe0d77fa",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4cf0b4ea94fbfcb9fed948e7aa5a627ae6a0c1eafcf85d7ebf31990a9df2b768"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "f369450048fb7cf3bc04c948fb264fd6743a8a30c07911da3dbdba8c41dc8363",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, training-fold disclaimer, and 4% initial → 0% final replay labels communicate the main result, and the layout remains coherent across viewports. However, “zero survivors” conflicts at a glance with “19 emergent” and “surviving mutations” without clearly distinguishing successful attacks from retained mutation candidates. The vaccination cards also show three “REJECTED” outcomes without stating that rejection is the desired safety result. There is no prominent next action beyond “Show 19 additional survivors,” and the mobile phylogeny is too small to interpret.",
+    "fix": "Add a plain-language verdict beside the chart: “Attack success reached 0%; 19 mutation candidates remain for holdout testing.” Rename statuses to outcome-specific labels such as “Safety gate passed—promotion rejected,” then provide one primary CTA, such as “Review fresh-row regression” or “Inspect surviving mutations.” Replace or summarize the unreadable mobile phylogeny.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 627612,
+        "sha256": "4fddb85cc4ac6c10f3b5f76dd14baa989856357c9b0f4f174a690d9c487dd276",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 563275,
+        "sha256": "69b2088744af269030cd3f4156893befdbe1b9a672a7c68905d2dfef61845e76",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 416664,
+        "sha256": "f2eb9f99e912a62f8ac1bcf94aa5615b97f8b415d46e4384abcff88d2923ba02",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "157e56a60447730bfefe1706a0bc25b9347eaed5930b79b68924373531b3b0a4",
+    "schema_version": 2,
+    "sha256": "f369450048fb7cf3bc04c948fb264fd6743a8a30c07911da3dbdba8c41dc8363"
+  },
+  "response": {
+    "id": "resp_0b9f2b7cb4c7763a016a907a938b6887d0a5be1994a1a8b536",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6229,
+      "input_tokens_details": {
+        "cache_write_tokens": 6226,
+        "cached_tokens": 0
+      },
+      "output_tokens": 464,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 6693
+    }
+  }
+}

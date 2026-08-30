@@ -1,0 +1,51 @@
+{
+  "cache_key": "d3f284b6c8ea154feafb8782d1a9ac0f5326d81e04641a207e1f7ecbdab48395",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear demo-worthy visual thesis: a recorded intent-to-cart-to-payment chain culminates in a cyan/red divergence graphic, while four green VERIFIED checks are deliberately contrasted with a red semantic-mismatch reveal. The oversized editorial headline and restrained forensic palette make this feel like a narrative security exhibit rather than a generic metrics dashboard, and the core idea survives desktop, tablet, and mobile.",
+    "fix": "Prevent the desktop/tablet navigation rail from bisecting or obscuring hero copy, and enlarge the divergence graphic on mobile so its pivotal meaning reads as strongly as the red mismatch panel.",
+    "score": 8,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 575621,
+        "sha256": "d25ca023f665effd0c11a8f14330fa88b6f357ec73d3818e8d47012d93258741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 415373,
+        "sha256": "007c394855cee56b96fcc7e49ef1afed92452b6da97e30e7e9f882056d4468f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345338,
+        "sha256": "fac508874e53ea6667c5fbead9b9eb7990c72e9f029bbc1190e107f35fcbf733",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bca8f5588520c79aa06bd2465aec77375f6ef6bbb5ce3483194dece6fa5195ae",
+    "schema_version": 3,
+    "sha256": "d3f284b6c8ea154feafb8782d1a9ac0f5326d81e04641a207e1f7ecbdab48395"
+  },
+  "response": {
+    "id": "resp_0416c420c08d5414016a908396305487d0a9bf59df864e50b1",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6686,
+      "input_tokens_details": {
+        "cache_write_tokens": 6683,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 7061
+    }
+  }
+}

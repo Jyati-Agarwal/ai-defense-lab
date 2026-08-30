@@ -1,0 +1,51 @@
+{
+  "cache_key": "b17e8525dd5432224dce13eb87af944a2b6078b2652af9f1149231d86fe1d33a",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured results are demo-ready across all three viewports: FCP 52–76 ms, LCP 548–704 ms, TTFB 1.3–5.8 ms, no browser/request failures, no horizontal overflow, and zero long-frame ratio. CLS is excellent on mobile (0) and desktop (0.0011), though tablet reaches 0.0478. Efficiency is the main limitation: every viewport transfers 1,314,022 bytes including 1,148,898 bytes of JavaScript, while 10 API routes appear to be requested for the 12-screen application. Desktop animation pacing averages 20.73 ms per frame with a 33.4 ms worst frame.",
+    "fix": "Code-split and lazy-load non-vault screens and their API requests to reduce the 1.15 MB JavaScript payload and 1.31 MB transfer. Reserve dimensions for tablet-shifting content and profile desktop rendering to keep frame times consistently below 16.7 ms.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348146,
+        "sha256": "1aaf74804d977d9485d4a8407742f88a7f0919bbb4f8e88951f0c8b68e18e655",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "755e157bffbf0bd697d98a1b4cccaf371dd5ac14934839cfcab73dceeaae7015",
+    "schema_version": 3,
+    "sha256": "b17e8525dd5432224dce13eb87af944a2b6078b2652af9f1149231d86fe1d33a"
+  },
+  "response": {
+    "id": "resp_07ec94907227d661016a9084f5d1c487d089d40290e3ca69bf",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7396,
+      "input_tokens_details": {
+        "cache_write_tokens": 7393,
+        "cached_tokens": 0
+      },
+      "output_tokens": 483,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 7879
+    }
+  }
+}

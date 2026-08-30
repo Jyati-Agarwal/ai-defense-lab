@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-c4beab7b8e06",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "c4beab7b8e0697c02e81bb4a61dcf3cb3b5b2853496c92712bebf86abc8681e1",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] सिंथेटिक UPI बहाने में तात्कालिक भुगतान, संदिग्ध अनुरोध व दबाव जोखिम संकेत हैं; दुरुपयोग योग्य विवरण हटाए गए हैं।",
+  "kind": "upi_pretext",
+  "language": "hi",
+  "operational": false,
+  "response": {
+    "id": "resp_0be72c6ecc6e0f02016a8f5b522ebc87d0b35699a3c5199ca1",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 117,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 297
+    }
+  },
+  "response_text_sha256": "4151c6ebaff9337b01c8ee99a4599baaaa5458fbe0cf3c5b54516d13e56e6fd4",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "c4beab7b8e0697c02e81bb4a61dcf3cb3b5b2853496c92712bebf86abc8681e1",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "upi_pretext",
+      "language": "hi",
+      "variant": "baseline"
+    }
+  }
+}

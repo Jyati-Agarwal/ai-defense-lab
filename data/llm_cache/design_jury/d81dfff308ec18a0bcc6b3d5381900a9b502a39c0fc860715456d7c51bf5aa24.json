@@ -1,0 +1,70 @@
+{
+  "cache_key": "d81dfff308ec18a0bcc6b3d5381900a9b502a39c0fc860715456d7c51bf5aa24",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, training-fold warning, 4%→0% chart, and surviving-mutations list make the central claim understandable without narration. However, “Review fresh-row regression” is visually weak and its destination or expected outcome is unclear; dense jargon and very small labels reduce comprehension on mobile. The clipped horizontal header also hides Arena at tablet/mobile widths, weakening location awareness.",
+    "fix": "Turn “Review fresh-row regression” into a prominent, clearly interactive CTA beside a plain-language verdict, and expose the fresh-row result or explicitly state that it is pending; also keep the active Arena destination visible in the responsive header.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "decf32f61d3b8aadc5498e654abfcda1f778cfa33fcbafe583f6a32d9e5a27d1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 688473,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "a3e63421c8b3bc22eaf378072ca131478667676a405ff04619585b676a85f8a4",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bda2ef077b759ac13f7064ad9330a8850711690c13c7afb30bc02a2e9d7f51ae",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d81dfff308ec18a0bcc6b3d5381900a9b502a39c0fc860715456d7c51bf5aa24"
+  }
+}

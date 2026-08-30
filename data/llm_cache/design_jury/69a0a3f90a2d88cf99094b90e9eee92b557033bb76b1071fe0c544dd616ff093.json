@@ -1,0 +1,70 @@
+{
+  "cache_key": "69a0a3f90a2d88cf99094b90e9eee92b557033bb76b1071fe0c544dd616ff093",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The stark editorial headline, cyan kill-chain trace, hot-pink agentic state, and evidence dossier create a recognizable threat-lab identity on desktop. However, the signature traced atlas disappears into a plain numbered grid on tablet/mobile, leaving long dark card columns and clipped content that read more like a generic cybersecurity dashboard than a demo-defining visual system.",
+    "fix": "Preserve the kill-chain map as the hero interaction at every viewport—use a compact vertical or horizontally draggable route with a clearly highlighted selected vector—and visually connect its active node to the dossier so the atlas metaphor remains unmistakable.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "168c99eb4cf4cbd4c92787ca18321fa60f3dba2e07d1eef7e106c517331fb309",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 573825,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "3bbe5b582039ecfd417bed744c0391e280e4e07768f09f6e40a31f5c839cd638",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 412170,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "20f54aa2faaaf5378e1af0b7209c05008974a2bbe06071dbe737434e08fd98ad",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 286748,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "6f48e21c6dbe26c95902c45406559d0b97446aedd47e7d762f0c5a393724fb80",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b0d6e10f465172329471de8ecac7ff6c969ec9a70c0035573bfc724b6ae3b124",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "69a0a3f90a2d88cf99094b90e9eee92b557033bb76b1071fe0c544dd616ff093"
+  }
+}

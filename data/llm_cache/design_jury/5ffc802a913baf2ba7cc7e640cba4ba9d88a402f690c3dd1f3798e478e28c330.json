@@ -1,0 +1,70 @@
+{
+  "cache_key": "5ffc802a913baf2ba7cc7e640cba4ba9d88a402f690c3dd1f3798e478e28c330",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen strongly advances the intent-integrity story: it distinguishes training-fold replay from generalization, exposes 25 surviving mutations/fresh-row risk, maps red mutation against guarded promotion, and shows regression and human-boundary rejections. However, it explicitly states independent_holdout=false and provides no visible fresh-row regression result. The Mastercard hackathon connection is also only implicit through payee/evasion terminology; no Mastercard-specific payment flow, rail, or measurable fraud outcome is demonstrated.",
+    "fix": "Add a completed independent fresh-row holdout panel with dataset scope, ASR before/after, survivor outcomes, and promotion decision; tie the tested attack and guarded vaccination to a concrete Mastercard payment-intent flow and business metric.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "fefff80af4d1ac1c2fa771a3a5087b5ea0669b84d9ac2ceccc71afd248712256",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 258208,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "a9c6a07291df90b98a5289a1ff01047f04e86d686cd97f503a73c9c651cf40e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205716,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "ec1596263baf4607f1fd37ce5fdba8c7586fde6a8051bdd886d97e49cff8195c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199028,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "1346992f2880119132054e736c0b721e6fbbbfdfe9f393e8c4fdde10ff8650ea",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b0e8a7175b3dd93e28cee6ac7ceed071f257030d83836dba87c49719d333de6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "5ffc802a913baf2ba7cc7e640cba4ba9d88a402f690c3dd1f3798e478e28c330"
+  }
+}

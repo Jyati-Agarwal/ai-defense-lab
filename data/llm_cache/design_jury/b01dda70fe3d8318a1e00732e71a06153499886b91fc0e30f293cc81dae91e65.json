@@ -1,0 +1,51 @@
+{
+  "cache_key": "b01dda70fe3d8318a1e00732e71a06153499886b91fc0e30f293cc81dae91e65",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “One payment. Two very different answers.” thesis and the selected-event trace culminating in a LEGACY STEP_UP versus INTENT INTEGRITY ALLOW comparison create a clear, screen-specific demo narrative. Cyan, yellow, and red accents reinforce the policy conflict. However, most of the visible experience remains a familiar dark security table with badges and dense metadata; the core contrast is visually modest and moves below eight repetitive rows on tablet/mobile, weakening the memorable reveal.",
+    "fix": "Make the policy divergence the dominant visual event: animate or diagram the selected payment splitting into two decision paths, keep the side-by-side verdicts visible while browsing events, and compress the mobile event list so the decisive STEP_UP versus ALLOW reveal appears within the first viewport.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 425774,
+        "sha256": "a4efa768627f6439207f04ef91e6b346a1c0aa0b1b3ab7137a766f01fe2a2edd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 375890,
+        "sha256": "4601f26df0d8559c0466fef20a7ea2c7af79b333fa32c9bf285fec30dafbc02a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 338746,
+        "sha256": "58f10b7931d30cb380d482c12fd4cec885361528deaff9e810eda434eaf21e67",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6434322a7e6cc27b314921ad507eb65c2dc33fdb156d5544cc10a4cc5561d430",
+    "schema_version": 2,
+    "sha256": "b01dda70fe3d8318a1e00732e71a06153499886b91fc0e30f293cc81dae91e65"
+  },
+  "response": {
+    "id": "resp_0871acab58ba0b2a016a907a73a49887d0bf480956083c1915",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6079,
+      "input_tokens_details": {
+        "cache_write_tokens": 6076,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 6405
+    }
+  }
+}

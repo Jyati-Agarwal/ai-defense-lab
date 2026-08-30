@@ -1,0 +1,70 @@
+{
+  "cache_key": "e70f0edb4b2207545df5af5394b0637f864c0bffe0de7f8469d5df694effa426",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop has a strong editorial hierarchy, disciplined dark palette, and convincing cyan/red threat-state contrast. Tablet remains coherent but becomes vertically heavy. Mobile is not demo-ready: the evidence panel is cramped, dense copy wraps into narrow columns, badges and labels feel undersized, background content visibly interferes with foreground text, and the long card becomes exhausting to scan. Tablet/mobile headers visibly clip navigation; mobile also loses the brand label and red-mode action. Numerous very dim gray labels weaken legibility, with contrast verification incomplete across 14–26 header nodes.",
+    "fix": "Redesign the mobile evidence area instead of merely stacking it: remove background-object bleed, increase text size/line height, simplify metadata, stack outcome cells cleanly, and give badges more space. Shorten the mobile card and strengthen section spacing. Replace the clipped header rail with an explicit scroll affordance or compact menu while retaining brand and mode access; raise muted-text contrast throughout.",
+    "score": 6,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1486e4b0f80ff7fb1df87b3c10dbccf65db5ff155c3d3db5005d72eb72033455",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 342560,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "27cb7d8e95b40982545e9dd08e75fde08e0385f3d13275d91cc843671d5d7274",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 308204,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "02ad30c508d8a1491829bd5aa91310519c1cc102b2eb5c70bb7a6d42af9fca81",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264831,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "86727d3d546cb5b8778298e4c64ebb30f72e9901b3345971d0f37f1e13b44999",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "27fbc412e62f1dc96e2c44fbe428b0517af24a611211eb0d7ab81d3d4288901e",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e70f0edb4b2207545df5af5394b0637f864c0bffe0de7f8469d5df694effa426"
+  }
+}

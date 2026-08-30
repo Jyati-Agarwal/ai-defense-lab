@@ -1,0 +1,13 @@
+id: GPF-A02
+name: Zero-width instruction smuggling
+tier: agentic
+description: Unicode control and zero-width characters conceal instructions that remain visible to an agent parser.
+kill_chain_stage: context_manip
+channel: agentic_checkout
+rail: card
+genai_capability: multilingual token interpretation
+primitives: [context_manip, intent_manip]
+observable_signals: [zero-width character count, normalized-text divergence, instruction fingerprint]
+defense_hooks: [Unicode normalization, provenance classifier]
+severity: high
+feasibility_today: true

@@ -1,0 +1,70 @@
+{
+  "cache_key": "5e6645d18943010f483226ba05afd813ed4eb0f2646a49c84a63097a900ac705",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, replay curve, 0% verdict, and surviving-mutations list clearly communicate that training-fold success does not prove generalization across all viewports. However, the intended next action is ambiguous: “Review fresh-row regression” lacks a clear destination or action treatment, competes with “Show 19 additional survivors,” and much of the supporting copy is tiny and jargon-heavy. The mobile header also hides Arena beyond horizontal navigation, weakening location awareness.",
+    "fix": "Make one prominent CTA—“Run fresh-row regression” or “View fresh-row test”—and state what happens next. Increase supporting-text size/contrast, simplify terms such as “Partition D” and “guarded vaccination,” and keep the current Arena location visible in the responsive header.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "7dcc5f6e56c0da7ea56033bddc6f5ebdd57e82cd046a0b6f62eafdba5efb438c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 247734,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "2049ce786f9410da6b043879c1f4a21302dfa9c3ef692b868d0e256ee6630728",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 195732,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "467591e55b4ac84d961f7882c12963a081bfafa537c39674d7f0520fa86500db",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 189405,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "e37fdef89dbe9f9b8d873984d7ebb39dc925ccd4de558d827c7499ac142833c8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "571a3d017d1470595113e276a986c8ac2105e23f3e7630d4bfaee62f8980329b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "5e6645d18943010f483226ba05afd813ed4eb0f2646a49c84a63097a900ac705"
+  }
+}

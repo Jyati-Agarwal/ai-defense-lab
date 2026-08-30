@@ -1,0 +1,51 @@
+{
+  "cache_key": "89653a2e9418aa2bd026dfa01718d239ae2a6de7dfd9928ab6e7eac04647e849",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop and tablet show a polished dark technical aesthetic: the oversized headline establishes clear hierarchy, cyan/green/yellow accents are controlled, the grid and orbital vault graphic feel cohesive, and metric panels are consistently styled. Mobile materially breaks that polish: the “HIDE SCOPE EVIDENCE” control extends beyond the right edge, the two-column recall panel clips the known-recall value and caption, long artifact/hash text is truncated, and dense small low-contrast copy reduces readability. These visible overflow issues prevent the screen from being hackathon-demo ready across all three viewports.",
+    "fix": "Add a true mobile layout: stack the recall metrics into one column, make the evidence button fit within the card, wrap or safely truncate long identifiers with accessible expansion, and reduce inner padding/type scale where needed. Increase contrast and line height for small supporting text while preserving the strong desktop visual system.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 387465,
+        "sha256": "c5f5f3bdcf56f0e0d2c0d1c84ffed9b059b0181ede9a6338ef9e0786db3a7bed",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312741,
+        "sha256": "130b843521116f97340118e80e156fead7f2d63894ef39907f948d48a20737ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 233481,
+        "sha256": "7d97cb03ba2bb941ee01b7053b5b0f32a532e69380aa5b24a9d243db7a144eb7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ce0307858e2f2e94d0a0a715ae12d78842847c9572c70748732561214710034a",
+    "schema_version": 2,
+    "sha256": "89653a2e9418aa2bd026dfa01718d239ae2a6de7dfd9928ab6e7eac04647e849"
+  },
+  "response": {
+    "id": "resp_005bf8c5e6149f60016a907a95bcac87d0b1ec37aeed271000",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6500,
+      "input_tokens_details": {
+        "cache_write_tokens": 6497,
+        "cached_tokens": 0
+      },
+      "output_tokens": 448,
+      "output_tokens_details": {
+        "reasoning_tokens": 239
+      },
+      "total_tokens": 6948
+    }
+  }
+}

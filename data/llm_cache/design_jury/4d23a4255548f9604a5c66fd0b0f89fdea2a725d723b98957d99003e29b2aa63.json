@@ -1,0 +1,70 @@
+{
+  "cache_key": "4d23a4255548f9604a5c66fd0b0f89fdea2a725d723b98957d99003e29b2aa63",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “Your turn, Red.” framing, cyan-to-pink attack sliders, and immediate ALLOW-versus-BLOCK reveal create a coherent red-team/blue-team demo moment across all three viewports. However, the underlying visual language remains familiar cyber-dashboard territory—dark grid, monospace labels, neon accents, bordered panels, progress bars—and the generic scrolling global header dilutes the screen’s identity, especially on tablet and mobile.",
+    "fix": "Make the policy divergence the signature visual: turn LAUNCH into a brief, visible event trace that splits into Legacy ALLOW and Intent Integrity BLOCK paths, with the five evidence layers assembling into the block decision. Reduce conventional dashboard chrome so that transformation becomes the one image viewers remember.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "31e3ca5f730917ea46e23fe359f175c5764052e913e3f934519a068aeb34730e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 419050,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "98a74321c9c529a154861fc1d712b4e49eb4bb716efaab91c652a48c5a8a30de",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401778,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "3c1a0f3853bc953f4180ea213209192ae417d85fd36cd99431459c603fdf90b2",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 316324,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "5813a64001b840cf97f4f0c22a043f49bc1eb001d749c89f78213ad6e59bb57c",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c4284f20f1cbb1c91f5e58c6ca819a77697fd0a99e450cade44a70ed22305502",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4d23a4255548f9604a5c66fd0b0f89fdea2a725d723b98957d99003e29b2aa63"
+  }
+}

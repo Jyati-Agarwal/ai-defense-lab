@@ -1,0 +1,70 @@
+{
+  "cache_key": "df3d51bd2713c53aa5ccbf6f0d2b8d3c36654326a60c7ef5faade41f1226f048",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Standard entry motion is smooth across all viewports: roughly 15.8–16.3 ms average frames, 16.8 ms worst, and zero long-frame ratio. The measured fade/22 px rise and red-panel slide settle cleanly. Reduced-motion sampling shows zero changed elements and no trajectories, but still reports active animations (31 desktop; 1 tablet/mobile), while tablet reduced motion hits a 33.3 ms worst frame. React Flow edge subtrees were excluded, so their motion quality is not proven.",
+    "fix": "Fully disable or immediately finish animations under prefers-reduced-motion so activeAnimationCount is zero; eliminate the tablet reduced-motion 33.3 ms frame; and capture stable React Flow edge animation frames without lifecycle exclusions before claiming demo-ready motion.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "aa4e5438e727f1cc6a9e39592588748413c1880b011fc139196a2fb3c5c58eaa",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ee0de6376ad9261eb310bc8daf5ef06bbefaa5204ec009a71cfaf613f27ccd4e",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "df3d51bd2713c53aa5ccbf6f0d2b8d3c36654326a60c7ef5faade41f1226f048"
+  }
+}

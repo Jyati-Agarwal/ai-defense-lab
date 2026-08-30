@@ -1,0 +1,51 @@
+{
+  "cache_key": "0a25f868f2d24c0c0fda675a7382eaf94ca792a87067744a733f3283795c9e2b",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly stages the defense thesis: users compose a bounded synthetic payment attack, POST it to /compose, and compare Legacy Rules with Intent Integrity on the same event. UPI, rupee amount, payees, beneficiary graph, delegation, provenance/temporal/economic evidence, and human-presence deception make it relevant to payment and agentic-intent defense. However, the captured proof shows both systems returning ALLOW with fused risk 0/100 even while citing an unusual beneficiary graph and high price. There is no demonstrated case where Intent Integrity materially outperforms legacy rules, and no explicit Mastercard/network context is visible.",
+    "fix": "Make the default demo produce a clear, credible policy divergence—such as Legacy ALLOW versus Intent Integrity BLOCK or REVIEW—and show how each changed attack control affects the five evidence layers, fused risk, and decision rationale. Add concise Mastercard payment-network or agentic-commerce framing and preserve an auditable before/after result from the live /compose response.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 420368,
+        "sha256": "12950c37678bcfb421d6580dd025998186a0b45418d476e8b84b208271136b57",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393099,
+        "sha256": "9e6c6fc8f2f29e27aa8188fc29bbc5672a97c775d714b409bb417a5b87bf9f2e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308220,
+        "sha256": "8540d02349e79701b635cf929b07fccdf3f20743ddebb6bf9f83de80cda0019f",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "cbecf8416135d10830be7894697a32d93e526566c0def13fcd86a2297871eb59",
+    "schema_version": 3,
+    "sha256": "0a25f868f2d24c0c0fda675a7382eaf94ca792a87067744a733f3283795c9e2b"
+  },
+  "response": {
+    "id": "resp_0648d2cb58805aa7016a90850aaa4c87d09a7ce08d90f3a65c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6194,
+      "input_tokens_details": {
+        "cache_write_tokens": 6191,
+        "cached_tokens": 0
+      },
+      "output_tokens": 456,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 6650
+    }
+  }
+}

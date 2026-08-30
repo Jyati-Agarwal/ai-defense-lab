@@ -1,0 +1,234 @@
+{
+  "artifact": "entity_fidelity_mrs2_preregistration",
+  "completejourney": {
+    "amount_unit": "USD cents",
+    "dataset": "completejourney",
+    "development_baskets": 62078,
+    "development_household_ids_sha256": "2c4a11a1e1f14cab0739529982e9c5b1de856e8df5c3de4e786ac220bc1c873f",
+    "development_households": 988,
+    "development_parquet_hash_source": "immutable Complete Journey manifest",
+    "development_parquet_opened_before_preregistration": false,
+    "development_parquet_path": "data/reference/completejourney/completejourney_development.parquet",
+    "development_parquet_sha256": "7738b7d8666e58176aafd4c667e3c72d99155fc91b5f294ffe38f2aa00de1676",
+    "manifest_path": "data/reference/completejourney/completejourney_reference.manifest.json",
+    "manifest_sha256": "a42365103c1793a9101772fa77aee4fbdabae77a28a99d923b239756b44d5e91",
+    "mrs1_r2_preregistration_path": "results/entity_fidelity_mrs1_r2_preregistration.json",
+    "mrs1_r2_preregistration_sha256": "acda94871118682d34d73cb306b53682fc9cdbcb7c7ca625d09cc543fb2525eb",
+    "observation_end_exclusive": "2018-01-01T00:00:00",
+    "observation_start": "2017-01-01T00:00:00",
+    "qualification_households": 1481,
+    "qualification_parquet_opened": false,
+    "source_rds_sha256": "1fa0700033f1e5d9bb6b09e2be063d8d68474d346e95c50f2833e09d083e0007",
+    "timestamp_semantics": "source timezone-aware POSIXct converted to America/New_York local wall-clock, then timezone removed",
+    "version": "1.1.1"
+  },
+  "dependency_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+  "dependency_versions": {
+    "cryptography": "46.0.7",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.5",
+    "pyarrow": "21.0.0",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  },
+  "evaluator": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260857,
+    "classifier": {
+      "deterministic": true,
+      "force_col_wise": true,
+      "implementation": "lightgbm.LGBMClassifier",
+      "learning_rate": 0.04,
+      "max_depth": 5,
+      "min_child_samples": 40,
+      "n_estimators": 150,
+      "n_jobs": 1,
+      "num_leaves": 15,
+      "objective": "binary",
+      "reg_lambda": 1.0
+    },
+    "features": [
+      "median_log_amount_percentile",
+      "amount_cv",
+      "mean_hour_sin",
+      "mean_hour_cos",
+      "log1p_median_interpurchase_days",
+      "log1p_frequency_per_30d",
+      "log1p_recency_days",
+      "log1p_max_burst_24h"
+    ],
+    "folds_per_seed": 5,
+    "orientation_free_threshold": 0.65,
+    "profile_scope": "all development; discriminator/calibration cross-fit only",
+    "seeds": [
+      20260827,
+      20260828,
+      20260829
+    ],
+    "total_folds": 15
+  },
+  "implementation_sha256": {
+    "sim/entity_fidelity_mrs2.py": "d8da2bc1898936b8ac86a9ff40f49985d7571410e07244bed05756deea20f5dc",
+    "sim/population_mrs2.py": "e45ab67a0b7c172bf72f46ac7835c1fc50b036cdd7a8a9bdb8e1d43cd03ef597",
+    "tests/test_entity_fidelity_mrs2.py": "8bc28996b37f68049a26868ae94835ae79ae276e9dd8274d07acee65206d8bad",
+    "tests/test_population_mrs2.py": "02a5a685e04f758de3626f776a2087f2a10d8cb1c012595860f7015dbf1f1f11"
+  },
+  "lineage": {
+    "development_diagnostic_status": "STOP_FAIL",
+    "development_gate_passed": false,
+    "development_household_ids_sha256": "2c4a11a1e1f14cab0739529982e9c5b1de856e8df5c3de4e786ac220bc1c873f",
+    "development_partition_sha256": "7738b7d8666e58176aafd4c667e3c72d99155fc91b5f294ffe38f2aa00de1676",
+    "expected_completejourney_manifest_sha256": "a42365103c1793a9101772fa77aee4fbdabae77a28a99d923b239756b44d5e91",
+    "file_sha256": "3670720a2fd0e61b2769173c19e0d4cadd631586e0d1b958dfee9d132ea382ff",
+    "mrs1_preregistration_sha256": "acda94871118682d34d73cb306b53682fc9cdbcb7c7ca625d09cc543fb2525eb",
+    "path": "results/entity_fidelity_mrs1_protocol.json",
+    "protocol_sha256": "d943aae33dbc6c16694204653165418f7771862ac373fd14ed79d1ad2415dc63",
+    "qualification_accessed": false,
+    "uci352_accessed": false,
+    "uci502_accessed": false
+  },
+  "model": {
+    "amount": "Gaussian stationary AR1 on log integer cents plus B~Normal(0,tau^2)",
+    "amount_likelihood": "full timing posterior over C,U; B analytically integrated",
+    "frailty": "U~Gamma(a,rate=a)",
+    "frailty_score": "sqrt(3)*(2*GammaCDF(U;a,rate=a)-1)",
+    "global_calendar": "unchanged MRS1 hour*weekday*ISO-week operational clock",
+    "multiplicity": "exact observed positive integer PMF",
+    "pooled_hour_mass": "g_h=integral(base_hazard*1[hour=h])/integral(base_hazard)",
+    "preferred_hour_class": "C~Categorical(g)",
+    "preferred_hour_multiplier": "r_c(h)=(1-lambda)+lambda*1[h=c]/g_c",
+    "renewal": "MRS1 stationary Gamma renewal with right censoring and N>0 conditioning",
+    "rounding": "positive half-even integer cents",
+    "timing_likelihood": "full C,U mixture with calendar Jacobian and zero-truncation"
+  },
+  "one_shot": {
+    "attempt_consumed_before_loader_import_or_call": true,
+    "base_exception_after_attempt_is_terminal": true,
+    "failure_status": "STOP_FAIL",
+    "final_implemented": false,
+    "pass_status": "PASS",
+    "qualification_implemented": false,
+    "retry_permitted": false,
+    "transfer_implemented": false
+  },
+  "optimizer": {
+    "amount_bounds": [
+      [
+        -20.0,
+        30.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -0.95,
+        0.95
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -6.0,
+        6.0
+      ]
+    ],
+    "amount_starts": [
+      [
+        6.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      [
+        5.0,
+        0.5,
+        0.2,
+        0.3,
+        -0.5,
+        0.0
+      ],
+      [
+        7.0,
+        -0.5,
+        -0.2,
+        -0.3,
+        0.0,
+        -0.5
+      ]
+    ],
+    "boundary_tolerance": 1e-05,
+    "failure": "terminal STOP; no retry under this preregistration",
+    "gauss_laguerre_nodes": 32,
+    "maximum_iterations": 600,
+    "method": "L-BFGS-B",
+    "timing_bounds": [
+      [
+        -1.3862943611198906,
+        2.302585092994046
+      ],
+      [
+        -2.995732273553991,
+        5.8998973535824915
+      ],
+      [
+        -1.3862943611198906,
+        2.995732273553991
+      ],
+      [
+        0.0,
+        0.95
+      ]
+    ],
+    "timing_starts": [
+      [
+        0.0,
+        2.6390573296152584,
+        0.0,
+        0.2
+      ],
+      [
+        0.6931471805599453,
+        3.4011973816621555,
+        0.6931471805599453,
+        0.5
+      ],
+      [
+        -0.5108256237659907,
+        1.9459101490553132,
+        -0.6931471805599453,
+        0.8
+      ]
+    ]
+  },
+  "privacy": {
+    "aggregate_only_artifacts": true,
+    "contains_ids": false,
+    "contains_posteriors": false,
+    "contains_rows": false
+  },
+  "runtime_dependency_sha256": {
+    "scripts/download_completejourney_reference.py": "2fd4eada0475800c2c617996f8190965908e60489b3fbed0e5a71a01f55cd7bb",
+    "scripts/download_retail_ii_reference.py": "8810cb7e219607b3b982fb962ca0c379a25b7c147be08f71a43d78a11f8942f8",
+    "scripts/download_retail_reference.py": "d17e98ecfb88b2905055b8469606b1d6cebacb9f11aef822a3b32f41ca17a9f1",
+    "sim/completejourney_reference.py": "88ccaa72b99bc16ee73331990c6357b7a1701977e252a007bd15dcf6289a2ba3",
+    "sim/entity_fidelity.py": "f2876713a7e70e42a47764a471fada7b2701ba7efe7fbc71157a2849279e97c3",
+    "sim/entity_fidelity_mrs1.py": "647a8272422f0b03225252ab584cc3602d37f9415de860465135c984ac2093e2",
+    "sim/entity_fidelity_v4.py": "91334afd5d5f0f53b0bbe527920ee6a18b7e2a27b8f2c1610483f878cb01d871",
+    "sim/mandate_twin.py": "1192c6b7122af4c62102cd30a4de9a2076b08afe4660d66ce4cb98da4022ddf5",
+    "sim/population.py": "a68b006f4f76f0304b80cfa2ea1de57e8ee095c077265da6a6e14daee459d107",
+    "sim/population_mrs1.py": "411dcb3f40ef39b72897a2e2a2e32cf83b71bdc61a92a06c057965dafdd5fe8b",
+    "sim/population_v4.py": "19025a531144418ccda6ac744f6126e839c5a4dd4ccde4d4deddbb1ef3fc40d0"
+  },
+  "schema_version": "mrs2",
+  "study_revision": "mrs2.0"
+}

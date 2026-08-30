@@ -1,0 +1,51 @@
+{
+  "cache_key": "364f5058cfd0021a584ebac56b939cb6144b3ca20704d7855faebe02a6903280",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, 69.6% recall statement, and labeled “NEXT CONTROL” make the core claim and mitigation understandable across all three viewports. However, “GPF-A21,” “vault number,” and “RESULTS ARTIFACT” are unexplained, while “RETURN TO THESIS” does not clearly advance the stated control. The plural headline and “01” also imply additional gaps that are not shown or accounted for.",
+    "fix": "Define GPF-A21 and the source of the 69.6% inline, clarify whether more gaps exist, and replace or supplement “RETURN TO THESIS” with a direct action tied to the next control, such as “Review uncertain cases” or “Configure step-up routing.”",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 210492,
+        "sha256": "4fa2e8917e41bc6151423e8400b7dc81eacd0adc79d95a8bb134f176e3f00272",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 182187,
+        "sha256": "28133e59fb30cb890de018c97d9054165a954b80d2ce56eb11887b9173f61bb8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 149247,
+        "sha256": "b5a16aa95eb6aac2d459703c5897aa489a406e54ec6f81d88095fbaa3fc9b30b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c03e6b03a1b0c0783d27ca62bfeef991798f52af9fff86ccf722381ff227fb02",
+    "schema_version": 2,
+    "sha256": "364f5058cfd0021a584ebac56b939cb6144b3ca20704d7855faebe02a6903280"
+  },
+  "response": {
+    "id": "resp_0efea1dc2aa1a49b016a907abd47e087d09df7893bf9dd0309",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4403,
+      "input_tokens_details": {
+        "cache_write_tokens": 4400,
+        "cached_tokens": 0
+      },
+      "output_tokens": 390,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 4793
+    }
+  }
+}

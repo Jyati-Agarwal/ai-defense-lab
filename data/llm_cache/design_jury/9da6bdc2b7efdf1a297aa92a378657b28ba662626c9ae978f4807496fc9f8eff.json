@@ -1,0 +1,51 @@
+{
+  "cache_key": "9da6bdc2b7efdf1a297aa92a378657b28ba662626c9ae978f4807496fc9f8eff",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Reduced-motion behavior is correctly proven at all three viewports: the media query matches and the hero remains at opacity 1 with no transform. Tablet and mobile timing is reasonably stable, averaging 16.87–17.28 ms with no long frames, but desktop averages 22.36 ms and reaches 50 ms. More importantly, the measured mid-animation state is effectively identical to the end state on desktop and tablet, and exactly identical on mobile, so the evidence does not demonstrate smooth interpolation or easing between the initial and final states.",
+    "fix": "Provide measurements at several verified timestamps during the active animation so transform and opacity show clear progressive interpolation, especially on mobile. Tune the animation or measurement trigger if it is snapping or completing before the midpoint capture, and optimize desktop rendering toward a consistent ~16.7 ms frame budget with lower worst-frame latency.",
+    "score": 6,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 238082,
+        "sha256": "1d264dbe7eda9934cfb02ac7208f1262d46d6ffcb6960a31ea2635628798b3af",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 229957,
+        "sha256": "f04d7684109658f9409df3b0d1650bec6979fd7da3fae8711cb580bf98ae3636",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 185955,
+        "sha256": "841a432a5b7ea0ea8dff4f5915e22357192735fc5723a33d798ce82ffee0c7a6",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "2107f4250f6829082749e8a61de8278cf31a3770926b52ae47f670ad2e547214",
+    "schema_version": 2,
+    "sha256": "9da6bdc2b7efdf1a297aa92a378657b28ba662626c9ae978f4807496fc9f8eff"
+  },
+  "response": {
+    "id": "resp_0349711286685528016a907a61b53087d0851fc7a9fe25e917",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6172,
+      "input_tokens_details": {
+        "cache_write_tokens": 6169,
+        "cached_tokens": 0
+      },
+      "output_tokens": 452,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 6624
+    }
+  }
+}

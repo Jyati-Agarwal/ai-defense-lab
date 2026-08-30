@@ -1,0 +1,102 @@
+{
+  "arena": {
+    "attack_success_threshold": 0.6,
+    "gate": "final == 0 or final < baseline",
+    "replay_challenge_count": 48,
+    "seed": 20260827,
+    "training_partitions": [
+      "A",
+      "B"
+    ],
+    "zero_residual_is_floor_pass": true
+  },
+  "artifact": "evaluation_v4_preregistration",
+  "bindings": {
+    "defense_source_tree_sha256": "421f0b658d087a2188418049c7cc42362658fa9839b4ae2b3f510fb9f1c61c7d",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_tree_sha256": "c1be0c0dd5a13305c3e338b6f644207b01dbfbf19bfa97cecfdf0da45e8db280",
+    "event_schema_sha256": "8117e341b15c6c90ce760a88affbc08a2b1e0108199a081866367aeaacaf6e19",
+    "generator_input_tree_sha256": "cb0e03a5ac0c26ba1e6b577a1d7bdedad4fd7b3a2bf39cfcbd1e8c05ad996bca",
+    "makefile_sha256": "7900c5aff6326ee150abc15b30159a703bf63063717b7e0f4f218da445b32f9d",
+    "parent_failure_sha256": "4c312af72f48ae83bb160593df1913ea49c1ab733a6118c4b56f8586b7cb9c69",
+    "requirements_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "scripts_release_sha256": "9d1eb4c35de9a97d64990aa8964b53f5286c70bcbce5f19abcc670c8528798a8",
+    "sim_mandate_twin_sha256": "790ea79b3a0702d76d72a61ac7146bc2d46d3d2c4a0755c8a761634d6ba7b534",
+    "sim_population_sha256": "78f7aeda87360ba55482592d25aa102ff08cd2e79e28a27ff464705b907f6ddc"
+  },
+  "claim_scope": "post_remediation_regression",
+  "custody": {
+    "attempt_receipt": "evaluation_attempt_v3.json",
+    "independent_holdout": false,
+    "new_rows_not_new_families": true,
+    "prior_families_disclosed": true,
+    "retry_after_consumption": false,
+    "training_input_physically_mixed": true,
+    "v3_evaluation_attempt_created": false
+  },
+  "evaluation": {
+    "detection_threshold": 0.3,
+    "latency_benchmark_scope": "A+B",
+    "partitions_scored_once": [
+      "C",
+      "D",
+      "E"
+    ],
+    "protected_partition_inference_passes": 1,
+    "seed": 20260827,
+    "shuffle_permutations": 9999,
+    "shuffle_retrains": 50,
+    "training_partitions": [
+      "A",
+      "B"
+    ]
+  },
+  "fresh_rows_only": true,
+  "generator": {
+    "benign_adversarial_rate": 0.02,
+    "events": 50000,
+    "family_definitions_reused": true,
+    "fraud_rate": 0.0055,
+    "fresh_rows_only": true,
+    "seed": 20260829
+  },
+  "independent_holdout": false,
+  "lineage": {
+    "disclosed_family_ids": [
+      "synthetic_identity_bust_out",
+      "ttl_dormancy"
+    ],
+    "disclosed_vector_ids": [
+      "GPF-A20",
+      "GPF-C04"
+    ],
+    "prior_attempt": {
+      "mode": "0444",
+      "path": "evaluation_attempt_v2.json",
+      "sha256": "6e3b2e615f99ff44f99f715ac46725eff550a89cecada0ef5291c7bb5505f5d5"
+    },
+    "prior_dataset_sha256": "a352a8978407fa888de4af0d1e1c44942ca20397da54eb4a804448439a3a8afd",
+    "prior_failure_release": {
+      "mode": "0444",
+      "path": "evaluation_release.json",
+      "sha256": "4c312af72f48ae83bb160593df1913ea49c1ab733a6118c4b56f8586b7cb9c69"
+    },
+    "prior_model_sha256": "e0add66d9ede329dca413d2ce78318f70717aada26188740498e812e15a79d28",
+    "prior_preregistration": {
+      "mode": "0444",
+      "path": "evaluation_v3_preregistration.json",
+      "sha256": "08b774b653c8edc246443cf8ccefe4d299f07481bd3b23ce1b386befa82f2401"
+    }
+  },
+  "pristine_heldout_family": false,
+  "remediation": {
+    "detection_evaluator_changed": false,
+    "evaluation_seed_changed": false,
+    "threshold_changed": false,
+    "utilisation_current_min": 0.9,
+    "utilisation_delta_min": 0.7,
+    "velocity_1h_min": 5
+  },
+  "schema_version": 4,
+  "status": "predeclared_before_post_remediation_regression"
+}

@@ -1,0 +1,13 @@
+id: GPF-C05
+name: Mule account beneficiary fan-in
+tier: classic
+description: Many unrelated senders route funds into a recently opened beneficiary before rapid withdrawal.
+kill_chain_stage: cash_out
+channel: upi_p2p
+rail: upi
+genai_capability: none
+primitives: [merchant_manip, payment_manip, cash_out]
+observable_signals: [beneficiary in-degree spike, short dwell time, sender community diversity]
+defense_hooks: [beneficiary graph score, funds-flow hold]
+severity: critical
+feasibility_today: true

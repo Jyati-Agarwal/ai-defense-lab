@@ -1,0 +1,70 @@
+{
+  "cache_key": "6f369c609baa4edc6206a6d52cb00862fbe4c84dd776826faa5ee1352376ea36",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong dark editorial system, disciplined cyan/red/yellow semantics, and a clear ROI focal point. However, the desktop hero is visually unbalanced by excessive empty space and awkward headline wrapping; mobile compresses ledger labels and figures into cramped columns with very small supporting text. The tablet/mobile header also reads as clipped navigation rather than fully polished responsive composition, with subdued labels and incomplete contrast evidence.",
+    "fix": "Rebalance the desktop hero into a deliberate two-column composition, refine headline width/leading, and redesign the mobile ledger as stacked metric rows. Increase small-text size and contrast, and give the responsive header a clearer active-location treatment with a more intentional overflow affordance.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "38344be52b3ff1f545838453df93acdfc2e20d1983ab245e166f78a98028f3e8",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 221790,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "8f705dcb8628945c0589834c9655aca41e7ea027c20860b04f0a3004ec61a8df",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181793,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "c52ad777ad06369667d812988b6fe150d8edeb29b65c8baa592149fc0cacf186",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177623,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "4c1fff87b4789c2073bc6f91892d0fd0e76a48d6a7ae161be9a99df8c4562b37",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d88f5219d83e88e7c0a1ee4cc71ee746fbfdc8cd0160660a62bb12828043cdb8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6f369c609baa4edc6206a6d52cb00862fbe4c84dd776826faa5ee1352376ea36"
+  }
+}

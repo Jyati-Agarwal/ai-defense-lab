@@ -1,0 +1,51 @@
+{
+  "cache_key": "16c2fb490b8239a8c0d56e5cbfd04bbccabe4300a1be7ecadb80a8b5518696d6",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Across desktop, tablet, and mobile, the screen has a cohesive, polished forensic-console aesthetic: strong headline hierarchy, restrained cyan/green/yellow status colors, consistent monospaced metadata, crisp dividers, and a clearly structured query-to-precedent narrative. Desktop uses the wide canvas effectively, tablet reflows the split panel cleanly, and mobile preserves the hierarchy without clipping or overlap. The main weakness is mobile density: several labels and explanatory lines are very small and low-contrast, while stacked precedent rows create a long, slightly repetitive scroll.",
+    "fix": "Increase mobile metadata and supporting-copy size/contrast, tighten vertical spacing within each precedent row, and consider a more compact mobile alignment that keeps similarity beside the precedent title rather than below it.",
+    "score": 8,
+    "screen": "precedent"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 421498,
+        "sha256": "8e84b2909b7c5016b5279cf6707b6f6f663db17536366333353eb5820b8bb6f6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 355398,
+        "sha256": "05a17b16127b6ae694f8bbd9caed569414dd6f6fdb87c50f188e74d9422f5b77",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287418,
+        "sha256": "d50af03a5bf03fa3d315d4b0f01a29bd4aaffc6391660e827341aecacfe93069",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fa3db0cde3a401953e8b38ff92e922ea1f2e637b1de7a0c0d3e3fb3d9d51a471",
+    "schema_version": 2,
+    "sha256": "16c2fb490b8239a8c0d56e5cbfd04bbccabe4300a1be7ecadb80a8b5518696d6"
+  },
+  "response": {
+    "id": "resp_059122a0b38b5e2a016a907a88936487d09b5adc7500907a7f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6230,
+      "input_tokens_details": {
+        "cache_write_tokens": 6227,
+        "cached_tokens": 0
+      },
+      "output_tokens": 456,
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "total_tokens": 6686
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "6b8ed71e99124dd16d9d06c70ec6a06da65a2a7769b671affcadd649ee983902",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen credibly reframes evaluation around operational fraud-defense outcomes: constrained-FPR recall, PR-AUC, calibration, alert load, latency, confusion counts, value caught/blocked, and semantic/provenance ablations. This advances the intent-integrity story, especially through the measured provenance degradation. However, the visible evidence remains largely generic: it does not identify the dataset, traffic conditions, attack/intent scenarios, baseline system, monetary denominator, or Mastercard-specific acceptance and fraud-cost impact. The ablation also shows no fresh-row recall change, weakening proof that the intent-integrity layers improve the stated operating outcome.",
+    "fix": "Add a Mastercard-relevant evaluation panel tying each defense layer to representative payment-intent attacks and a named baseline, with dataset/sample size, confidence intervals, fraud-value and approval-rate denominators, false-decline cost, and measured lift at the chosen FPR and latency constraint.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "7d796de3ef847f7bce4b9f69b96785f2d7f5710eb0c27e880e8f589067687f38",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 216751,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "4fefcf8a050c98eed2c2e464c8f916a821467ec023c0b57b6acd5580d8ce12a7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193203,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "c17515152a5cbe1b5480df2d408d6bb05fa9c16c90393bf14d68310a5dff6557",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181041,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "ca5425ca55207cf7d552e5cfb351b1e874b02be71d7edf9cea8103dd0b034eda",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "69907307a631a9653b4b594c46129ed31bf4277016db28adb077ea67f950fb75",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6b8ed71e99124dd16d9d06c70ec6a06da65a2a7769b671affcadd649ee983902"
+  }
+}

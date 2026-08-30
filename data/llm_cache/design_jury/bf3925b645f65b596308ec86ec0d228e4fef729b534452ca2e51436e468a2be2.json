@@ -1,0 +1,51 @@
+{
+  "cache_key": "bf3925b645f65b596308ec86ec0d228e4fef729b534452ca2e51436e468a2be2",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and training-fold caveat establish the core red-vs-blue claim, and the 4% initial to 0% final chart supports it. However, “leave zero survivors” conflicts at a glance with “25 mutation candidates remain,” “19 emergent,” and the “Surviving mutations” list. The intended next action is also ambiguous between “Enter Red Mode,” “Review fresh-row regression,” and “Show 19 additional survivors”; Enter Red Mode is not visible on the narrow mobile capture. Dense jargon and very small chart/annotation text further weaken standalone comprehension, especially on mobile.",
+    "fix": "Rephrase the claim as “reduce attack success to zero while retaining mutations for holdout testing,” then designate one consistent primary CTA—ideally “Run fresh-row regression”—and keep it prominent across all viewports. Demote secondary actions and enlarge the mobile chart labels and explanatory copy.",
+    "score": 6,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 671828,
+        "sha256": "9d4f5ffd936c43cc21671ef19f949a68a20c0d5ced7ad4c3fe0d93da6d85598c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dec0c8e1b046da38ef7eadcb4c5e29b3c415f8c54dd4aa59d762a8016d9c6ca7",
+    "schema_version": 3,
+    "sha256": "bf3925b645f65b596308ec86ec0d228e4fef729b534452ca2e51436e468a2be2"
+  },
+  "response": {
+    "id": "resp_01c36bf411af805d016a9084e7b72487d080d0547a19a940b4",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6202,
+      "input_tokens_details": {
+        "cache_write_tokens": 6199,
+        "cached_tokens": 0
+      },
+      "output_tokens": 675,
+      "output_tokens_details": {
+        "reasoning_tokens": 464
+      },
+      "total_tokens": 6877
+    }
+  }
+}

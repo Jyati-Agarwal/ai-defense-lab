@@ -1,0 +1,70 @@
+{
+  "cache_key": "a3adc3451286511182802bdbd33a66562c98a66eafcc5aaffd2ebf48eae60062",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, signed-intent/paid-cart contrast, and ALLOW-versus-BLOCK result communicate the core claim. However, the stated next action—“Select any cached transaction”—has no clear row affordance, selection state, or measured interaction proof; the lone play icon is unexplained. Mobile’s tiny metadata and long stacked table further obscure scanning, while tablet/mobile headers visibly clip destinations without signaling horizontal navigation.",
+    "fix": "Make each transaction visibly actionable with a clear “Compare” control, selected-row state, and immediate result update; label the replay control, enlarge mobile text, simplify mobile rows, and add an obvious scroll/menu treatment for clipped header navigation.",
+    "score": 6,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1be4340f95fd692d8534af061de366183e0781eb1140a2d8ad76fbcf44da946c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f77f8ca364ce9be2ba38156f46d245acc4481efb8cab4c560539762c46c36827",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a3adc3451286511182802bdbd33a66562c98a66eafcc5aaffd2ebf48eae60062"
+  }
+}

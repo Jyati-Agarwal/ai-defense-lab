@@ -1,0 +1,613 @@
+{
+  "protocol_id": "temporal-a-has-text-conditional-v2-2026-08-27",
+  "scope": "temporal A has-text stratum only; every temporal-A positive retained; C/D/E excluded from shuffle inference",
+  "procedure": "50 independently seeded training-label permutations of the exact target-disjoint calibrated learned stack; deterministic direct priors zeroed; mean-score ensemble tested by 9,999 label permutations within the predeclared temporal-A has-text stratum",
+  "protocol": {
+    "training_label_permutations": 50,
+    "permutation_seed_formula": "seed + offset, offsets 0..49",
+    "model_seed_formula": "seed + 100 + offset, offsets 0..49",
+    "v1_evaluation_permutation_seed": 20265827,
+    "v2_evaluation_permutation_seed": 20266827,
+    "evaluation_label_permutations": 9999,
+    "gate": "one-sided plus-one temporal-A has-text ensemble AP p >= 0.01",
+    "frozen_partitions_opened": []
+  },
+  "records": [
+    {
+      "offset": 0,
+      "permutation_seed": 20260827,
+      "model_seed": 20260927,
+      "pr_auc": 0.009606028877941538,
+      "roc_auc": 0.8232547864506627,
+      "conditional_pr_auc": 0.00960602887794154,
+      "conditional_roc_auc": 0.3941948510853105
+    },
+    {
+      "offset": 1,
+      "permutation_seed": 20260828,
+      "model_seed": 20260928,
+      "pr_auc": 0.0017130332998240242,
+      "roc_auc": 0.140166912125675,
+      "conditional_pr_auc": 0.009671538983082586,
+      "conditional_roc_auc": 0.4770991081945145
+    },
+    {
+      "offset": 2,
+      "permutation_seed": 20260829,
+      "model_seed": 20260929,
+      "pr_auc": 0.048003661131307815,
+      "roc_auc": 0.8585787923416789,
+      "conditional_pr_auc": 0.048003661131307815,
+      "conditional_roc_auc": 0.5152700656234226
+    },
+    {
+      "offset": 3,
+      "permutation_seed": 20260830,
+      "model_seed": 20260930,
+      "pr_auc": 0.01881840802043321,
+      "roc_auc": 0.888713794796269,
+      "conditional_pr_auc": 0.01881840802043321,
+      "conditional_roc_auc": 0.6185596500084132
+    },
+    {
+      "offset": 4,
+      "permutation_seed": 20260831,
+      "model_seed": 20260931,
+      "pr_auc": 0.001760619134252076,
+      "roc_auc": 0.16271968581246932,
+      "conditional_pr_auc": 0.06099767073809608,
+      "conditional_roc_auc": 0.5567895002523978
+    },
+    {
+      "offset": 5,
+      "permutation_seed": 20260832,
+      "model_seed": 20260932,
+      "pr_auc": 0.013535563673719409,
+      "roc_auc": 0.8186843397152677,
+      "conditional_pr_auc": 0.013535563673719407,
+      "conditional_roc_auc": 0.3785293622749453
+    },
+    {
+      "offset": 6,
+      "permutation_seed": 20260833,
+      "model_seed": 20260933,
+      "pr_auc": 0.009237470548177638,
+      "roc_auc": 0.8336475208640157,
+      "conditional_pr_auc": 0.009237470548177638,
+      "conditional_roc_auc": 0.42981659094733304
+    },
+    {
+      "offset": 7,
+      "permutation_seed": 20260834,
+      "model_seed": 20260934,
+      "pr_auc": 0.009542354112387746,
+      "roc_auc": 0.8323269513991163,
+      "conditional_pr_auc": 0.00954498675794748,
+      "conditional_roc_auc": 0.4255426552246341
+    },
+    {
+      "offset": 8,
+      "permutation_seed": 20260835,
+      "model_seed": 20260935,
+      "pr_auc": 0.011434113576961098,
+      "roc_auc": 0.8571894943544428,
+      "conditional_pr_auc": 0.011434113576961098,
+      "conditional_roc_auc": 0.5105081608615178
+    },
+    {
+      "offset": 9,
+      "permutation_seed": 20260836,
+      "model_seed": 20260936,
+      "pr_auc": 0.0018105670989052457,
+      "roc_auc": 0.1853215513009328,
+      "conditional_pr_auc": 0.01741815370413844,
+      "conditional_roc_auc": 0.6352010768971901
+    },
+    {
+      "offset": 10,
+      "permutation_seed": 20260837,
+      "model_seed": 20260937,
+      "pr_auc": 0.010838419699710226,
+      "roc_auc": 0.8597422680412371,
+      "conditional_pr_auc": 0.010838419699710226,
+      "conditional_roc_auc": 0.5192579505300354
+    },
+    {
+      "offset": 11,
+      "permutation_seed": 20260838,
+      "model_seed": 20260938,
+      "pr_auc": 0.0017324818896586852,
+      "roc_auc": 0.1512788414334806,
+      "conditional_pr_auc": 0.012472003553347589,
+      "conditional_roc_auc": 0.51851758371193
+    },
+    {
+      "offset": 12,
+      "permutation_seed": 20260839,
+      "model_seed": 20260939,
+      "pr_auc": 0.010857836704446155,
+      "roc_auc": 0.8218360333824252,
+      "conditional_pr_auc": 0.010915141231251453,
+      "conditional_roc_auc": 0.39358068315665484
+    },
+    {
+      "offset": 13,
+      "permutation_seed": 20260840,
+      "model_seed": 20260940,
+      "pr_auc": 0.0017518440486123119,
+      "roc_auc": 0.16368188512518408,
+      "conditional_pr_auc": 0.016437042168879926,
+      "conditional_roc_auc": 0.5610297829379102
+    },
+    {
+      "offset": 14,
+      "permutation_seed": 20260841,
+      "model_seed": 20260941,
+      "pr_auc": 0.008440953669626295,
+      "roc_auc": 0.8133873343151694,
+      "conditional_pr_auc": 0.008440953669626295,
+      "conditional_roc_auc": 0.3603735487127713
+    },
+    {
+      "offset": 15,
+      "permutation_seed": 20260842,
+      "model_seed": 20260942,
+      "pr_auc": 0.006787279974948551,
+      "roc_auc": 0.792707412862052,
+      "conditional_pr_auc": 0.00678727997494855,
+      "conditional_roc_auc": 0.2894918391384822
+    },
+    {
+      "offset": 16,
+      "permutation_seed": 20260843,
+      "model_seed": 20260943,
+      "pr_auc": 0.011114734796627525,
+      "roc_auc": 0.8348527245949927,
+      "conditional_pr_auc": 0.011114734796627527,
+      "conditional_roc_auc": 0.43394750126198883
+    },
+    {
+      "offset": 17,
+      "permutation_seed": 20260844,
+      "model_seed": 20260944,
+      "pr_auc": 0.02362782495461073,
+      "roc_auc": 0.8944256259204714,
+      "conditional_pr_auc": 0.02362782495461073,
+      "conditional_roc_auc": 0.6381373043917213
+    },
+    {
+      "offset": 18,
+      "permutation_seed": 20260845,
+      "model_seed": 20260945,
+      "pr_auc": 0.007959239249787003,
+      "roc_auc": 0.8233235149729995,
+      "conditional_pr_auc": 0.007959239249787003,
+      "conditional_roc_auc": 0.3944304223456167
+    },
+    {
+      "offset": 19,
+      "permutation_seed": 20260846,
+      "model_seed": 20260946,
+      "pr_auc": 0.0017328266367606974,
+      "roc_auc": 0.147486499754541,
+      "conditional_pr_auc": 0.010451819654394318,
+      "conditional_roc_auc": 0.5055190980986034
+    },
+    {
+      "offset": 20,
+      "permutation_seed": 20260847,
+      "model_seed": 20260947,
+      "pr_auc": 0.0016759354939056548,
+      "roc_auc": 0.12608001963672066,
+      "conditional_pr_auc": 0.04395984056036867,
+      "conditional_roc_auc": 0.4321470637725054
+    },
+    {
+      "offset": 21,
+      "permutation_seed": 20260848,
+      "model_seed": 20260948,
+      "pr_auc": 0.02194972892306076,
+      "roc_auc": 0.8569906725576828,
+      "conditional_pr_auc": 0.021954976574853954,
+      "conditional_roc_auc": 0.5103230691569914
+    },
+    {
+      "offset": 22,
+      "permutation_seed": 20260849,
+      "model_seed": 20260949,
+      "pr_auc": 0.0017392152596021923,
+      "roc_auc": 0.1527761413843888,
+      "conditional_pr_auc": 0.011558431941538397,
+      "conditional_roc_auc": 0.5236496718828875
+    },
+    {
+      "offset": 23,
+      "permutation_seed": 20260850,
+      "model_seed": 20260950,
+      "pr_auc": 0.013015471871848143,
+      "roc_auc": 0.8524889543446245,
+      "conditional_pr_auc": 0.013015471871848145,
+      "conditional_roc_auc": 0.4943967693084301
+    },
+    {
+      "offset": 24,
+      "permutation_seed": 20260851,
+      "model_seed": 20260951,
+      "pr_auc": 0.001741146668345767,
+      "roc_auc": 0.15818605792832596,
+      "conditional_pr_auc": 0.01893007948371621,
+      "conditional_roc_auc": 0.5421924953727074
+    },
+    {
+      "offset": 25,
+      "permutation_seed": 20260852,
+      "model_seed": 20260952,
+      "pr_auc": 0.0017293460144037188,
+      "roc_auc": 0.14613156602847324,
+      "conditional_pr_auc": 0.10135262559129914,
+      "conditional_roc_auc": 0.5008749789668518
+    },
+    {
+      "offset": 26,
+      "permutation_seed": 20260853,
+      "model_seed": 20260953,
+      "pr_auc": 0.010819519556752158,
+      "roc_auc": 0.850618556701031,
+      "conditional_pr_auc": 0.010819519556752158,
+      "conditional_roc_auc": 0.48798586572438163
+    },
+    {
+      "offset": 27,
+      "permutation_seed": 20260854,
+      "model_seed": 20260954,
+      "pr_auc": 0.0018142737590535478,
+      "roc_auc": 0.1896269023073147,
+      "conditional_pr_auc": 0.0334169563895445,
+      "conditional_roc_auc": 0.6499579337035167
+    },
+    {
+      "offset": 28,
+      "permutation_seed": 20260855,
+      "model_seed": 20260955,
+      "pr_auc": 0.016888417932578986,
+      "roc_auc": 0.8456541482572412,
+      "conditional_pr_auc": 0.016888417932578986,
+      "conditional_roc_auc": 0.4709700487969039
+    },
+    {
+      "offset": 29,
+      "permutation_seed": 20260856,
+      "model_seed": 20260956,
+      "pr_auc": 0.011652577659616444,
+      "roc_auc": 0.8539052528227785,
+      "conditional_pr_auc": 0.011652577659616444,
+      "conditional_roc_auc": 0.499251219922598
+    },
+    {
+      "offset": 30,
+      "permutation_seed": 20260857,
+      "model_seed": 20260957,
+      "pr_auc": 0.0018059428703607026,
+      "roc_auc": 0.18553019145802652,
+      "conditional_pr_auc": 0.06742390851978622,
+      "conditional_roc_auc": 0.6359162039374053
+    },
+    {
+      "offset": 31,
+      "permutation_seed": 20260858,
+      "model_seed": 20260958,
+      "pr_auc": 0.04085453312024859,
+      "roc_auc": 0.8569513991163477,
+      "conditional_pr_auc": 0.04085453312024859,
+      "conditional_roc_auc": 0.5096920747097424
+    },
+    {
+      "offset": 32,
+      "permutation_seed": 20260859,
+      "model_seed": 20260959,
+      "pr_auc": 0.0017894917660972003,
+      "roc_auc": 0.17639911634756997,
+      "conditional_pr_auc": 0.015647429572034556,
+      "conditional_roc_auc": 0.6046188793538617
+    },
+    {
+      "offset": 33,
+      "permutation_seed": 20260860,
+      "model_seed": 20260960,
+      "pr_auc": 0.0017658420629970012,
+      "roc_auc": 0.16933235149729997,
+      "conditional_pr_auc": 0.01693290880953056,
+      "conditional_roc_auc": 0.5800774019855292
+    },
+    {
+      "offset": 34,
+      "permutation_seed": 20260861,
+      "model_seed": 20260961,
+      "pr_auc": 0.0016933526353226746,
+      "roc_auc": 0.133127147766323,
+      "conditional_pr_auc": 0.010536332950441353,
+      "conditional_roc_auc": 0.45630153121319206
+    },
+    {
+      "offset": 35,
+      "permutation_seed": 20260862,
+      "model_seed": 20260962,
+      "pr_auc": 0.0016999547957371182,
+      "roc_auc": 0.13682989690721648,
+      "conditional_pr_auc": 0.015406057844961902,
+      "conditional_roc_auc": 0.4689929328621908
+    },
+    {
+      "offset": 36,
+      "permutation_seed": 20260863,
+      "model_seed": 20260963,
+      "pr_auc": 0.01125417013465647,
+      "roc_auc": 0.8526755031909671,
+      "conditional_pr_auc": 0.01125417013465647,
+      "conditional_roc_auc": 0.4950361770149756
+    },
+    {
+      "offset": 37,
+      "permutation_seed": 20260864,
+      "model_seed": 20260964,
+      "pr_auc": 0.012616581584132341,
+      "roc_auc": 0.8293004418262151,
+      "conditional_pr_auc": 0.012616581584132341,
+      "conditional_roc_auc": 0.41491670873296316
+    },
+    {
+      "offset": 38,
+      "permutation_seed": 20260865,
+      "model_seed": 20260965,
+      "pr_auc": 0.04418435733994295,
+      "roc_auc": 0.864779086892489,
+      "conditional_pr_auc": 0.04418435733994295,
+      "conditional_roc_auc": 0.5365219586067643
+    },
+    {
+      "offset": 39,
+      "permutation_seed": 20260866,
+      "model_seed": 20260966,
+      "pr_auc": 0.007769343241597123,
+      "roc_auc": 0.8187481590574374,
+      "conditional_pr_auc": 0.007769343241597123,
+      "conditional_roc_auc": 0.3787481070166583
+    },
+    {
+      "offset": 40,
+      "permutation_seed": 20260867,
+      "model_seed": 20260967,
+      "pr_auc": 0.07161065126656535,
+      "roc_auc": 0.9018532155130095,
+      "conditional_pr_auc": 0.07161065126656535,
+      "conditional_roc_auc": 0.6635958270233888
+    },
+    {
+      "offset": 41,
+      "permutation_seed": 20260868,
+      "model_seed": 20260968,
+      "pr_auc": 0.0017867606169934336,
+      "roc_auc": 0.17960235640648012,
+      "conditional_pr_auc": 0.07671519610933349,
+      "conditional_roc_auc": 0.6155981827359919
+    },
+    {
+      "offset": 42,
+      "permutation_seed": 20260869,
+      "model_seed": 20260969,
+      "pr_auc": 0.008560301482311142,
+      "roc_auc": 0.8232253313696613,
+      "conditional_pr_auc": 0.008560301482311142,
+      "conditional_roc_auc": 0.3940938919737506
+    },
+    {
+      "offset": 43,
+      "permutation_seed": 20260870,
+      "model_seed": 20260970,
+      "pr_auc": 0.010740770351799461,
+      "roc_auc": 0.8616028473244969,
+      "conditional_pr_auc": 0.010740770351799461,
+      "conditional_roc_auc": 0.5256352010768972
+    },
+    {
+      "offset": 44,
+      "permutation_seed": 20260871,
+      "model_seed": 20260971,
+      "pr_auc": 0.0017125839187918676,
+      "roc_auc": 0.1483554246440844,
+      "conditional_pr_auc": 0.019134115221710296,
+      "conditional_roc_auc": 0.5084973918896181
+    },
+    {
+      "offset": 45,
+      "permutation_seed": 20260872,
+      "model_seed": 20260972,
+      "pr_auc": 0.001779765006794263,
+      "roc_auc": 0.1728546882670594,
+      "conditional_pr_auc": 0.01522087595185953,
+      "conditional_roc_auc": 0.5924701329294969
+    },
+    {
+      "offset": 46,
+      "permutation_seed": 20260873,
+      "model_seed": 20260973,
+      "pr_auc": 0.010379432582523817,
+      "roc_auc": 0.8582253313696613,
+      "conditional_pr_auc": 0.010379432582523817,
+      "conditional_roc_auc": 0.5140585562847046
+    },
+    {
+      "offset": 47,
+      "permutation_seed": 20260874,
+      "model_seed": 20260974,
+      "pr_auc": 0.0017250593101664107,
+      "roc_auc": 0.14769882179675994,
+      "conditional_pr_auc": 0.014603688853159692,
+      "conditional_roc_auc": 0.5062468450277637
+    },
+    {
+      "offset": 48,
+      "permutation_seed": 20260875,
+      "model_seed": 20260975,
+      "pr_auc": 0.001795094348796674,
+      "roc_auc": 0.17722876779577815,
+      "conditional_pr_auc": 0.01530861085441778,
+      "conditional_roc_auc": 0.6074625609961298
+    },
+    {
+      "offset": 49,
+      "permutation_seed": 20260876,
+      "model_seed": 20260976,
+      "pr_auc": 0.007724326489322867,
+      "roc_auc": 0.8196367206676485,
+      "conditional_pr_auc": 0.007724326489322867,
+      "conditional_roc_auc": 0.3817937068820461
+    }
+  ],
+  "training_events": 35061,
+  "training_positives": 137,
+  "evaluation_events": 11675,
+  "evaluation_positives": 35,
+  "base_rate": 0.0029978586723768737,
+  "conditional_evaluation_events": 3431,
+  "conditional_evaluation_positives": 35,
+  "conditional_base_rate": 0.010201107548819586,
+  "individual_pr_auc": {
+    "mean": 0.010731584183260456,
+    "median": 0.008200096459706648,
+    "min": 0.0016759354939056548,
+    "max": 0.07161065126656535
+  },
+  "individual_roc_auc": {
+    "mean": 0.5569948208149239,
+    "median": 0.819192439862543,
+    "min": 0.12608001963672066,
+    "max": 0.9018532155130095,
+    "bootstrap_mean_ci99": [
+      0.4287256580756015,
+      0.6794783988708886
+    ]
+  },
+  "individual_conditional_pr_auc": {
+    "mean": 0.02206969089614882,
+    "median": 0.013275517772783775,
+    "min": 0.00678727997494855,
+    "max": 0.10135262559129914
+  },
+  "individual_conditional_roc_auc": {
+    "mean": 0.5011564024903248,
+    "median": 0.5073721184586909,
+    "min": 0.2894918391384822,
+    "max": 0.6635958270233888
+  },
+  "v1_mixed_temporal_a": {
+    "status": "FAIL",
+    "certification_use": "preserved diagnostic only",
+    "ensemble": {
+      "pr_auc": 0.01444944099274417,
+      "roc_auc": 0.73519882179676,
+      "pr_auc_permutation_expectation": 0.003772805252787616,
+      "pr_auc_null_median": 0.003322395268656554,
+      "pr_auc_null_ci99": [
+        0.002283148585142617,
+        0.018008162712819877
+      ],
+      "pr_auc_null_upper_99": 0.011386406035871535,
+      "pr_auc_upper_tail_p": 0.007,
+      "roc_auc_null_ci99": [
+        0.37447680412371137,
+        0.6288904761904762
+      ],
+      "roc_auc_two_sided_permutation_p_diagnostic_only": 0.0001,
+      "eval_label_permutations": 9999
+    }
+  },
+  "v2_has_text_conditional": {
+    "status": "PASS",
+    "ensemble": {
+      "pr_auc": 0.015739142839504127,
+      "roc_auc": 0.5087077233720343,
+      "pr_auc_permutation_expectation": 0.012417050718430741,
+      "pr_auc_null_median": 0.011346458713278815,
+      "pr_auc_null_ci99": [
+        0.007870960603093911,
+        0.04046872874024231
+      ],
+      "pr_auc_null_upper_99": 0.03595847327649583,
+      "pr_auc_upper_tail_p": 0.1098,
+      "roc_auc_null_ci99": [
+        0.3745655392899209,
+        0.6228123843176848
+      ],
+      "roc_auc_two_sided_permutation_p_diagnostic_only": 0.8554,
+      "eval_label_permutations": 9999
+    }
+  },
+  "modality_shortcut_audit": {
+    "temporal_a_events": 11675,
+    "temporal_a_positives": 35,
+    "temporal_a_negatives": 11640,
+    "has_text_events": 3431,
+    "has_text_positives": 35,
+    "has_text_negatives": 3396,
+    "no_text_events": 8244,
+    "no_text_positives": 0,
+    "positive_has_text_rate": 1.0,
+    "negative_has_text_rate": 0.29175257731958765,
+    "all_positives_retained_in_v2": true,
+    "modality_indicator_only_pr_auc": 0.010201107548819586,
+    "modality_indicator_only_roc_auc": 0.8541237113402061,
+    "v1_mixed_temporal_a": {
+      "pr_auc": 0.01444944099274417,
+      "roc_auc": 0.73519882179676,
+      "pr_auc_upper_tail_p": 0.007,
+      "status": "FAIL",
+      "certification_use": "preserved diagnostic only; label exchangeability is confounded by modality"
+    },
+    "v2_has_text_conditional": {
+      "pr_auc": 0.015739142839504127,
+      "roc_auc": 0.5087077233720343,
+      "pr_auc_upper_tail_p": 0.1098,
+      "status": "PASS",
+      "certification_use": "prospectively predeclared gate"
+    }
+  },
+  "ensemble": {
+    "pr_auc": 0.015739142839504127,
+    "roc_auc": 0.5087077233720343,
+    "pr_auc_permutation_expectation": 0.012417050718430741,
+    "pr_auc_null_median": 0.011346458713278815,
+    "pr_auc_null_ci99": [
+      0.007870960603093911,
+      0.04046872874024231
+    ],
+    "pr_auc_null_upper_99": 0.03595847327649583,
+    "pr_auc_upper_tail_p": 0.1098,
+    "roc_auc_null_ci99": [
+      0.3745655392899209,
+      0.6228123843176848
+    ],
+    "roc_auc_two_sided_permutation_p_diagnostic_only": 0.8554,
+    "eval_label_permutations": 9999
+  },
+  "gate": {
+    "name": "no above-chance within-modality temporal-A PR signal after shuffled training",
+    "protocol_id": "temporal-a-has-text-conditional-v2-2026-08-27",
+    "scope": "temporal-A has_text=True, all positives retained",
+    "ensemble_pr_auc_upper_tail_p_gte_0_01": true,
+    "passed": true,
+    "note": "Below-chance ranking is collapse for this one-sided leakage control; v1 mixed-modality inference is preserved but is diagnostic-only because modality violates exchangeability."
+  },
+  "dataset_sha256": "4b2a9a56922762bcd01a1c0809fdb1363027e6067d2cdf6f879044d50df2eb55",
+  "events_file_sha256": "5065505a51285314a57a494c912b7b95eeab8d42de65c80caf80af17e73774e8",
+  "split_plan_sha256": "37de11b732d60b628635e61dbdd5bc6274ad0e9a45516d6473020cc575368e7c",
+  "source_tree_sha256": "eccf4713fb69d4b2c7ec23950fa40a215462e5f49fe583f8dcbf79e11e38810f",
+  "protocol_artifact": "results/shuffle_control_protocol_v2.json",
+  "protocol_artifact_sha256": "aa08f5b90c28444afcb5c0218bcfef936aa470d468a2bf130ede355bc146c441",
+  "preserved_v1_artifact": "results/shuffle_null_diagnosis_post_crossfit.json",
+  "preserved_v1_sha256_before": "fb55c9226d3a08624b5364bdb2adcd85a94811d455687c649f2d0391e9eacba6",
+  "preserved_v1_sha256_after": "fb55c9226d3a08624b5364bdb2adcd85a94811d455687c649f2d0391e9eacba6",
+  "duration_seconds": 622.4885017559864,
+  "executed_at": "2026-08-27T04:46:52+05:30",
+  "frozen_partitions_opened": []
+}

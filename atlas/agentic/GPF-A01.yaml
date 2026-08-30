@@ -1,0 +1,13 @@
+id: GPF-A01
+name: Indirect prompt injection to payment
+tier: agentic
+description: Instructions embedded in retrieved product content redirect an autonomous checkout away from user intent.
+kill_chain_stage: context_manip
+channel: agentic_checkout
+rail: card
+genai_capability: instruction following over retrieved content
+primitives: [reconnaissance, context_manip, intent_manip, tool_manip, payment_manip]
+observable_signals: [instruction-shaped page text, tool-call topic shift, intent-to-cart semantic drift]
+defense_hooks: [retrieval provenance score, intent-cart semantic check]
+severity: critical
+feasibility_today: true

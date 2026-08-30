@@ -1,0 +1,51 @@
+{
+  "cache_key": "c8f4bf180126204a6c693c146fce99245887d42097d95535f83186f67ae41336",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The dark grid, cyan/red accent system, outlined controls, glowing range handles, and monospaced labels create a cohesive defense-console aesthetic. The desktop two-column card has clear control/result separation, and mobile preserves the overall visual language. However, responsive composition is not demo-ready across all three screenshots: on desktop the fixed navigation visibly obscures the oversized hero title; on tablet the navigation bar cuts across the form and hides the Amount row, while its menu is clipped; and mobile becomes cramped, with very small secondary text, awkwardly wrapped decision headings, and dense vertical stacking. These collisions and legibility issues outweigh the otherwise strong color and component polish.",
+    "fix": "Rework the responsive header so it occupies normal layout space and collapses to a compact mobile/tablet menu rather than overlaying content. Restore clear hero spacing, prevent any form-row occlusion, increase small-label/helper-text sizes, and give the mobile decision cells enough width or a deliberate stacked layout to avoid awkward wraps.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 420450,
+        "sha256": "eff805f4de1e3b50f06e95ce7432f75f47dc4dcabe382402414879b79a1f76ba",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393089,
+        "sha256": "c9c19e4264824f51ef1170cfe3f41a32a3de1748c07e4ee898f05dbd3ff5b338",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308212,
+        "sha256": "fd17cf5cab95cd3d911c86977d198c8786dd85d60ab4187c57f1eeb9ab278c00",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0d09bdf50ec9beaee7f4377cefb4148bc22c175fbc7b940715c1cd6fd08118aa",
+    "schema_version": 3,
+    "sha256": "c8f4bf180126204a6c693c146fce99245887d42097d95535f83186f67ae41336"
+  },
+  "response": {
+    "id": "resp_05a339ed6a974976016a9083d0c4f887d0ac14f0990039093c",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6198,
+      "input_tokens_details": {
+        "cache_write_tokens": 6195,
+        "cached_tokens": 0
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 6625
+    }
+  }
+}

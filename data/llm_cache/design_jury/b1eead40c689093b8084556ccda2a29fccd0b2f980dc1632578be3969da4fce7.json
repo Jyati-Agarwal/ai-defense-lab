@@ -1,0 +1,51 @@
+{
+  "cache_key": "b1eead40c689093b8084556ccda2a29fccd0b2f980dc1632578be3969da4fce7",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting copy, “What’s happening” note, and labeled “Reveal hidden injection” toggle make the claim and next action understandable across desktop, tablet, and mobile. However, every screenshot shows Human Vision with the toggle off; the actual agent-visible layer and its relationship to the recorded page are never shown. Status rows such as “Invisible CSS — DETECTED” assert the issue but do not make the claimed instruction seam self-evident.",
+    "fix": "Show the toggled Agent Vision state as direct evidence, with the revealed truncated artifact visibly contrasted against the human-rendered page. Add an explicit state label such as “Human view” / “Agent retrieval view” and visually connect the revealed instruction to the detection statuses.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 265633,
+        "sha256": "fcd4294a9f2642fd233b4d5bd8c740c380d89fd40709ac7b065ac3e956a094b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 230529,
+        "sha256": "b4dc4c9bcae4bb5fbb6d0e89a2340e0bbbea869fbc18719f37cf5bd22e7725f9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 204128,
+        "sha256": "41b8309d8318f60d01cf64e2e376ddb01c03a3285f49935e3f476fe423b5f09b",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "83897c84de2dc69aa5c1499435e08c716594841b427675a2e264ddd3074c7400",
+    "schema_version": 2,
+    "sha256": "b1eead40c689093b8084556ccda2a29fccd0b2f980dc1632578be3969da4fce7"
+  },
+  "response": {
+    "id": "resp_0bbfe871493e5186016a907a82a84487d091fbf341ef2c205a",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5641,
+      "input_tokens_details": {
+        "cache_write_tokens": 5638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 6011
+    }
+  }
+}

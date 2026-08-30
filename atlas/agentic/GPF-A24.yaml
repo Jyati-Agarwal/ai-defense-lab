@@ -1,0 +1,13 @@
+id: GPF-A24
+name: Multimodal product-image instruction injection
+tier: agentic
+description: Text embedded in a catalog image influences a vision-capable shopping agent without visible page text.
+kill_chain_stage: context_manip
+channel: agentic_checkout
+rail: card
+genai_capability: vision-language product understanding
+primitives: [reconnaissance, context_manip, intent_manip, tool_manip]
+observable_signals: [OCR instruction language, image-text disagreement, tool shift after image parse]
+defense_hooks: [OCR provenance filter, multimodal consistency check]
+severity: high
+feasibility_today: true

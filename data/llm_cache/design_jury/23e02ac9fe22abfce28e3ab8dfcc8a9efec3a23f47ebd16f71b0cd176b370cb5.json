@@ -1,0 +1,70 @@
+{
+  "cache_key": "23e02ac9fe22abfce28e3ab8dfcc8a9efec3a23f47ebd16f71b0cd176b370cb5",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and supporting sentence state the thesis clearly, and “Compare configurations” provides a next action. However, the primary precision–recall chart is not self-explanatory: its x-axis repeats “100%” across nearly every tick before ending at “65%,” undermining trust and interpretability. Dense, very small labels and explanatory copy are difficult to read on mobile, while the mobile/tablet header hides the current Metrics location inside a horizontal rail. The ablation section also mixes PR-AUC degradation with unchanged 100% fresh-row recall without a concise explanation of why that supports the main claim.",
+    "fix": "Correct and clearly scale the precision–recall axes, add a one-sentence takeaway beside each chart, enlarge mobile labels/body copy, visibly preserve the active “Metrics” location in the header, and connect the ablation evidence directly to the decision users should make before the comparison CTA.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "b0dbe8b18663ca4cfebb90c535757590065a2b31c4f20d30509c0561871cc6f3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 199234,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "da4436a0a47a7d6f59916cab4ef9184a8b02176c3ac0925207877a63a850a480",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 176744,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "d4b439532500c3921407741f16b01257d8ea4c1e0de8d5b0761b43ef86041f3b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 163046,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "9894a96383f2da3a2d14a699d41e2c15556908253b8ef818286b5190ab0593ce",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "37002dd8083ce4987eab3426ca507b22f9fbf1e3c6df023b081505ff1a49bc3b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "23e02ac9fe22abfce28e3ab8dfcc8a9efec3a23f47ebd16f71b0cd176b370cb5"
+  }
+}

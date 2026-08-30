@@ -1,0 +1,70 @@
+{
+  "cache_key": "21cf411a75bd46524d2ae6c31e20f8a2fb2ec0260c7bac464ed61602eb9a3ae8",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The strongest signature is the cyan-to-crimson mandate chain and divergence wedge, which clearly visualizes cryptographic validity separating from semantic validity across all three viewports. However, the surrounding dark panel, status pills, monospace labels, and checklist remain familiar cyber-dashboard conventions; on tablet/mobile the distinctive chain becomes a conventional stack of evidence cards.",
+    "fix": "Make the semantic split the unmistakable hero interaction: animate the verified chain continuing intact while intent and outcome visibly tear apart, then let “Inspect semantic mismatch” drive a focused before/after reveal rather than another static panel.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8b2c0c375301453e3d549664e5cdade5c99beef90732d21bc65bac30238dac4e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 219274,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "6851d17081ae659b682907d9cc8c46373e44fca9f4a47bb939088510517312b1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152336,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c0b53227dbd81598455245d2168c1ac79a821c3b364c5a5268b56f936af9586c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138168,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "1580f16a374610d035b768da11befffbfd189a07877d32c9b0ebe810ead9f8d8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ec35a0e17f01cc876bca6e5dddd771afac588a7e14f8d5b47ab8cb0b195ef01b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "21cf411a75bd46524d2ae6c31e20f8a2fb2ec0260c7bac464ed61602eb9a3ae8"
+  }
+}

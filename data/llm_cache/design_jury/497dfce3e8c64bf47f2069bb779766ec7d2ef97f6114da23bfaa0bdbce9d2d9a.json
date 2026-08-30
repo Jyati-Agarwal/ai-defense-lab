@@ -1,0 +1,51 @@
+{
+  "cache_key": "497dfce3e8c64bf47f2069bb779766ec7d2ef97f6114da23bfaa0bdbce9d2d9a",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop is visually cohesive and polished: strong headline hierarchy, restrained grid texture, crisp dark surfaces, and disciplined cyan/red accents. Controls are consistently styled and the primary CTA is unmistakable. Tablet and mobile weaken the composition: the stacked result area creates an excessively tall card with a large dead zone, making the page feel unfinished and forcing a long scroll. On mobile, the section badge and CTA wrap awkwardly, several labels and disclaimer lines are very small, and dense controls contrast with the oversized empty state. Only the pre-launch state is shown, so the visual quality of populated results is unproven.",
+    "fix": "Make the responsive result panel content-sized before launch rather than reserving a tall empty canvas; tighten vertical gaps and keep the empty state near the controls. Prevent awkward badge/CTA wrapping, increase tiny supporting text, and refine mobile padding and type scale. Provide viewport evidence of the populated result state to verify hierarchy and polish after launch.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c3e99662e451d7aa7658d83bbffa2db6f4dba3d17cff35b91fc2af67ee1602b8",
+    "schema_version": 2,
+    "sha256": "497dfce3e8c64bf47f2069bb779766ec7d2ef97f6114da23bfaa0bdbce9d2d9a"
+  },
+  "response": {
+    "id": "resp_07c56d083b3ec066016a907ab2c23087d0abd29a2e375e24c5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6156,
+      "input_tokens_details": {
+        "cache_write_tokens": 6153,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 6528
+    }
+  }
+}

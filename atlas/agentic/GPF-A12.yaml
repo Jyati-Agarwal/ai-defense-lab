@@ -1,0 +1,13 @@
+id: GPF-A12
+name: Signed-cart hash decoupling
+tier: agentic
+description: Payment references a different cart digest than the merchant-signed item set shown to the user.
+kill_chain_stage: payment_manip
+channel: agentic_checkout
+rail: card
+genai_capability: payment-tool parameter generation
+primitives: [tool_manip, payment_manip]
+observable_signals: [cart hash mismatch, amount-to-cart mismatch, valid signatures with broken linkage]
+defense_hooks: [hard cart-hash check, signed amount binding]
+severity: critical
+feasibility_today: true

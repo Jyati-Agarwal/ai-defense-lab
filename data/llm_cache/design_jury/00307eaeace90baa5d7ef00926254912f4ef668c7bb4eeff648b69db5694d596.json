@@ -1,0 +1,70 @@
+{
+  "cache_key": "00307eaeace90baa5d7ef00926254912f4ef668c7bb4eeff648b69db5694d596",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial warning, restrained terminal palette, and especially the concentric vault/lock visualization form a distinctive, coherent metaphor across all three viewports. The results area becomes more conventional dashboard styling, but the vault centerpiece is strong enough to make the screen recognizable and demo-worthy.",
+    "fix": "Carry the vault metaphor into the results panel—encode the recall comparison and regression gap as part of the rings or lock state—so the memorable visual idea communicates the evidence instead of sitting beside generic metric cards.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "5439ad88657af98bb1f8ed943343d36eaa8a8174e4e265313d571ffc16aa70a0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 295034,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "e0813ba1984798d69ab8755d07f662db071bd4e758ec1108c15559e30f59bfbf",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212238,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "f246261ec83038cfc9f866b6f5dc0973028de699e50b872bc8b5de46eda3d3fc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162873,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "397ebe0c9a0304c32b3a83fb9a178fea06a7200da4d5cf42f35074ac095cb2d4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0c09d8c0dd7cd71b3a3a5b10ab8020f4e4068c59b833c96d53f94cd54dd1fd03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "00307eaeace90baa5d7ef00926254912f4ef668c7bb4eeff648b69db5694d596"
+  }
+}

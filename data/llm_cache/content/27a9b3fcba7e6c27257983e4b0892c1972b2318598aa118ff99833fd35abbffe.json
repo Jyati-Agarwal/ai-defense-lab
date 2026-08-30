@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-27a9b3fcba7e",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "27a9b3fcba7e6c27257983e4b0892c1972b2318598aa118ff99833fd35abbffe",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] कृत्रिम UPI बहाण्यात अनोळखी लाभार्थी व तातडीचा दबाव हे फसवणुकीचे संकेत; कृतीयोग्य तपशील वगळले आहेत.",
+  "kind": "upi_pretext",
+  "language": "mr",
+  "operational": false,
+  "response": {
+    "id": "resp_0935f1a2a28bfef3016a8f5b6f932887d0a08dddf6c4ac9546",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 117,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 336
+    }
+  },
+  "response_text_sha256": "120201ae8095ebeb644884d42ed7eb7b0ba5706fd6f8dde9dbb94f80f416a376",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "27a9b3fcba7e6c27257983e4b0892c1972b2318598aa118ff99833fd35abbffe",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "upi_pretext",
+      "language": "mr",
+      "variant": "baseline"
+    }
+  }
+}

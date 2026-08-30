@@ -1,0 +1,70 @@
+{
+  "cache_key": "9f250a304b80cf2c7c90f0e279ca88aad560da378ba43702821896e72ea175d7",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Composer keyboard coverage is complete at all viewports: all 10 expected controls have visible focus indicators and accessible names. No touch-target or section-overflow violations were measured, and reduced-motion sampling found no changed elements. However, WCAG contrast remains unverified: axe marked 47 composer nodes and 14–26 header nodes as serious incomplete checks because of gradient backgrounds. The tablet/mobile header also clips many navigation items (21/27 overflow candidates), making destinations visually unavailable despite remaining keyboard-focusable. No screen-reader or high-zoom/reflow evidence was supplied.",
+    "fix": "Replace or isolate gradient backgrounds so automated contrast can be measured, then prove all text and controls meet WCAG AA. Redesign the narrow header as an explicitly scrollable, wrapping, or menu-based navigation with visible overflow affordances and automatic reveal on focus. Add screen-reader and 200%/400% zoom tests before rescoring.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a6b780b7babb4e1dd6a4121caa56737244df56e8df2b83d187f7e8ffd0a562fa",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 419050,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "98a74321c9c529a154861fc1d712b4e49eb4bb716efaab91c652a48c5a8a30de",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401778,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "3c1a0f3853bc953f4180ea213209192ae417d85fd36cd99431459c603fdf90b2",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 316324,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "5813a64001b840cf97f4f0c22a043f49bc1eb001d749c89f78213ad6e59bb57c",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "12c142cc3d92a2a82263746a06309f314bafb0bfbd5008229fa9e6e3caf3c9f9",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9f250a304b80cf2c7c90f0e279ca88aad560da378ba43702821896e72ea175d7"
+  }
+}

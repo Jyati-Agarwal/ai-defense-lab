@@ -1,0 +1,70 @@
+{
+  "cache_key": "344309f55abbfeabe1eda100d20cb94f05c182d4d79f535808a20666e4608d6d",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, instruction, control labels, prominent LAUNCH EVENT action, and side-by-side ALLOW/BLOCK result make the basic task understandable across all three sizes. However, the claimed comparison is not fully self-explanatory: the UI does not identify which control changed, show a before/after state, or connect each evidence layer to the divergent policy decisions. Terms such as fused risk, provenance, structural, and “non-bypassable risk floor” require presenter knowledge. Tablet/mobile headers also clip most navigation, hiding the current Composer context.",
+    "fix": "Mark the changed input and show its baseline value, then explicitly connect that change to each policy decision and evidence score with plain-language labels or tooltips. Add a compact mobile/tablet navigation pattern that visibly identifies “11 Composer.”",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "fd515aea47217630d7ab215ef099795c6d843f1b64d10cecbec4fca895ce56a4",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 419050,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "98a74321c9c529a154861fc1d712b4e49eb4bb716efaab91c652a48c5a8a30de",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401778,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "3c1a0f3853bc953f4180ea213209192ae417d85fd36cd99431459c603fdf90b2",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 316324,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "5813a64001b840cf97f4f0c22a043f49bc1eb001d749c89f78213ad6e59bb57c",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a7f2b6e416da72b090ce9470d3eef8bd4ca514596d50b1d68001c8c6585d6222",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "344309f55abbfeabe1eda100d20cb94f05c182d4d79f535808a20666e4608d6d"
+  }
+}

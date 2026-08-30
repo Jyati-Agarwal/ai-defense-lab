@@ -1,0 +1,70 @@
+{
+  "cache_key": "62a44e989e1e1dfd5b426e7715c55efe09923355617e5f3c71cb5d7f56b05b99",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent integrity: it contrasts trusted shopping intent with a machine-only retrieval seam and a changed payment outcome, then names semantic-alignment verification before authorization. The causal-proof panel and cross-viewport presentation make the threat understandable. However, the evidence is explicitly synthetic, truncated, watermarked, and non-operational; no measured proof shows the Agent Vision toggle changing state, detecting a real injection, or preventing the unauthorized outcome. The successful APIs are not tied to this scenario, and the screen shows no Mastercard-specific integration, payment rail, or authorization control.",
+    "fix": "Add a measured live demo trace: benign rendered page → retrieved hidden instruction → intent mismatch detected → payment authorization blocked, with before/after toggle evidence, provenance identifiers, decision timestamps, and a Mastercard-relevant authorization or commerce integration.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c58a9eae6e3d5d90fa6eee39519df1dec8fd060789ae0832630dace708a8a18c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 209185,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168912,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "a8c99ee3e4cd0f6728006a8620bcf79b92940d564208aeed99e68df79d527cb0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 169341,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6d34868a07bb88eb7b969cecf2ef3af558cd0353dd0247f95062202025cb6d85",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "79c3ae71d0c07a434d5d0881c6f5c0d5655d4cef1763685da8a9fbe1abc7d8a4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "62a44e989e1e1dfd5b426e7715c55efe09923355617e5f3c71cb5d7f56b05b99"
+  }
+}

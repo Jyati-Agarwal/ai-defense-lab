@@ -1,0 +1,70 @@
+{
+  "cache_key": "4cff91a8c5e5b954fc82dfdcb9fabed486d8b84aca25532476954243b76dc746",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The BLOCK → ALLOW reversal, 99% precedent support, and ranked legitimate-neighbor ledger create a clear story across all viewports. However, its visual expression remains a familiar dark cyber-dashboard of bordered cards, monospace labels, pills, and rows; there is no signature visualization or interaction evidenced that makes precedent memory instantly recognizable or demo-defining.",
+    "fix": "Turn the precedent match into a signature visual: show the borderline query entering a spatial memory field, visibly connecting to five legitimate precedents, then animate the decision flipping from BLOCK to ALLOW as support accumulates. Preserve the ranked details as secondary evidence.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0989ada4279be0bca841966299f561ed8fca101ae68cdb16736fa4836ff3bd92",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 181736,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "15f6e9227fe945ac534369486e5cff5d648ecaca04d9423afcea883ed07f4131",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 155255,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "3b6be3f61743d5efee7baf83514487bdd98f908753692de4bf44d1811fc4ce96",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154987,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "998e9a8df02280c7efb4343297bcb8378a68e1b0db5398b806cdbb9625939c3e",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5408018265b4a60ec100dbda6ccd77ec4ee52261a9a1a34babe02f0ae669380f",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "4cff91a8c5e5b954fc82dfdcb9fabed486d8b84aca25532476954243b76dc746"
+  }
+}

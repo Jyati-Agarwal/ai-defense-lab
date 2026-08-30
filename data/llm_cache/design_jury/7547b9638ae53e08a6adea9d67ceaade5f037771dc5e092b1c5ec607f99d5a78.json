@@ -1,0 +1,51 @@
+{
+  "cache_key": "7547b9638ae53e08a6adea9d67ceaade5f037771dc5e092b1c5ec607f99d5a78",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard navigation reaches #vault; no page-level horizontal overflow was measured at 1440, 768, or 390 px; no touch-target violations were reported; the skip target measures about 158×46 px; and reduced-motion testing shows no transform or opacity animation. However, accessibility proof is incomplete at every viewport: 484–553 serious color-contrast candidates, 6 serious prohibited-ARIA candidates, and 2 critical duplicate-ID/ARIA candidates. The mobile screenshot also visibly clips content within the evidence card, including metric text and long identifiers. No evidence verifies keyboard operation or visible focus for the vault’s scope-evidence control.",
+    "fix": "Resolve and rerun the incomplete axe checks: meet WCAG contrast thresholds, remove prohibited ARIA attributes, and make every referenced ID unique. Reflow the mobile metric card and long strings using responsive stacking and safe wrapping so nothing is clipped. Test the scope-evidence control end-to-end with keyboard activation, logical focus order, visible focus, and correct expanded/collapsed semantics.",
+    "score": 5,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 387465,
+        "sha256": "c5f5f3bdcf56f0e0d2c0d1c84ffed9b059b0181ede9a6338ef9e0786db3a7bed",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312741,
+        "sha256": "130b843521116f97340118e80e156fead7f2d63894ef39907f948d48a20737ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 233481,
+        "sha256": "7d97cb03ba2bb941ee01b7053b5b0f32a532e69380aa5b24a9d243db7a144eb7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "68a55f75a04c58533ca4c801270340472a65cc20ed7908652b89c217de21ca72",
+    "schema_version": 2,
+    "sha256": "7547b9638ae53e08a6adea9d67ceaade5f037771dc5e092b1c5ec607f99d5a78"
+  },
+  "response": {
+    "id": "resp_02d2cacbd6bb901d016a907aa1ab9487d093c847694aca8b65",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 8145,
+      "input_tokens_details": {
+        "cache_write_tokens": 8142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 8591
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "7359f13dc15df9c1943048e5d33fea0462d9781cb071dc8755f54a6190ff5021",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Accuracy is the wrong question.” thesis, evaluation-ledger framing, cyan/red defense-lab palette, and constraint-focused labels give the screen a recognizable editorial identity across desktop, tablet, and mobile. However, most of the body resolves into familiar KPI cards, standard charts, a confusion matrix, and an ablation table; the fixed navigation also cuts across the tablet chart, weakening the polished demo moment. The visual idea is strong branding around a largely conventional dashboard, not yet a singular metrics experience.",
+    "fix": "Create one signature visual that proves the thesis—such as an interactive operating-constraint map linking false-positive caps, recall, money caught, and latency—and make it the dominant centerpiece. Reduce the generic card grid and prevent the navigation from overlaying content at tablet widths.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6c58a97ef876ebbfc0eae2d45e3ac6d316bc00d73a326a5e8bcf8a6303a1fe6e",
+    "schema_version": 3,
+    "sha256": "7359f13dc15df9c1943048e5d33fea0462d9781cb071dc8755f54a6190ff5021"
+  },
+  "response": {
+    "id": "resp_06e6107e1c4ed533016a9083c5675887d0a812f8aedab906f3",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6329,
+      "input_tokens_details": {
+        "cache_write_tokens": 6326,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 6607
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "a6a5f0f696a8ab49d0d9bd7fb121cb829e667449b941ac4a61158d90f3d4ded8",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong, coherent cyber-editorial art direction: restrained cyan/red/green palette, crisp borders, consistent mono labels, and clear semantic contrast. Tablet and mobile stack cleanly, while the header remains visually disciplined. However, desktop composition is notably unbalanced with excessive dead space and an undersized central visualization; the headline wraps awkwardly across viewports, and diagram/metadata text becomes extremely small on mobile. The dense lower card also competes with the oversized headline rather than forming a fully resolved hierarchy.",
+    "fix": "Rebalance desktop by enlarging and raising the evidence panel, tighten the hero’s vertical whitespace, set deliberate viewport-specific headline measures, and increase mobile diagram/metadata legibility. Give the active Mandate header item a clearer visual state and verify the unresolved header contrast evidence.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f57b936049cbb7ba2a591f7d663998e8f0324e1afb6c84cf76dfd3c7e1c52db8",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152255,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138131,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ad5c49e9193458235b14ac418703075aefb853705341e8168238d6ae7d2d7e2b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "a6a5f0f696a8ab49d0d9bd7fb121cb829e667449b941ac4a61158d90f3d4ded8"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "fb4be51ecaea6a3a3c51105fcba70e842d6156767fdca3c46b08351d0c857b5b",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Document overflow is absent at 1440, 768, and 390 px; measured touch-target violations are zero; the section navigation is keyboard reachable; and reduced-motion testing shows no hero transform or opacity animation. However, WCAG evidence remains materially incomplete at every viewport: 484–553 contrast checks, six serious prohibited-ARIA checks, and two critical duplicate-ID/ARIA checks. Keyboard evidence covers only section navigation, not Atlas tabs, filtering, vector selection, focus visibility, or operation within the horizontally clipped data region. Skip-link dimensions are measured, but activation and focus transfer are not proven.",
+    "fix": "Resolve and rerun all incomplete axe checks: give ARIA references unique IDs, remove prohibited ARIA attributes, and verify every flagged foreground/background pair meets WCAG contrast. Add end-to-end keyboard tests for tabs, the stage selector, vector cards, detail updates, focus order, and visible focus; verify the skip link transfers focus correctly. Demonstrate keyboard access and discoverability for horizontally overflowed Atlas content at tablet/mobile widths, then retest touch targets and reduced motion.",
+    "score": 5,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 574141,
+        "sha256": "9fa55717488fc0bb322fa215069fbcb087706e4e19b43e8f9b2033b2c33b5328",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 462086,
+        "sha256": "fbb01bbbd777369656fec2726a1688359877ddba406fc3a6d5615f3a1d8f667c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 290485,
+        "sha256": "14c3fdd1ba1f30310de57c4ca65df729d76e455d5965ca45c1feebf292cb3720",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d11a4a75eea1fcfb654e9dbdb937f10d8b736ec972a2bdf85fde83f16fc0d38a",
+    "schema_version": 2,
+    "sha256": "fb4be51ecaea6a3a3c51105fcba70e842d6156767fdca3c46b08351d0c857b5b"
+  },
+  "response": {
+    "id": "resp_014f6901847ca443016a907a6c604487d094a4bb6220124ff1",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 8202,
+      "input_tokens_details": {
+        "cache_write_tokens": 8199,
+        "cached_tokens": 0
+      },
+      "output_tokens": 467,
+      "output_tokens_details": {
+        "reasoning_tokens": 218
+      },
+      "total_tokens": 8669
+    }
+  }
+}

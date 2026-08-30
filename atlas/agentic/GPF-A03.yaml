@@ -1,0 +1,13 @@
+id: GPF-A03
+name: Invisible-CSS agent instruction
+tier: agentic
+description: Hidden DOM text targets machine readers while leaving the visible shopping page unchanged for people.
+kill_chain_stage: context_manip
+channel: agentic_checkout
+rail: card
+genai_capability: HTML and DOM content consumption
+primitives: [context_manip, intent_manip, tool_manip]
+observable_signals: [invisible CSS marker, DOM-rendered text delta, instruction-shaped hidden text]
+defense_hooks: [render-aware sanitizer, hidden-content provenance score]
+severity: critical
+feasibility_today: true

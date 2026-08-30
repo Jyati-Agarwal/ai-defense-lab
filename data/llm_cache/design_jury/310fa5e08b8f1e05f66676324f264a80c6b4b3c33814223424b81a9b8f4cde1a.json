@@ -1,0 +1,70 @@
+{
+  "cache_key": "310fa5e08b8f1e05f66676324f264a80c6b4b3c33814223424b81a9b8f4cde1a",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen materially advances the defense story by distinguishing fresh-row regression from an independent holdout, exposing known/adaptive/composition/D recall, confidence intervals, frozen weights, chronological cutoff, label-shuffle baseline, and a cautious deployment decision. However, the screenshots do not prove row-level evidence, dataset provenance, reproducibility, or an independent post-remediation holdout, and they do not explicitly connect these measurements to Mastercard-specific payment intent-integrity risks.",
+    "fix": "Add an inspectable evidence trail for sampled rows, attack families, timestamps, model hash, and evaluation provenance; show or run the required independent post-remediation holdout; and map each scope and deployment gate to a concrete Mastercard payment-intent threat and decision.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c1d0242c85aa519c169a13ea536648380c47a67841a05986aa073f0d77ccd1c7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 367163,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "2a0494d7125a9028cedc7b0ae0b26e708acb84beef29275d14cac14fda8dbafa",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 246057,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "fa0bcdf9e2b61b52b557171482d1e7f35f934f7a6836a2d13c501b0878546f70",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 193550,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "d48209d70ed0fea40e330a07ab1bd7e531ee6797c628dbcee223c6872455e2c2",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "b308db755e29cf07adb236906526636bff477f1b33493749ec6155da0006432b",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "97df39fd7d5016eadcd7d019a093d60523deac2d001ddf6ce49b092d97c34754",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "282ecb558fa4cdd191a9cf9d03c288a0e41dd614e10610a2005e901d11d34552",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "30f536954a8ad953c505c1e7ffb50860f5ac155e0f99943b77498881eb41d783",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "310fa5e08b8f1e05f66676324f264a80c6b4b3c33814223424b81a9b8f4cde1a"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "b93a95cd71a8e21a6a6507959207047b023ce2f79402ad118453742d04632de4",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured loading is demo-ready across viewports: LCP is 1288 ms desktop, 1156 ms tablet, and 308 ms mobile; FCP is 52–72 ms; TTFB is 1.5–7.5 ms. Layout stability is strong (CLS 0 desktop/mobile and 0.0478 tablet), with document width matching every viewport. No console, page, or request failures occurred. Tablet/mobile frame samples hold near 16.67 ms with no long frames; desktop is weaker at 19.31 ms average and 33.4 ms worst. The main performance liability is 1.314 MB transferred, dominated by 1.149 MB of JavaScript, on all three viewports.",
+    "fix": "Reduce the 1.15 MB JavaScript payload through route-level code splitting, tree-shaking, and deferred loading of non-Atlas screens/data. Profile desktop rendering to bring average frame time under 16.7 ms, and eliminate the modest tablet layout shift.",
+    "score": 8,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 568873,
+        "sha256": "fc5d1de0f30df9b5e63cae4a23ae9e104a06c086894bbf9e56475aa05ec19b96",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 396684,
+        "sha256": "c10266a2ad568cd06bc6abe1f673f576637438ee42ebd2044ae10370b7eaf5bc",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287085,
+        "sha256": "5ccca07e1a38337d53ae19b7bad9ebbc92a656f9999fd41bc3d6c3dcfa970a32",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b3534e2ad7086e31b9c94ee00b85ca1a47ccdb22609e0ba32afb42df08fad313",
+    "schema_version": 3,
+    "sha256": "b93a95cd71a8e21a6a6507959207047b023ce2f79402ad118453742d04632de4"
+  },
+  "response": {
+    "id": "resp_04a91d4f10bc0af3016a908383bbfc87d088938ce79df20b4f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7073,
+      "input_tokens_details": {
+        "cache_write_tokens": 7070,
+        "cached_tokens": 0
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 7461
+    }
+  }
+}

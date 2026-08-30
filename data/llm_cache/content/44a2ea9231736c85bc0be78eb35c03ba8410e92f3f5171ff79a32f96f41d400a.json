@@ -1,0 +1,47 @@
+{
+  "artifact_id": "safe-44a2ea923173",
+  "artifact_metadata": {
+    "hidden_text_present": false,
+    "instruction_shape_score": 0.12,
+    "invisible_css": false,
+    "source": "synthetic_openai_build_cache",
+    "zero_width_chars": 0
+  },
+  "cache_key": "44a2ea9231736c85bc0be78eb35c03ba8410e92f3f5171ff79a32f96f41d400a",
+  "content": "[AI DEFENSE LAB · SAFE SYNTHETIC · TRUNCATED] Synthetic UPI pretext uses urgency and impersonation to solicit payment; actionable abuse details removed.",
+  "kind": "upi_pretext",
+  "language": "en",
+  "operational": false,
+  "response": {
+    "id": "resp_0af630ba2f78c9d5016a8f5b3f7bd887d0a753b0a3ee35a50a",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 117,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 215
+    }
+  },
+  "response_text_sha256": "2ca30f1d9389b50c04172025dfb347800777b3ff402f2e1a5b3bb8d78a85bcfe",
+  "review_status": "approved",
+  "reviewed_by": "codex-security-review",
+  "truncated": true,
+  "variant": "baseline",
+  "watermarked": true,
+  "request_binding": {
+    "sha256": "44a2ea9231736c85bc0be78eb35c03ba8410e92f3f5171ff79a32f96f41d400a",
+    "schema_version": 2,
+    "model": "gpt-5.6-sol",
+    "metadata": {
+      "kind": "upi_pretext",
+      "language": "en",
+      "variant": "baseline"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "9d683c4f6feceb0ef5ebb575dff45a29a9116af74c64c61a43721438df96cecb",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Measured results are fast and stable across all viewports: FCP 32–64 ms, LCP 204–220 ms, load about 108–109 ms, CLS 0.000019–0.000192, zero long frames in 82 samples, no browser/request failures, and no document-level horizontal overflow. However, the page transfers 1.32 MB, including 1.15 MB of JavaScript, for 17 requests. Evidence covers only an apparently fast test environment and short frame sampling; no throttled mobile/network run, CPU stress test, cache/compression breakdown, or mandate-specific bundle attribution is provided.",
+    "fix": "Reduce and split the 1.15 MB JavaScript payload, then provide cold-cache throttled mobile measurements with mandate-specific bundle attribution, compression/cache evidence, and longer interaction frame traces.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "9b77b0cd206b5ed8d700c86d977d317d04a2924416ab1319adde00048032555f",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 219273,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "9b8b1c238686a90f37fd6c704bad6dc5d789b5ed9f93e5c2aead75ce03d2fd9e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152355,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "af01f1020ddc445b48508723aa250d48e2e52069fc4af6180ad121dc3243ab69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138086,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "8cdb670e00cc69dd156268d1993355321c926dccc5820183fa9e4de0f20ce611",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "cba5968eade8f0e69e6f1fa1afc099b974eb776f4b915810e033b94f01423db4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9d683c4f6feceb0ef5ebb575dff45a29a9116af74c64c61a43721438df96cecb"
+  }
+}

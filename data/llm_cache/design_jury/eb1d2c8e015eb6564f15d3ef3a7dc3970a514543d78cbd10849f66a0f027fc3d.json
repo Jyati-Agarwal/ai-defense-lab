@@ -1,0 +1,51 @@
+{
+  "cache_key": "eb1d2c8e015eb6564f15d3ef3a7dc3970a514543d78cbd10849f66a0f027fc3d",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The concentric field graphic centered on a locked “fresh-row secret,” paired with the “Hide Scope Evidence” control, gives the vault a recognizable evidence-sealing metaphor across all three viewports. However, most of the screen falls back to familiar dark cyber-dashboard conventions—monospace labels, neon pills, bordered metric cards, and status rows—and the signature graphic is extremely faint. On desktop and tablet, the navigation rail also cuts awkwardly across the hero, weakening the intended reveal.",
+    "fix": "Make the vault/sealed-evidence metaphor the unmistakable centerpiece: increase the field graphic’s contrast, give opening/hiding evidence a strong visual state change, and integrate the metrics into that reveal rather than a conventional card stack. Reposition the navigation so it does not bisect the hero.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348146,
+        "sha256": "1aaf74804d977d9485d4a8407742f88a7f0919bbb4f8e88951f0c8b68e18e655",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8a9262b0d83ea6d44f42f685338e227883523dd6ed25ae76104fef3366d75c8a",
+    "schema_version": 3,
+    "sha256": "eb1d2c8e015eb6564f15d3ef3a7dc3970a514543d78cbd10849f66a0f027fc3d"
+  },
+  "response": {
+    "id": "resp_0ed1523aa85c7a91016a9084f5b35487d083f47abe91ecade0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6889,
+      "input_tokens_details": {
+        "cache_write_tokens": 6886,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 7199
+    }
+  }
+}

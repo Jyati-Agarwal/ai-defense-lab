@@ -1,0 +1,51 @@
+{
+  "cache_key": "a1e95b33c5bc9a7965a34a7d594820c546afa4251d7ba36747870b1fb865322c",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Desktop is visually strong: a disciplined dark grid, bold editorial headline, restrained cyan/coral accents, consistent rounded panels, and clear KPI hierarchy. Tablet preserves the overall system, but chart labels are very small and the recall chart shows a conspicuous gray hover/highlight state that looks visually unfinished. Mobile stacks cleanly, yet typography inside charts becomes cramped, the PR-curve badge crowds its title, and the ablation table is clipped on the right with columns/content disappearing. These responsive polish issues keep it below genuinely demo-ready across all three viewports.",
+    "fix": "Make the mobile ablation table fully legible via a card/row layout or intentional horizontal-scroll treatment with an affordance; reflow the chart header and badge; increase minimum chart-label sizes while reducing tick density; and suppress captured hover/selection overlays so tablet charts present a clean default state.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 458293,
+        "sha256": "0a9287ed9447221d61529c7ab3bb3d59259a217efcdf3f5849e54789ab083b7c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 435579,
+        "sha256": "886ec06d647737b4ffa1443b9e2963793b7f723f18fcf14f1fafe4baada8e48c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 294991,
+        "sha256": "c5a7734e33f44aace50ad5e7cf8e64cf1e1cec6e558600da33658d190ac8760d",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "68220ddb92d04bcb0d3ef45e7245477621ecb7cbc7e36f03e852dcc648f15d1e",
+    "schema_version": 2,
+    "sha256": "a1e95b33c5bc9a7965a34a7d594820c546afa4251d7ba36747870b1fb865322c"
+  },
+  "response": {
+    "id": "resp_08c549f34ca1831e016a907aa2ab2c87d0b887065b95515e35",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6285,
+      "input_tokens_details": {
+        "cache_write_tokens": 6282,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 6616
+    }
+  }
+}

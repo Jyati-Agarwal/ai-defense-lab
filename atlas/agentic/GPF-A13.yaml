@@ -1,0 +1,13 @@
+id: GPF-A13
+name: Merchant DID substitution
+tier: agentic
+description: A plausible but unregistered merchant identifier replaces the intended payee during tool execution.
+kill_chain_stage: merchant_manip
+channel: agentic_checkout
+rail: card
+genai_capability: dynamic merchant selection
+primitives: [tool_manip, merchant_manip, payment_manip]
+observable_signals: [unregistered signer DID, payee allowlist miss, merchant key novelty]
+defense_hooks: [DID registry verification, payee allowlist]
+severity: critical
+feasibility_today: true

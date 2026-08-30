@@ -1,0 +1,70 @@
+{
+  "cache_key": "ac49b5c6da47d684e32aeccfee66af10a7311488394cbeaa18ae0661cf3a3ab6",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly demonstrates the core intent-integrity threat: trusted shopping intent diverges from a machine-only retrieval layer and produces an unauthorized digital-wallet outcome. It identifies zero-width characters, invisible CSS, provenance, and a semantic-alignment control point across all viewports. However, the supplied proof shows only the rendered reveal state and generic successful APIs; it does not prove the toggle’s state transition, provenance linkage, prevention/enforcement, or any Mastercard-specific network, product, or authorization integration.",
+    "fix": "Add a live before/after trace tying user intent, retrieved artifact, authorization request, and blocked outcome to verifiable provenance IDs. Demonstrate the toggle and enforcement path in measured evidence, and explicitly connect the control to a Mastercard-relevant payment authorization flow.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "351d2c0864d09b0a710b5b9874cd9d11ef3116bdfc44c75ef2f62670cedd7756",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 209185,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168912,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "a8c99ee3e4cd0f6728006a8620bcf79b92940d564208aeed99e68df79d527cb0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 169341,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6d34868a07bb88eb7b969cecf2ef3af558cd0353dd0247f95062202025cb6d85",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "79c3ae71d0c07a434d5d0881c6f5c0d5655d4cef1763685da8a9fbe1abc7d8a4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ac49b5c6da47d684e32aeccfee66af10a7311488394cbeaa18ae0661cf3a3ab6"
+  }
+}

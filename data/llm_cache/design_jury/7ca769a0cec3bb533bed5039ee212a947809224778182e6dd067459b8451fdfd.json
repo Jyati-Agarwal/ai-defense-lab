@@ -1,0 +1,51 @@
+{
+  "cache_key": "7ca769a0cec3bb533bed5039ee212a947809224778182e6dd067459b8451fdfd",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated scans report no confirmed WCAG violations or touch-target failures. Keyboard traversal reaches the thesis navigation links inside the horizontal scroller, and no viewport-level overflow is reported; mobile’s lone oversized decorative element is clipped by #thesis. However, thesis contrast remains unresolved with 24 serious incomplete color-contrast checks at every viewport, including badges, hero text, body copy, and a CTA over gradients. The document has 533–597 unresolved contrast nodes. No reduced-motion test evidence was supplied, and focus visibility/scroll visibility was not explicitly measured.",
+    "fix": "Resolve and remeasure every contrast-incomplete element against its worst-case rendered gradient/background, adjusting colors or adding solid backplates to meet WCAG. Add Playwright coverage for prefers-reduced-motion that verifies animations/transforms are disabled or reduced. Explicitly test visible focus indicators, focused-item visibility within the horizontal navigation scroller, keyboard activation, and skip-link operation at all three viewports.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 236808,
+        "sha256": "d8228d34f6694cac75e35ce94626f7cb2d0c0c7a30b86f97308c890cce0ac996",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223673,
+        "sha256": "43585c87bda7def4dd95c057e97132319bec974372d2c4cee70c71a2f34dadf8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "df380010ed65757856efc8c1359f78e56603d23f754ade8d42134e62737ec714",
+    "schema_version": 3,
+    "sha256": "7ca769a0cec3bb533bed5039ee212a947809224778182e6dd067459b8451fdfd"
+  },
+  "response": {
+    "id": "resp_0c3dcd01d7860ae3016a9083783d8087d08a1c1107d5308dcc",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 14809,
+      "input_tokens_details": {
+        "cache_write_tokens": 14806,
+        "cached_tokens": 0
+      },
+      "output_tokens": 494,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 15303
+    }
+  }
+}

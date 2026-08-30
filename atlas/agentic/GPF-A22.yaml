@@ -1,0 +1,13 @@
+id: GPF-A22
+name: Agent-routed self-dealing merchant
+tier: agentic
+description: A recommendation agent secretly routes purchases to a merchant under common beneficial control.
+kill_chain_stage: merchant_manip
+channel: agentic_checkout
+rail: card
+genai_capability: personalized product recommendation
+primitives: [reconnaissance, context_manip, merchant_manip, payment_manip, cash_out]
+observable_signals: [agent-merchant ownership edge, recommendation concentration, price-quality outlier]
+defense_hooks: [conflict-of-interest graph, recommendation diversity]
+severity: high
+feasibility_today: true

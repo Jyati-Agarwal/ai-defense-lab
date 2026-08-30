@@ -1,0 +1,70 @@
+{
+  "cache_key": "46f2208bdce83438f3547222fce5022e292027c08d68b66fb8c09398833bd5e0",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and subtitle clearly establish the claim, and the metric cards, ablation takeaway, and “Compare configurations” CTA provide a coherent story. However, the PR curve does not visibly identify constrained operating points, the charts rely on very small labels, and mobile compresses dense explanatory/table text into hard-to-scan content. The CTA appears only after a long scroll, while the mobile/tablet header does not visibly identify Metrics as the current section.",
+    "fix": "Label the operating points directly on the PR curve, enlarge mobile chart/table text, surface the key comparison beside the summary metrics, and make the current Metrics section plus the comparison action visible earlier.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2842c15f16dd9d37085f0980e78777507c8e45062a2d3b2b567217722f1fa2fe",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 216679,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "67f782b83ebf4231e2abcfb2af6f2a18165b0175256c89b1bc65e100f62c8d68",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193396,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "0838974b5035e2af6d38eb85eb405368cae4b95f4e810aa5bbc1c4172c081213",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181003,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "925c0b3134b6df0e3f857a2ff47409028a5697078bad552c289876a43128d2ae",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4b72da3e867f0436aff6ddb2d89cea6bca1c6ca0c5c63f1000f551e8d22f7bcd",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "46f2208bdce83438f3547222fce5022e292027c08d68b66fb8c09398833bd5e0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "3b6238f1ae5714682723c13c45e8724cb4f04e41853e56922a096dfd28173147",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline communicates the core contradiction immediately, and “Follow the payment” is a prominent next action across all viewports. The four-step artifact also exposes intent, agent, retrieved-page anomaly, payment, and the authentic-versus-intended mismatch. However, the explanatory copy relies on undefined jargon (“release-custodied synthetic signatures”), and the diagram does not explicitly explain how seven zero-width characters caused the payment to diverge from the recorded intent. The secondary CTA is vague, while the mobile header obscures navigation destinations and removes the visible product name and Red Mode action.",
+    "fix": "Add one plain-language causal sentence linking the hidden page injection to the changed merchant/payment, label each connector with what changed, and rename “Open evaluation scope” to a concrete destination such as “See scoring evidence.” Preserve a visible product identifier and clearer navigation affordance on mobile.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0669ca3ddf85fdd4308d92c19d0647697520eabf8fac7ea1aca95a8d48bd54f9",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 136688,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e825fe8d1f706091f9893e447e219cdf0ea79faee1299c0d881fa8d8288d1c2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 134839,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "e101a8d0b7abcc8f5f043eefb6ef6ca38ea1ced5d66cfc58af437932fb6f454e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 112043,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "628b0ca0123a8668504eef661101bfaf69ad7022e64683cf767805890d8e2e14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "558c3ccc81c53a461b57c66e3956e5e583f381a79c7edc3ea53745f7b88568c6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "3b6238f1ae5714682723c13c45e8724cb4f04e41853e56922a096dfd28173147"
+  }
+}

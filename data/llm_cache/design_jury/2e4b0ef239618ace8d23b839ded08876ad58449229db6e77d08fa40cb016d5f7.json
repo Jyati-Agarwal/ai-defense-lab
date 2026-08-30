@@ -1,0 +1,51 @@
+{
+  "cache_key": "2e4b0ef239618ace8d23b839ded08876ad58449229db6e77d08fa40cb016d5f7",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The screen has a cohesive, polished defense-console aesthetic: disciplined near-black surfaces, restrained red/cyan/yellow semantic accents, strong hero typography, consistent borders, badges, and section framing. Desktop hierarchy is dramatic and the mobile layout preserves the core visual language. However, the tablet sticky navigation visibly overlays the chart and is horizontally clipped, materially harming composition. Several analytical elements are too small to read comfortably: the desktop phylogeny is visually dense and miniature, while the mobile chart labels, metadata, and mutation text approach illegibility. The tablet vaccination cards also form an awkward compressed row with arrows at the edge, and the desktop hero leaves a large underused right field while concentrating detail into small text.",
+    "fix": "Make the tablet navigation non-obstructive and responsive—collapse it or reserve layout space rather than overlaying content. Increase minimum type sizes for chart labels and metadata, simplify the mobile chart, and provide a clearer large-format treatment for the desktop phylogeny. Reflow tablet vaccination steps into a spacious grid or vertical sequence, and rebalance the desktop hero so the explanatory panel has more scale and presence.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 671828,
+        "sha256": "9d4f5ffd936c43cc21671ef19f949a68a20c0d5ced7ad4c3fe0d93da6d85598c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3bea6a28bd7b31bb7d2e04619c671179abd5de1e911df218832622f50cfbd553",
+    "schema_version": 3,
+    "sha256": "2e4b0ef239618ace8d23b839ded08876ad58449229db6e77d08fa40cb016d5f7"
+  },
+  "response": {
+    "id": "resp_06727b1c0d05081e016a9084e4d6f487d0be2784484926bebb",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6207,
+      "input_tokens_details": {
+        "cache_write_tokens": 6204,
+        "cached_tokens": 0
+      },
+      "output_tokens": 459,
+      "output_tokens_details": {
+        "reasoning_tokens": 202
+      },
+      "total_tokens": 6666
+    }
+  }
+}

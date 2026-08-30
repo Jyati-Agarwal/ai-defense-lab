@@ -1,0 +1,51 @@
+{
+  "cache_key": "933092bfb0302850deee08afb84e31e000992b276fb452c8980338af3c87fd51",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Frame timing is stable on tablet/mobile (~16.67 ms average, 16.8 ms worst, 0 long frames); desktop is acceptable but slower at 20.73 ms average and 33.4 ms worst. However, standard-motion sampling across all three viewports found 0 active animations and 0 changed elements over 12 frames, so the toggle/reveal motion, easing, continuity, and responsiveness are not demonstrated. Reduced-motion mode shows no visual changes but still reports 1 active animation and 76 transition-bearing elements, leaving incomplete proof that motion is fully suppressed.",
+    "fix": "Capture measured before/during/after frames for the Agent Vision toggle at every viewport, including timing, easing, and settled state. Under prefers-reduced-motion, explicitly disable all nonessential animations and transitions so active-animation count reaches 0, then rerun a longer interaction sample to verify no visual movement or frame spikes.",
+    "score": 5,
+    "screen": "injection"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 347474,
+        "sha256": "4cbfb072bf31c5828822ae371f295e1f83327ee04593f20a64bce61bcb08a149",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312117,
+        "sha256": "7e29c6d90b79a34002272db14277082fdccfb8fa3bfbcf8f4729e298704152be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 264865,
+        "sha256": "10238cacde8d09b1fe1f82c33d5c23b8d3348a3eb6ee3b46faa3f9d8467d3ef1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ada743cbeed36de180313cdffbd0714beb09c6690902c48733fc4b362311d0d4",
+    "schema_version": 3,
+    "sha256": "933092bfb0302850deee08afb84e31e000992b276fb452c8980338af3c87fd51"
+  },
+  "response": {
+    "id": "resp_01140aa7a85f2488016a9084e1d64087d0b1b8239354bd7421",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 7143,
+      "input_tokens_details": {
+        "cache_write_tokens": 7140,
+        "cached_tokens": 0
+      },
+      "output_tokens": 507,
+      "output_tokens_details": {
+        "reasoning_tokens": 291
+      },
+      "total_tokens": 7650
+    }
+  }
+}

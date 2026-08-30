@@ -1,0 +1,70 @@
+{
+  "cache_key": "f5d3102380b6c79f491a213e9a5008c801af1e9eb2ad0f82972d50ade1a28ca4",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The arena clearly advances intent-integrity: it contrasts training-fold replay with fresh-row generalization risk, exposes surviving mutations, and shows guarded promotion gates where failed regressions block deployment. However, the screenshots do not establish Mastercard-specific relevance beyond payment-adjacent labels such as payee reuse and fraud phylogeny; there is no demonstrated Mastercard rail, transaction scenario, brief requirement, or measurable network/customer outcome. The 25-survivor claim is also only partially visible, with the remainder hidden behind disclosure.",
+    "fix": "Add one concise Mastercard-grounded scenario and outcome: identify the payment flow or network decision being protected, connect each promotion gate to that risk, and expose a summarized fresh-row/holdout result for all 25 survivors with a measurable fraud-loss, false-positive, or approval-rate impact.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "9906cbe7c70ed7799195345b93e027e9951df9f5524c1fbf06570c614d47812a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 247734,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "2049ce786f9410da6b043879c1f4a21302dfa9c3ef692b868d0e256ee6630728",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 195732,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "467591e55b4ac84d961f7882c12963a081bfafa537c39674d7f0520fa86500db",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 189405,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "e37fdef89dbe9f9b8d873984d7ebb39dc925ccd4de558d827c7499ac142833c8",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b0e8a7175b3dd93e28cee6ac7ceed071f257030d83836dba87c49719d333de6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f5d3102380b6c79f491a213e9a5008c801af1e9eb2ad0f82972d50ade1a28ca4"
+  }
+}

@@ -1,0 +1,13 @@
+id: GPF-C15
+name: Business invoice beneficiary change
+tier: classic
+description: Compromised correspondence substitutes bank details on a genuine supplier invoice.
+kill_chain_stage: merchant_manip
+channel: wire
+rail: wire
+genai_capability: none
+primitives: [reconnaissance, context_manip, merchant_manip, payment_manip]
+observable_signals: [known supplier new account, invoice template drift, first-payment amount spike]
+defense_hooks: [supplier account allowlist, out-of-band verification]
+severity: critical
+feasibility_today: true

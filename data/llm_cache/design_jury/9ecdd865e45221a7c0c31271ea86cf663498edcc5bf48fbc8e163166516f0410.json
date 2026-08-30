@@ -1,0 +1,70 @@
+{
+  "cache_key": "9ecdd865e45221a7c0c31271ea86cf663498edcc5bf48fbc8e163166516f0410",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The arena clearly advances intent-integrity defense: it distinguishes training-fold replay from generalization, exposes 25 unresolved mutation/fresh-row risks, and shows guarded promotion gates with rejected regressions. However, the screen provides no explicit Mastercard/payment-network scenario, transaction impact, fraud-loss metric, latency constraint, or proof that the holdout and regression results were actually executed; several panels remain explanatory artifacts rather than demonstrated evidence.",
+    "fix": "Add a Mastercard-relevant transaction attack scenario with named dataset/holdout provenance, live run identifiers and timestamps, measurable fraud-loss/false-positive/latency outcomes, and inspectable regression evidence showing why promotion was blocked.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c137fef0b7ffcc1ad548ac0a75c2730a5c1e3fe063a8b5e03cfc7ba891ad4cad",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 258208,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "a9c6a07291df90b98a5289a1ff01047f04e86d686cd97f503a73c9c651cf40e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205716,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "ec1596263baf4607f1fd37ce5fdba8c7586fde6a8051bdd886d97e49cff8195c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199028,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "1346992f2880119132054e736c0b721e6fbbbfdfe9f393e8c4fdde10ff8650ea",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b0e8a7175b3dd93e28cee6ac7ceed071f257030d83836dba87c49719d333de6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9ecdd865e45221a7c0c31271ea86cf663498edcc5bf48fbc8e163166516f0410"
+  }
+}

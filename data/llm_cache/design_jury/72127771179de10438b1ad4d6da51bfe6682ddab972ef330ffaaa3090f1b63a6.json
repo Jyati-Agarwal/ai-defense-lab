@@ -1,0 +1,70 @@
+{
+  "cache_key": "72127771179de10438b1ad4d6da51bfe6682ddab972ef330ffaaa3090f1b63a6",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly demonstrates the core defense story: a signed intent for running shoes becomes a digital-wallet voucher purchase, legacy controls allow it, and intent-integrity blocks it using three visible causal signals. The payment replay and side-by-side decision make the agentic-commerce risk concrete across all viewports. However, the visible artifact does not connect the scenario to Mastercard capabilities or the hackathon brief, substantiate the claimed five evidence layers, or show why the block is trustworthy beyond asserted copy.",
+    "fix": "Add a compact, visible decision trace mapping all five evidence layers to observed signals and policy outcomes, plus an explicit Mastercard-aligned integration or payment-rail touchpoint and one measurable result such as prevented loss, latency, or false-positive impact.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "c078a3f45645f5f5cd8a7c72251a9cfd7fd3b91712c078d07d93523633b910c9",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 200551,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "18eb77824ec8f2442056133b5c685dc0c4df75a6159656cf99b30d35d871ccfc",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 177417,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "86e2d3d6763afc81353425c7f4f88ce1b32c8b9e8db82c57b56f69cb5710c00b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 174719,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "8d817ff981674cf86313bf8d18f8e01d95b43b2d9312dd55acab5b0954aa26cb",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "04331c5c741e93f4d47247f500ee4aaa8baadced48271c8ff72ccac13d46bc82",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "72127771179de10438b1ad4d6da51bfe6682ddab972ef330ffaaa3090f1b63a6"
+  }
+}

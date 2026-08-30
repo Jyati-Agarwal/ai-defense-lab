@@ -1,0 +1,51 @@
+{
+  "cache_key": "bbb8e1feaedd7723e06304d4582ce4a0503a4342cebc7a06a9db873e949b181d",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial headline, neon threat palette, and cyan kill-chain path above a stage-organized attack taxonomy create a recognizable “adversary atlas” concept. However, much of the main body still reads as familiar dark-dashboard tabs, card columns, badges, and a JSON inspector. On tablet and especially mobile, the signature chain and taxonomy are visibly clipped into narrow fragments, so the distinctive visual idea loses demo impact rather than becoming a memorable responsive composition.",
+    "fix": "Turn the kill chain into the unmistakable centerpiece: let selecting a vector illuminate its complete route through the chain and connect visually to the detail panel. Replace clipped mobile columns with a deliberate stage-by-stage horizontal atlas or focused single-stage view, while reducing the generic JSON-panel prominence.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 574141,
+        "sha256": "9fa55717488fc0bb322fa215069fbcb087706e4e19b43e8f9b2033b2c33b5328",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 462086,
+        "sha256": "fbb01bbbd777369656fec2726a1688359877ddba406fc3a6d5615f3a1d8f667c",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 290485,
+        "sha256": "14c3fdd1ba1f30310de57c4ca65df729d76e455d5965ca45c1feebf292cb3720",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c6390481091c3096a51a0d51742f056a1466f7a2de8dcf1320d51046f8907483",
+    "schema_version": 2,
+    "sha256": "bbb8e1feaedd7723e06304d4582ce4a0503a4342cebc7a06a9db873e949b181d"
+  },
+  "response": {
+    "id": "resp_0e28df23c4c5bc2f016a907a6a920887d0b3a895f9f60cdd89",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6555,
+      "input_tokens_details": {
+        "cache_write_tokens": 6552,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 6883
+    }
+  }
+}

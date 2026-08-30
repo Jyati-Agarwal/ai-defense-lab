@@ -1,0 +1,70 @@
+{
+  "cache_key": "2a38b92e9247343ed2ca9dd69064edfe8b27c4ba1d0c64785b30843a44a50167",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Standard scroll-entry motion is smooth across desktop, tablet, and mobile: average frame intervals are 15.66–15.98ms, worst 16.8ms, with no long frames. The measured entrance resolves cleanly from opacity 0 and translateY(22px), while the red panel eases from roughly translateX(-30px). Reduced-motion sampling shows zero changed elements at every viewport, which is strong. However, reduced mode still reports registered/active animations—especially 31 on desktop—and isolated 33.3–33.4ms frames. Evidence covers only one programmatic scroll-entry; no measured interaction or exit/state-transition motion proves broader polish.",
+    "fix": "In reduced motion, remove or cancel animations instead of leaving registered/active no-op instances, then eliminate the 33ms reduced-mode spikes. Add measured frame trajectories for interactive arena states and confirm each remains near 16.7ms with zero long frames.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f44e161bafc0ac6ef81f0dd7a6f8b6e50fec9435a4bad9600680a70eb6eb08d5",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 258513,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "4457508c2b8f9acce5f696dbda85d9a392b094801be8f543aeed88748f3049c7",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "ce78cf94305fab115f21c24e03ae47d09d34e4d5be7419e9b86bd62025ebd506",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "65a58101cf009a00ea0f03411ce1546fceddec58e9dbd148b817730121365a60",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ff5ee4a65195e630d12e03033d8b580cfd674344f93bccc76e4d3f05f26889ac",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0306254c2dc2bfba38240fed61df6440c58a1f4519c52c2dc97e06170cbb71c7",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2a38b92e9247343ed2ca9dd69064edfe8b27c4ba1d0c64785b30843a44a50167"
+  }
+}

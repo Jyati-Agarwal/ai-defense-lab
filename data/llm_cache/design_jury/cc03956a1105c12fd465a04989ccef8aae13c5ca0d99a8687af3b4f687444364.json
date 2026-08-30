@@ -1,0 +1,51 @@
+{
+  "cache_key": "cc03956a1105c12fd465a04989ccef8aae13c5ca0d99a8687af3b4f687444364",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline states the distinction clearly, and the intent→cart→payment sequence, four VERIFIED checks, red semantic mismatch, and “INSPECT SEMANTIC MISMATCH” control make the proof path and next action understandable. However, the desktop navigation cuts through the hero headline, while on tablet it obscures nearly all supporting copy. This prevents the claim from reading cleanly across the supplied viewports and falls short of demo-ready polish.",
+    "fix": "Reserve space for the sticky navigation or place it above the hero so it never overlaps headline or body copy. Keep the explanatory sentence visible at every viewport, and position the semantic-mismatch CTA immediately after the verified checks with an explicit action label such as “Inspect why verified records violate intent.”",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 575621,
+        "sha256": "d25ca023f665effd0c11a8f14330fa88b6f357ec73d3818e8d47012d93258741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 415373,
+        "sha256": "007c394855cee56b96fcc7e49ef1afed92452b6da97e30e7e9f882056d4468f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345338,
+        "sha256": "fac508874e53ea6667c5fbead9b9eb7990c72e9f029bbc1190e107f35fcbf733",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e159a796afc9486029e9c3c159285d6a6271761e4824d664a993e52e7cb800dd",
+    "schema_version": 3,
+    "sha256": "cc03956a1105c12fd465a04989ccef8aae13c5ca0d99a8687af3b4f687444364"
+  },
+  "response": {
+    "id": "resp_08eaaed7f5c78c28016a908392149c87d08642ea4e4f36fca3",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6683,
+      "input_tokens_details": {
+        "cache_write_tokens": 6680,
+        "cached_tokens": 0
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 7116
+    }
+  }
+}

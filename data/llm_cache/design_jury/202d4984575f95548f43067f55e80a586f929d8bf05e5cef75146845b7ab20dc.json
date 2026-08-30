@@ -1,0 +1,70 @@
+{
+  "cache_key": "202d4984575f95548f43067f55e80a586f929d8bf05e5cef75146845b7ab20dc",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly demonstrates intent integrity: one signed payment passes legacy checks but is blocked after the paid cart diverges from the delegated mission, supported by three causal signals. However, the visible artifact does not prove a Mastercard-specific integration, identify the five evidence layers, or demonstrate that selecting another cached transaction actually recomputes the comparison.",
+    "fix": "Add visible Mastercard rail/API provenance and an expandable evidence-layer trace, then capture proof that selecting multiple transactions updates the legacy-versus-intent decision from real response data.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d056ca21bf51fccf7255ad49cf9e7b42da89483c8c6bb68334d27a9b51be6d21",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fd029747c2f689b7eb5a7aefb9ca2740ceabcccf0229387e44619ca9252b1a1b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "202d4984575f95548f43067f55e80a586f929d8bf05e5cef75146845b7ab20dc"
+  }
+}

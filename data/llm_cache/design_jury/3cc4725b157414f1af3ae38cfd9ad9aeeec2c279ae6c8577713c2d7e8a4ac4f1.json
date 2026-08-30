@@ -1,0 +1,70 @@
+{
+  "cache_key": "3cc4725b157414f1af3ae38cfd9ad9aeeec2c279ae6c8577713c2d7e8a4ac4f1",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Across desktop, tablet, and mobile, the panel executes a clean 22px rise with opacity 0→1, settles without overshoot, and maintains near-perfect 60fps timing: roughly 16.3–16.6ms average, 16.8ms worst, and no long frames. Reduced-motion sampling shows zero changed elements at every viewport. However, proof covers only one monolithic entrance animation; there are no measured interaction states, sequencing, or header-motion frames demonstrating demo-level motion craft.",
+    "fix": "Add measured frames for meaningful interaction and navigation motion, and give the precedent content restrained staged sequencing rather than moving the entire panel as one block. Explicitly cancel the remaining registered animation under reduced motion, even though it currently produces no visual change.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "112d4596e9b315e98bbb61c0ae0ff68fe445227656e874b63698184ba5146162",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 165634,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "f0bd9157ff09bc47c1f2acfed3eb1dce4f6391a31926d4bf6916fa74bf005e4e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 137120,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "eb195e5f9e15b84b0cfeb239fef6e63ab281fc6f0005397e5a91e2907b63a97a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 137647,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "a17df0d6e5c0282c6aae35b00a1564c1a0c3feb1881e89caf24cd31416324f69",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d232f4b1c811c9e41c46c5ea7588258179442ead892109d83847f63858c1046c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "3cc4725b157414f1af3ae38cfd9ad9aeeec2c279ae6c8577713c2d7e8a4ac4f1"
+  }
+}

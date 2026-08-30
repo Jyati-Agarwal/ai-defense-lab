@@ -1,0 +1,13 @@
+id: GPF-A16
+name: Delegated sub-agent authority hijack
+tier: agentic
+description: A nested sub-agent exceeds the delegation depth or scope granted by the original shopping agent.
+kill_chain_stage: tool_manip
+channel: agentic_checkout
+rail: card
+genai_capability: multi-agent task delegation
+primitives: [reconnaissance, tool_manip, payment_manip]
+observable_signals: [delegation depth spike, unregistered sub-agent, scope token mismatch]
+defense_hooks: [delegation-chain validation, agent registry]
+severity: critical
+feasibility_today: true

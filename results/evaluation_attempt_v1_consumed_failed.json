@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "artifact": "evaluation_attempt_v1_consumed_failed",
+  "status": "consumed_failed",
+  "retroactive_receipt": true,
+  "model_hash": "004bb06898dba02708ba39da9cd2efa91e48c1ec5fad5b180e06345a3b6b1279",
+  "dataset_sha256": "3488e51722e1abba6337650d8e01b6f638ca85be42c756b1dff72c601c0951ce",
+  "split_plan_sha256": "cae0867646d2a7120a1140ba445d9aa7d6a9ad1adf9c6298fba64d6066cb8509",
+  "source_tree_sha256": "0c84e4f85ed8dc8318608fa3ae4e984fdbe152dd22e4b363596e38a167cceb85",
+  "events_file_sha256": "96eca2904102f57c70cfd873e7417852349f68d805da0041deea9db476f87187",
+  "events_manifest_sha256": "53ceb026bf568169c6072a18460041e89ad9575ebc7f8bd55a5426fc2b7ffeba",
+  "behavior_profile_sha256": null,
+  "evaluation_release_sha256_at_failure": "357478118769667af8aa1e26f637da3637abe51b1599c3eabbbccc2c165ad7e8",
+  "partitions_consumed": [
+    "C",
+    "D",
+    "E"
+  ],
+  "scoring_counts": {
+    "A": 11674,
+    "B": 12,
+    "C": 46,
+    "D": 45,
+    "E": 1000
+  },
+  "failure_type": "AssertionError",
+  "failure_reason": "undetected per-vector rows require a feature fix: GPF-A20",
+  "failed_vector": "GPF-A20",
+  "shuffle_statistics_persisted": false,
+  "protected_outputs_promoted": false,
+  "same_model_retry_permitted": false,
+  "qualification_or_external_data_accessed": false
+}

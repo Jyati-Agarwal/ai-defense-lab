@@ -1,0 +1,51 @@
+{
+  "cache_key": "d504455547eb992fb7d3a64c68bcd880f07e4dcef2562d08f76c8e5d2ab94d50",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, subtitle, side explanation, and deployment decision consistently communicate the core caveat: the 100% fresh-row result indicates stability, not an independent holdout or production readiness. However, the next action is only stated as “an independent post-remediation holdout is still required”; there is no clear control to create, schedule, or inspect that holdout. The sticky navigation also overlaps introductory content on desktop/tablet, reducing immediate legibility, while technical labels such as “independent_holdout=false” and “Fresh-row D” add avoidable decoding burden.",
+    "fix": "Add a prominent CTA beside the deployment decision, such as “Create independent holdout” or “View holdout protocol,” and state the concrete next step in plain language. Prevent the sticky navigation from covering the headline/explanation at desktop and tablet widths, and pair technical field names with human-readable labels.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348146,
+        "sha256": "1aaf74804d977d9485d4a8407742f88a7f0919bbb4f8e88951f0c8b68e18e655",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c7788d36a14a6dd68f81d54a00719ff5a0e7833e0041d5ae44121975c4810f4c",
+    "schema_version": 3,
+    "sha256": "d504455547eb992fb7d3a64c68bcd880f07e4dcef2562d08f76c8e5d2ab94d50"
+  },
+  "response": {
+    "id": "resp_0c741568dca25d21016a9084f4a50487d0945d57676a096392",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6886,
+      "input_tokens_details": {
+        "cache_write_tokens": 6883,
+        "cached_tokens": 0
+      },
+      "output_tokens": 485,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 7371
+    }
+  }
+}

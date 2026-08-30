@@ -1,0 +1,70 @@
+{
+  "cache_key": "0fa492e081edb41f53733a66faf67daa4c0f411a7ac53ddaba761b1a88f9cac3",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and deployment decision clearly communicate that this is post-remediation evidence, not an independent holdout. However, “lowest measured recall 85%” sits beside “regression gap: 0%” without immediately explaining that the gap refers only to Fresh-row D, making the central result easy to misread. The stated next action says “Open the scope evidence” while the visible control says “Hide scope evidence.” On mobile, the control, evidence text, metric strip, table columns, hashes, and deployment decision are visibly clipped, so essential proof and guidance cannot be read.",
+    "fix": "Explicitly label the 0% as “Fresh-row D gap” beside its 100% result and distinguish it from the 85% composition recall. Make the instruction reflect the evidence’s current open/closed state. Reflow all evidence into the mobile width—wrap long strings, stack summary cells, and convert the table to readable cards or horizontal scrolling with a clear affordance.",
+    "score": 5,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2d2e7c34a12bf7e01ca8db13294bd4881c5be51dc57c22da53af1d484df860b6",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 362489,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "561477c0036ebd6532031c85901b26691219eac05c15ed2f0f75f9d1dbbc2afe",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 241390,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "b494fa8ee8f657a73df89d03d9479c0b34b3e45c541aab81970ef90927c67cb8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 183156,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "7bee52bc7312483f6d8c2cda5296d9fdbbf3d8ec68e4751de2080554f3c0db72",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "5f4b18b53ae463c43325361329075c935ccf7203dd270e2808ca3656215ebcea",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "15c03c844a3b25c84ebc3fa6a3a4ab0fe8f18acd37a2003b67545d437014e317",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ae3d14f2fdcecab61a720a8468304553f8c550e2ae2c81b080b82aa5e1f59ec1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "224957912a05c4e0ea5496e4d1a07718b63bac6b28269dd4047a6e1139f318ef",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "0fa492e081edb41f53733a66faf67daa4c0f411a7ac53ddaba761b1a88f9cac3"
+  }
+}

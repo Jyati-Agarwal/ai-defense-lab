@@ -1,0 +1,51 @@
+{
+  "cache_key": "5f7195d6d796d991f3ae751c7b356747acf7dc2c11c999788ec570c21f55b07d",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The screen has a clear demo-worthy concept: a theatrical red-mutator versus blue-defense arena, anchored by the oversized manifesto headline, opposed color-coded camps, attack replay curve, and a fraud-phylogeny/survivor narrative. This reads as a designed adversarial simulation rather than a generic KPI dashboard, and the identity survives across desktop, tablet, and mobile. It stops short of exceptional because the lower vaccination flow returns to familiar cards and the distinctive desktop phylogeny becomes a simpler list on smaller screens.",
+    "fix": "Make the evolving mutation lineage the unmistakable centerpiece across all viewports—retain a compact visual tree on mobile and visually connect each arena round, survivor branch, and vaccination gate into one continuous red-versus-blue battle sequence.",
+    "score": 8,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 671828,
+        "sha256": "9d4f5ffd936c43cc21671ef19f949a68a20c0d5ced7ad4c3fe0d93da6d85598c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5acfc769bce39f4373c13453d8f0d9cfc2be4dda06994d215eee7ff4da52913e",
+    "schema_version": 3,
+    "sha256": "5f7195d6d796d991f3ae751c7b356747acf7dc2c11c999788ec570c21f55b07d"
+  },
+  "response": {
+    "id": "resp_0209499fce7d5d07016a9084ecadac87d0ab88c1454955b2d5",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6205,
+      "input_tokens_details": {
+        "cache_write_tokens": 6202,
+        "cached_tokens": 0
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 6566
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "ecaae88fc963107a8a90d488e08d915f271784c16192b88176dfa1905d714dd1",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline and deployment warning clearly state that this is not an independent holdout, but the metrics are internally hard to reconcile: 85% fresh-row composition appears beside 100% fresh-row D and a “regression gap: 0%” label without defining the comparison. The only prominent control says “Hide scope evidence”; there is no clear action to create or run the required independent holdout. On mobile, dense tiny text and a header that does not visibly identify Vault further weaken self-explanation.",
+    "fix": "Define exactly what the 0% gap compares, visually separate fresh-row composition from fresh-row D, and add a primary CTA such as “Run independent holdout” beside the deployment decision. Keep “08 Vault” visibly selected in the responsive header and increase mobile evidence text size.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "153a058a6c8f3055bc6cd3c5b02161aadab75e0c15fed5ea12795a74fef2abeb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 362489,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "561477c0036ebd6532031c85901b26691219eac05c15ed2f0f75f9d1dbbc2afe",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 241390,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "b494fa8ee8f657a73df89d03d9479c0b34b3e45c541aab81970ef90927c67cb8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 189370,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "d7dd25543c86c8031f6c64efbb3e5cccfc31d3f3b1846fd064b7da9c3358c2c4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "224957912a05c4e0ea5496e4d1a07718b63bac6b28269dd4047a6e1139f318ef",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ecaae88fc963107a8a90d488e08d915f271784c16192b88176dfa1905d714dd1"
+  }
+}

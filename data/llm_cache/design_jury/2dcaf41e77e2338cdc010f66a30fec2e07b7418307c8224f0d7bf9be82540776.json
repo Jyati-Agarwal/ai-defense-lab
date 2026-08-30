@@ -1,0 +1,51 @@
+{
+  "cache_key": "2dcaf41e77e2338cdc010f66a30fec2e07b7418307c8224f0d7bf9be82540776",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Your turn, Red.” headline, Red Mode framing, cyan-to-pink sliders, and target-like empty-state icon create a coherent adversarial-lab mood across all three viewports. However, the visible screen is still fundamentally a dark two-column form with standard selects, sliders, toggle, CTA, and a very large empty results region; no post-launch visualization is shown to establish a distinctive demo payoff.",
+    "fix": "Make the launched-result state the signature visual: transform the empty pane into an animated attack-path map linking the configured controls to five scored defense layers, with policy decisions and evidence lighting up in sequence. Capture that state at every viewport and reduce the oversized blank region on tablet/mobile.",
+    "score": 6,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 385251,
+        "sha256": "3eca6c41ef6c6859b4c14ce4d0715e704fcb22bd6226753083d4ad4b85cec047",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354632,
+        "sha256": "2741c7bb1537fedfac07ce6dcb0dab9351ba3f31fbb5e4ea3007f6b9f47fbe4a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 268017,
+        "sha256": "9074f7415ed7db6514c8ba0d947ef04feadc3ca5ccfa073c0e78fa65ec2b45de",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1ff9a453b8611dfb44ba746d9cdabbe431d8011f9fda46a9402df1c1d9e40bf4",
+    "schema_version": 2,
+    "sha256": "2dcaf41e77e2338cdc010f66a30fec2e07b7418307c8224f0d7bf9be82540776"
+  },
+  "response": {
+    "id": "resp_017efc4d9c4d1dba016a907ab65db887d08b517d8a5a4a401f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6154,
+      "input_tokens_details": {
+        "cache_write_tokens": 6151,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 6479
+    }
+  }
+}

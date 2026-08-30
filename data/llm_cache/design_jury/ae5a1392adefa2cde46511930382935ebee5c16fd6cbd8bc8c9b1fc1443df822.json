@@ -1,0 +1,70 @@
+{
+  "cache_key": "ae5a1392adefa2cde46511930382935ebee5c16fd6cbd8bc8c9b1fc1443df822",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard coverage and visible focus pass for all header and thesis controls; touch-target checks report no violations; reduced-motion produces zero active animations; tablet/desktop have no section overflow. However, contrast remains unverified with 24 serious incomplete nodes in #thesis at every viewport and 14–26 in the header, including badges, animated headline words, body copy, CTAs, and navigation. Mobile also reports section scrollWidth 435px versus a 390px viewport, while much of the horizontally scrolling header is clipped from view. No measured screen-reader/semantic reading-order evidence is provided.",
+    "fix": "Resolve and manually measure contrast against the rendered gradient for every flagged text/control state, meeting WCAG AA; remove the mobile section’s excess scroll width; ensure the header scroller exposes clear touch/keyboard affordances and keeps focused items visible; then provide screen-reader landmark, heading, accessible-name, and reading-order test evidence.",
+    "score": 6,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "0efc636d4783708303367ab17d5269fb8338e2368f7f774392ad224306a3f38a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 227388,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e55cd47805f3bd2f0966296db6b07c597ec6dd69cba12bf100d1fa7ed48b9e1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223319,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "b2ba478664384fb0ed52086ef706585fbb9d543c221e8bfad98d7b3d181a8ba8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "903fbfdd74ab487620362a79f08d7e30885d24fe0cbeddaef1013de0282f1e8c",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "ae5a1392adefa2cde46511930382935ebee5c16fd6cbd8bc8c9b1fc1443df822"
+  }
+}

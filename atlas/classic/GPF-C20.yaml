@@ -1,0 +1,13 @@
+id: GPF-C20
+name: Device-farm multi-account abuse
+tier: classic
+description: An automated device cluster operates many nominally unrelated accounts for coordinated fraud.
+kill_chain_stage: reconnaissance
+channel: upi_p2p
+rail: upi
+genai_capability: none
+primitives: [reconnaissance, tool_manip, payment_manip, cash_out]
+observable_signals: [shared device cluster, synchronized account cadence, beneficiary overlap]
+defense_hooks: [device graph, coordinated velocity detector]
+severity: high
+feasibility_today: true

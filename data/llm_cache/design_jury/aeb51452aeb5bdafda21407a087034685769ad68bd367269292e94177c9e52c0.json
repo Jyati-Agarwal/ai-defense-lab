@@ -1,0 +1,51 @@
+{
+  "cache_key": "aeb51452aeb5bdafda21407a087034685769ad68bd367269292e94177c9e52c0",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial thesis and large concentric vault/radar field centered on a lock create a distinctive visual metaphor, while cyan, green, and warning-yellow evidence treatments reinforce the forensic-lab identity across all three viewports. The lower half becomes more conventional metric-card styling, and mobile clipping weakens the polish, but the core vault idea remains recognizable and demo-worthy.",
+    "fix": "Carry the vault metaphor into the results area instead of reverting to standard cards, and reflow the mobile metrics so labels, values, and evidence strings are fully visible rather than clipped.",
+    "score": 8,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 387465,
+        "sha256": "c5f5f3bdcf56f0e0d2c0d1c84ffed9b059b0181ede9a6338ef9e0786db3a7bed",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 312741,
+        "sha256": "130b843521116f97340118e80e156fead7f2d63894ef39907f948d48a20737ef",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 233481,
+        "sha256": "7d97cb03ba2bb941ee01b7053b5b0f32a532e69380aa5b24a9d243db7a144eb7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "5c916d691724ec050df547337f615d339023958baa296fc80ef897d1c23075d9",
+    "schema_version": 2,
+    "sha256": "aeb51452aeb5bdafda21407a087034685769ad68bd367269292e94177c9e52c0"
+  },
+  "response": {
+    "id": "resp_03ecf69678992586016a907a9c800c87d09dec2fff92425233",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6498,
+      "input_tokens_details": {
+        "cache_write_tokens": 6495,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 6820
+    }
+  }
+}

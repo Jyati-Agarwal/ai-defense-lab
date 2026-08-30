@@ -1,0 +1,13 @@
+id: GPF-C01
+name: Credential-stuffed card-not-present purchase
+tier: classic
+description: Reused account credentials fund an e-commerce purchase from an unfamiliar device and location.
+kill_chain_stage: reconnaissance
+channel: card_ecom
+rail: card
+genai_capability: none
+primitives: [reconnaissance, payment_manip]
+observable_signals: [new-device login burst, credential failure then success, payee and geo novelty]
+defense_hooks: [account velocity model, device reputation]
+severity: high
+feasibility_today: true

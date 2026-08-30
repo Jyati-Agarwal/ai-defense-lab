@@ -1,0 +1,51 @@
+{
+  "cache_key": "845a0e9f293eea6ee6a3df298a8074976d9566437bf68569b6ede1094c6ec890",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “Your turn, Red.” framing, red/cyan adversarial palette, synthetic-attack sliders, and side-by-side Legacy Rules versus Intent Integrity verdict create a coherent red-team control-room identity across viewports. However, the main composition remains a familiar dark dashboard: bordered card, form controls, KPI bars, badges, and text findings. It is polished but lacks one unmistakable visual mechanism or signature artifact that would make the demo instantly recognizable.",
+    "fix": "Turn the same-event comparison into the signature visual: show the synthetic attack traveling from the red controls through five fused evidence layers into two diverging policy verdicts, with a clear animated or diagrammatic red-to-cyan causal path. Reduce generic card and progress-bar styling so this event-to-decision transformation dominates the screen.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 420368,
+        "sha256": "12950c37678bcfb421d6580dd025998186a0b45418d476e8b84b208271136b57",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393099,
+        "sha256": "9e6c6fc8f2f29e27aa8188fc29bbc5672a97c775d714b409bb417a5b87bf9f2e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308220,
+        "sha256": "8540d02349e79701b635cf929b07fccdf3f20743ddebb6bf9f83de80cda0019f",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "221d4d10db0b5b750c681dc240c3abe87ca9023b33a88d95bc3fe42cbc2cfc72",
+    "schema_version": 3,
+    "sha256": "845a0e9f293eea6ee6a3df298a8074976d9566437bf68569b6ede1094c6ec890"
+  },
+  "response": {
+    "id": "resp_003cff9810cfc33c016a90850bb60c87d0949b7916eb34fe41",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6196,
+      "input_tokens_details": {
+        "cache_write_tokens": 6193,
+        "cached_tokens": 0
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 242
+      },
+      "total_tokens": 6626
+    }
+  }
+}

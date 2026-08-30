@@ -1,0 +1,70 @@
+{
+  "cache_key": "89dc32af1dbbd6e03e1693288c9fcd44241fff8eeda21b7f6bf34839f208d658",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "The economics section has zero automated violations/incompletes at all three viewports; both focusable controls were keyboard-reached with visible indicators; no touch-target or viewport-overflow failures were measured; and reduced-motion sampling found zero changed elements. However, header contrast remains unverified with serious incomplete results (3 tablet, 13 mobile), and no measured header touch-target results were supplied. The mobile/tablet header also clips its navigation inside a scroll container, though it causes no document-level overflow.",
+    "fix": "Measure and pass contrast for every actual header state/background, provide header touch-target measurements at tablet and mobile widths, and verify the horizontally clipped navigation is keyboard- and touch-scrollable with a perceivable current position.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a59e807a48e9926dff8c8ed46b94cf3359d388d8d18961051105ab0f484dbfdc",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 227948,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "9ee959e011ea4d7cc9015fc74e61f006b77dca77d1b11335801f95d1d5baa3cd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 187441,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "df3993155f45904ad413f4195170c7dd5fee9790ec719586eb56f6fae83d9fe5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 182945,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "52e62f22456d90d53529c32a129d16f9041f4a94cf8cdc5fa7735f5c64a94934",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b8a1e42a027737d2b028ef36a27b68c15eb486452a11b2f3a8d75569f147276",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "89dc32af1dbbd6e03e1693288c9fcd44241fff8eeda21b7f6bf34839f208d658"
+  }
+}

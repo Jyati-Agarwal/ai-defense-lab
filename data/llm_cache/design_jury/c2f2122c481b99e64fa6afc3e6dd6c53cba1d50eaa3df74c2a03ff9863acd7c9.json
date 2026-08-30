@@ -1,0 +1,70 @@
+{
+  "cache_key": "c2f2122c481b99e64fa6afc3e6dd6c53cba1d50eaa3df74c2a03ff9863acd7c9",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, side-by-side intent/payment contrast, verified-signature badge, and primary “Trace the intent mismatch” CTA make the core claim and next action immediately legible across viewports. However, the evidence chain does not plainly show how “7 zero-width chars · invisible CSS” changed the purchase, and “Open evaluation scope” is vague without presenter context. On mobile, the connecting paths disappear, weakening the causal story further.",
+    "fix": "Add one explicit causal step showing the injected instruction changing shoes into a wallet voucher, retain visible connectors on mobile, and rename the secondary CTA to state what it opens.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "2ef6b26981b949529c3a6efed64da5a8bb06bb837fdc3e79c7595084170934b1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 152655,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "b273ab7403df15d676f81de5059bb3915e7c30254e02a1cd071c62463b3c20f4",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 151318,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "06b9101141727a95cbb6b56a545ef05111555b53132af92665c27d82fa6e5461",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 128838,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "f46491d9384c3de62eb026097bc98c43c4fb5c741375ccb47251d2241d6d75de",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a97001c73a529ae219ddaa8edfce5894b171337265ae4dd38a85b54a1b7cbe59",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c2f2122c481b99e64fa6afc3e6dd6c53cba1d50eaa3df74c2a03ff9863acd7c9"
+  }
+}

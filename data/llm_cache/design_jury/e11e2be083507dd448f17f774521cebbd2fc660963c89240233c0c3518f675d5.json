@@ -1,0 +1,70 @@
+{
+  "cache_key": "e11e2be083507dd448f17f774521cebbd2fc660963c89240233c0c3518f675d5",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized editorial claim, cyan/red ledger contrast, and 25.60× ROI orb create a recognizable cyber-finance moment across all viewports. However, the dominant table, bordered cards, status pills, and small gauge remain familiar dashboard conventions; no singular visual metaphor makes the economics story unmistakably unique or demo-defining.",
+    "fix": "Turn profitability compression into the central visual idea—show the 545.35× ROI visibly collapsing to 25.60× along a dramatic break-even threshold—then subordinate the ledger and proposal details to that transformation.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "1691175a20cc539903199cb97ecc1cc9a2cc5c4d824937bad29c8e1efa1454e3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 221791,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "b04b789187ba67d5eaa0c216249bfb8ecee8e3a0bd5b699eaf88183c24e92cff",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181790,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "4022c7fcb6fd4943af7fb4ce623d3175e6708fc7f18904ba463e201b3124d70b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177608,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "55dfa43fc82f9d6388870bd3bad6686c28fe27970c2e3a3c16b3c6eef06ef069",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "28c7eacc72f1369889ee6c34557f980bfcb9a13a311a3998426289fa0e9a98d4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e11e2be083507dd448f17f774521cebbd2fc660963c89240233c0c3518f675d5"
+  }
+}

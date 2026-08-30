@@ -1,0 +1,51 @@
+{
+  "cache_key": "72b44cb8249a9045953603f431a00c7f6a735ae1143bf36d42217f1be2d55f8c",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated scans report no confirmed WCAG violations, no viewport overflow, and no touch-target violations. However, color contrast remains seriously incomplete for 20 vault nodes at every viewport because gradient/obscured backgrounds prevented measurement, including headings, explanatory text, status badges, the evidence toggle, and disclosure text. No measured keyboard traversal, focus order/visibility, control activation, focus management, or reduced-motion evidence was provided, so these required areas cannot pass.",
+    "fix": "Measure and correct contrast against the rendered gradient backgrounds to at least WCAG AA ratios, including all muted text and controls. Add Playwright evidence for complete keyboard-only traversal, visible focus, logical order, Enter/Space activation of the evidence toggle, and absence of traps. Test prefers-reduced-motion: reduce and verify that nonessential animation/transitions are disabled. Re-run these checks at all three viewports.",
+    "score": 6,
+    "screen": "vault"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 447918,
+        "sha256": "8c1ad84446374cd0905ec57f32f87800fbf53a506c795092ed144aa035ef496f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 348146,
+        "sha256": "1aaf74804d977d9485d4a8407742f88a7f0919bbb4f8e88951f0c8b68e18e655",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 250130,
+        "sha256": "46a7ba84500cc881444c4c48269dd735f8ce0bccbf830897a808e88fe0b739a7",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c35b52fccc6dcf65310c3d4c5c7c0e14f069f44be15dab0401d5913214d6115a",
+    "schema_version": 3,
+    "sha256": "72b44cb8249a9045953603f431a00c7f6a735ae1143bf36d42217f1be2d55f8c"
+  },
+  "response": {
+    "id": "resp_0a751be912531a9d016a9084f6ca6487d0bc1eddd34f46703d",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 15204,
+      "input_tokens_details": {
+        "cache_write_tokens": 15201,
+        "cached_tokens": 0
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 15634
+    }
+  }
+}

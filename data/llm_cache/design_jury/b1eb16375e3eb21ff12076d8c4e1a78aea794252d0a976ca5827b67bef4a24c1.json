@@ -1,0 +1,51 @@
+{
+  "cache_key": "b1eb16375e3eb21ff12076d8c4e1a78aea794252d0a976ca5827b67bef4a24c1",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “Your turn, Red.” framing, red-team controls, cyan/red tension, and same-event Legacy Rules versus Intent Integrity comparison create a coherent demo narrative across desktop, tablet, and mobile. However, the core visual language remains a familiar dark cyber-dashboard composed of sliders, badges, progress bars, and bordered cards; the result area lacks a singular visual centerpiece that would make the screen instantly recognizable.",
+    "fix": "Turn the launch into a distinctive visual event: show the synthetic attack traveling through five named evidence layers and splitting into the two policy decisions, with each control visibly altering that causal trace. Make this animated comparison the screen’s hero instead of relying primarily on conventional form controls and bars.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 420450,
+        "sha256": "eff805f4de1e3b50f06e95ce7432f75f47dc4dcabe382402414879b79a1f76ba",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 393089,
+        "sha256": "c9c19e4264824f51ef1170cfe3f41a32a3de1748c07e4ee898f05dbd3ff5b338",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 308212,
+        "sha256": "fd17cf5cab95cd3d911c86977d198c8786dd85d60ab4187c57f1eeb9ab278c00",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "221d4d10db0b5b750c681dc240c3abe87ca9023b33a88d95bc3fe42cbc2cfc72",
+    "schema_version": 3,
+    "sha256": "b1eb16375e3eb21ff12076d8c4e1a78aea794252d0a976ca5827b67bef4a24c1"
+  },
+  "response": {
+    "id": "resp_087ada4c657f21b9016a9083d8896487d0bc3ebf9e6972aee2",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6196,
+      "input_tokens_details": {
+        "cache_write_tokens": 6193,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 132
+      },
+      "total_tokens": 6497
+    }
+  }
+}

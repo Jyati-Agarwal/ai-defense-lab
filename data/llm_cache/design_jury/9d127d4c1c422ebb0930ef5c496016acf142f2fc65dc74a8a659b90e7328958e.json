@@ -1,0 +1,70 @@
+{
+  "cache_key": "9d127d4c1c422ebb0930ef5c496016acf142f2fc65dc74a8a659b90e7328958e",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The headline and four-step artifact clearly communicate the core intent-integrity threat: an authentic payment can diverge from recorded human intent after page manipulation. The concrete INR amount, merchant DID, verified signature, and “AUTHENTIC ≠ INTENDED” outcome make the payment-security story immediately legible across viewports. However, the screen provides no explicit Mastercard connection, network/rail integration, authorization intervention, or measured defense outcome. The APIs returning 200 prove live data paths, not relevance to the hackathon brief or efficacy of the defense.",
+    "fix": "Add a compact proof block naming the Mastercard use case and showing where intent verification acts in the payment flow, plus one measured result such as attacks detected, false-positive rate, or prevented value. Clarify the decision produced by the mismatch—block, step-up, or alert—and link the CTA directly to that evidence.",
+    "score": 7,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "52294c7e6a00f9cec86caf39390cf11464e6940df012ce9c738d86eea629ca20",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 136688,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e825fe8d1f706091f9893e447e219cdf0ea79faee1299c0d881fa8d8288d1c2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 134839,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "e101a8d0b7abcc8f5f043eefb6ef6ca38ea1ced5d66cfc58af437932fb6f454e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 112043,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "628b0ca0123a8668504eef661101bfaf69ad7022e64683cf767805890d8e2e14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4f4a17bac03958fd815723fad961bd198e051c4af1ca253bcdf4ad22c90be4b4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9d127d4c1c422ebb0930ef5c496016acf142f2fc65dc74a8a659b90e7328958e"
+  }
+}

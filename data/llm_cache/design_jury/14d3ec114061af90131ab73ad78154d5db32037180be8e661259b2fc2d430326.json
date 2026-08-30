@@ -1,0 +1,51 @@
+{
+  "cache_key": "14d3ec114061af90131ab73ad78154d5db32037180be8e661259b2fc2d430326",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen strongly advances the intent-integrity defense story through adaptive red-team mutations, attack-success reduction from 4% to a 0% replay floor, survivor tracking, fraud phylogeny, holdout testing, and guarded promotion that keeps INTENT-INTEGRITY-V1 live unchanged. However, the principal result is explicitly “TRAINING-FOLD ONLY”; fresh-row regression is offered as a review action rather than shown, and the screen provides no direct Mastercard/payment-network workflow, authorization impact, fraud-loss metric, or deployment evidence. Successful real-server responses and zero browser failures establish operability, not validation of the defense claims.",
+    "fix": "Show the fresh-row/holdout result directly beside the replay curve with sample size, uncertainty, baseline comparison, and provenance. Tie the arena to a concrete Mastercard transaction-authorization scenario and quantify relevant outcomes such as fraud caught, false declines, latency, and prevented loss while preserving the human promotion boundary.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 671828,
+        "sha256": "9d4f5ffd936c43cc21671ef19f949a68a20c0d5ced7ad4c3fe0d93da6d85598c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 556500,
+        "sha256": "3e2aea73197637af4295fe4b3d15c6673c8e359b67b5ab1d9203296365af2c69",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 429544,
+        "sha256": "d39fd46db049fd7b7568e07dbc635aa1b89bff699f2a4be6d012c6df3eddf8af",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "96d2cea97f89ed692d4ba5bdc01d457993a5b1ae8d7a6bd607cee4d1c2cb8b27",
+    "schema_version": 3,
+    "sha256": "14d3ec114061af90131ab73ad78154d5db32037180be8e661259b2fc2d430326"
+  },
+  "response": {
+    "id": "resp_08488f53273a561e016a9084e9d56087d08f8f43f42050c1b3",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6203,
+      "input_tokens_details": {
+        "cache_write_tokens": 6200,
+        "cached_tokens": 0
+      },
+      "output_tokens": 555,
+      "output_tokens_details": {
+        "reasoning_tokens": 336
+      },
+      "total_tokens": 6758
+    }
+  }
+}

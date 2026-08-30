@@ -1,0 +1,70 @@
+{
+  "cache_key": "70a1bf531b533223e5a059ed993acddcf60a6c0ac7ebbdf44281397171d95cf0",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Scroll-entry motion is consistently smooth across desktop, tablet, and mobile: roughly 16.2–16.7 ms frames, no long frames, and a clean 22 px fade/translate settling by about 384 ms. Reduced-motion entry shows zero changed elements. However, reduced mode still reports one active animation, and the vault interaction lacks a full measured trajectory; its midpoint is already effectively at the final 3D transform, so transition pacing cannot be verified.",
+    "fix": "Eliminate or explicitly prove harmless the remaining reduced-mode animation, and capture timestamped interaction frames from activation through settlement to demonstrate intentional easing and duration across all viewports.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "4a5806022a9a8ecb988e580678cb77321948cc1f280a6ed53b9504cd23574105",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212226,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "bcb4dbf753a1e785fec3499f7ce944fc9396cdee1109533726eb6fc4ddcbf95f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162900,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "843bd0e5adb73e7d4d41b13f553415b7d0d6ef8e4348012631159dd2568cdf14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "8b99aaf7c48d4cee66fc7c84e0d55144a30d4d111823caaf74681163638235b9",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "70a1bf531b533223e5a059ed993acddcf60a6c0ac7ebbdf44281397171d95cf0"
+  }
+}

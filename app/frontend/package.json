@@ -1,0 +1,44 @@
+{
+  "name": "ai-defense-lab-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "test": "npm run typecheck && playwright test",
+    "test:e2e": "playwright test",
+    "test:e2e:real": "playwright test --config=playwright.real.config.ts",
+    "test:smoke": "playwright test --project=desktop --grep @smoke"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@radix-ui/react-slider": "^1.4.7",
+    "@radix-ui/react-switch": "^1.3.7",
+    "@xyflow/react": "^12.11.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "lucide-react": "^1.34.0",
+    "motion": "^13.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.3.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}

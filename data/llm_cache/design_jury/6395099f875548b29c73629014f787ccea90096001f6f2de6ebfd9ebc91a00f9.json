@@ -1,0 +1,51 @@
+{
+  "cache_key": "6395099f875548b29c73629014f787ccea90096001f6f2de6ebfd9ebc91a00f9",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The before/after ledger, repeated 25.60× result, ROI formula, and “Review the adaptive arena” CTA make the metric and next destination visible. However, the central claim is internally contradictory: the copy says the defense “wins the campaign,” while the result is explicitly “ABOVE BREAK-EVEN” at a still-profitable 25.60× attacker ROI. On tablet, the fixed navigation also overlays the headline and supporting sentence, materially impairing first-read comprehension.",
+    "fix": "Make the conclusion match the evidence: state that defense reduced attacker ROI from 545.35× to 25.60× but has not yet made attacks uneconomic, then frame the arena CTA as the next step to drive ROI below 0×. Fix the tablet header so it does not cover the hero copy.",
+    "score": 5,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 336636,
+        "sha256": "5d07646c982a3e3a3eb65e5acfb99d38fcac6279aa4812c3c8c03e58a5208934",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 301179,
+        "sha256": "07ebda307b5ebd9dfb9f9fbe204813a8f5e931a1a441c6c3c6e21ab7187469be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 216328,
+        "sha256": "139de961ed60472d4ea19a9b1dc07bd1340151d4c6b8ff9bfa01c0345328ee44",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "4e5656e6e5010fe7ad84b2525a67e97c018c91599b2566d81736d21aa2acb2f9",
+    "schema_version": 3,
+    "sha256": "6395099f875548b29c73629014f787ccea90096001f6f2de6ebfd9ebc91a00f9"
+  },
+  "response": {
+    "id": "resp_04bf35e32d127677016a9084fedc7487d0b0f132c9c71ba276",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5361,
+      "input_tokens_details": {
+        "cache_write_tokens": 5358,
+        "cached_tokens": 0
+      },
+      "output_tokens": 473,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 5834
+    }
+  }
+}

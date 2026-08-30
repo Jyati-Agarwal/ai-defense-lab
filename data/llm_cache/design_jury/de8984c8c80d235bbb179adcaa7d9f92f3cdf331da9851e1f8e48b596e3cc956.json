@@ -1,0 +1,51 @@
+{
+  "cache_key": "de8984c8c80d235bbb179adcaa7d9f92f3cdf331da9851e1f8e48b596e3cc956",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, subtitle, before/after ledger, and repeated 25.60× result make the intended economic comparison immediately legible across desktop, tablet, and mobile. However, the claim that the defense “wins the campaign” is not reconciled with a still-positive 25.60× attacker ROI, and the screen provides no explicit next action. “Results artifact” reads as a status badge rather than an actionable control. ROI assumptions, period, and calculation basis are also absent, limiting self-contained interpretation.",
+    "fix": "State the decision implication beside the result—for example, whether 25.60× is above or below an acceptable attacker-profitability threshold—and add one prominent next action such as “Inspect ROI calculation” or “Adjust defense assumptions.” Include the ROI formula, measurement window, and threshold needed to substantiate the campaign-win claim.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 313779,
+        "sha256": "86deaa7afa89e77784aa0288cae8d37cb6733ed3b9857d91d388493c6498d17e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 272191,
+        "sha256": "cd3990ee1fb660eca58e9fb5e65462abbe0debc2a63b4ad4c8a536900692f0cf",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 194951,
+        "sha256": "3eebab56f9d69b2f9d8d5c12d135a1ee70ed5aece158b94b6b110c829b77f451",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c386dd2a64bdbaf11706a673f3cd620aeebc464ef811c2a9cc5fda601882347",
+    "schema_version": 2,
+    "sha256": "de8984c8c80d235bbb179adcaa7d9f92f3cdf331da9851e1f8e48b596e3cc956"
+  },
+  "response": {
+    "id": "resp_07255b82a455682a016a907aacad6087d08247e158be560dd9",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5161,
+      "input_tokens_details": {
+        "cache_write_tokens": 5158,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 5533
+    }
+  }
+}

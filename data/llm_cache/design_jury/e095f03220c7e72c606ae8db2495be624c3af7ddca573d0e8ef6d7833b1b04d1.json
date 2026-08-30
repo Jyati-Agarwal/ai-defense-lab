@@ -1,0 +1,70 @@
+{
+  "cache_key": "e095f03220c7e72c606ae8db2495be624c3af7ddca573d0e8ef6d7833b1b04d1",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, supporting copy, “Reveal hidden injection” control, causal-proof comparison, and red retrieval layer communicate the core claim across all viewports. However, the screenshots only show the revealed state, and the supplied interaction evidence covers the global header—not the section toggle—so the promised reveal and its resulting state change are not independently demonstrated. On mobile, the current section is also not visible in the header’s initial viewport.",
+    "fix": "Add an explicit OFF/ON state label and capture measured keyboard activation proving that the toggle reveals and hides the retrieval layer; keep “05 Injection” visibly identified as the current section in the compact header.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "9b341c8e0e9046b4c416e5c33d72fa4f2f8487ec2b887822e0f2fab2507764e1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 209185,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168912,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "a8c99ee3e4cd0f6728006a8620bcf79b92940d564208aeed99e68df79d527cb0",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 169341,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6d34868a07bb88eb7b969cecf2ef3af558cd0353dd0247f95062202025cb6d85",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "52664512091b3994e012712c08eecb7ca610c9ab1623a81e8fd6bcca91fc3ee9",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e095f03220c7e72c606ae8db2495be624c3af7ddca573d0e8ef6d7833b1b04d1"
+  }
+}

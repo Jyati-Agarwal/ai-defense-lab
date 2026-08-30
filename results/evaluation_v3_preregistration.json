@@ -1,0 +1,82 @@
+{
+  "arena": {
+    "attack_success_threshold": 0.6,
+    "gate": "final == 0 or final < baseline",
+    "replay_challenge_count": 48,
+    "seed": 20260827,
+    "training_partitions": [
+      "A",
+      "B"
+    ],
+    "zero_residual_is_floor_pass": true
+  },
+  "artifact": "evaluation_v3_preregistration",
+  "bindings": {
+    "defense_source_tree_sha256": "b05d8b0d2c1e82235a101c021d27e288622c25d741906ff509e9e63619a29e11",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_tree_sha256": "c1be0c0dd5a13305c3e338b6f644207b01dbfbf19bfa97cecfdf0da45e8db280",
+    "event_schema_sha256": "8117e341b15c6c90ce760a88affbc08a2b1e0108199a081866367aeaacaf6e19",
+    "generator_input_tree_sha256": "373f2d05038ea12337e25a6992fed9ad6f8e0a0542ec9051734857e3d334d5f7",
+    "makefile_sha256": "86afd615edda8a2336c0bdee30b29b338b387e2ced6f50a6bc9069b604d0e8c2",
+    "parent_failure_sha256": "cd7334f4cedc2b8f09233ef743f342c3135f3854afdc830c6eb8c24bb6c89c57",
+    "requirements_lock_sha256": "9fb97fdf5a4a6561bf17223f3a38417f07fb406d2b4ed4f2f684bfb153674cb2",
+    "scripts_release_sha256": "fe6fea8d15380e34f5cec7d282385b2ba06579c65210b803383cfb12e8076631",
+    "sim_mandate_twin_sha256": "790ea79b3a0702d76d72a61ac7146bc2d46d3d2c4a0755c8a761634d6ba7b534",
+    "sim_population_sha256": "e0fb298b7e4c96ee31d4036c97b9b12d793a98cdefbeb853e1fbfda8c16fa20a"
+  },
+  "claim_scope": "post_remediation_regression",
+  "custody": {
+    "attempt_receipt": "evaluation_attempt_v2.json",
+    "new_rows_not_new_families": true,
+    "prior_family_disclosed": true,
+    "retry_after_consumption": false,
+    "training_input_physically_mixed": true,
+    "v2_evaluation_attempt_created": false
+  },
+  "evaluation": {
+    "detection_threshold": 0.3,
+    "partitions_scored_once": [
+      "C",
+      "D",
+      "E"
+    ],
+    "seed": 20260827,
+    "shuffle_permutations": 9999,
+    "shuffle_retrains": 50,
+    "training_partitions": [
+      "A",
+      "B"
+    ]
+  },
+  "generator": {
+    "benign_adversarial_rate": 0.02,
+    "events": 50000,
+    "family_definitions_reused": true,
+    "fraud_rate": 0.0055,
+    "seed": 20260828
+  },
+  "lineage": {
+    "disclosed_family": "ttl_dormancy",
+    "disclosed_vector": "GPF-A20",
+    "prior_attempt_sha256": "cd7334f4cedc2b8f09233ef743f342c3135f3854afdc830c6eb8c24bb6c89c57",
+    "prior_dataset_sha256": "3488e51722e1abba6337650d8e01b6f638ca85be42c756b1dff72c601c0951ce",
+    "prior_evaluation_release_sha256": "357478118769667af8aa1e26f637da3637abe51b1599c3eabbbccc2c165ad7e8",
+    "prior_model_sha256": "004bb06898dba02708ba39da9cd2efa91e48c1ec5fad5b180e06345a3b6b1279",
+    "v2_arena_base_model_sha256": "18e5245456897af006423103e869c670a485d66edf4f12e5b85eac8c0ec7c548",
+    "v2_arena_protected_outputs_promoted": false,
+    "v2_arena_stop_receipt_retroactive": true,
+    "v2_arena_stop_sha256": "fe54fa15911a7612b0debd6301d4f327356175fdeb942c5a78b5b6e1a34b0104",
+    "v2_preregistration_sha256": "418fe884214fa67dc9bb62122b9312eebfc9467b1b0f919903da0da4b8f29d2d"
+  },
+  "pristine_heldout_family": false,
+  "remediation": {
+    "deterministic_ttl_floor": true,
+    "evaluator_changed": false,
+    "playback_text_heuristic_promoted_to_structural": false,
+    "signed_playback_binding": true,
+    "signed_ttl_and_timestamp_binding": true,
+    "threshold_changed": false
+  },
+  "schema_version": 3,
+  "status": "predeclared_before_post_remediation_regression"
+}

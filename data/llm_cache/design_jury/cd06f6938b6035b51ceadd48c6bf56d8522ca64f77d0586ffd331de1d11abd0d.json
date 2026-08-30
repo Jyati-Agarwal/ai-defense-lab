@@ -1,0 +1,51 @@
+{
+  "cache_key": "cd06f6938b6035b51ceadd48c6bf56d8522ca64f77d0586ffd331de1d11abd0d",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen directly advances the defense-economics story by comparing before/after attack cost, fraud success, cost per successful fraud, and attacker ROI across all viewports. However, it does not establish Mastercard-specific relevance: there is no connection to card-payment actors, transaction flows, issuer/merchant losses, authorization integrity, or network-scale impact. The central claim also overreaches the shown result—post-defense attacker ROI remains 25.60× and is explicitly labeled above break-even, so the evidence shows reduced profitability rather than a defense that “wins the campaign.” Denominators, fraud-value assumptions, time window, and provenance are absent, limiting credibility as a results artifact.",
+    "fix": "Tie the ledger to a concrete Mastercard payment scenario and identify affected stakeholders and transaction stage. Show attack volume, evaluation window, fraud-value and cost assumptions, avoided fraud loss, false-positive/customer-friction cost, defender ROI, and uncertainty. Reframe the conclusion as economic pressure unless the measured post-defense ROI falls below break-even, or demonstrate the additional controls needed to reach deterrence.",
+    "score": 6,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 336636,
+        "sha256": "5d07646c982a3e3a3eb65e5acfb99d38fcac6279aa4812c3c8c03e58a5208934",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 301179,
+        "sha256": "07ebda307b5ebd9dfb9f9fbe204813a8f5e931a1a441c6c3c6e21ab7187469be",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 216328,
+        "sha256": "139de961ed60472d4ea19a9b1dc07bd1340151d4c6b8ff9bfa01c0345328ee44",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6b9e36378fb488c0f62567f3ac47b99e289db98551be3922dd4db136f17c2c61",
+    "schema_version": 3,
+    "sha256": "cd06f6938b6035b51ceadd48c6bf56d8522ca64f77d0586ffd331de1d11abd0d"
+  },
+  "response": {
+    "id": "resp_0513989b46ddb5d4016a9085024f6c87d09a975d4b00377199",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5362,
+      "input_tokens_details": {
+        "cache_write_tokens": 5359,
+        "cached_tokens": 0
+      },
+      "output_tokens": 604,
+      "output_tokens_details": {
+        "reasoning_tokens": 357
+      },
+      "total_tokens": 5966
+    }
+  }
+}

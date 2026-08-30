@@ -1,0 +1,70 @@
+{
+  "cache_key": "9a27f4a474fea4a799cb7959f7ca219436c3cdf7a230d5fcef6cb4bd3f9b0850",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Mandate passes measured keyboard traversal and visible-focus checks at all viewports, reports no touch-target violations or viewport overflow, and shows no changed elements under reduced motion. However, WCAG contrast remains unproven: serious color-contrast checks are incomplete for the diagram labels at every viewport and for multiple tablet/mobile header items. The responsive header also keeps 13–14 links in the tab order while many are visually clipped behind the compact navigation.",
+    "fix": "Provide measured contrast ratios for every unresolved diagram and header label, using solid computable backgrounds or higher-contrast colors as needed. At tablet/mobile widths, remove clipped navigation links from the active tab order when collapsed, expose them through an accessible “More” control, and verify focus visibility after opening it.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "19b5784230b63a2690a203ff06e711bf5a90c293d7413722751adc8a543bbded",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152255,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138131,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "bf493b5142ea42bd83f0392f4bf1c4209dbd8448847eadb634b96039c4cda5c8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "9a27f4a474fea4a799cb7959f7ca219436c3cdf7a230d5fcef6cb4bd3f9b0850"
+  }
+}

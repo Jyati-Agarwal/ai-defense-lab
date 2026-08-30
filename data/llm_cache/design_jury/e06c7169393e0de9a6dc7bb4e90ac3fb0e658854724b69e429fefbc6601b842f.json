@@ -1,0 +1,51 @@
+{
+  "cache_key": "e06c7169393e0de9a6dc7bb4e90ac3fb0e658854724b69e429fefbc6601b842f",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, subtitle, selected-row treatment, and side-by-side “LEGACY STEP_UP” versus “INTENT INTEGRITY ALLOW” result make the central comparison understandable on desktop. The instruction explicitly says to select a cached transaction. However, the table’s generic DECISION value says ALLOW for the selected event while its detail says legacy STEP_UP, without identifying which policy the table column represents. “Credentials and amount checks pass” also does not explain why legacy requires a step-up. On tablet and mobile, the comparison appears only after all eight rows, so selection and outcome are separated by a long scroll; mobile labels and evidence text are also very small. These ambiguities keep it below demo-ready clarity.",
+    "fix": "Label the table result by policy, or show both decisions in each row, and rewrite the legacy rationale to state the precise trigger for STEP_UP. On tablet/mobile, place the selected transaction comparison directly beneath the tapped row or in a sticky/detail drawer, with larger supporting text and an explicit “Tap a transaction to compare policies” prompt.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 425774,
+        "sha256": "a4efa768627f6439207f04ef91e6b346a1c0aa0b1b3ab7137a766f01fe2a2edd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 375890,
+        "sha256": "4601f26df0d8559c0466fef20a7ea2c7af79b333fa32c9bf285fec30dafbc02a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 338746,
+        "sha256": "58f10b7931d30cb380d482c12fd4cec885361528deaff9e810eda434eaf21e67",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3b71fe67bdc6c7fa00927b25a6873f148cd7fb949b00d0b50ecf0ab2ff86fbfe",
+    "schema_version": 2,
+    "sha256": "e06c7169393e0de9a6dc7bb4e90ac3fb0e658854724b69e429fefbc6601b842f"
+  },
+  "response": {
+    "id": "resp_0f888d7594cf9129016a907a71b7b487d0af53128d75cc6796",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6076,
+      "input_tokens_details": {
+        "cache_write_tokens": 6073,
+        "cached_tokens": 0
+      },
+      "output_tokens": 669,
+      "output_tokens_details": {
+        "reasoning_tokens": 424
+      },
+      "total_tokens": 6745
+    }
+  }
+}

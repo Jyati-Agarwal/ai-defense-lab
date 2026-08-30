@@ -1,0 +1,70 @@
+{
+  "cache_key": "aefa32b42a6f7c81cf40b4686db8fc6d549f94f4ed5dc2b0136ee97beeb00794",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent-integrity: it distinguishes training-fold replay from generalization, exposes 25 surviving mutations/fresh-row risk, and shows guarded promotion gates with unchanged live intent. However, the screenshots and measured evidence do not prove a Mastercard-specific payment scenario, real evaluation provenance, independent holdout outcomes, or business impact. Successful API responses prove delivery, not defense efficacy.",
+    "fix": "Add a judge-readable Mastercard transaction case with attack inputs, intended payment constraints, baseline-versus-defense holdout metrics, dataset/run provenance, and a visible promotion/audit decision tied to fraud loss or false-positive impact.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "bcce74c0ea61455e79226e3fe4cea235bcaf15f0bc10dbbe9d2c7318579dac56",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 247733,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "c70f4e1c32ace459e191cdf5ee3fadc894ea954f25c97ec3af35854162ef5f60",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 195725,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "b11d2a6ad3f7d14c99858199581b9074d13515500f1ced42a2ca1a70b3d41de9",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 189522,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "a65eebe2d95bb57b76fcd25e9e64fbef8d81ffa27355dc59c213a8a4ff1f8a2f",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "7b0e8a7175b3dd93e28cee6ac7ceed071f257030d83836dba87c49719d333de6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "aefa32b42a6f7c81cf40b4686db8fc6d549f94f4ed5dc2b0136ee97beeb00794"
+  }
+}

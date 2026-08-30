@@ -1,0 +1,70 @@
+{
+  "cache_key": "288031c9fb72343e20c0547f5b60de78750fc1c3ee60a08a26bd1d8c0092574b",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The concentric vault/lock field, oversized editorial headline, and cyan/yellow evidence styling create a recognizable security-lab identity across all three viewports. However, the signature vault graphic is extremely faint and visually passive; much of the lower section resolves into familiar dark dashboard cards, badges, borders, and large percentage metrics. The header also reads as a conventional dense horizontal nav rather than reinforcing the vault concept.",
+    "fix": "Make the vault visualization the unmistakable demo moment: increase its contrast and dimensionality, bind its rings or lock state to the revealed evidence, and replace some conventional metric-card framing with a more cohesive sealed-record or evidence-chamber presentation.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "45379a1ae6ac2b49d4ee55df9e37811a15eecd1406f208b544eca745e050dcb7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 295031,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "b9063e9e155469a6971eb86a5537d2e1f1b3abe950d4dacb237228baa571e0ae",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 212226,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "bcb4dbf753a1e785fec3499f7ce944fc9396cdee1109533726eb6fc4ddcbf95f",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 162900,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "843bd0e5adb73e7d4d41b13f553415b7d0d6ef8e4348012631159dd2568cdf14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "0c09d8c0dd7cd71b3a3a5b10ab8020f4e4068c59b833c96d53f94cd54dd1fd03",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "288031c9fb72343e20c0547f5b60de78750fc1c3ee60a08a26bd1d8c0092574b"
+  }
+}

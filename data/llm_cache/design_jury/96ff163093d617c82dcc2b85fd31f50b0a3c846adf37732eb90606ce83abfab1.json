@@ -1,0 +1,51 @@
+{
+  "cache_key": "96ff163093d617c82dcc2b85fd31f50b0a3c846adf37732eb90606ce83abfab1",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen materially advances the intent-integrity story by exposing a measured 69.6% recall gap for multi-merchant fanout, separating observed misses from evidence-quality caveats, and pairing the limitation with step-up review and verified post-review evidence. However, Mastercard relevance is only implicit in “multi-merchant,” and the screen provides no concrete missed transaction, miss numerator/denominator, metric provenance, or demonstrated control outcome. HTTP 200 responses do not prove those claims.",
+    "fix": "Show one sanitized payment-network miss with its intended action, model decision, merchant/fanout context, traceable metric numerator and denominator, and the resulting step-up disposition. Explicitly connect that workflow to the relevant Mastercard brief objective and demonstrate the uncertain-case control end to end.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 264664,
+        "sha256": "880831cf74b646453504d96da5006a2c0e36028ba730f4d9848ed906f963a541",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 219066,
+        "sha256": "de00979af68e3af50c863a833041bfe36dc1b2368f68580e566a6fd17e1826f7",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 180686,
+        "sha256": "34ce6d19ad0e789dfdccd32deaf4ae7dc712e7a30cd2b9f9afe13c7c6228df49",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "52d38c5c0dc6df853e3cd43cdca214d6711b272b8abe75182c598f0788b1cb35",
+    "schema_version": 3,
+    "sha256": "96ff163093d617c82dcc2b85fd31f50b0a3c846adf37732eb90606ce83abfab1"
+  },
+  "response": {
+    "id": "resp_065ec177fa6daccc016a9083dee86087d099f0687734e3a531",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 4655,
+      "input_tokens_details": {
+        "cache_write_tokens": 4652,
+        "cached_tokens": 0
+      },
+      "output_tokens": 435,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 5090
+    }
+  }
+}

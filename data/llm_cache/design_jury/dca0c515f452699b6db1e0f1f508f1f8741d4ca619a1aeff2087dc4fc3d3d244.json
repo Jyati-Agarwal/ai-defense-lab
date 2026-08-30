@@ -1,0 +1,51 @@
+{
+  "cache_key": "dca0c515f452699b6db1e0f1f508f1f8741d4ca619a1aeff2087dc4fc3d3d244",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "The screen has a cohesive, polished cyber-defense visual language: restrained grid texture, strong white-on-black typography, consistent cyan/green/red semantics, crisp borders, and a clear progression from intent through checks to mismatch. Mobile is especially well composed, with strong stacking and spacing. However, the fixed navigation visibly cuts across the desktop hero and severely obscures the tablet introduction while its long item rail clips at the edge. The desktop hero is oversized relative to the supporting content, and several diagram labels and metadata lines become extremely small on mobile. These responsive collisions and legibility issues keep it below demo-ready quality.",
+    "fix": "Prevent the navigation from overlaying hero content: reserve header space, use an opaque backdrop, and collapse the tablet rail into a compact menu. Rebalance the desktop hero scale and increase or simplify small diagram and metadata text on mobile.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 575621,
+        "sha256": "d25ca023f665effd0c11a8f14330fa88b6f357ec73d3818e8d47012d93258741",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 415373,
+        "sha256": "007c394855cee56b96fcc7e49ef1afed92452b6da97e30e7e9f882056d4468f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345338,
+        "sha256": "fac508874e53ea6667c5fbead9b9eb7990c72e9f029bbc1190e107f35fcbf733",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "32e8a23b06ee38bfac92860b4438b33462efabc22ae613b5a61dedc8bb87814c",
+    "schema_version": 3,
+    "sha256": "dca0c515f452699b6db1e0f1f508f1f8741d4ca619a1aeff2087dc4fc3d3d244"
+  },
+  "response": {
+    "id": "resp_0ef5efd5beaa2418016a90838f7b3487d09cd75d6e8d2b18b9",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6688,
+      "input_tokens_details": {
+        "cache_write_tokens": 6685,
+        "cached_tokens": 0
+      },
+      "output_tokens": 607,
+      "output_tokens_details": {
+        "reasoning_tokens": 404
+      },
+      "total_tokens": 7295
+    }
+  }
+}

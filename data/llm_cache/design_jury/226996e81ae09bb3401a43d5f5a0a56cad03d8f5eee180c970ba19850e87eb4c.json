@@ -1,0 +1,70 @@
+{
+  "cache_key": "226996e81ae09bb3401a43d5f5a0a56cad03d8f5eee180c970ba19850e87eb4c",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The “Agent Vision” reveal makes prompt injection spatial: a sober control/proof panel splits into a scanlined red machine-visible layer, with authorized intent visibly contrasted against the recorded outcome. That context-seam metaphor is distinctive, legible, and preserved across all three viewports rather than reading as a generic dashboard.",
+    "fix": "Make the reveal transformation unmistakable in the demo—animate the seam opening from harmless page to retrieval layer—and tighten the very tall mobile red panel so the core authorized-versus-recorded contrast lands sooner.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8c8c69552d0bbfe48a98fdcb18480365ff43a0ef1a266902363bf4f161d75fa9",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 209373,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "2e778a5141bfbf96881e0d68f5c852a933484686390a6708ead96f5b308a9de2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 169754,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "d199fed287ffd2766bbddeb2faa214fdc273bdf7145f4815ca38d3f0c3fe33e2",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 166498,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "3405e22b7a74a9c19c5672d0fc144826593ad9342dd4cece33fa86b0f7936f0d",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10988,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "e2b0ee190d2e77b0a6c3d9b5a4f7964762345afc7759b1077104056552b10e77",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "e21f238bc9deb98f52330bf2bf627a061c5ca843c5e8018202f3530078c12ab8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "cee66106eab9a1bc8f5d5b9ec1c2d24ebaffe3124b0a06c28960656fd851eb1a",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "99c57411b3c70298c625c6ca5063baaf528325a2732bb9f4c6e39d83453b90e5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "226996e81ae09bb3401a43d5f5a0a56cad03d8f5eee180c970ba19850e87eb4c"
+  }
+}

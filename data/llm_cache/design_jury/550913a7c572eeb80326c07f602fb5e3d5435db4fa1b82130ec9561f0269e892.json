@@ -1,0 +1,70 @@
+{
+  "cache_key": "550913a7c572eeb80326c07f602fb5e3d5435db4fa1b82130ec9561f0269e892",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances the intent-integrity story by distinguishing measured misses from evidence-quality uncertainty and linking the payment-specific GPF-A21 case to step-up authorization, consent, and verified review. However, its central 69.6% recall claim explicitly lacks a structured numerator or denominator, and the supplied evidence does not prove that “Test an uncertain case” executes the stated control or produces reviewable results. Broad successful API responses and header navigation do not close that screen-specific proof gap.",
+    "fix": "Make the CTA run a visible uncertain payment case and show the input, authorization decision, step-up/consent path, verified post-review evidence, and resulting metric change. Add the recall numerator, denominator, cohort, and evaluation provenance.",
+    "score": 7,
+    "screen": "unknowns"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "933e552ccd6e7100cd59e7601480131a03c838ce4a48a22e300cf05d438bc65c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 148078,
+        "capture": "section",
+        "screenshot": "desktop-unknowns.png",
+        "sha256": "4b9ef742ba20231f964f69a4fce46898b6e1924472a640597abc2e25759e1325",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 129365,
+        "capture": "section",
+        "screenshot": "tablet-unknowns.png",
+        "sha256": "3ccb86be6dd50acaad40bfe232ea905410173340d15ab986a12642fbf912c64a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 125399,
+        "capture": "section",
+        "screenshot": "mobile-unknowns.png",
+        "sha256": "060c808a1b5e14c22527d76be97ca464d0c287a26509cbf15c837432ab66cc32",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fccf3bbca44f8968e97c9b63ea8c7d146b4a2c1498a712e6c0682f3fbeae7b63",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "550913a7c572eeb80326c07f602fb5e3d5435db4fa1b82130ec9561f0269e892"
+  }
+}

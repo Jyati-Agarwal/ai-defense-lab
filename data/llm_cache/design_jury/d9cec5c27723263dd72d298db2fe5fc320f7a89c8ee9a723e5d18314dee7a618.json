@@ -1,0 +1,70 @@
+{
+  "cache_key": "d9cec5c27723263dd72d298db2fe5fc320f7a89c8ee9a723e5d18314dee7a618",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline clearly states the threat, the supporting copy explains the rendered-versus-retrieved mismatch, and the authorized/recorded comparison makes the consequence concrete across all viewports. The visible switch supplies a plausible next action, but its labels compete: “Reveal hidden injection,” “Agent vision,” and “Toggle Agent vision” are three names for one control, while the red evidence layer already appears revealed. No measured evidence verifies the section control’s claimed keyboard operation or state change; the supplied keyboard proof covers only the global header. On mobile, the very long evidence card delays completion of the comparison, and the header hides the current Injection destination behind horizontal navigation.",
+    "fix": "Use one consistent action label, such as “Show agent-retrieved layer,” and visibly distinguish its off/on states so the displayed red panel matches the switch state. Add measured keyboard and state-change proof for this control, tighten the mobile evidence sequence, and keep the active Injection item visible in the header.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "40ff57f5741d54b0562cb5c419bb94b50f1b63dbc6958c63c12a0b0922cc57fd",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 209373,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "2e778a5141bfbf96881e0d68f5c852a933484686390a6708ead96f5b308a9de2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 165194,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "62680fe2b8d8c55b97907bc9b70d5eb2d8bdb8c6c3dc5f8b8c7795a1c816a926",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 168883,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "43513915a8b69d02ecf0bc337ca3eb0f1a7a27d3e425fb12c16af4a799184382",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c6e1eca70ab2336eb6fab7ba5c425829e07ec0e7b99f01a0af3927d9e144bd4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "d9cec5c27723263dd72d298db2fe5fc320f7a89c8ee9a723e5d18314dee7a618"
+  }
+}

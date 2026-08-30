@@ -1,0 +1,70 @@
+{
+  "cache_key": "b11cedc47778dc2bb969e9216c13b97dd91a4b2e3b5f27ed8a9248345fc2f166",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, signed-intent versus paid-cart comparison, and explicit Legacy ALLOW / Intent Integrity BLOCK panel communicate the core claim without narration. However, the instructed action “Select any cached transaction” lacks clear row affordance or a visibly selected state, while the play icon and “Inspect the causal seam” do not plainly explain what clicking will do. On mobile, dense, very small metadata and body copy weaken scanability. The global header also clips most destinations at tablet/mobile widths without an obvious navigation cue.",
+    "fix": "Make every transaction row visibly selectable, show the current selection, and label the replay control. Turn “Inspect the causal seam” into an unmistakable button with a brief outcome label. Increase mobile text size and provide an obvious horizontal-navigation cue or compact menu in the header.",
+    "score": 6,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "367ed105fb501575218d6b5838d77ef6d44bbd60ccd4ad3cb8244a5f04b544e7",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 454677,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "73d74b3a60602a7b2a83ff726763ba106600f040bc413ad7e6b6c2da7c7c9023",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 406331,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "2289d99cfcc9afb01c1031db0f371c1128a10dd328f74ef225ff76e761835b52",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 345478,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "b556c7045cdec6c1525bfd743c62b963908b78d8a2f47f512651b525799227b3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f77f8ca364ce9be2ba38156f46d245acc4481efb8cab4c560539762c46c36827",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "b11cedc47778dc2bb969e9216c13b97dd91a4b2e3b5f27ed8a9248345fc2f166"
+  }
+}

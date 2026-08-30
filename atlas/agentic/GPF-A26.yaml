@@ -1,0 +1,13 @@
+id: GPF-A26
+name: Summarizer constraint omission
+tier: agentic
+description: Context compression drops a restrictive clause before a downstream agent chooses and pays.
+kill_chain_stage: intent_manip
+channel: agentic_checkout
+rail: card
+genai_capability: context summarization for long tasks
+primitives: [context_manip, intent_manip, tool_manip]
+observable_signals: [summary missing hard constraint, source-summary entailment failure, late category drift]
+defense_hooks: [constraint-preserving summary, canonical intent object]
+severity: high
+feasibility_today: true

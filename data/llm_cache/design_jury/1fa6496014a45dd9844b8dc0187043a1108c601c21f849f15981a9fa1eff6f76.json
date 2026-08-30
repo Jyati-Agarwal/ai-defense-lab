@@ -1,0 +1,70 @@
+{
+  "cache_key": "1fa6496014a45dd9844b8dc0187043a1108c601c21f849f15981a9fa1eff6f76",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Composer passes automated WCAG checks at all three viewports: zero violations/incomplete results, all 10 controls keyboard-reachable with visible focus, no touch-target failures, no viewport overflow, and no observed movement under reduced motion. However, header color contrast remains unverified for 12 mobile links and 1 tablet link, a serious incomplete result; therefore an 8 is not supported.",
+    "fix": "Measure and remediate header-link contrast against the actual gradient/overlap states to WCAG AA, then rerun contrast checks with zero incomplete nodes. Also verify the horizontally clipped navigation remains discoverable and operable by touch and keyboard.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "765188a3c84fd753a6755fdbd4d3fe5327e16aff5f2ec07e2eefdd32da45dc46",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 165314,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "b9c129c53d4c88a5f5a9d066799b88a0f63d304d0e303e6633245c5e14f1d68d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154232,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "2cf6ff910895fbfebbb38dfe3d23342b6e7029f8223b1eaf7e8177836fb79d71",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157900,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "487d14f188dcf9879fa1f679db913ce91929e959d67903791e62508252fa31d3",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b737d286dee65f58f41c4989955e11837d89ee985128ce7a60bcfb462ddca525",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "1fa6496014a45dd9844b8dc0187043a1108c601c21f849f15981a9fa1eff6f76"
+  }
+}

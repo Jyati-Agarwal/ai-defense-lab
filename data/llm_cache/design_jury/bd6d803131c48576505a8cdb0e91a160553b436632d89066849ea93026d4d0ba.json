@@ -1,0 +1,51 @@
+{
+  "cache_key": "bd6d803131c48576505a8cdb0e91a160553b436632d89066849ea93026d4d0ba",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Detection changes the business model” thesis and red-to-cyan before/after attacker ledger create a clear narrative, while the repeated 25.60× ROI badge gives the screen a recognizable focal point across desktop, tablet, and mobile. However, the core visual language remains a conventional comparison table plus circular KPI gauge, so the concept is more memorable than the actual visualization and falls short of a signature hackathon-demo moment.",
+    "fix": "Replace the generic ledger-and-gauge centerpiece with a distinctive visual showing attacker economics collapsing from 545.35× to 25.60×—for example, an animated ROI curve or attack-attempt funnel tied directly to the before/after figures—while retaining the strong editorial headline and color semantics.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 313779,
+        "sha256": "86deaa7afa89e77784aa0288cae8d37cb6733ed3b9857d91d388493c6498d17e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 272191,
+        "sha256": "cd3990ee1fb660eca58e9fb5e65462abbe0debc2a63b4ad4c8a536900692f0cf",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 194951,
+        "sha256": "3eebab56f9d69b2f9d8d5c12d135a1ee70ed5aece158b94b6b110c829b77f451",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "c6402a24fb77481df64c5bb7f6ac302e358e31d1cf3998eb7ae9474aa9cbe4f4",
+    "schema_version": 2,
+    "sha256": "bd6d803131c48576505a8cdb0e91a160553b436632d89066849ea93026d4d0ba"
+  },
+  "response": {
+    "id": "resp_0cc8b5ff6a16eeab016a907aace61087d0857d18bb0ce819f4",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 5164,
+      "input_tokens_details": {
+        "cache_write_tokens": 5161,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 5464
+    }
+  }
+}

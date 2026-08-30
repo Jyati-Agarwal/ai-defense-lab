@@ -1,0 +1,51 @@
+{
+  "cache_key": "421a3e9f8a665cc09c996d8ad3b5ba276cb2c5fee9e3c67529bb5b1b5dd9efbc",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "No motion was demonstrated in standard mode at any viewport: activeAnimationCount=0 and changedElementCount=0 across all 12-frame samples, with only one transition-capable element detected. Reduced-motion behavior is clean—mediaMatches=true, zero active animations, and zero changed elements. Tablet and mobile timing is stable near 16.7ms with no long frames; desktop is weaker at 20.73ms overall/20.93ms on-screen average and a 33.4ms worst frame. This proves restraint and accessibility, but not polished animation quality.",
+    "fix": "Provide measured frames for an intentional interaction or entrance sequence across desktop, tablet, and mobile, showing coherent easing, duration, continuity, and final state. Include the equivalent reduced-motion capture, and optimize desktop rendering toward a consistent 16.7ms frame budget without 33ms spikes.",
+    "score": 5,
+    "screen": "thesis"
+  },
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 236808,
+        "sha256": "d8228d34f6694cac75e35ce94626f7cb2d0c0c7a30b86f97308c890cce0ac996",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 223674,
+        "sha256": "3c3dd782051ab7627e54739d11947df069db397a0920832a193b2ae153596215",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 203063,
+        "sha256": "0e3e7699ce4c665b5fd6eb9f1bf173dcb149e3943ec769814504b88709f48a39",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "1b218fcdc68b8f1d3eeaf1f5ba5648451f4cdf81ec0e510c1cae38fa42f5cc63",
+    "schema_version": 3,
+    "sha256": "421a3e9f8a665cc09c996d8ad3b5ba276cb2c5fee9e3c67529bb5b1b5dd9efbc"
+  },
+  "response": {
+    "id": "resp_0882d3fa23a2e30b016a9084ccb3c887d08b417f91fd617e46",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6096,
+      "input_tokens_details": {
+        "cache_write_tokens": 6093,
+        "cached_tokens": 0
+      },
+      "output_tokens": 494,
+      "output_tokens_details": {
+        "reasoning_tokens": 289
+      },
+      "total_tokens": 6590
+    }
+  }
+}

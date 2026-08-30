@@ -1,0 +1,70 @@
+{
+  "cache_key": "8ed15460770f6d0d4d1c6a8c760fcd94ca8005c1ec2d824fb39cadfa56296634",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "The precedent section has zero detected WCAG violations/incomplete checks at all three viewports, complete visible keyboard focus, no touch-target failures, no viewport overflow, and no observed motion under reduced-motion. However, the global header has unresolved serious color-contrast checks on tablet/mobile, clipped horizontally scrolling navigation, and no measured header touch-target or reduced-motion results. Document-wide testing also leaves a serious prohibited-ARIA issue unresolved.",
+    "fix": "Resolve and manually verify header contrast, replace the unsupported aria-label on the roleless div with valid semantics, and add measured header touch-target and reduced-motion coverage at tablet/mobile widths.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "6edccc609f2489741d207cc26a8e3d4bfe656e43c2d9f0c50f4088677f6f0db0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 181630,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "1816f5087c45cd751bee0dbc1f1ce5526d57fcc6341d95ae35a905fb79411109",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154156,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "dbb1ba829c5c1a29de5a5cb04dcbbc44fb8cb68c32df9b5642de051ea42dfd47",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 154060,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "b9fa542e76190f5482630cb562b26c5036921ecb064e049b4610c053e4a6dd8a",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a73f04359dc14573cf01aedd077e8bcb099d144947c327abd993666224e5a21b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8ed15460770f6d0d4d1c6a8c760fcd94ca8005c1ec2d824fb39cadfa56296634"
+  }
+}

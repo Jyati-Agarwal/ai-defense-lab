@@ -1,0 +1,70 @@
+{
+  "cache_key": "830442f248a6266146b1575a8f1dd37d4f5981f5e642d7e0de6dc03253c1bd7f",
+  "critique": {
+    "axis": "performance",
+    "evidence": "Across all viewports, FCP is 32–44 ms, LCP 204–340 ms, load 94.5–110.6 ms, CLS 0.000019–0.000192, and sampled frames show 0% long frames with a 16.8 ms worst frame. All 17 requests complete without browser or request failures. The weakness is payload: 1,153,434 JS bytes and about 1.32 MB transferred for the 12-screen page.",
+    "fix": "Code-split and lazy-load non-thesis screens and their data so the initial thesis route does not ship the full 1.15 MB JavaScript bundle.",
+    "score": 8,
+    "screen": "thesis"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "cd1b690e9d9b900b4fce1a12b4ef1d8451f749ed0cde8270fbfe9aa94e2d22e5",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "performance",
+    "images": [
+      {
+        "bytes": 136688,
+        "capture": "section",
+        "screenshot": "desktop-thesis.png",
+        "sha256": "4e825fe8d1f706091f9893e447e219cdf0ea79faee1299c0d881fa8d8288d1c2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 134839,
+        "capture": "section",
+        "screenshot": "tablet-thesis.png",
+        "sha256": "e101a8d0b7abcc8f5f043eefb6ef6ca38ea1ced5d66cfc58af437932fb6f454e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 112043,
+        "capture": "section",
+        "screenshot": "mobile-thesis.png",
+        "sha256": "628b0ca0123a8668504eef661101bfaf69ad7022e64683cf767805890d8e2e14",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "9d0146af796fa67d4f7519ff91b513a136fb0be5c2d24bbfcb03c689c3f9f402",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "830442f248a6266146b1575a8f1dd37d4f5981f5e642d7e0de6dc03253c1bd7f"
+  }
+}

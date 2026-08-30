@@ -1,0 +1,70 @@
+{
+  "cache_key": "f55664efdf369b4e4d0dd1922bee5542b4545d13ee851318fd78846264e33ab3",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong, cohesive cyber-forensics art direction across viewports: disciplined black/red/cyan palette, commanding headline, clear reveal hierarchy, crisp borders, and convincing artifact styling. Responsive stacking is deliberate and preserves the narrative. Deductions: mobile becomes very tall and dense, several mono labels are extremely small/low-contrast, the proof/outcome cards feel cramped, and the mobile header loses the wordmark while exposing only a narrow slice of navigation.",
+    "fix": "Increase small-label size and contrast, tighten mobile vertical spacing, simplify the mobile evidence cards, and retain a compact AI Defense Lab wordmark or clearer current-section cue in the mobile header.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "8f0777bde7b0b7c9d5a7ebd49143c3b9f1dfffe11991438315785540891fe0bb",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 209373,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "2e778a5141bfbf96881e0d68f5c852a933484686390a6708ead96f5b308a9de2",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 165194,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "62680fe2b8d8c55b97907bc9b70d5eb2d8bdb8c6c3dc5f8b8c7795a1c816a926",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 168883,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "43513915a8b69d02ecf0bc337ca3eb0f1a7a27d3e425fb12c16af4a799184382",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "97307e99242a9a40949348d9197e897dd00ec5e4f1e58bd1fd2769d214233de5",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "f55664efdf369b4e4d0dd1922bee5542b4545d13ee851318fd78846264e33ab3"
+  }
+}

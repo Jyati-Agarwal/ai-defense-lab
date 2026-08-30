@@ -1,0 +1,35 @@
+{
+  "protocol_id": "temporal-a-has-text-conditional-v2-2026-08-27",
+  "status": "predeclared_before_execution",
+  "predeclared_at": "2026-08-27T04:35:06+05:30",
+  "prior_v1": {
+    "artifact": "results/shuffle_null_diagnosis_post_crossfit.json",
+    "sha256": "fb55c9226d3a08624b5364bdb2adcd85a94811d455687c649f2d0391e9eacba6",
+    "status": "FAIL",
+    "immutable": true,
+    "ensemble_pr_auc": 0.01444944099274417,
+    "upper_tail_p": 0.007,
+    "certification_use": "preserved diagnostic only because full temporal-A label exchangeability is confounded by modality"
+  },
+  "training_procedure": {
+    "training_scope": "global chronological A+B training fold",
+    "training_label_permutations": 50,
+    "permutation_seed_formula": "20260827 + offset, offsets 0..49",
+    "model_seed_formula": "20260827 + 100 + offset, offsets 0..49",
+    "model": "exact target-disjoint calibrated DefenseModel stack",
+    "deterministic_direct_priors": "zeroed"
+  },
+  "evaluation_procedure": {
+    "scope": "temporal A rows with has_text=true",
+    "positive_retention_invariant": "all temporal-A positives must be retained or the run aborts",
+    "score_statistic": "average precision of the mean-score ensemble",
+    "evaluation_label_permutations": 9999,
+    "rng_seed": 20266827,
+    "p_value": "plus-one upper-tail permutation p",
+    "gate": "p >= 0.01",
+    "below_chance_interpretation": "collapse, not retained positive-ranking signal"
+  },
+  "sealed_partitions": ["C", "D", "E"],
+  "sealed_partitions_opened": [],
+  "posthoc_changes_forbidden": ["seeds", "model", "scope", "statistic", "permutation_count", "gate"]
+}

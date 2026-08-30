@@ -1,0 +1,13 @@
+id: GPF-A11
+name: Post-approval cart item substitution
+tier: agentic
+description: A merchant or tool swaps an approved item for an unrelated SKU before payment finalization.
+kill_chain_stage: merchant_manip
+channel: agentic_checkout
+rail: card
+genai_capability: autonomous checkout continuation
+primitives: [tool_manip, merchant_manip, payment_manip]
+observable_signals: [approved-SKU mismatch, category drift, cart revision after approval]
+defense_hooks: [signed cart snapshot, category constraint]
+severity: critical
+feasibility_today: true

@@ -1,0 +1,70 @@
+{
+  "cache_key": "c95b9fb921469f85034c1957632137ecd2f2b942ccecb9b42227ae12f5a6f509",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-lab art direction, restrained red/cyan palette, crisp card system, and a commanding desktop hero. However, tablet/mobile typography becomes excessively small and dense, the mobile chart and mutation content lose legibility, and the vaccination flow wraps awkwardly. The global header visibly clips navigation at tablet/mobile, leaving truncated items and no polished responsive treatment. Contrast is also unproven for numerous muted header labels.",
+    "fix": "Replace the clipped header rail with an intentional mobile/tablet navigation pattern; raise small-text sizes and contrast; simplify the mobile chart and mutation blocks; and reflow vaccination steps into a clear vertical sequence with stronger spacing.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "a8a481951c07f3434efd4c3546931d426bf65e4c6d60472a61f6d40f3508512d",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 688473,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "a3e63421c8b3bc22eaf378072ca131478667676a405ff04619585b676a85f8a4",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 574793,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "04e40e33b33746bc68434a06f9e3e39a820d168e5f4afe75010e2d2a288f87ba",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 441384,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "94e07f26e9c726b48889002cbd174f5c4c2e5d26aefb564c4ad78569a15049ee",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "6f41c12bd8da0f6ff1393198531b6c0551b28c8c161e9f7821324f2a58cca51b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c95b9fb921469f85034c1957632137ecd2f2b942ccecb9b42227ae12f5a6f509"
+  }
+}

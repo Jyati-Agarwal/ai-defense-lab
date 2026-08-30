@@ -1,0 +1,70 @@
+{
+  "cache_key": "c058a7336c7578aa610e43f780388a5457841fa80a52215701784df4e6d0d0ab",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline states the risk plainly, the “Reveal hidden injection” control supplies an obvious next action, and the visible causal-proof/authorized-versus-recorded comparison explains the consequence without presenter narration across all viewports. Mobile remains understandable, though dense technical copy and a horizontally clipped global nav slow scanning.",
+    "fix": "Raise mobile supporting-text size/contrast and keep “05 Injection” visibly selected in the header; clarify the toggle state with explicit “Agent vision on/off” status text.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "27db5e1ba7d4ba24dffcbe3a6811cb617cd50ae0faf025c003f22929215f2e3e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 209185,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168943,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "78605a3d299cbdc1938884f7bb0170e0e5dfbcc3525b9038bf694a1637741fab",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 168972,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "2ea4c9430705942310b6fec37c8da38b9088360c32b80fca8e703816d8f6f633",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "3c6e1eca70ab2336eb6fab7ba5c425829e07ec0e7b99f01a0af3927d9e144bd4",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "c058a7336c7578aa610e43f780388a5457841fa80a52215701784df4e6d0d0ab"
+  }
+}

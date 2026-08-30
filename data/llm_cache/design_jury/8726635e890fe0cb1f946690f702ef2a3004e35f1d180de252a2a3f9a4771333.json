@@ -1,0 +1,70 @@
+{
+  "cache_key": "8726635e890fe0cb1f946690f702ef2a3004e35f1d180de252a2a3f9a4771333",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline clearly states the distinction between cryptographic validity and semantic correctness, and the intent→cart→payment comparison makes the mismatch visible across all viewports. However, “Results artifact,” “semantic invariant,” “NOT_PRESENT,” and the ECDSA closing line require specialist interpretation. The outlined “Inspect semantic mismatch” control looks actionable, but the screenshot provides no clear resulting state or destination. Mobile navigation also hides the product identity and most destinations behind an understated “SWIPE” cue.",
+    "fix": "Rename the action to “See why this payment violates the intent,” show its expanded/result state, and translate the invariant into one plain-language verdict: “Signatures are valid, but the authorized shoes were replaced by a voucher.”",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "b61a06f37820b4b89444b59f256f95bdffd70ef3a574b242d53c169a81bfa9a1",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 219273,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "9b8b1c238686a90f37fd6c704bad6dc5d789b5ed9f93e5c2aead75ce03d2fd9e",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152555,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "c50256d7fe1ea61340368979dc8e78324465e6b05c95bde78ddc41ece1f571f1",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138137,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "7bb389bc97f9a34e1b6bd577561a1fe7ee0ada94927354f5b5c320f536252c62",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a80fecaffcbfc75e09aa5eb672492ebc31dd2f163aa4271efb03c2a53fa97fc0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "8726635e890fe0cb1f946690f702ef2a3004e35f1d180de252a2a3f9a4771333"
+  }
+}

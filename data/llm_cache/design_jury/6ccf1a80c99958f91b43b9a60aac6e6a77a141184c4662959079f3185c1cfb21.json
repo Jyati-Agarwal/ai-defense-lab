@@ -1,0 +1,70 @@
+{
+  "cache_key": "6ccf1a80c99958f91b43b9a60aac6e6a77a141184c4662959079f3185c1cfb21",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The strongest signature is the intent→cart→payment chain paired with the cyan/red semantic-divergence wedge; it turns an abstract integrity failure into a recognizable visual story across all viewports. However, the surrounding dark panels, mono labels, verification pills, and neon accents remain familiar cybersecurity-dashboard conventions, while tablet/mobile reduce the distinctive chain into ordinary stacked cards.",
+    "fix": "Make the semantic split the screen’s unmistakable centerpiece: preserve a responsive chain metaphor on smaller viewports and visually connect each verified signature to the growing intent/outcome divergence, replacing the generic checks list with one coherent, animated proof-versus-meaning narrative.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "5c0b9ad6517e493304a947bc3635f9951aa395d78c6dddd25154c4963c228bf3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 219348,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "f1e53096f9fbdaf1d372da1955c9f144383cfc7e81eb8531a39733e961d1d5e6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 152255,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "60f124edcd4968fc53b9432a6bbb9f0fac8c07a70fdafd4f1be10aa0d2f8a74a",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 138131,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "c869540c3d6970f04e2e60b203722131523dbd29f4050751961eb617ca4ccf11",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b45f8c48af97fd29068c9e7fc6a19be2b507e6a2cff3270507d8ce3e16bf27a8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "6ccf1a80c99958f91b43b9a60aac6e6a77a141184c4662959079f3185c1cfb21"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "11612a30a0e7af031837350f9da88c93211a0f85a9e619f5cba2b8a1aca53832",
+  "critique": {
+    "axis": "relevance",
+    "evidence": "The screen clearly advances intent integrity: it contrasts trusted intent with a machine-only retrieval seam and a changed recorded outcome, then names semantic alignment before payment authorization as the control point. The digital-wallet/payment framing is relevant to Mastercard. However, the proof remains a synthetic, truncated exemplar; the supplied evidence does not demonstrate the reveal interaction, provenance chain, detection decision, or prevention of an actual authorization change. Mastercard-specific network, identity, or payment-rail relevance is also only implied.",
+    "fix": "Make the demo show a verifiable before/after transaction flow: visible shopper intent, retrieved hidden instruction, provenance identifier, policy mismatch, blocked authorization, and preserved audit record. Tie the control explicitly to a Mastercard-relevant payment or agentic-commerce authorization point and expose the evidence produced at each step.",
+    "score": 7,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e3130323644ff04b12d1809c2909bfa4da3e19a07315ffca75043343c59dd47a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "relevance",
+    "images": [
+      {
+        "bytes": 239771,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "275e2556e20e872850a100b19bb59300572c81c00ea298419e603c99cb68cda3",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181146,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "ba88fb33c4345a3a9af7aefc9eecfbf53d5947d30d3d5ec3a21bec3e564fefa3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 183647,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "6ab0fd189931c62c30d6c37efd06beebc58a4e5065e6e2e35a34c7c614fe08c0",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "cf8e2a3eeb111399748ca613d2b2e2cc160adc34f30721c56fcb48b6dcf17325",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "11612a30a0e7af031837350f9da88c93211a0f85a9e619f5cba2b8a1aca53832"
+  }
+}

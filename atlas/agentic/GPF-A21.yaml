@@ -1,0 +1,13 @@
+id: GPF-A21
+name: Single-intent multi-merchant fanout
+tier: agentic
+description: One signed shopping intent is expanded into payments across several unrelated merchant identities.
+kill_chain_stage: cash_out
+channel: agentic_checkout
+rail: card
+genai_capability: parallel vendor orchestration
+primitives: [tool_manip, merchant_manip, payment_manip, cash_out]
+observable_signals: [payee count per intent, unrelated MCC fanout, parallel payment cadence]
+defense_hooks: [intent fanout cap, payee coherence check]
+severity: critical
+feasibility_today: true

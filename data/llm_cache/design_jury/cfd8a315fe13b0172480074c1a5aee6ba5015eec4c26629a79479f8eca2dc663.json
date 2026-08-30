@@ -1,0 +1,70 @@
+{
+  "cache_key": "cfd8a315fe13b0172480074c1a5aee6ba5015eec4c26629a79479f8eca2dc663",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Vault has zero confirmed axe violations, complete visible-focus keyboard coverage for both controls at all viewports, no touch-target failures, no section overflow, and no observed motion under reduced-motion. However, serious contrast checks remain unresolved for 2–4 vault elements, including the toggle and gradient label; header contrast is also unresolved on tablet/mobile. Tablet/mobile navigation clips off-screen items inside a horizontal rail, though it does not overflow the viewport and remains keyboard-reachable.",
+    "fix": "Resolve every incomplete contrast result with measured WCAG ratios on final composited backgrounds, especially the vault toggle, gradient label, metrics, and header links. Also verify the clipped navigation rail with touch scrolling and visible affordances, then rerun axe and keyboard tests.",
+    "score": 7,
+    "screen": "vault"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "faf822dade4a41808df6bfed3286323ad36aad5e2fdf6a79540849f4aca63550",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 380950,
+        "capture": "section",
+        "screenshot": "desktop-vault.png",
+        "sha256": "12442eeca1a7df50a57bb62348c000eea0e30a1a0a13b7c636e57fa4edcfd75b",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 241487,
+        "capture": "section",
+        "screenshot": "tablet-vault.png",
+        "sha256": "19de66ac4936d07fd36af32aeabfbf136cb6d1aa4f1131ccbd7f4362641dbe7e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 195867,
+        "capture": "section",
+        "screenshot": "mobile-vault.png",
+        "sha256": "3dcc56680621582759c7ab2090624d8305e5929359793688a4a1b8b307ede8d4",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e09ee272d8b9435135e5d037327a1ee0a6972dab9c178db5097d30f6f3360117",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "cfd8a315fe13b0172480074c1a5aee6ba5015eec4c26629a79479f8eca2dc663"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "cache_key": "518490fa20ae5b2c1bb380f0d0458f627e7893d6e914ae63347d4c822416ccdd",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong dark command-center aesthetic, disciplined cyan/red/yellow semantics, and a clear hero-to-ledger-to-recommendation hierarchy across all viewports. The ROI dial and bordered panels feel cohesive and polished. However, desktop headline wrapping is awkward and nearly collides between lines; mobile ledger values are cramped, with long labels and currency figures competing for width; secondary copy and mono labels are very small and low-contrast; and the tablet/mobile header presents a clipped horizontal navigation strip that feels visually unfinished. Mobile’s stacked recommendation fields also become dense and repetitive.",
+    "fix": "Refine responsive headline sizing and line-height, increase secondary-text contrast and minimum label size, and redesign the mobile ledger as stacked label/value rows so numbers have breathing room. Give tablet/mobile navigation a more deliberate compact state with a clear active section, and add spacing between the recommendation subgroups.",
+    "score": 7,
+    "screen": "economics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "f3529b12a6c9c3106d44a997dc9142e60b7a37cf20082f1bdc83f85507768e12",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 221790,
+        "capture": "section",
+        "screenshot": "desktop-economics.png",
+        "sha256": "8f705dcb8628945c0589834c9655aca41e7ea027c20860b04f0a3004ec61a8df",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 181787,
+        "capture": "section",
+        "screenshot": "tablet-economics.png",
+        "sha256": "db03e272f47113593bea3a495af7ccb3a844db2d269e9ae9257254edd05b8ef8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 177615,
+        "capture": "section",
+        "screenshot": "mobile-economics.png",
+        "sha256": "0a4ace917b63c6470fed13dcc158ad0a284f1805b4a3fa3c31c4ca3e7707ce91",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "d3e3dffb73e1c7a13bba6779c23f6edfc878cede9a7a0894863bd329c2417557",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "cd1ab6e5ca36612c118730633792eaacb0c5330481f6d1a986e5539c48425702",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "39bd3a6d0788e3b7a626d7cb606dc8d0b1a7a7743c897d013cefe4c8b8f38108",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "d88f5219d83e88e7c0a1ee4cc71ee746fbfdc8cd0160660a62bb12828043cdb8",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "518490fa20ae5b2c1bb380f0d0458f627e7893d6e914ae63347d4c822416ccdd"
+  }
+}

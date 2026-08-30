@@ -1,0 +1,51 @@
+{
+  "cache_key": "c58d975de4bad16caf11802b444d42fa3c3fed8ee04525cb64fa1e3e02f8c4eb",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline states the thesis directly, and the verified cryptographic checks contrasted with the red semantic-invariant mismatch makes the distinction understandable without a presenter. The “What’s happening” copy supplies a reading sequence. However, there is no unambiguous next-action control: “RESULTS ARTIFACT” reads like a status badge rather than a button, and the mobile chain diagram is too small and partly obscured by its controls to communicate its labels clearly.",
+    "fix": "Add a clearly styled CTA such as “Inspect the semantic mismatch” that scrolls to or opens the relevant evidence, and redesign the mobile chain as a readable stacked sequence with controls moved away from labels.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 572745,
+        "sha256": "1ed69237735825246a0a552e4e24ad4fdc9607a258a30a648c924ba20923cc1a",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 422524,
+        "sha256": "d9524be96c9b2e6acf3c0e61c304a522c4dfe3c706f6ff882aa6798213b2b172",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 331083,
+        "sha256": "a509c0554074d53b06dd6db76783211577ddd4f7f16815a57f7bd5df6c2bea1e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "19516979bdceb2bbb18711b70a7363bdd1bc602d2bfe02755c3c4eed304ceff9",
+    "schema_version": 2,
+    "sha256": "c58d975de4bad16caf11802b444d42fa3c3fed8ee04525cb64fa1e3e02f8c4eb"
+  },
+  "response": {
+    "id": "resp_09d8a55e6e1452a8016a907a7bb55c87d0a0fb54c067912df0",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6479,
+      "input_tokens_details": {
+        "cache_write_tokens": 6476,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 6813
+    }
+  }
+}

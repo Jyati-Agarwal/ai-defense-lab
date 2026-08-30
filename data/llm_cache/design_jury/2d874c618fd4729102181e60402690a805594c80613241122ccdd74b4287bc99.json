@@ -1,0 +1,70 @@
+{
+  "cache_key": "2d874c618fd4729102181e60402690a805594c80613241122ccdd74b4287bc99",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Across desktop, tablet, and mobile, the measured entry animation is smooth and consistent: roughly 16.2–16.5 ms average frames, 16.7–16.8 ms worst frames, and zero long frames. Its 22 px fade/translate settles cleanly by about 394 ms. Reduced-motion mode matches the media query and produces zero changed elements or trajectories. However, only scroll-entry motion was captured; there are no measured animation trajectories for control changes, launch feedback, loading, or result presentation.",
+    "fix": "Capture and verify frame-by-frame motion for slider/toggle changes, launch/loading, and result updates at all viewports, including reduced-motion variants. Keep worst frames within the current ~16.8 ms budget and ensure reduced motion removes all nonessential movement.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "768b86436db12840be4339b19717ec808e842f1c4b09612974447ab8bd9b3b49",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 165297,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "dccd56d120684437ffe6cf798337a9800fc021bb4509c87d4871a7f7c9a2211b",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154308,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "a49ddd573528ab4330b02b88332cd44096495eb430331baa2b33ef946666a0a8",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157785,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "567c1fd0c5eef6f635f498e42c197b371f347bdf8058d951d523d0d5d297938d",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10986,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "a83048c90806576984681e0a6c69706ccea0363c9520be558cd2c38146e56645",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8922,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ebd304fd445eb3e0bd4ee574f56e917c49c72cb4d87261dd0a7b381811895326",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "47eff697c2e11f8f3967343fb55cc258da612da35504ba74755b7bd36ec6e35c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "490cfc58b6dc5d33408974922dc12258eff3d7719b777475a8a19b732eb8a778",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2d874c618fd4729102181e60402690a805594c80613241122ccdd74b4287bc99"
+  }
+}

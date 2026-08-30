@@ -1,0 +1,399 @@
+{
+  "scope": "temporal A holdout only; C/D/E excluded from shuffle inference",
+  "procedure": "50 independently seeded training-label permutations of exact learned stack with deterministic direct priors zeroed; mean-score ensemble tested by 9,999 temporal-A label permutations",
+  "training_events": 35061,
+  "training_positives": 137,
+  "evaluation_events": 11675,
+  "evaluation_positives": 35,
+  "records": [
+    {
+      "offset": 0,
+      "permutation_seed": 20260827,
+      "model_seed": 20260927,
+      "pr_auc": 0.009657712871788064,
+      "roc_auc": 0.823438880706922
+    },
+    {
+      "offset": 1,
+      "permutation_seed": 20260828,
+      "model_seed": 20260928,
+      "pr_auc": 0.0017156187844292374,
+      "roc_auc": 0.13893716249386354
+    },
+    {
+      "offset": 2,
+      "permutation_seed": 20260829,
+      "model_seed": 20260929,
+      "pr_auc": 0.04815326051216435,
+      "roc_auc": 0.858971526755032
+    },
+    {
+      "offset": 3,
+      "permutation_seed": 20260830,
+      "model_seed": 20260930,
+      "pr_auc": 0.018868360059347885,
+      "roc_auc": 0.8885702012763869
+    },
+    {
+      "offset": 4,
+      "permutation_seed": 20260831,
+      "model_seed": 20260931,
+      "pr_auc": 0.0017628456912613907,
+      "roc_auc": 0.16381934216985763
+    },
+    {
+      "offset": 5,
+      "permutation_seed": 20260832,
+      "model_seed": 20260932,
+      "pr_auc": 0.01190066380423139,
+      "roc_auc": 0.818186057928326
+    },
+    {
+      "offset": 6,
+      "permutation_seed": 20260833,
+      "model_seed": 20260933,
+      "pr_auc": 0.008974044554044278,
+      "roc_auc": 0.8312199312714776
+    },
+    {
+      "offset": 7,
+      "permutation_seed": 20260834,
+      "model_seed": 20260934,
+      "pr_auc": 0.009616232625921189,
+      "roc_auc": 0.8326165930289642
+    },
+    {
+      "offset": 8,
+      "permutation_seed": 20260835,
+      "model_seed": 20260935,
+      "pr_auc": 0.011504841634124765,
+      "roc_auc": 0.8571649484536084
+    },
+    {
+      "offset": 9,
+      "permutation_seed": 20260836,
+      "model_seed": 20260936,
+      "pr_auc": 0.0018090203921500906,
+      "roc_auc": 0.18464776632302404
+    },
+    {
+      "offset": 10,
+      "permutation_seed": 20260837,
+      "model_seed": 20260937,
+      "pr_auc": 0.010730780754246529,
+      "roc_auc": 0.858686794305351
+    },
+    {
+      "offset": 11,
+      "permutation_seed": 20260838,
+      "model_seed": 20260938,
+      "pr_auc": 0.0017316516006162068,
+      "roc_auc": 0.15085665193912615
+    },
+    {
+      "offset": 12,
+      "permutation_seed": 20260839,
+      "model_seed": 20260939,
+      "pr_auc": 0.010974992163020232,
+      "roc_auc": 0.8233627884143349
+    },
+    {
+      "offset": 13,
+      "permutation_seed": 20260840,
+      "model_seed": 20260940,
+      "pr_auc": 0.001753991524340162,
+      "roc_auc": 0.1646379479626902
+    },
+    {
+      "offset": 14,
+      "permutation_seed": 20260841,
+      "model_seed": 20260941,
+      "pr_auc": 0.00843696387612659,
+      "roc_auc": 0.8139494354442809
+    },
+    {
+      "offset": 15,
+      "permutation_seed": 20260842,
+      "model_seed": 20260942,
+      "pr_auc": 0.006748409562285118,
+      "roc_auc": 0.7915574374079528
+    },
+    {
+      "offset": 16,
+      "permutation_seed": 20260843,
+      "model_seed": 20260943,
+      "pr_auc": 0.011073946338314442,
+      "roc_auc": 0.8345311732940599
+    },
+    {
+      "offset": 17,
+      "permutation_seed": 20260844,
+      "model_seed": 20260944,
+      "pr_auc": 0.024123791894135143,
+      "roc_auc": 0.8943151693667157
+    },
+    {
+      "offset": 18,
+      "permutation_seed": 20260845,
+      "model_seed": 20260945,
+      "pr_auc": 0.00791052207001575,
+      "roc_auc": 0.8226460481099657
+    },
+    {
+      "offset": 19,
+      "permutation_seed": 20260846,
+      "model_seed": 20260946,
+      "pr_auc": 0.0017340883986455404,
+      "roc_auc": 0.14633529700540007
+    },
+    {
+      "offset": 20,
+      "permutation_seed": 20260847,
+      "model_seed": 20260947,
+      "pr_auc": 0.001675225385881708,
+      "roc_auc": 0.1256553755522828
+    },
+    {
+      "offset": 21,
+      "permutation_seed": 20260848,
+      "model_seed": 20260948,
+      "pr_auc": 0.01952026877327698,
+      "roc_auc": 0.8572533136966127
+    },
+    {
+      "offset": 22,
+      "permutation_seed": 20260849,
+      "model_seed": 20260949,
+      "pr_auc": 0.0017393489925775284,
+      "roc_auc": 0.15287432498772704
+    },
+    {
+      "offset": 23,
+      "permutation_seed": 20260850,
+      "model_seed": 20260950,
+      "pr_auc": 0.012978672166836465,
+      "roc_auc": 0.8525355915562101
+    },
+    {
+      "offset": 24,
+      "permutation_seed": 20260851,
+      "model_seed": 20260951,
+      "pr_auc": 0.001740367746723738,
+      "roc_auc": 0.15775895925380462
+    },
+    {
+      "offset": 25,
+      "permutation_seed": 20260852,
+      "model_seed": 20260952,
+      "pr_auc": 0.001725317598334844,
+      "roc_auc": 0.14582719685812467
+    },
+    {
+      "offset": 26,
+      "permutation_seed": 20260853,
+      "model_seed": 20260953,
+      "pr_auc": 0.010412011445539191,
+      "roc_auc": 0.8462800687285225
+    },
+    {
+      "offset": 27,
+      "permutation_seed": 20260854,
+      "model_seed": 20260954,
+      "pr_auc": 0.001813311426466164,
+      "roc_auc": 0.18910162002945508
+    },
+    {
+      "offset": 28,
+      "permutation_seed": 20260855,
+      "model_seed": 20260955,
+      "pr_auc": 0.012647938945962084,
+      "roc_auc": 0.8460014727540501
+    },
+    {
+      "offset": 29,
+      "permutation_seed": 20260856,
+      "model_seed": 20260956,
+      "pr_auc": 0.011573469106657472,
+      "roc_auc": 0.8533480608738341
+    },
+    {
+      "offset": 30,
+      "permutation_seed": 20260857,
+      "model_seed": 20260957,
+      "pr_auc": 0.001805431505101765,
+      "roc_auc": 0.1853632793323515
+    },
+    {
+      "offset": 31,
+      "permutation_seed": 20260858,
+      "model_seed": 20260958,
+      "pr_auc": 0.04097994675691221,
+      "roc_auc": 0.8564457535591556
+    },
+    {
+      "offset": 32,
+      "permutation_seed": 20260859,
+      "model_seed": 20260959,
+      "pr_auc": 0.0017897011204512734,
+      "roc_auc": 0.17648993618065778
+    },
+    {
+      "offset": 33,
+      "permutation_seed": 20260860,
+      "model_seed": 20260960,
+      "pr_auc": 0.0017661589693830696,
+      "roc_auc": 0.1693127147766323
+    },
+    {
+      "offset": 34,
+      "permutation_seed": 20260861,
+      "model_seed": 20260961,
+      "pr_auc": 0.0016925741794145118,
+      "roc_auc": 0.13259695630829652
+    },
+    {
+      "offset": 35,
+      "permutation_seed": 20260862,
+      "model_seed": 20260962,
+      "pr_auc": 0.0016974897588719617,
+      "roc_auc": 0.13747054491899854
+    },
+    {
+      "offset": 36,
+      "permutation_seed": 20260863,
+      "model_seed": 20260963,
+      "pr_auc": 0.01117107238533465,
+      "roc_auc": 0.8522410407461953
+    },
+    {
+      "offset": 37,
+      "permutation_seed": 20260864,
+      "model_seed": 20260964,
+      "pr_auc": 0.012230667959511466,
+      "roc_auc": 0.8296416298478153
+    },
+    {
+      "offset": 38,
+      "permutation_seed": 20260865,
+      "model_seed": 20260965,
+      "pr_auc": 0.04341769286546404,
+      "roc_auc": 0.8665365733922435
+    },
+    {
+      "offset": 39,
+      "permutation_seed": 20260866,
+      "model_seed": 20260966,
+      "pr_auc": 0.0077722503098881165,
+      "roc_auc": 0.8188070692194404
+    },
+    {
+      "offset": 40,
+      "permutation_seed": 20260867,
+      "model_seed": 20260967,
+      "pr_auc": 0.08468740636555484,
+      "roc_auc": 0.9077736867943053
+    },
+    {
+      "offset": 41,
+      "permutation_seed": 20260868,
+      "model_seed": 20260968,
+      "pr_auc": 0.001785276123692097,
+      "roc_auc": 0.17897152675503192
+    },
+    {
+      "offset": 42,
+      "permutation_seed": 20260869,
+      "model_seed": 20260969,
+      "pr_auc": 0.008521483420310963,
+      "roc_auc": 0.8228767795778105
+    },
+    {
+      "offset": 43,
+      "permutation_seed": 20260870,
+      "model_seed": 20260970,
+      "pr_auc": 0.010741562114878008,
+      "roc_auc": 0.8617427589592538
+    },
+    {
+      "offset": 44,
+      "permutation_seed": 20260871,
+      "model_seed": 20260971,
+      "pr_auc": 0.0017120964242232372,
+      "roc_auc": 0.14826460481099657
+    },
+    {
+      "offset": 45,
+      "permutation_seed": 20260872,
+      "model_seed": 20260972,
+      "pr_auc": 0.001778796700855374,
+      "roc_auc": 0.1723564064801178
+    },
+    {
+      "offset": 46,
+      "permutation_seed": 20260873,
+      "model_seed": 20260973,
+      "pr_auc": 0.010378156429866683,
+      "roc_auc": 0.8582277859597448
+    },
+    {
+      "offset": 47,
+      "permutation_seed": 20260874,
+      "model_seed": 20260974,
+      "pr_auc": 0.0017280921299010154,
+      "roc_auc": 0.14928325969563083
+    },
+    {
+      "offset": 48,
+      "permutation_seed": 20260875,
+      "model_seed": 20260975,
+      "pr_auc": 0.0017989891236046887,
+      "roc_auc": 0.17905743740795288
+    },
+    {
+      "offset": 49,
+      "permutation_seed": 20260876,
+      "model_seed": 20260976,
+      "pr_auc": 0.00772182877416258,
+      "roc_auc": 0.8195336278841434
+    }
+  ],
+  "individual_pr_auc": {
+    "mean": 0.01080368688233694,
+    "median": 0.00817374297307117,
+    "min": 0.001675225385881708,
+    "max": 0.08468740636555484
+  },
+  "individual_roc_auc": {
+    "mean": 0.5569616102110948,
+    "median": 0.8191703485517918,
+    "min": 0.1256553755522828,
+    "max": 0.9077736867943053,
+    "bootstrap_mean_ci99": [
+      0.4283981789396171,
+      0.6794018802160041
+    ]
+  },
+  "ensemble": {
+    "pr_auc": 0.014791850897722097,
+    "roc_auc": 0.7749754540991652,
+    "pr_auc_permutation_expectation": 0.003767266590729048,
+    "pr_auc_null_median": 0.0033291823448687525,
+    "pr_auc_null_ci99": [
+      0.00230281276481579,
+      0.01786582160364337
+    ],
+    "pr_auc_two_sided_p": 0.014,
+    "roc_auc_null_ci99": [
+      0.3766067010309278,
+      0.6234831369661267
+    ],
+    "roc_auc_permutation_p": 0.0001,
+    "eval_label_permutations": 9999
+  },
+  "gate": {
+    "roc_mean_ci99_includes_0_5": true,
+    "ensemble_roc_permutation_p_gte_0_01": false,
+    "passed": false
+  },
+  "duration_seconds": 842.5130819629412
+}

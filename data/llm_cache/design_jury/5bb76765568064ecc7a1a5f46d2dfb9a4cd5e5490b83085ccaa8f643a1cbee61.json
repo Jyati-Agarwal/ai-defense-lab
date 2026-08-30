@@ -1,0 +1,70 @@
+{
+  "cache_key": "5bb76765568064ecc7a1a5f46d2dfb9a4cd5e5490b83085ccaa8f643a1cbee61",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong cyber-terminal art direction, disciplined cyan/red/green semantics, and a clear desktop comparison hierarchy. Tablet remains coherent but becomes excessively tall. Mobile compresses dense rows, metadata, and evidence copy into very small type, making the screen feel like a scaled-down desktop table rather than a deliberately composed mobile view. The mobile/tablet header also presents visibly clipped navigation and weaker brand presence.",
+    "fix": "Create a true mobile event-card layout with larger text, fewer always-visible metadata fields, and expandable details; tighten tablet vertical rhythm; and redesign the narrow header around an explicit menu or polished snap-navigation treatment instead of visibly clipped links.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "843f2d106fc4f7c11ae6e28fc75e36c9a5063297fca98ce77dc87b5a48d02cd0",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 169347,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "22297d053d15531dc227d68ccf94840e77d116e53d05d603fb0392d0ed90e2ff",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167242,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "5c4ce916b1a41cb621576fa92041b2ecaad914a0f60f868a1e84a71aeb8a6277",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15907,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "5f4b18b53ae463c43325361329075c935ccf7203dd270e2808ca3656215ebcea",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "15c03c844a3b25c84ebc3fa6a3a4ab0fe8f18acd37a2003b67545d437014e317",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "ae3d14f2fdcecab61a720a8468304553f8c550e2ae2c81b080b82aa5e1f59ec1",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "dbea907a08ce8c6b34acf729dcf4e950520c9a5f97b2829940d69a5e297aba1d",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "5bb76765568064ecc7a1a5f46d2dfb9a4cd5e5490b83085ccaa8f643a1cbee61"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "artifact": "evaluation_v4_release_policy_amendment",
+  "bindings": {
+    "amended_release_script_sha256": "999a3f784f713b7225fab2bc2712464f38530d53229ac50965a47febc87bb48b",
+    "evaluation_attempt_v3.json": "13f92eaed3dd8246ea4b381bfb0927f7b9af24dea8e24caa8455a0a97f221b52",
+    "evaluation_v4_preregistration.json": "c96d62b877f953b7733cb93d83c81c94f73e847854a42a9176aaf4f3b1913c96",
+    "evaluation_v4_release.json": "9cd09acb6b96c6dbc0cf286ef0b76e291999deff96bcaba61138b7ee8d81c929",
+    "frozen_scoring.json": "1f0f522e0da0ef9e0ddd84316e53ce5c21a56c509e8e8629b66ac5755d649c1b",
+    "generalization.json": "1cd8e68dffa08f56f811698c21d50083380a70cf41f17c25701e1860ae8082f7",
+    "metrics.json": "492748d1a59c3056f1b9f918b450cdaeac3f72f1a02b257b5c767050acbf6754",
+    "model.pkl": "7b167cbe572bba2668ec52d1f387cbf949b112ef750cfeb7a5ca960a79fd934f",
+    "preregistered_release_script_artifact": "evaluation_v4_preregistered_scripts_release.py",
+    "preregistered_release_script_sha256": "9d1eb4c35de9a97d64990aa8964b53f5286c70bcbce5f19abcc670c8528798a8",
+    "shuffle_control.json": "1d95daf9ce66e14a7e40cfae1a814d701f4ea0c90ecdebd4fef50d79f50c8e11"
+  },
+  "claim_scope": "post_remediation_regression",
+  "created_after_evaluation": true,
+  "expected_order_holds": false,
+  "independent_holdout": false,
+  "invariants": {
+    "detection_threshold_changed": false,
+    "evaluation_evidence_changed": false,
+    "evaluation_rescored": false,
+    "model_changed": false,
+    "protected_partition_inference_passes": 1
+  },
+  "observed_generalization_recalls": {
+    "adaptive_recall": 1.0,
+    "heldout_family_recall": 1.0,
+    "known_recall": 1.0,
+    "novel_composition_recall": 0.84782609
+  },
+  "retained_release_policy": "all original release gates except the two explicitly withdrawn clauses",
+  "schema_version": 1,
+  "shuffle_validator_correction": {
+    "classification": "validator correction; not a withdrawn quality gate",
+    "current_v1_certification_use": "preserved diagnostic only",
+    "current_v1_diagnostic_status": "PASS",
+    "historical_prior_v1_status": "FAIL",
+    "prospective_v2_gate_required": true
+  },
+  "status": "post_evaluation_release_policy_amendment",
+  "withdrawn_release_policy_clauses": [
+    "generalization.expected_order_holds is True",
+    "known_recall >= adaptive_recall >= novel_composition_recall >= heldout_family_recall"
+  ]
+}

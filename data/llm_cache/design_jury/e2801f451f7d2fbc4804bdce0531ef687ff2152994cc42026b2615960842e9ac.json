@@ -1,0 +1,70 @@
+{
+  "cache_key": "e2801f451f7d2fbc4804bdce0531ef687ff2152994cc42026b2615960842e9ac",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Entry motion is consistently smooth across desktop, tablet, and mobile: a 22px translate/fade settles cleanly in about 380ms, with ~16ms averages, 16.8ms worst frames, and 0% long frames. Reduced-motion sampling shows zero changed elements and no trajectories. However, pause/resume and transaction selection report only final states; no measured frame sequences prove their transition quality.",
+    "fix": "Capture frame-by-frame trajectories for pause, resume, and transaction switching at all viewports, including rapid repeated input. Also eliminate or explain the one animation still reported active under reduced motion.",
+    "score": 7,
+    "screen": "live-wire"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "db26fdd6f90dbb819a1fd93914e200c2b1ab99e450f866f8ba9778f820704014",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 192486,
+        "capture": "section",
+        "screenshot": "desktop-live-wire.png",
+        "sha256": "16e27e8764ea3e8768f38997dcabee14a912dc4b4db7d00878fc0d3db145742c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 169347,
+        "capture": "section",
+        "screenshot": "tablet-live-wire.png",
+        "sha256": "22297d053d15531dc227d68ccf94840e77d116e53d05d603fb0392d0ed90e2ff",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 167242,
+        "capture": "section",
+        "screenshot": "mobile-live-wire.png",
+        "sha256": "5c4ce916b1a41cb621576fa92041b2ecaad914a0f60f868a1e84a71aeb8a6277",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2dd49749f9525143755a3f03f19bd581fffcfc5d7e713df7f35af2e8f67ce3c6",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8d6cac71e38472d39429cd74db306828b1830ef540a5dbce62eb50267cd74949",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "326fb113f4b1c556812486bb0c5dd85bcade914fc8253e6f7dc81a89cb2a65fe",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "9497f2d6703284b41cd8b24a6e5dd69cf5751a32fb0f563469e42144b9df7ed1",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "e2801f451f7d2fbc4804bdce0531ef687ff2152994cc42026b2615960842e9ac"
+  }
+}

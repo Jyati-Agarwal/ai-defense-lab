@@ -1,0 +1,70 @@
+{
+  "cache_key": "2db96fac2b2d6aab8ae319841b3a5bca1bf4aa2564d3f9fee3f0bac7f580aaba",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong dark editorial system, disciplined cyan/red accents, clear headline, consistent cards, and responsive reflow. Below demo-ready polish: much supporting text and chart labeling is extremely small/low-contrast; the precision-recall curve looks visually implausible and cramped; mobile cards become dense and excessively tall; the mobile header visibly truncates “LIVE WIRE,” while tablet/mobile navigation relies on clipped content. Contrast also remains unverified for 3 tablet and 13 mobile header nodes.",
+    "fix": "Increase secondary/chart text size and contrast, give mobile visualizations more breathing room, repair the precision-recall presentation, and replace clipped header navigation with a clearly intentional compact menu or scroll treatment.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "d8fd0d742cc7a1773dcd9e5eac6e131d969932244fd43bd1911f345cd8e51ff3",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 216679,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "67f782b83ebf4231e2abcfb2af6f2a18165b0175256c89b1bc65e100f62c8d68",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193396,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "0838974b5035e2af6d38eb85eb405368cae4b95f4e810aa5bbc1c4172c081213",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181003,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "925c0b3134b6df0e3f857a2ff47409028a5697078bad552c289876a43128d2ae",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "f7f7ce21970d1cb9df36566a68312878409bd89b8b3677cbad442b3681a80118",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7579,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "3305c926840a2d979da6b356bd3d215028893fbc682b0296fd17d0d05fb72306",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3784,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "d1625dac34500d2feff2ceafe14a0805d062b5ed421a281469c763a268554122",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "ef0ec60ab3fbae84bd93c5ff9030c48b2bb072d7e9b92fc59b66386139a60233",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2db96fac2b2d6aab8ae319841b3a5bca1bf4aa2564d3f9fee3f0bac7f580aaba"
+  }
+}

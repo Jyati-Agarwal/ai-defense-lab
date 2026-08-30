@@ -1,0 +1,70 @@
+{
+  "cache_key": "61d49d5ab068603727cfad4ba462f7fb320803b9a79eb268e2d3cf2d8d5adf1f",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Keyboard traversal and visible focus passed for all expected Atlas controls at every viewport; touch-target tests found no violations; Atlas had no uncontained viewport overflow; reduced-motion matched with zero changed elements. However, serious color-contrast checks remained incomplete for 10 desktop Atlas nodes and responsive header links (12 mobile, 1 tablet), so WCAG contrast compliance is unproven. No screen-reader test evidence was provided.",
+    "fix": "Resolve and manually measure contrast for every flagged node/header link against its composited background, then verify WCAG AA. Add NVDA/VoiceOver testing for control names, state announcements, React Flow navigation, selection updates, and reading order.",
+    "score": 7,
+    "screen": "atlas"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "b4721500f41c6e995f8b63df9913d85d0e883ab20b448ae84713fe814a7e5c1e",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 205568,
+        "capture": "section",
+        "screenshot": "desktop-atlas.png",
+        "sha256": "96a8c165a545503d2011be52ac56d7674d81a35edbec0c8eba775287fcfe58d1",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 135661,
+        "capture": "section",
+        "screenshot": "tablet-atlas.png",
+        "sha256": "23059da5fb4c6d5ac9b22d09aa2eb27527020fb8fe0a9aa993e35c146c316a8e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 124623,
+        "capture": "section",
+        "screenshot": "mobile-atlas.png",
+        "sha256": "7c83bc2033feeb61801390c3c88b3fc0dc99dbaebfb210e21d7771f920b9fc42",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "22df342f380efddfdaffaa64fdbc1f223b25042a92659cd6d682c7f73deab49d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "754d3bb7ec01f806325e4f5354650f438e50014975ae8ca48208b23336cc9e84",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "444543b1ff39ad1bac5a66d55b8e9e95b41c51f987596623819371678a4043e9",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "b27ad0d3031e5d3f0bbd66c9b4474d47b92aac733d9bffd8506dd252794bbb56",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "61d49d5ab068603727cfad4ba462f7fb320803b9a79eb268e2d3cf2d8d5adf1f"
+  }
+}

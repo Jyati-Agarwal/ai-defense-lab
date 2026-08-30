@@ -1,0 +1,70 @@
+{
+  "cache_key": "7048cb2df7af25f4e14da2c179b4ce0a75f2ca0dd892f8698d5ac7c11b321697",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The oversized “Anomaly without context becomes noise” thesis and BLOCK→ALLOW precedent comparison create a coherent, recognizable story across all viewports. However, the core presentation remains a familiar dark cyber-dashboard: bordered card, cyan/green monospace labels, ranked rows, and percentages. No distinctive visual mechanism or demonstrated interaction elevates precedent memory into an unmistakable demo moment.",
+    "fix": "Turn the precedent match into a signature visual: show the borderline query moving through a visible similarity field toward verified examples, culminating in an animated BLOCK→ALLOW decision flip. Preserve that spatial story on mobile instead of reducing it to stacked rows.",
+    "score": 7,
+    "screen": "precedent"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "5cd7ec3a2a8efd04f9230c4b4b4de55baea8a47a1d803d914cab35e5327bf9e5",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 420956,
+        "capture": "section",
+        "screenshot": "desktop-precedent.png",
+        "sha256": "33dddeb66d615e26fc23f3f0727dd2068cf84402693cfe9952f79219b0b1fe9c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 354760,
+        "capture": "section",
+        "screenshot": "tablet-precedent.png",
+        "sha256": "848c6c9516e5bd55d82c78954150d691fc537212128ac4033072248cdd1b7c06",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 287426,
+        "capture": "section",
+        "screenshot": "mobile-precedent.png",
+        "sha256": "00e3f77b3ba0b879c7f7f5154a8150a0c6df4a0a1189e87ed5e0b0de6c73307f",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11283,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "0a7dc034d5d19309bd004ee9d2a9222d3aaf2e3c7b3eace3cb065d24cc7fbcdd",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "ce954baa9bba0635261ac50562434cc3526d7c9b153ee6afa5cd927fd95a59da",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3069,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "015639a60c92b1a00a83406a98c9511bee8a85c3de385fa3471dbc53051ba751",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "fb18fda890691354eb3de5fe80e38376c0597c92b4cb56ab3211057f469b71ef",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "7048cb2df7af25f4e14da2c179b4ce0a75f2ca0dd892f8698d5ac7c11b321697"
+  }
+}

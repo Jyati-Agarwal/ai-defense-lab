@@ -1,0 +1,70 @@
+{
+  "cache_key": "03a2c2585ebfac49ff8f767b60988864325a569c8e0715931072ffc7de769d52",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The red-mutator versus blue-defense framing, mutation phylogeny, and guarded-vaccination sequence create a coherent, distinctive adversarial-lab concept across viewports. However, the dominant execution remains a familiar dark monitoring dashboard: boxed panels, a simple line chart, status pills, and dense monospace labels. The most original artifact—the desktop phylogeny—is visually tiny and loses impact, while mobile reduces it to generic rows.",
+    "fix": "Make the mutation phylogeny the unmistakable visual centerpiece: enlarge it, expose clear red attack branches versus cyan blocked paths, and animate or progressively reveal the surviving lineage into the vaccination gates.",
+    "score": 7,
+    "screen": "arena"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "92444d11a07be57daa44f435241305063af2039585005e1c1d61f556fb6336c9",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 258512,
+        "capture": "section",
+        "screenshot": "desktop-arena.png",
+        "sha256": "c3ff2c6990c2f0f9427ead606658c7232d65e732559b0e201505c4173f9373b0",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 205673,
+        "capture": "section",
+        "screenshot": "tablet-arena.png",
+        "sha256": "7ae6764f081c0c4a20cc9dd2a0abda06e0c749674a69e6380395909d5f090aed",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 199146,
+        "capture": "section",
+        "screenshot": "mobile-arena.png",
+        "sha256": "6de6ea0b8f6228ab213d037abe91ab84236f154ed2736bd2fab85ad3864db7bd",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15920,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1311f6addafabbf4e5be99528410115805f080d1770737f15461b948d49892f9",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7580,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "fb812974b4407786dba0a2d6b95091e56321bd55f751f77e5620c3b89d59988b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3786,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "005a783f8dfd0b6b68166d7a8d5620f7dd6192df96bd59f81d8f17326fd81cb8",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "f4c6e5e0d5699d16610a99621fda67e1e38845545a4872fa74eca3e51202b60b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "03a2c2585ebfac49ff8f767b60988864325a569c8e0715931072ffc7de769d52"
+  }
+}

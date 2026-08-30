@@ -1,0 +1,51 @@
+{
+  "cache_key": "c5b0435d383e80071229911c5f80266c0f8e12ad31d2ccd1d96fa10eb4182014",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, subtitle, metric definitions, constrained-FPR recall values, measured ablation takeaway, and “Compare configurations” button establish a recognizable claim and action across viewports. However, the precision-recall chart is not independently readable: its x-axis repeats “100%” and ends at “65%,” while the mobile FPR chart retains an obstructive tooltip. “Fresh-row D recall” is undefined, the ablation “delta” says “no change” despite changing PR-AUC because it apparently refers to another column, and the next action appears only after a long mobile scroll. The sticky navigation also overlays chart content on tablet.",
+    "fix": "Repair and clearly tick the precision-recall axes, remove persistent tooltips, define “Fresh-row D,” label the ablation delta with the metric it measures, and connect each headline metric to its operating constraint. Keep a visible, non-overlapping “Compare configurations” action near the summary and state what comparison it opens.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e4fd0cf0530437264302abe7137bcb3325696034f117af2e41de61780b7ba65e",
+    "schema_version": 3,
+    "sha256": "c5b0435d383e80071229911c5f80266c0f8e12ad31d2ccd1d96fa10eb4182014"
+  },
+  "response": {
+    "id": "resp_0d3c99643e30798f016a9083c4315c87d0b48ed70f2fc2580f",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 6326,
+      "input_tokens_details": {
+        "cache_write_tokens": 6323,
+        "cached_tokens": 0
+      },
+      "output_tokens": 492,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 6818
+    }
+  }
+}

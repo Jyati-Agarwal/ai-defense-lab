@@ -1,0 +1,13 @@
+node_modules
+test-dist
+test-results
+test-results-real
+playwright-report
+playwright-report-real
+jury-screens
+tests
+tests-demo
+tests-real
+playwright.config.ts
+playwright.demo.config.ts
+playwright.real.config.ts

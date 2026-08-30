@@ -1,0 +1,70 @@
+{
+  "cache_key": "24b6c58fc77ec05ec00bee9ee51ff977618f60c1cbefb179b9bee87fc8a90aaa",
+  "critique": {
+    "axis": "clarity",
+    "evidence": "The headline, comparison premise, synthetic-only note, prominent LAUNCH EVENT action, and ALLOW-versus-BLOCK result are immediately understandable across all viewports. However, the screen shows editable controls and a completed result simultaneously without identifying the evaluated event or clearly confirming that the visible result belongs to the current control values. “Fused risk” and the five evidence-layer labels are also unexplained, and the mobile/tablet header hides Composer off-screen.",
+    "fix": "Add an evaluated-event ID or concise parameter summary plus a clear “result generated from these settings” state after launch; briefly define the risk layers, and expose the current Composer location in the compact header.",
+    "score": 7,
+    "screen": "composer"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "e23be0427fa5663518f0e6de8ae21f5d1ea204c9125fdc14f150057832b38614",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "clarity",
+    "images": [
+      {
+        "bytes": 165275,
+        "capture": "section",
+        "screenshot": "desktop-composer.png",
+        "sha256": "19981389a15b6ad185870de6493c9dcb7b2c933c2f435c5fde8aafb30a4ca78d",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 154211,
+        "capture": "section",
+        "screenshot": "tablet-composer.png",
+        "sha256": "23c2c958c5fddd42db789c736ded1a964ea069b6621859ea09a26450f5f2ebe5",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 157763,
+        "capture": "section",
+        "screenshot": "mobile-composer.png",
+        "sha256": "3cc9f4b9bad859bbd09464b31a162ac8d156b06114f7a16c490c82b932abd5f0",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 10987,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1ea41d6d80c241a3723845c506c0cb762ec8d6c4c9c7abd7f926d2f27895c579",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 8923,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "7d6e525e3e13a17fba9713c74ce338747f360bc445a5f243bcc5e6284732480b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a297fcfce0a8a4ea99e5347447c2ed9a06f91ce273b17ca04fdbb24e7501d05c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "83b0cd93dd3b07e85f0aef392e116684346d23d14fa4bafa091d1e6e48a011a0",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "24b6c58fc77ec05ec00bee9ee51ff977618f60c1cbefb179b9bee87fc8a90aaa"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "ebcf0a851d7a9f4cd32f608736ecd653162a6eb16fabf4b60da97c314f8fe335",
+  "critique": {
+    "axis": "accessibility",
+    "evidence": "Across desktop, tablet, and mobile, automated scans report no confirmed WCAG violations, no touch-target violations, and no viewport or uncontained overflow. However, color contrast remains seriously unresolved: 74 metrics nodes on desktop, 70 on tablet, and 57 on mobile were marked incomplete because gradients or image/SVG content prevented measurement. No measured keyboard-navigation, focus-order, keyboard-activation, focus-trap, or reduced-motion evidence was supplied, so demo readiness cannot be established.",
+    "fix": "Resolve or remove gradient/image ambiguity and measure WCAG contrast for every text, control, table, and chart label. Add Playwright evidence for full keyboard traversal, visible focus, logical focus order, control activation, and absence of traps. Test prefers-reduced-motion and verify that nonessential animation is disabled or reduced while preserving functionality.",
+    "score": 6,
+    "screen": "metrics"
+  },
+  "request_binding": {
+    "critic": "accessibility",
+    "images": [
+      {
+        "bytes": 519765,
+        "sha256": "3732dc885422e065cc38ec2f9b248d914d7e928ee5c9d4e19e38590206b0e02f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 481358,
+        "sha256": "80bf52a108f1200ceae6ce0300dbafa3024dcf4c4bca9ac434608569629d8479",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 356251,
+        "sha256": "f3d3a1af7982dcabd4e3b9768c8694a1ae0c9c2baab8f496c0c84e98bd490710",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "a77618dc1585744910cb9020a7d3fd2273f765dad360f1b74797080f66b751e5",
+    "schema_version": 3,
+    "sha256": "ebcf0a851d7a9f4cd32f608736ecd653162a6eb16fabf4b60da97c314f8fe335"
+  },
+  "response": {
+    "id": "resp_04e07b7bae577cef016a9083c739a487d0a0599a0d8b1cb4af",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "input_tokens": 14585,
+      "input_tokens_details": {
+        "cache_write_tokens": 14582,
+        "cached_tokens": 0
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 14964
+    }
+  }
+}

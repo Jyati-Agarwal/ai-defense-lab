@@ -1,0 +1,70 @@
+{
+  "cache_key": "109b42d56e2fe3653f917b6db9303864fffff821106914ea152e9ef697db9b1a",
+  "critique": {
+    "axis": "motion_quality",
+    "evidence": "Standard motion is clearly measured: a restrained 22px fade/translate entrance settles smoothly by roughly 380–550ms, and the drift wedge progressively reveals on tablet/mobile. Tablet and mobile animation samples stay near 16ms worst-frame timing. However, desktop entry averages 20.76ms and records a 66.6ms worst frame, which is visible-risk jank for a demo. Reduced-motion correctly produces zero changed elements at all viewports, but still reports 1–4 active/registered animations, so cancellation is not fully proven.",
+    "fix": "Eliminate the desktop 66.6ms layout/frame spike, preferably by avoiding React Flow relayout during entry and animating only compositor-safe opacity/transform. Under prefers-reduced-motion, disable or finish all registered animations so the active count is zero, then recapture full trajectories and frame timing.",
+    "score": 7,
+    "screen": "mandate"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "fedaa291f5035e8b208dfe7b435c3ea3a922f1a74a5ff80dd0d4fe96393d0864",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "motion_quality",
+    "images": [
+      {
+        "bytes": 523574,
+        "capture": "section",
+        "screenshot": "desktop-mandate.png",
+        "sha256": "4f4324205b92dabb99ec43f027452021a429c985ed0f481f91795f63e4d2ccde",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 401239,
+        "capture": "section",
+        "screenshot": "tablet-mandate.png",
+        "sha256": "177a445ccda9bed30f953d4d7f05377b789cb527d43495d3981de4a8b727bb97",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 312965,
+        "capture": "section",
+        "screenshot": "mobile-mandate.png",
+        "sha256": "cab6e2e9a7b4ed794d8ada8c856ef20f09421aee0776f958dbff1035a5ac2605",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 11282,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "3588a9011a683a5103c6bfa87fdd3654a7dd4ccbc90577c0a580456a5ab92045",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 9056,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "d09a5da898d40f9b9a8048d621ae67301e8a6e7113dbe1f30a08429ab2ccf9de",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3068,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "b42fcf905c634bcc455ccc6f8e11c35d2351be076455d9520035c3510b2dda95",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "e5af146a606cc2598c1aa78a321532b12808a38eb2f4647ee3871e7719047b0b",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "109b42d56e2fe3653f917b6db9303864fffff821106914ea152e9ef697db9b1a"
+  }
+}

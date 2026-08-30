@@ -1,0 +1,70 @@
+{
+  "cache_key": "be53e035f59f74a7a0f52434b986c7b4633ed305f57b68bf2f2a4e717e8139f7",
+  "critique": {
+    "axis": "memorability",
+    "evidence": "The human-versus-machine context seam is a clear, demo-worthy visual idea: a restrained control panel gives way to a scanlined red retrieval layer with causal proof, authorized intent, and divergent outcome. The contrast and forensic labeling remain recognizable across all three viewports, though the global header is comparatively generic.",
+    "fix": "Make the toggle’s before/after transformation visually unmistakable—show the harmless rendered page peeling back or splitting to expose the red machine layer—so the central reveal becomes an unforgettable live-demo moment.",
+    "score": 8,
+    "screen": "injection"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "4816a2460fa1df8a66d04416758d167176e901b0c0a74c539fea08aa7211b72a",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "memorability",
+    "images": [
+      {
+        "bytes": 209185,
+        "capture": "section",
+        "screenshot": "desktop-injection.png",
+        "sha256": "869a077bab34dee8dc7e763c2d58c6a6301ad0744b96c7f31ae11277904ac7ce",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 168943,
+        "capture": "section",
+        "screenshot": "tablet-injection.png",
+        "sha256": "78605a3d299cbdc1938884f7bb0170e0e5dfbcc3525b9038bf694a1637741fab",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 168972,
+        "capture": "section",
+        "screenshot": "mobile-injection.png",
+        "sha256": "2ea4c9430705942310b6fec37c8da38b9088360c32b80fca8e703816d8f6f633",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15919,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "1143152fb43a2a176966841f818a5e6978fa7ba318918c5d7634206c3d1bcc4f",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "011cd1291de6f3ad67426cdf35b3153c7e929661c65e841db49dfe5965b4660e",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3291,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "a413ceae46e76bf1888e089034ac9be98f4bc2562cb830738771f8dad9cc697c",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "85509644d0d4478e2a3525dcac4c72659f1dd759ba8c7285e6124b36881179c6",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "be53e035f59f74a7a0f52434b986c7b4633ed305f57b68bf2f2a4e717e8139f7"
+  }
+}

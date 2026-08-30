@@ -1,0 +1,70 @@
+{
+  "cache_key": "2a690b4307caf52f0594a6c6c4e53dba7ed0b9c0d9b086a0d2749d9eececf092",
+  "critique": {
+    "axis": "aesthetics",
+    "evidence": "Strong dark editorial composition, consistent cyan/red accents, crisp card system, and clear headline-to-metric hierarchy across viewports. However, much supporting copy and chart/table labeling is extremely small and low-contrast—especially on mobile—making the polished surface feel compressed rather than confidently readable. The mobile ablation table becomes dense stacked micro-cards, while the global header visibly clips its navigation at tablet/mobile and drops the brand wordmark and red-mode action on mobile, weakening hierarchy and finish.",
+    "fix": "Increase mobile and chart-label type size/contrast, simplify the mobile ablation presentation, add more internal spacing to dense cards, and redesign the responsive header with an intentional compact navigation pattern that preserves brand identity, active location, and the primary red-mode action.",
+    "score": 7,
+    "screen": "metrics"
+  },
+  "provenance": {
+    "cli_version": "codex-cli 0.147.0",
+    "model": "gpt-5.6-sol",
+    "output_sha256": "818cf95921a1c4365d65e877aa2e93392031eed1a646fa9f083c63d56781770c",
+    "provider": "codex"
+  },
+  "provider": "codex",
+  "request_binding": {
+    "critic": "aesthetics",
+    "images": [
+      {
+        "bytes": 216833,
+        "capture": "section",
+        "screenshot": "desktop-metrics.png",
+        "sha256": "0c75316cf81aac9749175f76ea8cefafa140a1bf90a08d09a4b35314ca5ab979",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 193238,
+        "capture": "section",
+        "screenshot": "tablet-metrics.png",
+        "sha256": "14f9b53d6d8f2ff6c97ba9fac186ff03143e00f2085a6c3f81e0251576f6b4e3",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 181055,
+        "capture": "section",
+        "screenshot": "mobile-metrics.png",
+        "sha256": "f0233f6500b18d66b2c021a8474b2c1037facb6b13927747f2b57d9328160422",
+        "viewport": "mobile"
+      },
+      {
+        "bytes": 15906,
+        "capture": "header",
+        "screenshot": "desktop-header.png",
+        "sha256": "2c8cf00dabf931719e5f64063eb4d9801ed18e425281bba5582be6381fd0507c",
+        "viewport": "desktop"
+      },
+      {
+        "bytes": 7565,
+        "capture": "header",
+        "screenshot": "tablet-header.png",
+        "sha256": "8cf9be4057b40226553ff6377ccb28ce544e5886a5058a58d06cd51337282d1b",
+        "viewport": "tablet"
+      },
+      {
+        "bytes": 3292,
+        "capture": "header",
+        "screenshot": "mobile-header.png",
+        "sha256": "c19b98fc2e1bca36741a2bbcc5911dfab2020ef0ffeb410432b562ad5c86508e",
+        "viewport": "mobile"
+      }
+    ],
+    "instructions_sha256": "94d7c3e874905889b58aa9b778e28964bf20a4c8195dd56a77c307a5f8836787",
+    "model": "gpt-5.6-sol",
+    "prompt_sha256": "39e174e174acf3882b149ac10b88eaada13661cd3b78b8507bc5b269c220ac87",
+    "provider": "codex",
+    "schema_version": 4,
+    "sha256": "2a690b4307caf52f0594a6c6c4e53dba7ed0b9c0d9b086a0d2749d9eececf092"
+  }
+}

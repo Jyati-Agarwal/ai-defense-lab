@@ -1,0 +1,80 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/health",
+      "destination": "http://BACKEND_HOST/health"
+    },
+    {
+      "source": "/atlas",
+      "destination": "http://BACKEND_HOST/atlas"
+    },
+    {
+      "source": "/metrics",
+      "destination": "http://BACKEND_HOST/metrics"
+    },
+    {
+      "source": "/generalization",
+      "destination": "http://BACKEND_HOST/generalization"
+    },
+    {
+      "source": "/arena",
+      "destination": "http://BACKEND_HOST/arena"
+    },
+    {
+      "source": "/phylogeny",
+      "destination": "http://BACKEND_HOST/phylogeny"
+    },
+    {
+      "source": "/vaccination",
+      "destination": "http://BACKEND_HOST/vaccination"
+    },
+    {
+      "source": "/stream",
+      "destination": "http://BACKEND_HOST/stream"
+    },
+    {
+      "source": "/compose",
+      "destination": "http://BACKEND_HOST/compose"
+    },
+    {
+      "source": "/case/:id",
+      "destination": "http://BACKEND_HOST/case/:id"
+    },
+    {
+      "source": "/precedent/:id",
+      "destination": "http://BACKEND_HOST/precedent/:id"
+    },
+    {
+      "source": "/((?!assets/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
